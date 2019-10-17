@@ -693,15 +693,48 @@
 
 .wrapper {
     margin: 0 auto;
-    width: 1160px;
+    width: 1260px;
 }
 
 .section .title {
     position: relative;
     height: 74px;
-    color: #636363;
+    color: #455272;
     text-align: center;
+    letter-spacing: 5px;
     font: 36px/74px Hiragino Sans GB, Microsoft YaHei, SimHei, SimSun, sans-serif;
+}
+
+.m_tab {
+    text-align: center;
+    overflow: hidden;
+    margin: 30px auto;
+    width: 400px;
+}
+
+.m_tab .tab_item {
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    width: 105px;
+    height: 50px;
+    line-height: 48px;
+    font-size: 16px;
+    color: #343940;
+    cursor: pointer;
+    border: 1px solid #D0D7DF;
+    border-radius: 5px;
+}
+
+.m_tab .tab_item:hover,
+.m_tab .current {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0 none;
+    height: 52px;
+    line-height: 50px;
+    background: linear-gradient(45deg, #1B2A40, #15989D);
 }
 
 .hotthread .item ul li {
