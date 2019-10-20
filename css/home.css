@@ -781,11 +781,13 @@
 .t2_td_schedule_more .tag{
 	border:1px solid #15989D;
 	color:#15989D;
-	font-size:15px;
-	line-height:20px;
+	font-size:14px;
+	line-height:24px;
 	border-radius:3px;
 	padding:0 5px;
 	margin:0 5px;
+	height:24px;
+	overflow:hidden;
 }
 .t2_td_schedule_more p a{
 	color:#343E57;
@@ -795,7 +797,7 @@
 	font-size:16px;
 	margin:5px 0;
   z-index: 3;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+ 
   cursor: pointer;
 }
 
@@ -997,7 +999,7 @@
 }
 
 .shiprecord .content .more .more_bg {
-  background-image: url("https://pic.qyer.com/album/user/3311/87/QkpUQxIAYUk/index/480x320");
+  background-image: url("../img/big_promo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 550px;
