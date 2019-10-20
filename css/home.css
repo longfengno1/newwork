@@ -464,7 +464,7 @@
 .t2_td:nth-child(7n+1),
 .t2_td:nth-child(7n+7),
 .pink_bg {
-    
+
 }
 
 .t2_td:nth-child(7n+1) {
@@ -473,6 +473,17 @@
 
 .t2_td:nth-child(7n+7) {
     border-right-color: #D0D0D0
+}
+
+.t2_td:nth-child(42),
+.t2_td:nth-child(42) a {
+    border-radius: 0 0 4px 0
+}
+
+.t2_td:nth-child(36),
+.t2_td:nth-child(36) a {
+    border-radius: 0 0 0 4px
+>>>>>>> 8def641e04e8e8cc39e478410b2263a11ac42df5
 }
 
 .t2_td.t2_last {

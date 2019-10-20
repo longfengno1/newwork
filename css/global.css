@@ -1,5 +1,7 @@
 /* common css ============================================== */
+
 body{margin:0 auto;	text-align:center; font-family:tahoma,arial,\5b8b\4f53; font-size:12px; line-height:1.5; color:#455272; background-color:#fff; cursor:default;}
+
 div{text-align:left;}
 :focus{outline:none;}
 h4,h3,h2,h1{font-size:14px; margin:0;}
@@ -103,6 +105,7 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 	margin-left:auto;
 	margin-right:auto;
 }
+<<<<<<< HEAD
 .main{
 	max-width:2000px;
 	margin: 0 auto;
