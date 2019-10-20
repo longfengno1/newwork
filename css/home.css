@@ -859,10 +859,9 @@
 .m_tab .tab_item:hover,
 .m_tab .current {
   color: #fff;
+ 
   text-decoration: none;
-  border: 0 none;
-  height: 52px;
-  line-height: 50px;
+ 
   background: linear-gradient(45deg, #1b2a40, #15989d);
 }
 
