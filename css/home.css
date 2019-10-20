@@ -819,7 +819,6 @@
   padding: 20px 0;
   min-width: 1160px;
   overflow: hidden;
-  margin-top: 118px;
 }
 
 .wrapper {
@@ -860,7 +859,6 @@
 .m_tab .tab_item:hover,
 .m_tab .current {
   color: #fff;
-  font-weight: bold;
   text-decoration: none;
   border: 0 none;
   height: 52px;
@@ -904,8 +902,6 @@
 
 .hotthread .item .thread .inner .caption {
   padding-top: 12px;
-  font: 500 16px/24px Hiragino Sans GB, Microsoft YaHei, SimHei, SimSun,
-    sans-serif;
   overflow: hidden;
 }
 
@@ -1045,7 +1041,7 @@
   border: 1px solid #1c576d;
   width: 40px;
   height: 40px;
-  display: inline-block;
+  display:block;
   vertical-align: middle;
   border-radius: 50%;
   opacity: 0.7;
@@ -1060,25 +1056,31 @@
   border: 1px solid #1c576d;
   width: 14px;
   height: 14px;
-  display: inline-block;
+  display: block;
   border-width: 0 0 1px 1px;
   transform: rotate(45deg);
   position: relative;
-  top: 7px;
-  left: 3px;
+  top: 11px;
+  left: 15px;
 }
 
 .custom_container .right_container .right_btn .i_caret {
   border: 1px solid #1c576d;
   width: 14px;
   height: 14px;
-  display: inline-block;
+  display: block;
   border-width: 1px 1px 0 0;
   transform: rotate(45deg);
   position: relative;
-  top: 7px;
-  right: 3px;
+  top: 11px;
+  left: 10px;
 }
+.ribbon-destinations{
+	background:url(../img/ribbon-destinations2.png) center center no-repeat;
+	height:713px;
+	margin:-350px 0;
+}
+
 .footerinfo{
 	min-height:200px;
 }
@@ -1150,7 +1152,7 @@
 .shipexperience .content,
 .shipexperience .left_container,
 .shipexperience .right_container {
-  height: 960px;
+  height: 820px;
 }
 
 .shipexperience .exp_item{
@@ -1189,12 +1191,11 @@
 /* ================ 游轮介绍 =================== */
 .shipinto {
   background: url(../img/bg-shipinto.jpg) center center no-repeat;
-  width:2000px;
   height:980px;
 }
 
 .shipinto .title{
-  font-family: Helvetica;
+	padding-top:160px;
   font-size: 38px;
   color: #49798A;
   letter-spacing: 7.6px;
@@ -1252,4 +1253,8 @@
   float: left;
   width:424px;
   height:65px;
+}
+.section-baike{
+	background:url(../img/ribbon-destinations4.png) center 100px no-repeat;
+	padding-bottom:150px;
 }

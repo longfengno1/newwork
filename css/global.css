@@ -10,7 +10,7 @@ li{list-style-type:none;}
 img{border:none;}
 button,input,select,textarea{font-size:12px; margin:0; color:#455272; font-family:tahoma,arial,\5b8b\4f53; line-height:1.5;}
 a{color:#343940; text-decoration:none;}
-a:hover{text-decoration:underline; color:#e52142;}
+a:hover{text-decoration:underline; }
 a *{cursor:pointer;}
 sup{vertical-align:text-top;}
 sub{vertical-align:text-bottom; *font-size:.8em; *position:relative; *top:-2px;}
@@ -109,6 +109,7 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 .main{
 	max-width:2000px;
 	margin: 0 auto;
+	overflow:hidden;
 }
 /* header css ============================================== */
 .header-bar{
