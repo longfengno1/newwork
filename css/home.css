@@ -813,6 +813,7 @@
   top: 7px;
 }
 
+/* ================ 热门推荐 =================== */
 .section {
   position: relative;
   padding: 20px 0;
@@ -924,25 +925,25 @@
 }
 
 /* ================ “邮”记 =================== */
-.shiprecord {
+.custom_container {
   overflow: hidden;
   padding: 0 52px 0;
   margin-top: 74px;
 }
 
-.shiprecord .content,
-.shiprecord .left_container,
-.shiprecord .right_container {
+.custom_container .content,
+.custom_container .left_container,
+.custom_container .right_container {
   float: left;
   position: relative;
   height: 596px;
 }
 
-.shiprecord .content {
+.custom_container .content {
   width: 100%;
 }
 
-.shiprecord .content::after,
+.custom_container .content::after,
 .shiprecord .content .slider::after {
   display: block;
   height: 0;
@@ -1025,20 +1026,20 @@
   opacity: 1;
 }
 
-.shiprecord .left_container {
+.custom_container .left_container {
   width: 52px;
   margin-left: -100%;
   left: -52px;
 }
 
-.shiprecord .right_container {
+.custom_container .right_container {
   width: 52px;
   margin-left: -52px;
   right: -52px;
 }
 
-.shiprecord .left_container .left_btn,
-.shiprecord .right_container .right_btn {
+.custom_container .left_container .left_btn,
+.custom_container .right_container .right_btn {
   top: 40%;
   position: relative;
   border: 1px solid #1c576d;
@@ -1051,11 +1052,11 @@
   text-align: center;
 }
 
-.shiprecord .right_container .right_btn {
+.custom_container .right_container .right_btn {
   left: 10px;
 }
 
-.shiprecord .left_container .left_btn .i_caret {
+.custom_container .left_container .left_btn .i_caret {
   border: 1px solid #1c576d;
   width: 14px;
   height: 14px;
@@ -1067,7 +1068,7 @@
   left: 3px;
 }
 
-.shiprecord .right_container .right_btn .i_caret {
+.custom_container .right_container .right_btn .i_caret {
   border: 1px solid #1c576d;
   width: 14px;
   height: 14px;
@@ -1143,4 +1144,112 @@
 }
 .footerinfo .bl{
 	border-left:1px solid #77B7BD;
+}
+
+/* ================ 船上体验 =================== */
+.shipexperience .content,
+.shipexperience .left_container,
+.shipexperience .right_container {
+  height: 960px;
+}
+
+.shipexperience .exp_item{
+  float: left;
+  margin-right: 16px;
+}
+
+.shipexperience .exp_item:first-child,
+.shipexperience .exp_item:first-of-type{
+  margin-left: 30px;
+}
+
+.exp_text_wrap{
+  width:355px;
+  height:62px;
+  background: #F8FCFC;
+  text-indent: 10px;
+}
+
+.exp_text_tit{
+  font-family: Helvetica;
+  font-size: 20px;
+  color: #343940;
+  letter-spacing: 1.5px;
+  line-height: 26px;
+}
+
+.exp_text_subtit{
+  font-family: Helvetica;
+  font-size: 13px;
+  color: #666666;
+  letter-spacing: 0.98px;
+  line-height: 28px;
+}
+
+/* ================ 游轮介绍 =================== */
+.shipinto {
+  background: url(../img/bg-shipinto.jpg) center center no-repeat;
+  width:2000px;
+  height:980px;
+}
+
+.shipinto .title{
+  font-family: Helvetica;
+  font-size: 38px;
+  color: #49798A;
+  letter-spacing: 7.6px;
+  text-align: center;
+  line-height: 54px;
+}
+
+/* ================ 游轮百科 =================== */
+.ylbk_container .content,
+.ylbk_container .left_container,
+.ylbk_container .right_container {
+  height: 260px;
+}
+
+.ylbk-bg{
+  width:169px;
+  height: 169px;
+  line-height: 298px;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  float: left;
+  margin-right: 68px;
+  margin-bottom: 20px;
+}
+
+.ylbk-bg1{
+  background:url(../img/ylbk-1.png) center center no-repeat;
+  margin-left: 118px;
+}
+
+.ylbk-bg2 {
+  background: url(../img/ylbk-2.png) center center no-repeat;
+}
+
+.ylbk-bg3 {
+  background: url(../img/ylbk-3.png) center center no-repeat;
+}
+
+.ylbk-bg4 {
+  background: url(../img/ylbk-4.png) center center no-repeat;
+}
+
+.ylbk-text-wrap{
+  margin-left: 118px;
+}
+
+.ylbk-text{
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #7E7D7D;
+  letter-spacing: 1.2px;
+  line-height: 25px;
+  float: left;
+  width:424px;
+  height:65px;
 }
