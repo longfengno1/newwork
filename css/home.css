@@ -483,7 +483,6 @@
 .t2_td:nth-child(36),
 .t2_td:nth-child(36) a {
     border-radius: 0 0 0 4px
->>>>>>> 8def641e04e8e8cc39e478410b2263a11ac42df5
 }
 
 .t2_td.t2_last {
@@ -794,4 +793,70 @@
 	color:#343E57;
 	font-size:16px;
 	margin:5px 0;
+}
+.footerinfo{
+	min-height:200px;
+}
+.btn-stye1 {
+	display:inline-block;
+	position:relative;
+    background: linear-gradient(45deg, #1B2A40 20%, #15989D 80%);
+    width: 113px;
+    height: 38px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    text-align:left;
+    line-height: 38px;
+    cursor: pointer;
+	padding-left:23px;
+}
+.btn-stye1:hover{
+	color:#fff;
+	text-decoration:none;
+	opacity:0.8;
+}
+.btn-stye1 .arrow-right{
+	left:auto;
+	right:13px;
+	top:14px;
+	width:7px;
+	height:7px;
+	border-width:2px 2px 0 0;
+}
+.footerinfo{
+	background:url(../img/ribbon-destinations.png) center top no-repeat;
+	padding-top:420px;
+	height:400px;
+	position:relative;
+}
+.footerinfo .box h4{
+	color:#169298;
+	font-size:24px;
+	font-weight:normal;
+}
+.footerinfo .box p{
+	font-size:16px;
+	color:#7E7D7D;
+}
+.footerinfo .box{
+	padding-left:48px;
+	margin-right:48px;
+}
+.footerinfo .box:last-child{
+	margin-right:0;
+}
+.footerinfo .bookicon{
+	padding-left:150px;
+	background:url(../img/agents.png) left top no-repeat;
+	height:200px;
+	position:relative;
+}
+.footerinfo .pictitle{
+	margin-bottom:70px;
+	padding-top:30px;
+	background:url(../img/Ellipse%202.png) center center no-repeat;
+}
+.footerinfo .bl{
+	border-left:1px solid #77B7BD;
 }

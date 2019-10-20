@@ -235,3 +235,158 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 .navbar-menu li a:hover{
 	text-decoration:none;
 }
+.footer{
+	background:url(../img/footer_bg.jpg) center top no-repeat;
+	max-width:2000px;
+	min-height:600px;
+	padding-top:440px;
+	margin:0 auto;
+	margin-top:-400px;
+}
+.footer_inner{
+	background:url(../img/footer_inner_bg.jpg) center center repeat-y;
+	min-height:600px;
+	padding-top:55px;
+}
+.reader_panel{
+	width:1110px;
+	height:50px;
+	background:rgba(255,255,255,0.15);
+	border-radius:7px;
+	margin:0 auto;
+	padding:10px 30px;
+}
+.reader_panel .title p{
+	color:#b8e0e1;
+	font-size:24px;
+	margin-right:20px;
+}
+.reader_panel p{
+	color:#c0c2c7;
+	font-size:15px;
+}
+.reader_panel a{
+	color:#c0c2c7;
+	text-decoration:underline;
+}
+.reader_panel .title p{
+	padding:0;
+	line-height:26px;
+}
+.reader_panel .title .sub{
+	color:#c0c2c7;
+	font-size:14px;
+}
+.reader_panel .input_box{
+	width:540px;
+	padding:6px 0;
+	margin-right:20px;
+}
+.reader_panel .input_box .intxt{
+	width:490px;
+	height:27px;
+	
+}
+.reader_panel .send{
+	background: linear-gradient(45deg, #16979d, #c2a7c9);
+	width:35px;
+	height:35px;
+	line-height:34px;
+	display:block;
+	float:right;
+	border-radius:3px;
+	position:relative;
+}
+.arrow-right {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border: 1px solid #fff;
+    border-width: 1px 1px 0 0;
+    display: block;
+	position:absolute;
+	top:11px;
+	left:10px;
+}
+.linker{
+	float:left;
+	margin-top:48px;
+}
+.logolinker{
+	clear:both;
+}
+.linker a,
+.contact_us{
+	color:rgba(255,255,255,0.4);
+	font-size:14px;
+	
+}
+.linker ul{
+	width:180px;
+	padding-left:20px;
+	float:left;
+}
+.linker ul li{
+	height:30px;
+	padding-left:20px;
+}
+.contact_us{
+	padding-left:50px;
+	border-left:1px solid #d5d3cd;
+	margin-top:48px;
+	width:530px
+}
+.contact_us .title{
+	font-size:16px;
+	color:#b2d8da;
+	margin-bottom:23px;
+}
+.contact_us li{
+	height:30px;
+}
+.contact_us label{
+	width:200px;
+	display:inline-block;
+}
+.linker .linker-inner{
+	overflow:hidden;
+}
+.logolinker{
+	padding-left:40px;
+	margin-top:50px;
+}
+.logolinker .logo1{
+	background:url(../img/logolink1.png) center center no-repeat;
+	width:64px;
+	height:34px;
+	margin-right:70px;
+}
+.logolinker .logo2{
+	background:url(../img/logolink2.png) center center no-repeat;
+	width:59px; 
+	height:34px;
+	margin-right:70px;
+}
+.logolinker .logo3{
+	background:url(../img/logolink3.png) center center no-repeat;
+	width:108px; 
+	height:34px;
+}
+.footer .icons a{
+	background:url(../img/linker-icon.png) no-repeat;
+	height:30px;
+	width:30px;
+	margin-right:10px;
+}
+.footer .icons .sina{
+	background-position:-49px 0;
+}
+.footer .icons .facebook{
+	background-position:-91px 0;
+}
+.footer .icons .bilibili{
+	background-position:-131px 0;
+}
+.footer .icons .youku{
+	background-position:-175px 0;
+}
