@@ -3,14 +3,7 @@ const devMode = process.env.NODE_ENV !== 'production'
 const rules = [{
 		test: /\.(css|scss|sass)$/,
 		use: [
-			devMode ? 'style-loader' : {
-				loader: MiniCssExtractPlugin.loader,
-				options: {
-					// you can specify a publicPath here
-					// by default it use publicPath in webpackOptions.output
-					publicPath: '../'
-				}
-			},
+			'style-loader',
 			'css-loader',
 			'postcss-loader',
 			'sass-loader',
@@ -47,14 +40,7 @@ const rules = [{
 	}, {
 		test: /\.less$/,
 		use: [
-			devMode ? 'style-loader' : {
-				loader: MiniCssExtractPlugin.loader,
-				options: {
-					// you can specify a publicPath here
-					// by default it use publicPath in webpackOptions.output
-					publicPath: '../'
-				}
-			},
+			'style-loader',
 			'css-loader',
 			'postcss-loader',
 			'less-loader',
