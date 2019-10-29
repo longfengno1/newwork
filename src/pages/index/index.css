@@ -6,7 +6,7 @@
 }
 .icon_berlitz{
 	position:absolute;
-	background:url(../img/berlitz.png) no-repeat;
+	background:url(../../images/berlitz.png) no-repeat;
 	width:85px;
 	height:93px;
 	top:50px;
@@ -22,7 +22,7 @@
 
 .topbanner .topbanner-ribbon {
 	padding-top:10px;
-  background: url(../img/ribbon-destinations.png) center center no-repeat;
+  background: url(../../images/ribbon-destinations.png) center center no-repeat;
   background-position: center bottom;
   height: 767px;
   position: relative;
@@ -44,7 +44,7 @@
 }
 
 .icon-local {
-  background: url(../img/local.png) center center no-repeat;
+  background: url(../../images/local.png) center center no-repeat;
   height: 26px;
   width: 26px;
   margin-right: 10px;
@@ -256,7 +256,7 @@
   opacity: 0.8;
 }
 .travel_calendar_bg{
-	background:url(../img/calendar_bg.jpg) bottom center no-repeat;
+	background:url(../../images/calendar_bg.jpg) bottom center no-repeat;
 	padding-bottom: 250px;
 	margin-bottom:-250px;
 }
@@ -749,21 +749,21 @@
 	border-bottom:none;
 }
 .t2_td_schedule_more .icon1{
-	background:url(../img/icon_title1@2x.png) center center no-repeat;
+	background:url(../../images/icon_title1@2x.png) center center no-repeat;
 	background-size:44px 41px;
 	width:30px;
 	height:30px;
 	margin-right:5px;
 }
 .t2_td_schedule_more .icon2{
-	background:url(../img/icon_title2@2x.png) center center no-repeat;
+	background:url(../../images/icon_title2@2x.png) center center no-repeat;
 	background-size:44px 41px;
 	width:30px;
 	height:30px;
 	margin-right:5px;
 }
 .t2_td_schedule_more .icon3{
-	background:url(../img/icon_title3@2x.png) center center no-repeat;
+	background:url(../../images/icon_title3@2x.png) center center no-repeat;
 	background-size:41px 40px;
 	background-position: -5px -3px;
 	width:30px;
@@ -771,7 +771,7 @@
 	margin-right:5px;
 }
 .t2_td_schedule_more .icon4{
-	background:url(../img/icon_title4@2x.png) center center no-repeat;
+	background:url(../../images/icon_title4@2x.png) center center no-repeat;
 	background-size:41px 41px;
 	background-position: -5px -4px;
 	width:30px;
@@ -779,14 +779,14 @@
 	margin-right:5px;
 }
 .t2_td_schedule_more .sale{
-	background:url(../img/icon-hotsale2x.png) no-repeat;
+	background:url(../../images/icon-hotsale2x.png) no-repeat;
 	background-size:140px 43px;
 	background-position: -5px -5px;
 	width:65px;
 	height:31px;
 }
 .t2_td_schedule_more .hot{
-	background:url(../img/icon-hotsale2x.png) no-repeat;
+	background:url(../../images/icon-hotsale2x.png) no-repeat;
 	background-size:140px 43px;
 	background-position: -75px -5px;
 	width:60px;
@@ -1010,7 +1010,7 @@
 }
 
 .shiprecord .content .more .more_bg {
-  background-image: url("../img/big_promo.jpg");
+  background-image: url("../../images/big_promo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 550px;
@@ -1090,7 +1090,7 @@
   left: 10px;
 }
 .ribbon-destinations{
-	background:url(../img/ribbon-destinations2.png) center center no-repeat;
+	background:url(../../images/ribbon-destinations2.png) center center no-repeat;
 	height:470px;
 	margin:-355px 0 -170px 0;
 }
@@ -1126,7 +1126,7 @@
 	border-width:2px 2px 0 0;
 }
 .footerinfo{
-	background:url(../img/ribbon-destinations.png) center top no-repeat;
+	background:url(../../images/ribbon-destinations.png) center top no-repeat;
 	padding-top:420px;
 	height:400px;
 	position:relative;
@@ -1149,14 +1149,14 @@
 }
 .footerinfo .bookicon{
 	padding-left:150px;
-	background:url(../img/agents.png) left top no-repeat;
+	background:url(../../images/agents.png) left top no-repeat;
 	height:200px;
 	position:relative;
 }
 .footerinfo .pictitle{
 	margin-bottom:70px;
 	padding-top:30px;
-	background:url(../img/Ellipse%202.png) center center no-repeat;
+	background:url(../../images/Ellipse2.png) center center no-repeat;
 }
 .footerinfo .bl{
 	border-left:1px solid #77B7BD;
@@ -1202,7 +1202,7 @@
 
 /* ================ 游轮介绍 =================== */
 .shipinto {
-  background: url(../img/bg-shipinto.jpg) center center no-repeat;
+  background: url(../../images/bg-shipinto.jpg) center center no-repeat;
   height:980px;
 }
 
@@ -1236,20 +1236,20 @@
 }
 
 .ylbk-bg1{
-  background:url(../img/ylbk-1.png) center center no-repeat;
+  background:url(../../images/ylbk-1.png) center center no-repeat;
   margin-left: 118px;
 }
 
 .ylbk-bg2 {
-  background: url(../img/ylbk-2.png) center center no-repeat;
+  background: url(../../images/ylbk-2.png) center center no-repeat;
 }
 
 .ylbk-bg3 {
-  background: url(../img/ylbk-3.png) center center no-repeat;
+  background: url(../../images/ylbk-3.png) center center no-repeat;
 }
 
 .ylbk-bg4 {
-  background: url(../img/ylbk-4.png) center center no-repeat;
+  background: url(../../images/ylbk-4.png) center center no-repeat;
 }
 
 .ylbk-text-wrap{
@@ -1266,6 +1266,6 @@
   height:65px;
 }
 .section-baike{
-	background:url(../img/ribbon-destinations4.png) center 100px no-repeat;
+	background:url(../../images/ribbon-destinations4.png) center 100px no-repeat;
 	padding-bottom:150px;
 }
