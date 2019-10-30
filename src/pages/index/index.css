@@ -224,6 +224,7 @@
   padding: 10px;
   background:#fff;
   margin-top:7px;
+  box-sizing:content-box;
 }
 
 .topbanner-tab .arrow-up {
