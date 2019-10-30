@@ -15,7 +15,7 @@ const webpackConfigProd = {
 		path: path.resolve(__dirname, '../dist'),
 		// 打包多出口文件
 		// 生成 a.bundle.[hash].js  b.bundle.[hash].js
-		filename: './js/[name].[chunkhash:8].js',
+		filename: './js/[name].js',
 		publicPath: './'
 	},
 	devtool: 'none',
@@ -30,7 +30,7 @@ const webpackConfigProd = {
 		}),
 		// 分离css插件参数为提取出去的路径
 		new miniCssExtractPlugin({
-			filename: 'css/[name].[contenthash:8].min.css',
+			filename: 'css/[name].min.css',
 		}),
 		//压缩css
 		// new OptimizeCSSPlugin({
