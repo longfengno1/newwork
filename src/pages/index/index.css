@@ -660,23 +660,21 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg)
 }
-
 .t2_td .base_price {
     position: absolute;
     z-index: 1;
     left: 10px;
     bottom: 8px;
-	font-size:16px;
-    color: #6D6D6D
+	font-size:12px;
+    color: #999999
 }
-
 .t2_td .base_price dfn {
     top: -1px;
-    font-size: 16px;
+    font-size: 12px;
 	font-style:normal;
 }
 .t2_td .base_price .price{
-	font-size:24px;
+	font-size:18px;
 	color:#15989D;
 }
 .t2_td .t2_td_month {
@@ -853,19 +851,19 @@
 .m_tab {
   text-align: center;
   overflow: hidden;
-  margin: 20px auto;
+  margin: 20px 0 20px auto;
   width: 400px;
 }
 
 .m_tab .tab_item {
   float:right;
   position: relative;
-  margin-right: 20px;
+  margin-left: 20px;
   width: 105px;
   height: 50px;
   line-height: 50px;
   font-size: 16px;
-  color: #343940;
+  color: #383838;
   cursor: pointer;
   border: 1px solid #d0d7df;
   border-radius: 5px;
@@ -879,17 +877,24 @@
  
   background: #00969E;
 }
-
+.hotthread{
+	position:relative;
+	z-index:1;
+}
 .hotthread .item ul li {
   float: left;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-right: 30px;
   width: 380px;
   height: 354px;
   background: #fff;
   border-radius: 5px;
+  overflow:hidden;
 }
 
+.hotthread .item ul li:last-child{
+	margin-right: 0;
+}
 .hotthread .item .thread {
   position: relative;
   line-height: 24px;
@@ -904,12 +909,40 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-
+.hotthread .pic_title{
+	position:absolute;
+	left:0;
+	top:12px;
+	height:20px;
+	line-height:20px;
+	padding:0 12px;
+	color:#ffffff;
+	font-size:15px;
+}
+.hotthread .tags{
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:20px;
+	padding:10px;
+}
+.hotthread .tags span{
+	height:18px;
+	line-height:18px;
+	color:#FDD26E;
+	padding:0 5px;
+	border:1px solid #FDD26E;
+	border-radius:3px;
+	display:block;
+	font-size:12px;
+	float:left;
+	margin-right:10px;
+}
 .hotthread .item .thread .inner {
   border: 1px solid #d0d7df;
   border-top: 0;
   padding: 0 15px;
-  height: 107px;
+  height: 106px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -925,15 +958,30 @@
   top: 0;
   right: 0;
   background-color: #f8485e;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 10px;
   width: 90px;
-  height: 30px;
-  line-height: 28px;
+  height: 25px;
+  line-height: 24px;
   text-align: center;
   color: #fff;
   font-size: 12px;
+  font-style:normal;
 }
 
+.hotthread .base_price {
+	font-size:12px;
+    color: #999999
+}
+.hotthread .base_price dfn {
+    top: -1px;
+    font-size: 12px;
+	font-style:normal;
+}
+
+.hotthread .base_price .price{
+	font-size:18px;
+	color:#15989D;
+}
 /* ================ “邮”记 =================== */
 .custom_container {
   overflow: hidden;
@@ -1004,11 +1052,32 @@
   line-height: 30px;
   margin-top: 30px;
 }
-
+.shiprecord .content .article .article_right .tags span{
+	margin-right:20px;
+}
+.shiprecord .content .article .article_right .tags .icon1{
+	background:url(../../images/icon_local.png) no-repeat;
+	width:18px;
+	height:24px;
+	vertical-align:middle;
+	margin-right:3px;
+}
+.shiprecord .content .article .article_right .tags .icon2{
+	background:url(../../images/icon_ship.png) no-repeat;
+	width:24px;
+	height:24px;
+	vertical-align:middle;
+	margin-right:3px;
+}
 .shiprecord .content .more {
   float: right;
+  position:relative;
 }
-
+.shiprecord .content .more .more_btn{
+	position:absolute;
+	left:30px;
+	bottom:50px;
+}
 .shiprecord .content .more .more_bg {
   background-image: url("../../images/big_promo.jpg");
   background-repeat: no-repeat;
@@ -1034,6 +1103,7 @@
 .shiprecord .content .dot_container .active {
   width: 24px;
   opacity: 1;
+  background-color: #00969E;
 }
 
 .custom_container .left_container {
@@ -1068,26 +1138,26 @@
 
 .custom_container .left_container .left_btn .i_caret {
   border: 1px solid #1c576d;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   display: block;
   border-width: 0 0 1px 1px;
   transform: rotate(45deg);
   position: relative;
-  top: 11px;
+  top: 13px;
   left: 15px;
 }
 
 .custom_container .right_container .right_btn .i_caret {
   border: 1px solid #1c576d;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   display: block;
   border-width: 1px 1px 0 0;
   transform: rotate(45deg);
   position: relative;
-  top: 11px;
-  left: 10px;
+  top: 13px;
+  left: 12px;
 }
 .ribbon-destinations{
 	background:url(../../images/ribbon-destinations2.png) center center no-repeat;
@@ -1101,7 +1171,7 @@
 .btn-stye1 {
 	display:inline-block;
 	position:relative;
-    background: linear-gradient(45deg, #1B2A40 20%, #15989D 80%);
+    background: #00969E;
     width: 113px;
     height: 38px;
     border-radius: 3px;

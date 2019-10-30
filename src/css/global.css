@@ -1,6 +1,6 @@
 /* common css ============================================== */
 
-body{margin:0 auto;	text-align:center; font-family:Helvetica,MEllePRC-Medium,tahoma,arial,\5b8b\4f53; font-size:12px; line-height:1.5; color:#455272; background-color:#fff; cursor:default;}
+body{margin:0 auto;	text-align:center; font-family:Helvetica,MEllePRC,tahoma,arial,\5b8b\4f53; font-size:12px; line-height:1.5; color:#455272; background-color:#fff; cursor:default;}
 
 div{text-align:left;}
 :focus{outline:none;}
@@ -69,6 +69,8 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 /* class css ============================ class css ======== */
 .fl{float:left; display:inline;}
 .fr{float:right;display:inline;}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
 
 .inblock{display:inline-block; width:0; height:0; overflow:hidden; text-indent:-20000px; vertical-align:middle; *text-indent:0; *font-size:0; *line-height:0;}
 
@@ -81,7 +83,11 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 .fz16{font-size:16px;}
 .fz24{font-size:24px;}
 .fb{font-weight:bold;}
-
+.ellipsis{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
 .col_180{width:180px;}
 .col_290{width:290px;}
 .col_720{width:720px;}
