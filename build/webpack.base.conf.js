@@ -1,8 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const glob = require('glob');
-//消除冗余的css
-const purifyCssWebpack = require('purifycss-webpack');
 // html模板
 const htmlWebpackPlugin = require('html-webpack-plugin');
 //静态资源输出
@@ -13,19 +11,11 @@ let getHtmlConfig = function(name, chunks) {
     return {
         template: `./src/pages/${name}/index.html`,
         filename: `${name}.html`,
-        // title: title,
         inject: true,
         hash: false, //开启hash  ?[hash]
 		chunks: chunks,
 		// 关闭
         minify: false,
-            // process.env.NODE_ENV === 'development'
-            //     ? false
-            //     : {
-            //           removeComments: true, //移除HTML中的注释
-            //           collapseWhitespace: true, //折叠空白区域 也就是压缩代码
-            //           removeAttributeQuotes: true, //去除属性引用
-            //       },
     };
 };
 
@@ -65,10 +55,6 @@ module.exports = {
                 ignore: ['.*'],
             },
         ]),
-        // 消除冗余的css代码
-        new purifyCssWebpack({
-            paths: glob.sync(path.join(__dirname, '../src/pages/*/*.html')),
-        }),
     ],
 };
 
