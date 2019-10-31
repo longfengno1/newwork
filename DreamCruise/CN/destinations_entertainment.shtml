@@ -1,0 +1,372 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 邮轮航线</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<!-- Scroll -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(2) > .nav-link').addClass('active');
+
+			$('#button-control-wrapper.dt-search-control input').click(function () {
+				$(this).parent('label').siblings().removeClass('active');
+				$(this).parent('label').addClass('active');
+			});
+		 
+			mobilemenu.init();
+
+			$('#button-control input[type="radio"]').change(function(){ 
+				addselection($(this));
+				var fname = $(this).attr('name');
+				$('#button-control input[name='+fname+']').parent('label').removeClass('active');
+				$(this).parent('label').addClass('active');
+			}).click(function(){
+				bindoption($(this));
+			});
+		});
+		
+
+		var mobilemenu = {
+			data: {
+				mobilebreakpoint: 768,
+				m_btncontrol: '#fullmenu input[type="radio"]',
+				dmlink: '.m_filterbtn a',
+				menuwrapper: '.menu-wrapper',
+				fullmenu: '#fullmenu',
+				fullwrapper: '#fullwrapper',
+				datepicker: '#datepicker'
+			},
+			init: function () {
+				$(mobilemenu.data.m_btncontrol).click(function () {
+					bindoption($(this), 'mobile');
+					$(this).closest('ul').find('label').removeClass('active');
+					$(this).parent('label').addClass('active');
+				});
+
+				$(mobilemenu.data.dmlink).click(function () {
+					binddropdown($(this));
+				});
+			},
+			popoverdate: function (type) {
+				var obj = $(mobilemenu.data.datepicker);
+				var currentval = obj.val();
+				if (type == 'mobile') {
+					obj.datepicker().destroy().datepicker({ uiLibrary: 'bootstrap4', locale: 'zh-cn', format: 'yyyy.mm.dd', modal: true, header: true }).datepicker().value(currentval).open();
+				} else {
+					obj.datepicker().destroy().datepicker({ uiLibrary: 'bootstrap4', locale: 'zh-cn', format: 'yyyy.mm.dd', modal: false, header: false }).datepicker().value(currentval);
+				}
+				filter.datepickerinit();
+			},
+			open: function (index) {
+				var cl_active = 'active';
+				$(this.data.fullwrapper).addClass(cl_active);
+				$(this.data.menuwrapper).removeClass(cl_active);
+				$(this.data.fullmenu).find('#' + index + '').addClass(cl_active);
+			},
+			close: function () {
+				$(this.data.fullwrapper).removeClass('active');
+			}
+		}
+
+		function addselection(obj) {
+			var el = $('#m_taglist');
+			var addname = obj.attr('name');
+			var addval = obj.val();
+			var template = '<a href="javascript:void(0)" data-name="' + addname + '" data-rel="' + addval + '" onclick="removetag($(this))" class="icon-tag">' + addval + '</a>';
+			el.find('a[data-name="' + addname + '"]').remove();
+			if (addval != '') {
+				el.append(template);
+			}
+		}
+		function removetag(obj) {
+			var _self = obj;
+			var addname = _self.attr('data-name');
+			var addval = _self.attr('data-rel');
+			$('#button-control input[name="' + addname + '"][value=""]').click();
+			obj.remove();
+		}
+		function bindoption(obj, type) {
+			var getname = obj.attr('name');
+			var getval = obj.val();
+			var getname2 = '';
+
+			if (type == 'mobile') {
+				getname2 = getname.replace('m_', '');
+				mobilemenu.close();
+			} else {
+				getname2 = 'm_' + getname;
+			}
+			$('input[name="' + getname2 + '"][value="' + getval + '"]').prop('checked', true).change();
+			$('input[name="' + getname2 + '"]').parent('label').removeClass('active');
+			$('input[name="' + getname2 + '"][value="' + getval + '"]').parent('label').addClass('active');
+		}
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="include/ssi/insidepage_banner.ssi" -->
+	<!-- Content -->
+	<section>
+		<div class="container py-5 position-static">
+			<div class="row d-md-none dc-dt-menu mb-3">
+				<div class="col-6 px-1 text-center"><a href="javascript:void(0)"
+						onclick="mobilemenu.open('m_food')"><img src="../images/destinations/icon_mobile_dinning.jpg">
+						<h3 class="mt-2">食物种类</h3>
+					</a></div>
+				<div class="col-6 px-1 text-center"><a href="javascript:void(0)"
+						onclick="mobilemenu.open('m_price')"><img src="../images/destinations/icon_mobile_price.jpg">
+						<h3 class="mt-2">價錢</h3>
+					</a></div>
+			</div>
+
+			<div id="m_taglist" class="d-md-none mb-3"></div>
+
+			<div id="button-control-wrapper" class="my-4 dt-search-control d-none d-md-block">
+				<table width="100%" id="button-control">
+					<tbody>
+						<tr>
+							<th><span class="icon-food">食物种类</span></th>
+							<td>
+								<label><input type="radio" name="food" value=""> 全部</label>
+								<label><input type="radio" name="food" value="中式"> 中式</label>
+								<label><input type="radio" name="food" value="東南亞"> 東南亞</label>
+								<label><input type="radio" name="food" value="日式/韓式"> 日式/韓式</label>
+								<label><input type="radio" name="food" value="多國菜"> 多國菜</label>
+								<label><input type="radio" name="food" value="甜品/小食"> 甜品/小食</label>
+								<label><input type="radio" name="food" value="套房專享"> 套房專享</label>
+								<label><input type="radio" name="food" value="池畔/户外"> 池畔/户外</label>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="icon-price">價錢</span></th>
+							<td>
+								<label><input type="radio" name="price" value=""> 全部</label>
+								<label><input type="radio" name="price" value="免費"> 免費</label>
+								<label><input type="radio" name="price" value="額外收費"> 額外收費</label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img4.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img
+										src="images/travel/icon-dining.jpg"></span>马克•贝斯特星厨</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img5.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img
+										src="images/travel/icon-dining.jpg"></span>马克•贝斯特星厨</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img6.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img src="images/travel/icon-rm.jpg"></span>马克•贝斯特星厨
+							</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img4.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img
+										src="images/travel/icon-dining.jpg"></span>马克•贝斯特星厨</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img5.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img
+										src="images/travel/icon-dining.jpg"></span>马克•贝斯特星厨</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img6.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img src="images/travel/icon-rm.jpg"></span>马克•贝斯特星厨
+							</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img4.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img
+										src="images/travel/icon-dining.jpg"></span>马克•贝斯特星厨</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img5.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img
+										src="images/travel/icon-dining.jpg"></span>马克•贝斯特星厨</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img6.jpg"
+							data-holder-rendered="true">
+						<div class="card-body pb-0">
+							<h3 class="card-title d-flex justify-content-center"><span
+									class="left-icons align-bottom"><img src="images/travel/icon-rm.jpg"></span>马克•贝斯特星厨
+							</h3>
+							<hr>
+							<p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<hr>
+							<div class="row">
+								<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+								<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+								<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+								<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- BookNow banner -->
+	<!--#include file="include/ssi/booknow_banner.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Full Menu -->
+	<!--#include file="include/ssi/fullmenu.ssi" -->
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Small Group Meetings | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/custom-style-2.css">
+	<!-- Cycle2 -->
+	<script src="include/js/cycle2/jquery.cycle2.min.js"></script>
+	<script src="include/js/cycle2/jquery.cycle2.scrollVert.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			initbanner();
+		});
+	</script>
+	<!-- JS validation  -->
+	<script src="include/js/jquery.validate.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			contactusvalidate();
+			careerswitch();
+		});
+
+		// Init validation features
+		function contactusvalidate() {
+			var formobj = $('#cu-form');
+			formobj.validate({
+				rules: {
+					'cu-email': {
+						email: true
+					}
+				}
+			});
+			$.validator.methods.email = function (value, element) {
+				return this.optional(element) || /[a-z]+@[a-z]+\.[a-z]+/.test(value);
+			}
+		}
+
+		// Switch Careers field
+		function careerswitch() {
+			var careerobj = $('#career-field');
+			var selectobj = $('#cu-form select[name="cu-it"]');
+			var careerval = 'issue_Recruit';
+
+			selectobj.change(function () {
+				var currentval = $(this).val();
+				if (currentval == careerval) {
+					$('#career-field').removeClass('d-none').addClass('d-block');
+				} else {
+					$('#career-field').removeClass('d-block').addClass('d-none');
+				}
+			});
+		}
+	</script>
+</head>
+
+<body id="small-meeting" class="insidepage insidepage-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+		<!-- Banner -->
+		<header>
+		</header>
+		<!-- Content -->
+		<section>
+			<div class="container pt-5 pb-5 smallmeeting-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Plan A Cruise">Plan A Cruise</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Meeting and Events">Meeting and Events</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Small Meeting</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">Small Group Meetings</h2>
+				<p>Two-night cruises are particularly an opportune choice to connect with your group of elites and together enjoy a short
+					but pampering holiday. Such sailing are perfect for:</p>
+				<table class="w-100 my-5">
+					<tbody>
+						<tr class="row d-md-table-row">
+							<td class="text-center col-6 col-md-auto d-block d-md-table-cell p-3 p-md-0 w-25 align-top"><img src="images/small-meeting/sgm-img1.png" alt="Incentive travel"><h4 class="mt-3 txt-sm-bold">Incentive travel</h4></td>
+							<td class="text-center col-6 col-md-auto d-block d-md-table-cell p-3 p-md-0 w-25 align-top"><img src="images/small-meeting/sgm-img2.png" alt="Team building"><h4 class="mt-3 txt-sm-bold">Team building</h4></td>
+							<td class="text-center col-6 col-md-auto d-block d-md-table-cell p-3 p-md-0 w-25 align-top"><img src="images/small-meeting/sgm-img3.png" alt="Business kick-off meeting"><h4 class="mt-3 txt-sm-bold">Business<br /> kick-off meeting</h4></td>
+							<td class="text-center col-6 col-md-auto d-block d-md-table-cell p-3 p-md-0 w-25 align-top"><img src="images/small-meeting/sgm-img4.png" alt="Management offsite meeting"><h4 class="mt-3 txt-sm-bold">Management<br /> offsite meeting</h4></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 class="section-header">Why Hold Your Small Meetings on Dream</h2>
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-venue.png"></span> Wide choice of meeting
+					venues
+				</h3>
+				<p>Dream Cruises can cater to different formats of meetings in terms of agenda, goals, and level of interaction your
+					need between your attendees.</p>
+				<!-- Small Meeting Banner -->
+				<!--#include file="include/ssi/smallmeeting_banner.ssi" -->
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-venue.png"></span> Round-the-clock facilities</h3>
+				<p>There is complete equipment and services at the ready, various team building venues to enjoy, and a dedicated staff
+					to make every aspect hassle-free.</p>
+				<!-- Small Meeting Banner -->
+				<!--#include file="include/ssi/smallmeeting_banner.ssi" -->	
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-venue.png"></span> Unique dining experience</h3>
+				<p>Guests are treated to a bery of cuisines, which you can enjoy in varoius locations on-board with generous views of
+					the sea.</p>
+				<!-- Small Meeting Banner -->
+				<!--#include file="include/ssi/smallmeeting_banner.ssi" -->
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-venue.png"></span> Night-time gathering</h3>
+				<p>Celebrate at sophisticated dringing lounges with fabulous evening shows.</p>
+				<!-- Small Meeting Banner -->
+				<!--#include file="include/ssi/smallmeeting_banner.ssi" -->
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-venue.png"></span> Bespoke services to fulfill
+					your group's particular needs</h3>
+				<p>Further enrich the experience by booking The Palace Suites, inclusive of butler concierge service that will arrange
+					activities and itineraries for you.</p>
+				<!-- Small Meeting Banner -->
+				<!--#include file="include/ssi/smallmeeting_banner.ssi" -->
+				<!-- Alubum -->
+				<!--#include file="include/ssi/album.ssi" -->
+			</div>
+		</section>
+		<section id="contact-us" class="pb-5">
+			<div class="container">
+				<h2 class="section-header">Request For Proposal</h2>
+
+				<form id="cu-form">
+					<div class="part-1">
+
+						<ul>
+							<li>
+								<label>*Mandatory</label>
+								<div class="panel">
+									<div class="col-full"></div>
+								</div>
+							</li>
+							<li>
+								<label>Name</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+											<input type="text" name="cu-name" placeholder="Name" required data-msg-required="Please enter name">
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Designation</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+											<input type="text" name="cu-designation" placeholder="Designation" required data-msg-required="Please enter designation">
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Company Name</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+											<input type="text" name="cu-companyname" placeholder="Company Name" required data-msg-required="Please enter company name">
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Company Address</label>
+								<div class="panel">
+									<div class="col-full">
+										<textarea rows="4" cols="20" name="cu-companyaddress" placeholder="Company Address"></textarea>
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Mobile Phone</label>
+								<div class="panel">
+									<div class="col-full">
+											<input type="text" name="cu-phone" placeholder="Mobile Phone" required data-msg-required="Please enter mobile phone">
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Email address</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<input type="text" name="cu-email" placeholder="Email address" required data-msg-required="Please enter email" data-msg-email="Please enter email in vaild format">
+									</div>
+								</div>
+							</li> 
+							<li>
+								<label>Regions</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<select name="cu-title" required data-msg-required="Please select regions">
+											<option selected="selected" value="">Choose your region</option>
+											<option value="CHN">China</option>
+											<option value="HKG">Hong Kong</option>
+											<option value="TWN">Taiwan</option>
+											<option value="AUS">Australia</option>
+											<option value="IND">India</option>
+											<option value="IDN">Indonesia</option>
+											<option value="JPN">Japan</option>
+											<option value="MYS">Malaysia</option>
+											<option value="PHL">Philippines</option>
+											<option value="SGP">Singapore</option>
+											<option value="KOR">South Korea</option>
+											<option value="THA">Thailand</option>
+											<option value="NZL">New Zealand</option>
+											<option value="USA">United States of America</option>
+											<option value="OTHERS">Others</option>
+										</select>
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>How do you know about Dream Cruises MICE information?</label>
+								<div class="panel">
+									<div class="col-full">
+										<input type="checkbox" id="ckbox_Website" /><label for="ckbox_Website" class="ml-1">Website/Enewsletter</label><br />
+										<input type="checkbox" id="ckbox_SocialMedia" /><label for="ckbox_SocialMedia" class="ml-1">Social Media</label><br />
+										<input type="checkbox" id="ckbox_Poster" /><label for="ckbox_Poster" class="ml-1">Poster and Leaflet</label><br />
+										<input type="checkbox" id="ckbox_OutdoorAdvertising" /><label for="ckbox_OutdoorAdvertising" class="ml-1">Outdoor Advertising/PR Publicity</label><br />
+										<input type="checkbox" id="ckbox_Friends" /><label for="ckbox_Friends" class="ml-1">Friends/Relatives</label><br />
+										<input type="checkbox" id="ckbox_Others" /><label for="ckbox_Others" class="ml-1">Others</label>
+									</div>
+								</div>
+							</li>
+                            <li>
+								<label>What kind of activities will you arrange on Dream Cruises?</label>
+								<div class="panel">
+									<div class="col-full">
+										<input type="checkbox" id="ckbox_Meeting" /><label for="ckbox_Meeting" class="ml-1">Meeting/Conference</label><br />
+										<input type="checkbox" id="ckbox_IncentiveTravel" /><label for="ckbox_IncentiveTravel" class="ml-1">Incentive Travel</label><br />
+										<input type="checkbox" id="ckbox_Exhibition" /><label for="ckbox_Exhibition" class="ml-1">Exhibition</label><br />
+										<input type="checkbox" id="ckbox_CorporateBanquet" /><label for="ckbox_CorporateBanquet" class="ml-1">Corporate Banquet</label><br />
+										<input type="checkbox" id="ckbox_Others2" /><label for="ckbox_Others2" class="ml-1">Others</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Verification code</label><span class="icon-require">*</span>
+								<div class="panel panel-captcha">
+									<div class="col-left">
+										<input type="text" class="cu-vc" required data-msg-required="Please enter verification code">
+									</div>
+
+									<div class="col-right">
+										<div class="captcha">
+											<img class="img-captcha" src="images/contact-us/img-captcha.png">
+											<a href="#"><img src="images/contact-us/btn-refresh.png"></a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<p>We are committed to protecting your Personal Information. Before you submit your enquiry, please view our <a href="#"
+								 target="_blank">Privacy Policy</a> .</p>
+							<div class="text-right"><button type="submit" class="dc-btn">SUMMIT</button></div>
+						</ul>
+
+					</div>
+				</form>
+
+				<div class="part-2">
+					<h3>Find Your Professional Event Planner</h3>
+					<ul>
+						<li>
+							<div class="col-left">Hong Kong (China)</div>
+							<div class="col-right"><a href="tel:852-2317-7711" class="txlink-white">+852-2317-7711</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Singapore</div>
+							<div class="col-right">
+								<a href="tel:65-6832-9842" class="txlink-white">+65-6832-9841</a><br />
+								<a href="tel:65-6832-9842" class="txlink-white">+65-6832-9842</a>
+							</div>
+						</li>
+
+						<li>
+							<div class="col-left">Penang (Malaysia)</div>
+							<div class="col-right"><a href="tel:604-2631-128" class="txlink-white">+604-2631-128</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Kuala Lumpur (Malaysia)</div>
+							<div class="col-right"><a href="tel:603-2302-1288" class="txlink-white">+603-2302-1288</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Mainland China</div>
+							<div class="col-right"><a href="tel:86-400-849-9848" class="txlink-white">+86-400-849-9848</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Australia / New Zealand</div>
+							<div class="col-right"><a href="tel:61-2-9212-6288" class="txlink-white">+61-2-9212-6288</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Ahmedabad (India)</div>
+							<div class="col-right"><a href="tel:91-79-2630-8099" class="txlink-white">+91-79-2630-8099</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Bangalore (India)</div>
+							<div class="col-right"><a href="tel:91-99-0096-3807" class="txlink-white">+91-99-0096-3807</a></div>
+						</li>
+						
+						<li>
+							<div class="col-left">Mumbai (India)</div>
+							<div class="col-right"><a href="tel:91-22-7100-2888" class="txlink-white">+91-22-7100-2888</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">New Delhi (India)</div>
+							<div class="col-right">
+								<a href="tel:91-11-4107-7900" class="txlink-white">+91-11-4107-7900</a><br />
+								<a href="tel:91-11-4107-7901" class="txlink-white">+91-11-4107-7901</a><br />
+								<a href="tel:91-11-4107-7902" class="txlink-white">+91-11-4107-7902</a>
+							</div>
+						</li>
+
+						<li>
+							<div class="col-left">Indonesia</div>
+							<div class="col-right">
+								<a href="tel:62-21-2992-2905" class="txlink-white">+62-21-2992-2905</a><br />
+								<a href="tel:62-21-2992-2928" class="txlink-white">+62-21-2992-2928</a>
+							</div>
+						</li>
+
+						<li>
+							<div class="col-left">Japan</div>
+							<div class="col-right"><a href="tel:81-3-6403-5188" class="txlink-white">+81-3-6403-5188</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Philippines</div>
+							<div class="col-right">
+								<a href="tel:63-2-8366-830" class="txlink-white">+63-2-8366-830</a><br />
+								<a href="tel:63-2-8366-831" class="txlink-white">+63-2-8366-831</a><br />
+								<a href="tel:63-2-8366-832" class="txlink-white">+63-2-8366-832</a>
+							</div>
+						</li>
+
+						<li>
+							<div class="col-left">Taiwan (China)</div>
+							<div class="col-right"><a href="tel:886-2-2175-9562" class="txlink-white">+886-2-2175-9562</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	<!-- BookNow banner -->
+	<!--#include file="include/ssi/booknow_banner.ssi" -->
+	<!-- Award -->
+	<!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

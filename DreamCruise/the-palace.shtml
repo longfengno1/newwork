@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>The Palace | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+</head>
+
+<body id="accommodations" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/itineraries/itineraries-banner2.png" alt="The Palace" class="img-responsive" />
+		<img src="images/itineraries/itineraries-banner2.png" alt="The Palace" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container itineraries-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Cruise Experience">Cruise Experience</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Accommodations & The Palace">Accommodations &amp; The Palace</a></li>
+					<li class="breadcrumb-item active" aria-current="page">THE PALACE</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">The Palace</h2>
+				<p>Imagine your dream vacation, multiply it by 10, and this journey will take you beyond even that! Each day you can
+					choose from a whopping 35 restaurants and bars serving up the finest Asian and international cuisines. One evening take
+					in a Las Vegas-calibre cabaret show and the next pull an all-nighter in Asia's iocnic Zouk beach club at sea. Dozens
+					of active sports include rock-climbing, waterslides and zip line, or you can experience the thrill of virtual reality
+					in high-speed driving simulators. To relax and recharge for more non-stop fun, you can visit a Western, Asian or medical
+					spa. There's such a wide array of activities to entertain your family and friends, this is a vacation they'll never
+					forget.
+				</p>
+				<div class="row my-5 mx-0 dc-gallery">
+					<div class="col-12 col-md-6 px-0">
+						<!-- Gallery -->
+						<!--#include file="include/ssi/gallery.ssi" -->
+					</div>
+					<div class="col-12 col-md-6 d-flex flex-column py-3 justify-content-center bg-light-blue">
+						<h3 class="txt-purple">Title</h3>
+						<p>Consists of the largest island in Thailand with 32 small islands, this is the perfect spot for sea, sun and sand.
+							It is a paradise for water sports loverss and let's get your swimsuit ready. Visit the bustling street markets to
+							experience the energetic soul of Phuket and check out the Old Town with over 100 years old Sino-colonial mansions
+							to uncover the historical side of Phuket.</p>
+					</div>
+				</div>
+
+				<div class="row my-5 mx-0 dc-gallery flex-row-reverse">
+					<div class="col-12 col-md-6 px-0">
+						<!-- Gallery -->
+						<!--#include file="include/ssi/gallery.ssi" -->
+					</div>
+					<div class="col-12 col-md-6 d-flex flex-column py-3 justify-content-center bg-light-blue">
+						<h3 class="txt-purple">Title</h3>
+						<p>Consists of the largest island in Thailand with 32 small islands, this is the perfect spot for sea, sun and sand.
+							It is a paradise for water sports loverss and let's get your swimsuit ready. Visit the bustling street markets to
+							experience the energetic soul of Phuket and check out the Old Town with over 100 years old Sino-colonial mansions
+							to uncover the historical side of Phuket.</p>
+					</div>
+				</div>
+
+				<div class="row my-5 mx-0 dc-gallery">
+					<div class="col-12 col-md-6 px-0">
+						<!-- Gallery -->
+						<!--#include file="include/ssi/gallery.ssi" -->
+					</div>
+					<div class="col-12 col-md-6 d-flex flex-column py-3 justify-content-center bg-light-blue">
+						<h3 class="txt-purple">Title</h3>
+						<p>Consists of the largest island in Thailand with 32 small islands, this is the perfect spot for sea, sun and sand.
+							It is a paradise for water sports loverss and let's get your swimsuit ready. Visit the bustling street markets to
+							experience the energetic soul of Phuket and check out the Old Town with over 100 years old Sino-colonial mansions
+							to uncover the historical side of Phuket.</p>
+					</div>
+				</div>
+		</section>
+		<!-- Award -->
+	    <!--#include file="include/ssi/award.ssi" -->
+	    <!-- Footer -->
+	    <!--#include file="include/ssi/footer.ssi" -->
+	    <!-- Cookies Popover -->
+	    <!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

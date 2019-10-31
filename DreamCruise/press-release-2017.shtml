@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Press Release | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<script>
+		$(document).ready(function () {
+			offerfilter();
+		});
+	</script>
+</head>
+
+<body id="offers" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/offers/offer-banner1.png" alt="Press Release" class="img-responsive" />
+		<img src="images/offers/offer-banner1.png" alt="Press Release" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container offers-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Media Center">Media Center</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Press Release</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<div class="dc-select-wrapper2 mb-3 d-inline-block position-relative">
+					<a href="javascript:void(0)" class="px-3 py-2 dc-selectbtn">2017</a>
+					<ul class="nav px-3 py-2 p-md-0 dc-selectlist">
+						<li class="nav-item mb-3">
+							<a class="mx-md-3" href="press-release-2018.html">2018</a>
+						</li>
+						<li class="nav-item mb-3">
+							<a class="mx-md-3" href="press-release-2017.html">2017</a>
+						</li>
+						<li class="nav-item mb-3">
+							<a class="mx-md-3" href="press-release-2016.html">2016</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Alubum with date -->
+				<!--#include file="include/ssi/album_wdate.ssi" -->
+
+
+		</section>
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

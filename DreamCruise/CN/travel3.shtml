@@ -1,0 +1,569 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 玩转邮轮</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function(){
+			$('#nav-menu .nav-item:eq(3) > .nav-link').addClass('active');
+		});
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="include/ssi/insidepage_banner.ssi" -->
+	<!-- Content -->
+		<section id="bg-ourships-sea" class="position-relative">
+			<div class="container pt-5 pb-5">
+				<h2 class="section-header">星梦邮轮<br />带着你的梦想起航</h2>
+				<div class="ships-slide">
+					<div class="panel-slide-item">
+						<div class="ship-detail">
+							<div class="row justify-content-between mb-0 mb-md-4">
+								<div class="col-7 col-md-6">
+									<h3>WORLD DREAM</h3>
+									<p>is a vessel for your dreams - it features all the comfort of authentic Asian hospitaity, combined with the finest
+										experiences from around the world.</p>
+								</div>
+								<div class="col-5 col-md-4 p-0">
+									<div class="row mx-0 my-3 ship-info">
+										<div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+											<h3><span>150,695</span><br />吨</h3>
+										</div>
+										<div class="col-12 col-md-6 text-center">
+											<h3><span>3,352</span><br />旅客</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p><a href="#" class="dc-btn" tabindex="0">了解更多</a></p>
+							<p><a href="#" class="dc-btn" tabindex="0">更多邮轮</a></p>
+						</div>
+						<div class="position-relative mb-5 mb-md-0">
+							<div id="icon-genting-dream" class="btn-overlay">
+								<a href="javascript:void(0)" id="btn-wd-icon1" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', '360']);"></a>
+								<a href="javascript:void(0)" id="btn-wd-icon2" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'ships'])"></a>
+								<a href="javascript:void(0)" id="btn-wd-icon3" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'video'])"></a>
+								<a href="javascript:void(0)" id="btn-wd-icon4" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'room'])"></a>
+								<a href="javascript:void(0)" id="btn-wd-icon5" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'slides'])"></a>
+								<a href="javascript:void(0)" id="btn-wd-icon6" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'sunbath'])"></a>
+								<a href="javascript:void(0)" id="btn-wd-icon7" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'dining'])"></a>
+								<a href="javascript:void(0)" id="btn-wd-icon8" class="btn-ourships d-md-none" onclick="ospopover.click(['WORLDDREAM'])"></a>
+								<img src="../images/genting-dream-icon.png" class="img-responsive" />
+								<img src="../images/genting-dream-icon_m.png" class="img-responsive mobile">
+							</div>
+							<img src="../images/world-dream.png" class="img-ship" />
+						</div>
+					</div>
+					<div class="panel-slide-item">
+						<div class="ship-detail">
+							<div class="row justify-content-between mb-0 mb-md-4">
+								<div class="col-7 col-md-6">
+									<h3>云顶梦号</h3>
+									<p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
+								</div>
+								<div class="col-5 col-md-4 p-0">
+									<div class="row mx-0 my-3 ship-info">
+										<div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+											<h3><span>150,695</span><br />吨</h3>
+										</div>
+										<div class="col-12 col-md-6 text-center">
+											<h3><span>3,352</span><br />旅客</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p><a href="#" class="dc-btn" tabindex="0">了解更多</a></p>
+							<p><a href="#" class="dc-btn" tabindex="0">更多邮轮</a></p>
+						</div>
+						<div class="position-relative mb-5 mb-md-0">
+							<div id="icon-genting-dream" class="btn-overlay">
+								<a href="javascript:void(0)" id="btn-gd-icon1" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', '360']);"></a>
+								<a href="javascript:void(0)" id="btn-gd-icon2" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'ships'])"></a>
+								<a href="javascript:void(0)" id="btn-gd-icon3" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'video'])"></a>
+								<a href="javascript:void(0)" id="btn-gd-icon4" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'room'])"></a>
+								<a href="javascript:void(0)" id="btn-gd-icon5" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'slides'])"></a>
+								<a href="javascript:void(0)" id="btn-gd-icon6" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'sunbath'])"></a>
+								<a href="javascript:void(0)" id="btn-gd-icon7" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'dining'])"></a>
+								<a href="javascript:void(0)" id="btn-gd-icon8" class="btn-ourships d-md-none" onclick="ospopover.click(['GENTINGDREAM'])"></a>
+								<img src="../images/genting-dream-icon.png" class="img-responsive" />
+								<img src="../images/genting-dream-icon_m.png" class="img-responsive mobile">
+							</div>
+							<img src="../images/genting-dream.png" class="img-ship" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Overlay -->
+			<div class="our-ship-overlay">
+					<div class="container p-0 p-md-3">
+						<div class="overlay-slide">
+							<!-- WORLDDREAM -->
+							<div class="overlay-slide-item WORLDDREAM 360">
+								<div class="slide-box">
+									<img src="../images/overlay-img1.png" />
+									<div class="p-3">
+										<p>Depart from the ordinary</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-vr">Virtual reality</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item WORLDDREAM 360">
+								<div class="slide-box">
+									<img src="../images/overlay-img1.png" />
+									<div class="p-3">
+										<p>Depart from the ordinary</p>
+										<p>Depart from the ordinary</p>
+										<p>Depart from the ordinary</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-vr">Virtual reality</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item WORLDDREAM sunbath">
+								<div class="slide-box">
+									<img src="../images/overlay-img2.png" />
+									<div class="p-3">
+										<p>Start a new family tradition</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-deck">Main pool deck</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item WORLDDREAM dining">
+								<div class="slide-box">
+									<img src="../images/overlay-img3.png" />
+									<div class="p-3">
+										<p>Explore the world one meal at a time</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-dinning">Dining</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item WORLDDREAM slides">
+								<div class="slide-box">
+									<img src="../images/overlay-img4.png" />
+									<div class="p-3">
+										<p>An endless assortment of fun activities</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item WORLDDREAM video">
+								<div class="slide-box">
+									<img src="../images/overlay-img4.png" />
+									<div class="p-3">
+										<p>An endless assortment of fun activities</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item WORLDDREAM room">
+								<div class="slide-box">
+									<img src="../images/overlay-img4.png" />
+									<div class="p-3">
+										<p>An endless assortment of fun activities</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item WORLDDREAM ships">
+								<div class="slide-box">
+									<img src="../images/overlay-img4.png" />
+									<div class="p-3">
+										<p>An endless assortment of fun activities</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+									</div>
+								</div>
+							</div>
+							<!-- GENTINGDREAM -->
+							<div class="overlay-slide-item GENTINGDREAM 360">
+								<div class="slide-box">
+									<img src="../images/overlay-img1.png" />
+									<div class="p-3">
+										<p>Depart from the ordinary</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-vr">Virtual reality</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item GENTINGDREAM sunbath">
+								<div class="slide-box">
+									<img src="../images/overlay-img2.png" />
+									<div class="p-3">
+										<p>Start a new family tradition</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-deck">Main pool deck</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item GENTINGDREAM dining">
+								<div class="slide-box">
+									<img src="../images/overlay-img3.png" />
+									<div class="p-3">
+										<p>Explore the world one meal at a time</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-dinning">Dining</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item GENTINGDREAM slides">
+								<div class="slide-box">
+									<img src="../images/overlay-img4.png" />
+									<div class="p-3">
+										<p>An endless assortment of fun activities</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item GENTINGDREAM video">
+								<div class="slide-box">
+									<img src="../images/overlay-img4.png" />
+									<div class="p-3">
+										<p>An endless assortment of fun activities</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item GENTINGDREAM room">
+								<div class="slide-box">
+									<img src="../images/overlay-img4.png" />
+									<div class="p-3">
+										<p>An endless assortment of fun activities</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="overlay-slide-item GENTINGDREAM ships">
+								<div class="slide-box">
+									<img src="../images/overlay-img4.png" />
+									<div class="p-3">
+										<p>An endless assortment of fun activities</p>
+										<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="text-center mb-0 mt-4"><a href="javascript:void(0)" class="dc-btn btn-overlay-close" tabindex="0">BACK</a></p>
+					</div>
+				</div>
+			<div id="panel-sea-bg"></div>
+		</section>
+		<section class="position-relative">
+			<div class="container px-0 px-md-3 py-5">
+				<h2 class="section-header">星梦“邮”记，多航线多玩法</h2>
+				<div class="panel-slide mt-4">
+					<div class="panel-slide-item">
+						<div class="row flex-md-row-reverse">
+							<div class="col-12 col-md-6 p-0">
+								<a href="#" class="w-100"><img src="images/big_promo.png" /></a>
+							</div>
+							<div class="col-12 col-md-6 p-0">
+								<div class="row item-offers">
+									<div class="col-5">
+										<div class="position-relative">
+											<img src="images/offer-img1.jpg" /><div class="icon-hot"><span>热门</span></div>
+										</div>
+									</div>
+									<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+										<div>
+											<h3>邂逅樱花，品棠梨煎雪</h3>
+											<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+										</div>
+										<div class="row m-0 mt-auto">
+											<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-location-grey mr-0 mr-md-3">香港出发</span><span
+												 class="icon-ship">云顶梦号</span></div>
+											<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+										</div>
+									</div>
+									<a href="javascript:void(0)" class="btn-offers"></a>
+								</div>
+
+								<div class="row item-offers">
+									<div class="col-5">
+										<div class="position-relative">
+											<img src="images/offer-img2.jpg" />
+											<div class="icon-discount"><span>50</span><span>%<br />OFF</span></div>
+										</div>
+									</div>
+									<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+										<div>
+											<h3>小小梦想家的快乐周末</h3>
+											<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+										</div>
+										<div class="row m-0 mt-auto">
+											<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-location-grey mr-0 mr-md-3">广州出发</span><span
+												 class="icon-ship">世界梦号</span></div>
+											<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+										</div>
+									</div>
+									<a href="javascript:void(0)" class="btn-offers"></a>
+								</div>
+
+								<div class="row item-offers">
+									<div class="col-5">
+										<div class="position-relative"><img src="images/offer-img3.jpg" /></div>
+									</div>
+									<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+										<div>
+											<h3>世界那么大，我想带爸爸妈妈去看看</h3>
+											<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+										</div>
+										<div class="row m-0 mt-auto">
+											<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-location-grey mr-0 mr-md-3">上海出发</span><span
+												 class="icon-ship">云顶梦号</span></div>
+											<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+										</div>
+									</div>
+									<a href="javascript:void(0)" class="btn-offers"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-slide-item">
+						<div class="row flex-md-row-reverse">
+							<div class="col-12 col-md-6 p-0">
+								<a href="#" class="w-100"><img src="images/big_promo.png" /></a>
+							</div>
+							<div class="col-12 col-md-6 p-0">
+								<div class="row item-offers">
+									<div class="col-5">
+										<div class="position-relative">
+											<img src="images/offer-img1.jpg" /><div class="icon-hot"><span>热门</span></div>
+										</div>
+									</div>
+									<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+										<div>
+											<h3>邂逅樱花，品棠梨煎雪</h3>
+											<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+										</div>
+										<div class="row m-0 mt-auto">
+											<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-location-grey mr-0 mr-md-3">香港出发</span><span
+												 class="icon-ship">云顶梦号</span></div>
+											<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+										</div>
+									</div>
+									<a href="javascript:void(0)" class="btn-offers"></a>
+								</div>
+
+								<div class="row item-offers">
+									<div class="col-5">
+										<div class="position-relative">
+											<img src="images/offer-img2.jpg" />
+											<div class="icon-discount"><span>50</span><span>%<br />OFF</span></div>
+										</div>
+									</div>
+									<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+										<div>
+											<h3>小小梦想家的快乐周末</h3>
+											<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+										</div>
+										<div class="row m-0 mt-auto">
+											<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-location-grey mr-0 mr-md-3">广州出发</span><span
+												 class="icon-ship">世界梦号</span></div>
+											<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+										</div>
+									</div>
+									<a href="javascript:void(0)" class="btn-offers"></a>
+								</div>
+
+								<div class="row item-offers">
+									<div class="col-5">
+										<div class="position-relative"><img src="images/offer-img3.jpg" /></div>
+									</div>
+									<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+										<div>
+											<h3>世界那么大，我想带爸爸妈妈去看看</h3>
+											<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+										</div>
+										<div class="row m-0 mt-auto">
+											<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-location-grey mr-0 mr-md-3">上海出发</span><span
+												 class="icon-ship">云顶梦号</span></div>
+											<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+										</div>
+									</div>
+									<a href="javascript:void(0)" class="btn-offers"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="text-center mt-4"><a href="#" class="dc-btn" tabindex="0">探索更多</a></p>
+			</div>
+		</section>
+		<section class="btm-space">
+			<div class="container position-static">
+				<h2 class="section-header">精美客房</h2>
+				<div class="row">
+				   <div class="col-12 col-md-4 my-2">
+				     <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img1.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-rm.jpg"></span>露台四人房</h3>
+						  <hr>
+						  <p class="card-text">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <hr>
+						  <div class="row">
+							<div class="col-6">面积：<span class="d-inline-block">56 - 80m<sup>²</sup></span></div>
+							<div class="col-6">容纳人数：<span class="d-inline-block">1- 4 人</span></div>
+							<div class="col-12">房型分布：<span class="d-inline-block">甲板11楼层</span></div>
+						  </div>
+						  </div>
+					 </div>
+				   </div>
+				   <div class="col-12 col-md-4 my-2">
+				       <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img2.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-rm.jpg"></span>露台四人房</h3>
+						  <hr>
+						  <p class="card-text">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床 露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <hr>
+						  <div class="row">
+							<div class="col-6">面积：<span class="d-inline-block">56 - 80m<sup>²</sup></span></div>
+							<div class="col-6">容纳人数：<span class="d-inline-block">1- 4 人</span></div>
+							<div class="col-12">房型分布：<span class="d-inline-block">甲板11楼层</span></div>
+						  </div>
+						  </div>
+					 </div>
+				   </div>
+				   <div class="col-12 col-md-4 my-2">
+				      <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img3.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-dining.jpg"></span>露台四人房</h3>
+						  <hr>
+						  <p class="card-text">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <hr>
+						  <div class="row">
+							<div class="col-6">面积：<span class="d-inline-block">56 - 80m<sup>²</sup></span></div>
+							<div class="col-6">容纳人数：<span class="d-inline-block">1- 4 人</span></div>
+							<div class="col-12">房型分布：<span class="d-inline-block">甲板11楼层</span></div>
+						  </div>
+						  </div>
+					 </div>
+				   </div>
+				</div>
+				<p class="text-center mt-4"><a href="#" class="dc-btn" tabindex="0">探索更多</a></p>
+				<h2 class="section-header mt-5">美食餐饮</h2>
+				<div class="row">
+				   <div class="col-12 col-md-4 my-2">
+				     <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img4.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-dining.jpg"></span>马克•贝斯特星厨</h3>
+						  <hr>
+						  <p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <hr>
+						  <div class="row">
+							<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+							<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+							<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+							<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+						  </div>
+						  </div>
+					 </div>
+				   </div>
+				   <div class="col-12 col-md-4 my-2">
+				       <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img5.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-dining.jpg"></span>马克•贝斯特星厨</h3>
+						  <hr>
+						  <p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <hr>
+						  <div class="row">
+							<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+							<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+							<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+							<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+						  </div>
+						  </div>
+					 </div>
+				   </div>
+				   <div class="col-12 col-md-4 my-2">
+				      <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img6.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-rm.jpg"></span>马克•贝斯特星厨</h3>
+						  <hr>
+						  <p class="card-text">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <hr>
+						  <div class="row">
+							<div class="col-6">适用于：<span class="d-inline-block">云顶梦号</span></div>
+							<div class="col-6">餐饮种类：<span class="d-inline-block">午餐 / 晚餐</span></div>
+							<div class="col-6">餐厅种类：<span class="d-inline-block">自费</span></div>
+							<div class="col-6">预定：<span class="d-inline-block">需提前预定</span></div>
+						  </div>
+						  </div>
+					 </div>
+				   </div>
+				</div>
+				<p class="text-center mt-4"><a href="#" class="dc-btn" tabindex="0">探索更多</a></p>
+				<h2 class="section-header mt-5">娱乐盛宴</h2>
+				<div class="row">
+				   <div class="col-12 col-md-4 my-2">
+				     <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img7.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-et.jpg"></span>中国达人秀</h3>
+						  <hr>
+						  <p class="card-text">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。您可选择欣赏世界艺人的杂技表演。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <p class="card-text mt-1">适用于：<span class="d-inline-block">云顶梦号及世界梦号</span><br />门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+						</div>
+					 </div>
+				   </div>
+				   <div class="col-12 col-md-4 my-2">
+				       <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img8.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-et.jpg"></span>中国达人秀</h3>
+						  <hr>
+						  <p class="card-text">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。您可选择欣赏世界艺人的杂技表演。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <p class="card-text mt-1">适用于：<span class="d-inline-block">云顶梦号及世界梦号</span><br />门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+						</div>
+					 </div>
+				   </div>
+				   <div class="col-12 col-md-4 my-2">
+				      <div class="card border-0 h-100">
+						<img class="card-img-top rounded-0" src="images/travel/card-img9.jpg" data-holder-rendered="true">
+						<div class="card-body pb-0">
+						  <h3 class="card-title d-flex justify-content-center"><span class="left-icons align-bottom"><img src="images/travel/icon-et.jpg"></span>中国达人秀</h3>
+						  <hr>
+						  <p class="card-text">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。您可选择欣赏世界艺人的杂技表演。</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+						  <p class="card-text mt-1">适用于：<span class="d-inline-block">云顶梦号及世界梦号</span><br />门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+						</div>
+					 </div>
+				   </div>
+				</div>
+				<p class="text-center mt-4"><a href="#" class="dc-btn" tabindex="0">探索更多</a></p>
+			</div>
+	  </section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

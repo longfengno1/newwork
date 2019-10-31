@@ -1,0 +1,676 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Booking | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<script>
+		var numcontrol = {
+            el:{
+            	obj: '.num-control',
+            	btnin: '.btn-increase',
+            	btnde: '.btn-decrease',
+            	panel: '.num-panel',
+            	max: 999,
+            	min: 0
+            },
+            init: function(){
+            	var _self = this;
+            	$(_self.el.panel).change(function(){
+    				var current = $(this).val();
+					if(current > numcontrol.el.max){
+						$(this).val(numcontrol.el.max);
+					}
+				});
+				$(_self.el.btnin).click(function(){
+                    var current = $(this).siblings(numcontrol.el.panel).val();
+                    if(current < numcontrol.el.max){
+	                    current++;
+	                    $(this).siblings(numcontrol.el.panel).val(current);
+                    }
+				});
+				$(_self.el.btnde).click(function(){
+                    var current = $(this).siblings(numcontrol.el.panel).val();
+                    if(current > numcontrol.el.min){
+	                    current--;
+	                    $(this).siblings(numcontrol.el.panel).val(current);
+                    } 
+				});
+            }
+		}
+		var panelside = {
+			el:{
+				btn: '.btn-panel',
+				obj: '.float-panel'
+			},
+			init: function(){
+				$(this.el.btn).click(function(){
+					$(this).toggleClass('active');
+					$(panelside.el.obj).slideToggle();
+				});
+			}
+		}
+		var cabinadd = {
+			el:{
+				obj: '#booking-details .form-control',
+				list: '.item-cabin',
+				container: '.bg-grey2'
+			},
+			init: function(){
+                $(cabinadd.el.obj).change(function(){
+                    var current = $(this).val();
+                    $(this).closest(cabinadd.el.container).nextAll().slice(0, 10).hide();
+                    $(this).closest(cabinadd.el.container).nextAll().slice(0, current).show();
+                });
+			}
+		}
+  
+        $(document).ready(function(){
+        	panelside.init();
+        	cabinadd.init();
+            numcontrol.init();
+        });
+	</script>
+</head>
+
+<body id="destinations" class="insidepage insidepage-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+		<!-- Banner -->
+		<header>
+		</header>
+		<!-- Content -->
+		<section>
+			<div class="container pt-5 destinations-content">
+                <!-- Social Share  -->
+                <!--#include file="include/ssi/socialshare.ssi" -->
+				<div id="booking-details">
+					<div class="p-3 bg-dblue btm-border">
+						<div class="row mx-0">
+							<div class="col-12 col-md pb-2 pb-md-0"><span class="icon-packages">PACKAGES TITLE</span></div>
+							<div class="col"><span class="icon-departured">Departure Date: </span> <span>22 JUL, 2018</span></div>
+							<div class="col-auto col-md"><span class="icon-hkd">HKD</span> <span>0</span></div>
+							<div class="col-auto"><a href="javascript:void(0)" class="btn-panel"><img src="images/icon-arrow.png" /></a></div>
+						</div>
+						<!-- PANEL -->
+						<div class="position-absolute w-100 float-panel bg-dblue">
+							<div class="p-4">
+								<div class="row">
+									<div class="col-12 col-md-4">
+										<p><strong>Itinerary</strong>: Hong Kong - Nansha, Guangzhou - Naha - Miyakojima - Nansha, Guangzhou, Hong Kong</p>
+										<p><strong>Deporture Port</strong>: Hong Kong</p>
+										<p><strong>Destinations</strong>: Naha, Miyakojima</p>
+										<p><strong>Duration</strong>: 6D5N</p>
+										<p><strong>Ship</strong>: Genting Dream</p>
+										<hr />
+										<p><strong>Departure</strong><br />Date: 12 Oct, 2018<br />Time: 21:00<br />Port: Hong Kong</p>
+										<p><strong>Arrival</strong><br />Date: 12 Oct, 2018<br />Time: 21:00<br />Port: Hong Kong</p>
+									</div>
+									<div class="col-12 col-md-4">
+										<h3>POMOTION TITLE</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+									</div>
+									<div class="col-12 col-md-4"></div>
+								</div>
+								<hr>
+								<h3 class="text-right"><span class="d-inline-block">Total</span> <span>HKD 0</span></h3>
+							</div>
+						</div>
+					</div>
+					<div class="pt-md-4 bg-white" id="step-bar">
+						<div class="row mx-0 text-center grey-btm-border justify-content-center">
+	                       <div class="col-auto col-md px-2 py-3 bg-dblue btm-border"><span class="icon-num">1</span> Select Cabin</div>
+	                       <div class="col-auto col-md px-2 py-3"><span class="icon-num">2</span> <span class="d-none d-md-inline">Review Booking</span></div>
+	                       <div class="col-auto col-md px-2 py-3"><span class="icon-num">3</span> <span class="d-none d-md-inline">Guest Information</span></div>
+	                       <div class="col-auto col-md px-2 py-3"><span class="icon-num">4</span> <span class="d-none d-md-inline">Select Addon</span></div>
+	                       <div class="col-auto col-md px-2 py-3"><span class="icon-num">5</span> <span class="d-none d-md-inline">Payment</span></div>				
+						</div>
+					</div>
+					<div class="py-3 pb-md-0 pt-md-4 bg-grey1 text-md-center">
+						<div class="row mx-0">
+							<div class="col d-flex flex-column justify-content-center">
+								<div class="d-inline-block d-md-block">SELECT CABIN<span>(0)</span></div>
+								<div class="position-relative d-md-none mt-2">
+									<a href="javascript:void(0)" class="d-md-none px-3 py-2 dc-selectbtn">Inside From $4,000</a>
+									<ul class="nav nav-pills px-3 py-2 p-md-0 dc-selectlist" role="tablist">
+										<li class="nav-item mb-3 mb-md-0">
+											<a class="mx-md-3 active">Inside From $4,000</a>
+										</li>
+										<li class="nav-item mb-3 mb-md-0">
+											<a class="mx-md-3">Oceanview From $5,000</a>
+										</li>
+										<li class="nav-item mb-3 mb-md-0">
+											<a class="mx-md-3">Balcony From $6,000</a>
+										</li>
+										<li class="nav-item mb-3 mb-md-0">
+											<a class="mx-md-3">Balcony Deluxe From $7,000</a>
+										</li>
+										<li class="nav-item mb-3 mb-md-0">
+											<a class="mx-md-3">Suites* From $8,000</a>
+										</li>
+									</ul>
+							    </div>
+							</div>
+							<div class="d-none d-md-block col"><h4 class="btm-border">Inside<span>From $4,000</span></h4></div>
+							<div class="d-none d-md-block col"><h4>Oceanview<span>From $5,000</span></h4></div>
+							<div class="d-none d-md-block col"><h4>Balcony<span>From $6,000</span></h4></div>
+							<div class="d-none d-md-block col"><h4>Balcony Deluxe<span>From $7,000</span></h4></div>
+							<div class="d-none d-md-block col"><h4>Suites*<span>From $8,000</span></h4></div>
+						</div>	
+					</div>
+					<div class="row mx-0 px-md-3 pb-4 pt-md-4 bg-grey2 green-btm-border">
+						<div class="col-12 col-md-auto px-0 pr-md-3 pb-3 pb-md-0"><div class="position-relative"><div class="icon-hot"><span>HOT</span></div><img src="images/booking/rm_img1.jpg" class="w-100" /></div></div>
+						<div class="col">
+							<h3>OCEANVIEW STATEROOM</h3>                            
+	                            <table class="mb-3">
+									<tr>
+									  <th class="pr-3">Sleeps</th>	
+									  <td>2 passengers</td>
+									</tr>
+									<tr>
+									  <th class="pr-3">Cabin Size</th>	
+									  <td>20m<sup>2</sup></td>
+									</tr>
+								</table>
+							<p class="txt-purple">Last chance! Only 1 room left!</p>                     
+						</div>
+						<div class="col-3 pr-md-0">
+							<div class="row h-100">
+								<div class="col-12 col-md d-flex flex-column"><p class="mt-auto mb-0 txt-price"><i>from HKD</i><br><strike>4,000</strike><br /><span>4,000</span><br><i>per person<br />Based on Twin Occupancy</i></p></div>
+								<div class="col-auto d-flex flex-column justify-content-center mt-2 mt-md-0">
+									<select class="form-control">
+										<option value="0">0</option>
+									    <option value="1">1</option>
+									    <option value="2">2</option>
+									    <option value="3">3</option>
+									    <option value="4">4</option>
+									    <option value="5">5</option>
+									    <option value="6">6</option>
+									    <option value="7">7</option>
+									    <option value="8">8</option>
+									    <option value="9">9</option>
+									    <option value="10">10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 1</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 2</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 3</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 4</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 5</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 6</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 7</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 8</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 9</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 10</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="row mx-0 px-md-3 pb-4 pt-md-4 bg-grey2 green-btm-border">
+						<div class="col-12 col-md-auto px-0 pr-md-3 pb-3 pb-md-0"><div class="position-relative"><div class="icon-hot"><span>HOT</span></div><img src="images/booking/rm_img2.jpg" class="w-100" /></div></div>
+						<div class="col">
+							<h3>BALCONY STATEROOM</h3>                            
+	                            <table class="mb-3">
+									<tr>
+									  <th class="pr-3">Sleeps</th>	
+									  <td>2 passengers</td>
+									</tr>
+									<tr>
+									  <th class="pr-3">Cabin Size</th>	
+									  <td>20m<sup>2</sup></td>
+									</tr>
+								</table>                    
+						</div>
+						<div class="col-3 pr-md-0">
+							<div class="row h-100">
+								<div class="col-12 col-md d-flex flex-column"><p class="mt-auto mb-0 txt-price"><i>from HKD</i><br><strike>4,000</strike><br /><span>4,000</span><br><i>per person<br />Based on Twin Occupancy</i></p></div>
+								<div class="col-auto d-flex flex-column justify-content-center mt-2 mt-md-0">
+									<select class="form-control">
+										<option value="0">0</option>
+									    <option value="1">1</option>
+									    <option value="2">2</option>
+									    <option value="3">3</option>
+									    <option value="4">4</option>
+									    <option value="5">5</option>
+									    <option value="6">6</option>
+									    <option value="7">7</option>
+									    <option value="8">8</option>
+									    <option value="9">9</option>
+									    <option value="10">10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 1</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 2</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 3</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 4</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 5</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 6</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 7</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 8</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 9</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 10</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="row mx-0 px-md-3 pb-4 pt-md-4 bg-grey2">
+						<div class="col-12 col-md-auto px-0 pr-md-3 pb-3 pb-md-0"><div class="position-relative"><div class="icon-hot"><span>HOT</span></div><img src="images/booking/rm_img3.jpg" class="w-100" /></div></div>
+						<div class="col">
+							<h3>INTERIOR STATEROOM</h3>                            
+	                            <table class="mb-3">
+									<tr>
+									  <th class="pr-3">Sleeps</th>	
+									  <td>2 passengers</td>
+									</tr>
+									<tr>
+									  <th class="pr-3">Cabin Size</th>	
+									  <td>20m<sup>2</sup></td>
+									</tr>
+								</table>                  
+						</div>
+						<div class="col-3 pr-md-0">
+							<div class="row h-100">
+								<div class="col-12 col-md d-flex flex-column"><p class="mt-auto mb-0 txt-price"><i>from HKD</i><br><strike>4,000</strike><br /><span>4,000</span><br><i>per person<br />Based on Twin Occupancy</i></p></div>
+								<div class="col-auto d-flex flex-column justify-content-center mt-2 mt-md-0">
+									<select class="form-control">
+										<option value="0">0</option>
+									    <option value="1">1</option>
+									    <option value="2">2</option>
+									    <option value="3">3</option>
+									    <option value="4">4</option>
+									    <option value="5">5</option>
+									    <option value="6">6</option>
+									    <option value="7">7</option>
+									    <option value="8">8</option>
+									    <option value="9">9</option>
+									    <option value="10">10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 1</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 2</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 3</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 4</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 5</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 6</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 7</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 8</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 9</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="item-cabin p-4 bg-dblue">
+						<h3>CABIN 10</h3>
+						<div class="row cabin-control">
+							<div class="col-12 col-md d-flex flex-column justify-content-center"><strong>No. of passengers:</strong></div>
+							<div class="col">
+								<p class="mb-0">Adults<br />12-65</p>
+								<p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p>
+							</div>
+							<div class="col"><p class="mb-0">Childs<br />2-11</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Infant<br />0-2</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+							<div class="col"><p class="mb-0">Senior<br />66+</p><p class="mb-0"><label class="num-control"><a href="javascript:void(0)" class="btn-increase"></a><input type="text" value="0" class="num-panel" /><a href="javascript:void(0)" class="btn-decrease"></a></label></p></div>
+						</div>
+					</div>
+					<div class="p-3 bg-white mt-2">
+						<p><label class="mb-0"><input type="checkbox" /> Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</label></p>
+						<p class="text-center"><a href="#" class="dc-btn dc-btn-pattern mt-3 mt-md-0">Next: Review</a></p>
+					</div>
+				</div>	
+			</div>
+		</section>
+	<!-- Award -->
+  <!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

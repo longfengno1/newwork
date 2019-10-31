@@ -1,0 +1,29 @@
+<div class="panel-slide">
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner1" class="img-responsive" />
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner1" class="img-responsive mobile" />
+	</div>
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner2" class="img-responsive" />
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner2" class="img-responsive mobile" />
+		<div class="video-thumbnail"></div>
+		<div class="dc-video hide">
+			<video muted="" loop controls controlsList="nodownload" disablePictureInPicture class="hascontrol">
+				<source src="/campaign-sandbox/DreamCruise/video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner3" class="img-responsive" />
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner3" class="img-responsive mobile" />
+	</div>
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner4" class="img-responsive" />
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner4" class="img-responsive mobile" />
+	</div>
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner5" class="img-responsive" />
+		<img src="/campaign-sandbox/DreamCruise/images/cruise-experience/slider-banner.png" alt="Banner5" class="img-responsive mobile" />
+	</div>
+	<a href="javascript:void(0)" class="btnlightbox">Zoom</a>
+</div>

@@ -1,0 +1,635 @@
+.icon-location-grey:before{
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 21px;
+	background: url(../../images/icon-location-grey.png) no-repeat center;
+	margin-right: 5px;
+}
+.icon-offer:before{
+	content: '';
+	display: inline-block;
+	width: 19px;
+	height: 22px;
+	background: url(../../images/icon-offer.png) no-repeat center;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+.icon-hot-offer:before{
+	content: '';
+	display: inline-block;
+	width: 17px;
+	height: 22px;
+	background: url(../../images/icon-hot-offer.png) no-repeat center;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+.icon-vip:before{
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 22px;
+	background: url(../../images/icon-vip.jpg) no-repeat center;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+.icon-child:before{
+	content: '';
+	display: inline-block;
+	width: 19px;
+	height: 20px;
+	background: url(../../images/icon-child.jpg) no-repeat center;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+.icon-calc:before{
+	content: '';
+	display: inline-block;
+	width: 21px;
+	height: 29px;
+	background: url(../../images/icon-calc.jpg) no-repeat center;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+.icon-view:before{
+	content: '';
+	display: inline-block;
+	width: 26px;
+	height: 18px;
+	background: url(../../images/icon-view.png) no-repeat center;
+	margin-right: 5px;
+	vertical-align: text-bottom;
+}
+.icon-tag{
+	padding: 0px 2px;
+	border: solid 1px #15989D;
+	color: #15989D;
+	border-radius: 3px;
+	margin: 3px;
+	display: inline-block;
+}
+.icon-day{
+	background: #15989D;
+    color: #FFFFFF;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0px 6px;
+}
+/* DC Banner */
+/*
+#dc-banner {
+	padding-top: 96px;
+}
+*/
+#dc-banner .slick-dots{
+	bottom:30%;
+}
+.banner-content{
+	top: 40%;
+}
+
+/* Itineraries */
+.item-itineraries p{
+	margin-bottom: 0.5rem;
+}
+.icon-hot{
+	font-size: 1.3rem;
+}
+.icon-hot span{
+	bottom:3px;
+	left: 5px;
+}
+.icon-hot span::first-letter{
+    font-size: 2rem;
+}
+.icon-discount{
+	width: 90px;
+	padding: 0px;
+}
+.icon-discount span{
+	position: absolute;
+    bottom: 3px;
+	left: 30px;
+	line-height: 18px;
+}
+.icon-discount span:first-child{
+	left: 5px;
+	line-height: normal;
+}
+.txt-price{
+	color: #16979C;
+	text-align: right;
+}
+.icon-gift:before{
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background:url(../../images/icon-gift.png) no-repeat;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+.icon-time:before{
+	content: '';
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background:url(../../images/icon-time.png) no-repeat;
+	vertical-align: text-bottom;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+.icon-ship_large:before{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 29px;
+	background:url(../../images/icon-ship_large.png) no-repeat;
+	vertical-align: text-bottom;
+	margin-right: 3px;
+}
+.icon-gift_large:before{
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background:url(../../images/icon-gift_large.png) no-repeat;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+.icon-map_large:before{
+	content: '';
+	display: inline-block;
+	width: 27px;
+	height: 25px;
+	background:url(../../images/icon-map_large.png) no-repeat;
+	vertical-align: text-bottom;
+	margin-right: 5px;
+}
+.icon-ship_large.active:before{
+	background-image:url(../../images/icon-ship_large_dark.png);
+}
+.icon-gift_large.active:before{
+	background-image:url(../../images/icon-gift_large_dark.png);
+}
+.icon-map_large.active:before{
+	background-image:url(../../images/icon-map_large_dark.png);
+}
+/* hz slide */
+.donslide .donitem {
+	z-index: 5;
+}
+.donslide-content{
+	transform: translateY(100%)  translateY(54px);
+}
+.donslide-content .icon-hot{
+    bottom: calc(100% + 4px);
+    font-size: 0.8rem;
+}
+.donslide-content .icon-hot span::first-letter{
+    font-size: 1.3rem;
+}
+.don-extend-panel .txt-price{
+	border-left: solid 1px #13989D;
+}
+.don-extend-panel span.item-info{
+    display: block;
+}
+.btn-donpopover{
+	z-index: 3;
+}
+#bg-our-destinations{
+	top:auto;
+	bottom:-23%;
+	z-index: 6;
+}
+#bg-onboard-ribbon{
+	position: absolute;
+	background:url(../../images/ribbon.png) no-repeat;
+	width: 100%;
+	padding-top: 30%;
+	bottom: 5.5%;
+    pointer-events: none;
+    background-size:100%;
+}
+/* Calendar */
+.dc-calendar .fc-row{
+	background-color: #FAFEFF;
+}
+.dc-calendar .fc-day-header{
+  border:none;
+  background-color: #E3F3F2;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+.dc-calendar .fc-day-header.fc-sun,
+.dc-calendar .fc-day-header.fc-sat,
+.dc-calendar .fc-sun .fc-day-number,
+.dc-calendar .fc-sat .fc-day-number{
+  color: #F17671;
+}
+.dc-calendar .fc-day-top,
+.dc-calendar .fc-event-container{
+  padding: 5px;
+}
+.dc-calendar .fc-event-container{
+  padding: 0 5px;
+}
+.dc-calendar .fc-more-cell{
+  text-align: right;
+  padding: 5px;
+}
+.dc-calendar .fc-popover{
+  margin-left: -5px;
+}
+.dc-calendar.fc-ltr .fc-basic-view .fc-day-top .fc-day-number{
+  float: left;
+  font-size: 1.2em;
+}
+.dc-calendar .fc-prev-button,
+.dc-calendar .fc-next-button{
+  border:none;
+  background:none;
+  box-shadow: none;
+  background:url('../../images/itineraries/btn-arrow-left-green.png') no-repeat center;
+}
+.dc-calendar .fc-prev-button{
+  margin-right: 1em;
+}
+.dc-calendar .fc-next-button{
+  background-image:url('../../images/itineraries/btn-arrow-right-green.png');
+  margin-left: 1em;
+}
+.dc-calendar .fc-icon-left-single-arrow:after,
+.dc-calendar .fc-icon-right-single-arrow:after{
+  display: none;
+}
+.dc-calendar .fc-center h2,
+.dc-calendar .fc-left h2{
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #334259;
+}
+.dc-calendar .fc-widget-content{
+  position: relative;
+}
+.dc-calendar .highlight-hot{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  right: 0;
+  border:2px solid #9A509D;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+}
+.dc-calendar .txt-price{
+  text-align: right;
+  font-style: italic;
+  color: #212529;
+}
+.dc-calendar .txt-price span{
+  /* display: block; */
+  color: #16979C;
+  font-style: normal;
+}
+.dc-calendar .txt-desc{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.dc-calendar .fc-more-popover .txt-desc{
+  text-align: left;
+}
+.dc-calendar .fc-more-popover .row{
+  margin-bottom: 20px;
+}
+.dc-calendar .fc-more-popover .row:last-child{
+  margin-bottom: 0;
+}
+.dc-calendar .txt-soldout{
+  text-align: center;
+  color: #76757A;
+  font-size: 1.3em;
+}
+.dc-calendar .row{
+  flex-direction: column;
+}
+.dc-calendar .fc-week{
+  padding-bottom: 25px;
+}
+.dc-calendar .fc-more-popover .col-12{
+  flex: 0 0 50%;
+  align-items: center;
+  display: flex;
+}
+.dc-calendar .row > div{
+  flex: 0 0 auto;
+}
+.dc-calendar .fc-more-popover .row{
+  flex-direction: row;
+}
+.dc-calendar .fc-more-popover .row > div{
+  flex: 0 0 50%;
+}
+.dc-calendar .btn-right,
+.dc-calendar .btn-left{
+  display: none;
+}
+.calendar-popover .arrow:after{
+  border-bottom-color: #16979C;
+}
+.calendar-popover .popover-header{
+  background-color: #16979C;
+  color: #FFFFFF;
+}
+.calendar-popover .popover-header:before{
+  border-bottom: 1px solid #16979C;
+}
+/* Tips */
+#tips-wrapper{
+  position: relative;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,248,248,1) 50%, rgba(229,243,244,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(238,248,248,1) 50%,rgba(229,243,244,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(238,248,248,1) 50%,rgba(229,243,244,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5f3f4',GradientType=0 ); /* IE6-9 */
+}
+#tips-wrapper:before,
+#tips-wrapper:after{
+  content:'';
+  display: block;
+  width: 74px;
+  height: 378px;
+  position: absolute;
+  left: -74px;
+  top:0;
+  background-image: url(../../images/tips-bg_left.png);
+  background-repeat: no-repeat;
+}
+#tips-wrapper:after{
+  left: auto;
+  right: -74px;
+  background-image: url(../../images/tips-bg_right.png);
+}
+#tips-wrapper .slick-prev{
+  left: -10%;
+  background-image: url(/campaign-sandbox/DreamCruise/images/arrow_left.png);
+}
+#tips-wrapper .slick-next{
+  right: -10%;
+  background-image: url(/campaign-sandbox/DreamCruise/images/arrow_right.png);
+}
+.tips-slide{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.tips-item{
+  text-align: center;
+}
+.tips-box{
+  display: inline-block;
+}
+.tips-box h3{
+  color: #FFFFFF;
+  background-color:#21334E;
+  padding: 0.5rem;
+}
+/* Floatbtn */
+#floatbtn{
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background: rgb(89,77,105); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(89,77,105,0.9) 0%, rgba(92,96,117,0.9) 50%, rgba(93,101,121,0.9) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(89,77,105,0.9) 0%,rgba(92,96,117,0.9) 50%,rgba(93,101,121,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(89,77,105,0.9) 0%,rgba(92,96,117,0.9) 50%,rgba(93,101,121,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#594d69', endColorstr='#5d6579',GradientType=0.9 ); /* IE6-9 */
+}
+#floatbtn ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#floatbtn ul li + li{
+  border-top:solid 1px #9D9BA9;
+}
+#floatbtn ul li a{
+  padding: 5px;
+  color: #B8E0E1;
+}
+#floatbtn ul li:last-child a:before{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url(../../images/btn_arrow_top_blue.png) no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+#dc-hp-menu > div + div{
+  border-left: solid 1px #58BCBC;
+}
+#dc-hp-menu h3{
+  font-size: 1.3em;
+}
+#mobile-menu-bg{
+  background: url(../../images/mobile-menu-bg.png) no-repeat;
+  position: absolute;
+  padding-top: 20%;
+  bottom: 100%;
+  width: 100%;
+  background-size: 100%;
+  pointer-events: none;
+}
+/* Filter Button */
+.m_filterbtn.dc-select-wrapper .dc-selectlist{
+  width: calc(100% - 30px);
+}
+.m_filterbtn.dc-select-wrapper{
+  min-width:auto;
+}
+.gj-picker-bootstrap table tr td div, 
+.gj-picker-bootstrap table tr th div{
+  width: 42px;
+}
+.popover{
+  max-width: 100%;
+}
+/* Select Style2 */
+.dc-select-wrapper2{
+  min-width: 200px;
+}
+.dc-select-wrapper2 .dc-selectlist,
+.dc-select-wrapper2  .dc-selectbtn {
+  background-color: #f2f9f9;
+}
+.dc-select-wrapper2 .dc-selectbtn {
+  color: #334259;
+  text-decoration: none;
+  font-weight: normal;
+  display: block;
+  position: relative;
+}
+.dc-select-wrapper2 .dc-selectbtn:after {
+  content: '';
+  display: inline-block;
+  width: 19px;
+  height: 11px;
+  background: url(/campaign-sandbox/DreamCruise/images/arrow_bottom_green.png) no-repeat;
+  top: 14px;
+  position: absolute;
+  right: 10px;
+}
+.dc-select-wrapper2 .dc-selectlist a:before,
+.dc-select-wrapper2 .dc-selectlist a:after{
+  display: none;
+}
+.dc-select-wrapper2 .dc-selectlist {
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.dc-select-wrapper2 .dc-selectlist.active {
+  display: block;
+}
+@media (max-width: 768px) {
+	#bg-our-destinations{
+		top:auto;
+		bottom: -5%;
+	}
+	#dc-banner .slick-dots{
+    bottom:24%;
+	}
+	/* Calendar */
+	#calendar{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	#calendar  > .row{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.dc-calendar .fc-day-top{
+		padding: 0 5px;
+		font-size: 0.8em;
+	}
+	.dc-calendar .icon-hot{
+		background-color: #9A509D;
+		background-image:none;
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
+	.dc-calendar .icon-hot span{
+		position: static;
+	}
+	.dc-calendar .txt-price,
+	.dc-calendar .txt-soldout,
+	.dc-calendar .fc-more{
+		font-size: 2.5vmin;
+		line-height: normal;
+		text-align: center;
+	}
+	.dc-calendar .fc-basic-view .fc-day-number{
+		padding: 2px 0;
+	}
+	.dc-calendar .fc-more-cell{
+        text-align: center;
+	}
+	.dc-calendar .highlight-hot{
+		border-width: 1px;
+	}
+	.dc-calendar .fc-more-popover .txt-price,
+	.dc-calendar .fc-more-popover .txt-soldout{
+        text-align: right;
+	}
+
+	.dc-calendar .fc-view > table {
+		overflow-x: auto;
+		display: block;
+	}
+	.dc-calendar .fc-view > table > .fc-head,
+	.dc-calendar .fc-view > table > .fc-body{
+		width: 175%;
+		display: block!important;
+	}
+	.dc-calendar .fc-day-header.fc-wed{
+		position: relative;
+	}
+	.dc-calendar .btn-right,
+	.dc-calendar .btn-left{
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-weight: bold;
+		color: #16979C;
+		cursor: pointer;
+		text-decoration: none;
+		text-indent: -9999px;
+		background: url(../../images/itineraries/btn-arrow-right-green.png) no-repeat center;
+		width: 11px;
+		height: 18px;
+		opacity: 0;
+		padding: 5px;
+	}
+	.dc-calendar .btn-left{
+		right: -20px;
+		background-image: url(../../images/itineraries/btn-arrow-left-green.png);
+	}
+	.dc-calendar .btn-right.show,
+	.dc-calendar .btn-left.show{
+		opacity: 1;
+		transition: 0.3s ease-in-out all;
+	}
+	#bg-onboard-ribbon{
+		bottom:0;
+	}
+	.popover{
+		max-width: 90%;
+	}
+	.mall-list h3{
+		font-size: 1.3em;
+	}
+	.comment-control a{
+		text-decoration: none;
+	}
+	.comment-control .active{
+		color: #15989d;
+	}
+	#bg-ourships-sea .slick-arrow:not(.slick-disabled){
+		display: block!important;
+	}
+	#bg-ourships-sea .slick-arrow{
+		top: auto;
+    	bottom: 0;
+		transform: none;
+		left: 0;
+	}
+	#bg-ourships-sea .slick-arrow.slick-next{
+		left: auto;
+		right: 0;
+	}
+	/* Flex Order */
+	.flex-order-1{ order:1; }
+	.flex-order-2{ order:2; }
+	.flex-order-3{ order:3; }
+	.flex-order-4{ order:4; }
+	.flex-order-5{ order:5; }
+}
+

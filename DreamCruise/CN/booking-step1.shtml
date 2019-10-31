@@ -1,0 +1,940 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Booking</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/booking.css">
+	<!-- JS validation  -->
+	<script src="../include/js/jquery.validate.min.js"></script>
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(6) > .nav-link').addClass('active');
+
+			$('.booking-header .row .row > div').not(':first').hide();
+			$('.icon-list li:eq(0)').addClass('active');
+
+			/* Slider */
+			$('.slider_view').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				fade: true,
+				asNavFor: '.slider_nav'
+			});
+			$('.slider_nav').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				asNavFor: '.slider_view',
+				dots: false,
+				focusOnSelect: true
+			});
+
+			$('.rm-lightbox').on('shown.bs.modal', function (e) {
+				$(this).find('.slider_view, .slider_nav').slick('resize');
+			});
+
+			/* Number input control */
+			$('.btn-number').click(function (e) {
+				e.preventDefault();
+
+				fieldName = $(this).attr('data-field');
+				type = $(this).attr('data-type');
+				var input = $("input[name='" + fieldName + "']");
+				var currentVal = parseInt(input.val());
+				if (!isNaN(currentVal)) {
+					if (type == 'minus') {
+
+						if (currentVal > input.attr('min')) {
+							input.val(currentVal - 1).change();
+						}
+						if (parseInt(input.val()) == input.attr('min')) {
+							$(this).attr('disabled', true);
+						}
+
+					} else if (type == 'plus') {
+
+						if (currentVal < input.attr('max')) {
+							input.val(currentVal + 1).change();
+						}
+						if (parseInt(input.val()) == input.attr('max')) {
+							$(this).attr('disabled', true);
+						}
+
+					}
+				} else {
+					input.val(0);
+				}
+
+                counttotal(this);
+			});
+			$('.input-number').focusin(function () {
+				$(this).data('oldValue', $(this).val());
+			});
+			$('.input-number').change(function () {
+
+				minValue = parseInt($(this).attr('min'));
+				maxValue = parseInt($(this).attr('max'));
+				valueCurrent = parseInt($(this).val());
+
+				name = $(this).attr('name');
+				if (valueCurrent >= minValue) {
+					$(this).parent().find(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+				} else {
+					alert('Sorry, the minimum value was reached');
+					$(this).val($(this).data('oldValue'));
+				}
+				if (valueCurrent <= maxValue) {
+					$(this).parent().find(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+				} else {
+					alert('Sorry, the maximum value was reached');
+					$(this).val($(this).data('oldValue'));
+				}
+
+				counttotal(this);
+			});
+			$(".input-number").keydown(function (e) {
+				// Allow: backspace, delete, tab, escape, enter and .
+				if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+					// Allow: Ctrl+A
+					(e.keyCode == 65 && e.ctrlKey === true) ||
+					// Allow: home, end, left, right
+					(e.keyCode >= 35 && e.keyCode <= 39)) {
+					// let it happen, don't do anything
+					return;
+				}
+				// Ensure that it is a number and stop the keypress
+				if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+					e.preventDefault();
+				}
+			});
+
+			$('.label-offer').click(function () {
+				$(this).parents('.nav-item').find('.navoverlay').removeClass('d-none');
+			});
+			$('.btn-overlay_close').click(function () {
+				$(this).parents('.navoverlay').addClass('d-none');
+			});
+		});
+
+		function counttotal(obj){
+			var current = $(obj).closest('.tab-pane').attr('id');
+			var total = 0;
+			$('#'+current+' .input-number').each(function(){
+                total += parseInt($(this).val());
+			});
+			if(total > 0){
+				 $('#'+current+'-tab').closest('.nav-item').find('.icon-num').show().html(total);
+			} else {
+				$('#'+current+'-tab').closest('.nav-item').find('.icon-num').hide();
+			}
+		}
+
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+		<!-- Booking header -->
+		<!--#include file="../include/ssi/booking/header.ssi" -->
+	</header>
+	<!-- Content -->
+	<section class="btm-space">
+		<div class="container py-5 position-static">
+			<!-- Step -->
+			<!--#include file="../include/ssi/booking/step-progress.ssi" -->
+			<h2 class="green-header txt-green">選擇房型</h2>
+			<hr class="green-bar" />
+			<div class="position-relative dc-tab-nav-wrapper">
+				<ul class="nav nav-pills mb-3 rm-thumbnail" id="pills-tab" role="tablist">
+					<li class="nav-item col">
+						<div class="bg-white p-3 pt-4">
+							<span class="icon-num">0</span>
+							<h4 class="section-header text-center mb-1">內側客房</h4>
+							<p class="txt-price text-center mb-0">低至 <span>3,180</span> 元/人</p>
+						</div>
+						<a class="btn-pop" href="javascript:void(0)" data-toggle="modal" data-target="#rm-popup1"><img
+								src="../images/booking/booking_flow/thumbnail1.jpg" /></a>
+						<a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab"
+							aria-controls="pills-1" aria-selected="true"></a>
+					</li>
+					<li class="nav-item col">
+						<div class="bg-white p-3 pt-4">
+							<span class="icon-num">0</span>
+							<h4 class="section-header text-center mb-1">海景客房</h4>
+							<p class="txt-price text-center mb-0">低至 <span>4,180</span> 元/人</p>
+						</div>
+						<a class="btn-pop" href="javascript:void(0)" data-toggle="modal" data-target="#rm-popup2"><img
+								src="../images/booking/booking_flow/thumbnail2.jpg" /></a>
+						<a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab"
+							aria-controls="pills-2" aria-selected="false">Profile</a>
+					</li>
+					<li class="nav-item col">
+						<div class="bg-white p-3 pt-4">
+							<span class="icon-num">0</span>
+							<h4 class="section-header text-center mb-1">露台客房</h4>
+							<p class="txt-price text-center mb-0">低至 <span>5,180</span> 元/人</p>
+						</div>
+						<a class="btn-pop" href="javascript:void(0)" data-toggle="modal" data-target="#rm-popup1"><img
+								src="../images/booking/booking_flow/thumbnail3.jpg" /></a>
+						<a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab"
+							aria-controls="pills-3" aria-selected="false">Contact</a>
+					</li>
+					<li class="nav-item col">
+						<div class="navoverlay d-none">
+							<div class="d-flex flex-column justify-content-center position-absolute p-3">
+								<a href="javascript:void(0)" class="btn-overlay_close"></a>
+								<h3>基本船费优惠</h3>
+								<p class="mb-0">由即日起至2020年4月，首两名入住豪華露台客房乘客可享85折基本船费优惠</p>
+							</div>
+						</div>
+						<div class="bg-white p-3 pt-4">
+							<span class="icon-num">0</span>
+							<a href="javascript:void(0)" class="label-offer">優惠</a>
+							<h4 class="section-header text-center mb-1">豪華露台客房</h4>
+							<p class="txt-price text-center mb-0">低至 <span>6,180</span> 元/人</p>
+						</div>
+						<a class="btn-pop" href="javascript:void(0)" data-toggle="modal" data-target="#rm-popup2"><img
+								src="../images/booking/booking_flow/thumbnail4.jpg" /></a>
+						<a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab"
+							aria-controls="pills-4" aria-selected="true">Home</a>
+					</li>
+					<li class="nav-item col">
+						<div class="bg-white p-3 pt-4">
+							<span class="icon-num">0</span>
+							<h4 class="section-header text-center mb-1">皇宮客房</h4>
+							<p class="txt-price text-center mb-0">低至 <span>8,180</span> 元/人</p>
+						</div>
+						<a class="btn-pop" href="javascript:void(0)" data-toggle="modal" data-target="#rm-popup1"><img
+								src="../images/booking/booking_flow/thumbnail5.jpg" /></a>
+						<a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab"
+							aria-controls="pills-5" aria-selected="false">Profile</a>
+					</li>
+					<li class="nav-item col">
+						<div class="bg-white p-3 pt-4">
+							<span class="icon-num">0</span>
+							<h4 class="section-header text-center mb-1">其他客房</h4>
+							<p class="txt-price text-center mb-0">低至 <span>7,180</span> 元/人</p>
+						</div>
+						<a class="btn-pop" href="javascript:void(0)" data-toggle="modal" data-target="#rm-popup2"><img
+								src="../images/booking/booking_flow/thumbnail6.jpg" /></a>
+						<a class="nav-link" id="pills-6-tab" data-toggle="pill" href="#pills-6" role="tab"
+							aria-controls="pills-6" aria-selected="false">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content tab-adjust" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+					<div class="rm-select p-3">
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">內側客房 - 雙人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[1]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[1]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[1]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">內側客房 - 三人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[2]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[2]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[2]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">內側客房 - 家庭房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[3]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[3]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[3]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+					<div class="rm-select p-3">
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">海景客房 - 雙人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[4]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[4]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[4]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">海景客房 - 三人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[5]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[5]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[5]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">海景客房 - 家庭房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[6]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[6]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[6]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+					<div class="rm-select p-3">
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">露台客房 - 雙人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[7]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[7]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[7]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">露台客房 - 三人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[8]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[8]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[8]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">露台客房 - 家庭房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[9]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[9]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[9]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+					<div class="rm-select p-3">
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">豪华露台客房 - 雙人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[10]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[10]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[10]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">豪华露台客房 - 三人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[11]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[11]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[11]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">豪华露台客房 - 家庭房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[12]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[12]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[12]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+					<div class="rm-select p-3">
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">皇宮套房 - 雙人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[13]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[13]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[13]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">皇宮套房 - 三人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[14]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[14]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[14]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">皇宮套房 - 家庭房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[15]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[15]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[15]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab">
+					<div class="rm-select p-3">
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">其他客房 - 雙人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[16]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[16]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[16]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0 mb-3">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">其他客房 - 三人房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[17]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[17]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[17]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx-0">
+							<div class="col p-3 bg-white">
+								<h2 class="txt-dark-blue">其他客房 - 家庭房</h2>
+								<p><strong class="txt-dark-blue">可住</strong> 1 - 2人</p>
+								<p><strong class="txt-dark-blue">面積</strong> 13m<sup>2</sup></p>
+								<p><a href="#" class="btn-arrow collapsed"><u>查看詳情</u></a></p>
+							</div>
+							<div class="col-auto p-3 bg-white">
+								<p class="txt-price mb-1"><span>$3,180</span> 元/人</p>
+								<p class="remark-red">最後一間</p>
+							</div>
+							<div class="col-12 col-md-auto p-3 bg-green">
+								<div class="input-group">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" disabled="disabled"
+											data-type="minus" data-field="quant[18]">
+											<span class="glyphicon glyphicon-minus"></span>
+										</button>
+									</span>
+									<input type="text" name="quant[18]" class="form-control input-number" value="0"
+										min="0" max="10">
+									<span class="input-group-btn">
+										<button type="button" class="btn btn-default btn-number" data-type="plus"
+											data-field="quant[18]">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="d-flex mt-4 justify-content-between"><a href="javascript:void(0)"
+					class="dc-btn back disabled">返回</a><a href="javascript:void(0)" class="dc-btn">下一步，填寫資料</a></p>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Room Popup -->
+	<div class="modal fade rm-lightbox" id="rm-popup1" tabindex="-1" role="dialog" aria-labelledby="rm-popup1"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered container" role="document">
+			<div class="modal-content rounded-0">
+				<div class="modal-header border-0 flex-column pb-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body pt-0">
+					<h2 class="section-header mb-1 text-left">海景客房 - 雙人房</h2>
+					<hr>
+					<div class="row">
+						<div class="col-12 col-md-7">
+							<div class="slider_view">
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+							</div>
+							<div class="slider_nav">
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+							</div>
+						</div>
+						<div class="col-12 col-md-5">
+							<p>此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。此客房位於5樓至12樓。
+							</p>
+							<p class="mb-1"><strong>客房設施</strong></p>
+							<ul>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade rm-lightbox" id="rm-popup2" tabindex="-1" role="dialog" aria-labelledby="rm-popup2"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered container" role="document">
+			<div class="modal-content rounded-0">
+				<div class="modal-header border-0 flex-column pb-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body pt-0">
+					<h2 class="section-header mb-1 text-left">其他客房 - 單人房</h2>
+					<hr>
+					<div class="row">
+						<div class="col-12 col-md-7">
+							<div class="slider_view">
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+							</div>
+							<div class="slider_nav">
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+								<div><img src="../images/booking/booking_flow/slider_img.jpg" /></div>
+							</div>
+						</div>
+						<div class="col-12 col-md-5">
+							<p>此客房位於6樓至19樓。</p>
+							<p class="mb-1"><strong>客房設施</strong></p>
+							<ul>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+								<li>茶/咖啡沖泡設備</li>
+								<li>迷你吧枱</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

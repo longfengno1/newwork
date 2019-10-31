@@ -3,14 +3,15 @@ const devMode = process.env.NODE_ENV !== 'production'
 const rules = [{
 		test: /\.(css|scss|sass)$/,
 		use: [
-			devMode ? 'style-loader' : {
-				loader: MiniCssExtractPlugin.loader,
-				options: {
-					// you can specify a publicPath here
-					// by default it use publicPath in webpackOptions.output
-					publicPath: '../'
-				}
-			},
+			// devMode ? 'style-loader' : {
+			// 	loader: MiniCssExtractPlugin.loader,
+			// 	options: {
+			// 		// you can specify a publicPath here
+			// 		// by default it use publicPath in webpackOptions.output
+			// 		publicPath: '../'
+			// 	}
+			// },
+			'style-loader',
 			'css-loader',
 			'postcss-loader',
 			'sass-loader',
@@ -27,7 +28,7 @@ const rules = [{
 			// 需要下载file-loader和url-loader
 			loader: "url-loader",
 			options: {
-				limit: 5 * 1024, //小于这个时将会已base64位图片打包处理
+				limit: 1024, //小于这个时将会已base64位图片打包处理
 				// 图片文件输出的文件夹
 				outputPath: "images",
 				name: "[name].[ext]"
@@ -48,14 +49,15 @@ const rules = [{
 	}, {
 		test: /\.less$/,
 		use: [
-			devMode ? 'style-loader' : {
-				loader: MiniCssExtractPlugin.loader,
-				options: {
-					// you can specify a publicPath here
-					// by default it use publicPath in webpackOptions.output
-					publicPath: '../'
-				}
-			},
+			// devMode ? 'style-loader' : {
+			// 	loader: MiniCssExtractPlugin.loader,
+			// 	options: {
+			// 		// you can specify a publicPath here
+			// 		// by default it use publicPath in webpackOptions.output
+			// 		publicPath: '../'
+			// 	}
+			// },
+			'style-loader',
 			'css-loader',
 			'postcss-loader',
 			'less-loader',

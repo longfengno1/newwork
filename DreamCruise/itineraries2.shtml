@@ -1,0 +1,249 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Itineraries | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+    <link rel="stylesheet" href="include/css/insidepage.css">
+    <!-- CSS Calendar  -->
+	<link rel="stylesheet" href="include/css/fullcalendar.min.css">
+	<!-- JS Calendar  -->
+	<script src="include/js/fullcalendar/moment.min.js"></script>
+	<script src="include/js/fullcalendar/fullcalendar.min.js"></script>
+	<script src="include/js/custom-calendar.js"></script>
+</head>
+
+<body id="itineraries" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/itineraries/itineraries-banner2.png" alt="2-NIGHT WEEKEND ESCAPE (HONG KONG, CHINA DEPARTURE)" class="img-responsive" />
+		<img src="images/itineraries/itineraries-banner2.png" alt="2-NIGHT WEEKEND ESCAPE (HONG KONG, CHINA DEPARTURE)" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container itineraries-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Plan Your Holiday">Plan Your Holiday</a></li>
+					<li class="breadcrumb-item"><a href="itineraries1.html" title="Itineraries">Itineraries</a></li>
+					<li class="breadcrumb-item active" aria-current="page">2-NIGHT WEEKEND ESCAPE (HONG KONG, CHINA DEPARTURE)</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">2-NIGHT WEEKEND ESCAPE<br />(HONG KONG, CHINA DEPARTURE)</h2>
+				<div class="row mt-3">
+					<div class="col-12 col-md-5">
+						<!-- Gallery -->
+						<!--#include file="include/ssi/gallery.ssi" -->
+					</div>
+					<div class="col-12 col-md-7 d-flex flex-column">
+						<table class="two-col-table">
+							<tr>
+								<td>
+									<p class="row mx-0"><span class="col-auto pl-0"><img src="images/itineraries/icon_steeringwheel.png"></span> <span
+										 class="col p-0">Hong Kong, China – Cruising Day – Hong Kong, China</span></p>
+								</td>
+								<td>
+									<p class="row mx-0"><span class="col-auto pl-0"><img src="images/itineraries/icon_cruise.png"></span> <span class="col p-0">World
+											Dream
+										</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="row mx-0"><span class="col-auto pl-0"><img src="images/itineraries/icon_departure.png"></span> <span class="col p-0">Hong
+											Kong / Guangzhou
+										</span>
+									</p>
+								</td>
+								<td>
+									<p class="row mx-0"><span class="col-auto pl-0"><img src="images/itineraries/icon_location.png"></span> <span class="col p-0">Hong
+											Kong
+										</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="row mx-0"><span class="col-auto pl-0"><img src="images/itineraries/icon_duration.png"></span> <span class="col p-0">2
+											nights, Fri – Sun</span></p>
+								</td>
+								<td>
+									<p class="row mx-0"><span class="col-auto pl-0"><img src="images/itineraries/icon_calendar.png"></span> <span class="col p-0">7Nov
+											2017 - 30Nov 2018
+										</span>
+									</p>
+								</td>
+							</tr>
+						</table>
+						<a href="#calendar" class="btn-mobile-award mt-auto collapsed" id="btn-calendar" data-toggle="collapse" aria-expanded="false"><strong>CALENDAR</strong></a>
+					</div>
+				</div>
+				<div id="calendar" class="collapse">
+					<div class="row mx-0 mb-3 justify-content-end">
+						<div class="col-auto">
+							<h3 class="itineraries-title mt-2">DEPARTURE PORT</h3>
+						</div>
+						<div class="col-auto p-0 dc-select-wrapper2">
+							<a href="javascript:void(0)" class="px-3 py-2 dc-selectbtn">HONG KONG</a>
+							<ul class="nav nav-pills px-3 py-2 p-md-0 dc-selectlist" role="tablist">
+								<li class="nav-item mb-3">
+									<a class="mx-md-3 active show" data-toggle="pill" href="#pills-hk" role="tab" aria-controls="pills-hk" aria-selected="true">HONG
+										KONG
+									</a>
+								</li>
+								<li class="nav-item mb-3">
+									<a class="mx-md-3" data-toggle="pill" href="#pills-gz" role="tab" aria-controls="pills-gz" aria-selected="false">GUNGZHOU</a>
+								</li>
+								<li class="nav-item mb-3">
+									<a class="mx-md-3" data-toggle="pill" href="#pills-sg" role="tab" aria-controls="pills-sg" aria-selected="false">SINGAPORE</a>
+								</li>
+							</ul>
+						</div>
+
+
+					</div>
+
+
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="pills-hk" role="tabpanel" aria-labelledby="pills-hk-tab">
+							<div class="dc-calendar" id="HK-Calendar"></div>
+						</div>
+						<div class="tab-pane fade" id="pills-gz" role="tabpanel" aria-labelledby="pills-gz-tab">
+							<div class="dc-calendar" id="GZ-Calendar"></div>
+						</div>
+						<div class="tab-pane fade" id="pills-sg" role="tabpanel" aria-labelledby="pills-sg-tab">
+							<div class="dc-calendar" id="SG-Calendar"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mt-5 position-relative">
+					<a href="javascript:void(0)" class="px-3 py-2 d-block d-md-none dc-tabbtn">PACKAGE OFFER</a>
+					<ul class="nav nav-pills dc-tab-nav" role="tablist">
+						<li class="nav-item">
+							<a class="active show" data-toggle="pill" href="#pills-packageoffer" role="tab" aria-controls="pills-packageoffer" aria-selected="false">PACKAGE
+								OFFER
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#pills-itinerarydetails" role="tab" aria-controls="pills-pills-itinerarydetails" aria-selected="false">ITINERARY
+								DETAILS
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#pills-excursion" role="tab" aria-controls="pills-excursion" aria-selected="true">EXCURSION</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#pills-faq" role="tab" aria-controls="pills-faq" aria-selected="true">FAQ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane p-3 fade show active" id="pills-packageoffer" role="tabpanel" aria-labelledby="pills-packageoffer-tab">
+						<div class="row">
+							<div class="col-12 col-md px-0 px-md-3">
+								<p>Book at least 30 days before sailing on a 5-night World Dream cruise to get 25% off 1st and 2nd pax fare. And
+									when booking for less than 30 days, 1st and 2nd pax fare still get 20% off.</p>
+								<p>You can also opt for 2-night cruise and get 25% off for 1st and 2nd pax. Book online now to get instant confirmation!</p>
+								<table>
+									<tr>
+										<td>Booking Period: </td>
+										<td class="px-3">Now until 22 Nov 2018</td>
+									</tr>
+									<tr>
+										<td>Sailing Period: </td>
+										<td class="px-3">31 Aug until 23 Nov 2018</td>
+									</tr>
+								</table>
+							</div>
+							<div class="col-12 col-md-auto px-0 px-md-3">
+								<table class="innertable mt-3 mt-md-0">
+									<tr>
+										<th>2018 Departure Dates</th>
+										<th>Starting Rate with Port Charges (twin sharing)</th>
+									</tr>
+									<tr>
+										<td width="50%">31 Aug</td>
+										<td rowspan="4">From HKD 2,090 per person</td>
+									</tr>
+									<tr>
+										<td>7, 14 , 21, 28 Sep</td>
+									</tr>
+									<tr>
+										<td>5, 12, 19, 26 Oct</td>
+									</tr>
+									<tr>
+										<td>2, 9, 16, 23 Nov</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane p-3 fade" id="pills-itinerarydetails" role="tabpanel" aria-labelledby="pills-itinerarydetails-tab">
+						<p>Itinerary Details</p>
+					</div>
+					<div class="tab-pane p-3 fade" id="pills-excursion" role="tabpanel" aria-labelledby="pills-excursion-tab">
+						<div class="row">
+							<div class="col-12 col-md-4">
+								<div class="position-relative">
+									<img src="images/itineraries/img-excursion.png" class="w-100" />
+									<div class="icon-hot"><span>HOT</span></div>
+								</div>
+							</div>
+							<div class="col-12 col-md-8 d-flex flex-column p-3">
+								<h3>Bespoke Journey - Bangkok (GDBKK80)</h3>
+								<p>Duration: Up to 10 hours
+									<br />Features: Customized
+									<br />Participants: Min. 2</p>
+								<div class="row justify-content-start justify-md-content-between mt-auto">
+									<div class="col-auto">
+										<div class="txt-price"><i>Adukt / HKD</i><br /><span>520</span></div>
+									</div>
+									<div class="col-auto border-left border-secondary">
+										<div class="txt-price"><i>Child / HKD</i><br /><span>320</span></div>
+									</div>
+									<div class="col-12 col-md mt-3 mt-md-0 text-left text-md-right"><a href="#" class="dc-btn" title="LEARN MORE">LEARN
+											MORE
+										</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane p-3 fade" id="pills-faq" role="tabpanel" aria-labelledby="pills-faq-tab">
+						<table>
+							<tr>
+								<td class="align-top" width="60"><img src="images/itineraries/icon-faq.png" /></td>
+								<td class="px-3 pb-3 align-middle">
+									<h3>Dress Code</h3>
+									<p>What's the best outfit for which activity onboard Dream Cruises? There are no strict dress codes, so you can
+										freely wear what's comfortable for you. Here's a handy guide for when in doubt.</p>
+								</td>
+							</tr>
+							<tr>
+								<td class="align-top"><img src="images/itineraries/icon-faq.png" /></td>
+								<td class="px-3 pb-3 align-middle">
+									<h3>Dress Code</h3>
+									<p>What's the best outfit for which activity onboard Dream Cruises? There are no strict dress codes, so you can
+										freely wear what's comfortable for you. Here's a handy guide for when in doubt.</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+		</section>
+		<!-- BookNow banner -->
+		<!--#include file="include/ssi/booknow_banner.ssi" -->
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

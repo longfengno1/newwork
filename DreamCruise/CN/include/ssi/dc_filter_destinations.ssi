@@ -1,0 +1,617 @@
+<script>
+  var data = [
+    {
+      Title: "新加坡惊喜之旅",
+      Image: "img1.jpg",
+      Sales: 300,
+      Price: 3300,
+      Rating: 5,
+      Destination: "新加坡",
+      Itinerary: ["香港", "香港", "香港"], 
+      Departure_port: "上海", 
+      Departure_date: "2019.05.24", 
+      Cruise: "世界梦号", 
+      Travel_day: "2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選", 
+      Offer: ["亲子游", "全家游"]
+    },
+    { 
+      Title: "那霸周末巡航", 
+      Image: "img2.jpg", 
+      Sales: 200, 
+      Price: 3000, 
+      Rating: 2, 
+      Destination: "新加坡", 
+      Itinerary: [], 
+      Departure_port: "广洲", 
+      Departure_date: "2019.05.23", 
+      Cruise: "云顶梦号", 
+      Travel_day: "2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選", 
+      Offer: ["全家游"] 
+    },
+    { 
+      Title: "巴生港饕餮盛宴", 
+      Image: "img3.jpg", 
+      Sales: 100, 
+      Price: 5500, 
+      Rating: 4, 
+      Destination: "泰国", 
+      Itinerary: ["香港", "香港", "香港"], 
+      Departure_port: "上海", 
+      Departure_date: "2019.05.25",  
+      Cruise: "云顶梦号", 
+      Travel_day: "2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選", 
+      Offer: ["周末游"] 
+    },
+    { 
+      Title: "苏梅假日派对", 
+      Image: "img1.jpg", 
+      Sales: 500, 
+      Price: 5700, 
+      Rating: 3, 
+      Destination: "中国香港", 
+      Itinerary: ["香港", "香港", "香港"], 
+      Departure_port: "上海", 
+      Departure_date: "2019.05.25", 
+      Cruise: "云顶梦号", 
+      Travel_day: "2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選", 
+      Offer: ["团队游"] 
+    },
+    { 
+      Title: "新加坡惊喜之旅", 
+      Image: "img2.jpg", 
+      Sales: 200, 
+      Price: 9900, 
+      Rating: 2, 
+      Destination: "中国香港", 
+      Itinerary: ["香港", "香港", "香港"], 
+      Departure_port: "香港", 
+      Departure_date: "2019.05.25", 
+      Cruise: "云顶梦号", 
+      Travel_day: "2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選", 
+      Offer: ["浪漫婚典", "团队游"] 
+    },
+    { 
+      Title: "那霸周末巡航", 
+      Image: "img3.jpg", 
+      Sales: 300, 
+      Price: 4400, 
+      Rating: 1, 
+      Destination: "中国香港", 
+      Itinerary: ["香港", "香港", "香港"], 
+      Departure_port: "上海", 
+      Departure_date: "2019.05.25", 
+      Cruise: "世界梦号", 
+      Travel_day: "2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選", 
+      Offer: ["浪漫婚典"] 
+    },
+    { 
+      Title: "巴生港饕餮盛宴", 
+      Image: "img1.jpg", 
+      Sales: 100, 
+      Price: 4500, 
+      Rating: 2, 
+      Destination: "新加坡", 
+      Itinerary: ["香港", "香港", "香港"], 
+      Departure_port: "广洲", 
+      Departure_date: "2019.05.27", 
+      Cruise: "世界梦号", 
+      Travel_day: "2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選", 
+      Offer: ["周末游"] 
+    }
+  ];
+
+  var pagination = {
+    data: {
+      pagesize: '3',
+      currentpage: 1,
+      obj: '#resultlist',
+      navcontrol: '#nav-control',
+      m_navcontrol: '#nav-mobile-control',
+      pagenav: '#page-nav',
+      btnnext: '#btn-next',
+      btnbefore: '#btn-previous',
+      btnfirst: '#btn-first',
+      btnlast: '#btn-last',
+      btnextend: '#btn-extend',
+      pagecurrent: '#page-current',
+      pagetotal: '#page-total',
+      pagenum: '0'
+    },
+    init: function () {
+      /*
+      var pagenav = $(_self.data.pagenav);
+      pagenav.empty(); 
+ 
+      for(i=1; i<pagenum + 1; i++){ 
+           var string = '<a href="javascript:void(0)" data-rel="'+i+'">'+i+'</a>';
+           $(string).appendTo(pagenav);
+      }
+ 
+      var navbtn = $('#page-nav a');
+      navbtn.click(function(){
+            var index = parseInt($(this).attr('data-rel'));
+            _self.goto(index);
+      }); 
+      */
+      this.pagechange();
+    },
+    btninit: function () {
+      var btnnext = $(this.data.btnnext);
+      var btnbefore = $(this.data.btnbefore);
+      var btnfirst = $(this.data.btnfirst);
+      var btnlast = $(this.data.btnlast);
+      var btnextend = $(this.data.btnextend);
+      btnnext.click(function () {
+        pagination.nextpage();
+      });
+      btnbefore.click(function () {
+        pagination.previouspage();
+      });
+      btnfirst.click(function () {
+        pagination.firstpage();
+      });
+      btnlast.click(function () {
+        pagination.lastpage();
+      });
+      btnextend.click(function () {
+        pagination.extendpage();
+      });
+    },
+    reset: function () {
+      var _self = this;
+      var objitem = $(_self.data.obj).children();
+      var itemsize = objitem.length;
+      var pagesize = _self.data.pagesize;
+      var pagenum = Math.ceil(itemsize / pagesize);
+
+      _self.data.currentpage = 1;
+      _self.data.pagenum = pagenum;
+    },
+    pagechange: function (option) {
+      var objitem = $(this.data.obj).children();
+      var pagesize = this.data.pagesize;
+      var cl_mdnone = 'd-md-none';
+      var cl_hidden = 'hidden';
+      if (option != 'extend') {
+        objitem.addClass(cl_hidden);
+      }
+      objitem.slice(0, this.data.pagesize * this.data.currentpage).removeClass(cl_hidden);
+      objitem.removeClass(cl_mdnone);
+      objitem.slice(0, this.data.pagesize * (this.data.currentpage - 1)).addClass(cl_mdnone);
+      this.navchange();
+    },
+    navchange: function () {
+      var navbtn = $(this.data.pagenav).children('a');
+      $(this.data.pagecurrent).html(this.data.currentpage);
+      $(this.data.pagetotal).html(this.data.pagenum);
+      //navbtn.removeClass('current');
+      //navbtn.eq(this.data.currentpage-1).addClass('current');
+
+      $(pagination.data.obj).children('li').removeClass('border-top-0');
+      $(pagination.data.obj).children('li:visible:eq(0)').addClass('border-top-0');
+      if (this.data.currentpage >= this.data.pagenum) {
+        $(this.data.m_navcontrol).hide();
+      } else {
+        $(this.data.m_navcontrol).show();
+      }
+    },
+    nextpage: function () {
+      if (this.data.currentpage < this.data.pagenum) {
+        this.data.currentpage++;
+        this.pagechange();
+      }
+    },
+    previouspage: function () {
+      if (this.data.currentpage > 1) {
+        this.data.currentpage--;
+        this.pagechange();
+      }
+    },
+    firstpage: function () {
+      this.data.currentpage = 1;
+      this.pagechange();
+    },
+    lastpage: function () {
+      this.data.currentpage = this.data.pagenum;
+      this.pagechange();
+    },
+    goto: function (index) {
+      this.data.currentpage = index;
+      this.pagechange();
+    },
+    extendpage: function () {
+      if (this.data.currentpage < this.data.pagenum) {
+        this.data.currentpage++;
+        this.pagechange('extend');
+      }
+    }
+  }
+
+  var filter = {
+    data: {
+      filtstring: {},
+      totalresult: '#total-result',
+      btncontrol: '#button-control input[type="radio"]',
+      sortcontrol: '#sort-control input[type="radio"]',
+      datepicker: '#datepicker',
+      el: '#button-control input[type="radio"]:checked, #datepicker',
+      criteria: '#sort-control input[type="radio"]:checked'
+    },
+    init: function () {
+      var filterBy = {};
+      this.result(filterBy);
+
+      $(this.data.btncontrol).change(function () {
+        filter.getselection();
+        addselection($(this));
+
+        var fname = $(this).attr('name');
+        $('#button-control input[name=' + fname + ']').parent('label').removeClass('active');
+        $(this).parent('label').addClass('active');
+      }).click(function () {
+        bindoption($(this));
+      });
+      $(this.data.sortcontrol).change(function () {
+        filter.getselection();
+      });
+    },
+    change: function () {
+      var filterBy = {};
+      this.result(filterBy);
+    },
+    datepickerinit: function () {
+      $(filter.data.datepicker).on('change', function () {
+        filter.getselection();
+      });
+    },
+    getselection: function () {
+      this.data.filtstring = {};
+      $(filter.data.el).each(function () {
+        var selectedval = $(this).val();
+        var selectedname = $(this).attr('name');
+        if (selectedval != '') {
+          filter.data.filtstring[selectedname] = [selectedval];
+        }
+      });
+      var criteria = $(filter.data.criteria).val() || '';
+      filter.result(this.data.filtstring, criteria);
+    },
+    result: function (filterBy, criteria) {
+
+      var result = data.filter(function (o) {
+        return Object.keys(filterBy).every(function (k) {
+          return filterBy[k].some(function (f) {
+            //return o[k] === f;
+            if (o[k].indexOf(f) >= 0) {
+              return o[k];
+            }
+          });
+        });
+      });
+
+      result.sort(function (a, b) {
+        var a1;
+        var b1;
+        switch (criteria) {
+          case 'Rating':
+            a1 = a.Rating;
+            b1 = b.Rating;
+            break;
+          case 'Price':
+            a1 = b.Price;
+            b1 = a.Price;
+            break;
+          case 'Sales':
+            a1 = a.Sales;
+            b1 = b.Sales;
+            break;
+          default:
+            a1 = b.Title;
+            b1 = a.Title;
+        }
+        if (a1 > b1) {
+          return -1;
+        } else {
+          return 1;
+        }
+      });
+
+      var resultobj = $(pagination.data.obj);
+      resultobj.empty();
+      for (var i = 0; i < result.length; i++) {
+        var offerstring = '';
+        for (var j = 0; j < result[i].Offer.length; j++) {
+
+          offerstring += '<span class="icon-tag">' + result[i].Offer[j] + '</span>';
+        }
+
+        var itinerary = '';
+        for (var k = 0; k < result[i].Itinerary.length; k++) {
+
+          itinerary += '<span class="icon-day">' + 'D' + (k + 2) + '</span> ' + result[i].Itinerary[k] + ' - ';
+        }
+
+        var template = '<li><div class="row mx-0 my-4"><div class="col-12 col-md-4 p-0 px-md-3"><div class="position-relative"><img src="images/dc-data-img/'+result[i].Image+'" class="w-100" /><div class="icon-destinations">'+result[i].Title+'</div></div></div><div class="col-12 col-md p-3 py-md-0"><p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號"></p><h2>' + result[i].Title + '</h2><p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span>' + offerstring + '</p><p><span class="icon-day">D1 </span> ' + result[i].Departure_port + ' - ' + itinerary + '<span class="icon-day">D' + (result[i].Itinerary.length + 2) + ' </span> ' + result[i].Destination + '</p><div class="row"><div class="col d-flex flex-column"><p><strong class="txt-dark-blue">出发港口</strong> ' + result[i].Departure_port + '</p><p><strong class="txt-dark-blue">日期</strong> ' + result[i].Travel_day + '</p><p><strong class="txt-dark-blue">优惠</strong></p><p><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="早鸟折扣">早鸟折扣</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="买一增一">买一增一</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="免费升级">免费升级</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="花旗银行专属：免费阳台升级">花旗银行专属：免费阳台升级</span></p><p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p></div><div class="col-12 col-md-auto text-left text-md-right d-flex flex-column justify-content-end"><p class="txt-price text-left text-md-right"><span class="txt-grey sm-txt">价格可低至</span><br /><span class="purple-txt">RMB ¥' + result[i].Price + '</span><br /><span class="purple-txt sm-txt">元 /人</span></p><p class="mb-0"><a href="#" class="dc-btn">选 择</a></p><p class="txt-dark-blue">***另收港务费 ¥420/人</p></div></div></div></div></li>';
+        
+        resultobj.append(template);
+      }
+      var total = result.length;
+      $(this.data.totalresult).html(total);
+      pagination.reset();
+      pagination.init();
+      
+      rowgallery.reinit();
+      if (total == '0') {
+        $(pagination.data.navcontrol).hide();
+      } else {
+        $(pagination.data.navcontrol).show();
+      }
+    }
+  }
+
+  function addselection(obj) {
+    var el = $('#m_taglist');
+    var addname = obj.attr('name');
+    var addval = obj.val();
+    var template = '<a href="javascript:void(0)" data-name="' + addname + '" data-rel="' + addval + '" onclick="removetag($(this))" class="icon-tag">' + addval + '</a>';
+    el.find('a[data-name="' + addname + '"]').remove();
+    if (addval != '') {
+      el.append(template);
+    }
+  }
+  function removetag(obj) {
+    var _self = obj;
+    var addname = _self.attr('data-name');
+    var addval = _self.attr('data-rel');
+    $('#button-control input[name="' + addname + '"][value=""]').click();
+    obj.remove();
+  }
+
+  function binddropdown(obj) {
+    var getcat = obj.attr('data-cat');
+    var getval = obj.attr('data-rel');
+    $('input[name="' + getcat + '"][value="' + getval + '"]').prop('checked', true).change();
+  }
+  function bindoption(obj, type) {
+    var getname = obj.attr('name');
+    var getval = obj.val();
+    var getname2 = '';
+
+    if (type == 'mobile') {
+      getname2 = getname.replace('m_', '');
+      mobilemenu.close();
+    } else {
+      getname2 = 'm_' + getname;
+    }
+    $('input[name="' + getname2 + '"][value="' + getval + '"]').prop('checked', true).change();
+    $('input[name="' + getname2 + '"]').parent('label').removeClass('active');
+    $('input[name="' + getname2 + '"][value="' + getval + '"]').parent('label').addClass('active');
+  }
+
+  var mobilemenu = {
+    data: {
+      mobilebreakpoint: 768,
+      m_btncontrol: '#fullmenu input[type="radio"]',
+      dmlink: '.m_filterbtn a',
+      menuwrapper: '.menu-wrapper',
+      fullmenu: '#fullmenu',
+      fullwrapper: '#fullwrapper',
+      datepicker: '#datepicker'
+    },
+    init: function () {
+      $(mobilemenu.data.m_btncontrol).click(function () {
+        bindoption($(this), 'mobile');
+        $(this).closest('ul').find('label').removeClass('active');
+        $(this).parent('label').addClass('active');
+      });
+
+      $(mobilemenu.data.dmlink).click(function () {
+        binddropdown($(this));
+      });
+    },
+    popoverdate: function (type) {
+      var obj = $(mobilemenu.data.datepicker);
+      var currentval = obj.val();
+      if (type == 'mobile') {
+        obj.datepicker().destroy().datepicker({ uiLibrary: 'bootstrap4', locale: 'zh-cn', format: 'yyyy.mm.dd', modal: true, header: true }).datepicker().value(currentval).open();
+      } else {
+        obj.datepicker().destroy().datepicker({ uiLibrary: 'bootstrap4', locale: 'zh-cn', format: 'yyyy.mm.dd', modal: false, header: false }).datepicker().value(currentval);
+      }
+      filter.datepickerinit();
+    },
+    open: function (index) {
+      var cl_active = 'active';
+      $(this.data.fullwrapper).addClass(cl_active);
+      $(this.data.menuwrapper).removeClass(cl_active);
+      $(this.data.fullmenu).find('#' + index + '').addClass(cl_active);
+    },
+    close: function () {
+      $(this.data.fullwrapper).removeClass('active');
+    }
+  }
+
+  $(document).ready(function () {
+    filter.init();
+    pagination.btninit();
+    mobilemenu.init();
+
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+   
+  var rowgallery = {
+    reinit: function(){
+        //Banner init
+    var vobj = $('.dc-video video');
+    var vsbtn = $('.dc-video .dc-video-sound-btn');
+    var timer;
+
+    
+    var btnthumb = $('.video-thumbnail');
+          videobtninit(btnthumb);
+
+      $('#resultlist .panel-slide').slick({
+        slide: '.panel-slide-item',
+        dots: true
+      }).on("beforeChange", function(event, slick, currentSlide) {
+        var current = $(slick.$slides.get(currentSlide));
+        if(current.hasClass('videoplay')){
+          current.find(btnthumb).off('mouseover');
+          current.find(vsbtn).removeClass('active');
+          current.find(vobj)[0].controls = false;
+          current.find(vobj)[0].muted = true;	
+          current.find(vobj)[0].currentTime = 0;
+          current.find(vobj)[0].pause();	
+          clearInterval(timer);
+          current.removeClass('videoplay');
+          slickplay();
+        }
+      }).on('afterChange', function(event, slick, currentSlide, nextSlide){
+        videobtninit(btnthumb);
+        $(this).find('.hascontrol').prop('controls',true); 
+        $(this).find(vobj).css('pointer-events', 'auto');  
+      }).on('dragstart', function(){  
+        $(this).find(vobj).css('pointer-events', 'none'); 
+      });
+
+      $('#resultlist .btnlightbox').click(function(){
+        var lobj = $(this).closest('.panel-slide');
+        var lsobj = lobj.find('.panel-slide-item.slick-current');
+        var lvobj = lobj.find('.panel-slide-item.slick-current video');
+        if(lsobj.hasClass('videoplay')){
+          lvobj[0].pause();	
+          lvobj[0].currentTime = 0;
+          lsobj.removeClass('videoplay');
+        }
+            initlightbox(lobj);
+      });
+    }
+  }
+
+  $(window).on('load resize', function () {
+    if (window.innerWidth >= mobilemenu.data.mobilebreakpoint) {
+      mobilemenu.popoverdate();
+    }
+  });
+</script>
+
+<div class="row text-center d-md-none" id="dc-hp-menu">
+  <div class="col-3 px-1"><a href="javascript:void(0)" onclick="mobilemenu.open('m_Departure_port')"><img src="images/common/btn-fmenu1.jpg"><h3 class="mt-2">出发港</h3></a></div>
+  <div class="col-3 px-1"><a href="javascript:void(0)" onclick="mobilemenu.open('m_Destination')"><img src="images/common/btn-fmenu2.jpg"><h3 class="mt-2">目的地</h3></a></div>
+  <div class="col-3 px-1"><a href="javascript:void(0)" onclick="mobilemenu.popoverdate('mobile')"><img src="images/common/btn-fmenu3.jpg"><h3 class="mt-2">出发时间</h3></a></div>
+  <div class="col-3 px-1"><a href="javascript:void(0)" onclick="mobilemenu.open('m_Travel_day')"><img src="images/common/btn-fmenu4.jpg"><h3 class="mt-2">行程天数</h3></a></div>
+ </div>
+
+ <div class="row py-3 d-md-none">
+  <div id="m_Cruise" class="m_filterbtn col position-relative dc-select-wrapper">
+    <div class="dc-selectbtn pl-3 py-2">选择邮轮</div>
+    <ul class="dc-selectlist px-3 py-2">
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="">选择邮轮</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="世界梦号">世界梦号</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="云顶梦号">云顶梦号</a></li>
+    </ul>
+  </div>
+  <div id="m_Offer" class="m_filterbtn col position-relative dc-select-wrapper">
+    <div class="dc-selectbtn pl-3 py-2">限时优惠</div>
+    <ul class="dc-selectlist px-3 py-2">
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Offer" data-rel="">限时优惠</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Offer" data-rel="亲子游">亲子游</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Offer" data-rel="周末游">周末游</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Offer" data-rel="全家游">全家游</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Offer" data-rel="团队游">团队游</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Offer" data-rel="浪漫婚典">浪漫婚典</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="m_taglist" class="d-md-none mb-3"></div>
+
+<div id="button-control-wrapper" class="mb-4 d-none d-md-block dt-search-control">
+  <table width="100%" id="button-control">
+	  <tbody>
+	   <tr>
+	    <th><span class="icon-destination">目的地</span></th>
+	    <td>
+	      <label><input type="radio" name="Destination" value=""> 全部</label>
+		    <label><input type="radio" name="Destination" value="日本"> 日本</label>
+		    <label><input type="radio" name="Destination" value="越南"> 越南</label>
+		    <label><input type="radio" name="Destination" value="中国香港"> 中国香港</label>
+		    <label><input type="radio" name="Destination" value="新加坡"> 新加坡</label>
+		    <label><input type="radio" name="Destination" value="泰国"> 泰国</label>
+		    <label><input type="radio" name="Destination" value="马来西亚"> 马来西亚</label>
+		    <label><input type="radio" name="Destination" value="柬埔寨"> 柬埔寨</label>
+		    <label><input type="radio" name="Destination" value="印尼"> 印尼</label>
+	    </td>
+	   </tr>
+	   <tr>
+	    <th><span class="icon-departureport">出发港</span></th>
+	    <td>
+	      <label><input type="radio" name="Departure_port" value=""> 全部</label>
+	   	  <label><input type="radio" name="Departure_port" value="上海"> 上海</label>
+		    <label><input type="radio" name="Departure_port" value="广洲"> 广洲</label>
+		    <label><input type="radio" name="Departure_port" value="香港"> 香港</label>
+	    </td>
+	   </tr>
+	   <tr>
+	    <th><span class="icon-cruise">邮轮</span></th>
+	    <td>
+	       <label><input type="radio" name="Cruise" value=""> 全部</label>
+	   	   <label><input type="radio" name="Cruise" value="世界梦号"> 世界梦号</label>
+		     <label><input type="radio" name="Cruise" value="云顶梦号"> 云顶梦号</label>
+	    </td>
+	   </tr>
+	   <tr>
+	    <th><span class="icon-travelday">行程天数</span></th>
+	    <td>
+	       <label><input type="radio" name="Travel_day" value=""> 全部</label>
+		   <label><input type="radio" name="Travel_day" value="2天1晚"> 2天1晚</label>
+		   <label><input type="radio" name="Travel_day" value="3天2晚"> 3天2晚</label>
+		   <label><input type="radio" name="Travel_day" value="4天3晚"> 4天3晚</label>
+		   <label><input type="radio" name="Travel_day" value="6天5晚"> 6天5晚</label>
+		   <label><input type="radio" name="Travel_day" value="8天7晚"> 8天7晚</label>
+	    </td>
+	   </tr>
+	   <tr>
+	    <th><span class="icon-offer">限时优惠</span></th>
+	    <td>
+	        <label><input type="radio" name="Offer" value=""> 全部</label>
+			<label><input type="radio" name="Offer" value="亲子游"> 亲子游</label>
+			<label><input type="radio" name="Offer" value="周末游"> 周末游</label>
+			<label><input type="radio" name="Offer" value="全家游"> 全家游</label>
+			<label><input type="radio" name="Offer" value="团队游"> 团队游</label>
+			<label><input type="radio" name="Offer" value="浪漫婚典"> 浪漫婚典</label>
+	    </td>
+	   </tr>
+	  </tbody>
+  </table>
+
+  <div class="clearfix dc-btn-pattern p-1">
+    <div class="float-left"><label id="btn-departure-date">
+        <div role="wrapper" class="gj-datepicker gj-datepicker-bootstrap gj-unselectable input-group"
+          style="width: 150px;"><input id="datepicker" width="150" name="Departure_date" value="" disabled=""
+            class="form-control" role="input" data-type="datepicker" data-guid="cab3d2b6-7de1-32e0-1fd2-95fba37a19ae"
+            data-datepicker="true"><span class="input-group-append" role="right-icon"><button
+              class="btn btn-outline-secondary border-left-0" type="button"><i class="gj-icon">event</i></button></span>
+        </div> <span class="btn-dd-txt">出发时间</span>
+      </label>
+      <label class="text-white">共 <span id="total-result">19</span> 条航线符合搜索条件</label></div>
+    <div id="sort-control" class="float-right">
+      <p class="mb-0">
+        <label><input type="radio" name="Sorting" value=""> 综合</label>
+        <label class="icon-increase"><input type="radio" name="Sorting" value="Sales"> 销量</label>
+        <label class="icon-decrease"><input type="radio" name="Sorting" value="Price"> 价格</label>
+        <label class="icon-increase"><input type="radio" name="Sorting" value="Rating"> 评分</label>
+      </p>
+    </div>
+  </div>
+</div>
+
+<ul id="resultlist">
+</ul>
+
+<p id="nav-control" class="text-center d-none d-md-block">
+  <a href="javascript:void(0)" id="btn-previous" class="mr-3">
+    <</a> <span id="page-nav"></span>
+      第 <span id="page-current"></span> 页 共 <span id="page-total"></span> 页
+      <a href="javascript:void(0)" id="btn-next" class="ml-3">></a>
+</p>
+<p id="nav-mobile-control" class="text-center d-md-none"><a href="javascript:void(0)" id="btn-extend">更多 + </a></p>

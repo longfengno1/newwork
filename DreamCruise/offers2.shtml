@@ -1,0 +1,126 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Offers - Promotion Details | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<script>
+		$(document).ready(function () {
+			offerfilter();
+		});
+	</script>
+</head>
+
+<body id="offers" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/offers/offer-banner2.png" alt="World Dream National Day Special: All Guests Get Discount Worth RMB 1,000" class="img-responsive" />
+		<img src="images/offers/offer-banner2.png" alt="World Dream National Day Special: All Guests Get Discount Worth RMB 1,000" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container offers-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="offers1.html" title="Latest Offers">Offers</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Promotion Details</li>
+                </ol>
+                
+				<!-- Social Share  -->
+                <!--#include file="include/ssi/socialshare.ssi" -->
+                
+				<h2 class="section-header">World Dream National Day Special: <br />All Guests Get Discount Worth RMB 1,000</h2>
+				<p>Celebrate National Day with a fun 5-night World Dream cruise on 30 Sep 2018, sailing from Hong Kong to Naha and Miyakojima,
+					Japan. Stay in Interior to Balcony Deluxe Staterooms with special discount of RMB 1,000 worth for each guest you book.</p>
+				<p>Booking Period: Now until 31 Aug 2018<br />Sailing Date: 30 Sep 2018</p>
+				<table class="innertable responsivetable">
+					<tr>
+						<th>Itinerary</th>
+						<th>2018 Departure Dates</th>
+						<th>Starting Rate with Port Charges<br />(twin sharing)</th>
+					</tr>
+					<tr>
+						<td data-rel="Itinerary">5-Night Guangzhou (Nansha)-Naha-Miyakojima-Guangzhou (Nansha)</td>
+						<td data-rel="2018 Departure Dates">30 Sep</td>
+						<td data-rel="Starting Rate with Port Charges (twin sharing)"><span class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per
+									person</i></span></td>
+					</tr>
+					<tr>
+						<td data-rel="Itinerary">5-Night Hong Kong-Naha-Miyakojima-Hong Kong*</td>
+						<td data-rel="2018 Departure Dates">30 Sep</td>
+						<td data-rel="Starting Rate with Port Charges (twin sharing)"><span class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per
+									person</i></span></td>
+					</tr>
+				</table>
+				<p>*Cruises departing from Hong Kong will call at Guangzhou (Nansha) for transits.Please bring along your travel document
+					valid for travel to the Mainland What's Included in My Cruise Fare<br /> When you book direct online, your cruise fare
+					will already include port charges, taxes, and fees, except gratuities. Your booking comes inclusive of:</p>
+				<table class="two-col-table">
+					<tr>
+						<td>
+							<ul>
+								<li>Your choice deluxe accommodation</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Sumptuous meals at inclusive restaurants</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>World-class entertainment</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Access to beautifully designed leisure facilities</li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<p class="text-right mb-5"><a href="#" class="dc-btn">BOOK NOW</a></p>
+				<div class="tnc-wrapper">
+					<a href="#TNC" class="btn-tnc collapsed" data-toggle="collapse">TERMS AND CONDITIONS</a>
+					<div class="collapse" id="TNC">
+						<div class="collapse-content">
+							<p>Privacy Policy Genting Hong Kong Group1 (referred to as “our”, “we” or “us”) may collect certain personal information,
+								including, without limitation, your name, identity card number, passport number, a copy of your identity card and/or
+								passport, contact information, date of birth, nationality, financial information (including, without limitation,
+								your credit or debit card details, billing information and/or bank account details) and transactional data (“Personal
+								Information”) from you when you request for or access our Services (defined below). We may also collect Personal
+								Information about you from third parties such as our associated companies (“Other Genting Companies”), travel agencies,
+								credit reporting agencies or from public records. This Privacy Policy provides information on our obligations and
+								practices under the Personal Data (Privacy) Ordinance (Cap. 486) in Hong Kong.</p>
+							<ol>
+								<li><strong>Commitment to Protect Your Personal Information</strong><br />1.1 We are committed to protecting your
+									Personal Information. To ensure that you can make informed decisions and feel confident about supplying your Personal
+									Information to us, we provide this policy outlining our practices, and the choices you have, concerning how we use
+									your Personal Information.</li>
+								<li><strong>Purpose of Collection</strong><br />2.1 We may use your Personal Information for the following purposes:
+									<ol type="a">
+										<li>to process your request for, or to administer or provide, any products or services offered by us or Other Genting
+											Companies, including, without limitation, to process your membership application, cruise booking request, securities
+											account opening and trading request, and/or loan application;</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+		</section>
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

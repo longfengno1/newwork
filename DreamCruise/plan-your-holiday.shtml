@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Plan Your Holiday | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<script>
+	  $(function(){ 
+		anchorload('section');
+	  });
+	</script>
+</head>
+
+<body id="plan-your-holiday" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+		<!-- Banner -->
+		<header class="insidepage-banner">
+			<img src="images/plan-your-holiday/banner.png" alt="Plan Your Holiday" class="img-responsive" />
+			<img src="images/plan-your-holiday/banner.png" alt="Plan Your Holiday" class="img-responsive mobile" />
+			<div class="banner-cover"></div>
+		</header>
+		<!-- Content -->
+		<section>
+			<div class="container pt-5 itineraries-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Plan Your Holiday</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">Plan Your Holiday</h2>
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-questions.png"></span> Why Cruise?</h3>
+				<p>Cruising is an extraordinary vacation experience that combines fun, relaxation, and convenient travelling. From the
+					get-go, your cabin accommodation, good food, and many entertainment options come inclusive of your cruise booking. Then
+					once onboard, there is much to enjoy, with various recreations 'round the clock while you sail to amazing destinations
+					day by day.</p>
+				<div class="row mb-5">
+					<div class="col-12 col-md-6">
+						<!-- Gallery -->
+						<!--#include file="include/ssi/gallery.ssi" -->
+					</div>
+					<div class="col-12 col-md-6">
+						<!-- Accordion -->
+						<!--#include file="include/ssi/accordion_list.ssi" -->
+					</div>
+				</div>
+
+				<!-- Alubum -->
+				<!--#include file="include/ssi/album.ssi" -->
+			</div>
+		</section>
+	<!-- BookNow banner -->
+	<!--#include file="include/ssi/booknow_banner.ssi" -->
+	<!-- Award -->
+	<!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

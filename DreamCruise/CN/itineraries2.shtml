@@ -1,0 +1,999 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises</title>
+	<link rel="stylesheet" href="../include/css/fullcalendar.min.css">
+	<!--#include file="include/ssi/meta.ssi" -->
+	<!-- JS Calendar  -->
+	<script src="../include/js/fullcalendar/moment.min.js"></script>
+	<script src="../include/js/fullcalendar/fullcalendar.min.js"></script>
+	<script src="../include/js/fullcalendar/locale/zh-cn.js"></script>
+	<script src="include/js/custom-calendar.js"></script>
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(2) > .nav-link').addClass('active');
+			navbtn.init();
+		});
+
+
+	</script>
+</head>
+
+<body id="itineraries" class="insidepage">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="../include/ssi/insidepage_banner.ssi" -->
+	<!-- Content -->
+	<section class="insidepage-bg blue-bg btm-space">
+		<div class="container py-5 position-static itineraries-content">
+			<!-- Share Button -->
+			<!--#include file="include/ssi/socialshare.ssi" -->
+			<!-- Content -->
+			<div class="row mx-0 my-4">
+				<div class="col-12 col-md-4 p-0 px-md-3">
+					<!-- Gallery -->
+					<!--#include file="include/ssi/gallery.ssi" -->
+				</div>
+				<div class="col-12 col-md p-3 py-md-0">
+					<p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號" /></p>
+					<h2>巴生港饕餮盛宴</h2>
+					<p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span
+							class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span><span
+							class="icon-tag">周末游</span></p>
+					<p><strong class="txt-dark-blue">航線</strong> <span class="icon-day">D1 </span> 上海 - <span
+							class="icon-day">D2</span> 香港 - <span class="icon-day">D3</span> 香港 - <span
+							class="icon-day">D4</span> 香港 - <span class="icon-day">D5 </span> 泰国</p>
+							<p><strong class="txt-dark-blue">出发港口</strong> 上海</p>
+							<p><strong class="txt-dark-blue">日期</strong> 5.1, 6.8, 7.15, 8.22 其他20個日子</p>
+							<p><strong class="txt-dark-blue">优惠</strong></p>
+							<p><span class="icon-star icon-plus">早鸟折扣</span><br><span
+									class="icon-bookmark icon-plus">买一增一/免费升级</span><br><span
+									class="icon-light icon-plus">花旗银行专属：免费阳台升级</span></p>
+							<p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p>	
+				</div>
+			</div>
+
+			<h2 class="section-header txt-green text-left mb-1 border-bottom border-info">選擇出行日子</h2>
+			<div class="mt-3 position-relative dc-tab-nav-wrapper lightheme">
+				<ul class="nav nav-pills dc-tab-nav flex-nowrap" role="tablist">
+					<li class="nav-item">
+						<a class="active show" data-toggle="pill" href="#pills-d1" role="tab" aria-controls="pills-d1"
+							aria-selected="false">內側客房
+						</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-d2" role="tab" aria-controls="pills-d2"
+							aria-selected="false">海景窗戶
+						</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-d3" role="tab" aria-controls="pills-d3"
+							aria-selected="true">露台客房</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-d4" role="tab" aria-controls="pills-d4"
+							aria-selected="true">豪華露台海景</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-d5" role="tab" aria-controls="pills-d5"
+							aria-selected="true">皇宮套房</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-d6" role="tab" aria-controls="pills-d6"
+							aria-selected="true">其他套房</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane p-3 fade show active" id="pills-d1" role="tabpanel" aria-labelledby="pills-d1">
+					<div class="row">
+						<div class="col-12 col-md">
+							<img src="../images/itineraries/graph.jpg" class="w-100" />
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column justify-content-end">
+							<p class="mb-1"><strong>出發日期: 1/23/2019</strong></p>
+							<p class="txt-price border-bottom border-dark"><span class="purple-txt">RMB ¥5500</span>
+								<span class="purple-txt sm-txt">/人</span></p>
+							<p class="text-right"><a href="javascript:void(0)"
+									class="icon-calc align-bottom mr-2"></a><a href="#" class="dc-btn">立即預訂</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane p-3 fade" id="pills-d2" role="tabpanel" aria-labelledby="pills-d2">
+					<div class="row">
+						<div class="col-12 col-md">
+							<img src="../images/itineraries/graph.jpg" class="w-100" />
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column justify-content-end">
+							<p class="mb-1"><strong>出發日期: 1/23/2019</strong></p>
+							<p class="txt-price border-bottom border-dark"><span class="purple-txt">RMB ¥5500</span>
+								<span class="purple-txt sm-txt">/人</span></p>
+							<p class="text-right"><a href="javascript:void(0)"
+									class="icon-calc align-bottom mr-2"></a><a href="#" class="dc-btn">立即預訂</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane p-3 fade" id="pills-d3" role="tabpanel" aria-labelledby="pills-d3">
+						<div class="row">
+							<div class="col-12 col-md">
+								<img src="../images/itineraries/graph.jpg" class="w-100" />
+							</div>
+							<div class="col-12 col-md-auto d-flex flex-column justify-content-end">
+								<p class="mb-1"><strong>出發日期: 1/23/2019</strong></p>
+								<p class="txt-price border-bottom border-dark"><span class="purple-txt">RMB ¥5500</span>
+									<span class="purple-txt sm-txt">/人</span></p>
+								<p class="text-right"><a href="javascript:void(0)"
+										class="icon-calc align-bottom mr-2"></a><a href="#" class="dc-btn">立即預訂</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane p-3 fade" id="pills-d4" role="tabpanel" aria-labelledby="pills-d4">
+							<div class="row">
+								<div class="col-12 col-md">
+									<img src="../images/itineraries/graph.jpg" class="w-100" />
+								</div>
+								<div class="col-12 col-md-auto d-flex flex-column justify-content-end">
+									<p class="mb-1"><strong>出發日期: 1/23/2019</strong></p>
+									<p class="txt-price border-bottom border-dark"><span class="purple-txt">RMB ¥5500</span>
+										<span class="purple-txt sm-txt">/人</span></p>
+									<p class="text-right"><a href="javascript:void(0)"
+											class="icon-calc align-bottom mr-2"></a><a href="#" class="dc-btn">立即預訂</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane p-3 fade" id="pills-d5" role="tabpanel" aria-labelledby="pills-d5">
+								<div class="row">
+									<div class="col-12 col-md">
+										<img src="../images/itineraries/graph.jpg" class="w-100" />
+									</div>
+									<div class="col-12 col-md-auto d-flex flex-column justify-content-end">
+										<p class="mb-1"><strong>出發日期: 1/23/2019</strong></p>
+										<p class="txt-price border-bottom border-dark"><span class="purple-txt">RMB ¥5500</span>
+											<span class="purple-txt sm-txt">/人</span></p>
+										<p class="text-right"><a href="javascript:void(0)"
+												class="icon-calc align-bottom mr-2"></a><a href="#" class="dc-btn">立即預訂</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane p-3 fade" id="pills-d6" role="tabpanel" aria-labelledby="pills-d6">
+									<div class="row">
+										<div class="col-12 col-md">
+											<img src="../images/itineraries/graph.jpg" class="w-100" />
+										</div>
+										<div class="col-12 col-md-auto d-flex flex-column justify-content-end">
+											<p class="mb-1"><strong></strong>出發日期: 1/23/2019</strong></p>
+											<p class="txt-price border-bottom border-dark"><span class="purple-txt">RMB ¥5500</span>
+												<span class="purple-txt sm-txt">/人</span></p>
+											<p class="text-right"><a href="javascript:void(0)"
+													class="icon-calc align-bottom mr-2"></a><a href="#" class="dc-btn">立即預訂</a></p>
+										</div>
+									</div>
+								</div>
+			</div>
+
+			<div id="calendar" class="collapse">
+				<div class="row mx-0 mb-3 justify-content-end">
+					<div class="col-auto">
+						<h3 class="itineraries-title mt-2">出发城市</h3>
+					</div>
+					<div class="col-auto p-0 dc-select-wrapper2">
+						<a href="javascript:void(0)" class="px-3 py-2 dc-selectbtn">香港</a>
+						<ul class="nav nav-pills px-3 py-2 p-md-0 dc-selectlist" role="tablist">
+							<li class="nav-item mb-3">
+								<a class="mx-md-3 active show" data-toggle="pill" href="#pills-hk" role="tab"
+									aria-controls="pills-hk" aria-selected="true">香港
+								</a>
+							</li>
+							<li class="nav-item mb-3">
+								<a class="mx-md-3" data-toggle="pill" href="#pills-gz" role="tab"
+									aria-controls="pills-gz" aria-selected="false">广州</a>
+							</li>
+							<li class="nav-item mb-3">
+								<a class="mx-md-3" data-toggle="pill" href="#pills-sg" role="tab"
+									aria-controls="pills-sg" aria-selected="false">上海</a>
+							</li>
+						</ul>
+					</div>
+
+
+				</div>
+
+
+				<div class="tab-content">
+					<div class="tab-pane fade show active" id="pills-hk" role="tabpanel" aria-labelledby="pills-hk-tab">
+						<div class="dc-calendar" id="HK-Calendar"></div>
+					</div>
+					<div class="tab-pane fade" id="pills-gz" role="tabpanel" aria-labelledby="pills-gz-tab">
+						<div class="dc-calendar" id="GZ-Calendar"></div>
+					</div>
+					<div class="tab-pane fade" id="pills-sg" role="tabpanel" aria-labelledby="pills-sg-tab">
+						<div class="dc-calendar" id="SG-Calendar"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-5 position-relative dc-tab-nav-wrapper">
+				<ul class="nav nav-pills dc-tab-nav flex-nowrap" role="tablist">
+					<li class="nav-item">
+						<a class="active show" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1"
+							aria-selected="false">航程
+						</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2"
+							aria-selected="false">商品促销
+						</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3"
+							aria-selected="true">岸上观光</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4"
+							aria-selected="true">游记攻略</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-5" role="tab" aria-controls="pills-5"
+							aria-selected="true">会员点评</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-6" role="tab" aria-controls="pills-6"
+							aria-selected="true">签证</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-7" role="tab" aria-controls="pills-7"
+							aria-selected="true">须知</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane p-3 fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1">
+					<div class="position-absolute float-btn-list d-none d-md-block">
+						<ul>
+							<li><a href="javascript:void(0)">第 1 天</a></li>
+							<li><a href="javascript:void(0)">第 2 天</a></li>
+							<li><a href="javascript:void(0)">第 3 天</a></li>
+							<li><a href="javascript:void(0)">第 4 天</a></li>
+							<li><a href="javascript:void(0)">第 5 天</a></li>
+							<li><a href="javascript:void(0)">第 6 天</a></li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md px-0 px-md-3">
+							<p><img src="images/itineraries/map.jpg" class="w-100"></p>
+							<div class="row mx-0">
+								<div class="col-auto pl-0"><img src="images/itineraries/icon-info.jpg"></div>
+								<div class="col p-0">
+									<p>敬请在关闸时间前至少预留30分钟办理通关手续。以上时间为当地时间，仅供参考，请以船票时间为准。</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-7 px-0 px-md-3">
+							<table class="innertable mt-3 mt-md-0" style="border-collapse:collapse;">
+								<tr>
+									<th width="25%">日期</th>
+									<th width="25%">国家/城市</th>
+									<th width="25%">预计到达时间</th>
+									<th width="25%">预计出发时间</th>
+								</tr>
+								<tr>
+									<td>2018.05.20</td>
+									<td>广州</td>
+									<td>17:00</td>
+									<td>21:00(关闸时间)</td>
+								</tr>
+								<tr>
+									<td>2018.05.21</td>
+									<td>海上巡游</td>
+									<td>11:00</td>
+									<td>18:00</td>
+								</tr>
+								<tr>
+									<td>2018.05.22</td>
+									<td>日本 那霸(冲绳岛)</td>
+									<td>09:00</td>
+									<td>20:00</td>
+								</tr>
+								<tr>
+									<td>2018.05.23</td>
+									<td>日本 宫古岛</td>
+									<td>8:30</td>
+									<td>15:30</td>
+								</tr>
+								<tr>
+									<td>2018.05.24</td>
+									<td>海上巡游</td>
+									<td>16:00</td>
+									<td>17:00(出发时间)</td>
+								</tr>
+								<tr>
+									<td>2018.05.25</td>
+									<td>广州</td>
+									<td>8:30</td>
+									<td>-</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+								src="images/itineraries/icon-location-large.jpg"></span> 第 1 天 广州</h3>
+					<p>今天于指定时间前往香港启德邮轮码头办理登船手续，登上亚洲豪华邮轮，开启6天5晚的冲绳海上之旅，与「世界梦号」一起探索万顷碧波，在您专属的「一站式豪华海上度假皇宫」，闲看海上日出日落，探访日本迷人景致及人文风物。
+					</p>
+					<p class="text-center mb-5"><img src="images/itineraries/itineraries-tab-img1.jpg"></p>
+					<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+								src="images/itineraries/icon-location-large.jpg"></span> 第 2 天 海上巡游</h3>
+					<p>今天于指定时间前往香港启德邮轮码头办理登船手续，登上亚洲豪华邮轮，开启6天5晚的冲绳海上之旅，与「世界梦号」一起探索万顷碧波，在您专属的「一站式豪华海上度假皇宫」，闲看海上日出日落，探访日本迷人景致及人文风物。
+					</p>
+					<p class="text-center mb-5"><img src="images/itineraries/itineraries-tab-img2.jpg"></p>
+					<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+								src="images/itineraries/icon-location-large.jpg"></span> 第 3 天 日本 那霸</h3>
+					<p>今天于指定时间前往香港启德邮轮码头办理登船手续，登上亚洲豪华邮轮，开启6天5晚的冲绳海上之旅，与「世界梦号」一起探索万顷碧波，在您专属的「一站式豪华海上度假皇宫」，闲看海上日出日落，探访日本迷人景致及人文风物。
+					</p>
+					<p class="text-center mb-5"><img src="images/itineraries/itineraries-tab-img3.jpg"></p>
+					<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+								src="images/itineraries/icon-location-large.jpg"></span> 第 4 天 日本 宫古岛</h3>
+					<p>今天于指定时间前往香港启德邮轮码头办理登船手续，登上亚洲豪华邮轮，开启6天5晚的冲绳海上之旅，与「世界梦号」一起探索万顷碧波，在您专属的「一站式豪华海上度假皇宫」，闲看海上日出日落，探访日本迷人景致及人文风物。
+					</p>
+					<p class="text-center mb-5"><img src="images/itineraries/itineraries-tab-img4.jpg"></p>
+					<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+								src="images/itineraries/icon-location-large.jpg"></span> 第 5 天 海上巡游</h3>
+					<p>今天于指定时间前往香港启德邮轮码头办理登船手续，登上亚洲豪华邮轮，开启6天5晚的冲绳海上之旅，与「世界梦号」一起探索万顷碧波，在您专属的「一站式豪华海上度假皇宫」，闲看海上日出日落，探访日本迷人景致及人文风物。
+					</p>
+					<p class="text-center mb-5"><img src="images/itineraries/itineraries-tab-img5.jpg"></p>
+					<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+								src="images/itineraries/icon-location-large.jpg"></span> 第 6 天 广州</h3>
+					<p>今天于指定时间前往香港启德邮轮码头办理登船手续，登上亚洲豪华邮轮，开启6天5晚的冲绳海上之旅，与「世界梦号」一起探索万顷碧波，在您专属的「一站式豪华海上度假皇宫」，闲看海上日出日落，探访日本迷人景致及人文风物。
+					</p>
+					<p class="text-center mb-5"><img src="images/itineraries/itineraries-tab-img6.jpg"></p>
+					<p class="txt-green">重要信息：请各位乘客必须在关闸时间前登船/返回船上。以上时间为当地时间，仅供参考，个别航次会因行程需要有所调整，请以船票/当前航次时间为准。</p>
+				</div>
+				<div class="tab-pane p-3 fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2">
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/promotion-img1.jpg" class="w-100" />
+								<div class="icon-discount"><span class="two-letter">
+										<font>明星</font>產品
+									</span></div>
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>客房洗衣服务</h3>
+							<p>专业洗衣服务,24小时内送回 上衣裤子裙子羽绒小件卧卫家居特殊皮衣风衣羊毛小件皮类鞋子单烫类小孩棉衣附件。</p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-5 col-6 col-md-12">
+									<p class="txt-price text-left"><strike>¥ 130 起/人</strike><br />¥ <span>90</span> 起/人
+									</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/promotion-img2.jpg" class="w-100" />
+								<div class="icon-hot"><span class="two-letter">
+										<font>限时</font>优惠
+									</span></div>
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>至尊海鲜晚餐</h3>
+							<p>波士顿龙虾,属于海螯虾科螯龙虾属,生活于寒冷海域,肉较嫩滑细致,具有高蛋白、低脂肪等优点。</p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-5 col-6 col-md-12">
+									<p class="txt-price text-left"><strike>¥ 130 起/人</strike><br />¥ <span>90</span> 起/人
+									</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/promotion-img3.jpg" class="w-100" />
+								<div class="icon-discount"><span class="two-letter">
+										<font>明星</font>產品
+									</span></div>
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>蔷薇宴会厅</h3>
+							<p>用于召开各类婚庆活动、公司聚餐、大型集会演讲、报告、新闻发布、产品展示、举办中小型文艺演出、舞会等活动。</p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-5 col-6 col-md-12">
+									<p class="txt-price text-left"><strike>¥ 130 起/人</strike><br />¥ <span>90</span> 起/人
+									</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/promotion-img4.jpg" class="w-100" />
+								<div class="icon-hot"><span class="two-letter">
+										<font>限时</font>优惠
+									</span></div>
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>全氧水疗SPA</h3>
+							<p>以天然水资源结合沐寓按摩和香薰来促进新陈代谢,以天然水资源结合沐寓按摩。</p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-5 col-6 col-md-12">
+									<p class="txt-price text-left"><strike>¥ 130 起/人</strike><br />¥ <span>90</span> 起/人
+									</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane p-3 fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3">
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/tourism-img1.jpg" class="w-100" />
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>城迹巡礼</h3>
+							<p>行程时间：约5.5小时 (包括交通行驶时间)
+								<br />观光地：新加坡
+								<br />观光时间：第 3 天</p>
+							<p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span
+									class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span></p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-3 col-6 col-md-12">
+									<p class="txt-price text-left">¥ <span>520</span> 起/人</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/tourism-img2.jpg" class="w-100" />
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>风味美食之旅</h3>
+							<p>行程时间：约5.5小时 (包括交通行驶时间)
+								<br />观光地：新加坡
+								<br />观光时间：第 3 天</p>
+							<p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span
+									class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span></p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-3 col-6 col-md-12">
+									<p class="txt-price text-left">¥ <span>520</span> 起/人</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/tourism-img3.jpg" class="w-100" />
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>城迹巡礼</h3>
+							<p>行程时间：约5.5小时 (包括交通行驶时间)
+								<br />观光地：新加坡
+								<br />观光时间：第 3 天</p>
+							<p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span
+									class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span></p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-3 col-6 col-md-12">
+									<p class="txt-price text-left">¥ <span>520</span> 起/人</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/tourism-img4.jpg" class="w-100" />
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>风味美食之旅</h3>
+							<p>行程时间：约5.5小时 (包括交通行驶时间)
+								<br />观光地：新加坡
+								<br />观光时间：第 3 天</p>
+							<p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span
+									class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span></p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-3 col-6 col-md-12">
+									<p class="txt-price text-left">¥ <span>520</span> 起/人</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/tourism-img5.jpg" class="w-100" />
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>城迹巡礼</h3>
+							<p>行程时间：约5.5小时 (包括交通行驶时间)
+								<br />观光地：新加坡
+								<br />观光时间：第 3 天</p>
+							<p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span
+									class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span></p>
+						</div>
+						<div class="col-12 col-md-auto d-flex flex-column px-3 justify-content-end">
+							<div class="row d-md-inline-block">
+								<div class="mb-md-3 col-6 col-md-12">
+									<p class="txt-price text-left">¥ <span>520</span> 起/人</p>
+								</div>
+								<div class="col-6 col-md-12 d-flex flex-column justify-content-end">
+									<p class="text-right"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4">
+					<div class="dc-btn-pattern p-1 mt-3 mt-md-0 row mx-0 justify-content-between">
+						<div class="col-6 col-md-auto py-1">
+							<label class="text-white mb-0 align-middle">共 <span id="total-result">19</span>
+								条游记攻略</label>
+						</div>
+						<div id="sort-control" class="col-6 col-md-auto pr-0">
+							<p class="mb-0 d-none d-md-block">
+								<label><input type="radio" name="Sorting" class="d-none" value=""> 综合</label>
+								<label><input type="radio" name="Sorting" class="d-none" value="精华"> 精华</label>
+								<label><input type="radio" name="Sorting" class="d-none" value="最热"> 最热</label>
+								<label><input type="radio" name="Sorting" class="d-none" value="最新"> 最新</label>
+							</p>
+							<div class="m_filterbtn col position-relative dc-select-wrapper d-md-none">
+								<div class="dc-selectbtn pl-3 py-2">综合</div>
+								<ul class="dc-selectlist px-3 py-2">
+									<li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="">综合</a>
+									</li>
+									<li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="精华">精华</a>
+									</li>
+									<li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="最热">最热</a>
+									</li>
+									<li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="最新">最新</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/blog-img1.jpg" class="w-100" />
+								<div class="icon-hot"><span>精选</span></div>
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>走吧！带老爸去海上庆生啦！</h3>
+							<p>再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！
+							</p>
+							<div class="row">
+								<div class="col col-md-12">
+									<p class="mb-2"><span class="icon-from">广州 - 香港 - 滨城 - 巴生港 - 普吉 - 新加坡</span></p>
+									<p><span class="icon-to">世界梦号</span></p>
+								</div>
+								<div class="col-auto position-static d-flex flex-column">
+									<p class="icon-view-wrapper mt-auto"><span class="icon-view txt-green">2689</span>
+									</p>
+								</div>
+							</div>
+							<p class="text-right mb-0"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/blog-img2.jpg" class="w-100" />
+								<div class="icon-hot"><span>精选</span></div>
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>走吧！带老爸去海上庆生啦！</h3>
+							<p>再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！
+							</p>
+							<div class="row">
+								<div class="col col-md-12">
+									<p class="mb-2"><span class="icon-from">广州 - 香港 - 滨城 - 巴生港 - 普吉 - 新加坡</span></p>
+									<p><span class="icon-to">世界梦号</span></p>
+								</div>
+								<div class="col-auto position-static d-flex flex-column">
+									<p class="icon-view-wrapper mt-auto"><span class="icon-view txt-green">2689</span>
+									</p>
+								</div>
+							</div>
+							<p class="text-right mb-0"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/blog-img3.jpg" class="w-100" />
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>走吧！带老爸去海上庆生啦！</h3>
+							<p>再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！
+							</p>
+							<div class="row">
+								<div class="col col-md-12">
+									<p class="mb-2"><span class="icon-from">广州 - 香港 - 滨城 - 巴生港 - 普吉 - 新加坡</span></p>
+									<p><span class="icon-to">世界梦号</span></p>
+								</div>
+								<div class="col-auto position-static d-flex flex-column">
+									<p class="icon-view-wrapper mt-auto"><span class="icon-view txt-green">2689</span>
+									</p>
+								</div>
+							</div>
+							<p class="text-right mb-0"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/blog-img4.jpg" class="w-100" />
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>走吧！带老爸去海上庆生啦！</h3>
+							<p>再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！
+							</p>
+							<div class="row">
+								<div class="col col-md-12">
+									<p class="mb-2"><span class="icon-from">广州 - 香港 - 滨城 - 巴生港 - 普吉 - 新加坡</span></p>
+									<p><span class="icon-to">世界梦号</span></p>
+								</div>
+								<div class="col-auto position-static d-flex flex-column">
+									<p class="icon-view-wrapper mt-auto"><span class="icon-view txt-green">2689</span>
+									</p>
+								</div>
+							</div>
+							<p class="text-right mb-0"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-12 col-md-4">
+							<div class="position-relative">
+								<img src="images/itineraries/blog-img5.jpg" class="w-100" />
+							</div>
+						</div>
+						<div class="col-12 col-md d-flex flex-column p-3">
+							<h3>走吧！带老爸去海上庆生啦！</h3>
+							<p>再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！
+							</p>
+							<div class="row">
+								<div class="col col-md-12">
+									<p class="mb-2"><span class="icon-from">广州 - 香港 - 滨城 - 巴生港 - 普吉 - 新加坡</span></p>
+									<p><span class="icon-to">世界梦号</span></p>
+								</div>
+								<div class="col-auto position-static d-flex flex-column">
+									<p class="icon-view-wrapper mt-auto"><span class="icon-view txt-green">2689</span>
+									</p>
+								</div>
+							</div>
+							<p class="text-right mb-0"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p>
+						</div>
+					</div>
+
+					<p id="nav-control" class="text-center d-none d-md-block mt-4">
+						<a href="javascript:void(0)" id="btn-previous" class="mr-3">&lt;</a>
+						<span id="page-nav"></span>
+						第 <span id="page-current">6</span> 页 共 <span id="page-total">100</span> 页
+						<a href="javascript:void(0)" id="btn-next" class="ml-3">&gt;</a>
+					</p>
+					<p id="nav-mobile-control" class="text-center d-md-none mt-4"><a href="javascript:void(0)"
+							id="btn-extend">更多 + </a>
+					</p>
+				</div>
+				<div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5">
+					<div class="dc-btn-pattern p-1 mt-3 mt-md-0 row mx-0 justify-content-between">
+						<div class="col-6 col-md-auto py-1">
+							<label class="text-white mb-0 align-middle">共 <span id="total-result">1926</span>
+								条点评</label>
+						</div>
+						<div id="sort-control" class="col-6 col-md-auto pr-0">
+							<p class="mb-0 d-none d-md-block">
+								<label><input type="radio" name="Sorting" class="d-none" value=""> 综合</label>
+								<label><input type="radio" name="Sorting" class="d-none" value="推荐"> 推荐</label>
+								<label><input type="radio" name="Sorting" class="d-none" value="最热"> 最热</label>
+								<label><input type="radio" name="Sorting" class="d-none" value="最新"> 最新</label>
+							</p>
+							<div class="m_filterbtn col position-relative dc-select-wrapper d-md-none">
+								<div class="dc-selectbtn pl-3 py-2">综合</div>
+								<ul class="dc-selectlist px-3 py-2">
+									<li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="">综合</a>
+									</li>
+									<li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="推荐">推荐</a>
+									</li>
+									<li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="最热">最热</a>
+									</li>
+									<li class="mb-3"><a href="javascript:void(0)" data-cat="Cruise" data-rel="最新">最新</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-auto"><img src="images/itineraries/img-user1.jpg" /></div>
+						<div class="col pt-4">
+							<div class="row mx-0 mb-2 justify-content-between">
+								<div class="col-auto px-0">
+									<h3>无敌小海星</h3>
+								</div>
+								<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+							</div>
+							<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。
+							</p>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-auto"><img src="images/itineraries/img-user2.jpg" /></div>
+						<div class="col pt-4">
+							<div class="row mx-0 mb-2 justify-content-between">
+								<div class="col-auto px-0">
+									<h3>亚人</h3>
+								</div>
+								<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+							</div>
+							<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。
+							</p>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-auto"><img src="images/itineraries/img-user1.jpg" /></div>
+						<div class="col pt-4">
+							<div class="row mx-0 mb-2 justify-content-between">
+								<div class="col-auto px-0">
+									<h3>无敌小海星</h3>
+								</div>
+								<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+							</div>
+							<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。
+							</p>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-auto"><img src="images/itineraries/img-user1.jpg" /></div>
+						<div class="col pt-4">
+							<div class="row mx-0 mb-2 justify-content-between">
+								<div class="col-auto px-0">
+									<h3>无敌小海星</h3>
+								</div>
+								<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+							</div>
+							<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。
+							</p>
+						</div>
+					</div>
+
+					<div class="row py-3 border-bottom">
+						<div class="col-auto"><img src="images/itineraries/img-user2.jpg" /></div>
+						<div class="col pt-4">
+							<div class="row mx-0 mb-2 justify-content-between">
+								<div class="col-auto px-0">
+									<h3>亚人</h3>
+								</div>
+								<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+							</div>
+							<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。
+							</p>
+						</div>
+					</div>
+
+					<p id="nav-control" class="text-center d-none d-md-block mt-4">
+						<a href="javascript:void(0)" id="btn-previous" class="mr-3">&lt;</a>
+						<span id="page-nav"></span>
+						第 <span id="page-current">6</span> 页 共 <span id="page-total">100</span> 页
+						<a href="javascript:void(0)" id="btn-next" class="ml-3">&gt;</a>
+					</p>
+					<p id="nav-mobile-control" class="text-center d-md-none mt-4"><a href="javascript:void(0)"
+							id="btn-extend">更多 + </a>
+					</p>
+
+					<!-- Comment control -->
+					<!--#include file="include/ssi/comment.ssi" -->
+				</div>
+				<div class="tab-pane p-3 fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6">
+					<table class="innertable two-col mt-3 mt-md-0" style="border-collapse:collapse;">
+						<tbody>
+							<tr>
+								<th width="30%">旅客身份</th>
+								<th width="70%" class="text-left">所需之旅游证件</th>
+							</tr>
+							<tr>
+								<td class="align-middle">香港永久性居民(十一岁或以上)</td>
+								<td class="text-left">香港永久性居民身份证 或
+									有效护照（英国国民（海外）护照/香港特区护照）<br />和<br />有效港澳居民来往内地通行证《回乡卡》</td>
+							</tr>
+							<tr>
+								<td class="align-middle">香港永久性居民(十一岁以下)</td>
+								<td class="text-left">有效香港特别行政区回港证 或
+									有效护照（英国国民(海外)护照/香港特区护照）<br />和<br />有效港澳居民来往内地通行证《回乡卡》</td>
+							</tr>
+							<tr>
+								<td class="align-middle">香港居民(非永久性)</td>
+								<td class="text-left">香港身份证及有效香港特别行政区签证身份书 或有效国籍护照<br />和<br />有效港澳居民来往内地通行证《回乡卡》</td>
+							</tr>
+							<tr>
+								<td class="align-middle">澳门居民</td>
+								<td class="text-left">澳门特别行政区永久性居民身份证
+									或有效香港多程旅游签证（灰薄）/澳门居民往来香港特别行政区旅游证<br />和<br />有效港澳居民来往内地通行证《回乡卡》</td>
+							</tr>
+							<tr>
+								<td class="align-middle">大陆居民</td>
+								<td class="text-left">有效 往来香港特别行政区通行证(A)/因公往来香港特别行政区通行证(B)
+									<br />备注：
+									<br />-乘客必须持有效往来香港特别行政区通行证入境香港
+									<br />-航次须于获准在香港【逗留期限】内完成
+									<br />(A)需持有1次香港入境签注
+									<br />(B)需持有2次香港入境签注</td>
+							</tr>
+							<tr>
+								<td class="align-middle">台湾居民</td>
+								<td class="text-left">
+									香港特区政府签发之多程入境签证 或
+									<br />-有效台湾居民来往大陆通行证（台胞证） 或
+									<br />-香港特区政府签发之2次有效登记通知书</td>
+							</tr>
+							<tr>
+								<td class="align-middle">外国人</td>
+								<td class="text-left">有效国际护照+with两次香港入境签证（如需要）</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="tab-pane p-3 fade" id="pills-7" role="tabpanel" aria-labelledby="pills-7">
+					<table>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc1.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">邮轮航费包含了那些项目？</h4>
+								<p>您的邮轮住宿、指定餐厅内的饮食、娱乐及邮轮上的许多节目都已包含于航费内了。<br />（航费备注：优惠内容及价格仅适用于中国内地居民，外籍旅客及港澳台旅客需与中国内地居民入住同一客房，否则需要提供有效大陆暂住证、中国居留签证或工作证明方可享受当前优惠。）
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc2.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">邮轮航费不包含那些项目？</h4>
+								<p>自选岸上观光团、另类餐饮、特选表演/娱乐、私人自费项目如饮品、电话、传真或电子邮件服务、商店购物、洗衣服务、美容护理、美发及按摩服务、医疗服务、港口费、燃油费、保险费、政府税和费用及邮轮服务费皆不包含于航费之内。<br />*注：同一就餐时段内于同一间指定免费餐厅加餐或者更换指定免费餐厅再就餐则需按餐厅当时价目标准收费。
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc3.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">通行限制</h4>
+								<p>怀孕乘客于出航日期其怀孕周期不超过24周者方被允许登轮航游。<br />在邮轮出发时只有六个月大或以下的婴儿不准登船。</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc4.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">预防针</h4>
+								<p>到目前为止，丽星邮轮之航游目的地点皆没有强制注射任何预防针。然而，乘客可自行询求医生之意见以确保自身的免疫记录仍然有效，或需依据旅程路线所经的国家以确认是否应该额外注射预防针。
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc5.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">衣着</h4>
+								<p>轻便整齐的服饰皆适合大部分场合。基于礼仪及尊重其他用餐的宾客，于优雅餐厅如处女星号上的帕拉素餐厅用餐时，需穿上轻便但端庄得体的服饰。然而，出席船长晚宴时，男士必须穿上西装外套与领带，而女士则需穿上晚礼服。
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc6.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">通用钱币</h4>
+								<p>邮轮上接受按实时汇率换算的主流货币作交易。邮轮上所使用的货币是根据邮轮当时所驻航的国家而定，例如：从中国大陆出发之航程使用人民币。我们接纳的信用卡包括：Visa /
+									Master / JCB / Amex / Diners和旅行支票，但不接纳私人支票。</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc7.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">行动不便之乘客</h4>
+								<p>邮轮上大部分场地都可让行动不便之乘客通行无阻。亦设有行动不便者专用的客房，更宽阔的门户和浴室，浴室之中设有扶手和可折合的淋浴座。邮轮上也提供轮椅以应不时之需。</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc8.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">严禁锂电池小车辆及其他平衡滑板车</h4>
+								<p>请注意:
+									即日起，丽星邮轮旗下所有邮轮一律禁止锂电池小车辆。<br />由于锂电池小车辆具有潜在易燃危险，丽星邮轮宣布即日起一律禁止携带锂电池小车辆及有关组件登船。锂电池小车辆的种类包括电动双轮滑板、风火轮、平衡车、独轮车、其他平衡滑板车及mini-Segway平衡车等。<br />如果在办理登轮手续时，旅客将该类型物品带到登轮港口，物品会被拒绝携带上船，而旅客必须在登轮前自行负责处理有关禁止物品。请注意，丽星邮轮没有义务代旅客储存该类型物品。例如：风火轮、独轮车、电动双轮滑板和mini-Segway平衡车及其他平衡滑板车都是严禁携带登船的。<br />另外，旅客可携带非机动小车辆包括滑板车，滑板，自行车以及轮滑鞋和暴走鞋上船；但是，为了确保旅客的安全，旅客在船上不可使用任何该类物品。
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="align-top" width="60"><img src="images/itineraries/icon-tnc9.jpg" /></td>
+							<td class="px-3 pb-3 align-middle">
+								<h4 class="txt-green font-weight-bold">行李</h4>
+								<p>务求让您有一个舒适轻便的旅程，我们建议每一位乘客携带不超过一个行李箱和一个手提行李箱。这些行李必能适宜的放置于您的客房而不需要另外存放于船库。
+									您所携带的行李总重量不得超过30公斤。<br />启航后60分钟之内，寄舱的行李将会被送往您的客房。若于上述时段之内您还没有签收到您的行李，敬请联络门房部。 </p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

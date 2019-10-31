@@ -1,0 +1,168 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Contact Us</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/custom-style-2.css">
+	<script src="../include/js/custom-2.js"></script>
+	<!-- Scroll -->
+	<link rel="stylesheet" href="../include/css/jquery.mCustomScrollbar.min.css">
+	<script src="../include/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			cefilter();
+
+			$('.dc-scroll-wrapper').mCustomScrollbar({
+				axis: "x",
+				theme: "dark-thick",
+				scrollButtons: {
+					enable: true
+				}
+			});
+		});
+	</script>
+</head>
+
+<body id="faqs" class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+		<img src="../images/destinations/detail-banner-faqs.jpg" class="w-100" alt="FAQs">
+		<div class="banner-cover"></div>
+	</header>
+<!-- Content -->
+<section class="pb-10">
+		<div class="container position-static">
+
+			<h2 class="section-header">FAQs</h2>
+
+			<div class="part-1">
+				<ul>
+					<li class="dc-select-wrapper">
+						<div class="dc-selectbtn pl-3 py-2">RESERVATION RELATED</div>
+						<ul class="dc-selectlist px-3 py-2">
+							<li class="mb-3"><a href="#">RESERVATION RELATED</a></li>
+							<li class="mb-3"><a href="#">PRE-CRUISE QUESTIONS</a></li>
+							<li class="mb-3"><a href="#">ON BOARD EXPERIENCE</a></li>
+							<li class="mb-3"><a href="#">TEENAGERS &amp; CHILDREN</a></li>
+							<li class="mb-3"><a href="#">TOUR &amp; TRAVEL</a></li>
+							<li class="mb-3"><a href="#">SAFETY AND HEALTH</a></li>
+							<li class="mb-3"><a href="#">SPECIAL SERVICES / ARRANGEMENT</a></li>
+							<li class="mb-3"><a href="#">ACCESSIBILITY</a></li>
+							<li class="mb-3"><a href="#">POST-CRUISE QUESTIONS</a></li>
+						</ul>
+					</li>
+					<li class="dc-select-wrapper">
+						<select id="offer-filter-ships" class="dc-select offer-fliter">
+							<option value="ALL">ALL</option>
+							<option value="category1">Category 1</option>
+							<option value="category2">Category 2</option>
+							<option value="category3">Category 3</option>
+						</select>
+						<div class="dc-selectbtn pl-3 py-2">ALL</div>
+						<ul class="dc-selectlist px-3 py-2">
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">ALL</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="category1">Category 1</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="category2">Category 2</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="category3">Category 3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="part-2">
+				<ul id="ce-list">
+					<li class="category1">
+						<h3><span>IS EVERY STATEROOM EQUIPPED WITH CHINA-STANDARD SOCKETS?</span></h3>
+						<div>Each stateroom will have 2 Chinese 3-pin sockets and remaining will be HKG sockets (UK). All staterooms have
+							USB sockets on each side of the main bed.</div>
+					</li>
+
+					<li class="category1">
+						<h3><span>DO WE HAVE WI-FI? WHAT WOULD BE THE COST?</span></h3>
+						<div>
+							<p>Yes, we have Wi-Fi. <br>Wi-Fi Pricing:</p>
+							<div class="dc-scroll-wrapper mb-3">
+								<table class="faq-table mb-0" style="width:1210px;">
+									<tbody>
+										<tr>
+											<th>PACKAGE</th>
+											<th>UNIT</th>
+											<th>GDR — SINGAPORE</th>
+											<th>WDR — NANSHA/HONG KONG</th>
+											<th>DESCRIPTION</th>
+											<th>RECOMMENDED USE</th>
+										</tr>
+
+										<tr>
+											<td rowspan="5">STANDARD</td>
+											<td>1 Night</td>
+											<td>SGD19</td>
+											<td>HKD128</td>
+											<td rowspan="5">
+												- Connect to the Internet at basic speeds in an affordable manner.<br> - Allows 2 devices simultaneously for
+												the whole voyage.
+											</td>
+											<td rowspan="5">
+												- E-mail<br> - Chat<br> - Social media
+											</td>
+										</tr>
+
+										<tr>
+											<td>2 Nights</td>
+											<td>SGD38</td>
+											<td>HKD198</td>
+										</tr>
+
+										<tr>
+											<td>3 Nights</td>
+											<td>SGD57</td>
+											<td>-</td>
+										</tr>
+
+										<tr>
+											<td>4 Nights</td>
+											<td>SGD76</td>
+											<td>-</td>
+										</tr>
+
+										<tr>
+											<td>5 Nights</td>
+											<td>SGD95</td>
+											<td>HKD640</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p>
+								<strong>Notes</strong><br> 1. Guests may upgrade their Internet package at any time while onboard, upon authorization
+								of an additional folio charge based on the price difference.<br> 2. Internet speeds may vary due to satellite interference,
+								ship location and network congestion at time of use.<br> 3. It is advised that VPN connections, certain websites
+								or types of browsing or downloading may be limited (without prejudice to the price) due to security concerns, mature
+								or violent content, high bandwidth consumption, nature of local satellite internet, or any other reason as deemed
+								necessary by Dream Cruises.
+							</p>
+						</div>
+					</li>
+
+					<li class="category2">
+						<h3><span>DOES DREAM CRUISES HAVE CELLULAR SERVICE?</span></h3>
+						<div>We have Wi-Fi, costs are subjected to various Wi-Fi packages. Please refer to Wi-Fi Pricing.</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

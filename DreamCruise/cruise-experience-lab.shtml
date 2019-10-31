@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>ESC Experience Lab | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+</head>
+
+<body id="cruise-experience" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/cruise-experience/cel-banner.png" alt="ESC Experience Lab" class="img-responsive" />
+		<img src="images/cruise-experience/cel-banner.png" alt="ESC Experience Lab" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container cruise-experience-content ce-lab">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="cruise-experience1.html" title="Cruise Experience">Cruise Experience</a></li>
+					<li class="breadcrumb-item"><a href="cruise-experience2.html" title="Entertainment">Entertainment</a></li>
+					<li class="breadcrumb-item active" aria-current="page">ESC Experience Lab</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+				
+				<h2 class="section-header">ESC Experience Lab</h2>
+				<p>Experience the thrill of Virtual Reality with the family in our state of the art VR experience. Become an expert in
+					high speed driving with our simulators or try the latest in immersive gaming and e-Sports, competing with your family
+					for the highest score. The ultimate cutting edge racing experience for the 21st century. Full multiplayer functionality
+					of Vesaro simulator allows multiplayer racing between all 5 simulators, multiple simultaneous races in groups, as well
+					as solo play.</p>
+				<p class="d-flex"><span class="left-icons"><img src="images/icon_cruise.png" /></span> World Dream</p>
+				<p class="text-right"><a href="#" class="dc-btn" title="EXPLORE WITH VIRTUAL REALITY">EXPLORE WITH VIRTUAL REALITY</a></p>
+				<!-- Gallery with text -->
+				<!--#include file="include/ssi/gallery_wtxt.ssi" -->
+
+				<div class="row mt-5 flex-md-row-reverse">
+					<div class="col-12 col-md-7 pb-5">
+						<!-- Accordion -->
+						<!--#include file="include/ssi/accordion_list.ssi" -->
+					</div>
+					<div class="col-12 col-md-5 d-flex flex-column justify-content-end"><img src="images/cruise-experience/cel-img.png"
+						 class="flex-grow-0 flex-shrink-0" /></div>
+				</div>
+		</section>
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

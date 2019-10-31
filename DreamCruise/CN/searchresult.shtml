@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 搜索结果</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+</head>
+
+<body class="insidepage-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<header>
+	</header>
+	<!-- Content -->
+	<section class="btm-space">
+		<div class="container py-5 position-static">
+			<h3 class="text-center tab-btn my-4 mb-md-5"><span class="txt-green mr-4 d-none d-md-inline font-weight-bold">搜索结果</span><a href="javascript:void(0)" class="mx-3 d-inline-block icon-ship_large active" onclick="tabswitch.switch('cruise')">航线</a><a href="javascript:void(0)" class="mx-3 d-inline-block icon-gift_large" onclick="tabswitch.switch('mall')">商品</a><a href="javascript:void(0)" class="mx-3 d-inline-block icon-map_large" onclick="tabswitch.switch('travel')">攻略</a></h3>
+			<!-- Filter -->
+							<!--#include file="include/ssi/dc_filter_searchresult.ssi" -->
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Full Menu -->
+	<!--#include file="include/ssi/fullmenu.ssi" -->
+</body>
+
+</html>

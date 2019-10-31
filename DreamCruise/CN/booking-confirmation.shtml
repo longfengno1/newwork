@@ -1,0 +1,270 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Booking</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/booking.css">
+	<!-- JS validation  -->
+	<script src="../include/js/jquery.validate.min.js"></script>
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(6) > .nav-link').addClass('active');
+		});
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+	</header>
+	<!-- Content -->
+	<section class="btm-space">
+		<div class="container py-5 position-static">
+			<p class="text-center"><img src="../images/booking/booking_flow/icon-success.jpg" /></p>
+			<h2 class="text-center txt-dark-blue mb-3">恭喜!您的預訂已成功完成</h2>
+			<p class="text-center txt-dark-blue mb-5">您的遊輪票和正式收據已發送至 dalala321@hotmail.com<br />在線辦理登機手續的時間為出發前7天至24小時
+			</p>
+			<hr />
+			<h2 class="txt-dark-blue">世界夢號[限時優惠]香港-峴港-芽莊-香港</h2>
+			<table class="mb-4">
+				<tr>
+					<td><span class="txt-dark-blue">航線</span> 廣州-香港-峴港-芽莊-香港</td>
+					<td><span class="txt-dark-blue">訂單號 13029921</span></td>
+				</tr>
+				<tr>
+					<td><span class="txt-dark-blue">出發港口</span> 廣洲</td>
+					<td><span class="txt-dark-blue">預訂日期 2019-04-09</span></td>
+				</tr>
+				<tr>
+					<td><span class="txt-dark-blue">天數</span> 6天5晚</td>
+					<td><span class="txt-dark-blue">訂單總額 $8,300</span></td>
+				</tr>
+				<tr>
+					<td><span class="txt-dark-blue">郵輪</span> 世界夢號</td>
+					<td></td>
+				</tr>
+			</table>
+
+			<div class="bg-white rounded row p-3 mb-3 mx-0">
+					<div class="col-6">
+						<h4 class="txt-dark-blue mb-1">出發</h4>
+						<hr /><span class="txt-dark-blue">日期</span> 2019年3月12日<br /><span
+							class="txt-dark-blue">時間</span> 09:30<br /><span class="txt-dark-blue">港口</span> 廣州
+					</div>
+					<div class="col-6 border-left">
+						<h4 class="txt-dark-blue mb-1">到達</h4>
+						<hr /><span class="txt-dark-blue">日期</span> 2019年3月16日<br /><span
+							class="txt-dark-blue">時間</span> 18:30<br /><span class="txt-dark-blue">港口</span> 廣州
+					</div>
+				</div>
+
+			<h2 class="txt-green">房間</h2>	
+			<hr class="green-bar" />	
+			<div class="rounded booking-green-panel p-3 mb-4 txt-dark-blue">
+				<h5>房間1(內側客房 - 兩人房)</h5>
+				<div class="row">
+				   <div class="col-3">陳大文</div>
+				   <div class="col-3">陳文芳</div>
+				</div>
+				<hr />
+				<p class="mb-0 text-right">總額: $3,650</p>
+			</div>
+
+			<div class="rounded booking-green-panel p-3 mb-4 txt-dark-blue">
+				<h5>房間2(內側客房 - 兩人房)</h5>
+				<div class="row">
+					<div class="col-3">陳大文</div>
+					<div class="col-3">陳文芳</div>
+				</div>
+				<hr />
+				<p class="mb-0 text-right">總額: $3,650</p>
+			</div>
+
+			<h2 class="txt-green">增值服務</h2>	
+			<hr class="green-bar" />
+			<div class="rounded booking-green-panel p-3 mb-4 txt-dark-blue">
+				<h5>房間1(內側客房 - 兩人房)</h5>
+				<div class="row">
+					<div class="col-3">陳大文</div>
+					<div class="col-3">陳文芳</div>
+				</div>
+				<div class="row txt-grey">
+						<div class="col-3"><p>鯨魚觀賞與野生動物探索</p></div>
+						<div class="col-3"><p>WIFI(3日無限使用)</p></div>
+					</div>
+					<div class="row">
+							<div class="col-3">$500</div>
+							<div class="col-3">$150</div>
+						</div>
+				<hr />
+				<p class="mb-0 text-right">總額: $650</p>
+			</div>
+
+			<h2 class="txt-green">增值服務</h2>	
+			<hr class="green-bar" />
+			<div class="rounded booking-green-panel p-3 mb-4 txt-dark-blue">
+				<h5>房間1(內側客房 - 兩人房)</h5>
+				<div class="row">
+					<div class="col-3">陳大文</div>
+					<div class="col-3">陳文芳</div>
+				</div>
+				<div class="row txt-grey">
+						<div class="col-3"><p>鯨魚觀賞與野生動物探索</p></div>
+						<div class="col-3"><p>WIFI(3日無限使用)</p></div>
+					</div>
+					<div class="row">
+							<div class="col-3">$500</div>
+							<div class="col-3">$150</div>
+						</div>
+				<hr />
+				<p class="mb-0 text-right">總額: $650</p>
+			</div>
+			<p class="txt-dark-blue d-flex justify-content-between"><span>服務費</span> <span>總額: $650</span></p>
+			<p class="txt-dark-blue text-right">合計應付金額: $8,300</p>
+			
+			<h2 class="txt-green">為您推薦</h2>	
+			<hr class="green-bar" />
+			<div class="bg-light-blue p-3 row mx-0 mt-3">
+				<div class="col-auto"><img src="../images/booking/booking_flow/offer1.jpg"></div>
+				<div class="col">
+					<h3 class="txt-dark-blue">鯨魚觀賞與野生生物探索</h3>
+					<p><span class="txt-dark-blue">日期</span> 12/16/2019</p>
+					<p>在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹</p>
+					<p><a href="javascript:void(0)" class="btn-arrow collapsed" data-toggle="modal" data-target="#travel-popup1">查看詳情</a></p>
+				</div>
+				<div class="col-auto">
+					<table cellpadding="5">
+						<tbody><tr>
+							<td class="txt-dark-blue">成人</td>
+							<td><del>$180</del></td>
+							<td class="txt-dark-blue">$90</td>
+						</tr>
+						<tr>
+							<td class="txt-dark-blue">長者</td>
+							<td><del>$100</del></td>
+							<td class="txt-dark-blue">$90</td>
+						</tr>
+						<tr>
+							<td class="txt-dark-blue">兒童</td>
+							<td><del>$100</del></td>
+							<td class="txt-dark-blue">$90</td>
+						</tr>
+					</tbody></table>
+					<p class="text-right"><a href="#" class="dc-btn no-arrow mt-2">預訂</a></p>
+				</div>
+			</div>
+
+			<div class="bg-light-blue p-3 row mx-0 mt-3">
+					<div class="col-auto"><img src="../images/booking/booking_flow/travel3.jpg"></div>
+					<div class="col">
+						<h3 class="txt-dark-blue">WIFI 無限使用</h3>
+						<p><span class="txt-dark-blue">日期</span> 12/16/2019</p>
+						<p>在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹</p>
+						<p><a href="javascript:void(0)" class="btn-arrow collapsed" data-toggle="modal" data-target="#travel-popup1">查看詳情</a></p>
+					</div>
+					<div class="col-auto">
+						<table cellpadding="5">
+							<tbody><tr>
+								<td class="txt-dark-blue">1天</td>
+								<td></td>
+								<td class="txt-dark-blue">$50</td>
+							</tr>
+							<tr>
+								<td class="txt-dark-blue">2天</td>
+								<td></td>
+								<td class="txt-dark-blue">$80</td>
+							</tr>
+							<tr>
+								<td class="txt-dark-blue">3天</td>
+								<td></td>
+								<td class="txt-dark-blue">$100</td>
+							</tr>
+						</tbody></table>
+						<p class="text-right"><a href="#" class="dc-btn no-arrow mt-2">預訂</a></p>
+					</div>
+				</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Room Popup -->
+	<div class="modal fade rm-lightbox" id="travel-popup1" tabindex="-1" role="dialog" aria-labelledby="travel-popup1"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered container" role="document">
+			<div class="modal-content rounded-0">
+				<div class="modal-header border-0 flex-column pb-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body pt-0">
+					<div class="row">
+						<div class="col-12 col-md-5">
+							<img src="../images/booking/booking_flow/travel_popup.jpg" class="w-100" />
+						</div>
+						<div class="col-12 col-md-7">
+								<h2 class="section-header mb-1 text-left">鯨魚觀賞與野生生物探索</h2>
+								<p class="txt-dark-blue"><span class="icon-offer ml-md-2">特惠</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-tag">亲子游</span> <span class="icon-tag">全家游</span></p>
+								<p class="txt-dark-blue">在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹</p>
+								<hr>
+								<div class="d-flex justify-content-between align-items-end">
+                                  <table cellpadding="5">
+									  <tr>
+										<th>產品</th>
+										<th>價格</th>
+										<th>數量</th>
+									  </tr>
+									  <tr>
+										  <td>成人 <del>$180</del></td>
+										  <td>$90</td>
+										  <td><select class="border-0 rounded"><option>0</option><option>1</option><option>2</option></select></td>
+									  </tr>
+									  <tr>
+											<td>長者 <del>$100</del></td>
+											<td>$45</td>
+											<td><select class="border-0 rounded"><option>0</option><option>1</option><option>2</option></select></td>
+										</tr>
+										<tr>
+											<td>兒童 <del>$100</del></td>
+											<td>$45</td>
+											<td><select class="border-0 rounded"><option>0</option><option>1</option><option>2</option></select></td>
+										</tr>
+								  </table>
+								  <a href="javascript:void(0)" class="dc-btn no-arrow">添加</a>
+								</div>
+						</div>
+					</div>
+					<ul class="nav nav-pills dc-tab-nav flex-nowrap mt-4" role="tablist">
+						<li class="nav-item">
+							<a  class="active show" data-toggle="pill" href="#product-details" role="tab" aria-controls="product-details" aria-selected="false">產品詳情
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#tnc" role="tab" aria-controls="tnc" aria-selected="true">條款及細則
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content tab-adjust">
+							<div class="tab-pane p-3 fade active show" id="product-details" role="tabpanel" aria-labelledby="product-details">
+								<p class="remarks">取消政策: 如果您日後取消預訂，則可能支付取消費用。<br />取消政策: 如果您日後取消預訂，則可能支付取消費用。取消政策: 如果您日後取消預訂，則可能支付取消費用。</p>
+							</div>
+							<div class="tab-pane p-3 fade" id="tnc" role="tabpanel" aria-labelledby="tnc">
+								<p class="remarks">條款及細則<br />條款及細則<br />條款及細則</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

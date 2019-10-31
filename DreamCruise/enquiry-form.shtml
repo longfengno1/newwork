@@ -1,0 +1,242 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Media Enquiry Form | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/custom-style-2.css">
+	<script src="include/js/custom-2.js"></script>
+	<!-- JS validation  -->
+	<script src="include/js/jquery.validate.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			contactusvalidate();
+			careerswitch();
+		});
+
+		// Init validation features
+		function contactusvalidate() {
+			var formobj = $('#cu-form');
+			formobj.validate({
+				rules: {
+					'cu-email': {
+						email: true
+					}
+				}
+			});
+			$.validator.methods.email = function (value, element) {
+				return this.optional(element) || /[a-z]+@[a-z]+\.[a-z]+/.test(value);
+			}
+		}
+
+		// Switch Careers field
+		function careerswitch() {
+			var careerobj = $('#career-field');
+			var selectobj = $('#cu-form select[name="cu-it"]');
+			var careerval = 'issue_Recruit';
+
+			selectobj.change(function () {
+				var currentval = $(this).val();
+				if (currentval == careerval) {
+					$('#career-field').removeClass('d-none').addClass('d-block');
+				} else {
+					$('#career-field').removeClass('d-block').addClass('d-none');
+				}
+			});
+		}
+	</script>
+</head>
+
+<body id="contact-us" class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+
+	<!-- Banner -->
+	<header>
+		<img src="images/destinations/detail-banner-contact-us.jpg" alt="Media Enquiry Form" class="img-responsive">
+		<img src="images/destinations/detail-banner-contact-us.jpg" alt="Media Enquiry Form" class="img-responsive mobile">
+		<div class="banner-cover"></div>
+	</header>
+
+	<!-- Content -->
+		<section class="pb-10">
+			<div class="container">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Customer Service">Customer Service</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Media Enquiry Form</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">Media Enquiry Form</h2>
+
+				<form id="cu-form">
+					<div class="part-1">
+
+						<ul>
+							<li>
+								<label>*Mandatory</label>
+								<div class="panel">
+									<div class="col-full"></div>
+								</div>
+							</li>
+							<li>
+								<label>Title</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<select name="cu-title" required data-msg-required="Please select title">
+											<option value="" selected="selected">Title</option>
+											<option value="Mr">Mr</option>
+											<option value="Miss">Miss</option>
+											<option value="Mrs">Mrs</option>
+										</select>
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>First Name</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+											<input type="text" name="cu-firstname" placeholder="First Name" required data-msg-required="Please enter first name">
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Last Name</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+											<input type="text" name="cu-lastname" placeholder="Last Name" required data-msg-required="Please enter last name">
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Media organization</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+											<input type="text" name="cu-media" placeholder="Media organization" required data-msg-required="Please enter media organization">
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Telephone 1</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-left">
+										<input type="text" name="cu-cc" placeholder="Country code" required data-msg-required="Please enter country code">
+									</div>
+
+									<div class="col-right">
+										<input type="text" name="cu-ac" placeholder="Area code + Country code" required data-msg-required="Please enter country code">
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Telephone 2</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-left">
+										<input type="text" name="cu-cc" placeholder="Country code" required data-msg-required="Please enter country code">
+									</div>
+
+									<div class="col-right">
+										<input type="text" name="cu-ac" placeholder="Area code + Country code" required data-msg-required="Please enter country code">
+									</div>
+								</div>
+							</li>
+							<li>
+								<label>Wechat</label>
+								<div class="panel">
+									<div class="col-full">
+											<input type="text" name="cu-wechat" placeholder="Wechat">
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Email address</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<input type="text" name="cu-email" placeholder="Email address" required data-msg-required="Please enter email" data-msg-email="Please enter email in vaild format">
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Content</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<textarea rows="4" cols="20" name="cu-content" required data-msg-required="Please enter content"></textarea>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Verification code</label><span class="icon-require">*</span>
+								<div class="panel panel-captcha">
+									<div class="col-left">
+										<input type="text" class="cu-vc" required data-msg-required="Please enter verification code">
+									</div>
+
+									<div class="col-right">
+										<div class="captcha">
+											<img class="img-captcha" src="images/contact-us/img-captcha.png">
+											<a href="#"><img src="images/contact-us/btn-refresh.png"></a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<p>We are committed to protecting your Personal Information. Before you submit your enquiry, please view our <a href="#"
+								 target="_blank">Privacy Policy</a> .</p>
+							<div class="text-right"><button type="submit" class="dc-btn">SUMMIT</button></div>
+						</ul>
+
+					</div>
+				</form>
+
+				<div class="part-2">
+					<h3>Reservation Hotlines</h3>
+					<ul>
+						<li>
+							<div class="col-left">Hong Kong, China</div>
+							<div class="col-right"><a href="tel:852-2317-7711" class="txlink-white">+852-2317-7711</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Singapore</div>
+							<div class="col-right"><a href="tel:65-6808-2288" class="txlink-white">+65-6808-2288</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Penang (Malaysia)</div>
+							<div class="col-right"><a href="tel:604-2631128" class="txlink-white">+604-2631128</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Kuala Lumpur (Malaysia)</div>
+							<div class="col-right"><a href="tel:603-2302-1288" class="txlink-white">+603-2302-1288</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Mainland China</div>
+							<div class="col-right"><a href="tel:66-4008499848" class="txlink-white">+66-4008499848</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Philippines</div>
+							<div class="col-right"><a href="tel:63-2-836-6080" class="txlink-white">+63-2-836-6080</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+    <!-- Award -->
+	<!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

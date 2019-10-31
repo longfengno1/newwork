@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Itineraries | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+</head>
+
+<body id="itineraries" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="include/ssi/insidepage_banner.ssi" -->
+	<!-- Content -->
+		<section>
+			<div class="container itineraries-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Plan Your Holiday">Plan Your Holiday</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Itineraries</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">Itineraries</h2>
+				<div class="row m-0 my-md-3 d-md-block">
+					<div class="col-auto pl-0 d-md-none">
+						<h3 class="itineraries-title mt-2">DEPARTURE PORT</h3>
+					</div>
+					<div class="col p-0 d-md-block">
+						<a href="javascript:void(0)" class="d-md-none px-3 py-2 dc-selectbtn">HONG KONG</a>
+						<ul class="nav nav-pills px-3 py-2 p-md-0 d-md-flex dc-selectlist" role="tablist">
+							<li class="nav-item d-none d-md-block">
+								<h3 class="sub-header mr-3">DEPARTURE PORT</h3>
+							</li>
+							<li class="nav-item mb-3 mb-md-0">
+								<a class="mx-md-3 active show" data-toggle="pill" href="#pills-hk" role="tab" aria-controls="pills-hk" aria-selected="true">HONG
+									KONG
+								</a>
+							</li>
+							<li class="nav-item mb-3 mb-md-0">
+								<a class="mx-md-3" data-toggle="pill" href="#pills-gz" role="tab" aria-controls="pills-gz" aria-selected="false">GUNGZHOU</a>
+							</li>
+							<li class="nav-item mb-2 mb-md-0">
+								<a class="mx-md-3" data-toggle="pill" href="#pills-sg" role="tab" aria-controls="pills-sg" aria-selected="false">SINGAPORE</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane fade show active" id="pills-hk" role="tabpanel" aria-labelledby="pills-hk-tab">
+						<!-- Itineraries Album  -->
+						<!--#include file="include/ssi/itineraries_album.ssi" -->
+					</div>
+					<div class="tab-pane fade" id="pills-gz" role="tabpanel" aria-labelledby="pills-gz-tab">
+						<!-- Itineraries Album  -->
+						<!--#include file="include/ssi/itineraries_album.ssi" -->
+					</div>
+					<div class="tab-pane fade" id="pills-sg" role="tabpanel" aria-labelledby="pills-sg-tab">
+						<!-- Itineraries Album  -->
+						<!--#include file="include/ssi/itineraries_album.ssi" -->
+					</div>
+				</div>
+				
+		</section>
+		<!-- BookNow banner -->
+		<!--#include file="include/ssi/booknow_banner.ssi" -->
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

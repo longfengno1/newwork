@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 精彩活动</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function(){
+			$('#nav-menu .nav-item:eq(2) > .nav-link').addClass('active');
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="../include/ssi/insidepage_banner.ssi" -->
+	<!-- Content -->
+	<section class="insidepage-bg blue-bg btm-space">
+		<div class="container py-5 position-static">
+			<!-- Share Button -->
+			<!--#include file="include/ssi/socialshare.ssi" -->
+			<h2 class="section-header">同庆云顶香港25周年</h2>
+			<h3>致时光：</h3>
+			<p>云顶香港与你一起的25周年！<br />25年，超过9000多个日与夜，云顶香港有限公司缔造</p>
+			<h3>“1大邮轮集团” “2大造船厂” “3大特色邮轮品牌”</h3>
+			<p>云顶香港成立于1993年11月，旗下拥有丽星邮轮、星梦邮轮及水晶邮轮三个各具特色的邮轮品牌。即将迈向25周年，将带领更多旅客实现梦想！</p>
+			<p><img src="images/events/img1.jpg" /></p>
+			<h3>礼遇一：</h3>
+			<p>2018年10月1日至11月30日，预订世界梦号冬季六天五晚航线之“内侧客房”，可享买一送一优惠，即第二位乘客免船票费，第三第四位乘客享船票半价优惠，一家大小欢乐出行，轻松无忧！</p>
+			<h3>礼遇二：</h3>
+			<p>2018年10月1日至11月30日，预订世界梦号冬季六天五晚航线之“海景客房”，可享免费升级至“露台海景客房”，用同样的预算，畅享更舒适<strong>愉悦的客房体验！升级客房数量有限，先到先得，预订时请直接预订“露台海景客房”，预订“海景房”则视为放弃免费升级资格。</strong></p>
+			<p><img src="images/events/img2.jpg" /></p>
+			<h3>活动规则：</h3>
+			<ol class="list-align-left">
+				<li>活动适用于预订世界梦号2018年11月4日-2019年3月24日出发之六天五晚航线；</li>
+				<li>活动不适用于2019年2月3日出发之航次</li>
+				<li>活动客房至少入住2人</li>
+				<li>活动可与优惠券和客服邀请码叠加使用</li>
+				<li>活动仅限丽星邮轮普通会员参加，特殊合作伙伴不参与本次活动</li>
+				<li>如有疑问，请详询客服。</li>
+			</ol>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

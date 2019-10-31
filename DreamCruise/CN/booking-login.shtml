@@ -1,0 +1,264 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Booking</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/booking.css">
+	<!-- JS validation  -->
+	<script src="../include/js/jquery.validate.min.js"></script>
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(6) > .nav-link').addClass('active');
+
+			loginvalidate();
+			switchmember.init();
+
+			$('#btn-nextstep').click(function(){
+				if ($('#signup-form').valid()) {
+					//Go to part 2 if valid
+					switchmember.init('part2');
+				}
+			});
+
+			$('input[name=logintype]').change(function(){
+           var currnet = $(this).val();
+					 $('#tel, #mid').hide();
+					 $('#tel, #mid').find('input').val('');
+					 $('#tel, #mid').find('select').get(0).selectedIndex = 0;
+					 $('#'+currnet).show();
+			});
+		});
+
+		// Init validation features
+		function loginvalidate() {
+			var lformobj = $('#login-form');
+			lformobj.validate({
+				errorPlacement: function (error, element) {
+					error.insertAfter(element.parent());
+				},
+				submitHandler: function (form) {
+					alert('Login Success!');
+				}
+			});
+
+			var sformobj = $('#signup-form');
+			sformobj.validate({
+				errorPlacement: function (error, element) {
+					error.insertAfter(element.parent());
+				},
+				submitHandler: function (form) {
+					switchmember.init('success');
+				}
+			});
+
+		}
+
+		var switchmember = {
+			el:{
+				obj: '#signup-form > div',
+				part1: '#signup-part1',
+				part2: '#signup-part2',
+				success: '#signup-success'
+			},
+			init: function(type){
+			   switch(type){
+				   case 'part1':
+				   	$(this.el.obj).removeClass('current');
+					$(this.el.part1).addClass('current');	
+				   break;
+				   case 'part2':
+				   $(this.el.obj).removeClass('current');
+				   $(this.el.part2).addClass('current');
+				   break;
+				   case 'success':
+				   $(this.el.obj).removeClass('current');
+				   $(this.el.success).addClass('current');
+				   break;
+				   default:
+			   }	
+			}
+		}
+
+		function showrecommend(){
+			$('input[name=login_recommend]').parent('div').removeClass('d-none');
+		}
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+	</header>
+	<!-- Content -->
+	<section class="btm-space">
+		<div class="container py-5 position-static">
+			<!-- Booking Login / Signup -->
+			<div id="booking-login" autocomplete="off">
+				<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					<a class="nav-item nav-link active rounded-0 border-0 w-50 text-center" id="nav-login-tab"
+						data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login"
+						aria-selected="true">登入</a>
+					<a class="nav-item nav-link rounded-0 border-0 w-50 text-center" id="nav-signup-tab"
+						data-toggle="tab" href="#nav-signup" role="tab" aria-controls="nav-signup"
+						aria-selected="false">註冊</a>
+				</div>
+				</nav>
+				<div class="tab-content tab-adjust" id="nav-tabContent">
+					<div class="tab-pane show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+						<h2 class="section-header">「星夢會」會員登入</h2>
+						<form id="login-form">
+							<div>
+								<input type="radio" id="login_phone" name="logintype" value="tel" checked />
+								<label for="login_phone" class="icon-box">電話號碼</label>
+								<input type="radio" id="login_id" name="logintype" value="mid" />
+								<label for="login_id" class="icon-box">星夢會員號碼</label>
+							</div>
+							 <div class="current" id="tel">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="icon-border">
+												<select>
+														<option>+86 中国</option>
+														<option>+852 中国香港</option>
+														<option>+853 中国澳门</option>
+														<option>+886 中国台湾</option>
+														<option>+60 马来西亚</option>
+														<option>+65 新加坡</option>
+														<option>+63 菲律宾</option>
+														<option>+62 印度尼西亚</option>
+														<option>0032 比利时</option>
+														<option>+81 日本</option>
+														<option>+82 韩国</option>
+														<option>+84 越南</option>
+														<option>+91 印度</option>
+														<option>+44 英国</option>
+														<option>+33 法国</option>
+														<option>+31 荷兰</option>
+														<option>+49 德国</option>
+														<option>+43 奥地利</option>
+														<option>+39 意大利</option>
+														<option>+7 俄罗斯</option>
+														<option>+61 澳大利亚</option>
+														<option>+64 新西兰</option>
+														<option>+1 加拿大</option>
+														<option>+1 美国</option>
+														<option>+55 巴西</option>
+														<option>+56 智利</option>
+													</select>
+										</div>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="icon-border"><input type="text" name="login_mobile" placeholder="手機號碼"
+												required data-msg-required="請輸入手機號碼" /></div>
+									</div>
+								</div>
+							</div>
+							<div id="mid">
+								<div class="icon-border"><input type="text" name="login_mid" placeholder="會員號碼"
+									required data-msg-required="請輸入有效的會員號碼" /></div>
+								</div>		
+								<div class="icon-border"><input type="password" name="login_password" placeholder="密碼"
+										required data-msg-required="請輸入密碼" /></div>
+								<div class="row">
+									<div class="col-6 col-md">
+										<div class="icon-border"><input type="password" name="login_verify"
+												placeholder="驗證碼" required data-msg-required="請輸入驗證碼" /></div>
+									</div>
+									<div class="col col-md-auto"><img src="../images/booking/login/captcha.png"></div>
+									<div class="col-auto"><a href="javascript:void(0)" class="d-inline-block p-2"><img src="../images/booking/login/refresh.png" /></a></div>
+								</div>
+								<div class="row">
+									<div class="col"><input type="checkbox" id="login_stay" value="" /><label
+											for="login_stay" class="icon-box">保持登錄狀態</label></div>
+									<div class="col-auto"><a href="javascript:void(0)">忘記密碼?</a></div>
+								</div>
+								<p class="text-center"><input type="submit" class="dc-btn px-5" value="登入" /></p>
+						</form>
+					</div>
+					<div class="tab-pane" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
+						<h2 class="section-header">「星夢會」會籍註冊</h2>
+						<form id="signup-form">
+						    <div id="signup-part1" class="current">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<div class="icon-border">
+											<select>
+												<option>+86 中国</option>
+												<option>+852 中国香港</option>
+												<option>+853 中国澳门</option>
+												<option>+886 中国台湾</option>
+												<option>+60 马来西亚</option>
+												<option>+65 新加坡</option>
+												<option>+63 菲律宾</option>
+												<option>+62 印度尼西亚</option>
+												<option>0032 比利时</option>
+												<option>+81 日本</option>
+												<option>+82 韩国</option>
+												<option>+84 越南</option>
+												<option>+91 印度</option>
+												<option>+44 英国</option>
+												<option>+33 法国</option>
+												<option>+31 荷兰</option>
+												<option>+49 德国</option>
+												<option>+43 奥地利</option>
+												<option>+39 意大利</option>
+												<option>+7 俄罗斯</option>
+												<option>+61 澳大利亚</option>
+												<option>+64 新西兰</option>
+												<option>+1 加拿大</option>
+												<option>+1 美国</option>
+												<option>+55 巴西</option>
+												<option>+56 智利</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-12 col-md-6">
+										<div class="icon-border"><input type="text" name="signup_mobile" placeholder="手機號碼"
+												required data-msg-required="請輸入手機號碼" /></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<div class="icon-border"><input type="text" name="signup_mverify"
+												placeholder="短訊驗證碼" required data-msg-required="請輸入短訊驗證碼" /></div>
+									</div>
+									<div class="col-auto"><input type="button" value="發送驗證碼" class="form-btn" /></div>
+								</div>
+								<div class="icon-border d-none"><input type="text" name="login_recommend" placeholder="會員推薦碼"></div>
+								<p><a href="javascript:void(0)" onclick="showrecommend()">填寫會員推薦碼</a></p>
+								<p class="text-center mb-2"><a href="javascript:void(0)" id="btn-nextstep" class="dc-btn px-5">下一步</a></p>
+								<p class="text-center remarks">點擊上方按鈕或注冊登錄即代表你同意服務協議和隱私政策</p>
+							</div>	
+							<div id="signup-part2">
+								<div class="icon-border"><input type="password" id="signup_password" name="signup_password" placeholder="密碼"
+										required data-msg-required="請輸入密碼" /></div>
+								<div class="icon-border"><input type="password" name="signup_repeat" placeholder="確認密碼"
+										required data-msg-required="請輸入確認密碼" equalTo="#signup_password" data-msg-equalTo="密碼和確認密碼必須一致" /></div>		
+								<p class="text-center mb-2"><input type="submit" class="dc-btn px-5" value="註冊" /></p>
+								<p><a href="javascript:void(0)" onclick="switchmember.init('part1')">返回</a></p>
+							</div>
+							<div id="signup-success" class="text-center">
+								<p><img src="../images/booking/login/icon-success.jpg" /></p>
+								<p class="txt-dark-blue"><strong>恭喜你已注冊成功</strong></p>
+								<p><a href="javascript:void(0)" class="dc-btn">返回預訂</a></p>
+							</div>
+						</form>
+					</div>
+				</div>
+				</form>
+			</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<div class="row mb-4">
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-itineraries item-txt-photo">
+			<div class="item-photo"><img src="images/destinations/d2-img1.jpg"><div class="icon-destinations">3-NIGHT PHUKET ADVENTURE</div>
+			</div>
+			<div class=" position-relative">
+				<div class="item-txt-title">Genting Dream Shore Excursion</div>
+				<div class="row">
+					<div class="col p-0">
+						<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span></p>
+						<p><span class="icon-to">Genting Dream Singspore</span></p>
+						<p><span class="icon-date">From now until 24 October 2018</span></p>
+					</div>
+					<div class="col-auto d-flex align-items-end pr-0">
+						<p class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per person</i></p>
+					</div>
+					<a href="destinations3.html" class="btn-itneraries" tabindex="0"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-itineraries item-txt-photo">
+			<div class="item-photo"><img src="images/destinations/d2-img2.jpg"><div class="icon-destinations">3-NIGHT PENANG CRUISE</div>
+			</div>
+			<div class=" position-relative">
+				<div class="item-txt-title">Genting Dream Shore Excursion</div>
+				<div class="row">
+					<div class="col p-0">
+						<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span></p>
+						<p><span class="icon-to">Genting Dream Singspore</span></p>
+						<p><span class="icon-date">From now until 24 October 2018</span></p>
+					</div>
+					<div class="col-auto d-flex align-items-end pr-0">
+						<p class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per person</i></p>
+					</div>
+					<a href="destinations3.html" class="btn-itneraries" tabindex="0"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-itineraries item-txt-photo">
+			<div class="item-photo"><img src="images/destinations/d2-img3.jpg"><div class="icon-destinations">5-NIGHT MACLEOD
+					ISLAND - PHUKET ADVENTURE</div>
+			</div>
+			<div class=" position-relative">
+				<div class="item-txt-title">Genting Dream Shore Excursion</div>
+				<div class="row">
+					<div class="col p-0">
+						<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span></p>
+						<p><span class="icon-to">Genting Dream Singspore</span></p>
+						<p><span class="icon-date">From now until 24 October 2018</span></p>
+					</div>
+					<div class="col-auto d-flex align-items-end pr-0">
+						<p class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per person</i></p>
+					</div>
+					<a href="destinations3.html" class="btn-itneraries" tabindex="0"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

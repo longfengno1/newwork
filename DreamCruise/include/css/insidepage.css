@@ -1,0 +1,2160 @@
+.insidepage-bg{
+	background: url('/campaign-sandbox/DreamCruise/images/insidepage-bg-shape1.jpg') no-repeat center 96px #BCE2E3;
+	background-size: 100%;
+}
+.txt-sm-bold{
+	font-size: 1.3em;
+    font-weight: normal;
+    line-height: normal;
+}
+.insidepage-bg.blue-bg{
+	background-image: none;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a5daec+0,bce2e3+100 */
+	background: rgb(165,218,236); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(165,218,236,1) 0%, rgba(188,226,227,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(165,218,236,1) 0%,rgba(188,226,227,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(165,218,236,1) 0%,rgba(188,226,227,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5daec', endColorstr='#bce2e3',GradientType=0 ); /* IE6-9 */
+}
+.left-0{
+	left:0;
+} 
+.top-0{
+	top:0;
+}
+.card .card-img-top{
+	flex: 0 0 auto;
+}
+.btm-space{
+	padding-bottom: 20%;
+}
+.item-txt-photo{
+	background: #FFFFFF;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+}
+.item-bg-img{
+	padding-top: 62%;
+	background-repeat:no-repeat;
+	background-position:center;
+    position: relative;
+    background-size: cover;
+}
+.first-item .item-bg-img{
+	height:100%;
+}
+.item-txt-photo img{
+	width: 100%;
+	flex: 0 0 auto;
+}
+.item-txt-photo .item-txt-title{
+	padding: 12px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.5em;
+	line-height: normal;
+	display: block;
+	text-decoration: none;
+	flex: 1 1 auto;
+	position: relative;
+}
+.item-txt-title .item-txt-date{
+	display: block;
+	font-size: 0.8em;
+	color: #7B807C;
+	margin-top:15px;
+}
+.item-txt-photo.item-itineraries{
+	padding: 0;
+}
+.item-txt-photo.item-itineraries .row.position-relative{
+    flex: 1 1 auto;
+}
+.item-txt-photo.item-itineraries .item-txt-title,
+.item-txt-photo.item-itineraries .item-photo
+{
+	flex: 0 0 auto;
+}
+.item-txt-photo.item-itineraries .item-txt-title{
+	padding-bottom: 12px;
+}
+.list-share{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.list-share li{
+	display: inline-block;
+}
+.list-share li + li{
+	margin-left: 10px;
+}
+.item-btn{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom: 0;
+	text-indent: -9999px;
+}
+.insidepage-banner{
+   position: relative;
+}
+.insidepage-banner img{
+	width: 100%;
+}
+.insidepage-banner .banner-cover{
+	background:url(/campaign-sandbox/DreamCruise/images/destinations/inside-banner-cover.png) no-repeat bottom;
+	width: 100%;
+	background-size: 100%;
+	position: absolute;
+	padding-top: 12%;
+	bottom: -1px;
+}
+#btn-share:after{
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	background:url(/campaign-sandbox/DreamCruise/images/icon-share.png) no-repeat;
+}
+#overlay-bg{
+	background-color: rgba(0,0,0,0.75);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	z-index: 10;
+}
+#lightbox{
+	position: fixed;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	z-index: 11;
+	max-width: 1024px;
+}
+#lightbox .close-btn{
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	text-indent: 100%;
+	background:url(/campaign-sandbox/DreamCruise/images/icon-close.png) no-repeat center;
+	padding: 20px;
+	font-size: 0;
+}
+.btnlightbox{
+	width: 23px;
+	height: 23px;
+	background:url(/campaign-sandbox/DreamCruise/images/btn-zoom.png) no-repeat center;
+	text-indent: -9999px;
+	position: absolute;
+	top:10px;
+	right: 10px;
+	padding: 20px;
+}
+.insidepage .video-thumbnail,
+.insidepage .hasvideo:before{
+	background-image:url(/campaign-sandbox/DreamCruise/images/btn_play.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.insidepage-banner .video-thumbnail{
+	background-image: none;
+}
+.insidepage .hasvideo:before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom:0;
+	background-size: 25%;
+}
+.insidepage .panel-slide{
+	margin-bottom: 25px;
+}
+.insidepage .txt-link{
+	text-decoration: underline;
+	color: #16979C;
+	word-break: break-all;
+}
+/* Select */
+.dc-select-wrapper{
+	min-width: 200px;
+}
+.dc-select-wrapper .dc-select{
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding-top: 0;
+	padding-bottom: 0;
+	display: none;
+}
+.dc-select-wrapper .dc-selectlist, 
+.dc-select-wrapper .dc-selectbtn {
+    background-color: #f2f9f9;
+}
+.dc-select-wrapper .dc-selectlist{
+	display: none;
+	position: absolute;
+    width: 100%;
+	z-index: 1;
+	list-style: none;
+}
+.dc-select-wrapper .dc-selectlist a{
+	font-weight: normal;
+	display: block;
+}
+.dc-select-wrapper .dc-selectlist a:before{
+	display: none;
+}
+.dc-select-wrapper .dc-selectlist.active{
+	display: block;
+}
+.dc-select-wrapper .dc-selectbtn{
+	position: relative;
+	padding-right: 40px;
+	cursor: pointer;
+}
+.dc-select-wrapper .dc-selectbtn:after {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 11px;
+    background: url(/campaign-sandbox/DreamCruise/images/arrow_bottom_green.png) no-repeat;
+    top: 14px;
+    position: absolute;
+    right: 10px;
+}
+.left-icons{
+	flex: 0 0 auto;
+    margin-right: 10px;
+}
+.left-icons img{
+	vertical-align: baseline;
+}
+.panel-slide-caption{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 18px;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+}
+.panel-slide-caption p:last-child{
+	margin-bottom: 0;
+}
+.panel-slide-caption h3{
+	font-size: 1.3em;
+	color: #16979C;
+	font-weight: normal;
+}
+.purple-txt{
+   color: #9b509d;
+}
+/* DC photo*/
+.dc-photo figcaption{
+	display: table-caption;
+	caption-side: bottom;
+}
+/* Breadcrumb */
+.breadcrumb{
+	background: none;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 0.9em;
+	margin-bottom:0;
+}
+.breadcrumb-item,
+.breadcrumb-item.active,
+.breadcrumb-item a,
+.breadcrumb-item + .breadcrumb-item:before{
+	color: #16979C;
+	text-decoration: none;
+}
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: .3rem;
+}
+.breadcrumb-item + .breadcrumb-item:before{
+	padding-right: .3rem;
+}
+.sub-title{
+	color: #15999E;
+	font-size: 1.8em;
+	font-weight: normal;
+}
+/* Book Now Banner */
+#booknow-banner .booknow-img{
+	margin-top: -17%;
+	position: relative;
+	z-index: -1;
+	pointer-events: none;
+}
+#booknow-banner h2{
+	color: #41295e;
+}
+#booknow-banner .container{
+	padding-bottom: 4.5%;
+}
+
+/* Destinations */
+.destinations-content,
+.offers-content,
+.itineraries-content,
+.smallmeeting-content,
+.cruise-experience-content,
+.plan-your-holiday-content{
+	padding-bottom: 10%;
+}
+.item-destinations{
+	margin-bottom: 20px;
+}
+.item-destinations .item-txt-photo{
+    height:auto;
+}
+.item-destinations h4,
+.destinations-detail th{
+	color: #445173;
+	font-weight: bold;
+	font-size: 1em;
+}
+.destinations-detail{
+	border-bottom:solid 1px #15999E;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.destinations-detail h3{
+	color: #15999E;
+}
+.item-destinations p,
+.destinations-detail td{
+	color: #777777;
+}
+.destinations-detail td{
+	padding: 0 10px;
+}
+.list-price{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.list-price li{
+	float: left;
+	padding: 0px 15px;
+}
+.list-price li:first-child{
+	padding-left: 0;
+}
+.list-price li + li{
+    border-left:solid 1px #777777;
+}
+.list-price:after{
+	content:'';
+	display: block;
+	clear: both;
+}
+/* Important Notices */
+.important-notes,
+.tnc-wrapper{
+	border: 1px solid #80cdca;
+	border-radius: 10px;
+}
+.important-notes .notes-content-wrapper{
+	padding: 20px;
+}
+.btn-in,
+.btn-tnc{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 1.3em;
+	position: relative;
+}
+.btn-in:hover,
+.btn-tnc:hover{
+	text-decoration: none;
+}
+.btn-in:before{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 25px;
+	background:url(../../images/icon-important.png) no-repeat;
+	margin-right: 10px;
+	vertical-align: text-bottom;
+}
+.btn-tnc:before{
+	content: '';
+	display: inline-block;
+	width: 21px;
+	height: 26px;
+	background:url(../../images/icon-tnc.png) no-repeat;
+	margin-right: 10px;
+	vertical-align: text-bottom;
+}
+.btn-in:after,
+.btn-tnc:after{
+	content: '';
+	display: inline-block;
+	width: 11px;
+	height: 17px;
+	background:url(../../images/arrow_blue_right.png) no-repeat;
+	position: absolute;
+	right: 20px;
+	top:50%;
+	transform: translateY(-50%);
+}
+.btn-tnc:after{
+	transform: translateY(-50%) rotate(-90deg);
+	transition: 0.2s ease-in-out all;
+}
+.btn-tnc.collapsed:after{
+	transform: translateY(-50%) rotate(0deg);
+}
+.collapse-content{
+	padding: 10px 20px;
+}
+/* Offer list */
+.container.offers-content{
+	z-index: 6;
+}
+#offer-fliter-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#offer-fliter-list li{
+	width: 32.333%;
+	float: left;
+	margin: 0.5%;
+}
+#offer-fliter-list li:nth-child(3n + 2){
+	clear: left;
+}
+#offer-fliter-list:after{
+	content:'';
+	display: block;
+	clear: both;
+}
+#offer-fliter-list .item-txt-title .txt-purple{
+   font-size: 1.5em;
+   color: #9b509d;
+   display: block;
+}
+#offer-fliter-list li.first-item{
+	width: 99%;
+}
+#offer-fliter-list li.first-item .item-itineraries{
+    flex-flow: row;
+}
+#offer-fliter-list li.first-item .item-itineraries > div:nth-child(1){
+	flex: 0 0 45%;
+}
+#offer-fliter-list li.first-item .item-itineraries > div:nth-child(2){
+	flex: 0 0 55%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	max-width: 55%;
+}
+#offer-fliter-list li.first-item .item-itineraries .row{
+	margin-top: auto;
+}
+#offer-fliter-list li.first-item .item-txt-photo img{
+	height: 100%;
+	object-fit: cover;
+}
+#offer-fliter-list li.first-item .item-txt-title{
+	text-align: left;
+	padding: 15px;
+}
+#offer-fliter-list .dc-btn{
+	position: relative;
+	z-index: 1;
+}
+/* Table */
+.innertable{
+	width: 100%;
+	margin-bottom: 20px;
+	border-spacing: 2px;
+    border-collapse: separate;
+}
+.innertable th,
+.innertable td{
+	font-weight: normal;
+	text-align: center;
+	padding: 10px;
+}
+.innertable th{
+	background-color: #16979C;
+	color: #FFFFFF;
+	
+}
+.innertable td{
+	background: #FFFFFF;
+}
+.innertable tr:nth-child(2n + 1) td{
+	background: #edebe9;
+}
+.innertable.vt-header tr:nth-child(even) td{
+	background: #edebe9;
+}
+.innertable.vt-header tr:nth-child(odd) td{
+	background: #ffffff;
+}
+.innertable th:first-child,
+.innertable td:first-child{
+	text-align: left;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.innertable.two-col th:first-child,
+.innertable.two-col td:first-child{
+    border-right: solid 2px #a5daec;
+}
+.innertable.two-col th,
+.innertable.two-col td{
+	padding:20px 30px;
+}
+.innertable.two-col th{
+	border-bottom: solid 2px #a5daec;
+}
+.two-col-table{
+	width: 100%;
+}
+.two-col-table td{
+	width: 50%;
+}
+.two-col-table ul{
+	padding-left: 18px;
+}
+/* Itineraries */
+.container.itineraries-content{
+	z-index: 6;
+}
+.itineraries-content .dc-selectlist{
+	position: relative;
+	background: none;
+}
+.itineraries-content .dc-selectlist a{
+	font-weight: bold;
+}
+.itineraries-content .dc-selectlist a:before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 23px;
+    background: url(../../images/icon-anchor.png) no-repeat;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.itineraries-content .dc-selectlist a.active:before {
+    background-image: url(../../images/icon-anchor-on.png);
+}
+.itineraries-content .video-thumbnail{
+	background-size:25%; 
+}
+.itineraries-content .slick-prev,
+.itineraries-content .slick-next{
+    display: none!important;
+}
+.itineraries-content .tab-pane:not(:first-child){
+	position: relative;
+}
+.itineraries-content .tab-content > .tab-pane{
+    display: none;
+}
+.itineraries-content .tab-content > .tab-pane.show{
+    display: block;
+}
+/* Calendar */
+.dc-calendar .fc-row{
+  	background-color: #FAFEFF;
+}
+.dc-calendar .fc-day-header{
+	border:none;
+	background-color: #E3F3F2;
+	padding: 10px;
+	font-weight: normal;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+.dc-calendar .fc-day-header.fc-sun,
+.dc-calendar .fc-day-header.fc-sat,
+.dc-calendar .fc-sun .fc-day-number,
+.dc-calendar .fc-sat .fc-day-number{
+    color: #F17671;
+}
+.dc-calendar .fc-day-top,
+.dc-calendar .fc-event-container{
+	padding: 5px;
+}
+.dc-calendar .fc-event-container{
+	padding: 0 5px;
+}
+.dc-calendar .fc-more-cell{
+	text-align: right;
+	padding: 5px;
+}
+.dc-calendar .fc-popover{
+    margin-left: -5px;
+}
+.dc-calendar.fc-ltr .fc-basic-view .fc-day-top .fc-day-number{
+	float: left;
+	font-size: 1.2em;
+}
+.dc-calendar .fc-prev-button,
+.dc-calendar .fc-next-button{
+	border:none;
+	background:none;
+	box-shadow: none;
+	background:url('../../images/itineraries/btn-arrow-left-green.png') no-repeat center;
+}
+.dc-calendar .fc-prev-button{
+	margin-right: 1em;
+}
+.dc-calendar .fc-next-button{
+	background-image:url('../../images/itineraries/btn-arrow-right-green.png');
+	margin-left: 1em;
+}
+.dc-calendar .fc-icon-left-single-arrow:after,
+.dc-calendar .fc-icon-right-single-arrow:after{
+	display: none;
+}
+.dc-calendar .fc-center h2{
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: normal;
+	color: #334259;
+}
+.dc-calendar .fc-widget-content{
+	position: relative;
+}
+.dc-calendar .highlight-hot{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	right: 0;
+	border:2px solid #9A509D;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	overflow: hidden;
+}
+.dc-calendar .txt-price{
+	text-align: right;
+	font-style: italic;
+}
+.dc-calendar .txt-price span{
+	display: block;
+	font-style: normal;
+}
+.dc-calendar .txt-desc{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.dc-calendar .fc-more-popover .txt-desc{
+	text-align: left;
+}
+.dc-calendar .fc-more-popover .row{
+	margin-bottom: 20px;
+}
+.dc-calendar .fc-more-popover .row:last-child{
+	margin-bottom: 0;
+}
+.dc-calendar .txt-soldout{
+	text-align: center;
+	color: #76757A;
+	font-size: 1.3em;
+}
+.dc-calendar .row{
+	flex-direction: column;
+}
+.dc-calendar .fc-week{
+	padding-bottom: 25px;
+}
+.dc-calendar .fc-more-popover .col-12{
+	flex: 0 0 50%;
+	align-items: center;
+    display: flex;
+}
+.dc-calendar .row > div{
+	flex: 0 0 auto;
+}
+.dc-calendar .fc-more-popover .row{
+	flex-direction: row;
+}
+.dc-calendar .fc-more-popover .row > div{
+	flex: 0 0 50%;
+}
+.dc-calendar .btn-right,
+.dc-calendar .btn-left{
+	display: none;
+}
+/* Select Style2 */
+.dc-select-wrapper2{
+	min-width: 200px;
+}
+.dc-select-wrapper2 .dc-selectlist,
+.dc-select-wrapper2  .dc-selectbtn {
+    background-color: #f2f9f9;
+}
+.dc-select-wrapper2 .dc-selectbtn {
+    color: #334259;
+    text-decoration: none;
+    font-weight: normal;
+    display: block;
+    position: relative;
+}
+.dc-select-wrapper2 .dc-selectbtn:after {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 11px;
+    background: url(/campaign-sandbox/DreamCruise/images/arrow_bottom_green.png) no-repeat;
+    top: 14px;
+    position: absolute;
+    right: 10px;
+}
+.dc-select-wrapper2 .dc-selectlist a:before,
+.dc-select-wrapper2 .dc-selectlist a:after{
+    display: none;
+}
+.dc-select-wrapper2 .dc-selectlist {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.dc-select-wrapper2 .dc-selectlist.active {
+    display: block;
+}
+.dc-tab-nav{
+	border-bottom:solid 1px #9FBAC3;
+}
+.dc-tab-nav.flex-nowrap{
+	white-space: nowrap;
+}
+.dc-tab-nav a,
+.dc-nav-txt{
+	padding: 10px 40px;
+	color: #343E57;
+	text-decoration: none;
+	position: relative;
+	margin-bottom: 1px;
+}
+.dc-tab-nav a.active:after,
+.dc-nav-txt.active:after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -2px;
+	background-color: #BB8DBE;
+	height: 2px;
+	width: 100%;
+	left: 0;
+}
+.dc-tab-nav a.active,
+.dc-tab-nav .dc-nav-txt.active{
+    background-color: #343E57;
+	color: #FFFFFF;
+}
+.mCSB_horizontal.mCSB_inside>.mCSB_container{
+	margin-bottom: 20px;
+}
+/* Small Meeting Slider */
+.smallmeeting-content .slider{ margin:0; padding: 0; display: block; margin-bottom: 30px; }
+.smallmeeting-content .slider:after{
+	content: '';
+	display: block;
+	width: 68px;
+	height: 68px;
+	background:url('../../images/icon-mouse-over.png') no-repeat center;
+	background-size:cover;
+	position:absolute;
+	right: 0;
+	bottom:0;
+	z-index: 100;
+	transition: all 0.6s ease-in-out; 
+}
+.smallmeeting-content .slider:hover:after{
+    opacity: 0;
+}
+.smallmeeting-content  .slide-item { width:100%; padding-top: 40%; /*height:360px; max-width:900px;*/position:relative; overflow:hidden; color:#f5f5f2;list-style:none; margin:1px; background: rgba(29,54,91,1);  display: block; }
+.smallmeeting-content  .slide-item img { width:100%;}
+
+.smallmeeting-content  .slide-item .layer{ position:absolute; bottom:0; top:10%; left:0;right:0; padding:20px; 
+z-index:1;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+57,0.65+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 57%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 57%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 57%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+.smallmeeting-content  .slide-item .textlayer{ 
+	top:100%;  left:-100%; right:0; padding:0 20px 0px 20px; z-index:2;  position:absolute; 
+	width: 100%;
+}
+.smallmeeting-content .slide-item h1{font-weight:100; font-size:24px; position: absolute; bottom: 100%;  left:calc(100% + 20px); width: calc(100% - 40px); text-shadow: 2px 2px 4px #333333;
+	padding-top: 10px;
+    padding-bottom: 10px;  }
+.smallmeeting-content .slide-item  p, #container li ul li{font-family:arial; font-size:14px; line-height:30px; background:transparent;}
+.smallmeeting-content .slide-item ul li{list-style:disc; width:100%; height:100%; float:none;overflow:visible; text-shadow: 1px 1px 2px #333333;}
+.smallmeeting-content .slide-item:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.smallmeeting-content .slide-img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+.smallmeeting-content .green-theme:after{
+	background-color:#3CA5AB;
+}
+.smallmeeting-content .green-theme li{
+	color: #3CA5AB;
+}
+.smallmeeting-content .blue-theme:after{
+	background-color:#ABDEEB;
+}
+.smallmeeting-content .blue-theme li{
+	color: #ABDEEB;
+}
+.smallmeeting-content .grey-theme:after{
+	background-color:#F5F5F2;
+}
+.smallmeeting-content .grey-theme li{
+	color: #F5F5F2;
+}
+.smallmeeting-content .yellow-theme:after{
+	background-color:#E6D78E;
+}
+.smallmeeting-content .yellow-theme li{
+	color: #E6D78E;
+}
+
+.smallmeeting-content .slide-item:hover .textlayer,
+.smallmeeting-content .slide-item.actived .textlayer 
+{ 
+	bottom: 0px; 
+	top: auto; 
+	left:0;
+}
+.smallmeeting-content .slide-item:hover .layer,
+.smallmeeting-content .slide-item:active .layer,
+.smallmeeting-content .slide-item.actived .layer{ 
+	top:-10%;
+}
+.smallmeeting-content .slide-item:hover h1,
+.smallmeeting-content .slide-item:active h1,
+.smallmeeting-content .slide-item.actived h1{
+	position: relative;
+	bottom:auto;
+	width: 100%;
+	left:0;
+}
+.smallmeeting-content .slide-item:hover .sb-container,
+.smallmeeting-content .slide-item:active .sb-container{ 
+	overflow: hidden;
+}
+
+.smallmeeting-content .slide-item .textlayer, 
+.smallmeeting-content .slide-item .layer{	
+-webkit-transition: all 0.5s ease-in-out;  
+	-moz-transition:  all 0.5s ease-in-out;
+	-ms-transition:  all 0.5s ease-in-out;
+	 -o-transition:  all 0.5s ease-in-out;
+		transition:  all 0.5s ease-in-out;
+}
+/* Cruise Experience */
+.container.cruise-experience-content{
+	z-index: 6;
+}
+/* Cruise Experience Lab */
+.container.ce-lab{
+	z-index: 3;
+	padding-bottom: 5.5%;
+}
+/* Booking */
+.bg-dblue{ 
+          background-color: #455272;
+          color: #FFFFFF;
+}
+.bg-grey1{ 
+  background-color: #F6F5F3;
+}
+.bg-grey2{ 
+  background-color: #E8E4E1;
+}
+#booking-details .btm-border{
+	position: relative;
+}
+#booking-details .btm-border:after{
+content: '';
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: rgb(185,141,190);
+background: -moz-linear-gradient(left, rgba(185,141,190,1) 0%, rgba(137,179,217,1) 50%, rgba(103,204,234,1) 100%);
+background: -webkit-linear-gradient(left, rgba(185,141,190,1) 0%,rgba(137,179,217,1) 50%,rgba(103,204,234,1) 100%);
+background: linear-gradient(to right, rgba(185,141,190,1) 0%,rgba(137,179,217,1) 50%,rgba(103,204,234,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b98dbe', endColorstr='#67ccea',GradientType=1 );
+}
+#booking-details h4{
+	display: inline-block;
+	height: 100%;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #35435D;
+}
+#booking-details h4 span{
+	display: block;
+	font-weight: normal;
+	color: #212529;
+	margin-top: 5px;
+}
+#booking-details .icon-num{
+display: inline-block;
+width: 30px;
+height: 30px;
+border:solid #35435D 1px;
+border-radius: 50%;
+line-height: 28px;
+margin-right: 5px;
+}
+#booking-details .btm-border .icon-num{
+border-color: #FFFFFF;
+}
+#booking-details .grey-btm-border{
+	border-bottom: solid 2px #DBDCE0;
+}
+#booking-details .green-btm-border{
+	border-bottom: solid 1px #81CDC9;
+}
+#booking-details .icon-packages:before{
+	content: '';
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 22px;
+	height: 18px;
+	margin-right: 8px;
+	background: url('../../images/booking/icon_packages.jpg') no-repeat;
+}
+#booking-details .icon-departured:before{
+	content: '';
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 19px;
+	height: 18px;
+	margin-right: 8px;
+	background: url('../../images/booking/icon_departure.jpg') no-repeat;
+}
+#booking-details .icon-hkd:before{
+	content: '';
+	display: inline-block;
+	vertical-align: text-bottom;
+	width: 11px;
+	height: 18px;
+	margin-right: 8px;
+	background: url('../../images/booking/icon_dollar.jpg') no-repeat;
+}
+#booking-details label{
+	cursor: pointer;
+}
+#booking-details .float-panel{
+	left: 0;
+    z-index: 1;
+    top: 100%;
+    display: none;
+}
+#booking-details .float-panel hr{
+	border-top-color: #FFFFFF;
+}
+#booking-details .btn-panel{
+	transform: rotate(90deg);
+	transition: all 0.2s 0.2s;
+}
+#booking-details .btn-panel.active{
+	transform: rotate(270deg);
+}
+#booking-details .txt-price{
+	color: #9C529E;
+}
+.cabin-control input{
+	width: 50px;
+	background: none;
+	border:none; 
+	color: #FFF;
+	text-align: center;
+	font-size: 1.5rem;
+}
+.cabin-control p{
+	display: inline-block;
+	float: left;
+}
+.cabin-control label{
+	margin-bottom: 0;
+}
+.cabin-control .col:after{
+	content: '';
+	display: block;
+	clear:both;
+}
+.cabin-control p:first-child{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	text-align: center;
+}
+.btn-increase,
+.btn-decrease{
+	display: block;
+	text-align: center;
+	height:19px;
+}
+.btn-increase:before{
+	content: '';
+	display: inline-block;
+    width: 12px;
+    height: 19px;
+    background: url(../../images/icon-arrow.png) no-repeat center;
+    transform:rotate(270deg);
+}
+.btn-decrease:before{
+	content: '';
+	display: inline-block;
+	width: 12px;
+    height: 19px;
+    background: url(../../images/icon-arrow.png) no-repeat center;
+    transform:rotate(90deg);
+}
+.item-cabin{
+	border-bottom: solid 2px #FFFFFF;
+	display: none;
+}
+/* DC gallery */
+.dc-gallery .slick-dots{
+	position: absolute;
+    bottom: -25px;
+}
+.dc-gallery .panel-slide{
+	margin-bottom:0;
+}
+/* List padding */
+.list-align-left{
+	padding-left: 18px;
+}
+.dc-select-wrapper .selectlist-adjust{
+	width: calc(100% - 1rem);
+}
+/* Video Listing */
+.video-album{
+	position:relative;
+}
+.video-album.item-txt-photo .item-txt-title{
+	text-align: left;
+}
+.video-album .btn-item-txt{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	top:0;
+	left:0;
+}
+.video-album .item-txt-title{
+	color: #1B365D;
+}
+.video-album h3{
+	font-weight: bold;
+	font-size: 20px;
+}
+.video-album p{
+	font-size: 15px;
+}
+.video-album .item-bg-img:before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	opacity: 0.6;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+.video-album .item-bg-img:after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 25px 0 25px 40px;
+	border-color: transparent transparent transparent #ffffff;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%) translateX(5px);
+}
+/* Green Nav */
+.green-nav{
+	background-color: #15999E;
+}
+.green-nav .col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.green-nav a{
+	text-align: center;
+	color: #FFFFFF;
+	padding: 1.5em 2em;
+	display: block;
+	font-size: 20px;
+	font-family: "Segoe UI", "Open Sans", "Arial", "Trebuchet MS", "Verdana", "Helvetica", "sans-serif", "黑体", "SimHei", "微軟正黑體", "Microsoft JhengHei", "Meiryo", "苹果丽中黑", "Apple LiGothic Medium";
+	line-height: 20px;
+}
+.green-nav a:before{
+	content:'';
+	display: inline-block;
+	width: 1px;
+	height: 50px;
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 0;
+	top:50%;
+	transform: translateY(-50%);
+}
+.green-nav > div:first-child a:before{
+	display: none;
+}
+.green-nav a span{
+	font-size: 14px;
+}
+.green-nav a:hover{
+	text-decoration: none;
+}
+.dc-btn-2{
+	color: #15999E;
+	font-size: 20px;
+	text-decoration: underline;
+}
+.dc-btn-2:hover{
+	color: #15999E;
+}
+.dc-btn-2:after{
+	content:'';
+	display: inline-block;
+	background:url('/campaign-sandbox/DreamCruise/images/itineraries/btn-arrow-right-green.png') no-repeat;
+	width: 11px;
+	height: 18px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.txt-dark-blue{
+	color: #445173;
+}
+/* DC Tab List*/
+.dc-tab-list{
+	position: relative;
+}
+.dc-tab-list .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.dc-tab-list .nav{
+	background-color: #FFFFFF;
+}
+.dc-tab-list .nav a{
+	text-align: center;
+	padding: 1.5em 2em;
+	font-size: 20px;
+    font-family: "Segoe UI", "Open Sans", "Arial", "Trebuchet MS", "Verdana", "Helvetica", "sans-serif", "黑体", "SimHei", "微軟正黑體", "Microsoft JhengHei", "Meiryo", "苹果丽中黑", "Apple LiGothic Medium";
+	line-height: 20px;
+	color: #445173;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dc-tab-list .nav a span{
+	font-size: 14px;
+}
+.dc-tab-list .nav a:hover{
+	text-decoration: none;
+}
+.dc-tab-list .nav a.active{
+	background-color: #15999E;
+	color: #FFFFFF;
+}
+.dc-tab-list .tab-pane{
+	background-color: #15999E;
+}
+.dc-tab-list .tab-pane:not(:first-child){
+	height: auto;
+}
+.dc-tab-list #toggle-pannel{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	display:none;
+}
+.insidepage-banner .dc-tab-list{
+	max-width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.dc-tab-list .mb-expand{
+	color: #FFFFFF;
+	text-align: left;
+	display:block;
+	position: relative;
+}
+.dc-tab-list .mb-expand:hover{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.dc-tab-list .mb-expand:after{
+	content: '';
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) rotate(90deg);
+	width: 12px;
+	height: 19px;
+	background: url('../../images/icon-arrow.png') no-repeat;
+}
+.dc-tab-list .mb-expand.collapsed:after{
+	transform: translateY(-50%) rotate(0deg);
+}
+.two-row-list{
+	width: 100%;
+}
+.two-row-list a{
+	color:#FFFFFF;
+	display: block;
+	text-align: center;
+	border-top:solid 1px #FFFFFF;
+	padding: 1em 0em;
+}
+.two-row-list a:hover{
+	text-decoration: none;
+}
+.two-row-list td{
+	padding: 0em 1.5em;
+	border-left:solid 1px #FFFFFF;
+}
+.two-row-list td:first-child{
+	border-left:none;
+}
+.two-row-list tr:first-child td a{
+	border-top:0; 
+}
+.dc-tab-table{
+	width:100%;
+}
+.dc-tab-table th,
+.dc-tab-table td{
+	color: #FFFFFF;
+	padding: 1em 2em;
+	font-size: 16px;
+}
+.dc-tab-table th{
+	background-color: #1C365C;
+	white-space: nowrap;
+}
+.dc-tab-table td{
+	text-align: left;
+}
+.dc-tab-table td a{
+	display: inline-block;
+	color: #FFFFFF;
+	font-size: 16px;
+	margin: 8px 0px;
+}
+.dc-tab-table td a:last-child:after{
+    display:none;
+}
+.dc-tab-table td a:hover{
+	text-decoration: none;
+}
+.dc-tab-table td a:after{
+	content:'';
+	display: inline-block;
+	width: 1px;
+	height: 20px;
+	vertical-align: middle;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #FFFFFF;
+}
+/* DC Select list */
+.dc-custom-select{
+	position: relative;
+} 
+.dc-custom-select:after,
+.dc-custom-select select,
+.dc-custom-select .select-items li.active,
+.dc-custom-select .select-hide{
+display: none;
+}
+.dc-custom-select .select-items{
+position: absolute;
+background-color: #15999E;
+top: 100%;
+left: 0;
+right: 0;
+z-index: 99;
+padding: 0;
+margin: 0;
+list-style: none;
+}
+.dc-custom-select .select-items li{
+cursor: pointer;
+padding:0.5em;
+}
+.dc-custom-select .select-selected{
+color: #FFFFFF;
+cursor: pointer;
+display: block;
+}
+.dc-custom-select .select-selected:hover{
+text-decoration: none;
+}
+.dc-custom-select .select-selected:after {
+	content: '';
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 10px;
+	background: url(/campaign-sandbox/DreamCruise/images/btn-arrow.png) no-repeat center;
+	width: 9px;
+	height: 14px;
+}
+.btn-arrow{
+	color: #15989d;
+	font-size: 20px;
+}
+.btn-arrow:after{
+	content:'';
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	background: url(/campaign-sandbox/DreamCruise/images/arrow_bottom_green.png) no-repeat center;
+	width: 19px;
+	height: 11px;
+}
+.btn-arrow:hover{
+	color: #15989d;
+	text-decoration: none;
+}
+.btn-arrow.collapsed:after{
+	background-image: url(/campaign-sandbox/DreamCruise/images/itineraries/btn-arrow-right-green.png);
+	width: 11px;
+	height: 18px;
+	
+}
+.green-bar{
+	border: 0;
+	border-top:solid 1px #15989d;
+	margin-bottom: 35px;
+}
+.tab-adjust{
+	overflow: hidden;
+}
+.tab-adjust .tab-pane{
+	height: 0;
+	padding: 0;
+}
+.tab-adjust .tab-pane.active{
+	height: auto;
+}
+.tab-adjust .tab-pane:not(.active){
+	padding: 0!important;
+	overflow: hidden;
+}
+.tab-adjust .tab-pane:not(:first-child) {
+	position: relative;
+	
+}
+
+/* Filter Search bar */
+#result-view {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#result-view .icon-date {
+	background-image: url(/campaign-sandbox/DreamCruise/images/destinations/icon-date.jpg);
+	vertical-align: middle;
+}
+
+#result-view li {
+	border-top: solid 1px #DEF0F4;
+}
+
+#result-view li,
+.result-view-item .view-img {
+	transition: 0.2s ease-in-out all;
+}
+
+#result-view li:first-child {
+	border-top: none;
+}
+
+.result-view-item {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.result-view-item .view-img {
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	width: auto;
+	max-width: none;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.result-view-item .view-content {
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	max-width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+#result-view.grid-view {
+	flex-direction: row;
+}
+
+#result-view.grid-view li {
+	padding: 0.5rem;
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	border-top: none;
+}
+
+#result-view.grid-view .view-img {
+	padding-left: 0rem;
+	padding-right: 0rem;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+#result-view.grid-view .view-content {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background: #FFFFFF;
+}
+
+#result-view.grid-view p.mb-0 {
+	text-align: center;
+}
+
+#result-view.grid-view .result-view-item {
+	flex-direction: column;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#result-view.grid-view .icon-date {
+	display: none;
+}
+
+.icon-listview,
+.icon-gridview {
+	padding: 8px;
+	background-color: #FFFFFF;
+}
+
+.icon-listview:after,
+.icon-gridview:after {
+	content: '';
+	display: inline-block;
+	vertical-align: text-bottom;
+	background: url('/campaign-sandbox/DreamCruise/images/icon_listview_off.png') no-repeat center;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-gridview:after {
+	background-image: url('/campaign-sandbox/DreamCruise/images/icon_gridview_off.png');
+}
+
+.icon-listview.active:after {
+	background-image: url('/campaign-sandbox/DreamCruise/images/icon_listview_on.png');
+}
+
+.icon-gridview.active:after {
+	background-image: url('/campaign-sandbox/DreamCruise/images/icon_gridview_on.png');
+}
+
+.dt-search-bar {
+	background-color: #5EC2C9;
+}
+
+.icon-calendar-large {
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.icon-day-large:before {
+	content: '';
+	display: inline-block;
+	height: 21px;
+	width: 28px;
+	background: url('/campaign-sandbox/DreamCruise/images/icon-day_large.png') no-repeat center;
+}
+
+.dt-search-bar #datepicker {
+	width: 0;
+	padding: 0;
+	margin: 0;
+	border-left:0;
+}
+
+.dt-search-bar .btn-outline-secondary {
+	background: url('/campaign-sandbox/DreamCruise/images/icon-calendar_large.png') no-repeat center #FFFFFF;
+	border-radius: 0;
+}
+
+.dt-search-bar .gj-datepicker-bootstrap [role=right-icon] button:hover {
+	background-color: #FFFFFF;
+}
+
+.dt-search-bar .gj-icon {
+	display: none;
+}
+.gj-picker td.highlighted div,
+.gj-picker-bootstrap table tr td.highlighted div:hover,
+.gj-picker-bootstrap table tr td.today div{
+		   color:#15999E;
+		   font-weight: bold;
+		   border-radius: 4px;
+}
+.select-banner h2{
+	color: #445173;
+}
+.select-banner p{
+	color: #4B819B;
+}
+.select-banner hr{
+	border: 0;
+	border-top:solid 1px #4B819B;
+	width: 40px;
+}
+.select-banner ul{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-radius: 10px;
+	white-space: nowrap;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ccdde7+0,c2d8e5+60,a8ccd8+100 */
+	background: #ccdde7; /* Old browsers */
+	background: -moz-linear-gradient(top, #ccdde7 0%, #c2d8e5 60%, #a8ccd8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ccdde7 0%,#c2d8e5 60%,#a8ccd8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ccdde7 0%,#c2d8e5 60%,#a8ccd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccdde7', endColorstr='#a8ccd8',GradientType=0 ); /* IE6-9 */
+}
+.select-banner ul:after{
+	content:'';
+	display: block;
+	clear: both;
+}
+.select-banner li{
+	display: inline-block;
+}
+.select-banner li a{
+	text-decoration: none;
+	padding: 6px 18px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+.select-banner li a.active{
+	/* color: #15989d; */
+	background-color: #343E57;
+	color: #FFFFFF;
+}
+.txt-price span.sm-txt{
+	font-size: 15px;
+}
+.txt-grey{
+	color: #818588;
+}
+.icon-plus:after{
+	content:'';
+	display: inline-block;
+	vertical-align: baseline;
+	background: url('/campaign-sandbox/DreamCruise/images/destinations/icon-add.jpg') no-repeat center;
+	width: 10px;
+	height: 10px;
+	margin-left: 5px;
+}
+.icon-star:before{
+	content:'';
+	display: inline-block;
+	vertical-align: baseline;
+	background: url('/campaign-sandbox/DreamCruise/images/destinations/icon-star.jpg') no-repeat center;
+	width: 15px;
+	height: 13px;
+	margin-right: 5px;
+}
+.icon-bookmark:before{
+	content:'';
+	display: inline-block;
+	vertical-align: baseline;
+	background: url('/campaign-sandbox/DreamCruise/images/destinations/icon-bookmark.jpg') no-repeat center;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+}
+.icon-light:before{
+	content:'';
+	display: inline-block;
+	vertical-align: baseline;
+	background: url('/campaign-sandbox/DreamCruise/images/destinations/icon-light.jpg') no-repeat center;
+	width: 15px;
+	height: 18px;
+	margin-right: 5px;
+}
+.icon-food:before{
+	background: url('/campaign-sandbox/DreamCruise/images/destinations/icon-dine.jpg') no-repeat center;
+	width: 22px;
+	height: 20px;
+}
+.icon-price:before{
+	background: url('/campaign-sandbox/DreamCruise/images/destinations/icon-price.jpg') no-repeat center;
+	width: 22px;
+	height: 20px;
+}
+.dc-dt-menu a,
+.dc-dt-menu a:hover{
+	text-decoration: none;
+	color: #445173;
+}
+.dc-dt-menu > div + div{
+	border-left: solid 1px #58BCBC;
+}
+
+#promotion-fliter-list .item-itineraries .row {
+	padding: 0;
+}
+
+#promotion-fliter-list .first-item {
+	-ms-flex: 0 0 100% !important;
+	flex: 0 0 100% !important;
+	max-width: 100% !important;
+}
+
+#promotion-fliter-list .first-item .item-itineraries {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#promotion-fliter-list .first-item .itineraries-image {
+	-ms-flex: 0 0 33.333333%;
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%;
+	padding-right: 15px;
+}
+
+#promotion-fliter-list .first-item .item-bg-img {
+	height: auto;
+}
+
+#promotion-fliter-list .first-item .p-3 {
+	-ms-flex: 0 0 66.666667%;
+	flex: 0 0 66.666667%;
+	max-width: 66.666667%;
+	background-color: transparent !important;
+}
+
+#promotion-fliter-list .first-item .row {
+	background-color: transparent !important;
+	padding: 0;
+}
+
+#promotion-fliter-list .first-item .row>.col-12 {
+	-ms-flex-preferred-size: 0;
+	flex-basis: 0;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	max-width: 100%;
+}
+
+#promotion-fliter-list .first-item .row>.col-12:nth-child(2) {
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	width: auto;
+	max-width: none;
+}
+.section-header.txt-green{
+	color: #15989D;
+}
+.lightheme .dc-tab-nav{
+	border-bottom:none;
+}
+.lightheme .dc-tab-nav a{
+	padding: 8px 20px;
+}
+.lightheme .dc-tab-nav a.active, 
+.lightheme .dc-tab-nav .dc-nav-txt.active{
+	background: none;
+	color:#343E57;
+}
+.lightheme .dc-tab-nav a.active:after, 
+.lightheme .dc-tab-nav .dc-nav-txt.active:after{
+	background-color: #343E57;
+	height: 3px;
+}
+/* Scroll */
+.dc-tab-nav-wrapper .mCSB_1_scrollbar{
+	z-index: 99;
+}
+.dc-tab-nav-wrapper .mCustomScrollBox+.mCSB_scrollTools+.mCSB_scrollTools.mCSB_scrollTools_horizontal, 
+.dc-tab-nav-wrapper .mCustomScrollBox+.mCSB_scrollTools.mCSB_scrollTools_horizontal{
+	
+}
+.dc-tab-nav-wrapper .mCSB_draggerContainer{
+	visibility: hidden;
+}
+.dc-tab-nav-wrapper .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonLeft{
+	left: -18px;
+    bottom: calc(50% + 26px);
+    transform: translateY(-50%);
+    top: auto;
+}
+.dc-tab-nav-wrapper .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_buttonRight{
+	right: -18px;
+    bottom: calc(50% + 26px);
+    transform: translateY(-50%);
+    top: auto;
+}
+
+@media (max-width: 768px) {
+	.sub-title{
+		font-size: 1.5em;
+	}
+	.panel-slide-caption{
+		padding: 3%;
+	}
+	.panel-slide-caption h3{
+		font-size: 3.8vmin;
+		line-height: normal;
+		margin-bottom: 0.2rem;
+	}
+	.panel-slide-caption p{
+		font-size: 2.8vmin;
+		line-height: normal;
+	}
+	/* Book Now Banner */
+	#booknow-banner h2{
+		font-size: 1.5em;
+	}
+	#booknow-banner .booknow-img{
+		margin-left: -15px;
+	}
+	/* Video */
+	.insidepage .video-thumbnail,
+	.insidepage .videoplay .dc-video{
+		display:block;
+	}
+	.insidepage .videoplay .video-thumbnail{
+		display: none;
+	}
+	.insidepage .video-thumbnail{
+		background-size:25%;
+	}
+	.insidepage-banner .video-thumbnail,
+	.insidepage-banner .dc-video{
+		display: none;
+	}
+	/* Offer list */
+	#offer-fliter-list li,
+	#offer-fliter-list li.first-item{
+		width: 100%;
+		float: none;
+		margin: 20px 0;
+	}
+	#offer-fliter-list li.first-item .item-itineraries{
+		flex-flow: column;
+	}
+	#offer-fliter-list li.first-item .item-itineraries > div:nth-child(1),
+	#offer-fliter-list li.first-item .item-itineraries > div:nth-child(2){
+		flex: 0 0 auto;
+		padding: 0;
+	}
+    #offer-fliter-list li.first-item .item-itineraries > div:nth-child(2){
+		max-width: 100%;
+	}
+	#offer-fliter-list li.first-item .item-txt-photo img{
+		height: auto;
+	}
+	#offer-fliter-list li.first-item .item-txt-title{
+		text-align: center;
+		padding: 12px;
+	}
+	/* Table */
+	.responsivetable,
+	.responsivetable tbody,
+	.responsivetable tr,
+	.responsivetable th,
+	.responsivetable td{
+		display: block;
+	}
+	.responsivetable th, .responsivetable td,
+	.responsivetable th:first-child, 
+	.responsivetable td:first-child{
+		text-align: left;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.responsivetable tr{
+		margin-bottom: 25px;
+	}
+	.responsivetable tr:first-child{
+        display: none;
+	}
+	.responsivetable.vt-header tr:first-child{
+        display: block;
+	}
+	.responsivetable.vt-header th{
+        width: 100%;
+	}
+	.responsivetable tr:nth-child(2n + 1) td {
+		background: #FFFFFF;
+	}
+	.responsivetable.vt-header tr:nth-child(even) td {
+		background: #FFFFFF;
+	}
+	.responsivetable td{
+		margin-bottom: 5px;
+	}
+	.responsivetable td:before {
+		content: " " attr(data-rel) " ";
+		display: block;
+		color: #FFFFFF;
+		background-color: #16979C;
+		margin-left: -30px;
+		margin-right: -30px;
+		margin-top: -10px;
+		margin-bottom: 10px;
+		padding: 10px 30px;
+	}
+	.responsivetable.vt-header td:before{
+		display: none;
+	}
+	.two-col-table td{
+		width: 100%;
+		display: block;
+	}
+	/* Itineraries */
+	.itineraries-content .dc-selectlist{
+		background-color: #f2f9f9;
+		position: absolute;
+	}
+	.itineraries-content .dc-selectlist a:before{
+		display: none;
+	}
+	/* Calendar */
+	#calendar{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	#calendar  > .row{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.dc-calendar .fc-day-top{
+		padding: 0 5px;
+		font-size: 0.8em;
+	}
+	.dc-calendar .icon-hot{
+		background-color: #9A509D;
+		background-image:none;
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
+	.dc-calendar .icon-hot span{
+		position: static;
+	}
+	.dc-calendar .txt-price,
+	.dc-calendar .txt-soldout,
+	.dc-calendar .fc-more{
+		font-size: 2.5vmin;
+		line-height: normal;
+		text-align: center;
+	}
+	.dc-calendar .fc-basic-view .fc-day-number{
+		padding: 2px 0;
+	}
+	.dc-calendar .fc-more-cell{
+        text-align: center;
+	}
+	.dc-calendar .highlight-hot{
+		border-width: 1px;
+	}
+	.dc-calendar .fc-more-popover .txt-price,
+	.dc-calendar .fc-more-popover .txt-soldout{
+        text-align: right;
+	}
+
+	.dc-calendar .fc-view > table {
+		overflow-x: auto;
+		display: block;
+	}
+	.dc-calendar .fc-view > table > .fc-head,
+	.dc-calendar .fc-view > table > .fc-body{
+		width: 175%;
+		display: block!important;
+	}
+	.dc-calendar .fc-day-header.fc-wed{
+		position: relative;
+	}
+	.dc-calendar .btn-right,
+	.dc-calendar .btn-left{
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-weight: bold;
+		color: #16979C;
+		cursor: pointer;
+		text-decoration: none;
+		text-indent: -9999px;
+		background: url(../../images/itineraries/btn-arrow-right-green.png) no-repeat center;
+		width: 11px;
+		height: 18px;
+		opacity: 0;
+		padding: 5px;
+	}
+	.dc-calendar .btn-left{
+		right: -20px;
+		background-image: url(../../images/itineraries/btn-arrow-left-green.png);
+	}
+	.dc-calendar .btn-right.show,
+	.dc-calendar .btn-left.show{
+		opacity: 1;
+		transition: 0.3s ease-in-out all;
+	}
+	/* TAB */
+	.dc-tab-nav:not(.flex-nowrap){
+		display: none;
+		background-color: #f2f9f9;
+		border-bottom:0;
+		position: absolute;
+		width: 100%;
+    	z-index: 1;
+	}
+	.dc-tab-nav:not(.flex-nowrap).active{
+		display: block;
+	}
+	.dc-tab-nav:not(.flex-nowrap) a{
+		padding: 0.5rem 1rem;
+		width: 100%;
+		color: #7B807C;
+	}
+	.dc-tab-nav:not(.flex-nowrap) a.active{
+		background:none;
+		color: #334259;
+	}
+	.dc-tab-nav:not(.flex-nowrap) a.active:after{
+		display: none;
+	}
+	.dc-tabbtn{
+		color: #334259;
+		text-decoration: none;
+		font-weight: normal;
+		display: block;
+		position: relative;
+		background-color: #f2f9f9;
+	}
+	.dc-tabbtn:hover{
+		text-decoration: none;
+	}
+	.dc-tabbtn:after {
+		content: '';
+		display: inline-block;
+		width: 19px;
+		height: 11px;
+		background: url(/campaign-sandbox/DreamCruise/images/arrow_bottom_green.png) no-repeat;
+		top: 14px;
+		position: absolute;
+		right: 10px;
+	}
+	/* Small Meeting Slider */
+	.smallmeeting-content .slide-item{
+		padding-top: 50%;
+		min-height: 100px;
+	}
+	.smallmeeting-content .slide-item h1{
+		font-size: 20px;
+	}
+	.smallmeeting-content .slide-item .layer{
+		top:0;
+	}
+	.smallmeeting-content .slide-item:hover .layer,
+	.smallmeeting-content .slide-item:active .layer,
+	.smallmeeting-content .slide-item.actived .layer{ 
+		top:-80%;
+	}
+	/* Cruise Experience Lab */
+	.container.ce-lab{
+		padding-bottom: 2%;
+	}
+	/* Booking */
+	#booking-details #step-bar .bg-dblue{
+            background-color: transparent;
+            color: #212529;
+  	}
+  	#booking-details #step-bar .icon-num{
+  		background: #E8E4E1;
+  		color: #CDC8C2; 
+  		border: none;
+  	}
+  	#booking-details #step-bar .bg-dblue .icon-num{
+        background: rgb(22,154,159);
+	    background: -moz-linear-gradient(left, rgba(22,154,159,1) 0%, rgba(114,165,182,1) 50%, rgba(199,175,207,1) 100%);
+	    background: -webkit-linear-gradient(left, rgba(22,154,159,1) 0%,rgba(114,165,182,1) 50%,rgba(199,175,207,1) 100%);
+	    background: linear-gradient(to right, rgba(22,154,159,1) 0%,rgba(114,165,182,1) 50%,rgba(199,175,207,1) 100%);
+	    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#169a9f', endColorstr='#c7afcf',GradientType=1 );
+	    color: #FFFFFF;
+  	}
+  	#booking-details #step-bar .btm-border:after{
+  		display: none;
+  	}
+  	#booking-details .dc-selectlist,
+  	#booking-details .dc-selectbtn{
+  		background-color: #FFFFFF;
+  	}
+  	#booking-details .dc-selectlist a{
+        cursor: pointer;
+  	}
+	.dc-gallery .slick-dots{
+		bottom: 0;
+	}
+	/* Filter Search bar */
+	.result-view-item .view-img,
+	.result-view-item .view-content {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.result-view-item .view-content {
+		padding: 1rem;
+	}
+
+	#result-view.grid-view li {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	#promotion-fliter-list .first-item .itineraries-image,
+	#promotion-fliter-list .first-item .p-3 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	#promotion-fliter-list .first-item .p-3{
+		background-color: #CAE8EA!important;
+	}
+	#promotion-fliter-list .first-item .itineraries-image{
+		padding-right: 0;
+	}
+	#promotion-fliter-list .first-item .row>.col-12:nth-child(2){
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.two-row-list td{
+		display: block;
+		border-left:none;
+	}
+	.two-row-list tr:first-child td a{
+		border-top: solid 1px #FFFFFF;
+	}
+	.two-row-list tr:first-child td:first-child a{
+		border-top:none;
+	}
+
+	.green-nav > div:nth-child(2n + 1) a:before{
+		display: none;
+	}
+
+	.dc-tab-list .nav a{
+		padding: 1em 0.5em;
+	}
+	.dc-tab-list th,
+	.dc-tab-list td{
+		display: block;
+		width: 100%;
+	}
+
+	
+	.mobile-bg .slick-dots{
+		position: absolute;
+		bottom:0.5rem;
+	}
+	.mobile-bg > li > .row > .col-12:last-child{
+        background-color: #FFFFFF;
+	}
+}

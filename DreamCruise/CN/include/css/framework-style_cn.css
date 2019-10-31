@@ -1,0 +1,79 @@
+#nav-search input{
+		border-bottom:none;
+		height: 23px;
+}
+.icon-login:before{
+		background-image: url(../../images/reguser.png);
+		width: 20px;
+		height: 23px;
+}
+.icon-search:before{
+		margin-left:0;
+		margin-right: 5px;
+}
+.dc-btn.btn-cart{
+	font-size: 14px;
+	padding: 4px 10px;
+}
+.dc-btn.btn-cart:after{
+	display: none;
+}
+.dc-btn.btn-cart:before{
+	content:'';
+	font-weight: bold;
+	display: inline-block;
+	margin-right: 10px;
+	background: url(../../images/icon-cart.png) no-repeat center;
+	vertical-align: text-bottom;
+	width:17px;
+	height: 16px;
+}
+#booking-panel a,
+#booking-panel a:hover{
+		position: relative;
+}
+#booking-panel .row > div{
+		text-align: center;
+}
+#booking-panel .row > div:last-child{
+		border-left:none;
+}
+#booking-panel .row span{
+		display: block;
+}
+#booking-panel .row img{
+		margin-bottom: 0.2rem;
+}
+#booking-panel .icon-num{
+		position: absolute;
+    left:100%;
+    top: 0;
+    background-color: #E5595C;
+    padding: 0px 4px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    line-height: normal;
+    font-size: 0.8em;
+}
+@media (max-width: 991px) {
+	#nav-search{
+		top: 90px;
+	}
+	#nav-search input{
+		height: 37px;
+	}
+	#nav-search .icon-search:before {
+		margin-right: 0;
+		margin-left: 5px;
+	}
+	#nav-list .nav-item:nth-child(3){
+		border-bottom:none;
+		border-top:solid 1px #5cb7bb;
+	}
+	#nav-list li.nav-item:nth-child(3){
+		order: 2;
+	}
+	#nav-list li.nav-item:last-child{
+		order: 1;
+	}
+}

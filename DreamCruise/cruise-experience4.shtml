@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>PALACE RESTAURANT | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+</head>
+
+<body id="cruise-experience" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/cruise-experience/dinning-banner.png" alt="PALACE RESTAURANT" class="img-responsive" />
+		<img src="images/cruise-experience/dinning-banner.png" alt="PALACE RESTAURANT" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container cruise-experience-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="cruise-experience1.html" title="Onboard Experience">Onboard Experience</a></li>
+					<li class="breadcrumb-item"><a href="cruise-experience2.html" title="Dining">Dining</a></li>
+					<li class="breadcrumb-item"><a href="cruise-experience3.html" title="INTERNATIONAL">INTERNATIONAL</a></li>
+					<li class="breadcrumb-item active" aria-current="page">INTERNATIONAL</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">PALACE RESTAURANT</h2>
+				<p>This specialty restaurant exclusive to suites guests, serves a variety of local and international cuisines. Special
+					meal requests may also be accommodated and an extensive wine list is readily available.</p>
+				<p class="text-right"><a href="#" class="dc-btn mb-3" title="EXPLORE WITH VIRTUAL REALITY (GENTING DREAM)">EXPLORE WITH
+						VIRTUAL REALITY (GENTING DREAM)</a> <a href="#" class="dc-btn ml-0 ml-md-3" title="EXPLORE WITH VIRTUAL REALITY (GENTING DREAM)">EXPLORE
+						WITH VIRTUAL REALITY (GENTING DREAM)</a></p>
+				<!-- Gallery  -->
+				<!--#include file="include/ssi/gallery.ssi" -->
+
+				<table class="w-100">
+					<tbody>
+						<tr class="row d-md-table-row">
+							<td class="col-6 col-md-auto d-block d-md-table-cell">
+								<p class="row mx-0"><span class="col-auto pl-0"><img src="images/icon-money.png"></span> <span class="col col-md-auto p-0">Restaurant
+										Type</span></p>
+							</td>
+							<td class="col-6 col-md-auto d-block d-md-table-cell">
+								<p>Free</p>
+							</td>
+							<td class="w-100 d-block d-md-none"></td>
+							<td class="col-6 col-md-auto d-block d-md-table-cell">
+								<p class="row mx-0"><span class="col-auto pl-0"><img src="images/icon-restaurants.png"></span> <span class="col col-md-auto p-0">Meal
+										Type</span></p>
+							</td>
+							<td class="col-6 col-md-auto d-block d-md-table-cell">
+								<p>Breakfast / Lunch / Dinner</p>
+							</td>
+						</tr>
+						<tr class="row d-md-table-row">
+							<td class="col-6 col-md-auto d-block d-md-table-cell">
+								<p class="row mx-0"><span class="col-auto pl-0"><img src="images/icon_access.png"></span> <span class="col col-md-auto p-0">Access
+									</span>
+								</p>
+							</td>
+							<td class="col-6 col-md-auto d-block d-md-table-cell">
+								<p>Open to Suites Guests only</p>
+							</td>
+							<td class="w-100 d-block d-md-none"></td>
+							<td class="col-6 col-md-auto d-block d-md-table-cell">
+								<p class="row mx-0"><span class="col-auto pl-0"><img src="images/icon-reserve.png"></span> <span class="col col-md-auto p-0">Reservations</span></p>
+							</td>
+							<td class="col-6 col-md-auto d-block d-md-table-cell">
+								<p>Reservations are required in this restaurant</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+		</section>
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

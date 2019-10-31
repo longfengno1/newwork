@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Other Cruise Experience | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+</head>
+
+<body id="destinations" class="insidepage insidepage-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="include/ssi/insidepage_banner.ssi" -->
+		<!-- Content -->
+		<section class="insidepage-bg blue-bg">
+			<div class="container destinations-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Plan A Cruise">Plan A Cruise</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Why Crusie</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+				
+				<h2 class="section-header">Other Cruise Experience</h2>
+				<!-- Video Listing -->
+				<!--#include file="include/ssi/video-thumbnail.ssi" -->
+			</div>
+        </section>
+	<!-- Award -->
+	<!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

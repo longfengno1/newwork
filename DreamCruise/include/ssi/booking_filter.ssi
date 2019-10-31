@@ -1,0 +1,57 @@
+<style>
+	.booking-filter .dc-selectlist {
+		width: calc(100% - 0.5rem);
+	}
+	.booking-filter input[type="text"]{
+		height: 38px;
+	}
+</style>
+<div class="row dc-select-wrapper dc-select-wrapper2 mx-0 my-3 booking-filter align-items-end">
+	<div class="col px-1">
+		<span class="txt-grey">出發港口</span>
+		<div class="dc-selectbtn pl-3 py-2">廣州</div>
+		<ul class="dc-selectlist px-3 py-2">
+			<li class="mb-3"><a href="javascript:void(0)" data-attr="廣州">廣州</a></li>
+			<li class="mb-3"><a href="javascript:void(0)" data-attr="香港">香港</a></li>
+		</ul>
+	</div>
+	<div class="col px-1">
+		<span class="txt-grey">目的地</span>
+		<div class="dc-selectbtn pl-3 py-2">馬來西亞</div>
+		<ul class="dc-selectlist px-3 py-2">
+			<li class="mb-3"><a href="javascript:void(0)" data-attr="馬來西亞">馬來西亞</a></li>
+			<li class="mb-3"><a href="javascript:void(0)" data-attr="香港">香港</a></li>
+		</ul>
+	</div>
+	<div class="col-auto px-1">
+		<span class="txt-grey">行程日期</span>
+		<div class="booking-green-panel p-1 row mx-0">
+			<span class="col-auto px-0">
+				<div class="dc-selectbtn pl-3 py-1 d-inline-block">2019.03</div>
+				<ul class="dc-selectlist px-3 py-2">
+					<li class="mb-3"><a href="javascript:void(0)" data-attr="2019.03">2019.03</a></li>
+					<li class="mb-3"><a href="javascript:void(0)" data-attr="2019.04">2019.04</a></li>
+				</ul>
+			</span>
+
+			<span class="txt-green mx-3">-</span>
+
+			<span class="col-auto px-0">
+				<div class="dc-selectbtn pl-3 py-1">2019.05</div>
+				<ul class="dc-selectlist px-3 py-2">
+					<li class="mb-3"><a href="javascript:void(0)" data-attr="2019.05">2019.05</a></li>
+					<li class="mb-3"><a href="javascript:void(0)" data-attr="2019.06">2019.06</a></li>
+				</ul>
+			</span>
+		</div>
+	</div>
+	<div class="col-auto px-2">
+		<span class="txt-grey">關鍵詞</span><br />
+		<input type="text" placeholder="親子遊" class="border-0 px-1" />
+	</div>
+    <div class="col-auto px-2">
+        <a href="javascript:void(0)" class="dc-btn">搜索航線</a>
+	</div>
+</div>
+
+<p class="d-flex justify-content-between"><span class="txt-grey">熱門搜尋: <a href="javascript:void(0)">早訂優惠</a> | <a href="javascript:void(0)">世界夢號</a> | <a href="javascript:void(0)">春節優惠</a> | <a href="javascript:void(0)">長航線</a> | <a href="javascript:void(0)">買一送一</a> | <a href="javascript:void(0)">3天2晚</a></span> <label class="mx-2"><input type="checkbox"> 查看日曆</label></p>

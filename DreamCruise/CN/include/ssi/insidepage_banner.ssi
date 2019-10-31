@@ -1,0 +1,19 @@
+<header class="insidepage-banner">
+	<div id="dc-banner" class="mb-0">
+			<picture>
+					<source data-srcset="/campaign-sandbox/DreamCruise/images/img-mobile01.jpg" media="(max-width: 768px)">
+					<source data-srcset="/campaign-sandbox/DreamCruise/images/banner1.jpg">
+					<img data-src="/campaign-sandbox/DreamCruise/images/banner1.jpg" alt="Experience the scenic and cultural wonders of Japan" class="lazyload">
+				</picture>
+				<div class="banner-content select-banner">
+					<h2>在舒適和時尚中放鬆身心</h2>
+					<p>立即選擇</p>
+					<ul>
+						<li><a href="javascript:void(0)" class="active">世界夢號</a></li>
+						<li><a href="javascript:void(0)">雲頂夢號</a></li>
+						<li><a href="javascript:void(0)">探索夢號</a></li>
+					</ul>
+				</div>
+			<div class="banner-cover"></div>
+	</div>	
+</header>

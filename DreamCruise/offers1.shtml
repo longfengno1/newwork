@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Offers | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<script>
+		$(document).ready(function () {
+			offerfilter();
+		});
+	</script>
+</head>
+
+<body id="offers" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/offers/offer-banner1.png" alt="Book Your Cruise Holiday Now" class="img-responsive" />
+		<img src="images/offers/offer-banner1.png" alt="Book Your Cruise Holiday Now" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container offers-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Latest Offers">Latest Offers</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Offers</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">Book Your Cruise Holiday Now</h2>
+				<p>Find your dream holiday here — where the opportunities to experience fulfilling relaxation are brimming. A cruise
+					on Genting Dream and World Dream offers a wide slate of choices and indulgences that will be difficult to top, until
+					you join us onboard again.</p>
+				<div class="row mx-0 mb-4">
+					<div class="col-12 col-md-auto p-0 position-relative dc-select-wrapper">
+						<select class="dc-select px-3 offer-fliter" id="offer-filter-ships">
+							<option value="ALL">SHIPS</option>
+							<option value="WORLDDREAM">WORLD DREAM</option>
+							<option value="GENTINGDREAM">GENTING DREAM</option>
+						</select>
+						<div class="dc-selectbtn pl-3 py-2">SHIPS</div>
+						<ul class="dc-selectlist px-3 py-2">
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">SHIPS</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="WORLDDREAM">WORLD DREAM</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="GENTINGDREAM">GENTING DREAM</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-auto p-0 ml-0 mt-3 mt-md-0 ml-md-2 position-relative dc-select-wrapper">
+						<select class="dc-select px-3 offer-fliter" id="offer-filter-dates">
+							<option value="ALL">DATES</option>
+							<option value="Feb-2019">Feb 2019</option>
+							<option value="Mar-2019">Mar 2019</option>
+							<option value="Apr-2019">Apr 2019</option>
+						</select>
+						<div class="dc-selectbtn pl-3 py-2">DATES</div>
+						<ul class="dc-selectlist px-3 py-2">
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">DATES</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="Feb-2019">Feb 2019</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="Mar-2019">Mar 2019</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="Apr-2019">Apr 2019</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-auto p-0 ml-0 mt-3 mt-md-0 ml-md-2 position-relative dc-select-wrapper">
+						<select class="dc-select px-3 offer-fliter" id="offer-filter-theme">
+							<option value="ALL">THEME</option>
+							<option value="THEME1">THEME 1</option>
+							<option value="THEME2">THEME 2</option>
+							<option value="THEME3">THEME 3</option>
+							<option value="THEME4">THEME 4</option>
+						</select>
+						<div class="dc-selectbtn pl-3 py-2">THEME</div>
+						<ul class="dc-selectlist px-3 py-2">
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">THEME</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME1">THEME 1</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME2">THEME 2</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME3">THEME 3</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME4">THEME 4</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul id="offer-fliter-list">
+					<li class="first-item">
+						<div class="item-itineraries item-txt-photo WORLDDREAM THEME1">
+							<div class="item-photo"><div class="item-bg-img" style="background-image:url('images/offers/offer-banner1.png');"></div><div class="icon-hot"><span>HOT</span></div>
+							</div>
+							<div class="position-relative">
+								<div class="item-txt-title">World Dream National Day Special: All Guests Get Discount Worth <span class="txt-purple">RMB
+										1,000</span></div>
+								<div class="row align-items-end">
+									<div class="col p-0">
+										<p><span class="icon-date">Booking Period: Now until 31 Aug 2018<br />Sailing Date: 30 Sep 2018</span></p>
+										<p><span class="icon-to">Genting Dream</span></p>
+										<p><a href="#" class="dc-btn dc-btn-pattern" tabindex="0">BOOK Now</a></p>
+									</div>
+									<div class="col-auto d-flex align-items-end pr-0">
+										<p class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per person</i></p>
+									</div>
+									<a href="#" class="btn-itneraries" tabindex="0"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-itineraries item-txt-photo WORLDDREAM THEME2">
+							<div class="item-photo"><div class="item-bg-img" style="background-image:url('images/cruise-experience/ce-banner.png');"></div></div>
+							<div class="position-relative">
+								<div class="item-txt-title">Genting Dream Shore Excursion</div>
+								<div class="row align-items-end">
+									<div class="col p-0">
+										<p><span class="icon-date">From now until 24 October 2018</span></p>
+										<p><span class="icon-to">Genting Dream Singspore</span></p>
+									</div>
+									<div class="col-auto d-flex align-items-end pr-0">
+										<p class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per person</i></p>
+									</div>
+									<a href="#" class="btn-itneraries" tabindex="0"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-itineraries item-txt-photo WORLDDREAM THEME3">
+							<div class="item-photo"><div class="item-bg-img" style="background-image:url('images/cruise-experience/ce-banner.png');"></div></div>
+							<div class="position-relative">
+								<div class="item-txt-title">Genting Dream Shore Excursion</div>
+								<div class="row align-items-end">
+									<div class="col p-0">
+										<p><span class="icon-date">From now until 24 October 2018</span></p>
+										<p><span class="icon-to">Genting Dream Singspore</span></p>
+									</div>
+									<div class="col-auto d-flex align-items-end pr-0">
+										<p class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per person</i></p>
+									</div>
+									<a href="#" class="btn-itneraries" tabindex="0"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-itineraries item-txt-photo GENTINGDREAM THEME4">
+							<div class="item-photo"><div class="item-bg-img" style="background-image:url('images/cruise-experience/ce-banner.png');"></div></div>
+							<div class="position-relative">
+								<div class="item-txt-title">Genting Dream Shore Excursion</div>
+								<div class="row align-items-end">
+									<div class="col p-0">
+										<p><span class="icon-date">From now until 24 October 2018</span></p>
+										<p><span class="icon-to">Genting Dream Singspore</span></p>
+									</div>
+									<div class="col-auto d-flex align-items-end pr-0">
+										<p class="txt-price"><i>from HKD</i><br><span>3,300</span><br><i>per person</i></p>
+									</div>
+									<a href="#" class="btn-itneraries" tabindex="0"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+		</section>
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

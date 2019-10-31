@@ -1,0 +1,80 @@
+<style>
+.icon-list{
+	padding: 0;
+	margin:0;
+	list-style:none;
+	display: flex;
+	justify-content: space-between;
+	/*
+	border-bottom:2px dashed #14989D;
+	height: 33px;*/
+	
+}
+.icon-wrapper{
+	position: relative;
+	padding-bottom: 40px;
+}
+.icon-wrapper:before{
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: calc(100% - 2px - 0.5rem);
+	top: calc(50% - 21px);
+	border-bottom:2px dashed #14989D;
+}
+.icon-step{
+	border: 2px solid #14989D;
+	border-radius: 50%;
+	color: #14989D;
+	text-align: center;
+	width: 66px;
+	height: 66px;
+	display:inline-block;
+	font-size: 1.6rem;
+	line-height: 230%;
+	background-color: #a5daec;
+	flex: 0 0 auto;
+	position: relative;
+	z-index: 1;
+}
+.icon-step span{
+	position: absolute;
+	top: 80px;
+	font-size: 1rem;
+	white-space: nowrap;
+	left: 50%;
+	color: #14989D;
+	transform: translateX(-50%);
+	display: inline-block;
+	line-height: normal;
+}
+.icon-step.active{
+	background-color: #14989D;
+	color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+	.icon-step{
+			width: 44px;
+			height: 44px;
+			font-size: 1.5rem;
+			line-height: 155%;
+	}
+	.icon-step span{
+		top: 50px;
+	}
+	.icon-step span{
+		font-size: 0.9rem;
+	}
+}
+
+</style>
+
+<div class="icon-wrapper px-1 mb-5">
+		<ul class="icon-list">
+				<li class="icon-step">1<span>選擇房型</span></li>
+				<li class="icon-step">2<span>填寫乘客資料</span></li>
+				<li class="icon-step">3<span>檢查資料</span></li>
+				<li class="icon-step">4<span>付款</span></li>
+		</ul>
+</div>

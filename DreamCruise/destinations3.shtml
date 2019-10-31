@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Destinations & Excursions | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+</head>
+
+<body id="destinations" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/destinations/detail-banner2.jpg" alt="PHUKET - Genting Dream Shore Excursions" class="img-responsive" />
+		<img src="images/destinations/detail-banner2.jpg" alt="PHUKET - Genting Dream Shore Excursions" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container destinations-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Plan Your Holiday">Plan Your Holiday</a></li>
+					<li class="breadcrumb-item"><a href="destinations1.html" title="Destinations &amp; Excursions">Destinations &amp; Excursions</a></li>
+					<li class="breadcrumb-item"><a href="destinations2.html" title="PHUKET">PHUKET</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Excursions</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">PHUKET - Genting Dream Shore Excursions</h2>
+				<h3 class="sub-title d-flex justify-content-center mb-5"><span class="left-icons"><img src="images/icon-calendar.png"
+						/></span> 26 August, 2018 to 31 August, 2018</h3>
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-trip.png"></span> Bespoke Journey – Phuket
+					(GDPHU80)</h3>
+				<div class="row item-destinations">
+					<div class="col-12 col-md-4">
+						<div class="item-txt-photo height-auto"><img src="images/destinations/d3-img1.png"></div>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="row mx-0 justify-content-end destinations-detail">
+							<div class="col-12 col-lg p-0">
+								<table class="w-100 my-3 my-lg-0">
+									<tr>
+										<th>Meal</th>
+										<td>Meal</td>
+										<th>Duration*</th>
+										<td>Min. 2</td>
+									</tr>
+									<tr>
+										<th>Activity Level</th>
+										<td>Easy</td>
+										<th>Participants</th>
+										<td>-</td>
+									</tr>
+									<tr>
+										<th>Features</th>
+										<td>Customized</td>
+										<th>Remarks</th>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<div class="col-auto d-flex flex-column justify-content-end px-0 px-lg-3">
+								<h3>Upon Request</h3>
+								<ul class="list-price">
+									<li class="txt-price"><i>Audlt / SGD</i><br /><span>80</span></li>
+									<li class="txt-price"><i>Child / SGD</i><br /><span>60</span></li>
+								</ul>
+							</div>
+						</div>
+
+						<p>Discover the best that Phuket has to offer. On this private excursion, build your Dream itinerary and explore at
+							your own pace. Your personal travel expert will be on hand to guide you to the famous sights and help you make the
+							most of your journey. Whether it is sightseeing, shopping, or culinary delights, this excursion is 100% tailored to
+							your desires and needs. Please book at least 24 hours in advance.</p>
+						<p class="text-right"><a href="#" class="dc-btn">BOOK NOW</a></p>
+					</div>
+				</div>
+
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-trip.png"></span> Phuket Night Excitement:
+					Rum Distillery & Patong Night Market (GDPHU13NM)</h3>
+				<div class="row item-destinations">
+					<div class="col-12 col-md-4">
+						<div class="item-txt-photo"><img src="images/destinations/d3-img2.png"><div class="item-txt-title">Chalong Bay Rum
+								Distillery</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-8">
+						<div class="row mx-0 justify-content-end destinations-detail">
+							<div class="col-12 col-lg p-0">
+								<table class="w-100 my-3 my-lg-0">
+									<tbody>
+										<tr>
+											<th>Meal</th>
+											<td>Meal</td>
+											<th>Duration*</th>
+											<td>Min. 2</td>
+										</tr>
+										<tr>
+											<th>Activity Level</th>
+											<td>Easy</td>
+											<th>Participants</th>
+											<td>-</td>
+										</tr>
+										<tr>
+											<th>Features</th>
+											<td>Customized</td>
+											<th>Remarks</th>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-auto d-flex flex-column justify-content-end px-0 px-lg-3">
+								<h3>Upon Request</h3>
+								<ul class="list-price">
+									<li class="txt-price"><i>Audlt / SGD</i><br /><span>80</span></li>
+									<li class="txt-price"><i>Child / SGD</i><br /><span>60</span></li>
+								</ul>
+							</div>
+						</div>
+						<h4>Chalong Bay Rum Distillery</h4>
+						<p>Enjoy a refreshing Mojito and a tasting of homemade syrups, sugarcane juice and different styles of rum while visiting
+							the one-and-only distillery of Phuket. In this guided tour, learn how international award winning natural rum is produced.</p>
+						<h4>Malin Night Plaza Market</h4>
+						<p>Explore to find lots of local foods, sweets, bar and cafes. It is a hybrid of local market &amp; bazaar.</p>
+						<h4>Bangla Road</h4>
+						<p>The road is closed to vehicle traffic and comes to life as a 400-metre festival of neon lights, roaring music and
+							beer. If you are looking for a fun night out in Phuket, look no further. There are shops surrounding the attraction,
+							both on Soi Bangla and down its side streets.</p>
+						<h4>Important Notes</h4>
+						<p>Non-alcoholic drinks will offer to guest who aged 18 or below.</p>
+						<p class="text-right"><a href="#" class="dc-btn">BOOK NOW</a></p>
+					</div>
+				</div>
+
+				<div class="important-notes">
+					<a href="#" class="btn-in">IMPORTANT NOTES</a>
+				</div>
+
+		</section>
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-txt-photo"><div class="item-bg-img" style="background-image:url('images/itineraries/itineraries-banner2.png');"></div><a href="destinations2.html" class="item-txt-title">BANGKOK<br>(LAEM
+				CHABANG)
+			</a></div>
+	</div>
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-txt-photo"><div class="item-bg-img" style="background-image:url('images/itineraries/itineraries-banner2.png');"></div><a href="destinations2.html" class="item-txt-title">BINTAN
+				ISLAND
+			</a></div>
+	</div>
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-txt-photo"><div class="item-bg-img" style="background-image:url('images/itineraries/itineraries-banner2.png');"></div><a href="destinations2.html" class="item-txt-title">DA
+				NANG
+			</a></div>
+	</div>
+</div>

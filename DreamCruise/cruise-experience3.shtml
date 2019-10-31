@@ -1,0 +1,104 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Dining | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<script>
+		$(document).ready(function () {
+			cefilter();
+		});
+	</script>
+</head>
+
+<body id="cruise-experience" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/cruise-experience/ce-banner.png" alt="Dining" class="img-responsive" />
+		<img src="images/cruise-experience/ce-banner.png" alt="Dining" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container cruise-experience-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="cruise-experience1.html" title="Onboard Experience">Onboard Experience</a></li>
+					<li class="breadcrumb-item"><a href="cruise-experience2.html" title="Dining">Dining</a></li>
+					<li class="breadcrumb-item active" aria-current="page">INTERNATIONAL</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+				
+				<h2 class="section-header">Dining</h2>
+				<p>Our cruise ships are vessels designed for your dreams - featuring the comfort of authentic Asian hospitaity combined
+					with only the finest experiences from around the world.</p>
+				<div class="row mx-0 mb-4">
+					<div class="col-12 col-md-auto p-0 position-relative dc-select-wrapper">
+						<select class="dc-select px-3 offer-fliter" id="offer-filter-ships">
+							<option value="ALL">ALL SHIPS</option>
+							<option value="WORLDDREAM">WORLD DREAM</option>
+							<option value="GENTINGDREAM">GENTING DREAM</option>
+						</select>
+						<div class="dc-selectbtn pl-3 py-2">ALL SHIPS</div>
+						<ul class="dc-selectlist px-3 py-2">
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">ALL SHIPS</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="WORLDDREAM">WORLD DREAM</a></li>
+							<li class="mb-3"><a href="javascript:void(0)" data-attr="GENTINGDREAM">GENTING DREAM</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-auto p-0 ml-0 mt-3 mt-md-0 ml-md-4 position-relative dc-select-wrapper">
+						<div class="dc-selectbtn pl-3 py-2">CHINESE</div>
+						<ul class="dc-selectlist px-3 py-2">
+							<li class="mb-3"><a href="#" data-attr="CHINESE">CHINESE</a></li>
+							<li class="mb-3"><a href="#" data-attr="SOUTH EAST ASIAN">SOUTH EAST ASIAN</a></li>
+							<li class="mb-3"><a href="#" data-attr="JAPANESE/KOREAN">JAPANESE/KOREAN</a></li>
+							<li class="mb-3"><a href="#" data-attr="INTERNATIONAL">INTERNATIONAL</a></li>
+							<li class="mb-3"><a href="#" data-attr="DESSERT/SNACKS">DESSERT/SNACKS</a></li>
+							<li class="mb-3"><a href="#" data-attr="SUITES EXCLUSIVE">SUITES EXCLUSIVE</a></li>
+							<li class="mb-3"><a href="#" data-attr="POOL DECK AND OUTDOOR">POOL DECK AND OUTDOOR</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" id="ce-list">
+					<div class="col-12 col-md-4 p-1 WORLDDREAM">
+						<div class="item-txt-photo"><img src="images/cruise-experience/ce3-img1.jpg"><a href="cruise-experience4.html" class="item-txt-title">PALACE RESTAURANT</a></div>
+					</div>
+					<div class="col-12 col-md-4 p-1 GENTINGDREAM">
+						<div class="item-txt-photo"><img src="images/cruise-experience/ce3-img2.jpg"><a href="cruise-experience4.html" class="item-txt-title">BISTRO BY
+								MARK BEST</a></div>
+					</div>
+					<div class="col-12 col-md-4 p-1 GENTINGDREAM">
+						<div class="item-txt-photo"><img src="images/cruise-experience/ce3-img3.jpg"><a href="cruise-experience4.html" class="item-txt-title">PRIME STEAKHOUSE</a></div>
+					</div>
+					<div class="col-12 col-md-4 p-1 WORLDDREAM">
+						<div class="item-txt-photo"><img src="images/cruise-experience/ce3-img4.jpg"><a href="cruise-experience4.html" class="item-txt-title">VINTAGE ROOM</a></div>
+					</div>
+					<div class="col-12 col-md-4 p-1 WORLDDREAM">
+						<div class="item-txt-photo"><img src="images/cruise-experience/ce3-img5.jpg"><a href="cruise-experience4.html" class="item-txt-title">SEAFOOD GRILL</a></div>
+					</div>
+					<div class="col-12 col-md-4 p-1 GENTINGDREAM">
+						<div class="item-txt-photo"><img src="images/cruise-experience/ce3-img6.jpg"><a href="cruise-experience4.html" class="item-txt-title">THE LIDO</a></div>
+					</div>
+					<div class="col-12 col-md-4 p-1 WORLDDREAM">
+						<div class="item-txt-photo"><img src="images/cruise-experience/ce3-img7.jpg"><a href="cruise-experience4.html" class="item-txt-title">CRYSTAL LIFE
+								CUISINE</a></div>
+					</div>
+					<div class="col-12 col-md-4 p-1 WORLDDREAM">
+						<div class="item-txt-photo"><img src="images/cruise-experience/ce3-img8.jpg"><a href="cruise-experience4.html" class="item-txt-title">LOBBY CAFE</a></div>
+					</div>
+				</div>
+		</section>
+		<!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Offer Details | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<script>
+		$(document).ready(function () {
+			offerfilter();
+		});
+	</script>
+</head>
+
+<body id="offers" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/offers/offer-banner1.png" alt="Book Your Cruise Holiday Now" class="img-responsive" />
+		<img src="images/offers/offer-banner1.png" alt="Book Your Cruise Holiday Now" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container offers-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Plan A Cruise">Plan A Cruise</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Offers">Offers</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Offer Details</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header text-left">Special Rates on Special Dates on Genting Dream</h2>
+				<p>Plan now for a great holiday on Genting Dream's Nov 2018 - Feb 2019 cruises. Choose from 3N Sunday,
+					and 2N Friday cruises. Book now before cabins sell out!</p>
+				<div class="mt-5 position-relative">
+					<a href="javascript:void(0)" class="px-3 py-2 d-block d-md-none dc-tabbtn">Itineraries</a>
+					<ul class="nav nav-pills dc-tab-nav" role="tablist">
+						<li class="nav-item">
+							<a class="active show" data-toggle="pill" href="#pills-Itineraries" role="tab"
+								aria-controls="pills-Itineraries" aria-selected="false">Itineraries</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#pills-tnc" role="tab"
+								aria-controls="pills-tnc" aria-selected="false">Term & Condition
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#pills-fare" role="tab" aria-controls="pills-fare"
+								aria-selected="true">Fare Details</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane p-3 fade show active" id="pills-Itineraries" role="tabpanel"
+						aria-labelledby="pills-Itineraries-tab">
+						
+						<div class="row mx-0 mb-4">
+							<div class="col-12 col-md-auto p-0 position-relative dc-select-wrapper">
+								<select class="dc-select px-3 offer-fliter">
+									<option value="ALL">Ports</option>
+									<option value="WORLDDREAM">WORLD DREAM</option>
+									<option value="GENTINGDREAM">GENTING DREAM</option>
+								</select>
+								<div class="dc-selectbtn pl-3 py-2">Ports</div>
+								<ul class="dc-selectlist px-3 py-2">
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">Ports</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="WORLDDREAM">WORLD DREAM</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="GENTINGDREAM">GENTING DREAM</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-auto p-0 ml-0 mt-3 mt-md-0 ml-md-2 position-relative dc-select-wrapper">
+								<select class="dc-select px-3 offer-fliter">
+									<option value="ALL">Destinations</option>
+									<option value="2019">2019</option>
+									<option value="2018">2018</option>
+									<option value="2017">2017</option>
+								</select>
+								<div class="dc-selectbtn pl-3 py-2">Destinations</div>
+								<ul class="dc-selectlist px-3 py-2">
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">Destinations</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="2019">2019</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="2018">2018</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="2017">2017</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-auto p-0 ml-0 mt-3 mt-md-0 ml-md-2 position-relative dc-select-wrapper">
+								<select class="dc-select px-3 offer-fliter">
+									<option value="ALL">Durations</option>
+									<option value="THEME1">THEME 1</option>
+									<option value="THEME2">THEME 2</option>
+									<option value="THEME3">THEME 3</option>
+									<option value="THEME4">THEME 4</option>
+								</select>
+								<div class="dc-selectbtn pl-3 py-2">Durations</div>
+								<ul class="dc-selectlist px-3 py-2">
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">Durations</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME1">THEME 1</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME2">THEME 2</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME3">THEME 3</a></li>
+									<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME4">THEME 4</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="text-right">
+							    Sort by :
+								<div class="d-inline-block col-auto p-0 ml-0 mt-3 mt-md-0 ml-md-2 position-relative dc-select-wrapper text-left">
+										<select class="dc-select px-3 offer-fliter">
+											<option value="ALL">Recommended</option>
+											<option value="THEME1">THEME 1</option>
+											<option value="THEME2">THEME 2</option>
+											<option value="THEME3">THEME 3</option>
+											<option value="THEME4">THEME 4</option>
+										</select>
+										<div class="dc-selectbtn pl-3 py-2">Recommended</div>
+										<ul class="dc-selectlist px-3 py-2">
+											<li class="mb-3"><a href="javascript:void(0)" data-attr="ALL">Recommended</a></li>
+											<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME1">THEME 1</a></li>
+											<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME2">THEME 2</a></li>
+											<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME3">THEME 3</a></li>
+											<li class="mb-3"><a href="javascript:void(0)" data-attr="THEME4">THEME 4</a></li>
+										</ul>
+									</div>
+						</div>
+
+						<p>25 search results found</p>
+						
+					</div>
+					<div class="tab-pane p-3 fade" id="pills-tnc" role="tabpanel"
+						aria-labelledby="pills-tnc">
+						
+						
+					</div>
+					<div class="tab-pane p-3 fade" id="pills-fare" role="tabpanel" aria-labelledby="pills-fare-tab">
+						
+						
+						
+					</div>
+				</div>
+
+		</section>
+	<!-- Award -->
+	<!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

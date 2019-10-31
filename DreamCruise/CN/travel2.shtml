@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 游记攻略</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function(){
+			$('#nav-menu .nav-item:eq(3) > .nav-link').addClass('active');
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="../include/ssi/insidepage_banner.ssi" -->
+	<!-- Content -->
+	<section class="insidepage-bg blue-bg btm-space">
+		<div class="container py-5 position-static">
+			<!-- Share Button -->
+			<!--#include file="include/ssi/socialshare.ssi" -->
+			<h2 class="section-header">全家陪老爸在海上庆生，也是头一次~</h2>
+			<div class="row mb-4">
+				<div class="col-12 col-md-auto text-right order-md-3">
+					<p class="text-nowrap"><span class="txt-green mr-4">发布时间：2018.07.26</span><span class="icon-view txt-green">2689</span></p>
+				</div>
+									<div class="col-auto order-md-1">
+					<img src="images/itineraries/img-user1.jpg">
+				</div>
+				<div class="col order-md-2">
+					<h3 class="d-inline-block mr-4">无敌小海星</h3><span>知名旅行家</span>
+					<table class="two-col-table">
+						<tbody>
+							<tr>
+								<td>
+									<p class="row mx-0 my-1"><span class="col-auto pl-0"><img src="images/itineraries/icon_steeringwheel.png"></span> <span class="col p-0">广州 - 香港 - 滨城 - 巴生港 - 普吉 - 新加坡</span></p>
+								</td>
+								<td>
+									<p class="row mx-0 my-1"><span class="col-auto pl-0"><img src="images/itineraries/icon_cruise.png"></span> <span class="col p-0">世界梦号
+										</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="row mx-0 my-1"><span class="col-auto pl-0"><img src="images/itineraries/icon_departure.png"></span> <span class="col p-0">出发港：上海
+										</span>
+									</p>
+								</td>
+								<td>
+									<p class="row mx-0 my-1"><span class="col-auto pl-0"><img src="images/itineraries/icon_location.png"></span> <span class="col p-0">目的地：新加坡
+										</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="row mx-0 my-1"><span class="col-auto pl-0"><img src="images/itineraries/icon_duration.png"></span> <span class="col p-0">6天5晚，周六-周四</span></p>
+								</td>
+								<td>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<figure class="d-table mx-auto my-5 dc-photo">
+					<img src="images/travel/blog-img1.jpg" class="w-100">
+					<figcaption class="mt-3">再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！</figcaption>
+			</figure>
+
+			<figure class="d-table mx-auto my-5 dc-photo">
+					<img src="images/travel/blog-img2.jpg" class="w-100">
+					<figcaption class="mt-3">推开阳台门，即置身大海的怀抱。皇宫这个房型，让你感受到尊贵服务，还有特权，一进房间就有专门的管家过来打招呼，并告诉你他的电话，旅途中需要任何帮助找他即可。</figcaption>
+			</figure>
+
+			<figure class="d-table mx-auto my-5 dc-photo">
+					<img src="images/travel/blog-img3.jpg" class="w-100">
+					<figcaption class="mt-3">从头盘的酒泡鲍鱼海虾带子冰菜海葡萄，到暖胃美好的滋补玛卡响螺桃胶顿乌鸡汤，主菜是非常滑溜的花雕龙趸配蟹肉蛋白，甜品是杨枝甘露脆炸汤圆。重质不重量，四道出品都全桌大赞。配上一杯甜度适中带点花香的白葡萄酒，这个午餐刚刚好，又满足！</figcaption>
+			</figure>
+
+			<figure class="d-table mx-auto my-5 dc-photo">
+					<img src="images/travel/blog-img4.jpg" class="w-100">
+					<figcaption class="mt-3">此行TA叔对邮轮旅行的固有认知完全改观，想不到在海上可以体验到超五星水准的入住，餐饮，娱乐体验，这种体验既梦幻又真实，可以说此行之后，TA叔已经爱上了邮轮旅行，我在期待，下一站我将到哪里邮历？</figcaption>
+			</figure>
+
+			<figure class="d-table mx-auto my-5 dc-photo">
+					<img src="images/travel/blog-img5.jpg" class="w-100">
+					<figcaption class="mt-3">此刻，我想起在码头看到的SLOGAN—「世界梦号」邮历更大的世界。</figcaption>
+			</figure>
+			
+			<!-- Comment -->
+			<div class="dc-tab-nav d-flex flex-row justify-content-between align-items-center flex-nowrap">
+				<div class="d-inline-block active dc-nav-txt">会员点评</div>
+				<div class="d-inline-block txt-green">共 1025 条评论</div>
+			</div>
+			<div class="row py-3 border-bottom">
+					<div class="col-auto"><img src="images/itineraries/img-user1.jpg"></div>
+					<div class="col pt-4">
+						<div class="row mx-0 mb-2 justify-content-between">
+							<div class="col-auto px-0"><h3>无敌小海星</h3></div>
+							<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+						</div>
+						<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。</p>
+					</div>
+			</div>
+			<div class="row py-3 border-bottom">
+					<div class="col-auto"><img src="images/itineraries/img-user2.jpg"></div>
+					<div class="col pt-4">
+						<div class="row mx-0 mb-2 justify-content-between">
+							<div class="col-auto px-0"><h3>亚人</h3></div>
+							<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+						</div>
+						<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。</p>
+					</div>
+			</div>
+			<div class="row py-3 border-bottom">
+					<div class="col-auto"><img src="images/itineraries/img-user1.jpg"></div>
+					<div class="col pt-4">
+						<div class="row mx-0 mb-2 justify-content-between">
+							<div class="col-auto px-0"><h3>无敌小海星</h3></div>
+							<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+						</div>
+						<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。</p>
+					</div>
+			</div>
+			<div class="row py-3 border-bottom">
+					<div class="col-auto"><img src="images/itineraries/img-user2.jpg"></div>
+					<div class="col pt-4">
+						<div class="row mx-0 mb-2 justify-content-between">
+							<div class="col-auto px-0"><h3>亚人</h3></div>
+							<div class="col-auto px-0"><span class="txt-green">评论时间：2018.07.26</span></div>
+						</div>
+						<p>真的是一家非常正规的游轮公司。在官网付款后订单的处理，到行程开始前的天气情况以及行程安排通知，甚至于行程结束后的问卷调查，都通过邮件和短信和电话关怀完成。非常正规和系统，不愧是大型游轮公司哦！经过这次游轮旅行，我真的成了游轮粉，爱你大海，爱你世界号。</p>
+					</div>
+			</div>
+
+			<p id="nav-control" class="text-center d-none d-md-block mt-4">
+				<a href="javascript:void(0)" id="btn-previous" class="mr-3">&lt;</a> 
+				<span id="page-nav"></span> 
+				第 <span id="page-current">6</span> 页 共 <span id="page-total">100</span> 页
+				<a href="javascript:void(0)" id="btn-next" class="ml-3">&gt;</a> 
+			</p>
+			<p id="nav-mobile-control" class="text-center d-md-none mt-4"><a href="javascript:void(0)" id="btn-extend">更多 + </a>
+			</p>
+
+			<!-- Comment control -->
+			<!--#include file="include/ssi/comment.ssi" -->
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

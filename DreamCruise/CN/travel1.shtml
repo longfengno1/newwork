@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 游记攻略</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function(){
+			$('#nav-menu .nav-item:eq(3) > .nav-link').addClass('active');
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="../include/ssi/insidepage_banner.ssi" -->
+	<!-- Content -->
+	<section class="insidepage-bg blue-bg btm-space">
+		<div class="container py-5 position-static">
+			<!-- Filter -->
+			<!--#include file="include/ssi/dc_filter_travel.ssi" -->
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Full Menu -->
+	<!--#include file="include/ssi/fullmenu.ssi" -->
+</body>
+
+</html>

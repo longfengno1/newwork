@@ -1,0 +1,7 @@
+<section id="booknow-banner">
+	<div class="container">
+		<h2 class="text-right text-md-center mb-3">Book your Dream Holiday Today</h2>
+		<p class="text-right text-md-center mb-0"><a href="#" class="dc-btn dc-btn-pattern" title="Book Now">Book Now</a></p>
+		<img src="/campaign-sandbox/DreamCruise/images/banner-book-now.png" class="booknow-img" />
+	</div>
+</section>

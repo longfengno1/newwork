@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Booking</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/booking.css">
+	<!-- JS validation  -->
+	<script src="../include/js/jquery.validate.min.js"></script>
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(6) > .nav-link').addClass('active');
+
+
+			$('.icon-list li').addClass('active');
+		});
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+		<!-- Booking header -->
+		<!--#include file="../include/ssi/booking/header.ssi" -->
+	</header>
+	<!-- Content -->
+	<section class="btm-space">
+		<div class="container py-5 position-static">
+			<!-- Step -->
+			<!--#include file="../include/ssi/booking/step-progress.ssi" -->
+			<h2 class="green-header txt-green d-flex justify-content-between align-items-end"><span>付款</span> <a
+					href="javascript:void(0)" class="icon-download txt-dark-blue">保存輸入信息</a></h2>
+			<hr class="green-bar" />
+			<div class="rounded bg-white px-3 py-4 mx-0 mb-3 text-center">
+				您的訂單已提交，請盡快完成支付，付款時限 <span class="txt-green">3分20秒</span>
+			</div>
+
+			<p>請選擇支付方式</p>
+			<div class="row text-center booking-green-panel rounded mb-3">
+			   <div class="col-4 p-5"><label for="airpay" class="p-5"><img src="../images/booking/booking_flow/icon-airpay.jpg" /><br >支付寶支付<br ><input type="radio" class="tick-box" name="payment" id="airpay" /><span class="icon-box theme-light"></span></label></div>
+			   <div class="col-4 p-5 booking-light-bg" class="p-5"><label for="wechat" class="p-5"><img src="../images/booking/booking_flow/icon-wechat.jpg" /><br >微信支付<br ><input type="radio" class="tick-box" name="payment" id="wechat" /><span class="icon-box theme-light"></span></label></div>
+			   <div class="col-4 p-5"><label for="otherpay" class="p-5"><img src="../images/booking/booking_flow/icon-otherpay.jpg" /><br >他人支付<br ><input type="radio" class="tick-box" name="payment" id="otherpay" /><span class="icon-box theme-light"></span></label></div>
+			</div>
+			<div class="row justify-content-between">
+				<p class="col"><input type="checkbox" class="tick-box" name="agree" id="agree" /><label for="agree" class="icon-box theme-light">我已經閱讀並同意<a href="#"><u>條款及細則</u></a></label>
+				<br />
+				<input type="checkbox" class="tick-box" name="agreetnc" id="agreetnc" /><label for="agreetnc" class="icon-box theme-light">我已經閱讀並同意<a href="#"><u>航行合約</u></a>、<a href="#"><u>重要提示</u></a>和<a href="#"><u>預訂條款</u></a></label>
+				</p>
+				<h3 class="col-auto">應付金額 $6,600</h3>
+			</div>
+			
+            <p class="text-center mt-5"><a href="javascript:void(0)" class="dc-btn no-arrow">確定</a></p>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

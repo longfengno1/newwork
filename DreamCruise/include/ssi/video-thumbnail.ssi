@@ -1,0 +1,66 @@
+<div class="row">
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-txt-photo video-album">
+			<div class="item-bg-img" style="background-image:url('/campaign-sandbox/DreamCruise/images/itineraries/itineraries-banner2.png');"></div>
+			<div class="item-txt-title">
+				<h3>THE PALACE</h3>
+				<p>Imagine a prestigious, oceangoing sanctuary that's part boutique hotel and part private members club
+					- this is The Palace, the ultimate Dream Cruises on baord experience.</p>
+			</div>
+			<a href="#" class="btn-item-txt"></a>
+		</div>
+	</div>
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-txt-photo video-album">
+			<div class="item-bg-img" style="background-image:url('/campaign-sandbox/DreamCruise/images/itineraries/itineraries-banner2.png');"></div>
+			<div class="item-txt-title">
+				<h3>DINGING</h3>
+				<p>We offer more than 35 ports of call on every cruise - from a dining and drinking perspective that is! Choose your international culinary gataway amongst the countless restaurants, and quaff your favouriteat ...</p>
+			</div>
+			<a href="#" class="btn-item-txt"></a>
+		</div>
+	</div>
+	<div class="col-12 col-md-4 p-1">
+		<div class="item-txt-photo video-album">
+			<div class="item-bg-img" style="background-image:url('/campaign-sandbox/DreamCruise/images/itineraries/itineraries-banner2.png');"></div>
+			<div class="item-txt-title">
+				<h3>BEAUTY AND WELLNESS</h3>
+				<p>We take your spa-going seriously - our heaven of beauty and wellness is one of the largest at sea. Here you  will revel in time-honoured practices, sophisticated treatments and therapeutic remedies.</p>
+				<p>We take your spa-going seriously - our heaven of beauty and wellness is one of the largest at sea. Here you  will revel in time-honoured practices, sophisticated treatments and therapeutic remedies.</p>
+			</div>
+			<a href="#" class="btn-item-txt"></a>
+		</div>
+	</div>
+	<div class="col-12 col-md-4 p-1">
+			<div class="item-txt-photo video-album">
+				<div class="item-bg-img" style="background-image:url('/campaign-sandbox/DreamCruise/images/itineraries/itineraries-banner2.png');"></div>
+				<div class="item-txt-title">
+					<h3>THE PALACE</h3>
+					<p>Imagine a prestigious, oceangoing sanctuary that's part boutique hotel and part private members club
+						- this is The Palace, the ultimate Dream Cruises on baord experience.</p>
+				</div>
+				<a href="#" class="btn-item-txt"></a>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 p-1">
+			<div class="item-txt-photo video-album">
+				<div class="item-bg-img" style="background-image:url('/campaign-sandbox/DreamCruise/images/itineraries/itineraries-banner2.png');"></div>
+				<div class="item-txt-title">
+					<h3>DINGING</h3>
+					<p>We offer more than 35 ports of call on every cruise - from a dining and drinking perspective that is! Choose your international culinary gataway amongst the countless restaurants, and quaff your favouriteat ...</p>
+				</div>
+				<a href="#" class="btn-item-txt"></a>
+			</div>
+		</div>
+		<div class="col-12 col-md-4 p-1">
+			<div class="item-txt-photo video-album">
+				<div class="item-bg-img" style="background-image:url('/campaign-sandbox/DreamCruise/images/itineraries/itineraries-banner2.png');"></div>
+				<div class="item-txt-title">
+					<h3>BEAUTY AND WELLNESS</h3>
+					<p>We take your spa-going seriously - our heaven of beauty and wellness is one of the largest at sea. Here you  will revel in time-honoured practices, sophisticated treatments and therapeutic remedies.</p>
+					<p>We take your spa-going seriously - our heaven of beauty and wellness is one of the largest at sea. Here you  will revel in time-honoured practices, sophisticated treatments and therapeutic remedies.</p>
+				</div>
+				<a href="#" class="btn-item-txt"></a>
+			</div>
+		</div>
+</div>

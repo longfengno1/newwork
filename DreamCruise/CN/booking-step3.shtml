@@ -1,0 +1,141 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Booking</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/booking.css">
+	<!-- JS validation  -->
+	<script src="../include/js/jquery.validate.min.js"></script>
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(6) > .nav-link').addClass('active');
+
+			$('.icon-list li:eq(0), .icon-list li:eq(1), .icon-list li:eq(2)').addClass('active');			
+		});
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+		<!-- Booking header -->
+		<!--#include file="../include/ssi/booking/header.ssi" -->
+	</header>
+	<!-- Content -->
+	<section class="btm-space">
+		<div class="container py-5 position-static">
+			<!-- Step -->
+			<!--#include file="../include/ssi/booking/step-progress.ssi" -->
+			<h2 class="green-header txt-green d-flex justify-content-between align-items-end"><span>檢查資料</span> <a
+					href="javascript:void(0)" class="icon-download txt-dark-blue">保存輸入信息</a></h2>
+			<hr class="green-bar" />
+			<div class="row">
+				<div class="col-12 col-md">
+					<h2 class="txt-dark-blue">世界夢號[限時優惠]香港-峴港-芽莊-香港</h2>
+					<p><span class="txt-dark-blue">航線</span> 廣州-香港-峴港-芽莊-香港<br />
+						<span class="txt-dark-blue">出發港口</span> 廣洲<br />
+						<span class="txt-dark-blue">天數</span> 6天5晚<br />
+						<span class="txt-dark-blue">郵輪</span> 世界夢號
+					</p>
+					
+					<div class="bg-white rounded row p-3 mb-3 mx-0">
+						<div class="col-6"><h4 class="txt-dark-blue mb-1">出發</h4><hr /><span class="txt-dark-blue">日期</span> 2019年3月12日<br /><span class="txt-dark-blue">時間</span> 09:30<br /><span class="txt-dark-blue">港口</span> 廣州</div>
+						<div class="col-6 border-left"><h4 class="txt-dark-blue mb-1">到達</h4><hr /><span class="txt-dark-blue">日期</span> 2019年3月16日<br /><span class="txt-dark-blue">時間</span> 18:30<br /><span class="txt-dark-blue">港口</span> 廣州</div>
+					</div>
+
+					<div class="collapse-panel bg-white p-3 mb-3 txt-dark-blue">
+						<h2 class="mb-0"><img
+									src="../images/booking/booking_flow/rm1.jpg" class="mr-4" />房間1 海景客房 - 雙人房</h2>
+						<hr />
+						<h2>陳文文</h2>
+						<p>+ WIFI (3日無限使用)</p>
+						<p>+ 美容服務</p>
+						<p>+ 鯨魚觀賞與野生動物探索</p>
+						<hr />
+						<h2>陳小文</h2>
+						<p>+ WIFI (3日無限使用)</p>
+						<p>+ 美容服務</p>
+						<p>+ 鯨魚觀賞與野生動物探索</p>
+					</div>
+
+					<div class="collapse-panel bg-white p-3 mb-3">
+							<h2 class="mb-0"><img
+								src="../images/booking/booking_flow/rm2.jpg" class="mr-4" />房間2 海景客房 - 三人房</h2>
+							<hr />
+							<h2>陳小小</h2>
+							<p>+ WIFI (3日無限使用)</p>
+							<p>+ 美容服務</p>
+							<p>+ 鯨魚觀賞與野生動物探索</p>
+							<hr />
+							<h2>文小小</h2>
+							<p>+ WIFI (3日無限使用)</p>
+					</div>
+
+					<div class="collapse-panel bg-white p-3 mb-3 txt-dark-blue">
+						<h2>發票信息</h2>
+						<p><input class="tick-box" type="radio" id="noreceipt" name="receipt"><label for="noreceipt" class="icon-box">不需要發票</label><input class="tick-box" type="radio" id="mreceipt" name="receipt"><label for="mreceipt" class="icon-box">需要郵寄發票</label><input class="tick-box" type="radio" id="ereceipt" name="receipt"><label for="ereceipt" class="icon-box">需要電子發票</label></p>
+						<p class="mb-1 px-1">發票抬頭</p>
+						<p class="px-1"><span class="icon-border d-inline-block mb-0"><input type="text" class="w-auto" size="50" /></span></p>
+						<p class="mb-1 px-1">稅號</p>
+						<p><span class="icon-border d-inline-block mb-0"><input type="text" class="w-auto" size="50" placeholder="公司納稅人識別號或統一社會信用代碼" /></span><br /><span class="remarks">發票抬頭為企業時，應提供納稅人人識別或統一社會信用代碼，否則，發票將不能作為稅收</span></p>
+						<p class="mb-1 px-1">郵箱地址</p>
+						<p><span class="icon-border d-inline-block mb-0"><input type="text" class="w-auto" size="50" placeholder="限微信支付"  /></span><br /><span class="remarks">發票抬頭為企業時，應提供納稅人人識別或統一社會信用代碼，否則，發票將不能作為稅收</span></p>
+					</div>
+				</div>
+				<div class="col-12 col-md-auto">
+					<div class="booking-green-panel p-3 h-100">
+						<h3 class="green-header txt-green">訂單明細</h3>
+						<hr class="green-bar mb-3 mt-1" />
+						<p><strong class="txt-dark-blue">房間1(海景客房 - 兩人房)</strong></p>
+						<p class="price-list-item"><span>旅客1</span> <span class="txt-dark-blue">$ 3,300</span></p>
+						<p class="price-list-item"><span>旅客2</span> <span class="txt-dark-blue">-</span></p>
+						<p class="price-list-item"><span>港務費</span> <span class="txt-dark-blue">$ 1,100</span></p>
+						<hr>
+						<p><strong class="txt-dark-blue">房間2(海景客房 - 三人房)</strong></p>
+						<p class="price-list-item"><span>旅客1</span> <span class="txt-dark-blue">$ 3,300</span></p>
+						<p class="price-list-item"><span>旅客2</span> <span class="txt-dark-blue">-</span></p>
+						<p class="price-list-item"><span>港務費</span> <span class="txt-dark-blue">$ 1,100</span></p>
+						<hr>
+						<p><strong class="txt-dark-blue">增值服務</strong></p>
+						<p class="price-list-item"><span>特惠套餐 x3</span> <span class="txt-dark-blue">$ 3,200</span></p>
+						<p class="price-list-item"><span>鯨魚觀賞與野生動物探索</span> <span class="txt-dark-blue">$3,200</span></p>
+						<hr>
+						<p><strong class="txt-dark-blue">您節省了</strong></p>
+						<p class="price-list-item"><span>預訂優惠</span> <span class="txt-dark-blue">- $ 2,700</span></p>
+						<hr>
+						<p><strong class="txt-dark-blue">可使用的優惠券</strong></p>
+						<p class="price-list-item"><input type="checkbox" class="tick-box" id="offer_500"
+								name="offer_500"><label for="offer_500"
+								class="icon-box theme-light d-flex flex-row-reverse w-100 mx-0 justify-content-between align-items-center"><span>500元電子優惠券</span></label>
+						</p>
+						<p><strong class="txt-dark-blue icon-plus">選擇優惠券</strong></p>
+						<p class="row mx-0"><input type="text" placeholder="優惠代碼(選填)" class="col border-0" /><a
+								href="javascript:void(0)" class="dc-btn col-auto no-arrow">套用</a></p>
+						<hr>
+						<h3 class="price-list-item"><span class="txt-dark-blue">總計</span><span
+								class="txt-dark-blue">$6,600</span></h3>
+						<p><input type="checkbox" class="tick-box" id="tips"
+							name="tips"><label for="tips"
+							class="icon-box theme-light mx-0 d-flex"><span>現在支付$1,000元小費<br /><a href="#"><u>了解更多</u></a></span></label></p>		
+						<p class="mt-5"><a href="javascript:void(0)" class="dc-btn w-100">下一步，付款</a></p>
+						<p class="remarks">取消政策:如果您日後取消預訂，則可能支付取消費用。</p>
+					</div>
+				</div>
+			</div>
+            <p class="d-flex mt-4 justify-content-between"><a href="javascript:void(0)" class="dc-btn back disabled">返回</a></p>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

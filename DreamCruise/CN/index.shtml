@@ -1,0 +1,2285 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises</title>
+	<link rel="stylesheet" href="../include/css/fullcalendar.min.css">
+	<!--#include file="include/ssi/meta.ssi" -->
+
+	<script src="../include/js/fullcalendar/moment.min.js"></script>
+	<script src="../include/js/fullcalendar/fullcalendar.min.js"></script>
+	<script src="../include/js/fullcalendar/locale/zh-cn.js"></script>
+	<script src="include/js/custom-calendar.js"></script>
+	<!-- Homepage script -->
+	<script>
+		$(document).ready(function () {
+			mobilelist();
+			switchbg.init();
+			AOS.init(); //Init AOS
+
+			$('#bg-itineraries .panel-slide').slick('slickSetOption', 'adaptiveHeight', true, true).on('afterChange', function (event, slick, currentSlide, nextSlide) {
+				AOS.refresh();
+			});
+		});
+	</script>
+</head>
+
+<body id="homepage">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+		<div id="dc-banner" class="mb-0 panel-slide">
+			<!-- Banner -->
+			<div class="panel-slide-item">
+				<img src="../images/banner1.jpg" class="img-responsive" />
+				<img src="../images/img-mobile01.jpg" class="img-responsive mobile" />
+				
+			</div>
+			<div class="panel-slide-item">
+				<div class="dc-video hide">
+					<a href="javascript:void(0)" class="dc-video-sound-btn"></a>
+					<video muted loop>
+						<source src="../video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+					</video>
+				</div>
+				<img src="../images/video-thumbnail.jpg" class="img-responsive" />
+				<img src="../images/img-mobile-topbanner-02.jpg" class="img-responsive mobile" />
+				<div class="video-thumbnail"></div>
+				
+			</div>
+			<div class="topbanner-tab tab-left">
+				<div class="tab" trigger="click">
+					<a href="###" class="tab1 now" rel="0">
+						<span>航线搜索</span>
+					</a>
+					<a href="###" class="tab2" rel="1">
+						<span>团队预定</span>
+					</a>
+					
+				</div>
+				<div class="inner">
+					<div class="tabc">
+						<h3>热门航线搜索</h3>
+						<label>出发港口</label>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-down fr"></div>
+						</div>
+						<label>出发月份</label>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-up fr"></div>
+						</div>
+						<label>目的地</label>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-down fr"></div>
+						</div>
+						<label>乘坐邮轮</label>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-down fr"></div>
+						</div>
+						<div class="button-box">
+							<div class="btn-green fr">搜索航线</div>
+						</div>
+
+					</div>
+					<div class="tabc" style="display:none;">
+						<h3>团队预订</h3>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-down fr"></div>
+						</div>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-up fr"></div>
+						</div>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-down fr"></div>
+						</div>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-down fr"></div>
+						</div>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-down fr"></div>
+						</div>
+						<div class="input-box">
+							<div class="input-txt fl">请选择港口</div>
+							<div class="arrow-down fr"></div>
+						</div>
+						<div class="button-box">
+							<div class="btn-green fr">团队预定</div>
+						</div>
+					</div>
+					
+
+				</div>
+			</div>
+
+		</div>
+		<!-- Search wrapper -->
+		<div id="panel-header-bg" class="d-none d-lg-block">
+			<div class="container" id="Search-wrapper">
+				<a class="d-xl-none py-2 border-top-0 btn-mobile-award collapsed" href="#Search-mobile"
+					data-toggle="collapse">搜索邮轮</a>
+				<div id="Search-mobile" class="collapse dont-collapse-lg">
+					<form>
+						<div class="row d-block d-xl-flex justify-content-center form-group m-0  pl-xl-2">
+							<div class="col-auto">
+								<h3 class="sub-header d-none d-xl-block">出发地</h3>
+								<select class="form-control pl-0">
+									<option>广州</option>
+								</select>
+							</div>
+							<div class="col-auto">
+								<h3 class="sub-header d-none d-xl-block">目的地</h3>
+								<select class="form-control pl-0">
+									<option>广州</option>
+								</select>
+							</div>
+							<div class="col-auto">
+								<h3 class="sub-header d-none d-xl-block">出发时间</h3>
+								<input id="datepicker" class="pl-0" value="2018.07" />
+							</div>
+							<div class="col-auto">
+								<h3 class="sub-header d-none d-xl-block">优惠代码</h3>
+								<input type="text" class="form-control pl-0" value="2EDC786DS" />
+							</div>
+							<div class="col-auto border-0 p-0 p-xl-3">
+								<a href="#" class="dc-btn text-center text-xl-left" tabindex="0"><span
+										class="d-none d-xl-inline">搜索邮轮</span><span class="d-xl-none">搜索邮轮</span></a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="bg-header-sea" class="d-none d-lg-block"></div>
+	</header>
+	<!-- Content -->
+	
+	<section class="d-lg-none position-relative">
+		<div id="mobile-menu-bg"></div>
+		<div class="container py-5">
+			<div class="row text-center" id="dc-hp-menu">
+				<div class="col-3 px-1"><a href="javascript:void(0)"><img src="images/mobile-menu1.png" />
+						<h3 class="mt-2">邮轮航线</h3>
+					</a></div>
+				<div class="col-3 px-1"><a href="javascript:void(0)"><img src="images/mobile-menu2.png" />
+						<h3 class="mt-2">精彩活动</h3>
+					</a></div>
+				<div class="col-3 px-1"><a href="javascript:void(0)"><img src="images/mobile-menu3.png" />
+						<h3 class="mt-2">玩转邮轮</h3>
+					</a></div>
+				<div class="col-3 px-1"><a href="javascript:void(0)"><img src="images/mobile-menu4.png" />
+						<h3 class="mt-2">邮轮百科</h3>
+					</a></div>
+			</div>
+		</div>
+	</section>
+	<section class="" id="bg-itineraries">
+		<div class="container pt-5 pb-5">
+			<h2 class="section-header mb-3" data-aos="fade-up">推荐航线</h2>
+			<div class="row m-0 mb-md-3 d-md-flex">
+				<div class="col p-0 mb-3 mb-md-0 d-flex align-items-md-center">
+					<div class="row w-mb-100 mx-0 mt-3 mt-md-0 d-md-block">
+						<div class="col-auto pl-0 d-md-none">
+							<h3 class="itineraries-title mt-2">出发城市</h3>
+						</div>
+						<div class="col p-0 d-md-block">
+							<a href="javascript:void(0)" class="d-md-none px-3 py-2 dc-selectbtn">广州</a>
+							<ul class="nav nav-pills px-3 py-2 p-md-0 d-md-flex dc-selectlist" role="tablist">
+								<li class="nav-item d-none d-md-block">
+									<h3 class="sub-header mr-3">出发城市</h3>
+								</li>
+								<li class="nav-item mb-3 mb-md-0">
+									<a class="mx-md-3 active" data-toggle="pill" href="#pills-hk" role="tab"
+										aria-controls="pills-hk" aria-selected="true">香港</a>
+								</li>
+								<li class="nav-item mb-3 mb-md-0">
+									<a class="mx-md-3" data-toggle="pill" href="#pills-gz" role="tab"
+										aria-controls="pills-gz" aria-selected="false">广州</a>
+								</li>
+								<li class="nav-item mb-2 mb-md-0">
+									<a class="mx-md-3" data-toggle="pill" href="#pills-sg" role="tab"
+										aria-controls="pills-sg" aria-selected="false">上海</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-auto pr-0 pl-3 p-md-0 pr-md-2 text-center text-md-left">
+					<a href="#" class="dc-btn mt-3 mb-4 mt-md-0 mb-md-0" tabindex="0">探索更多</a>
+				</div>
+			</div>
+
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="pills-hk" role="tabpanel" aria-labelledby="pills-hk-tab">
+					<div class="panel-slide">
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">巴生港 饕餮盛宴</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">苏梅 假日派对</div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">巴生港 饕餮盛宴</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">苏梅 假日派对</div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">巴生港 饕餮盛宴</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">苏梅 假日派对</div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">巴生港 饕餮盛宴</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">苏梅 假日派对</div>
+										</div>
+										<div class="row">
+											<div class="col-12 px-3 mb-2 d-md-none">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+											</div>
+											<div class="col d-none d-md-block">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col d-md-none">
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-gz" role="tabpanel" aria-labelledby="pills-gz-tab">
+					<div class="panel-slide">
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">巴生港 饕餮盛宴</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">苏梅 假日派对</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">巴生港 饕餮盛宴</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-x-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-x-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-x-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-x-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 p-0">
+									<div class="item-itineraries full-item">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-full map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-full map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-sg" role="tabpanel" aria-labelledby="pills-sg-tab">
+					<div class="panel-slide">
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">巴生港 饕餮盛宴</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">苏梅 假日派对</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">巴生港 饕餮盛宴</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-x-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-x-tall map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-x-tall map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div>
+											<div class="gallery-bg-img bg-x-tall"
+												style="background-image:url('images/banner1.jpg');"></div>
+											<div class="icon-destinations">那霸 周末巡航</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 p-0">
+									<div class="item-itineraries full-item">
+										<div class="map-hover">
+											<div class="gallery-bg-img bg-full map-cover w-100"
+												style="background-image:url('../images/sg-img2.jpg');"></div>
+											<div class="gallery-bg-img bg-full map-img w-100"
+												style="background-image:url('../images/map.jpg');"></div>
+											<div class="icon-destinations">新加坡 惊喜之旅</div>
+											<div class="icon-hot"><span>热门</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">上海 - 香港 - 吉隆坡 - 新加坡 - 苏比克湾 - 巴生港</span></p>
+												<p><span class="icon-to">世界梦号</span><span
+														class="icon-time">6天5晚，周六-周四</span></p>
+												<p><span class="icon-date mb-2 mb-md-0">限时至2018.08.21</span><br
+														class="d-md-none" /><span
+														class="icon-offer ml-md-2">特惠</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-tag">亲子游</span><span class="icon-tag">周末游</span></p>
+											</div>
+											<div class="col-auto d-flex flex-column">
+												<p class="txt-price mt-auto">¥ <span>3,300</span><br />起/人</p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class=" position-relative">
+		<div class="container px-0 px-md-3 py-5">
+			<h2 class="section-header" data-aos="fade-up">星梦“邮”记，多航线多玩法</h2>
+			<div class="panel-slide mt-4">
+				<div class="panel-slide-item">
+					<div class="row flex-md-row-reverse">
+						<div class="col-12 col-md-6 p-0" data-aos="fade-up-left">
+							<a href="#" class="w-100"><img src="images/big_promo.png" /></a>
+						</div>
+						<div class="col-12 col-md-6 p-0">
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative">
+										<img src="images/offer-img1.jpg" />
+										<div class="icon-hot"><span>热门</span></div>
+									</div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>邂逅樱花，品棠梨煎雪</h3>
+										<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span
+												class="icon-location-grey mr-0 mr-md-3">香港出发</span><span
+												class="icon-ship">云顶梦号</span></div>
+										<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative">
+										<img src="images/offer-img2.jpg" />
+										<div class="icon-discount"><span>50</span><span>%<br />OFF</span></div>
+									</div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>小小梦想家的快乐周末</h3>
+										<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span
+												class="icon-location-grey mr-0 mr-md-3">广州出发</span><span
+												class="icon-ship">世界梦号</span></div>
+										<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative"><img src="images/offer-img3.jpg" /></div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>世界那么大，我想带爸爸妈妈去看看</h3>
+										<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span
+												class="icon-location-grey mr-0 mr-md-3">上海出发</span><span
+												class="icon-ship">云顶梦号</span></div>
+										<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-slide-item">
+					<div class="row flex-md-row-reverse">
+						<div class="col-12 col-md-6 p-0" data-aos="fade-up-left">
+							<a href="#" class="w-100"><img src="images/big_promo.png" /></a>
+						</div>
+						<div class="col-12 col-md-6 p-0">
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative">
+										<img src="images/offer-img1.jpg" />
+										<div class="icon-hot"><span>热门</span></div>
+									</div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>邂逅樱花，品棠梨煎雪</h3>
+										<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span
+												class="icon-location-grey mr-0 mr-md-3">香港出发</span><span
+												class="icon-ship">云顶梦号</span></div>
+										<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative">
+										<img src="images/offer-img2.jpg" />
+										<div class="icon-discount"><span>50</span><span>%<br />OFF</span></div>
+									</div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>小小梦想家的快乐周末</h3>
+										<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span
+												class="icon-location-grey mr-0 mr-md-3">广州出发</span><span
+												class="icon-ship">世界梦号</span></div>
+										<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative"><img src="images/offer-img3.jpg" /></div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>世界那么大，我想带爸爸妈妈去看看</h3>
+										<p>走起吗？让邮轮作为自己移动的家。<br />我觉得这是旅游的最好方式！</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span
+												class="icon-location-grey mr-0 mr-md-3">上海出发</span><span
+												class="icon-ship">云顶梦号</span></div>
+										<div class="col-auto txt-price">¥ <span>3,300</span><br>起/人</div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="bg-onboard" class="d-flex flex-column">
+		<div class="container pt-5 flex-order-1">
+			<h2 class="section-header" data-aos="fade-up">特色活动</h2>
+		</div>
+		<div class="container flex-order-3">
+			<p class="text-center text-md-right"><a href="#" class="dc-btn" tabindex="0">探索更多</a></p>
+		</div>
+		<div class="panel-slide flex-order-2">
+			<div class="panel-slide-item">
+				<img src="../images/img-01.png" class="img-responsive" />
+				<img src="../images/img-mobile-activity02.png" class="img-responsive mobile" />
+				<div class="container">
+					<div class="row justify-content-start">
+						<div class="col-7 col-md-5 text-white">
+							<h3>和海豚宝宝共度夏日时光</h3>
+							<p>憨厚娇羞的海豚，溅起晶莹的水花,而后如同身姿矫健的跳水运动员轻轻落入水中，暑期三条航线均可和海豚宝宝共度美好假期。</p>
+							<p><span class="icon-offer">特惠</span><span class="icon-hot-offer ml-2">热门</span><span
+									class="icon-tag ml-2">亲子游</span><span class="icon-tag">周末游</span></p>
+							<p><a href="#" class="txt-btn" tabindex="0">了解详情</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-slide-item">
+				<img src="../images/img-04.png" class="img-responsive" />
+				<img src="../images/img-mobile-activity01.png" class="img-responsive mobile" />
+				<div class="container">
+					<div class="row justify-content-end">
+						<div class="col-7 col-md-5 text-white">
+							<h3>和海豚宝宝共度夏日时光</h3>
+							<p>憨厚娇羞的海豚，溅起晶莹的水花,而后如同身姿矫健的跳水运动员轻轻落入水中，暑期三条航线均可和海豚宝宝共度美好假期。</p>
+							<p><span class="icon-offer">特惠</span><span class="icon-hot-offer ml-2">热门</span><span
+									class="icon-tag ml-2">亲子游</span><span class="icon-tag">周末游</span></p>
+							<p><a href="#" class="txt-btn" tabindex="0">了解详情</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-slide-item">
+				<img src="../images/img-04.png" class="img-responsive" />
+				<img src="../images/img-mobile-activity01.png" class="img-responsive mobile" />
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-7 col-md-5 text-white">
+							<h3>和海豚宝宝共度夏日时光</h3>
+							<p>憨厚娇羞的海豚，溅起晶莹的水花,而后如同身姿矫健的跳水运动员轻轻落入水中，暑期三条航线均可和海豚宝宝共度美好假期。</p>
+							<p><span class="icon-offer">特惠</span><span class="icon-hot-offer ml-2">热门</span><span
+									class="icon-tag ml-2">亲子游</span><span class="icon-tag">周末游</span></p>
+							<p><a href="#" class="txt-btn" tabindex="0">了解详情</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="bg-onboard-ribbon"></div>
+		</div>
+	</section>
+	<section class="bg-light-green">
+		<div class="container px-0 px-md-3 pt-5 pb-5">
+			<h2 class="section-header" data-aos="fade-up">船上体验</h2>
+			<div class="panel-slide">
+				<div class="panel-slide-item">
+					<div class="row">
+						<div class="col-6 d-flex flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img1.jpg" />
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-pink">浪漫婚典</h4>
+									<h3>唯美浪漫的海上婚礼</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img2.jpg" />
+									<div class="video-thumbnail"></div>
+									<div class="dc-video hide">
+										<video muted loop>
+											<source src="../video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+										</video>
+									</div>
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-yellow">全家游</h4>
+									<h3>点亮梦想</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 d-flex flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img3.jpg" />
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-blue">用VR探索</h4>
+									<h3>细节尽显奢华</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img4.jpg" />
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-purple">中国达人秀</h4>
+									<h3>寻爱 · 起航</h3>
+								</div>
+							</div>
+						</div>
+						<div class="d-none d-md-flex col-6 flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img5.jpg" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-green">团队预定</h4>
+									<h3>默契 · 快乐</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img6.jpg" />
+									<div class="video-thumbnail"></div>
+									<div class="dc-video hide">
+										<video muted loop>
+											<source src="../video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+										</video>
+									</div>
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-brown">精彩视频</h4>
+									<h3>幻彩奇妙的海上之旅</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-slide-item">
+					<div class="row">
+						<div class="col-6 d-flex flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img1.jpg" />
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-pink">浪漫婚典</h4>
+									<h3>唯美浪漫的海上婚礼</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img2.jpg" />
+									<div class="video-thumbnail"></div>
+									<div class="dc-video hide">
+										<video muted loop>
+											<source src="../video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+										</video>
+									</div>
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-yellow">全家游</h4>
+									<h3>点亮梦想</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 d-flex flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img3.jpg" />
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-blue">用VR探索</h4>
+									<h3>细节尽显奢华</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img4.jpg" />
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-purple">中国达人秀</h4>
+									<h3>寻爱 · 起航</h3>
+								</div>
+							</div>
+						</div>
+						<div class="d-none d-md-flex col-6 flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img5.jpg" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-green">团队预定</h4>
+									<h3>默契 · 快乐</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img6.jpg" />
+									<div class="video-thumbnail"></div>
+									<div class="dc-video hide">
+										<video muted loop>
+											<source src="../video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+										</video>
+									</div>
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-brown">精彩视频</h4>
+									<h3>幻彩奇妙的海上之旅</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="bg-ourships-sea" class="position-relative d-none d-md-block">
+		<div class="position-absolute w-100 h-100">
+			<!-- Dummy Button for Test start -->
+			<button class="position-absolute" onclick="switchbg.changevideo();">Switch video</button>
+			<!-- Dummy Button for Test end -->
+			<video src="../video/dreamcruise_effect1.mp4" class="w-auto h-auto"
+				style="object-fit: cover;  min-height: 100%;  pointer-events: none;" muted loop></video>
+		</div>
+		<div class="container pt-5 pb-5">
+			<h2 class="section-header" data-aos="fade-up">星梦邮轮<br />带着你的梦想起航</h2>
+			<div class="ships-slide">
+				<div class="panel-slide-item">
+					<div class="ship-detail">
+						<div class="row justify-content-between mb-0 mb-md-4">
+							<div class="col-7 col-md-6">
+								<h3>WORLD DREAM</h3>
+								<p>is a vessel for your dreams - it features all the comfort of authentic Asian
+									hospitaity, combined with the finest
+									experiences from around the world.</p>
+							</div>
+							<div class="col-5 col-md-4 p-0">
+								<div class="row mx-0 my-3 ship-info">
+									<div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+										<h3><span>150,695</span><br />吨</h3>
+									</div>
+									<div class="col-12 col-md-6 text-center">
+										<h3><span>3,352</span><br />旅客</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p><a href="#" class="dc-btn" tabindex="0">了解更多</a></p>
+						<p><a href="#" class="dc-btn" tabindex="0">更多邮轮</a></p>
+					</div>
+					<div class="position-relative mb-5 mb-md-0">
+						<div id="icon-genting-dream" class="btn-overlay">
+							<a href="javascript:void(0)" id="btn-wd-icon1" class="btn-ourships"
+								onclick="ospopover.click(['WORLDDREAM', '360']);"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon2" class="btn-ourships"
+								onclick="ospopover.click(['WORLDDREAM', 'ships'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon3" class="btn-ourships"
+								onclick="ospopover.click(['WORLDDREAM', 'video'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon4" class="btn-ourships"
+								onclick="ospopover.click(['WORLDDREAM', 'room'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon5" class="btn-ourships"
+								onclick="ospopover.click(['WORLDDREAM', 'slides'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon6" class="btn-ourships"
+								onclick="ospopover.click(['WORLDDREAM', 'sunbath'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon7" class="btn-ourships"
+								onclick="ospopover.click(['WORLDDREAM', 'dining'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon8" class="btn-ourships d-md-none"
+								onclick="ospopover.click(['WORLDDREAM'])"></a>
+							<img src="../images/genting-dream-icon.png" class="img-responsive" />
+							<img src="../images/genting-dream-icon_m.png" class="img-responsive mobile">
+						</div>
+						<img src="../images/world-dream.png" class="img-ship" />
+					</div>
+				</div>
+				<div class="panel-slide-item">
+					<div class="ship-detail">
+						<div class="row justify-content-between mb-0 mb-md-4">
+							<div class="col-7 col-md-6">
+								<h3>云顶梦号</h3>
+								<p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
+							</div>
+							<div class="col-5 col-md-4 p-0">
+								<div class="row mx-0 my-3 ship-info">
+									<div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+										<h3><span>150,695</span><br />吨</h3>
+									</div>
+									<div class="col-12 col-md-6 text-center">
+										<h3><span>3,352</span><br />旅客</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p><a href="#" class="dc-btn" tabindex="0">了解更多</a></p>
+						<p><a href="#" class="dc-btn" tabindex="0">更多邮轮</a></p>
+					</div>
+					<div class="position-relative mb-5 mb-md-0">
+						<div id="icon-genting-dream" class="btn-overlay">
+							<a href="javascript:void(0)" id="btn-gd-icon1" class="btn-ourships"
+								onclick="ospopover.click(['GENTINGDREAM', '360']);"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon2" class="btn-ourships"
+								onclick="ospopover.click(['GENTINGDREAM', 'ships'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon3" class="btn-ourships"
+								onclick="ospopover.click(['GENTINGDREAM', 'video'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon4" class="btn-ourships"
+								onclick="ospopover.click(['GENTINGDREAM', 'room'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon5" class="btn-ourships"
+								onclick="ospopover.click(['GENTINGDREAM', 'slides'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon6" class="btn-ourships"
+								onclick="ospopover.click(['GENTINGDREAM', 'sunbath'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon7" class="btn-ourships"
+								onclick="ospopover.click(['GENTINGDREAM', 'dining'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon8" class="btn-ourships d-md-none"
+								onclick="ospopover.click(['GENTINGDREAM'])"></a>
+							<img src="../images/genting-dream-icon.png" class="img-responsive" />
+							<img src="../images/genting-dream-icon_m.png" class="img-responsive mobile">
+						</div>
+						<img src="../images/genting-dream.png" class="img-ship" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Overlay -->
+		<div class="our-ship-overlay">
+			<div class="container p-0 p-md-3">
+				<div class="overlay-slide">
+					<!-- WORLDDREAM -->
+					<div class="overlay-slide-item WORLDDREAM 360">
+						<div class="slide-box">
+							<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+									tabindex="0">BACK</a>
+							<img src="../images/overlay-img1.png" />
+							<div class="p-3">
+								<p>Depart from the ordinary</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-vr">Virtual
+										reality</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM sunbath">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img2.png" />
+							<div class="p-3">
+								<p>Start a new family tradition</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-deck">Main pool
+										deck</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM dining">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img3.png" />
+							<div class="p-3">
+								<p>Explore the world one meal at a time</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-dinning">Dining</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM slides">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img4.png" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes
+										course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM video">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img4.png" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes
+										course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM room">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img4.png" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes
+										course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM ships">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img4.png" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes
+										course</a></p>
+							</div>
+						</div>
+					</div>
+					<!-- GENTINGDREAM -->
+					<div class="overlay-slide-item GENTINGDREAM 360">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img1.png" />
+							<div class="p-3">
+								<p>Depart from the ordinary</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-vr">Virtual
+										reality</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM sunbath">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img2.png" />
+							<div class="p-3">
+								<p>Start a new family tradition</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-deck">Main pool
+										deck</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM dining">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img3.png" />
+							<div class="p-3">
+								<p>Explore the world one meal at a time</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-dinning">Dining</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM slides">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img4.png" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes
+										course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM video">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img4.png" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes
+										course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM room">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img4.png" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes
+										course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM ships">
+						<div class="slide-box">
+								<a href="javascript:void(0)" class="icon-close btn-overlay-close"
+								tabindex="0">BACK</a>
+							<img src="../images/overlay-img4.png" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes
+										course</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="panel-sea-bg"></div>
+	</section>
+	<section class="bg-light-green overflow-hide d-none d-md-block">
+		<div class="container">
+			<h2 class="section-header" data-aos="fade-up">邮轮百科</h2>
+			<p class="text-right"><a href="#" class="dc-btn mb-3" title="预定须知">预定须知</a> <a href="#"
+					class="dc-btn ml-0 ml-md-3" title="问题清单">问题清单</a></p>
+			<div id="tips-wrapper" class="p-5">
+				<div class="tips-slide">
+					<div class="tips-item">
+						<div class="tips-box mx-1"><img src="images/tips1.jpg" />
+							<h3>常见问题</h3>
+						</div>
+					</div>
+					<div class="tips-item">
+						<div class="tips-box mx-1"><img src="images/tips2.jpg" />
+							<h3>出发前准备</h3>
+						</div>
+					</div>
+					<div class="tips-item">
+						<div class="tips-box mx-1"><img src="images/tips3.jpg" />
+							<h3>报道与登船</h3>
+						</div>
+					</div>
+					<div class="tips-item">
+						<div class="tips-box mx-1"><img src="images/tips4.jpg" />
+							<h3>船上体验</h3>
+						</div>
+					</div>
+					<div class="tips-item">
+						<div class="tips-box mx-1"><img src="images/tips1.jpg" />
+							<h3>常见问题</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<p><u>船票包含</u><br />同一就餐时段内首次于指定免费餐厅指定餐饮就餐的费用</p>
+					</div>
+					<div class="col-12 col-md-6">
+						<p><u>船票不包含</u><br />同一就餐时段内于同一间指定免费餐厅加餐或者更换指定免费餐厅再就餐则需按餐厅当时价目标准收费。 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="position-relative d-none d-md-block">
+		<div class="overflow-hide position-relative">
+			<div class="container pt-5 pb-1">
+				<h2 class="section-header" data-aos="fade-up">目的地</h2>
+				<p class="text-center"><a href="#" class="dc-btn" tabindex="0">探索更多</a></p>
+			</div>
+			<div class="donslide-bg"></div>
+			<div class="donslide pb-5 pb-lg-0">
+				<div class="donitem" style="background-image: url(../images/bg-sg.jpg);">
+					<h2 class="donslide-title">新加坡</h2>
+					<div class="donslide-content">
+						<h2>新加坡</h2>
+						<div class="don-extend-panel">
+							<div class="row">
+								<div class="col-xs-12 col">
+									<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
+										both luxury travellers and budget
+										backpackers. White sand beachess are rarely more than a few steps away, while
+										festivals offer a glimpase of the
+										rich local culture.</p>
+								</div>
+								<div class="col-12 col-xl-auto">
+									<p class="mb-0"><a href="#" class="dc-btn" tabindex="0">了解详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="donitem" style="background-image: url(../images/bg-nb.jpg);">
+					<h2 class="donslide-title">巴厘岛</h2>
+					<div class="donslide-content">
+						<h2>巴厘岛</h2>
+						<div class="don-extend-panel">
+							<div class="row">
+								<div class="col-xs-12 col">
+									<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
+										both luxury travellers and budget
+										backpackers. White sand beachess are rarely more than a few steps away, while
+										festivals offer a glimpase of the
+										rich local culture.</p>
+								</div>
+								<div class="col-12 col-xl-auto">
+									<p class="mb-0"><a href="#" class="dc-btn" tabindex="0">了解详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="donitem" style="background-image: url(../images/bg-ks.jpg);">
+					<h2 class="donslide-title">苏梅岛</h2>
+					<div class="donslide-content">
+						<div class="icon-hot"><span>热门目的地</span></div>
+						<h2>苏梅岛</h2>
+						<div class="don-extend-panel">
+							<div class="row">
+								<div class="col-xs-12 col">
+									<p>苏梅岛是泰国南部一个迷人的岛屿，对豪华旅行者和穷游族来说都是很受欢迎的目的地。</p>
+									<div class="row">
+										<div class="col pr-2 pt-0"><span
+												class="txt-highlight item-info">国庆期间第二、三四位顾客享半价优惠4晚</span><span
+												class="item-info">马来西亚、泰国、缅甸巡游之旅</span><span
+												class="item-info">机票+1晚住宿</span></div>
+										<div class="col-auto px-2 pt-0 txt-price">¥<br /><span>4,426</span><br />起/人
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-xl-auto">
+									<p class="mb-0"><a href="#" class="dc-btn" tabindex="0">了解详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="donitem" style="background-image: url(../images/bg-hk.jpg);">
+					<h2 class="donslide-title">香港</h2>
+					<div class="donslide-content">
+						<div class="icon-hot"><span>热门目的地</span></div>
+						<h2>香港</h2>
+						<div class="don-extend-panel">
+							<div class="row">
+								<div class="col-xs-12 col">
+									<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
+										both luxury travellers and budget
+										backpackers. White sand beachess are rarely more than a few steps away, while
+										festivals offer a glimpase of the
+										rich local culture.</p>
+								</div>
+								<div class="col-12 col-xl-auto">
+									<p class="mb-0"><a href="#" class="dc-btn" tabindex="0">了解详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="donitem" style="background-image: url(../images/bg-hlb.jpg);">
+					<h2 class="donslide-title">越南 下龙湾</h2>
+					<div class="donslide-content">
+						<h2>越南 下龙湾</h2>
+						<div class="don-extend-panel">
+							<div class="row">
+								<div class="col-xs-12 col">
+									<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
+										both luxury travellers and budget
+										backpackers. White sand beachess are rarely more than a few steps away, while
+										festivals offer a glimpase of the
+										rich local culture.</p>
+								</div>
+								<div class="col-12 col-xl-auto">
+									<p class="mb-0"><a href="#" class="dc-btn" tabindex="0">了解详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="donitem" style="background-image: url(../images/bg-mk.jpg);">
+					<h2 class="donslide-title">宫古岛</h2>
+					<div class="donslide-content">
+						<h2>宫古岛</h2>
+						<div class="don-extend-panel">
+							<div class="row">
+								<div class="col-xs-12 col">
+									<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
+										both luxury travellers and budget
+										backpackers. White sand beachess are rarely more than a few steps away, while
+										festivals offer a glimpase of the
+										rich local culture.</p>
+								</div>
+								<div class="col-12 col-xl-auto">
+									<p class="mb-0"><a href="#" class="dc-btn" tabindex="0">了解详情</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="donmenu position-absolute">
+				<div class="container px-0">
+					<div class="row mx-0">
+						<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">新加坡</a></div>
+						<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">巴厘岛</a></div>
+					</div>
+					<div class="row mx-0">
+						<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">苏梅岛</a></div>
+						<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">香港</a></div>
+					</div>
+					<div class="row mx-0">
+						<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">越南 下龙湾</a></div>
+						<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">宫古岛</a></div>
+					</div>
+				</div>
+			</div>
+			<a href="javascript:void(0)" class="btn-donpopover">Our Destinations Menu</a>
+		</div>
+		<div id="bg-our-destinations"></div>
+	</section>
+	<section id="award-wrapper" class="bg-light-greend-none d-none d-md-block">
+		<div class="container pt-5 top-content">
+			<p class="mb-4 text-center d-none d-md-block"><a href="#" class="w-100"><img
+						src="../images/award.png" /></a></p>
+			<div class="row p-3 award-border">
+				<div class="col-12 col-md-6 clearfix">
+					<a class="d-md-none btn-mobile-award collapsed" href="#travelagents" data-toggle="collapse">企业出游</a>
+					<div class="collapse dont-collapse-sm" id="travelagents">
+						<div class="row">
+							<div class="col-12 col-md-auto"><img src="../images/brochure.png" /> </div>
+							<div class="col">
+								<h3 class="d-none d-md-block">企业出游</h3>
+								<p>团建，答谢客户，星梦邮轮都是你的不二之选！</p>
+								<p><a href="#" class="dc-btn mr-2 mb-2">登陆预定</a> <a href="#" class="dc-btn ">了解更多</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<a class="d-md-none btn-mobile-award collapsed" href="#mobileapp" data-toggle="collapse">手机应用</a>
+					<div id="mobileapp" class="collapse dont-collapse-sm">
+						<h3 class="d-none d-md-block">手机应用</h3>
+						<p>为你的邮轮假期更新。</p>
+						<p><a href="#" class="mr-2 mb-2"><img src="../images/btn_apple.png" /></a> <a href="#"><img
+									src="../images/btn_google.png" /></a></p>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<a class="d-md-none btn-mobile-award collapsed" href="#careers" data-toggle="collapse">工作机会</a>
+					<div id="careers" class="collapse dont-collapse-sm">
+						<h3 class="d-none d-md-block">工作机会</h3>
+						<p>加入我们，一起开创我们的梦想！</p>
+						<p><a href="#" class="dc-btn">查看职位</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

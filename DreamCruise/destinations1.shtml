@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Destinations & Excursions | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+</head>
+
+<body id="destinations" class="insidepage insidepage-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+		<!-- Banner -->
+		<header>
+		</header>
+		<!-- Content -->
+		<section>
+			<div class="container pt-5 destinations-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Plan Your Holiday">Plan Your Holiday</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Destinations &amp; Excursions</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+				
+				<h2 class="section-header">Destinations &amp; Excursions</h2>
+				<p>Sometimes one destination isn't enoght, so our itineraries bring you the best of Asia, with everything from beach
+					retreats and exclusive designer stores, to gourmetcuisine and offbeat cultural escapes. Embark from ports in Hong Kong,
+					Singapore or Guangzhou and return with new dreams to share.</p>
+				<p class="text-right"><a href="#" class="dc-btn">VIEW ITINERARIES</a></p>
+				<!-- Alubum -->
+				<!--#include file="include/ssi/album.ssi" -->
+			</div>
+        </section>
+	<!-- BookNow banner -->
+	<!--#include file="include/ssi/booknow_banner.ssi" -->
+	<!-- Award -->
+	<!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

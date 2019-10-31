@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Onboard Experience | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<script>
+		$(document).ready(function () {
+			cefilter();
+		});
+	</script>
+</head>
+
+<body id="cruise-experience" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/cruise-experience/ce-banner.png" alt="Onboard Experience" class="img-responsive" />
+		<img src="images/cruise-experience/ce-banner.png" alt="Onboard Experience" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container cruise-experience-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Onboard Experience</li>
+				</ol>
+				
+				<!-- Social Share  -->
+                <!--#include file="include/ssi/socialshare.ssi" -->
+				
+				<h2 class="section-header">Onboard Experience</h2>
+				<p>Our cruise ships are vessels designed for your dreams – featuring the comfort of authentic Asian hospitality combined
+					with only the finest experiences from around the world.</p>
+
+				<!-- Alubum -->
+				<!--#include file="include/ssi/album.ssi" -->
+		</section>
+        <!-- Award -->
+		<!--#include file="include/ssi/award.ssi" -->
+		<!-- Footer -->
+		<!--#include file="include/ssi/footer.ssi" -->
+		<!-- Cookies Popover -->
+		<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

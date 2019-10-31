@@ -1,0 +1,272 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 邮轮航线</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<!-- Scroll -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(2) > .nav-link').addClass('active');
+			switchview.init();
+			$('#button-control-wrapper.dt-search-control input').click(function () {
+				$(this).parent('label').siblings().removeClass('active');
+				$(this).parent('label').addClass('active');
+			});
+
+			/* Datepicker highlight */
+			var date = ["5,20,2019", "5,21,2019", "5,5,2019"];
+
+			$('#datepicker').datepicker().destroy().datepicker({
+				locale: 'zh-cn',
+				format: 'yyyy.mm.dd',
+				uiLibrary: 'bootstrap4',
+				open: function (e) {
+					date.forEach(datehighlight);
+				}
+			});
+
+			mobilemenu.init();
+
+			$('#button-control input[type="radio"]').change(function(){ 
+				addselection($(this));
+				var fname = $(this).attr('name');
+				$('#button-control input[name='+fname+']').parent('label').removeClass('active');
+				$(this).parent('label').addClass('active');
+			}).click(function(){
+				bindoption($(this));
+			});
+		});
+
+		var mobilemenu = {
+			data: {
+				mobilebreakpoint: 768,
+				m_btncontrol: '#fullmenu input[type="radio"]',
+				dmlink: '.m_filterbtn a',
+				menuwrapper: '.menu-wrapper',
+				fullmenu: '#fullmenu',
+				fullwrapper: '#fullwrapper',
+				datepicker: '#datepicker'
+			},
+			init: function () {
+				$(mobilemenu.data.m_btncontrol).click(function () {
+					bindoption($(this), 'mobile');
+					$(this).closest('ul').find('label').removeClass('active');
+					$(this).parent('label').addClass('active');
+				});
+
+				$(mobilemenu.data.dmlink).click(function () {
+					binddropdown($(this));
+				});
+			},
+			popoverdate: function (type) {
+				var obj = $(mobilemenu.data.datepicker);
+				var currentval = obj.val();
+				if (type == 'mobile') {
+					obj.datepicker().destroy().datepicker({ uiLibrary: 'bootstrap4', locale: 'zh-cn', format: 'yyyy.mm.dd', modal: true, header: true }).datepicker().value(currentval).open();
+				} else {
+					obj.datepicker().destroy().datepicker({ uiLibrary: 'bootstrap4', locale: 'zh-cn', format: 'yyyy.mm.dd', modal: false, header: false }).datepicker().value(currentval);
+				}
+				filter.datepickerinit();
+			},
+			open: function (index) {
+				var cl_active = 'active';
+				$(this.data.fullwrapper).addClass(cl_active);
+				$(this.data.menuwrapper).removeClass(cl_active);
+				$(this.data.fullmenu).find('#' + index + '').addClass(cl_active);
+			},
+			close: function () {
+				$(this.data.fullwrapper).removeClass('active');
+			}
+		}
+
+		function addselection(obj) {
+			var el = $('#m_taglist');
+			var addname = obj.attr('name');
+			var addval = obj.val();
+			var template = '<a href="javascript:void(0)" data-name="' + addname + '" data-rel="' + addval + '" onclick="removetag($(this))" class="icon-tag">' + addval + '</a>';
+			el.find('a[data-name="' + addname + '"]').remove();
+			if (addval != '') {
+				el.append(template);
+			}
+		}
+		function removetag(obj) {
+			var _self = obj;
+			var addname = _self.attr('data-name');
+			var addval = _self.attr('data-rel');
+			$('#button-control input[name="' + addname + '"][value=""]').click();
+			obj.remove();
+		}
+		function bindoption(obj, type) {
+			var getname = obj.attr('name');
+			var getval = obj.val();
+			var getname2 = '';
+
+			if (type == 'mobile') {
+				getname2 = getname.replace('m_', '');
+				mobilemenu.close();
+			} else {
+				getname2 = 'm_' + getname;
+			}
+			$('input[name="' + getname2 + '"][value="' + getval + '"]').prop('checked', true).change();
+			$('input[name="' + getname2 + '"]').parent('label').removeClass('active');
+			$('input[name="' + getname2 + '"][value="' + getval + '"]').parent('label').addClass('active');
+		}
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<div id="dc-banner" class="mb-0">
+			<img alt="Experience the scenic and cultural wonders of Japan"
+				src="/campaign-sandbox/DreamCruise/images/banner1.jpg">
+			<div class="banner-cover"></div>
+		</div>
+	</header>
+	<!-- Content -->
+	<section>
+		<div class="container py-5 position-static">
+			<div class="row d-md-none dc-dt-menu mb-3">
+				<div class="col-4 px-1 text-center"><a href="javascript:void(0)"
+						onclick="mobilemenu.open('m_Cruise')"><img src="../images/destinations/icon_mobile_ship.jpg">
+						<h3 class="mt-2">邮轮</h3>
+					</a></div>
+				<div class="col-4 px-1 text-center"><a href="javascript:void(0)"
+						onclick="mobilemenu.open('m_Events')"><img src="../images/destinations/icon_mobile_to.jpg">
+						<h3 class="mt-2">活动类型</h3>
+					</a></div>
+				<div class="col-4 px-1 text-center"><a href="javascript:void(0)"
+						onclick="mobilemenu.open('m_Travel_month')"><img src="../images/destinations/icon_mobile_date.jpg">
+						<h3 class="mt-2">航行日期</h3>
+					</a></div>
+			</div>
+
+			<div id="m_taglist" class="d-md-none mb-3"></div>
+
+			<div id="button-control-wrapper" class="my-4 dt-search-control d-none d-md-block">
+				<table width="100%" id="button-control">
+					<tbody>
+						<tr>
+							<th><span class="icon-cruise">邮轮</span></th>
+							<td>
+								<label><input type="radio" name="Cruise" value="世界梦号"> 世界梦号</label>
+								<label><input type="radio" name="Cruise" value="云顶梦号"> 云顶梦号</label>
+								<label><input type="radio" name="Cruise" value="探索梦号"> 探索梦号</label>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="icon-departureport">活动类型</span></th>
+							<td>
+								<label><input type="radio" name="Events" value="星级表演"> 星级表演</label>
+								<label><input type="radio" name="Events" value="主题活动"> 主题活动</label>
+								<label><input type="radio" name="Events" value="娱乐表演"> 娱乐表演</label>
+								<label><input type="radio" name="Events" value="生活品味"> 生活品味</label>
+							</td>
+						</tr>
+						<tr>
+							<th><span class="icon-day-large">航行日期</span></th>
+							<td>
+								<label><input type="radio" name="Travel_month" value="四月2019"> 四月2019</label>
+								<label><input type="radio" name="Travel_month" value="五月2019"> 五月2019</label>
+								<label><input type="radio" name="Travel_month" value="六月2019"> 六月2019</label>
+								<label><input type="radio" name="Travel_month" value="七月2019"> 七月2019</label>
+								<label><input type="radio" name="Travel_month" value="八月2019"> 八月2019</label>
+								<label><input type="radio" name="Travel_month" value="九月2019"> 九月2019</label>
+								<label><input type="radio" name="Travel_month" value="十月2019 "> 十月2019</label>
+								<label><input type="radio" name="Travel_month" value="十一月2019"> 十一月2019</label>
+								<label><input type="radio" name="Travel_month" value="十二月2019 "> 十二月2019 </label>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="row p-4 mx-0 mb-3 dt-search-bar">
+				<div class="col px-0"><input type="text" placeholder="输入关键词或选择出发日期搜寻活动"
+						class="w-100 h-100 px-2 border border-right-0" /></div>
+				<div class="col-auto px-0"><input type="text" id="datepicker"
+						class="icon-calendar-large border border-left-0"></div>
+				<div class="col-12 col-md-auto px-0 mt-2 mt-md-0 text-right"><a href="javascript:void(0)"
+						class="dc-btn px-5">搜寻</a></div>
+				<div class="col-auto px-0 d-none d-md-block"><a href="javascript:void(0)"
+						class="icon-listview active pr-1"></a><a href="javascript:void(0)"
+						class="icon-gridview pl-1"></a></div>
+			</div>
+
+			<ul id="result-view">
+				<li>
+					<div class="result-view-item">
+						<div class="view-img"><img src="images/itineraries/blog-img3.jpg" class="w-100" /></div>
+						<div class="view-content">
+							<h3>「世界梦号」海上日本祭 体验真正的东瀛</h3>
+							<p class="icon-date">2019/03/10-2019/11/23</p>
+							<p>世界梦号日本航航线将于三月载誉而归带来全新海上日本祭，一系列以日本吉祥物达摩不倒翁为主题的活动将触目登场，当中包括代表不同愿望的达摩供旅行欣赏和拍照祈愿！</p>
+							<p class="mb-0"><a href="javascript:void(0)" class="dc-btn">查看详情</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="result-view-item">
+						<div class="view-img"><img src="images/itineraries/blog-img3.jpg" class="w-100" /></div>
+						<div class="view-content">
+							<h3>「世界梦号」海上日本祭 体验真正的东瀛</h3>
+							<p class="icon-date">2019/03/10-2019/11/23</p>
+							<p>世界梦号日本航航线将于三月载誉而归带来全新海上日本祭，一系列以日本吉祥物达摩不倒翁为主题的活动将触目登场，当中包括代表不同愿望的达摩供旅行欣赏和拍照祈愿！</p>
+							<p class="mb-0"><a href="javascript:void(0)" class="dc-btn">查看详情</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="result-view-item">
+						<div class="view-img"><img src="images/itineraries/blog-img3.jpg" class="w-100" /></div>
+						<div class="view-content">
+							<h3>「世界梦号」海上日本祭 体验真正的东瀛</h3>
+							<p class="icon-date">2019/03/10-2019/11/23</p>
+							<p>世界梦号日本航航线将于三月载誉而归带来全新海上日本祭，一系列以日本吉祥物达摩不倒翁为主题的活动将触目登场，当中包括代表不同愿望的达摩供旅行欣赏和拍照祈愿！</p>
+							<p class="mb-0"><a href="javascript:void(0)" class="dc-btn">查看详情</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="result-view-item">
+						<div class="view-img"><img src="images/itineraries/blog-img3.jpg" class="w-100" /></div>
+						<div class="view-content">
+							<h3>「世界梦号」海上日本祭 体验真正的东瀛</h3>
+							<p class="icon-date">2019/03/10-2019/11/23</p>
+							<p>世界梦号日本航航线将于三月载誉而归带来全新海上日本祭，一系列以日本吉祥物达摩不倒翁为主题的活动将触目登场，当中包括代表不同愿望的达摩供旅行欣赏和拍照祈愿！</p>
+							<p class="mb-0"><a href="javascript:void(0)" class="dc-btn">查看详情</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="result-view-item">
+						<div class="view-img"><img src="images/itineraries/blog-img3.jpg" class="w-100" /></div>
+						<div class="view-content">
+							<h3>「世界梦号」海上日本祭 体验真正的东瀛</h3>
+							<p class="icon-date">2019/03/10-2019/11/23</p>
+							<p>世界梦号日本航航线将于三月载誉而归带来全新海上日本祭，一系列以日本吉祥物达摩不倒翁为主题的活动将触目登场，当中包括代表不同愿望的达摩供旅行欣赏和拍照祈愿！</p>
+							<p class="mb-0"><a href="javascript:void(0)" class="dc-btn">查看详情</a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- BookNow banner -->
+	<!--#include file="include/ssi/booknow_banner.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Full Menu -->
+	<!--#include file="include/ssi/fullmenu.ssi" -->
+</body>
+
+</html>

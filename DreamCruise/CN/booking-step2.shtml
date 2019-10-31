@@ -1,0 +1,1695 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Booking</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/booking.css">
+	<!-- JS validation  -->
+	<script src="../include/js/jquery.validate.min.js"></script>
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(6) > .nav-link').addClass('active');
+
+
+			$('.icon-list li:eq(0), .icon-list li:eq(1)').addClass('active');
+		});
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+		<!-- Booking header -->
+		<!--#include file="../include/ssi/booking/header.ssi" -->
+	</header>
+	<!-- Content -->
+	<section class="btm-space">
+		<div class="container py-5 position-static">
+			<!-- Step -->
+			<!--#include file="../include/ssi/booking/step-progress.ssi" -->
+			<h2 class="green-header txt-green d-flex justify-content-between align-items-end"><span>填寫乘客資料</span> <a
+					href="javascript:void(0)" class="icon-download txt-dark-blue">保存輸入信息</a></h2>
+			<hr class="green-bar" />
+			<div class="row">
+				<div class="col-12 col-md">
+					<div class="collapse-panel bg-white p-3 mb-3">
+						<h2 class="mb-0"><a class="txt-dark-blue btn-collapse collapsed" data-toggle="collapse"
+								href="#rm1" role="button" aria-expanded="false" aria-controls="rm1"><img
+									src="../images/booking/booking_flow/rm1.jpg" class="mr-4" />房間1 海景客房 - 雙人房</a></h2>
+						<div class="collapse multi-collapse" id="rm1">
+							<hr />
+							<h2 class="txt-dark-blue my-4"><a class="txt-dark-blue btn-collapse collapsed"
+									data-toggle="collapse" href="#rm1_passenger1" role="button" aria-expanded="false"
+									aria-controls="rm1_passenger1">乘客1 你</a></h2>
+							<!-- Passenger 1 -->
+							<div class="collapse" id="rm1_passenger1">
+								<p><input type="radio" class="tick-box" id="rm1_p1_customer_type1"
+										name="rm1_p1_customer_type" value="c1"><label for="rm1_p1_customer_type1"
+										class="icon-box"></label><span class="icon-border d-inline-block mr-3"><select
+											class="w-auto">
+											<option>常用乘客</option>
+											<option>常用乘客2</option>
+										</select></span><input type="radio" class="tick-box" id="rm1_p1_customer_type2"
+										name="rm1_p1_customer_type" value="c2"><label for="rm1_p1_customer_type2"
+										class="icon-box">新乘客</label></p>
+								<p class="txt-dark-blue mb-1 px-1">全名 (正如您的護照或個人身份證明文件所示)</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="名字" /></span><span
+										class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="姓氏" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">性別</p>
+								<p><input type="radio" class="tick-box" id="rm1_p1_gender_m" name="rm1_p1_gender"
+										value="m"><label for="rm1_p1_gender_m" class="icon-box">男</label> <input
+										type="radio" class="tick-box" id="rm1_p1_gender_f" name="rm1_p1_gender"
+										value="f"><label for="rm1_p1_gender_f" class="icon-box">女</label></p>
+								<p class="txt-dark-blue mb-1 px-1">出生日期</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="1998.09.20" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">電話號碼</p>
+								<p><span class="icon-border d-inline-block mr-1"><select>
+										<option>+86 中国</option>
+										<option>+852 中国香港</option>
+										<option>+853 中国澳门</option>
+										<option>+886 中国台湾</option>
+										<option>+60 马来西亚</option>
+										<option>+65 新加坡</option>
+										<option>+63 菲律宾</option>
+										<option>+62 印度尼西亚</option>
+										<option>0032 比利时</option>
+										<option>+81 日本</option>
+										<option>+82 韩国</option>
+										<option>+84 越南</option>
+										<option>+91 印度</option>
+										<option>+44 英国</option>
+										<option>+33 法国</option>
+										<option>+31 荷兰</option>
+										<option>+49 德国</option>
+										<option>+43 奥地利</option>
+										<option>+39 意大利</option>
+										<option>+7 俄罗斯</option>
+										<option>+61 澳大利亚</option>
+										<option>+64 新西兰</option>
+										<option>+1 加拿大</option>
+										<option>+1 美国</option>
+										<option>+55 巴西</option>
+										<option>+56 智利</option>
+										</select></span><span class="icon-border d-inline-block mr-1"><input type="text"
+											class="w-auto" placeholder="手機號碼" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">電郵地址</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" size="50" /></span>
+								</p>
+								<p><span class="icon-border d-inline-block mr-1"><select>
+										<option>中国内地</option>
+										<option>中国香港 / 中国澳门</option>
+										<option>马来西亚</option>
+										<option>新加坡</option>
+										<option>中国台湾</option>
+										<option>印度</option>
+										<option>印度尼西亚</option>
+										<option>菲律宾</option>
+										<option>阿根廷</option>
+										<option>澳大利亚</option>
+										<option>奥地利</option>
+										<option>巴林</option>
+										<option>孟加拉共和国</option>
+										<option>白俄罗斯</option>
+										<option>比利时</option>
+										<option>巴西</option>
+										<option>汶莱</option>
+										<option>保加利亚</option>
+										<option>柬埔寨</option>
+										<option>加拿大</option>
+										<option>智利</option>
+										<option>克罗地亚</option>
+										<option>塞浦路斯</option>
+										<option>捷克共和国</option>
+										<option>丹麦</option>
+										<option>埃及爱沙尼亚</option>
+										<option>埃塞俄比亚</option>
+										<option>芬兰</option>
+										<option>法国</option>
+										<option>德国</option>
+										<option>希腊</option>
+										<option>关岛</option>
+										<option>匈牙利</option>
+										<option>冰岛</option>
+										<option>伊朗</option>
+										<option>爱尔兰</option>
+										<option>以色列</option>
+										<option>意大利</option>
+										<option>日本</option>
+										<option>约旦</option>
+										<option>肯尼亚</option>
+										<option>韩国</option>
+										<option>科威特</option>
+										<option>拉脫維亞</option>
+										<option>立陶宛</option>
+										<option>卢森堡</option>
+										<option>马尔地夫</option>
+										<option>马耳他</option>
+										<option>毛里求斯</option>
+										<option>墨西哥</option>
+										<option>摩纳哥</option>
+										<option>缅甸</option>
+										<option>尼泊尔</option>
+										<option>荷兰</option>
+										<option>新西兰</option>
+										<option>挪威</option>
+										<option>巴基斯坦</option>
+										<option>波兰</option>
+										<option>葡萄牙</option>
+										<option>罗马尼亚</option>
+										<option>俄罗斯联邦</option>
+										<option>沙特阿拉伯</option>
+										<option>斯洛伐克</option>
+										<option>斯洛文尼亚</option>
+										<option>南非</option>
+										<option>西班牙</option>
+										<option>斯里兰卡</option>
+										<option>苏丹</option>
+										<option>瑞典</option>
+										<option>瑞士</option>
+										<option>坦桑尼亚</option>
+										<option>泰国土一</option>
+										<option>土耳其</option>
+										<option>阿拉伯联合酋长国</option>
+										<option>乌克兰</option>
+										<option>英国</option>
+										<option>美国</option>
+										<option>委内瑞拉</option>
+										<option>越南</option>
+										
+										</select></span></p>
+								<p class="txt-dark-blue mb-1 px-1">旅遊證件類型
+									<input type="radio" class="tick-box" id="rm1_p1_passport_type1"
+										name="rm1_p1_passport_type" value="p1">
+									<label for="rm1_p1_passport_type1" class="icon-box">護照</label><input type="radio"
+										class="tick-box" id="rm1_p1_passport_type2" name="rm1_p1_passport_type"
+										value="c2"><label for="rm1_p1_passport_type2" class="icon-box">身份證</label><input
+										type="radio" class="tick-box" id="rm1_p1_passport_type3"
+										name="rm1_p1_passport_type" value="c3"><label for="rm1_p1_passport_type3"
+										class="icon-box">其他</label></p>
+								<div class="row mx-0">
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">證件號碼</p>
+										<p><span class="icon-border d-inline-block mr-1"><input type="text"
+													class="w-auto" /></span></p>
+									</div>
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">過期日</p>
+										<p><span class="icon-border d-inline-block mr-1"><input type="text"
+													class="w-auto" /></span></p>
+									</div>
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">發行國家</p>
+										<p><span class="icon-border d-inline-block mr-1"><select class="w-auto">
+												<option>中国内地</option>
+												<option>中国香港 / 中国澳门</option>
+												<option>马来西亚</option>
+												<option>新加坡</option>
+												<option>中国台湾</option>
+												<option>印度</option>
+												<option>印度尼西亚</option>
+												<option>菲律宾</option>
+												<option>阿根廷</option>
+												<option>澳大利亚</option>
+												<option>奥地利</option>
+												<option>巴林</option>
+												<option>孟加拉共和国</option>
+												<option>白俄罗斯</option>
+												<option>比利时</option>
+												<option>巴西</option>
+												<option>汶莱</option>
+												<option>保加利亚</option>
+												<option>柬埔寨</option>
+												<option>加拿大</option>
+												<option>智利</option>
+												<option>克罗地亚</option>
+												<option>塞浦路斯</option>
+												<option>捷克共和国</option>
+												<option>丹麦</option>
+												<option>埃及爱沙尼亚</option>
+												<option>埃塞俄比亚</option>
+												<option>芬兰</option>
+												<option>法国</option>
+												<option>德国</option>
+												<option>希腊</option>
+												<option>关岛</option>
+												<option>匈牙利</option>
+												<option>冰岛</option>
+												<option>伊朗</option>
+												<option>爱尔兰</option>
+												<option>以色列</option>
+												<option>意大利</option>
+												<option>日本</option>
+												<option>约旦</option>
+												<option>肯尼亚</option>
+												<option>韩国</option>
+												<option>科威特</option>
+												<option>拉脫維亞</option>
+												<option>立陶宛</option>
+												<option>卢森堡</option>
+												<option>马尔地夫</option>
+												<option>马耳他</option>
+												<option>毛里求斯</option>
+												<option>墨西哥</option>
+												<option>摩纳哥</option>
+												<option>缅甸</option>
+												<option>尼泊尔</option>
+												<option>荷兰</option>
+												<option>新西兰</option>
+												<option>挪威</option>
+												<option>巴基斯坦</option>
+												<option>波兰</option>
+												<option>葡萄牙</option>
+												<option>罗马尼亚</option>
+												<option>俄罗斯联邦</option>
+												<option>沙特阿拉伯</option>
+												<option>斯洛伐克</option>
+												<option>斯洛文尼亚</option>
+												<option>南非</option>
+												<option>西班牙</option>
+												<option>斯里兰卡</option>
+												<option>苏丹</option>
+												<option>瑞典</option>
+												<option>瑞士</option>
+												<option>坦桑尼亚</option>
+												<option>泰国土一</option>
+												<option>土耳其</option>
+												<option>阿拉伯联合酋长国</option>
+												<option>乌克兰</option>
+												<option>英国</option>
+												<option>美国</option>
+												<option>委内瑞拉</option>
+												<option>越南</option>
+												
+												</select></span></p>
+									</div>
+								</div>
+							</div>
+
+							<hr />
+							<h2 class="txt-dark-blue my-4"><a class="txt-dark-blue btn-collapse collapsed"
+									data-toggle="collapse" href="#rm1_passenger2" role="button" aria-expanded="false"
+									aria-controls="rm1_passenger2">乘客2</a></h2>
+
+
+
+							<!-- Passenger 2 -->
+							<div class="collapse" id="rm1_passenger2">
+								<p><input type="radio" class="tick-box" id="rm1_p2_customer_type1"
+										name="rm1_p2_customer_type" value="c1"><label for="rm1_p2_customer_type1"
+										class="icon-box"></label><span class="icon-border d-inline-block mr-3"><select
+											class="w-auto">
+											<option>常用乘客</option>
+											<option>常用乘客2</option>
+										</select></span><input type="radio" class="tick-box" id="rm1_p2_customer_type2"
+										name="rm1_p2_customer_type" value="c2"><label for="rm1_p2_customer_type2"
+										class="icon-box">新乘客</label></p>
+								<p class="txt-dark-blue mb-1 px-1">全名 (正如您的護照或個人身份證明文件所示)</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="名字" /></span><span
+										class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="姓氏" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">性別</p>
+								<p><input type="radio" class="tick-box" id="rm1_p2_gender_m" name="rm1_p2_gender"
+										value="m"><label for="rm1_p2_gender_m" class="icon-box">男</label> <input
+										type="radio" class="tick-box" id="rm1_p2_gender_f" name="rm1_p2_gender"
+										value="f"><label for="rm1_p2_gender_f" class="icon-box">女</label></p>
+								<p class="txt-dark-blue mb-1 px-1">出生日期</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="1998.09.20" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">電話號碼</p>
+								<p><span class="icon-border d-inline-block mr-1"><select>
+										<option>+86 中国</option>
+										<option>+852 中国香港</option>
+										<option>+853 中国澳门</option>
+										<option>+886 中国台湾</option>
+										<option>+60 马来西亚</option>
+										<option>+65 新加坡</option>
+										<option>+63 菲律宾</option>
+										<option>+62 印度尼西亚</option>
+										<option>0032 比利时</option>
+										<option>+81 日本</option>
+										<option>+82 韩国</option>
+										<option>+84 越南</option>
+										<option>+91 印度</option>
+										<option>+44 英国</option>
+										<option>+33 法国</option>
+										<option>+31 荷兰</option>
+										<option>+49 德国</option>
+										<option>+43 奥地利</option>
+										<option>+39 意大利</option>
+										<option>+7 俄罗斯</option>
+										<option>+61 澳大利亚</option>
+										<option>+64 新西兰</option>
+										<option>+1 加拿大</option>
+										<option>+1 美国</option>
+										<option>+55 巴西</option>
+										<option>+56 智利</option>
+										</select></span><span class="icon-border d-inline-block mr-1"><input type="text"
+											class="w-auto" placeholder="手機號碼" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">電郵地址</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" size="50" /></span>
+								</p>
+								<p><span class="icon-border d-inline-block mr-1"><select>
+										<option>中国内地</option>
+										<option>中国香港 / 中国澳门</option>
+										<option>马来西亚</option>
+										<option>新加坡</option>
+										<option>中国台湾</option>
+										<option>印度</option>
+										<option>印度尼西亚</option>
+										<option>菲律宾</option>
+										<option>阿根廷</option>
+										<option>澳大利亚</option>
+										<option>奥地利</option>
+										<option>巴林</option>
+										<option>孟加拉共和国</option>
+										<option>白俄罗斯</option>
+										<option>比利时</option>
+										<option>巴西</option>
+										<option>汶莱</option>
+										<option>保加利亚</option>
+										<option>柬埔寨</option>
+										<option>加拿大</option>
+										<option>智利</option>
+										<option>克罗地亚</option>
+										<option>塞浦路斯</option>
+										<option>捷克共和国</option>
+										<option>丹麦</option>
+										<option>埃及爱沙尼亚</option>
+										<option>埃塞俄比亚</option>
+										<option>芬兰</option>
+										<option>法国</option>
+										<option>德国</option>
+										<option>希腊</option>
+										<option>关岛</option>
+										<option>匈牙利</option>
+										<option>冰岛</option>
+										<option>伊朗</option>
+										<option>爱尔兰</option>
+										<option>以色列</option>
+										<option>意大利</option>
+										<option>日本</option>
+										<option>约旦</option>
+										<option>肯尼亚</option>
+										<option>韩国</option>
+										<option>科威特</option>
+										<option>拉脫維亞</option>
+										<option>立陶宛</option>
+										<option>卢森堡</option>
+										<option>马尔地夫</option>
+										<option>马耳他</option>
+										<option>毛里求斯</option>
+										<option>墨西哥</option>
+										<option>摩纳哥</option>
+										<option>缅甸</option>
+										<option>尼泊尔</option>
+										<option>荷兰</option>
+										<option>新西兰</option>
+										<option>挪威</option>
+										<option>巴基斯坦</option>
+										<option>波兰</option>
+										<option>葡萄牙</option>
+										<option>罗马尼亚</option>
+										<option>俄罗斯联邦</option>
+										<option>沙特阿拉伯</option>
+										<option>斯洛伐克</option>
+										<option>斯洛文尼亚</option>
+										<option>南非</option>
+										<option>西班牙</option>
+										<option>斯里兰卡</option>
+										<option>苏丹</option>
+										<option>瑞典</option>
+										<option>瑞士</option>
+										<option>坦桑尼亚</option>
+										<option>泰国土一</option>
+										<option>土耳其</option>
+										<option>阿拉伯联合酋长国</option>
+										<option>乌克兰</option>
+										<option>英国</option>
+										<option>美国</option>
+										<option>委内瑞拉</option>
+										<option>越南</option>										
+										</select></span></p>
+								<p class="txt-dark-blue mb-1 px-1">旅遊證件類型
+									<input type="radio" class="tick-box" id="rm1_p2_passport_type1"
+										name="rm1_p2_passport_type" value="p1">
+									<label for="rm1_p2_passport_type1" class="icon-box">護照</label><input type="radio"
+										class="tick-box" id="rm1_p2_passport_type2" name="rm1_p2_passport_type"
+										value="c2"><label for="rm1_p2_passport_type2" class="icon-box">身份證</label><input
+										type="radio" class="tick-box" id="rm1_p2_passport_type3"
+										name="rm1_p2_passport_type" value="c3"><label for="rm1_p2_passport_type3"
+										class="icon-box">其他</label></p>
+								<div class="row mx-0">
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">證件號碼</p>
+										<p><span class="icon-border d-inline-block mr-1"><input type="text"
+													class="w-auto" /></span></p>
+									</div>
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">過期日</p>
+										<p><span class="icon-border d-inline-block mr-1"><input type="text"
+													class="w-auto" /></span></p>
+									</div>
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">發行國家</p>
+										<p><span class="icon-border d-inline-block mr-1"><select class="w-auto">
+												<option>中国内地</option>
+												<option>中国香港 / 中国澳门</option>
+												<option>马来西亚</option>
+												<option>新加坡</option>
+												<option>中国台湾</option>
+												<option>印度</option>
+												<option>印度尼西亚</option>
+												<option>菲律宾</option>
+												<option>阿根廷</option>
+												<option>澳大利亚</option>
+												<option>奥地利</option>
+												<option>巴林</option>
+												<option>孟加拉共和国</option>
+												<option>白俄罗斯</option>
+												<option>比利时</option>
+												<option>巴西</option>
+												<option>汶莱</option>
+												<option>保加利亚</option>
+												<option>柬埔寨</option>
+												<option>加拿大</option>
+												<option>智利</option>
+												<option>克罗地亚</option>
+												<option>塞浦路斯</option>
+												<option>捷克共和国</option>
+												<option>丹麦</option>
+												<option>埃及爱沙尼亚</option>
+												<option>埃塞俄比亚</option>
+												<option>芬兰</option>
+												<option>法国</option>
+												<option>德国</option>
+												<option>希腊</option>
+												<option>关岛</option>
+												<option>匈牙利</option>
+												<option>冰岛</option>
+												<option>伊朗</option>
+												<option>爱尔兰</option>
+												<option>以色列</option>
+												<option>意大利</option>
+												<option>日本</option>
+												<option>约旦</option>
+												<option>肯尼亚</option>
+												<option>韩国</option>
+												<option>科威特</option>
+												<option>拉脫維亞</option>
+												<option>立陶宛</option>
+												<option>卢森堡</option>
+												<option>马尔地夫</option>
+												<option>马耳他</option>
+												<option>毛里求斯</option>
+												<option>墨西哥</option>
+												<option>摩纳哥</option>
+												<option>缅甸</option>
+												<option>尼泊尔</option>
+												<option>荷兰</option>
+												<option>新西兰</option>
+												<option>挪威</option>
+												<option>巴基斯坦</option>
+												<option>波兰</option>
+												<option>葡萄牙</option>
+												<option>罗马尼亚</option>
+												<option>俄罗斯联邦</option>
+												<option>沙特阿拉伯</option>
+												<option>斯洛伐克</option>
+												<option>斯洛文尼亚</option>
+												<option>南非</option>
+												<option>西班牙</option>
+												<option>斯里兰卡</option>
+												<option>苏丹</option>
+												<option>瑞典</option>
+												<option>瑞士</option>
+												<option>坦桑尼亚</option>
+												<option>泰国土一</option>
+												<option>土耳其</option>
+												<option>阿拉伯联合酋长国</option>
+												<option>乌克兰</option>
+												<option>英国</option>
+												<option>美国</option>
+												<option>委内瑞拉</option>
+												<option>越南</option>												
+												</select></span></p>
+									</div>
+								</div>
+
+							</div>
+
+							<hr>
+							<h2 class="txt-dark-blue my-4">緊急聯絡人資料</h2>
+							<div class="green-nav p-3 text-white rounded mb-4"><img
+									src="../images/booking/booking_flow/icon-info.jpg" class="align-middle mr-3" />
+								您可以稍後輸入資料</div>
+							<div class="row mx-0">
+								<div class="col-12 col-md-auto px-0">
+									<p class="txt-dark-blue mb-1 px-1">緊急聯絡人資料</p>
+									<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+												placeholder="名字"></span></p>
+								</div>
+								<div class="col-12 col-md-auto px-0">
+									<p class="txt-dark-blue mb-1 px-1"><input type="checkbox" class="tick-box"
+											id="rm1_same_content_p" /><label for="rm1_same_content_p"
+											class="icon-box mb-0">與主要乘客使用相同的緊急聯絡人</label></p>
+									<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+												placeholder="姓氏"></span></p>
+								</div>
+							</div>
+							<p class="txt-dark-blue mb-1 px-1">電話號碼</p>
+							<p><span class="icon-border d-inline-block mr-1"><select>
+									<option>+86 中国</option>
+									<option>+852 中国香港</option>
+									<option>+853 中国澳门</option>
+									<option>+886 中国台湾</option>
+									<option>+60 马来西亚</option>
+									<option>+65 新加坡</option>
+									<option>+63 菲律宾</option>
+									<option>+62 印度尼西亚</option>
+									<option>0032 比利时</option>
+									<option>+81 日本</option>
+									<option>+82 韩国</option>
+									<option>+84 越南</option>
+									<option>+91 印度</option>
+									<option>+44 英国</option>
+									<option>+33 法国</option>
+									<option>+31 荷兰</option>
+									<option>+49 德国</option>
+									<option>+43 奥地利</option>
+									<option>+39 意大利</option>
+									<option>+7 俄罗斯</option>
+									<option>+61 澳大利亚</option>
+									<option>+64 新西兰</option>
+									<option>+1 加拿大</option>
+									<option>+1 美国</option>
+									<option>+55 巴西</option>
+									<option>+56 智利</option>
+									</select></span><span class="icon-border d-inline-block mr-1"><input type="text"
+										class="w-auto" placeholder="手機號碼"></span></p>
+							<p class="txt-dark-blue mb-1 px-1"><input type="checkbox" class="tick-box"
+									id="rm1_usual_customer" /><label for="rm1_usual_customer"
+									class="icon-box mb-0">設為常用乘客</label></p>
+							<p><a href="javascript:void(0)" class="dc-btn no-arrow">完成，再添加一位客人到這個房間 +</a></p>
+							<p><a href="javascript:void(0)" class="icon-download txt-dark-blue">保存輸入信息</a></p>
+						</div>
+					</div>
+
+					<div class="collapse-panel bg-white p-3 mb-3">
+						<h2 class="mb-0"><a class="txt-dark-blue btn-collapse collapsed" data-toggle="collapse"
+								href="#rm2" role="button" aria-expanded="false" aria-controls="rm2"><img
+									src="../images/booking/booking_flow/rm2.jpg" class="mr-4" />房間2 海景客房 - 雙人房</a></h2>
+						<div class="collapse multi-collapse" id="rm2">
+							<hr />
+							<h2 class="txt-dark-blue my-4"><a class="txt-dark-blue btn-collapse collapsed"
+									data-toggle="collapse" href="#rm2_passenger1" role="button" aria-expanded="false"
+									aria-controls="rm2_passenger1">乘客1 你</a></h2>
+							<!-- Passenger 1 -->
+							<div class="collapse" id="rm2_passenger1">
+								<p><input type="radio" class="tick-box" id="rm2_p1_customer_type1"
+										name="rm2_p1_customer_type" value="c1"><label for="rm2_p1_customer_type1"
+										class="icon-box"></label><span class="icon-border d-inline-block mr-3"><select
+											class="w-auto">
+											<option>常用乘客</option>
+											<option>常用乘客2</option>
+										</select></span><input type="radio" class="tick-box" id="rm2_p1_customer_type2"
+										name="rm2_p1_customer_type" value="c2"><label for="rm2_p1_customer_type2"
+										class="icon-box">新乘客</label></p>
+								<p class="txt-dark-blue mb-1 px-1">全名 (正如您的護照或個人身份證明文件所示)</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="名字" /></span><span
+										class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="姓氏" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">性別</p>
+								<p><input type="radio" class="tick-box" id="rm2_p1_gender_m" name="rm2_p1_gender"
+										value="m"><label for="rm2_p1_gender_m" class="icon-box">男</label> <input
+										type="radio" class="tick-box" id="rm2_p1_gender_f" name="rm2_p1_gender"
+										value="f"><label for="rm2_p1_gender_f" class="icon-box">女</label></p>
+								<p class="txt-dark-blue mb-1 px-1">出生日期</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="1998.09.20" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">電話號碼</p>
+								<p><span class="icon-border d-inline-block mr-1"><select>
+										<option>+86 中国</option>
+										<option>+852 中国香港</option>
+										<option>+853 中国澳门</option>
+										<option>+886 中国台湾</option>
+										<option>+60 马来西亚</option>
+										<option>+65 新加坡</option>
+										<option>+63 菲律宾</option>
+										<option>+62 印度尼西亚</option>
+										<option>0032 比利时</option>
+										<option>+81 日本</option>
+										<option>+82 韩国</option>
+										<option>+84 越南</option>
+										<option>+91 印度</option>
+										<option>+44 英国</option>
+										<option>+33 法国</option>
+										<option>+31 荷兰</option>
+										<option>+49 德国</option>
+										<option>+43 奥地利</option>
+										<option>+39 意大利</option>
+										<option>+7 俄罗斯</option>
+										<option>+61 澳大利亚</option>
+										<option>+64 新西兰</option>
+										<option>+1 加拿大</option>
+										<option>+1 美国</option>
+										<option>+55 巴西</option>
+										<option>+56 智利</option>
+										</select></span><span class="icon-border d-inline-block mr-1"><input type="text"
+											class="w-auto" placeholder="手機號碼" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">電郵地址</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" size="50" /></span>
+								</p>
+								<p><span class="icon-border d-inline-block mr-1"><select>
+										<option>中国内地</option>
+										<option>中国香港 / 中国澳门</option>
+										<option>马来西亚</option>
+										<option>新加坡</option>
+										<option>中国台湾</option>
+										<option>印度</option>
+										<option>印度尼西亚</option>
+										<option>菲律宾</option>
+										<option>阿根廷</option>
+										<option>澳大利亚</option>
+										<option>奥地利</option>
+										<option>巴林</option>
+										<option>孟加拉共和国</option>
+										<option>白俄罗斯</option>
+										<option>比利时</option>
+										<option>巴西</option>
+										<option>汶莱</option>
+										<option>保加利亚</option>
+										<option>柬埔寨</option>
+										<option>加拿大</option>
+										<option>智利</option>
+										<option>克罗地亚</option>
+										<option>塞浦路斯</option>
+										<option>捷克共和国</option>
+										<option>丹麦</option>
+										<option>埃及爱沙尼亚</option>
+										<option>埃塞俄比亚</option>
+										<option>芬兰</option>
+										<option>法国</option>
+										<option>德国</option>
+										<option>希腊</option>
+										<option>关岛</option>
+										<option>匈牙利</option>
+										<option>冰岛</option>
+										<option>伊朗</option>
+										<option>爱尔兰</option>
+										<option>以色列</option>
+										<option>意大利</option>
+										<option>日本</option>
+										<option>约旦</option>
+										<option>肯尼亚</option>
+										<option>韩国</option>
+										<option>科威特</option>
+										<option>拉脫維亞</option>
+										<option>立陶宛</option>
+										<option>卢森堡</option>
+										<option>马尔地夫</option>
+										<option>马耳他</option>
+										<option>毛里求斯</option>
+										<option>墨西哥</option>
+										<option>摩纳哥</option>
+										<option>缅甸</option>
+										<option>尼泊尔</option>
+										<option>荷兰</option>
+										<option>新西兰</option>
+										<option>挪威</option>
+										<option>巴基斯坦</option>
+										<option>波兰</option>
+										<option>葡萄牙</option>
+										<option>罗马尼亚</option>
+										<option>俄罗斯联邦</option>
+										<option>沙特阿拉伯</option>
+										<option>斯洛伐克</option>
+										<option>斯洛文尼亚</option>
+										<option>南非</option>
+										<option>西班牙</option>
+										<option>斯里兰卡</option>
+										<option>苏丹</option>
+										<option>瑞典</option>
+										<option>瑞士</option>
+										<option>坦桑尼亚</option>
+										<option>泰国土一</option>
+										<option>土耳其</option>
+										<option>阿拉伯联合酋长国</option>
+										<option>乌克兰</option>
+										<option>英国</option>
+										<option>美国</option>
+										<option>委内瑞拉</option>
+										<option>越南</option>										
+										</select></span></p>
+								<p class="txt-dark-blue mb-1 px-1">旅遊證件類型
+									<input type="radio" class="tick-box" id="rm2_p1_passport_type1"
+										name="rm2_p1_passport_type" value="p1">
+									<label for="rm2_p1_passport_type1" class="icon-box">護照</label><input type="radio"
+										class="tick-box" id="rm2_p1_passport_type2" name="rm2_p1_passport_type"
+										value="c2"><label for="rm2_p1_passport_type2" class="icon-box">身份證</label><input
+										type="radio" class="tick-box" id="rm2_p1_passport_type3"
+										name="rm2_p1_passport_type" value="c3"><label for="rm2_p1_passport_type3"
+										class="icon-box">其他</label></p>
+								<div class="row mx-0">
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">證件號碼</p>
+										<p><span class="icon-border d-inline-block mr-1"><input type="text"
+													class="w-auto" /></span></p>
+									</div>
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">過期日</p>
+										<p><span class="icon-border d-inline-block mr-1"><input type="text"
+													class="w-auto" /></span></p>
+									</div>
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">發行國家</p>
+										<p><span class="icon-border d-inline-block mr-1"><select class="w-auto">
+												<option>中国内地</option>
+												<option>中国香港 / 中国澳门</option>
+												<option>马来西亚</option>
+												<option>新加坡</option>
+												<option>中国台湾</option>
+												<option>印度</option>
+												<option>印度尼西亚</option>
+												<option>菲律宾</option>
+												<option>阿根廷</option>
+												<option>澳大利亚</option>
+												<option>奥地利</option>
+												<option>巴林</option>
+												<option>孟加拉共和国</option>
+												<option>白俄罗斯</option>
+												<option>比利时</option>
+												<option>巴西</option>
+												<option>汶莱</option>
+												<option>保加利亚</option>
+												<option>柬埔寨</option>
+												<option>加拿大</option>
+												<option>智利</option>
+												<option>克罗地亚</option>
+												<option>塞浦路斯</option>
+												<option>捷克共和国</option>
+												<option>丹麦</option>
+												<option>埃及爱沙尼亚</option>
+												<option>埃塞俄比亚</option>
+												<option>芬兰</option>
+												<option>法国</option>
+												<option>德国</option>
+												<option>希腊</option>
+												<option>关岛</option>
+												<option>匈牙利</option>
+												<option>冰岛</option>
+												<option>伊朗</option>
+												<option>爱尔兰</option>
+												<option>以色列</option>
+												<option>意大利</option>
+												<option>日本</option>
+												<option>约旦</option>
+												<option>肯尼亚</option>
+												<option>韩国</option>
+												<option>科威特</option>
+												<option>拉脫維亞</option>
+												<option>立陶宛</option>
+												<option>卢森堡</option>
+												<option>马尔地夫</option>
+												<option>马耳他</option>
+												<option>毛里求斯</option>
+												<option>墨西哥</option>
+												<option>摩纳哥</option>
+												<option>缅甸</option>
+												<option>尼泊尔</option>
+												<option>荷兰</option>
+												<option>新西兰</option>
+												<option>挪威</option>
+												<option>巴基斯坦</option>
+												<option>波兰</option>
+												<option>葡萄牙</option>
+												<option>罗马尼亚</option>
+												<option>俄罗斯联邦</option>
+												<option>沙特阿拉伯</option>
+												<option>斯洛伐克</option>
+												<option>斯洛文尼亚</option>
+												<option>南非</option>
+												<option>西班牙</option>
+												<option>斯里兰卡</option>
+												<option>苏丹</option>
+												<option>瑞典</option>
+												<option>瑞士</option>
+												<option>坦桑尼亚</option>
+												<option>泰国土一</option>
+												<option>土耳其</option>
+												<option>阿拉伯联合酋长国</option>
+												<option>乌克兰</option>
+												<option>英国</option>
+												<option>美国</option>
+												<option>委内瑞拉</option>
+												<option>越南</option>												
+												</select></span></p>
+									</div>
+								</div>
+							</div>
+
+							<hr />
+							<h2 class="txt-dark-blue my-4"><a class="txt-dark-blue btn-collapse collapsed"
+									data-toggle="collapse" href="#rm2_passenger2" role="button" aria-expanded="false"
+									aria-controls="rm2_passenger2">乘客2</a></h2>
+
+
+
+							<!-- Passenger 2 -->
+							<div class="collapse" id="rm2_passenger2">
+								<p><input type="radio" class="tick-box" id="rm2_p2_customer_type1"
+										name="rm2_p2_customer_type" value="c1"><label for="rm2_p2_customer_type1"
+										class="icon-box"></label><span class="icon-border d-inline-block mr-3"><select
+											class="w-auto">
+											<option>常用乘客</option>
+											<option>常用乘客2</option>
+										</select></span><input type="radio" class="tick-box" id="rm2_p2_customer_type2"
+										name="rm2_p2_customer_type" value="c2"><label for="rm2_p2_customer_type2"
+										class="icon-box">新乘客</label></p>
+								<p class="txt-dark-blue mb-1 px-1">全名 (正如您的護照或個人身份證明文件所示)</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="名字" /></span><span
+										class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="姓氏" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">性別</p>
+								<p><input type="radio" class="tick-box" id="rm2_p2_gender_m" name="rm2_p2_gender"
+										value="m"><label for="rm2_p2_gender_m" class="icon-box">男</label> <input
+										type="radio" class="tick-box" id="rm2_p2_gender_f" name="rm2_p2_gender"
+										value="f"><label for="rm2_p2_gender_f" class="icon-box">女</label></p>
+								<p class="txt-dark-blue mb-1 px-1">出生日期</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+											placeholder="1998.09.20" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">電話號碼</p>
+								<p><span class="icon-border d-inline-block mr-1"><select>
+										<option>+86 中国</option>
+										<option>+852 中国香港</option>
+										<option>+853 中国澳门</option>
+										<option>+886 中国台湾</option>
+										<option>+60 马来西亚</option>
+										<option>+65 新加坡</option>
+										<option>+63 菲律宾</option>
+										<option>+62 印度尼西亚</option>
+										<option>0032 比利时</option>
+										<option>+81 日本</option>
+										<option>+82 韩国</option>
+										<option>+84 越南</option>
+										<option>+91 印度</option>
+										<option>+44 英国</option>
+										<option>+33 法国</option>
+										<option>+31 荷兰</option>
+										<option>+49 德国</option>
+										<option>+43 奥地利</option>
+										<option>+39 意大利</option>
+										<option>+7 俄罗斯</option>
+										<option>+61 澳大利亚</option>
+										<option>+64 新西兰</option>
+										<option>+1 加拿大</option>
+										<option>+1 美国</option>
+										<option>+55 巴西</option>
+										<option>+56 智利</option>
+										</select></span><span class="icon-border d-inline-block mr-1"><input type="text"
+											class="w-auto" placeholder="手機號碼" /></span></p>
+								<p class="txt-dark-blue mb-1 px-1">電郵地址</p>
+								<p><span class="icon-border d-inline-block mr-1"><input type="text" size="50" /></span>
+								</p>
+								<p><span class="icon-border d-inline-block mr-1"><select>
+										<option>中国内地</option>
+										<option>中国香港 / 中国澳门</option>
+										<option>马来西亚</option>
+										<option>新加坡</option>
+										<option>中国台湾</option>
+										<option>印度</option>
+										<option>印度尼西亚</option>
+										<option>菲律宾</option>
+										<option>阿根廷</option>
+										<option>澳大利亚</option>
+										<option>奥地利</option>
+										<option>巴林</option>
+										<option>孟加拉共和国</option>
+										<option>白俄罗斯</option>
+										<option>比利时</option>
+										<option>巴西</option>
+										<option>汶莱</option>
+										<option>保加利亚</option>
+										<option>柬埔寨</option>
+										<option>加拿大</option>
+										<option>智利</option>
+										<option>克罗地亚</option>
+										<option>塞浦路斯</option>
+										<option>捷克共和国</option>
+										<option>丹麦</option>
+										<option>埃及爱沙尼亚</option>
+										<option>埃塞俄比亚</option>
+										<option>芬兰</option>
+										<option>法国</option>
+										<option>德国</option>
+										<option>希腊</option>
+										<option>关岛</option>
+										<option>匈牙利</option>
+										<option>冰岛</option>
+										<option>伊朗</option>
+										<option>爱尔兰</option>
+										<option>以色列</option>
+										<option>意大利</option>
+										<option>日本</option>
+										<option>约旦</option>
+										<option>肯尼亚</option>
+										<option>韩国</option>
+										<option>科威特</option>
+										<option>拉脫維亞</option>
+										<option>立陶宛</option>
+										<option>卢森堡</option>
+										<option>马尔地夫</option>
+										<option>马耳他</option>
+										<option>毛里求斯</option>
+										<option>墨西哥</option>
+										<option>摩纳哥</option>
+										<option>缅甸</option>
+										<option>尼泊尔</option>
+										<option>荷兰</option>
+										<option>新西兰</option>
+										<option>挪威</option>
+										<option>巴基斯坦</option>
+										<option>波兰</option>
+										<option>葡萄牙</option>
+										<option>罗马尼亚</option>
+										<option>俄罗斯联邦</option>
+										<option>沙特阿拉伯</option>
+										<option>斯洛伐克</option>
+										<option>斯洛文尼亚</option>
+										<option>南非</option>
+										<option>西班牙</option>
+										<option>斯里兰卡</option>
+										<option>苏丹</option>
+										<option>瑞典</option>
+										<option>瑞士</option>
+										<option>坦桑尼亚</option>
+										<option>泰国土一</option>
+										<option>土耳其</option>
+										<option>阿拉伯联合酋长国</option>
+										<option>乌克兰</option>
+										<option>英国</option>
+										<option>美国</option>
+										<option>委内瑞拉</option>
+										<option>越南</option>										
+										</select></span></p>
+								<p class="txt-dark-blue mb-1 px-1">旅遊證件類型
+									<input type="radio" class="tick-box" id="rm2_p2_passport_type1"
+										name="rm2_p2_passport_type" value="p1">
+									<label for="rm2_p2_passport_type1" class="icon-box">護照</label><input type="radio"
+										class="tick-box" id="rm2_p2_passport_type2" name="rm2_p2_passport_type"
+										value="c2"><label for="rm2_p2_passport_type2" class="icon-box">身份證</label><input
+										type="radio" class="tick-box" id="rm2_p2_passport_type3"
+										name="rm2_p2_passport_type" value="c3"><label for="rm2_p2_passport_type3"
+										class="icon-box">其他</label></p>
+								<div class="row mx-0">
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">證件號碼</p>
+										<p><span class="icon-border d-inline-block mr-1"><input type="text"
+													class="w-auto" /></span></p>
+									</div>
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">過期日</p>
+										<p><span class="icon-border d-inline-block mr-1"><input type="text"
+													class="w-auto" /></span></p>
+									</div>
+									<div class="col-12 col-md-auto px-0">
+										<p class="txt-dark-blue mb-1 px-1">發行國家</p>
+										<p><span class="icon-border d-inline-block mr-1"><select class="w-auto">
+												<option>中国内地</option>
+												<option>中国香港 / 中国澳门</option>
+												<option>马来西亚</option>
+												<option>新加坡</option>
+												<option>中国台湾</option>
+												<option>印度</option>
+												<option>印度尼西亚</option>
+												<option>菲律宾</option>
+												<option>阿根廷</option>
+												<option>澳大利亚</option>
+												<option>奥地利</option>
+												<option>巴林</option>
+												<option>孟加拉共和国</option>
+												<option>白俄罗斯</option>
+												<option>比利时</option>
+												<option>巴西</option>
+												<option>汶莱</option>
+												<option>保加利亚</option>
+												<option>柬埔寨</option>
+												<option>加拿大</option>
+												<option>智利</option>
+												<option>克罗地亚</option>
+												<option>塞浦路斯</option>
+												<option>捷克共和国</option>
+												<option>丹麦</option>
+												<option>埃及爱沙尼亚</option>
+												<option>埃塞俄比亚</option>
+												<option>芬兰</option>
+												<option>法国</option>
+												<option>德国</option>
+												<option>希腊</option>
+												<option>关岛</option>
+												<option>匈牙利</option>
+												<option>冰岛</option>
+												<option>伊朗</option>
+												<option>爱尔兰</option>
+												<option>以色列</option>
+												<option>意大利</option>
+												<option>日本</option>
+												<option>约旦</option>
+												<option>肯尼亚</option>
+												<option>韩国</option>
+												<option>科威特</option>
+												<option>拉脫維亞</option>
+												<option>立陶宛</option>
+												<option>卢森堡</option>
+												<option>马尔地夫</option>
+												<option>马耳他</option>
+												<option>毛里求斯</option>
+												<option>墨西哥</option>
+												<option>摩纳哥</option>
+												<option>缅甸</option>
+												<option>尼泊尔</option>
+												<option>荷兰</option>
+												<option>新西兰</option>
+												<option>挪威</option>
+												<option>巴基斯坦</option>
+												<option>波兰</option>
+												<option>葡萄牙</option>
+												<option>罗马尼亚</option>
+												<option>俄罗斯联邦</option>
+												<option>沙特阿拉伯</option>
+												<option>斯洛伐克</option>
+												<option>斯洛文尼亚</option>
+												<option>南非</option>
+												<option>西班牙</option>
+												<option>斯里兰卡</option>
+												<option>苏丹</option>
+												<option>瑞典</option>
+												<option>瑞士</option>
+												<option>坦桑尼亚</option>
+												<option>泰国土一</option>
+												<option>土耳其</option>
+												<option>阿拉伯联合酋长国</option>
+												<option>乌克兰</option>
+												<option>英国</option>
+												<option>美国</option>
+												<option>委内瑞拉</option>
+												<option>越南</option>												
+												</select></span></p>
+									</div>
+								</div>
+
+							</div>
+
+							<hr>
+							<h2 class="txt-dark-blue my-4">緊急聯絡人資料</h2>
+							<div class="green-nav p-3 text-white rounded mb-4"><img
+									src="../images/booking/booking_flow/icon-info.jpg" class="align-middle mr-3" />
+								您可以稍後輸入資料</div>
+							<div class="row mx-0">
+								<div class="col-12 col-md-auto px-0">
+									<p class="txt-dark-blue mb-1 px-1">緊急聯絡人資料</p>
+									<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+												placeholder="名字"></span></p>
+								</div>
+								<div class="col-12 col-md-auto px-0">
+									<p class="txt-dark-blue mb-1 px-1"><input type="checkbox" class="tick-box"
+											id="rm2_same_content_p" /><label for="rm2_same_content_p"
+											class="icon-box mb-0">與主要乘客使用相同的緊急聯絡人</label></p>
+									<p><span class="icon-border d-inline-block mr-1"><input type="text" class="w-auto"
+												placeholder="姓氏"></span></p>
+								</div>
+							</div>
+							<p class="txt-dark-blue mb-1 px-1">電話號碼</p>
+							<p><span class="icon-border d-inline-block mr-1"><select>
+									<option>+86 中国</option>
+									<option>+852 中国香港</option>
+									<option>+853 中国澳门</option>
+									<option>+886 中国台湾</option>
+									<option>+60 马来西亚</option>
+									<option>+65 新加坡</option>
+									<option>+63 菲律宾</option>
+									<option>+62 印度尼西亚</option>
+									<option>0032 比利时</option>
+									<option>+81 日本</option>
+									<option>+82 韩国</option>
+									<option>+84 越南</option>
+									<option>+91 印度</option>
+									<option>+44 英国</option>
+									<option>+33 法国</option>
+									<option>+31 荷兰</option>
+									<option>+49 德国</option>
+									<option>+43 奥地利</option>
+									<option>+39 意大利</option>
+									<option>+7 俄罗斯</option>
+									<option>+61 澳大利亚</option>
+									<option>+64 新西兰</option>
+									<option>+1 加拿大</option>
+									<option>+1 美国</option>
+									<option>+55 巴西</option>
+									<option>+56 智利</option>
+									</select></span><span class="icon-border d-inline-block mr-1"><input type="text"
+										class="w-auto" placeholder="手機號碼"></span></p>
+							<p class="txt-dark-blue mb-1 px-1"><input type="checkbox" class="tick-box"
+									id="rm2_usual_customer" /><label for="rm2_usual_customer"
+									class="icon-box mb-0">設為常用乘客</label></p>
+							<p><a href="javascript:void(0)" class="dc-btn no-arrow">完成，再添加一位客人到這個房間 +</a></p>
+							<p><a href="javascript:void(0)" class="icon-download txt-dark-blue">保存輸入信息</a></p>
+						</div>
+					</div>
+
+					<div class="collapse-panel bg-white p-3 mb-3">
+						<h2 class="mb-0"><a class="txt-dark-blue btn-collapse collapsed" data-toggle="collapse"
+								href="#offer" role="button" aria-expanded="false" aria-controls="offer">特惠套餐及增值服務 <span
+									class="remarks align-middle ml-3">可選，您可以稍後添加</span></a></h2>
+						<div class="multi-collapse collapse" id="offer">
+							<hr>
+							<div class="position-relative dc-tab-nav-wrapper">
+								<ul class="nav nav-pills dc-tab-nav flex-nowrap" role="tablist">
+									<li class="nav-item">
+										<a class="active show" data-toggle="pill" href="#pills-1" role="tab"
+											aria-controls="pills-1" aria-selected="false">特惠套餐
+										</a>
+									</li>
+									<li class="nav-item">
+										<a data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2"
+											aria-selected="false">當地遊
+										</a>
+									</li>
+									<li class="nav-item">
+										<a data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3"
+											aria-selected="true">岸上郵輪服務</a>
+									</li>
+									<li class="nav-item">
+										<a data-toggle="pill" href="#pills-4" role="tab" aria-controls="pills-4"
+											aria-selected="true">游记官網客服禮品包</a>
+									</li>
+								</ul>
+						   </div>
+							<div class="tab-content tab-adjust">
+								<div class="tab-pane p-3 fade show active" id="pills-1" role="tabpanel"
+									aria-labelledby="pills-1">
+									<div class="bg-light-blue my-3 px-3 py-2">*每人只能選擇一個特惠套餐</div>
+									<div class="bg-light-blue p-3 row mx-0 mt-3">
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">$3,888</span></p>
+										</div>
+										<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+										</div>
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">- $100</span></p>
+										</div>
+										<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+										</div>
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">- $100</span></p>
+										</div>
+										<div class="col p-0 text-center">
+											<p class="txt-green mt-2"><input type="checkbox" class="tick-box"
+													id="offer1" name="offer1">
+												<label for="offer1" class="icon-box theme-light">x3</label><br /><span
+													class="txt-large">$4,500 /人</span><br /><span
+													class="remarks">為您節省$310</span></p>
+										</div>
+									</div>
+									<div class="green-nav p-2 pp-choose"><input type="checkbox" class="tick-box"
+											id="pp1" name="pp1">
+										<label for="pp1" class="icon-box theme-light">陳大文</label> <input type="checkbox"
+											class="tick-box" id="pp2" name="pp2">
+										<label for="pp2" class="icon-box theme-light">陳小文</label> <input type="checkbox"
+											class="tick-box" id="pp3" name="pp3">
+										<label for="pp3" class="icon-box theme-light">陳小小</label><input type="checkbox"
+											class="tick-box" id="pp4" name="pp4">
+										<label for="pp4" class="icon-box theme-light">文小小</label></div>
+
+									<div class="bg-light-blue p-3 row mx-0 mt-3">
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">$3,888</span></p>
+										</div>
+										<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+										</div>
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">- $100</span></p>
+										</div>
+										<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+										</div>
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">- $100</span></p>
+										</div>
+										<div class="col p-0 text-center">
+											<p class="txt-green mt-2"><input type="checkbox" class="tick-box"
+													id="offer1" name="offer1">
+												<label for="offer1" class="icon-box theme-light"></label><br /><span
+													class="txt-large">$4,500 /人</span><br /><span
+													class="remarks">為您節省$310</span></p>
+										</div>
+									</div>
+
+									<div class="bg-light-blue p-3 row mx-0 mt-3">
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">$3,888</span></p>
+										</div>
+										<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+										</div>
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">- $100</span></p>
+										</div>
+										<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+										</div>
+										<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg"
+												class="w-100" />
+											<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br /><span
+													class="txt-green">- $100</span></p>
+										</div>
+										<div class="col p-0 text-center">
+											<p class="txt-green mt-2"><input type="checkbox" class="tick-box"
+													id="offer1" name="offer1">
+												<label for="offer1" class="icon-box theme-light"></label><br /><span
+													class="txt-large">$4,500 /人</span><br /><span
+													class="remarks">為您節省$310</span></p>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane p-3 fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2">
+									<div class="bg-light-blue p-3 row mx-0 mt-3">
+										<div class="col-auto"><img
+												src="../images/booking/booking_flow/travel1.jpg" /><br /><a
+												href="javascript:void(0)" class="btn-arrow collapsed" data-toggle="modal" data-target="#travel-popup1">查看詳情</a></div>
+										<div class="col">
+											<h3 class="txt-dark-blue">鯨魚觀賞與野生生物探索</h3>
+											<p><span class="txt-dark-blue">日期</span> 12/16/2019</p>
+											<p>在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹</p>
+											<p><span class="icon-offer ml-md-2">特惠</span><span
+													class="icon-vip ml-md-2">专享</span><span
+													class="icon-hot-offer ml-2">热门</span> <span
+													class="icon-child ml-md-2">儿童</span></p>
+											<p><span class="icon-tag">亲子游</span><span class="icon-tag">全家游</span></p>
+										</div>
+										<div class="col-auto">
+												<p class="txt-green mt-2"><input type="checkbox" class="tick-box"
+													id="travel1" name="travel1">
+												<label for="travel1" class="icon-box theme-light">x3</label></p>
+											<table cellpadding="5">
+												<tr>
+													<td class="txt-dark-blue">成人</td>
+													<td><del>$180</del></td>
+													<td class="txt-dark-blue">$90</td>
+												</tr>
+												<tr>
+													<td class="txt-dark-blue">長者</td>
+													<td><del>$100</del></td>
+													<td class="txt-dark-blue">$90</td>
+												</tr>
+												<tr>
+													<td class="txt-dark-blue">兒童</td>
+													<td><del>$100</del></td>
+													<td class="txt-dark-blue">$90</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+									<div class="green-nav p-2 pp-choose"><input type="checkbox" class="tick-box"
+										id="tpp1" name="tpp1">
+									<label for="tpp1" class="icon-box theme-light">陳大文</label> <input type="checkbox"
+										class="tick-box" id="tpp2" name="tpp2">
+									<label for="tpp2" class="icon-box theme-light">陳小文</label> <input type="checkbox"
+										class="tick-box" id="tpp3" name="tpp3">
+									<label for="tpp3" class="icon-box theme-light">陳小小</label><input type="checkbox"
+										class="tick-box" id="tpp4" name="tpp4">
+									<label for="tpp4" class="icon-box theme-light">文小小</label></div>
+
+									<div class="bg-light-blue p-3 row mx-0 mt-3">
+											<div class="col-auto"><img
+													src="../images/booking/booking_flow/travel1.jpg" /><br /><a
+													href="javascript:void(0)" class="btn-arrow collapsed" data-toggle="modal" data-target="#travel-popup1">查看詳情</a></div>
+											<div class="col">
+												<h3 class="txt-dark-blue">鯨魚觀賞與野生生物探索</h3>
+												<p><span class="txt-dark-blue">日期</span> 12/16/2019</p>
+												<p>在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹</p>
+												<p><span class="icon-offer ml-md-2">特惠</span><span
+														class="icon-vip ml-md-2">专享</span><span
+														class="icon-hot-offer ml-2">热门</span> <span
+														class="icon-child ml-md-2">儿童</span></p>
+												<p><span class="icon-tag">亲子游</span><span class="icon-tag">全家游</span></p>
+											</div>
+											<div class="col-auto">
+													<p class="txt-green mt-2"><input type="checkbox" class="tick-box"
+														id="travel2" name="travel2">
+													<label for="travel2" class="icon-box theme-light">x3</label></p>
+												<table cellpadding="5">
+													<tr>
+														<td class="txt-dark-blue">成人</td>
+														<td><del>$180</del></td>
+														<td class="txt-dark-blue">$90</td>
+													</tr>
+													<tr>
+														<td class="txt-dark-blue">長者</td>
+														<td><del>$100</del></td>
+														<td class="txt-dark-blue">$90</td>
+													</tr>
+													<tr>
+														<td class="txt-dark-blue">兒童</td>
+														<td><del>$100</del></td>
+														<td class="txt-dark-blue">$90</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="green-nav p-2 pp-choose"><input type="checkbox" class="tick-box"
+											id="t2pp1" name="t2pp1">
+										<label for="t2pp1" class="icon-box theme-light">陳大文</label> <input type="checkbox"
+											class="tick-box" id="t2pp2" name="t2pp2">
+										<label for="t2pp2" class="icon-box theme-light">陳小文</label> <input type="checkbox"
+											class="tick-box" id="t2pp3" name="t2pp3">
+										<label for="t2pp3" class="icon-box theme-light">陳小小</label><input type="checkbox"
+											class="tick-box" id="t2pp4" name="t2pp4">
+										<label for="t2pp4" class="icon-box theme-light">文小小</label></div>
+
+										<div class="bg-light-blue p-3 row mx-0 mt-3">
+												<div class="col-auto"><img
+														src="../images/booking/booking_flow/travel1.jpg" /><br /><a
+														href="javascript:void(0)" class="btn-arrow collapsed" data-toggle="modal" data-target="#travel-popup1">查看詳情</a></div>
+												<div class="col">
+													<h3 class="txt-dark-blue">鯨魚觀賞與野生生物探索</h3>
+													<p><span class="txt-dark-blue">日期</span> 12/16/2019</p>
+													<p>在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹</p>
+													<p><span class="icon-offer ml-md-2">特惠</span><span
+															class="icon-vip ml-md-2">专享</span><span
+															class="icon-hot-offer ml-2">热门</span> <span
+															class="icon-child ml-md-2">儿童</span></p>
+													<p><span class="icon-tag">亲子游</span><span class="icon-tag">全家游</span></p>
+												</div>
+												<div class="col-auto">
+														<p class="txt-green mt-2"><input type="checkbox" class="tick-box"
+															id="travel3" name="travel3">
+														<label for="travel3" class="icon-box theme-light">x3</label></p>
+													<table cellpadding="5">
+														<tr>
+															<td class="txt-dark-blue">成人</td>
+															<td><del>$180</del></td>
+															<td class="txt-dark-blue">$90</td>
+														</tr>
+														<tr>
+															<td class="txt-dark-blue">長者</td>
+															<td><del>$100</del></td>
+															<td class="txt-dark-blue">$90</td>
+														</tr>
+														<tr>
+															<td class="txt-dark-blue">兒童</td>
+															<td><del>$100</del></td>
+															<td class="txt-dark-blue">$90</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+											<div class="green-nav p-2 pp-choose"><input type="checkbox" class="tick-box"
+												id="t3pp1" name="t3pp1">
+											<label for="t3pp1" class="icon-box theme-light">陳大文</label> <input type="checkbox"
+												class="tick-box" id="t3pp2" name="t3pp2">
+											<label for="t3pp2" class="icon-box theme-light">陳小文</label> <input type="checkbox"
+												class="tick-box" id="t3pp3" name="t3pp3">
+											<label for="t3pp3" class="icon-box theme-light">陳小小</label><input type="checkbox"
+												class="tick-box" id="t3pp4" name="t3pp4">
+											<label for="t3pp4" class="icon-box theme-light">文小小</label></div>
+								</div>
+								<div class="tab-pane p-3 fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3">
+										<div class="bg-light-blue my-3 px-3 py-2">*每人只能選擇一個特惠套餐</div>
+										<div class="bg-light-blue p-3 row mx-0 mt-3">
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">$3,888</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col p-0 text-center">
+												<p class="txt-green mt-2"><input type="checkbox" class="tick-box" id="offer1" name="offer1">
+													<label for="offer1" class="icon-box theme-light">x3</label><br><span class="txt-large">$4,500 /人</span><br><span class="remarks">為您節省$310</span></p>
+											</div>
+										</div>
+										<div class="green-nav p-2 pp-choose"><input type="checkbox" class="tick-box" id="pp1" name="pp1">
+											<label for="pp1" class="icon-box theme-light">陳大文</label> <input type="checkbox" class="tick-box" id="pp2" name="pp2">
+											<label for="pp2" class="icon-box theme-light">陳小文</label> <input type="checkbox" class="tick-box" id="pp3" name="pp3">
+											<label for="pp3" class="icon-box theme-light">陳小小</label><input type="checkbox" class="tick-box" id="pp4" name="pp4">
+											<label for="pp4" class="icon-box theme-light">文小小</label></div>
+	
+										<div class="bg-light-blue p-3 row mx-0 mt-3">
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">$3,888</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col p-0 text-center">
+												<p class="txt-green mt-2"><input type="checkbox" class="tick-box" id="offer1" name="offer1">
+													<label for="offer1" class="icon-box theme-light"></label><br><span class="txt-large">$4,500 /人</span><br><span class="remarks">為您節省$310</span></p>
+											</div>
+										</div>
+	
+										<div class="bg-light-blue p-3 row mx-0 mt-3">
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">$3,888</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col p-0 text-center">
+												<p class="txt-green mt-2"><input type="checkbox" class="tick-box" id="offer1" name="offer1">
+													<label for="offer1" class="icon-box theme-light"></label><br><span class="txt-large">$4,500 /人</span><br><span class="remarks">為您節省$310</span></p>
+											</div>
+										</div>
+								</div>
+								<div class="tab-pane p-3 fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4">
+										<div class="bg-light-blue my-3 px-3 py-2">*每人只能選擇一個特惠套餐</div>
+										<div class="bg-light-blue p-3 row mx-0 mt-3">
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">$3,888</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col p-0 text-center">
+												<p class="txt-green mt-2"><input type="checkbox" class="tick-box" id="offer1" name="offer1">
+													<label for="offer1" class="icon-box theme-light">x3</label><br><span class="txt-large">$4,500 /人</span><br><span class="remarks">為您節省$310</span></p>
+											</div>
+										</div>
+										<div class="green-nav p-2 pp-choose"><input type="checkbox" class="tick-box" id="pp1" name="pp1">
+											<label for="pp1" class="icon-box theme-light">陳大文</label> <input type="checkbox" class="tick-box" id="pp2" name="pp2">
+											<label for="pp2" class="icon-box theme-light">陳小文</label> <input type="checkbox" class="tick-box" id="pp3" name="pp3">
+											<label for="pp3" class="icon-box theme-light">陳小小</label><input type="checkbox" class="tick-box" id="pp4" name="pp4">
+											<label for="pp4" class="icon-box theme-light">文小小</label></div>
+	
+										<div class="bg-light-blue p-3 row mx-0 mt-3">
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">$3,888</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col p-0 text-center">
+												<p class="txt-green mt-2"><input type="checkbox" class="tick-box" id="offer1" name="offer1">
+													<label for="offer1" class="icon-box theme-light"></label><br><span class="txt-large">$4,500 /人</span><br><span class="remarks">為您節省$310</span></p>
+											</div>
+										</div>
+	
+										<div class="bg-light-blue p-3 row mx-0 mt-3">
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer1.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">$3,888</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer2.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col-auto p-0"><span class="icon-plus mx-2 mt-5 d-block"></span>
+											</div>
+											<div class="col p-0"><img src="../images/booking/booking_flow/offer3.jpg" class="w-100">
+												<p class="text-center mt-2 txt-dark-blue mb-0">5晚東南亞之旅<br><span class="txt-green">- $100</span></p>
+											</div>
+											<div class="col p-0 text-center">
+												<p class="txt-green mt-2"><input type="checkbox" class="tick-box" id="offer1" name="offer1">
+													<label for="offer1" class="icon-box theme-light"></label><br><span class="txt-large">$4,500 /人</span><br><span class="remarks">為您節省$310</span></p>
+											</div>
+										</div>
+								</div>
+								<div class="tab-pane p-3 fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-auto">
+					<div class="booking-green-panel p-3 h-100">
+						<h3 class="green-header txt-green">訂單明細</h3>
+						<hr class="green-bar mb-3 mt-1" />
+						<p><strong class="txt-dark-blue">房間1(海景客房 - 兩人房)</strong></p>
+						<p class="price-list-item"><span>旅客1</span> <span class="txt-dark-blue">$ 3,300</span></p>
+						<p class="price-list-item"><span>旅客2</span> <span class="txt-dark-blue">-</span></p>
+						<p class="price-list-item"><span>港務費</span> <span class="txt-dark-blue">$ 1,100</span></p>
+						<hr>
+						<p><strong class="txt-dark-blue">房間2(海景客房 - 三人房)</strong></p>
+						<p class="price-list-item"><span>旅客1</span> <span class="txt-dark-blue">$ 3,300</span></p>
+						<p class="price-list-item"><span>旅客2</span> <span class="txt-dark-blue">-</span></p>
+						<p class="price-list-item"><span>港務費</span> <span class="txt-dark-blue">$ 1,100</span></p>
+						<hr>
+						<p><strong class="txt-dark-blue">您節省了</strong></p>
+						<p class="price-list-item"><span>預訂優惠</span> <span class="txt-dark-blue">- $ 2,700</span></p>
+						<hr>
+						<p><strong class="txt-dark-blue">可使用的優惠券</strong></p>
+						<p class="price-list-item"><input type="checkbox" class="tick-box" id="offer_500"
+								name="offer_500"><label for="offer_500"
+								class="icon-box theme-light d-flex flex-row-reverse w-100 mx-0 justify-content-between align-items-center"><span>500元電子優惠券</span></label>
+						</p>
+						<p><strong class="txt-dark-blue icon-plus">選擇優惠券</strong></p>
+						<p class="row mx-0"><input type="text" placeholder="優惠代碼(選填)" class="col border-0" /><a
+								href="javascript:void(0)" class="dc-btn col-auto no-arrow">套用</a></p>
+						<hr>
+						<h3 class="price-list-item"><span class="txt-dark-blue">總計</span><span
+								class="txt-dark-blue">$6,600</span></h3>
+						<p class="mt-5"><a href="javascript:void(0)" class="dc-btn bg-grey w-100">下一步，核對資料</a></p>
+						<p class="remarks">取消政策:如果您日後取消預訂，則可能支付取消費用。</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Room Popup -->
+	<div class="modal fade rm-lightbox" id="travel-popup1" tabindex="-1" role="dialog" aria-labelledby="travel-popup1"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered container" role="document">
+			<div class="modal-content rounded-0">
+				<div class="modal-header border-0 flex-column pb-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body pt-0">
+					<div class="row">
+						<div class="col-12 col-md-5">
+							<img src="../images/booking/booking_flow/travel_popup.jpg" class="w-100" />
+						</div>
+						<div class="col-12 col-md-7">
+								<h2 class="section-header mb-1 text-left">鯨魚觀賞與野生生物探索</h2>
+								<p class="txt-dark-blue"><span class="icon-offer ml-md-2">特惠</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-tag">亲子游</span> <span class="icon-tag">全家游</span></p>
+								<p class="txt-dark-blue">在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹在觀光船上觀賞鯨魚，我們船上的生物學家為您介紹</p>
+								<hr>
+								<div class="d-flex justify-content-between align-items-end">
+                                  <table cellpadding="5">
+									  <tr>
+										<th>產品</th>
+										<th>價格</th>
+										<th>數量</th>
+									  </tr>
+									  <tr>
+										  <td>成人 <del>$180</del></td>
+										  <td>$90</td>
+										  <td><select class="border-0 rounded"><option>0</option><option>1</option><option>2</option></select></td>
+									  </tr>
+									  <tr>
+											<td>長者 <del>$100</del></td>
+											<td>$45</td>
+											<td><select class="border-0 rounded"><option>0</option><option>1</option><option>2</option></select></td>
+										</tr>
+										<tr>
+											<td>兒童 <del>$100</del></td>
+											<td>$45</td>
+											<td><select class="border-0 rounded"><option>0</option><option>1</option><option>2</option></select></td>
+										</tr>
+								  </table>
+								  <a href="javascript:void(0)" class="dc-btn no-arrow">添加</a>
+								</div>
+						</div>
+					</div>
+					<ul class="nav nav-pills dc-tab-nav flex-nowrap mt-4" role="tablist">
+						<li class="nav-item">
+							<a  class="active show" data-toggle="pill" href="#product-details" role="tab" aria-controls="product-details" aria-selected="false">產品詳情
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#tnc" role="tab" aria-controls="tnc" aria-selected="true">條款及細則
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content tab-adjust">
+							<div class="tab-pane p-3 fade active show" id="product-details" role="tabpanel" aria-labelledby="product-details">
+								<p class="remarks">取消政策: 如果您日後取消預訂，則可能支付取消費用。<br />取消政策: 如果您日後取消預訂，則可能支付取消費用。取消政策: 如果您日後取消預訂，則可能支付取消費用。</p>
+							</div>
+							<div class="tab-pane p-3 fade" id="tnc" role="tabpanel" aria-labelledby="tnc">
+								<p class="remarks">條款及細則<br />條款及細則<br />條款及細則</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+
+</html>

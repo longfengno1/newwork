@@ -1,3 +1,6 @@
+*,*::before,*::after {
+  box-sizing:content-box;
+}
 .topbanner {
   position: relative;
 }
@@ -987,7 +990,7 @@
 .custom_container {
   overflow: hidden;
   padding: 0 52px 0;
-  margin-top: 74px;
+  margin-top: 40px;
 }
 
 .custom_container .content,
@@ -1089,6 +1092,8 @@
 
 .shiprecord .content .dot_container {
   text-align: center;
+  position:relative;
+  z-index:1;
 }
 
 .shiprecord .content .dot_container .dot {
@@ -1166,6 +1171,62 @@
 	margin:-355px 0 -170px 0;
 }
 
+/*=====特色活动===*/
+.spactivity-bg{
+	background:url(../../images/bg-spactivity.jpg) center center no-repeat;
+	height:929px;
+}
+.spactivity-wrapper .dot_container {
+  text-align: center;
+  position:relative;
+  z-index:1;
+  margin-top:200px;
+}
+
+.spactivity-wrapper .dot_container .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #4A4A4A;
+  border:1px solid #fff;
+  opacity: 0.5;
+  border-radius: 5px;
+  vertical-align: text-bottom;
+}
+
+.spactivity-wrapper .dot_container .active {
+  width: 24px;
+  opacity: 1;
+  background-color: #fff;
+}
+.spactivity-context-inner{
+	padding:0 210px;
+}
+.spactivity-wrapper .title{
+	padding-top:105px;
+}
+.spactivity-context .desc-title,
+.spactivity-context .dec{
+	color:#fff;
+}
+.spactivity-context .desc-title{
+	margin-top:100px;
+	font-size:20px;
+}
+.spactivity-context .dec{
+	margin:30px 0;
+	font-size:12px;
+	line-height:2;
+	width:380px;
+}
+.ribbon-destinations2{
+  background:url(../../images/ribbon-destinations3.png) center center no-repeat;
+  height:365px;
+  position:relative;
+  z-index:5;
+  margin:-315px 0 -135px 0;
+}
+
 .footerinfo{
 	min-height:200px;
 }
@@ -1197,8 +1258,7 @@
 	border-width:2px 2px 0 0;
 }
 .footerinfo{
-	background:url(../../images/ribbon-destinations.png) center top no-repeat;
-	padding-top:420px;
+	padding-top:220px;
 	height:400px;
 	position:relative;
 }
@@ -1252,29 +1312,37 @@
 
 .exp_text_wrap{
   width:355px;
-  height:62px;
+  height:53px;
   background: #F8FCFC;
   text-indent: 10px;
+  padding-top:12px;
 }
-
+.shipexperience .exp_item a:hover{
+	text-decoration:none;
+}
 .exp_text_tit{
   font-size: 20px;
   color: #343940;
   letter-spacing: 1.5px;
-  line-height: 26px;
+  line-height: 22px;
 }
 
 .exp_text_subtit{
   font-size: 13px;
   color: #666666;
   letter-spacing: 0.98px;
-  line-height: 28px;
+  line-height: 20px;
 }
 
 /* ================ 游轮介绍 =================== */
 .shipinto {
   background: url(../../images/bg-shipinto.jpg) center center no-repeat;
   height:980px;
+  
+}
+.shipinto .wrapper{
+	position:relative;
+	height:600px;
 }
 
 .shipinto .title{
@@ -1285,18 +1353,85 @@
   text-align: center;
   line-height: 54px;
 }
+.shipinto .left_container,
+.shipinto .right_container{
+	position:absolute;
+	top:50%;
+	margin-top:-20px;
+	
+}
+.shipinto .left_container {
+  width: 52px;
+  left: -52px;
+}
 
+.shipinto .right_container {
+  width: 52px;
+  right: -52px;
+}
+
+.shipinto .left_container .left_btn,
+.shipinto .right_container .right_btn {
+  position: relative;
+  border: 1px solid #1c576d;
+  width: 40px;
+  height: 40px;
+  display:block;
+  vertical-align: middle;
+  border-radius: 50%;
+  text-align: center;
+  background:#fff;
+}
+
+.shipinto .right_container .right_btn {
+  left: 10px;
+}
+
+.shipinto .left_container .left_btn .i_caret {
+  border: 1px solid #1c576d;
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-width: 0 0 1px 1px;
+  transform: rotate(45deg);
+  position: relative;
+  top: 13px;
+  left: 15px;
+}
+
+.shipinto .right_container .right_btn .i_caret {
+  border: 1px solid #1c576d;
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+  position: relative;
+  top: 13px;
+  left: 12px;
+}
 /* ================ 游轮百科 =================== */
 .ylbk_container .content,
 .ylbk_container .left_container,
 .ylbk_container .right_container {
-  height: 260px;
+  height: 200px;
 }
-
+.ylbk_container .left_container .left_btn,
+.ylbk_container .right_container .right_btn{
+	border:0;
+	top:50px;
+	height:40px;
+	width:40px;
+}
+.ylbk_container .left_container .left_btn{
+	background:url(../../images/arrow_left.png) center center no-repeat;
+}
+.ylbk_container .right_container .right_btn{
+	background:url(../../images/arrow_right.png) center center no-repeat;
+}
 .ylbk-bg{
-  width:169px;
-  height: 169px;
-  line-height: 298px;
+  width:172px;
+  height: 171px;
   position: relative;
   text-align: center;
   font-size: 18px;
@@ -1305,22 +1440,40 @@
   margin-right: 68px;
   margin-bottom: 20px;
 }
+.ylbk-bg .icon{
+	height:130px;	
+	background: #EFFAF9;
+	border:1px solid #C8C6C6;
+	border-bottom:0;
+}
+.ylbk-bg p{
+	line-height: 40px;
+	height:41px;
+	background: #00969E;
+	font-size:18px;
+	color:#fff;
+}
 
 .ylbk-bg1{
-  background:url(../../images/ylbk-1.png) center center no-repeat;
+  
   margin-left: 118px;
 }
-
-.ylbk-bg2 {
-  background: url(../../images/ylbk-2.png) center center no-repeat;
+.ylbk-bg1 .icon{
+	background:url(../../images/iconq1.png) #EFFAF9 center center no-repeat
+}
+.ylbk-bg2 .icon{
+	background:url(../../images/iconq2.png) #EFFAF9 center center no-repeat
+   
 }
 
-.ylbk-bg3 {
-  background: url(../../images/ylbk-3.png) center center no-repeat;
+.ylbk-bg3 .icon{
+	background:url(../../images/iconq3.png) #EFFAF9 center center no-repeat
+  
 }
 
-.ylbk-bg4 {
-  background: url(../../images/ylbk-4.png) center center no-repeat;
+.ylbk-bg4 .icon{
+	background:url(../../images/iconq4.png) #EFFAF9 center center no-repeat
+ 
 }
 
 .ylbk-text-wrap{
@@ -1337,6 +1490,238 @@
   height:65px;
 }
 .section-baike{
-	background:url(../../images/ribbon-destinations4.png) center 100px no-repeat;
+	background:url(../../images/ribbon-destinations4.png) center 0px no-repeat;
 	padding-bottom:150px;
+}
+
+/* hz slide */
+.position-relative{
+	overflow:visible;
+	padding:0;
+	height:780px;
+}
+.donslide{
+	overflow:hidden;
+	margin-top:35px;
+}
+
+
+.donslide .donitem {
+	z-index: 5;
+}
+.donslide-content{
+	transform: translateY(100%)  translateY(54px);
+}
+.donslide-content .icon-hot{
+    bottom: calc(100% + 4px);
+    font-size: 0.8rem;
+}
+.donslide-content .icon-hot span::first-letter{
+    font-size: 1.3rem;
+}
+.don-extend-panel .txt-price{
+	border-left: solid 1px #13989D;
+}
+.don-extend-panel span.item-info{
+    display: block;
+}
+.btn-donpopover{
+	z-index: 3;
+}
+#bg-our-destinations{
+	top:auto;
+	bottom:-23%;
+	z-index: 6;
+}
+#bg-onboard-ribbon{
+	position: absolute;
+	background:url(../../images/ribbon.png) no-repeat;
+	width: 100%;
+	padding-top: 30%;
+	bottom: 5.5%;
+    pointer-events: none;
+    background-size:100%;
+}
+/* hz slide */
+.donslide-bg{
+	display: block;
+	 width: 100%;
+	 height: 100px;
+	 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+	 background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	 background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	 background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	 position: absolute;
+	 z-index: 1;
+	 pointer-events: none;
+	 margin-top: -1px;
+}
+.donslide {
+	display: table;
+	width: 100%;
+}
+.donslide .donitem {
+	display: table-cell;
+	width: 1%;
+	transition: 0.5s ease-in-out all;
+	/*
+	overflow: hidden;
+	*/
+	position: relative;
+	min-width: 65px;
+	padding-top: 35%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.donslide-content{
+	padding: 5%;
+	position: absolute;
+    bottom: 0;
+	background:rgba(255,255,255,0.9);
+	border-top:solid #80CCC8 4px;
+	transform: translateY(100%);
+	z-index: 1;
+	width: 100%;
+	transition:none;
+}
+.donslide .donslide-title {
+	font-size: 3vmin;
+	width: 100%;
+	position: absolute;
+        display: block;
+        bottom: 20%;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+	z-index: 1;
+	padding-top: 35px;
+        background: url(../../images/icon-location-white.png) no-repeat top center;
+}
+.donitem > img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.donitem:after{
+	content: '';
+	display: block;
+	position: absolute;
+	background-color: #000000;
+	opacity: 0.3;
+	width: 100%;
+	height: 100%;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+}
+.donslide-content h2{
+	color: #13989D;
+	font-size: 2em;
+}
+.donslide-content h2:before{
+	content: '';
+	display: inline-block;
+	width: 17px;
+	height: 25px;
+	background: url(../../images/icon-location-green.png) no-repeat;
+	margin-right: 10px;
+	vertical-align: baseline;
+}
+.don-extend-panel{
+	padding-bottom:10%;
+}
+.don-extend-panel .row{
+	margin: 0;
+}
+.don-extend-panel .row > div{
+	padding: 10px 0 0 0;
+}
+.don-extend-panel > .row > div:first-child{
+	border-top: solid 1px #14989C;
+	margin: 0;
+        margin-right: 10px;
+}
+.donitem:hover {
+	width: 3%;
+}
+.donitem:hover .donslide-content{
+	transition: 0.5s ease-in-out all;
+	transition-delay: 0.2s;
+	-ms-transition-delay: 0.5s;
+	transform: translateY(0%); 
+}
+.donitem:hover > img{
+	object-fit:none;
+}
+.donitem:hover:after{
+	display: none;
+}
+.donmenu{
+	bottom:75px;
+	left: 0;
+	right: 0;
+	padding: 20px;
+	height: 600px;
+	z-index: 1;
+	transform: translateX(100%);
+	transition: 0.6s ease-in-out all;
+	display: none;
+
+	background: rgb(254,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(254,255,255,1) 0%, rgba(184,224,224,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(254,255,255,1) 0%,rgba(184,224,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(254,255,255,1) 0%,rgba(184,224,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#b8e0e0',GradientType=0 ); /* IE6-9 */
+}
+.donmenu.active{
+	transform: translateX(0%);
+}
+.donmenu .row + .row{
+        border-top:solid 1px #212529; 
+}
+.donmenu .donmenu-btn{
+	margin: 12px 0px;
+	text-decoration: none;
+}
+.donmenu .donmenu-btn:before{
+	content: '';
+	display: inline-block;
+	width: 17px;
+	height: 25px;
+	background:url(../../images/icon-location.png) no-repeat;
+	margin-right: 5px;
+	vertical-align: bottom;
+}
+.donmenu .donmenu-btn.current{
+	color: #13989D;
+}
+.donmenu .donmenu-btn.current:before{
+	background-image:url(../../images/icon-location-green.png);
+}
+.btn-donpopover{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	background:url(../../images/icon-menu.png) no-repeat;
+	bottom: 3rem;
+	right: 5%;
+	z-index: 2;
+	display: none;
+}
+#bg-our-destinations{
+    position: absolute;
+    bottom:-270px;
+    background: url(../../images/our-destinations.png) center center no-repeat;
+	height:400px;
+    pointer-events: none;
+	width:100%;
+    z-index: 10;
 }

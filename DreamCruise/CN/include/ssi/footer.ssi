@@ -1,0 +1,146 @@
+<footer>
+		<div id="panel-footer-bg"></div>
+		<div class="footer-bg">
+			<div class="container py-4">
+				<div id="eSubscription" class="mb-5 p-3">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<h3>电子订阅</h3>
+							<p>立即订阅，不再错过任何优惠！</p>
+						</div>
+						<div class="col-12 col-md-4 py-2 py-md-0">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="请填写您的Email 地址" aria-label="Email Address" aria-describedby="button-addon2">
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary dc-btn dc-btn-pattern" type="button" id="button-addon2"></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<p>我们承诺保护您的个人信息。提交您的请求前，请仔细阅读我们的<a href="#" target="_blank"><u>隐私政策</u></a>。</p>
+						</div>
+					</div>
+				</div>
+				<div class="row m-0">
+					<div class="col-12 col-md-6 pl-md-0 pr-md-5 d-flex flex-column">
+						<div class="row mb-3">
+							<div class="col-12 col-md-6">
+								<h5 class="mb-2 btn-mobile-footer">快速链接<a class="d-md-none collapsed" href="#POPULAR-LINKS" data-toggle="collapse"></a></h5>
+								<ul class="collapse dont-collapse-sm" id="POPULAR-LINKS">
+									<li><a href="#">邮轮航线</a></li>
+									<li><a href="#">客房及皇宫</a></li>
+									<li><a href="#">免费及特色餐厅</a></li>
+									<li><a href="#">常见问题</a></li>
+									<li><a href="#">下载邮轮手册</a></li>
+									<li><a href="#">网站地图</a></li>
+									<li><a href="#">关于我们</a></li>
+									<li><a href="#">条款与细则</a></li>
+									<li><a href="#">工作机会</a></li>
+									<li><a href="#">联系我们</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-6">
+								<h5 class="mt-3 mt-md-0 mb-2 btn-mobile-footer">目的地推荐<a class="d-md-none collapsed" href="#POPULAR-DESTINATIONS"
+									 data-toggle="collapse"></a></h5>
+								<ul class="collapse dont-collapse-sm" id="POPULAR-DESTINATIONS">
+									<li><a href="#">冲绳</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">苏梅岛</a></li>
+									<li><a href="#">巴厘岛</a></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="left-menu mt-auto mb-3 row" id="footer-logo">
+							<li class="px-1 px-md-3 mx-0 my-2 my-md-0 col-4 col-md-auto"><a href="#"><img src="../images/logo_genting.png" /></a></li>
+							<li class="px-1 px-md-3 mx-0 my-2 my-md-0 col-4 col-md-auto"><a href="#"><img src="../images/logo_star_cruise.png" /></a></li>
+							<li class="px-1 px-md-3 mx-0 my-2 my-md-0 col-4 col-md-auto"><a href="#"><img src="../images/logo_Crystal_Cruises.png" /></a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6 pr-md-0 pl-md-5 border-left border-white d-flex flex-column">
+						<h4 class="d-none d-md-block mb-3">联系我们</h4>
+						<div id="popover-float-wechat" class="text-center text-md-right position-relative mb-3 mb-md-0">
+							<img src="images/share_wechat_qr_small.png" />
+					        </div>
+						<div class="d-none d-md-flex row mb-4">
+							<div class="col-12 col-md-5 pb-md-2">中国大陆 :</div>
+							<div class="col-12 col-md-7 pb-2"><a href="tel:+86-4008499848">+86-4008499848</a></div>
+							<div class="col-12 col-md-5 pb-md-2">中国香港 :</div>
+							<div class="col-12 col-md-7 pb-2"><a href="tel:+852-2317-7711">+852-2317-7711</a></div>
+							<div class="col-12 col-md-5 pb-md-2">新加坡 :</div>
+							<div class="col-12 col-md-7 pb-2"><a href="tel:+65-6808-2288">+65-6808-2288</a></div>
+							<div class="col-12 col-md-5 pb-md-2">槟城（马拉西亚） :</div>
+							<div class="col-12 col-md-7 pb-2"><a href="tel:+604-2631128">+604-2631128</a></div>
+							<div class="col-12 col-md-5 pb-md-2">吉隆坡（马来西亚） :</div>
+							<div class="col-12 col-md-7 pb-2"><a href="tel:+603-2302-1288">+603-2302-1288</a></div>
+							<div class="col-12 col-md-5 pb-md-2">电子信箱 :</div>
+							<div class="col-12 col-md-auto pb-2"><a href="mailto:reservations.en@gentingcruiselines.com">reservations.en@gentingcruiselines.com</a></div>
+						</div>
+
+						<h4 class="d-none d-md-block mb-3 mt-auto">关注我们</h4>
+						<div class="row">
+							<div class="col-md-auto">
+								<ul class="left-menu mb-3">
+									<li><a href="https://www.facebook.com/DreamCruisesHQ/" target="_blank"><img src="../images/icon_fb.png" alt="Facebook"
+											/></a></li>
+									<li><a href="https://www.instagram.com/dreamcruiseline/" target="_blank"><img src="../images/icon_ig.png" alt="Instagram"
+											/></a></li>
+									<li><a href="javascript:void(0)" id="btn-wechat" data-container="body" data-toggle="popover" data-trigger="focus"
+										 data-placement="top"><img src="../images/icon_wechat.png" alt="WeChat" /></a></li>
+									<li><a href="https://www.youtube.com/channel/UCuTyJ07kM1VR-sWKwZBF9-Q" target="_blank"><img src="../images/icon_youtube.png"
+											 alt="Youtube" /></a></li>
+									<li><a href="https://www.weibo.com/dreamcruises" target="_blank"><img src="../images/icon_weibo.png" alt="Weibo" /></a></li>
+								</ul>
+								<div id="popover-wechat" class="d-none">
+									<img src="../images/share_wechat_qr.png" />
+								</div>
+								<ul class="left-menu mb-3 d-md-none">
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Bill of Rights</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms of Usage</a></li>
+									<li><a href="#">Passage Terms</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-auto">
+								<p class="text-center text-md-right">沪ICP备16020645号-2<br />&copy; 2018 Dream Cruises. All rights</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile Bottom panel -->
+			<div id="booking-panel" class="d-md-none p-2">
+				<div class="row m-0">
+					<div class="col-3 px-0">
+						<a href="javascript:void(0)">
+						  <img src="images/footer-nav-btn1.png" />
+						  <span>首页</span>
+						</a>
+					</div>
+					<div class="col-3 px-0">
+						<a href="javascript:void(0)">
+						  <span class="icon-num">99+</span>
+						  <img src="images/footer-nav-btn2.png" />
+						  <span>商城</span>
+						</a>
+					</div>
+					<div class="col-3 px-0">
+						<a href="javascript:void(0)">
+						  <span class="icon-num">99+</span>
+						  <img src="images/footer-nav-btn3.png" />
+						  <span>企业游</span>
+						</a>
+					</div>
+					<div class="col-3 px-0">
+						<a href="javascript:void(0)">
+						  <span class="icon-num">99+</span>
+						  <img src="images/footer-nav-btn4.png" />
+						  <span>我的</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>

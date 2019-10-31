@@ -1,0 +1,28 @@
+<div class="panel-slide">
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/plan-your-holiday/slider-banner.png" />
+		<div class="panel-slide-caption">
+			<h3>Hong Kong / Guangzhou </h3>
+			<p>Book at least 30 days before sailing on a 5-night World Dream cruise to get 25% off 1st and 2nd pax fare.</p>
+		</div>
+	</div>
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/plan-your-holiday/slider-banner.png" />
+		<div class="video-thumbnail"></div>
+		<div class="dc-video hide">
+			<video muted="" loop controls controlsList="nodownload" disablePictureInPicture class="hascontrol">
+				<source src="/campaign-sandbox/DreamCruise/video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/plan-your-holiday/slider-banner.png" />
+	</div>
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/plan-your-holiday/slider-banner.png" />
+	</div>
+	<div class="panel-slide-item">
+		<img src="/campaign-sandbox/DreamCruise/images/plan-your-holiday/slider-banner.png" />
+	</div>
+	<a href="javascript:void(0)" class="btnlightbox">Zoom</a>
+</div>

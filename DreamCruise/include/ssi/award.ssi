@@ -1,0 +1,37 @@
+<div id="panel-sea-bg"></div>
+<section id="award-wrapper" class="bg-light-green">
+	<div class="container pt-4 top-content">
+		<p class="mb-4 text-center d-none d-md-block"><a href="#" class="w-100"><img src="images/award.png" alt="Travel Agents" /></a></p>
+		<div class="row p-3 award-border">
+			<div class="col-12 col-md-6 clearfix">
+				<a class="d-md-none btn-mobile-award collapsed" href="#travelagents" data-toggle="collapse">Travel Agents</a> <div class="collapse dont-collapse-sm"
+					id="travelagents">
+					<div class="row">
+						<div class="col-12 col-md-auto"><img src="images/brochure.png" alt="Travel Agents" /> </div>
+						<div class="col">
+							<h3 class="d-none d-md-block">Travel Agents</h3>
+							<p>Dedicated page for our agents and business partners</p>
+							<p><a href="#" class="dc-btn mr-2 mb-2">RESERVATION LOGIN</a> <a href="#" class="dc-btn ">MORE</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<a class="d-md-none btn-mobile-award collapsed" href="#mobileapp" data-toggle="collapse">Mobile APP</a>
+				<div id="mobileapp" class="collapse dont-collapse-sm">
+					<h3 class="d-none d-md-block">Mobile APP</h3>
+					<p>Download Dream Cruises Onboard APP</p>
+					<p><a href="#" class="mr-2 mb-2"><img src="images/btn_apple.png" alt="Apple" /></a> <a href="#"><img src="images/btn_google.png"
+						alt="Google"	/></a></p>
+				</div>
+			</div>
+			<div class="col-12 col-md-3">
+				<a class="d-md-none btn-mobile-award collapsed" href="#careers" data-toggle="collapse">Media Center</a>
+				<div id="careers" class="collapse dont-collapse-sm">
+					<h3 class="d-none d-md-block">Media Center</h3>
+					<p><a href="#" class="dc-btn">Learn More</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

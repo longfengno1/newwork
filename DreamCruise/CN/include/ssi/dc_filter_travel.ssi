@@ -1,0 +1,415 @@
+<script>
+var data = [
+	{ Title:"走吧！带老爸去海上庆生啦！", Description: "再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！", Image:"blog-img1.jpg", Sales:100, Price:6400, Rating:2, Destination: "中国香港", Itinerary: ["中国香港"], Departure_port: "上海", Cruise: "世界梦号"},
+  { Title:"走吧！带老爸去海上庆生啦！", Description: "再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！", Image:"blog-img2.jpg", Sales:200, Price:5400, Rating:4, Destination: "中国香港", Itinerary: ["中国香港"], Departure_port: "上海", Cruise: "云顶梦号"},
+  { Title:"走吧！带老爸去海上庆生啦！", Description: "再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！", Image:"blog-img3.jpg", Sales:300, Price:4400, Rating:6, Destination: "中国香港", Itinerary: ["中国香港"], Departure_port: "上海", Cruise: "云顶梦号"},
+  { Title:"走吧！带老爸去海上庆生啦！", Description: "再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！", Image:"blog-img4.jpg", Sales:400, Price:3400, Rating:1, Destination: "中国香港", Itinerary: ["中国香港"], Departure_port: "上海", Cruise: "世界梦号"},
+  { Title:"走吧！带老爸去海上庆生啦！", Description: "再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！", Image:"blog-img5.jpg", Sales:500, Price:2400, Rating:3, Destination: "中国香港", Itinerary: ["中国香港"], Departure_port: "上海", Cruise: "世界梦号"},
+  { Title:"走吧！带老爸去海上庆生啦！", Description: "再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！", Image:"blog-img2.jpg", Sales:600, Price:1400, Rating:5, Destination: "中国香港", Itinerary: ["中国香港"], Departure_port: "上海", Cruise: "云顶梦号"}
+];
+
+var pagination = {
+    data:{
+        pagesize: '3',
+        currentpage: 1,
+        obj: '#resultlist',
+        navcontrol: '#nav-control',
+        m_navcontrol: '#nav-mobile-control',
+        pagenav: '#page-nav',
+        btnnext: '#btn-next',
+        btnbefore: '#btn-previous',
+        btnfirst: '#btn-first',
+        btnlast: '#btn-last',
+        btnextend: '#btn-extend',
+        pagecurrent: '#page-current',
+        pagetotal: '#page-total', 
+        pagenum: '0'
+    },
+    init: function() {
+      /*
+      var pagenav = $(_self.data.pagenav);
+      pagenav.empty(); 
+
+      for(i=1; i<pagenum + 1; i++){ 
+           var string = '<a href="javascript:void(0)" data-rel="'+i+'">'+i+'</a>';
+           $(string).appendTo(pagenav);
+      }
+
+      var navbtn = $('#page-nav a');
+      navbtn.click(function(){
+            var index = parseInt($(this).attr('data-rel'));
+            _self.goto(index);
+      }); 
+      */
+      this.pagechange();
+    }, 
+    btninit: function(){
+       var btnnext = $(this.data.btnnext);
+       var btnbefore = $(this.data.btnbefore);
+       var btnfirst = $(this.data.btnfirst);
+       var btnlast = $(this.data.btnlast);
+       var btnextend = $(this.data.btnextend);
+       btnnext.click(function(){
+           pagination.nextpage();
+       });
+       btnbefore.click(function(){
+           pagination.previouspage();
+       });
+       btnfirst.click(function(){
+           pagination.firstpage();
+       });
+       btnlast.click(function(){
+           pagination.lastpage();
+       });
+       btnextend.click(function(){
+           pagination.extendpage();
+       });
+    },
+    reset: function(){
+       var _self = this;
+       var objitem = $(_self.data.obj).children();
+       var itemsize = objitem.length;
+       var pagesize = _self.data.pagesize;
+       var pagenum = Math.ceil(itemsize/pagesize);
+
+       _self.data.currentpage = 1;
+       _self.data.pagenum = pagenum;
+    },
+    pagechange: function(option){
+        var objitem = $(this.data.obj).children();
+        var pagesize = this.data.pagesize; 
+        var cl_mdnone = 'd-md-none';
+        var cl_hidden = 'hidden';
+        if(option != 'extend'){
+          objitem.addClass(cl_hidden);
+        } 
+        objitem.slice(0, this.data.pagesize*this.data.currentpage).removeClass(cl_hidden);
+        objitem.removeClass(cl_mdnone);
+        objitem.slice(0, this.data.pagesize*(this.data.currentpage-1)).addClass(cl_mdnone);
+        this.navchange(); 
+    },
+    navchange: function(){
+        var navbtn = $(this.data.pagenav).children('a');
+        $(this.data.pagecurrent).html(this.data.currentpage);
+        $(this.data.pagetotal).html(this.data.pagenum);
+        //navbtn.removeClass('current');
+        //navbtn.eq(this.data.currentpage-1).addClass('current');
+
+        $(pagination.data.obj).children('li').removeClass('border-top-0');
+        $(pagination.data.obj).children('li:visible:eq(0)').addClass('border-top-0');
+        if(this.data.currentpage >=  this.data.pagenum){
+          $(this.data.m_navcontrol).hide();
+        } else {
+          $(this.data.m_navcontrol).show();
+        }
+    },
+    nextpage: function(){
+      if(this.data.currentpage < this.data.pagenum){
+      this.data.currentpage++;
+      this.pagechange();
+      }
+    },
+    previouspage: function(){
+      if(this.data.currentpage > 1){
+      this.data.currentpage--;
+      this.pagechange();
+      }
+    },
+    firstpage: function(){
+      this.data.currentpage = 1;
+      this.pagechange();
+    },
+    lastpage: function(){
+      this.data.currentpage = this.data.pagenum;
+      this.pagechange();
+    },
+    goto: function(index){
+      this.data.currentpage = index;
+      this.pagechange();
+    },
+    extendpage: function(){
+      if(this.data.currentpage < this.data.pagenum){
+        this.data.currentpage++;
+        this.pagechange('extend');
+      } 
+    }
+}
+	
+var filter =  {
+  data:{
+    filtstring: {},
+    totalresult: '#total-result',
+    btncontrol: '#button-control input[type="radio"]',
+    sortcontrol: '#sort-control input[type="radio"]',
+    datepicker: '#datepicker',
+    el: '#button-control input[type="radio"]:checked, #datepicker',
+    criteria: '#sort-control input[type="radio"]:checked'
+  },
+	init: function(){
+		var filterBy = {};
+		this.result(filterBy);
+
+    $(this.data.btncontrol).change(function(){
+        filter.getselection();  
+        addselection($(this));
+
+        var fname = $(this).attr('name');
+        $('#button-control input[name='+fname+']').parent('label').removeClass('active');
+        $(this).parent('label').addClass('active');
+    }).click(function(){
+        bindoption($(this));
+    });
+    $(this.data.sortcontrol).change(function(){
+         filter.getselection();  
+    });
+	},
+	change: function(){
+		var filterBy = {};
+        this.result(filterBy);  
+	},
+  datepickerinit: function(){
+    $(filter.data.datepicker).on('change', function(){
+        filter.getselection();  
+    });
+  },
+  getselection: function(){
+    this.data.filtstring = {};
+    $(filter.data.el).each(function(){
+       var selectedval = $(this).val();
+       var selectedname = $(this).attr('name');
+       if(selectedval != ''){
+          filter.data.filtstring[selectedname] = [selectedval];
+       }
+    });
+    var criteria = $(filter.data.criteria).val() || '';
+    filter.result(this.data.filtstring, criteria);  
+  },
+	result: function(filterBy, criteria){
+
+		var result = data.filter(function (o) {
+		    return Object.keys(filterBy).every(function (k) {
+		        return filterBy[k].some(function (f) {
+                          //return o[k] === f;
+	                  if(o[k].indexOf(f) >= 0){
+	                    return o[k];
+	                  }
+		        });
+		    });
+	    });
+
+    result.sort(function(a, b) {
+           var a1;
+           var b1;
+           switch(criteria) {
+              case 'Rating':
+              a1 = a.Rating;
+              b1 = b.Rating;
+              break;
+              case 'Price':
+              a1 = b.Price;
+              b1 = a.Price;
+              break;
+              case 'Sales':
+              a1 = a.Sales;
+              b1 = b.Sales;
+              break;
+              default:
+              a1 = b.Title;
+              b1 = a.Title;
+           }
+	      if(a1 > b1){
+		return -1;
+	      } else {
+		return 1;
+           }
+    });
+
+    var resultobj = $(pagination.data.obj);
+    resultobj.empty();
+  	for (var i=0;i<result.length;i++)
+  	{
+
+            var itinerary = '';
+            for(var k=0; k<result[i].Itinerary.length; k++){
+               
+               itinerary +=  result[i].Itinerary[k]+'';
+            }
+
+            var template = '<li><div class="row py-3 border-bottom"><div class="col-12 col-md-4"><div class="position-relative"><img src="images/itineraries/'+result[i].Image+'" class="w-100"><div class="icon-hot"><span>精选</span></div></div></div><div class="col-12 col-md d-flex flex-column p-3"><h3>'+result[i].Title+'</h3><p>'+result[i].Description+'</p><div class="row"><div class="col col-md-12"><p class="mb-2"><span class="icon-from">' + itinerary +'</span></p><p><span class="icon-to">'+result[i].Cruise+'</span></p></div><div class="col-auto position-static d-flex flex-column"><p class="icon-view-wrapper mt-auto"><span class="icon-view txt-green">'+result[i].Sales+'</span></p></div></div><p class="text-right mb-0"><a href="#" class="dc-btn mt-auto" title="查看详情">查看详情</a></p></div></div></li>';
+  	        resultobj.append(template);
+  	}
+    var total = result.length;
+		$(this.data.totalresult).html(total);
+    pagination.reset();
+    pagination.init();
+    if(total == '0'){
+      $(pagination.data.navcontrol).hide();
+    } else {
+      $(pagination.data.navcontrol).show();
+    }
+	}
+}	
+
+function addselection(obj){
+  var el = $('#m_taglist');
+  var addname = obj.attr('name');
+  var addval = obj.val();
+  var template = '<a href="javascript:void(0)" data-name="'+addname+'" data-rel="'+addval+'" onclick="removetag($(this))" class="icon-tag">'+addval+'</a>';
+  el.find('a[data-name="'+addname+'"]').remove();
+  if(addval != ''){
+    el.append(template);
+  }
+}
+function removetag(obj){
+  var _self = obj;
+  var addname = _self.attr('data-name');
+  var addval = _self.attr('data-rel');
+  $('#button-control input[name="'+addname+'"][value=""]').click();
+  obj.remove();
+}
+
+function binddropdown(obj){
+     var getcat = obj.attr('data-cat');
+     var getval = obj.attr('data-rel');
+     $('input[name="'+getcat+'"][value="'+getval+'"]').prop('checked', true).change();
+  }
+function bindoption(obj, type){
+   var getname = obj.attr('name');
+   var getval = obj.val();
+   var getname2 = '';
+   
+   if(type == 'mobile'){
+     getname2 = getname.replace('m_', '');
+     mobilemenu.close(); 
+   } else {
+     getname2 = 'm_' + getname;
+   }
+   $('input[name="'+getname2+'"][value="'+getval+'"]').prop('checked', true).change();
+   $('input[name="'+getname2+'"]').parent('label').removeClass('active');
+   $('input[name="'+getname2+'"][value="'+getval+'"]').parent('label').addClass('active');
+}
+
+var mobilemenu = {
+  data:{
+    mobilebreakpoint: 768,
+    m_btncontrol: '#fullmenu input[type="radio"]',
+    dmlink: '.m_filterbtn a',
+    menuwrapper : '.menu-wrapper',
+    fullmenu: '#fullmenu',
+    fullwrapper: '#fullwrapper',
+    datepicker: '#datepicker'
+  },
+  init: function(){
+     $(mobilemenu.data.m_btncontrol).click(function(){
+        bindoption($(this), 'mobile');
+        $(this).closest('ul').find('label').removeClass('active');
+        $(this).parent('label').addClass('active');
+     });
+
+     $(mobilemenu.data.dmlink).click(function(){
+        binddropdown($(this));
+     });
+  },
+  popoverdate: function(type){
+     var obj = $(mobilemenu.data.datepicker);
+     var currentval = obj.val();
+     if(type == 'mobile'){
+      obj.datepicker().destroy().datepicker({ uiLibrary: 'bootstrap4', locale: 'zh-cn', format:'yyyy.mm.dd', modal: true, header: true }).datepicker().value(currentval).open(); 
+     } else {
+      obj.datepicker().destroy().datepicker({ uiLibrary: 'bootstrap4', locale: 'zh-cn', format:'yyyy.mm.dd', modal: false, header: false }).datepicker().value(currentval);
+     }
+     filter.datepickerinit(); 
+  },
+  open: function(index){
+     var cl_active = 'active';
+     $(this.data.fullwrapper).addClass(cl_active);
+     $(this.data.menuwrapper).removeClass(cl_active);
+     $(this.data.fullmenu).find('#'+index+'').addClass(cl_active);
+  },
+  close: function(){
+     $(this.data.fullwrapper).removeClass('active');
+  }
+}
+
+$(document).ready(function(){
+  filter.init();
+  pagination.btninit();
+  mobilemenu.init();
+});
+
+
+
+</script>
+
+<div class="row text-center d-md-none" id="dc-hp-menu">
+ <div class="col-6 px-1"><a href="javascript:void(0)" onclick="mobilemenu.open('m_Destination')"><img src="images/common/btn-fmenu2.jpg"><h3 class="mt-2">目的地</h3></a></div>
+ <div class="col-6 px-1"><a href="javascript:void(0)" onclick="mobilemenu.open('m_Cruise')"><img src="images/common/btn-fmenu4.jpg"><h3 class="mt-2">邮轮</h3></a></div>
+</div>
+<div class="row py-3 d-md-none">
+  <div class="col"></div>
+  <div id="m_Sorting" class="m_filterbtn col position-relative dc-select-wrapper">
+    <div class="dc-selectbtn pl-3 py-2"> 综合</div>
+    <ul class="dc-selectlist px-3 py-2">
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Sorting" data-rel=""> 综合</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Sorting" data-rel="Sales"> 精华</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Sorting" data-rel="Price"> 最热</a></li>
+     <li class="mb-3"><a href="javascript:void(0)" data-cat="Sorting" data-rel="Rating"> 最新</a></li>
+    </ul>
+  </div>
+</div>
+<div id="m_taglist" class="d-md-none"></div>
+
+<div id="button-control-wrapper" class="my-4 d-none d-md-block">
+	<table width="100%" id="button-control">
+	  <tbody>
+	   <tr>
+	    <th><span class="icon-destination">目的地</span></th>
+	    <td>
+	      <label><input type="radio" name="Destination" value=""> 全部</label>
+		    <label><input type="radio" name="Destination" value="日本" /> 日本</label>
+		    <label><input type="radio" name="Destination" value="越南" /> 越南</label>
+		    <label><input type="radio" name="Destination" value="中国香港" /> 中国香港</label>
+		    <label><input type="radio" name="Destination" value="新加坡" /> 新加坡</label>
+		    <label><input type="radio" name="Destination" value="泰国" /> 泰国</label>
+		    <label><input type="radio" name="Destination" value="马来西亚" /> 马来西亚</label>
+		    <label><input type="radio" name="Destination" value="柬埔寨" /> 柬埔寨</label>
+		    <label><input type="radio" name="Destination" value="印尼" /> 印尼</label>
+	    </td>
+	   </tr>
+	   <tr>
+	    <th><span class="icon-cruise">邮轮</span></th>
+	    <td>
+	       <label><input type="radio" name="Cruise" value="" /> 全部</label>
+	   	   <label><input type="radio" name="Cruise" value="世界梦号" /> 世界梦号</label>
+		     <label><input type="radio" name="Cruise" value="云顶梦号" /> 云顶梦号</label>
+	    </td>
+	   </tr>
+	  </tbody>
+	</table>
+    
+    <div class="clearfix dc-btn-pattern p-1">
+    	<div class="float-left"><label class="text-white mt-1">共 <span id="total-result"></span> 条航线符合搜索条件</label></div>
+		<div id="sort-control" class="float-right">
+		  <p class="mb-0">
+		  <label><input type="radio" name="Sorting" value="" /> 综合</label>
+		  <label><input type="radio" name="Sorting" value="Sales" /> 精华</label>
+		  <label><input type="radio" name="Sorting" value="Price" /> 最热</label>
+		  <label><input type="radio" name="Sorting" value="Rating" /> 最新</label>
+		  </p>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<ul id="resultlist">
+</ul>	
+<p id="nav-control" class="text-center d-none d-md-block mt-4">
+ 	<a href="javascript:void(0)" id="btn-previous" class="mr-3"><</a> 
+ 	<span id="page-nav"></span> 
+ 	第 <span id="page-current"></span> 页 共 <span id="page-total"></span> 页
+ 	<a href="javascript:void(0)" id="btn-next" class="ml-3">></a> 
+</p>
+<p id="nav-mobile-control" class="text-center d-md-none mt-4"><a href="javascript:void(0)" id="btn-extend">更多 + </a></p>

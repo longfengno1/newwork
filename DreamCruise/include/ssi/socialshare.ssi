@@ -1,0 +1,16 @@
+	<p class="text-right">
+		<a href="javascript:void(0)" id="btn-share" data-container="body" data-toggle="popover" data-placement="right"></a>
+	</p>
+	<div id="popover-content" class="d-none">
+		<ul class="list-share">
+			<li><a href="javascript:socialNetworkShare('facebook')" class="icon-facebook">Facebook</a></li>
+			<li><a href="javascript:socialNetworkShare('twitter')" class="icon-twitter">Twitter</a></li>
+			<li><a href="javascript:void(0)" id="btn-wechat" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="top" class="icon-wechat">Wechat</a></li>
+			<li><a href="javascript:socialNetworkShare('weibo')" class="icon-weibo">Weibo</a></li>
+			<li><a href="javascript:socialNetworkShare('QQ')" class="icon-qq">QQ</a></li>
+		</ul>
+	</div>
+	<div id="popover-share-wechat" class="d-none">
+			<img src="../images/share_wechat_qr.png" />
+		</div>
+	</li>

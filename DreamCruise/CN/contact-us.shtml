@@ -1,0 +1,211 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Contact Us</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/custom-style-2.css">
+	<!-- JS validation  -->
+	<script src="../include/js/jquery.validate.min.js"></script>
+	<script src="../include/js/custom-2.js"></script>
+	<script>
+		$(document).ready(function () {
+			contactusvalidate();
+			careerswitch();
+		});
+
+		// Init validation features
+		function contactusvalidate() {
+			var formobj = $('#cu-form');
+			formobj.validate({
+				rules: {
+					'cu-email': {
+						email: true
+					}
+				}
+			});
+			$.validator.methods.email = function (value, element) {
+				return this.optional(element) || /[a-z]+@[a-z]+\.[a-z]+/.test(value);
+			}
+		}
+
+		// Switch Careers field
+		function careerswitch() {
+			var careerobj = $('#career-field');
+			var selectobj = $('#cu-form select[name="cu-it"]');
+			var careerval = 'issue_Recruit';
+
+			selectobj.change(function () {
+				var currentval = $(this).val();
+				if (currentval == careerval) {
+					$('#career-field').removeClass('d-none').addClass('d-block');
+				} else {
+					$('#career-field').removeClass('d-block').addClass('d-none');
+				}
+			});
+		}
+	</script>
+</head>
+
+<body id="contact-us" class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="../images/destinations/detail-banner-contact-us.jpg" alt="Contact Us" class="img-responsive">
+		<img src="../images/destinations/detail-banner-contact-us.jpg" alt="Contact Us" class="img-responsive mobile">
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+	<!-- Content -->
+	<section class="pb-10">
+			<div class="container position-static">
+
+				<h2 class="section-header">Contact Us</h2>
+
+				<form id="cu-form">
+					<div class="part-1">
+
+						<ul>
+							<li>
+								<label>Title &amp; Full name</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-left">
+										<select name="cu-title" required data-msg-required="Please select title">
+											<option value="" selected="selected">Title</option>
+											<option value="Mr">Mr</option>
+											<option value="Miss">Miss</option>
+											<option value="Mrs">Mrs</option>
+										</select>
+									</div>
+
+									<div class="col-right">
+										<input type="text" name="cu-fullname" placeholder="Full name" required data-msg-required="Please enter full name">
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Email address</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<input type="text" name="cu-email" placeholder="Email address" required data-msg-required="Please enter email" data-msg-email="Please enter email in vaild format">
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Telephone number</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-left">
+										<input type="text" name="cu-cc" placeholder="Country code" required data-msg-required="Please enter country code">
+									</div>
+
+									<div class="col-right">
+										<input type="text" name="cu-ac" placeholder="Area code + Country code" required data-msg-required="Please enter country code">
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Issure types</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<select name="cu-it" required data-msg-required="Please select issure types">
+											<option value="" selected="selected">Issure types</option>
+											<option value="issue_Booking">Booking</option>
+											<option value="issue_Recruit">Career</option>
+											<option value="issue_Customer_Experiences">Customer Experiences</option>
+										</select>
+									</div>
+								</div>
+							</li>
+
+							<li id="career-field" class="d-none">
+								<label>Career types</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<select name="cu-ct" required data-msg-required="Please select career types">
+											<option value="" selected="selected">Career types</option>
+											<option value="crew_Positions">Crew Positions</option>
+											<option value="shore_Positions">Shore Positions</option>
+										</select>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Content</label><span class="icon-require">*</span>
+								<div class="panel">
+									<div class="col-full">
+										<textarea rows="4" cols="20" name="cu-content" required data-msg-required="Please enter content"></textarea>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<label>Verification code</label><span class="icon-require">*</span>
+								<div class="panel panel-captcha">
+									<div class="col-left">
+										<input type="text" class="cu-vc" required data-msg-required="Please enter verification code">
+									</div>
+
+									<div class="col-right">
+										<div class="captcha">
+											<img class="img-captcha" src="../images/contact-us/img-captcha.png">
+											<a href="#"><img src="../images/contact-us/btn-refresh.png"></a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<p>We are committed to protecting your Personal Information. Before you submit your enquiry, please view our <a href="#"
+								 target="_blank">Privacy Policy</a> .</p>
+							<div class="text-right"><button type="submit" class="dc-btn">SUMMIT</button></div>
+						</ul>
+
+					</div>
+				</form>
+
+				<div class="part-2">
+					<h3>Reservation Hotlines</h3>
+					<ul>
+						<li>
+							<div class="col-left">Hong Kong, China</div>
+							<div class="col-right"><a href="tel:852-2317-7711" class="txlink-white">+852-2317-7711</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Singapore</div>
+							<div class="col-right"><a href="tel:852-2317-7711" class="txlink-white">+65-6808-2288</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Penang (Malaysia)</div>
+							<div class="col-right"><a href="tel:852-2317-7711" class="txlink-white">+604-2631128</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Kuala Lumpur (Malaysia)</div>
+							<div class="col-right"><a href="tel:852-2317-7711" class="txlink-white">+603-2302-1288</a></div>
+						</li>
+
+						<li>
+							<div class="col-left">Mainland China</div>
+							<div class="col-right"><a href="tel:852-2317-7711" class="txlink-white">+66-4008499848</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

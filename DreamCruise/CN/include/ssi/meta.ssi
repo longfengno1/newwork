@@ -1,0 +1,36 @@
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- SEO & SocialShare Info -->
+	<meta name="Keywords" content="" />
+	<meta property="og:description" content="Dream Cruises is Asia’s luxury cruise line that aims to redefine vacation travel with a transformational journey at sea. Our two luxury cruise ships, Genting Dream and World Dream, are vessels designed for your dreams – featuring the comfort of authentic Asian hospitality combined with only the finest experiences from around the world."
+	/>
+	<meta name="description" content="Dream Cruises is Asia’s luxury cruise line that aims to redefine vacation travel with a transformational journey at sea. Our two luxury cruise ships, Genting Dream and World Dream, are vessels designed for your dreams – featuring the comfort of authentic Asian hospitality combined with only the finest experiences from around the world."
+	/>
+	<meta property="og:title" content="Dream Cruises" />
+	<meta property="og:url" content="https://www.dreamcruiseline.com/en" />
+	<meta property="og:image" content="https://www.dreamcruiseline.com/en//-/media/homepage-carousel-universal/dc-homepage-carousel-okinawa.jpg?w=230&hash=82E47E1D9EA4D674F5F93E57FA1E4FBA502455FF"
+	/>
+	<!-- CSS & JS -->
+	<link rel="stylesheet" href="../include/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="../include/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../include/css/gijgo.min.css">
+	<link rel="stylesheet" href="../include/css/slick.css">
+	<link rel="stylesheet" href="../include/css/slick-theme.css">
+	<link rel="stylesheet" href="../include/css/aos.css">
+	<link rel="stylesheet" href="../include/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="../include/css/framework-style.css">
+	<link rel="stylesheet" href="../include/css/custom-style.css">
+	<link rel="stylesheet" href="include/css/framework-style_cn.css">
+	<link rel="stylesheet" href="include/css/custom-style_cn.css">
+	<script src="../include/js/jquery.min.js"></script>
+	<script src="../include/js/gijgo.min.js"></script>
+	<script src="include/js/messages.zh-cn.js"></script>
+	<script src="../include/js/popper.min.js"></script>
+	<script src="../include/js/bootstrap.min.js"></script>
+	<script src="../include/js/slick.min.js"></script>
+	<script src="../include/js/aos.js"></script>
+	<script src="../include/js/lazysizes.min.js"></script>
+	<script src="../include/js/ls.respimg.min.js"></script>	
+	<script src="../include/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../include/js/common.js"></script>
+	<script src="include/js/common_cn.js"></script>

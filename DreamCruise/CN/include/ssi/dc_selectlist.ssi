@@ -1,0 +1,6 @@
+<div class="dc-custom-select dc-btn w-100 mb-5 text-center">
+    <select>
+        <option value="0">世界梦号</option>
+        <option value="1">云顶梦号</option>
+    </select>
+</div>

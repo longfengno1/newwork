@@ -1,0 +1,1293 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<!-- Homepage script -->
+	<script>
+	 $(document).ready(function(){
+		mobilelist();
+		switchbg.init();
+		AOS.init(); //Init AOS
+	 });
+	</script>
+</head>
+
+<body id="homepage">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+		<div id="dc-banner" class="mb-0 panel-slide">
+			<!-- Banner -->
+			<div class="panel-slide-item">
+				<picture>
+					<source data-srcset="images/img-mobile01.jpg" media="(max-width: 768px)">
+					<source data-srcset="images/banner1.jpg">
+					<img data-src="images/banner1.jpg" alt="Experience the scenic and cultural wonders of Japan" class="lazyload">
+				</picture>
+				<div class="banner-content">
+					<h2 class="mb-3">Experience the scenic<br /> and cultural wonders of Japan</h2>
+					<p class="mb-3 d-none d-md-inline-block"><a href="#" class="icon-location">5-Night Okinawa Discovery</a></p>
+					<p><a href="#" class="dc-btn dc-btn-pattern">BOOK Now</a></p>
+				</div>
+			</div>
+			<div class="panel-slide-item">
+				<div class="dc-video hide">
+					<a href="javascript:void(0)" class="dc-video-sound-btn"></a>
+					<video muted onended="slickplay()">
+						<source src="video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+					</video>
+				</div>
+				<picture>
+					<source data-srcset="images/img-mobile-topbanner-02.jpg" media="(max-width: 768px)">
+					<source data-srcset="images/video-thumbnail.jpg">
+					<img data-src="images/video-thumbnail.jpg" alt="Experience the scenic and cultural wonders of Japan" class="lazyload">
+				</picture>
+				<div class="video-thumbnail"></div>
+				<div class="banner-content white-txt">
+					<h2 class="mb-3">Experience the scenic<br /> and cultural wonders of Japan</h2>
+					<p class="mb-3 d-none d-md-inline-block"><a href="#" class="icon-location">5-Night Okinawa Discovery</a></p>
+					<p><a href="#" class="dc-btn dc-btn-white">BOOK Now</a></p>
+				</div>
+			</div>
+		</div>
+		<!-- Search wrapper -->
+		<div id="panel-header-bg">
+			<div class="container" id="Search-wrapper">
+				<a class="d-xl-none py-2 border-top-0 btn-mobile-award collapsed" href="#Search-mobile" data-toggle="collapse">FIND CRUISES</a>
+				<div id="Search-mobile" class="collapse dont-collapse-lg">
+					<form>
+						<div class="row d-block d-xl-flex justify-content-xl-start form-group m-0 pl-xl-5">
+							<div class="col-auto">
+								<h3 class="sub-header d-none d-xl-block">Depart from</h3>
+								<select class="form-control pl-0">
+									<option>HONG KONG</option>
+								</select>
+							</div>
+							<div class="col-auto">
+								<h3 class="sub-header d-none d-xl-block">Cruise to</h3>
+								<select class="form-control pl-0">
+									<option>Anywhere</option>
+								</select>
+							</div>
+							<div class="col-auto">
+								<h3 class="sub-header d-none d-xl-block">Sailing Date</h3>
+								<input id="datepicker" class="pl-0" value="Aug, 2018" />
+							</div>
+							<div class="col-auto">
+								<h3 class="sub-header d-none d-xl-block">Promo Code</h3>
+								<input type="text" class="form-control pl-0" value="DC 001" />
+							</div>
+							<div class="col-auto border-0 p-0 p-xl-3">
+								<a href="#" class="dc-btn text-center text-xl-left" tabindex="0"><span class="d-none d-xl-inline">Search</span><span
+									 class="d-xl-none">FIND CRUISE</span></a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="bg-header-sea"></div>
+	</header>
+	<!-- Content -->
+	<section class="bg-light-green" id="bg-itineraries">
+		<div class="container pt-5 pb-5">
+			<h2 class="section-header" data-aos="fade-up">Itineraries</h2>
+			<div class="row m-0 my-md-3 d-md-flex">
+				<div class="col-12 col-md p-0 mb-3 mb-md-0 d-flex align-items-center">
+					<div class="row w-mb-100 mx-0 d-md-block">
+						<div class="col-auto pl-0 d-md-none">
+							<h3 class="itineraries-title mt-2">DEPARTURE PORT</h3>
+						</div>
+						<div class="col p-0 d-md-block">
+							<a href="javascript:void(0)" class="d-md-none px-3 py-2 dc-selectbtn">HONG KONG</a>
+							<ul class="nav nav-pills px-3 py-2 p-md-0 d-md-flex dc-selectlist" role="tablist">
+								<li class="nav-item d-none d-md-block">
+									<h3 class="sub-header mr-3">DEPARTURE PORT</h3>
+								</li>
+								<li class="nav-item mb-3 mb-md-0">
+									<a class="mx-md-3 active" data-toggle="pill" href="#pills-hk" role="tab" aria-controls="pills-hk" aria-selected="true" id="pills-hk-tab">HONG
+										KONG</a>
+								</li>
+								<li class="nav-item mb-3 mb-md-0">
+									<a class="mx-md-3" data-toggle="pill" href="#pills-gz" role="tab" aria-controls="pills-gz" aria-selected="false" id="pills-gz-tab">GUNGZHOU</a>
+								</li>
+								<li class="nav-item mb-2 mb-md-0">
+									<a class="mx-md-3" data-toggle="pill" href="#pills-sg" role="tab" aria-controls="pills-sg" aria-selected="false" id="pills-sg-tab">SINGAPORE</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 p-0 pr-md-2 col-md-auto text-center text-md-left">
+					<a href="#" class="dc-btn mt-3 mb-4 mt-md-0 mb-md-0" tabindex="0">EXPOLRE MORE</a>
+				</div>
+			</div>
+
+			<div class="tab-content">
+				<div class="tab-pane fade show active" id="pills-hk" role="tabpanel" aria-labelledby="pills-hk-tab">
+					<div class="panel-slide">
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img1.jpg" alt="KUALA LUMPUR CRUISE" /><div class="icon-destinations">KUALA LUMPUR CRUISE</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div class="map-hover"><img src="images/sg-img2.jpg" class="map-cover" alt="Singapore - Kuala Lumpyr (Port Klang)" /><img src="images/map.jpg" class="map-img" alt="Map - Singapore - Kuala Lumpyr (Port Klang)" /><div class="icon-destinations">SINGAPORE WEEKEND<br />GETAWAY</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img3.jpg" alt="BINTAN ISLAND WEEKEND CRUISE" /><div class="icon-destinations">BINTAN ISLAND <br />WEEKEND CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img4.jpg" alt="PHUKET CRUISE" /><div class="icon-destinations">PHUKET CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img1.jpg" alt="KUALA LUMPUR CRUISE" /><div class="icon-destinations">KUALA LUMPUR CRUISE</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img2.jpg" alt="SINGAPORE WEEKEND GETAWAY" /><div class="icon-destinations">SINGAPORE WEEKEND<br />GETAWAY</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img3.jpg" alt="BINTAN ISLAND WEEKEND CRUISE" /><div class="icon-destinations">BINTAN ISLAND <br />WEEKEND CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img4.jpg" alt="PHUKET CRUISE" /><div class="icon-destinations">PHUKET CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-gz" role="tabpanel" aria-labelledby="pills-gz-tab">
+					<div class="panel-slide">
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img1.jpg" alt="KUALA LUMPUR CRUISE" /><div class="icon-destinations">KUALA LUMPUR CRUISE</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img2.jpg" alt="SINGAPORE WEEKEND GETAWAY" /><div class="icon-destinations">SINGAPORE WEEKEND<br />GETAWAY</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img3.jpg" alt="BINTAN ISLAND WEEKEND CRUISE" /><div class="icon-destinations">BINTAN ISLAND <br />WEEKEND CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img4.jpg" alt="PHUKET CRUISE" /><div class="icon-destinations">PHUKET CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img1.jpg" alt="KUALA LUMPUR CRUISE" /><div class="icon-destinations">KUALA LUMPUR CRUISE</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img2.jpg" alt="SINGAPORE WEEKEND GETAWAY" /><div class="icon-destinations">SINGAPORE WEEKEND<br />GETAWAY</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img3.jpg" alt="BINTAN ISLAND WEEKEND CRUISE" /><div class="icon-destinations">BINTAN ISLAND <br />WEEKEND CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img4.jpg" alt="PHUKET CRUISE" /><div class="icon-destinations">PHUKET CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-sg" role="tabpanel" aria-labelledby="pills-sg-tab">
+					<div class="panel-slide">
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img1.jpg" alt="KUALA LUMPUR CRUISE" /><div class="icon-destinations">KUALA LUMPUR CRUISE</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img2.jpg" alt="SINGAPORE WEEKEND GETAWAY" /><div class="icon-destinations">SINGAPORE WEEKEND<br />GETAWAY</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img3.jpg" alt="BINTAN ISLAND WEEKEND CRUISE" /><div class="icon-destinations">BINTAN ISLAND <br />WEEKEND CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img4.jpg" alt="PHUKET CRUISE" /><div class="icon-destinations">PHUKET CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-slide-item">
+							<div class="row">
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img1.jpg" alt="KUALA LUMPUR CRUISE" /><div class="icon-destinations">KUALA LUMPUR CRUISE</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img2.jpg" alt="SINGAPORE WEEKEND GETAWAY" /><div class="icon-destinations">SINGAPORE WEEKEND<br />GETAWAY</div>
+											<div class="icon-hot"><span>HOT</span></div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 p-0">
+									<div class="item-itineraries">
+										<div><img src="images/sg-img3.jpg" alt="BINTAN ISLAND WEEKEND CRUISE" /><div class="icon-destinations">BINTAN ISLAND <br />WEEKEND CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+									<div class="item-itineraries">
+										<div><img src="images/sg-img4.jpg" alt="PHUKET CRUISE" /><div class="icon-destinations">PHUKET CRUISE</div>
+										</div>
+										<div class="row">
+											<div class="col">
+												<p><span class="icon-from">Singapore - Kuala Lumpyr (Port Klang)</span> <span class="d-none d-md-inline">-</span>
+													<span class="icon-to">Genting Dream Singspore</span></p>
+												<p><span class="icon-date">From now until 24 October 2018</span></p>
+											</div>
+											<div class="col-auto">
+												<p class="txt-price"><i>from HKD</i><br /><span>3,300</span><br /><i>per person</i></p>
+											</div>
+											<a href="javascript:void(0)" class="btn-itneraries"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="position-relative overflow-hide">
+		<div class="container pt-5 pb-1">
+			<h2 class="section-header" data-aos="fade-up">Our Destinations</h2>
+			<p class="text-center"><a href="#" class="dc-btn" tabindex="0">EXPOLRE MORE</a></p>
+		</div>
+		<div class="donslide-bg"></div>
+		<div class="donslide pb-5 pb-lg-0">
+			<div class="donitem" style="background-image: url(images/bg-sg.jpg);">
+				<h2 class="donslide-title">SINGAPORE</h2>
+				<div class="donslide-content">
+					<h2>SINGAPORE</h2>
+					<div class="don-extend-panel">
+						<div class="row">
+							<div class="col-xs-12 col">
+								<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for both luxury travellers and budget
+									backpackers. White sand beachess are rarely more than a few steps away, while festivals offer a glimpase of the
+									rich local culture.</p>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<p class="mb-0"><a href="#" class="dc-btn dc-btn-pattern" tabindex="0">LEARN MORE</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="donitem" style="background-image: url(images/bg-nb.jpg);">
+				<h2 class="donslide-title">NORTH BALI</h2>
+				<div class="donslide-content">
+					<h2>NORTH BALI</h2>
+					<div class="don-extend-panel">
+						<div class="row">
+							<div class="col-xs-12 col">
+								<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for both luxury travellers and budget
+									backpackers. White sand beachess are rarely more than a few steps away, while festivals offer a glimpase of the
+									rich local culture.</p>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<p class="mb-0"><a href="#" class="dc-btn dc-btn-pattern" tabindex="0">LEARN MORE</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="donitem" style="background-image: url(images/bg-ks.jpg);">
+				<h2 class="donslide-title">KO SAMUI</h2>
+				<div class="donslide-content">
+					<h2>KO SAMUI</h2>
+					<div class="don-extend-panel">
+						<div class="row">
+							<div class="col-xs-12 col">
+								<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for both luxury travellers and budget
+									backpackers. White sand beachess are rarely more than a few steps away, while festivals offer a glimpase of the
+									rich local culture.</p>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<p class="mb-0"><a href="#" class="dc-btn dc-btn-pattern" tabindex="0">LEARN MORE</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="donitem" style="background-image: url(images/bg-hk.jpg);">
+				<h2 class="donslide-title">HONG KONG</h2>
+				<div class="donslide-content">
+					<h2>HONG KONG</h2>
+					<div class="don-extend-panel">
+						<div class="row">
+							<div class="col-xs-12 col">
+								<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for both luxury travellers and budget
+									backpackers. White sand beachess are rarely more than a few steps away, while festivals offer a glimpase of the
+									rich local culture.</p>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<p class="mb-0"><a href="#" class="dc-btn dc-btn-pattern" tabindex="0">LEARN MORE</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="donitem" style="background-image: url(images/bg-hlb.jpg);">
+				<h2 class="donslide-title">HA LONG BAY</h2>
+				<div class="donslide-content">
+					<h2>HA LONG BAY</h2>
+					<div class="don-extend-panel">
+						<div class="row">
+							<div class="col-xs-12 col">
+								<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for both luxury travellers and budget
+									backpackers. White sand beachess are rarely more than a few steps away, while festivals offer a glimpase of the
+									rich local culture.</p>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<p class="mb-0"><a href="#" class="dc-btn dc-btn-pattern" tabindex="0">LEARN MORE</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="donitem" style="background-image: url(images/bg-mk.jpg);">
+				<h2 class="donslide-title">MIYAKOJIMA</h2>
+				<div class="donslide-content">
+					<h2>MIYAKOJIMA</h2>
+					<div class="don-extend-panel">
+						<div class="row">
+							<div class="col-xs-12 col">
+								<p>An enchanting island in southern Thailand, Ko Samui is a popular destination for both luxury travellers and budget
+									backpackers. White sand beachess are rarely more than a few steps away, while festivals offer a glimpase of the
+									rich local culture.</p>
+							</div>
+							<div class="col-12 col-xl-auto">
+								<p class="mb-0"><a href="#" class="dc-btn dc-btn-pattern" tabindex="0">LEARN MORE</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="donmenu position-absolute">
+			<div class="container px-0">
+				<div class="row mx-0">
+					<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">SINGAPORE</a></div>
+					<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">NORTH BALI</a></div>
+				</div>
+				<div class="row mx-0">
+					<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">KO SAMUI</a></div>
+					<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">HONG KONG</a></div>
+				</div>
+				<div class="row mx-0">
+					<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">HA LONG BAY</a></div>
+					<div class="col-6"><a href="javascript:void(0)" class="donmenu-btn">MIYAKOJIMA</a></div>
+				</div>
+			</div>	
+		</div>
+		<a href="javascript:void(0)" class="btn-donpopover">Our Destinations Menu</a>
+	</section>
+	<section class="bg-light-green position-relative">
+		<div id="bg-our-destinations"></div>
+		<div class="container px-0 px-md-3 py-5">
+			<h2 class="section-header" data-aos="fade-up">Exclusive Offers</h2>
+			<div class="panel-slide mt-4">
+				<div class="panel-slide-item">
+					<div class="row flex-md-row-reverse">
+						<div class="col-12 col-md-6 p-0" data-aos="fade-up-left">
+							<!--a href="#" class="w-100"><img src="images/big_promo.png" alt="School Holiday Amazing Race Cruise to Phuket" /></a-->
+							<img src="images/big_promo_2.png" alt="School Holiday Amazing Race Cruise to Phuket" />
+							<div class="item-offers p-4 position-absolute" style="top:0;">
+								<h3 class="text-white h2 font-weight-normal mt-4">School Holiday Amazing Race Cruise to Phuket</h3>
+								<p class="text-white">Be entertained onboard with exciting activities and prizes for everyone
+										Book online to get instant confirmation!</p>
+								<p><span class="icon-anchor mr-0 mr-md-3">Hong Kong</span><span class="icon-ship">All ships</span></p>
+								<div class="row">
+									<div class="col"><a href="#" class="dc-btn dc-btn-pattern">BOOK NOW</a></div>
+									<div class="col txt-price border-left">from HKD<br /><span>3,165</span></div>
+								</div>
+							</div>		
+						</div>
+						<div class="col-12 col-md-6 p-0">
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative">
+										<img src="images/offer-img1.jpg" alt="National Day Offer" /><div class="icon-hot"><span>HOT</span></div>
+									</div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>National Day Offer</h3>
+										<p>50% off 2nd, 3rd and 4th Guests</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-anchor mr-0 mr-md-3">Hong Kong</span><span
+											 class="icon-ship">All ships</span></div>
+										<div class="col-auto txt-price"><i>from HKD</i><br /><span>3,300</span></div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative">
+										<img src="images/offer-img2.jpg" alt="National Day Offer" />
+										<div class="icon-discount"><span>50</span><span>%<br />OFF</span></div>
+									</div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>National Day Offer</h3>
+										<p>50% off 2nd, 3rd and 4th Guests</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-anchor mr-0 mr-md-3">Hong Kong</span><span
+											 class="icon-ship">All ships</span></div>
+										<div class="col-auto txt-price"><i>from HKD</i><br /><span>3,300</span></div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative"><img src="images/offer-img3.jpg" alt="National Day Offer" /></div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>National Day Offer</h3>
+										<p>50% off 2nd, 3rd and 4th Guests</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-anchor mr-0 mr-md-3">Hong Kong</span><span
+											 class="icon-ship">All ships</span></div>
+										<div class="col-auto txt-price"><i>from HKD</i><br /><span>3,300</span></div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-slide-item">
+					<div class="row flex-md-row-reverse">
+						<div class="col-12 col-md-6 p-0" data-aos="fade-up-left">
+							<a href="#" class="w-100"><img src="images/big_promo.png" alt="School Holiday Amazing Race Cruise to Phuket" /></a>
+						</div>
+						<div class="col-12 col-md-6 p-0">
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative">
+										<img src="images/offer-img1.jpg" alt="National Day Offer" /><div class="icon-hot"><span>HOT</span></div>
+									</div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>National Day Offer</h3>
+										<p>50% off 2nd, 3rd and 4th Guests</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-anchor mr-0 mr-md-3">Hong Kong</span><span
+											 class="icon-ship">All ships</span></div>
+										<div class="col-auto txt-price"><i>from HKD</i><br /><span>3,300</span></div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative">
+										<img src="images/offer-img2.jpg" alt="National Day Offer" />
+										<div class="icon-discount"><span>50</span><span>%<br />OFF</span></div>
+									</div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>National Day Offer</h3>
+										<p>50% off 2nd, 3rd and 4th Guests</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-anchor mr-0 mr-md-3">Hong Kong</span><span
+											 class="icon-ship">All ships</span></div>
+										<div class="col-auto txt-price"><i>from HKD</i><br /><span>3,300</span></div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+
+							<div class="row item-offers" data-aos="fade-up">
+								<div class="col-5">
+									<div class="position-relative"><img src="images/offer-img3.jpg" alt="National Day Offer" /></div>
+								</div>
+								<div class="col-7 d-flex flex-column px-2 pb-3 p-md-3">
+									<div>
+										<h3>National Day Offer</h3>
+										<p>50% off 2nd, 3rd and 4th Guests</p>
+									</div>
+									<div class="row m-0 mt-auto">
+										<div class="col pl-0 pr-2 d-md-flex align-items-end"><span class="icon-anchor mr-0 mr-md-3">Hong Kong</span><span
+											 class="icon-ship">All ships</span></div>
+										<div class="col-auto txt-price"><i>from HKD</i><br /><span>3,300</span></div>
+									</div>
+								</div>
+								<a href="javascript:void(0)" class="btn-offers"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="bg-onboard">
+		<div class="container pt-5">
+			<h2 class="section-header" data-aos="fade-up">Onboard Activities</h2>
+		</div>
+		<div class="panel-slide">
+			<div class="panel-slide-item">
+				<picture>
+					<source data-srcset="images/img-mobile-activity02.png" media="(max-width: 768px)">
+					<source data-srcset="images/img-01.png">
+					<img data-src="images/img-01.png" alt="SUMMER SPLASH POOL PARTY" class="lazyload">
+				</picture>
+				<div class="container">
+					<div class="row justify-content-end">
+						<div class="col-7 col-md-5 text-white">
+							<h3>SUMMER SPLASH POOL PARTY</h3>
+							<p>Get a big dose of fun with the wet outdoor games along with the DJ music and dance. Bond with the family by having
+								the most memorable and fun time with water games on World DreamOnboard Activities</p>
+							<p><a href="#" class="dc-btn" tabindex="0">LEARN MORE</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-slide-item">
+				<picture>
+					<source data-srcset="images/img-mobile-activity01.png" media="(max-width: 768px)">
+					<source data-srcset="images/img-04.png">
+					<img data-src="images/img-04.png" alt="SUMMER SPLASH POOL PARTY" class="lazyload">
+				</picture>
+				<div class="container">
+					<div class="row justify-content-start">
+						<div class="col-7 col-md-5 text-white">
+							<h3>SUMMER SPLASH POOL PARTY</h3>
+							<p>Get a big dose of fun with the wet outdoor games along with the DJ music and dance. Bond with the family by having
+								the most memorable and fun time with water games on World DreamOnboard Activities</p>
+							<p><a href="#" class="dc-btn" tabindex="0">LEARN MORE</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-slide-item">
+				<picture>
+					<source data-srcset="images/img-mobile-activity01.png" media="(max-width: 768px)">
+					<source data-srcset="images/img-04.png">
+					<img data-src="images/img-04.png" alt="SUMMER SPLASH POOL PARTY" class="lazyload">
+				</picture>	
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-7 col-md-5 text-white">
+							<h3>SUMMER SPLASH POOL PARTY</h3>
+							<p>Get a big dose of fun with the wet outdoor games along with the DJ music and dance. Bond with the family by having
+								the most memorable and fun time with water games on World DreamOnboard Activities</p>
+							<p><a href="#" class="dc-btn" tabindex="0">LEARN MORE</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="frame-banner-bg"></div>
+	</section>
+	<section class="bg-light-green">
+		<div class="container px-0 px-md-3 pt-5 pb-5">
+			<h2 class="section-header" data-aos="fade-up">Onboard Experiences</h2>
+			<div class="panel-slide">
+				<div class="panel-slide-item">
+					<div class="row">
+						<div class="col-6 d-flex flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img1.jpg" alt="CLUBBING UNDER THE STARS" />
+									<div class="video-thumbnail"></div>
+									<div class="dc-video hide">
+										<video muted loop>
+											<source src="video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+										</video>
+									</div>
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-pink">CLUBBING UNDER THE STARS</h4>
+									<h3>Zouk</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img2.jpg" alt="GET WET & WILD" />
+									<div class="video-thumbnail"></div>
+									<div class="dc-video hide">
+										<video muted loop>
+											<source src="video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+										</video>
+									</div>
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-yellow">GET WET & WILD</h4>
+									<h3>Waterslide Park</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 d-flex flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img3.jpg" alt="YOUR EXCLUSIVE ENCLAVE" />
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-blue">YOUR EXCLUSIVE ENCLAVE</h4>
+									<h3>The Palace</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<div class="position-relative">
+									<img src="images/oe-img4.jpg" alt="FAMILY FUN WITH VR" />
+								</div>
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-purple">FAMILY FUN WITH VR</h4>
+									<h3>ESC Experience Lab</h3>
+								</div>
+							</div>
+						</div>
+						<div class="d-none d-md-flex col-6 flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img5.jpg" alt="DAZZLE YOUR EYES" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-green">DAZZLE YOUR EYES</h4>
+									<h3>Dream Night</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img6.jpg" alt="OUTDOOR ADVENTURES" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-brown">OUTDOOR ADVENTURES</h4>
+									<h3>Zip Line</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel-slide-item">
+					<div class="row">
+						<div class="col-6 d-flex flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img1.jpg" alt="CLUBBING UNDER THE STARS" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-pink">CLUBBING UNDER THE STARS</h4>
+									<h3>Zouk</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img2.jpg" alt="GET WET & WILD" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-yellow">GET WET & WILD</h4>
+									<h3>Waterslide Park</h3>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 d-flex flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img3.jpg" alt="YOUR EXCLUSIVE ENCLAVE" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-blue">YOUR EXCLUSIVE ENCLAVE</h4>
+									<h3>The Palace</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img4.jpg" alt="FAMILY FUN WITH VR" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-purple">FAMILY FUN WITH VR</h4>
+									<h3>ESC Experience Lab</h3>
+								</div>
+							</div>
+						</div>
+						<div class="d-none d-md-flex col-6 flex-column p-0 col-md-4">
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img5.jpg" alt="DAZZLE YOUR EYES" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-green">DAZZLE YOUR EYES</h4>
+									<h3>Dream Night</h3>
+								</div>
+							</div>
+							<div class="item-onboardexp" data-aos="fade-up">
+								<img src="images/oe-img6.jpg" alt="OUTDOOR ADVENTURES" />
+								<div class="item-onboardexp-desc">
+									<h4 class="txt-brown">OUTDOOR ADVENTURES</h4>
+									<h3>Zip Line</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="bg-ourships-sea" class="position-relative">
+		<div class="position-absolute w-100 h-100">
+			<!-- Dummy Button for Test start -->
+			<button class="position-absolute" onclick="switchbg.changevideo();">Switch video</button>
+			<!-- Dummy Button for Test end -->
+			<video src="video/dreamcruise_effect1.mp4" class="w-auto h-auto" style="object-fit: cover;  min-height: 100%;  pointer-events: none;" muted loop></video>
+	    </div>
+		<div class="container pt-5 pb-5">
+			<h2 class="section-header" data-aos="fade-up">Our Ships</h2>
+			<div class="ships-slide">
+				<div class="panel-slide-item">
+					<div class="ship-detail">
+						<div class="row justify-content-between mb-0 mb-md-4">
+							<div class="col-7 col-md-6">
+								<h3>WORLD DREAM</h3>
+								<p>is a vessel for your dreams - it features all the comfort of authentic Asian hospitaity, combined with the finest
+									experiences from around the world.</p>
+							</div>
+							<div class="col-5 col-md-4 p-0">
+								<div class="row mx-0 my-3 ship-info">
+									<div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+										<h3><span>150,695</span><br />TONS</h3>
+									</div>
+									<div class="col-12 col-md-6 text-center">
+										<h3><span>3,352</span><br />GUESTS</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p><a href="#" class="dc-btn" tabindex="0">DISCOVER MORE</a></p>
+						<p><a href="#" class="dc-btn" tabindex="0">MORE FEATURES</a></p>
+					</div>
+					<div class="position-relative">
+						<div id="icon-world-dream" class="btn-overlay">
+							<a href="javascript:void(0)" id="btn-wd-icon1" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', '360']);"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon2" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'ships'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon3" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'video'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon4" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'room'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon5" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'slides'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon6" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'sunbath'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon7" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'dining'])"></a>
+							<a href="javascript:void(0)" id="btn-wd-icon8" class="btn-ourships d-md-none" onclick="ospopover.click(['WORLDDREAM'])"></a>
+							<picture>
+								<source data-srcset="images/genting-dream-icon_m.png" media="(max-width: 768px)">
+								<source data-srcset="images/genting-dream-icon.png">
+								<img data-src="images/genting-dream-icon.png" alt="WORLD DREAM" class="lazyload">
+							</picture>
+						</div>
+						<img src="images/world-dream.png" class="img-ship" alt="WORLD DREAM" />
+					</div>
+				</div>
+				<div class="panel-slide-item">
+					<div class="ship-detail">
+						<div class="row justify-content-between mb-0 mb-md-4">
+							<div class="col-7 col-md-6">
+								<h3>GENTING DREAM</h3>
+								<p>is a vessel for your dreams - it features all the comfort of authentic Asian hospitaity, combined with the finest
+									experiences from around the world.</p>
+							</div>
+							<div class="col-5 col-md-4 p-0">
+								<div class="row mx-0 my-3 ship-info">
+									<div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
+										<h3><span>150,695</span><br />TONS</h3>
+									</div>
+									<div class="col-12 col-md-6 text-center">
+										<h3><span>3,352</span><br />GUESTS</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p><a href="#" class="dc-btn" tabindex="0">DISCOVER MORE</a></p>
+						<p><a href="#" class="dc-btn" tabindex="0">MORE FEATURES</a></p>
+					</div>
+					<div class="position-relative">
+						<div id="icon-genting-dream" class="btn-overlay">
+							<a href="javascript:void(0)" id="btn-gd-icon1" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', '360']);"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon2" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'ships'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon3" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'video'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon4" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'room'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon5" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'slides'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon6" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'sunbath'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon7" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'dining'])"></a>
+							<a href="javascript:void(0)" id="btn-gd-icon8" class="btn-ourships d-md-none" onclick="ospopover.click(['GENTINGDREAM'])"></a>
+							<picture>
+								<source data-srcset="images/genting-dream-icon_m.png" media="(max-width: 768px)">
+								<source data-srcset="images/genting-dream-icon.png">
+								<img data-src="images/genting-dream-icon.png" alt="GENTING DREAM" class="lazyload">
+							</picture>	
+						</div>
+						<img src="images/genting-dream.png" class="img-ship" alt="GENTING DREAM" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Overlay -->
+		<div class="our-ship-overlay">
+			<div class="container p-0 p-md-3">
+				<div class="overlay-slide">
+					<!-- WORLDDREAM -->
+					<div class="overlay-slide-item WORLDDREAM 360">
+						<div class="slide-box">
+							<img src="images/overlay-img1.png" alt="Depart from the ordinary" />
+							<div class="p-3">
+								<p>Depart from the ordinary</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-vr">Virtual reality</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM 360">
+						<div class="slide-box">
+							<img src="images/overlay-img1.png" alt="Depart from the ordinary" />
+							<div class="p-3">
+								<p>Depart from the ordinary</p>
+								<p>Depart from the ordinary</p>
+								<p>Depart from the ordinary</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-vr">Virtual reality</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM sunbath">
+						<div class="slide-box">
+							<img src="images/overlay-img2.png" alt="Start a new family tradition" />
+							<div class="p-3">
+								<p>Start a new family tradition</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-deck">Main pool deck</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM dining">
+						<div class="slide-box">
+							<img src="images/overlay-img3.png" alt="Explore the world one meal at a time" />
+							<div class="p-3">
+								<p>Explore the world one meal at a time</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-dinning">Dining</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM slides">
+						<div class="slide-box">
+							<img src="images/overlay-img4.png" alt="An endless assortment of fun activities" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM video">
+						<div class="slide-box">
+							<img src="images/overlay-img4.png" alt="An endless assortment of fun activities" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM room">
+						<div class="slide-box">
+							<img src="images/overlay-img4.png" alt="An endless assortment of fun activities" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item WORLDDREAM ships">
+						<div class="slide-box">
+							<img src="images/overlay-img4.png" alt="An endless assortment of fun activities" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+							</div>
+						</div>
+					</div>
+					<!-- GENTINGDREAM -->
+					<div class="overlay-slide-item GENTINGDREAM 360">
+						<div class="slide-box">
+							<img src="images/overlay-img1.png" alt="Depart from the ordinary" />
+							<div class="p-3">
+								<p>Depart from the ordinary</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-vr">Virtual reality</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM sunbath">
+						<div class="slide-box">
+							<img src="images/overlay-img2.png" alt="Start a new family tradition" />
+							<div class="p-3">
+								<p>Start a new family tradition</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-deck">Main pool deck</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM dining">
+						<div class="slide-box">
+							<img src="images/overlay-img3.png" alt="Explore the world one meal at a time" />
+							<div class="p-3">
+								<p>Explore the world one meal at a time</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-dinning">Dining</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM slides">
+						<div class="slide-box">
+							<img src="images/overlay-img4.png" alt="An endless assortment of fun activities" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM video">
+						<div class="slide-box">
+							<img src="images/overlay-img4.png" alt="An endless assortment of fun activities" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM room">
+						<div class="slide-box">
+							<img src="images/overlay-img4.png" alt="An endless assortment of fun activities" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="overlay-slide-item GENTINGDREAM ships">
+						<div class="slide-box">
+							<img src="images/overlay-img4.png" alt="An endless assortment of fun activities" />
+							<div class="p-3">
+								<p>An endless assortment of fun activities</p>
+								<p class="text-right mb-0"><a href="javascript:void(0)" class="icon-slides">Ropes course</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="text-center mb-0 mt-4"><a href="javascript:void(0)" class="dc-btn btn-overlay-close" tabindex="0">BACK</a></p>
+			</div>
+		</div>
+	</section>
+    <!-- Award -->
+    <!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<div class="dc-scroll-wrapper">
+	<table class="innertable vt-header mb-0" style="width: 1178px;">
+		<tr>
+			<th class="align-top" width="20%"><div class="py-1">Free of Charge</div></th>
+			<td>
+				<div class="ls-table tri-col">
+					<ul>
+						<li>Dream Dining Room</li>
+						<li>The Lido</li>
+					</ul>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="align-top"><div class="py-1"></span>Chargeable</div></th>
+			<td>
+				<div class="ls-table tri-col">
+					<ul>
+						<li>Blue Lagoon</li>
+						<li>Hotpot</li>
+						<li>Seafood Grill (World Dream)</li>
+						<li>Bristro by Mark Best (Genting Dream)</li>
+						<li>Lobby Café</li>
+						<li>Silk Road</li>
+						<li>Crystal Life Cuisine</li>
+						<li>Prime Steakhouse (World Dream)</li>
+						<li>Umi Uma</li>
+					</ul>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>

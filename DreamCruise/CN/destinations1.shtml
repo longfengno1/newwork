@@ -1,0 +1,203 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 邮轮航线</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(2) > .nav-link').addClass('active');
+			toggletab.init();
+		});
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<!--#include file="include/ssi/insidepage_banner.ssi" -->
+	<!-- Content -->
+	<section>
+		<div class="container py-5 position-static">
+			<h2 class="section-header mb-2">体验邮轮生活，尝试不一样的假期</h2>
+			<p class="text-center txt-green">立即看看热门的目的地，体验邮轮多种玩法</p>
+			<!-- DC Select Tab -->
+			<!--#include file="include/ssi/dc_selecttab.ssi" -->
+			<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+						src="../images/icon-trip.png"></span> 推荐目的地</h3>
+			<div class="row green-nav mb-4 mx-0 justify-content-center">
+				<div class="col-6 col-md"><a href="javascript:void(0)">宫古岛<br /><span>日本</span></a></div>
+				<div class="col-6 col-md"><a href="javascript:void(0)">那霸<br /><span>日本</span></a></div>
+				<div class="col-6 col-md"><a href="javascript:void(0)">下龙湾<br /><span>越南</span></a></div>
+				<div class="col-6 col-md"><a href="javascript:void(0)">胡志明市<br /><span>越南</span></a></div>
+				<div class="col-6 col-md"><a href="javascript:void(0)">吉隆坡<br /><span>马来西亚</span></a></div>
+			</div>
+			<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+						src="../images/icon-ltineraries.jpg"></span> 推薦行程</h3>
+			<div class="row mb-4">
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img7.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">世界梦号【限时优惠】</h3>
+							<p class="mb-1"><span class="icon-from">香港 - 岘港 - 芽庄 - 香港</span></p>
+							<p class="mb-1"><span class="icon-to">世界梦号</span></p>
+							<p class="mb-1"><span class="icon-date mb-2 mb-md-0">2.1, 2.8, 2.15, 2.22 其他20個日子</span></p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img8.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">世界梦号【限时优惠】</h3>
+							<p class="mb-1"><span class="icon-from">香港 - 岘港 - 芽庄 - 香港</span></p>
+							<p class="mb-1"><span class="icon-to">世界梦号</span></p>
+							<p class="mb-1"><span class="icon-date mb-2 mb-md-0">2.1, 2.8, 2.15, 2.22 其他20個日子</span></p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img9.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">世界梦号【限时优惠】</h3>
+							<p class="mb-1"><span class="icon-from">香港 - 岘港 - 芽庄 - 香港</span></p>
+							<p class="mb-1"><span class="icon-to">世界梦号</span></p>
+							<p class="mb-1"><span class="icon-date mb-2 mb-md-0">2.1, 2.8, 2.15, 2.22 其他20個日子</span></p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="text-right"><a href="javascript:void(0)" class="dc-btn-2" title="推荐行程">推荐行程</a></p>
+			<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+						src="../images/icon-ltineraries.jpg"></span> 推荐岸上游</h3>
+			<div class="row mb-4">
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img7.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">世界梦号【限时优惠】</h3>
+							<p class="mb-1"><span class="icon-from">香港 - 岘港 - 芽庄 - 香港</span></p>
+							<p class="mb-1"><span class="icon-to">世界梦号</span></p>
+							<p class="mb-1"><span class="icon-date mb-2 mb-md-0">2.1, 2.8, 2.15, 2.22 其他20個日子</span></p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img8.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">世界梦号【限时优惠】</h3>
+							<p class="mb-1"><span class="icon-from">香港 - 岘港 - 芽庄 - 香港</span></p>
+							<p class="mb-1"><span class="icon-to">世界梦号</span></p>
+							<p class="mb-1"><span class="icon-date mb-2 mb-md-0">2.1, 2.8, 2.15, 2.22 其他20個日子</span></p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img9.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">世界梦号【限时优惠】</h3>
+							<p class="mb-1"><span class="icon-from">香港 - 岘港 - 芽庄 - 香港</span></p>
+							<p class="mb-1"><span class="icon-to">世界梦号</span></p>
+							<p class="mb-1"><span class="icon-date mb-2 mb-md-0">2.1, 2.8, 2.15, 2.22 其他20個日子</span></p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="text-right"><a href="javascript:void(0)" class="dc-btn-2" title="推荐岸上游">推荐岸上游</a></p>
+			<h3 class="sub-title d-flex"><span class="left-icons align-bottom"><img
+						src="../images/icon-trip.png"></span> 热门游记</h3>
+			<div class="row mb-4">
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img7.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">走吧！带老爸去海上庆生啦！</h3>
+							<p class="card-text">
+								再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！
+							</p>
+
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p class="text-center"><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img8.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">走吧！带老爸去海上庆生啦！</h3>
+							<p class="card-text">
+								再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！
+							</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p class="text-center"><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 my-2 px-2">
+					<div class="card border-0 h-100 rounded-0">
+						<img class="card-img-top rounded-0" src="images/travel/card-img9.jpg"
+							data-holder-rendered="true">
+						<div class="card-body">
+							<h3 class="card-title txt-dark-blue">走吧！带老爸去海上庆生啦！</h3>
+							<p class="card-text">
+								再过一个月就是老爸的生日了，做为生日礼物，决定带着爸妈来一次悠闲的邮轮之旅！定行程前看了所有的岸上线路，最终决定了世界梦号3月26日的新加坡惊喜之旅。走吧！带老爸去海上庆生啦！
+							</p>
+						</div>
+						<div class="card-footer border-top-0 pt-0 bg-white">
+							<p class="text-center"><a href="javascript:void(0)" class="dc-btn" title="立即预定">立即预定</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="text-right"><a href="javascript:void(0)" class="dc-btn-2" title="推荐行程">推荐行程</a></p>
+		</div>
+	</section>
+	<!-- BookNow banner -->
+	<!--#include file="include/ssi/booknow_banner.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Full Menu -->
+	<!--#include file="include/ssi/fullmenu.ssi" -->
+</body>
+
+</html>

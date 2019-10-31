@@ -1,0 +1,121 @@
+<footer>
+		<div id="panel-footer-bg"></div>
+		<div class="footer-bg">
+			<div class="container py-4">
+				<div id="eSubscription" class="mb-5 p-3">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<h3>eSubscription</h3>
+							<p>Subscribe now and never miss out on a single top offer!</p>
+						</div>
+						<div class="col-12 col-md-4 py-2 py-md-0">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
+								<div class="input-group-append">
+									<button class="btn btn-outline-secondary dc-btn dc-btn-pattern" type="button" id="button-addon2"></button>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<p>We are committed to protecting your Personal Information.<br />Before you sumbit your enquiry. please view our
+								<a href="#" target="_blank"><u>Privacy Policy</u></a>.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row m-0">
+					<div class="col-12 col-md-6 pl-md-0 pr-md-5 d-flex flex-column">
+						<div class="row mb-3">
+							<div class="col-12 col-md-6">
+								<h5 class="mb-2 btn-mobile-footer">POPULAR LINKS<a class="d-md-none collapsed" href="#POPULAR-LINKS" data-toggle="collapse"></a></h5>
+								<ul class="collapse dont-collapse-sm" id="POPULAR-LINKS">
+									<li><a href="#">Itineraries</a></li>
+									<li><a href="#">Accommodations &amp; The Palace</a></li>
+									<li><a href="#">Dining</a></li>
+									<li><a href="#">FAQs</a></li>
+									<li><a href="#">Download Product Brochure</a></li>
+									<li><a href="#">Sitemap</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Terms &amp; Conditions</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-6">
+								<h5 class="mt-3 mt-md-0 mb-2 btn-mobile-footer">POPULAR DESTINATIONS<a class="d-md-none collapsed" href="#POPULAR-DESTINATIONS"
+									 data-toggle="collapse"></a></h5>
+								<ul class="collapse dont-collapse-sm" id="POPULAR-DESTINATIONS">
+									<li><a href="#">Kuala Lumpur (Port Klang)</a></li>
+									<li><a href="#">Penang</a></li>
+									<li><a href="#">Phuket</a></li>
+									<li><a href="#">Surabaya</a></li>
+									<li><a href="#">North Bali</a></li>
+								</ul>
+							</div>
+						</div>
+						<ul class="left-menu mt-auto mb-3" id="footer-logo">
+							<li class="mx-3 my-2 my-md-0 ml-md-0"><a href="#"><img src="images/logo_genting.png" alt="Genting Logo" /></a></li>
+							<li class="mx-3 my-2 my-md-0"><a href="#"><img src="images/logo_star_cruise.png" alt="Star Cruise Logo" /></a></li>
+							<li class="mx-3 my-2 my-md-0"><a href="#"><img src="images/logo_Crystal_Cruises.png" alt="Crystal Cruises Logo" /></a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6 pr-md-0 pl-md-5 border-left border-white d-flex flex-column">
+						<h4 class="d-none d-md-block mb-3">BOOKING HOTLINE</h4>
+						<div class="d-none d-md-flex row mb-4">
+							<div class="col-12 col-md-5 pb-md-2">Hong Kong China:</div>
+							<div class="col-12 col-md-7 pb-2">+852-2317-7711</div>
+							<div class="col-12 col-md-5 pb-md-2">Singapore:</div>
+							<div class="col-12 col-md-7 pb-2">+65-6808-2288</div>
+							<div class="col-12 col-md-5 pb-md-2">Penang (Malaysia):</div>
+							<div class="col-12 col-md-7 pb-2">+604-2631128</div>
+							<div class="col-12 col-md-5 pb-md-2">Kuala Lumpur (Malaysia):</div>
+							<div class="col-12 col-md-7 pb-2">+603-2302-1288</div>
+							<div class="col-12 col-md-5 pb-md-2">Mainland China:</div>
+							<div class="col-12 col-md-7 pb-2">+86-4008499848</div>
+							<div class="col-12 col-md-5 pb-md-2">Email Reservation:</div>
+							<div class="col-12 col-md-auto pb-2"><a href="mailto:reservations.en@gentingcruiselines.com">reservations.en@gentingcruiselines.com</a></div>
+						</div>
+
+						<h4 class="d-none d-md-block mb-3 mt-auto">FOLLOW US</h4>
+						<div class="row">
+							<div class="col-md-auto">
+								<ul class="left-menu mb-3">
+									<li><a href="https://www.facebook.com/DreamCruisesHQ/" target="_blank"><img src="images/icon_fb.png" alt="Facebook"
+											/></a></li>
+									<li><a href="https://www.instagram.com/dreamcruiseline/" target="_blank"><img src="images/icon_ig.png" alt="Instagram"
+											/></a></li>
+									<li><a href="javascript:void(0)" id="btn-wechat" data-container="body" data-toggle="popover" data-trigger="focus"
+										 data-placement="top"><img src="images/icon_wechat.png" alt="WeChat" /></a></li>
+									<li><a href="https://www.youtube.com/channel/UCuTyJ07kM1VR-sWKwZBF9-Q" target="_blank"><img src="images/icon_youtube.png"
+											 alt="Youtube" /></a></li>
+									<li><a href="https://www.weibo.com/dreamcruises" target="_blank"><img src="images/icon_weibo.png" alt="Weibo" /></a></li>
+								</ul>
+								<div id="popover-wechat" class="d-none">
+									<img src="images/share_wechat_qr.png" alt="Wechat QR Code" />
+								</div>
+								<ul class="left-menu mb-3 d-md-none">
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Bill of Rights</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms of Usage</a></li>
+									<li><a href="#">Passage Terms</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-auto">
+								<p class="text-center text-md-left">&copy; 2018 Dream Cruises. All rights</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile Bottom panel -->
+			<div id="booking-panel" class="d-md-none p-2">
+				<div class="row m-0">
+					<div class="col d-flex align-items-center pl-0 icon-booking">
+						<div class="d-inline-block">Booking:<br /><a href="tel:+852-2317-7711">+852-2317-7711</a></div>
+					</div>
+					<div class="col-auto d-flex align-items-center"><a href="#">BOOK NOW</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>

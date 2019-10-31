@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Destinations & Excursions | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+</head>
+
+<body id="destinations" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<img src="images/destinations/detail-banner.png" alt="PHUKET" class="img-responsive" />
+		<img src="images/destinations/detail-banner.png" alt="PHUKET" class="img-responsive mobile" />
+		<div class="banner-cover"></div>
+	</header>
+	<!-- Content -->
+		<section>
+			<div class="container destinations-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="#" title="Plan Your Holiday">Plan Your Holiday</a></li>
+					<li class="breadcrumb-item"><a href="destinations1.html" title="Destinations &amp; Excursions">Destinations &amp; Excursions</a></li>
+					<li class="breadcrumb-item active" aria-current="page">PHUKET</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+
+				<h2 class="section-header">PHUKET</h2>
+				<p>Consists of the largest island in Thailand with 32 small islands, this is the perfect spot for sea, sun and sand.<br
+					/>It is a paradise for water sports lovers and let's get your swimsuit ready. Visit the bustling street markets to experience
+					the energetic soul of Phuket and check out the Old Town with over 100 years old Sino-colonial mansions to uncover the
+					historical side of Phuket.</p>
+				<p class="text-right"><a href="#" class="dc-btn mb-3">VIEW ITINERARIES</a><a href="#" class="dc-btn ml-3">SHORE EXCURSION
+						IMPORTANT NOTES</a></p>
+				<!-- Gallery -->
+				<!--#include file="include/ssi/gallery.ssi" -->
+
+				<!-- Gallery -->
+				<!--#include file="include/ssi/gallery.ssi" -->
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-trip.png" /></span> Exursions</h3>
+				<!-- Itineraries Album  -->
+				<!--#include file="include/ssi/itineraries_album.ssi" -->
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon_steeringwheel.png" /></span> ltineraries</h3>
+				<!-- Itineraries Album  -->
+				<!--#include file="include/ssi/itineraries_album_wtitle.ssi" -->
+			</div>
+		</section>
+	<!-- BookNow banner -->
+	<!--#include file="include/ssi/booknow_banner.ssi" -->
+	<!-- Award -->
+	<!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

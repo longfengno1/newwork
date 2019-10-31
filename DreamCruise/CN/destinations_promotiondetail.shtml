@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - 邮轮航线</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(2) > .nav-link').addClass('active');
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header class="insidepage-banner">
+		<div id="dc-banner" class="mb-0">
+				<img
+					alt="Experience the scenic and cultural wonders of Japan"
+					src="/campaign-sandbox/DreamCruise/images/banner1.jpg">
+			<div class="banner-cover"></div>
+		</div>
+	</header>
+	<!-- Content -->
+	<section>
+		<div class="container py-5 position-static">
+			<h2 class="section-header text-left">优惠</h2>
+			<p><span class="icon-day-large mr-5 d-inline-block">2018/06/28-2018/12/15</span><br
+					class="d-md-none" /><span class="icon-cruise d-inline-block mt-3 mt-md-0">云顶梦号</span></p>
+			<p>作為星夢郵輪品牌旗下的首艘豪華郵輪，融合亞洲誠摰好客的服務理念，薈萃世界頂級娛樂悠閒設施，為您量身打造畢生難忘的夢想之旅。</p>
+			<div class="mt-5 position-relative dc-tab-nav-wrapper">
+				<ul class="nav nav-pills dc-tab-nav flex-nowrap" role="tablist">
+					<li class="nav-item">
+						<a class="active show" data-toggle="pill" href="#pills-1" role="tab" aria-controls="pills-1"
+							aria-selected="false">航線
+						</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-2" role="tab" aria-controls="pills-2"
+							aria-selected="false">預訂須知</a>
+					</li>
+					<li class="nav-item">
+						<a data-toggle="pill" href="#pills-3" role="tab" aria-controls="pills-3"
+							aria-selected="true">詳細信息</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content tab-adjust itineraries-content">
+				<div class="tab-pane py-3 fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1">
+					<ul id="resultlist"><li class="border-top-0"><div class="row mx-0 my-4"><div class="col-12 col-md-4 p-0 px-md-3"><div class="position-relative"><img src="images/dc-data-img/img3.jpg" class="w-100"><div class="icon-destinations">巴生港饕餮盛宴</div></div></div><div class="col-12 col-md p-3 py-md-0"><p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號"></p><h2>巴生港饕餮盛宴</h2><p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span><span class="icon-tag">周末游</span></p><p><span class="icon-day">D1 </span> 上海 - <span class="icon-day">D2</span> 香港 - <span class="icon-day">D3</span> 香港 - <span class="icon-day">D4</span> 香港 - <span class="icon-day">D5 </span> 泰国</p><div class="row"><div class="col d-flex flex-column"><p><strong class="txt-dark-blue">出发港口</strong> 上海</p><p><strong class="txt-dark-blue">日期</strong> 2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選</p><p><strong class="txt-dark-blue">优惠</strong></p><p><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="早鸟折扣">早鸟折扣</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="买一增一">买一增一</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="免费升级">免费升级</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="花旗银行专属：免费阳台升级">花旗银行专属：免费阳台升级</span></p><p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p></div><div class="col-12 col-md-auto text-left text-md-right d-flex flex-column justify-content-end"><p class="txt-price text-left text-md-right"><span class="txt-grey sm-txt">价格可低至</span><br><span class="purple-txt">RMB ¥5500</span><br><span class="purple-txt sm-txt">元 /人</span></p><p class="mb-0"><a href="#" class="dc-btn">选 择</a></p><p class="txt-dark-blue">***另收港务费 ¥420/人</p></div></div></div></div></li><li class=""><div class="row mx-0 my-4"><div class="col-12 col-md-4 p-0 px-md-3"><div class="position-relative"><img src="images/dc-data-img/img1.jpg" class="w-100"><div class="icon-destinations">巴生港饕餮盛宴</div></div></div><div class="col-12 col-md p-3 py-md-0"><p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號"></p><h2>巴生港饕餮盛宴</h2><p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span><span class="icon-tag">周末游</span></p><p><span class="icon-day">D1 </span> 广洲 - <span class="icon-day">D2</span> 香港 - <span class="icon-day">D3</span> 香港 - <span class="icon-day">D4</span> 香港 - <span class="icon-day">D5 </span> 新加坡</p><div class="row"><div class="col d-flex flex-column"><p><strong class="txt-dark-blue">出发港口</strong> 广洲</p><p><strong class="txt-dark-blue">日期</strong> 2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選</p><p><strong class="txt-dark-blue">优惠</strong></p><p><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="早鸟折扣">早鸟折扣</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="买一增一">买一增一</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="免费升级">免费升级</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="花旗银行专属：免费阳台升级">花旗银行专属：免费阳台升级</span></p><p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p></div><div class="col-12 col-md-auto text-left text-md-right d-flex flex-column justify-content-end"><p class="txt-price text-left text-md-right"><span class="txt-grey sm-txt">价格可低至</span><br><span class="purple-txt">RMB ¥4500</span><br><span class="purple-txt sm-txt">元 /人</span></p><p class="mb-0"><a href="#" class="dc-btn">选 择</a></p><p class="txt-dark-blue">***另收港务费 ¥420/人</p></div></div></div></div></li><li class=""><div class="row mx-0 my-4"><div class="col-12 col-md-4 p-0 px-md-3"><div class="position-relative"><img src="images/dc-data-img/img1.jpg" class="w-100"><div class="icon-destinations">新加坡惊喜之旅</div></div></div><div class="col-12 col-md p-3 py-md-0"><p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號"></p><h2>新加坡惊喜之旅</h2><p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span><span class="icon-tag">亲子游</span><span class="icon-tag">全家游</span></p><p><span class="icon-day">D1 </span> 上海 - <span class="icon-day">D2</span> 香港 - <span class="icon-day">D3</span> 香港 - <span class="icon-day">D4</span> 香港 - <span class="icon-day">D5 </span> 新加坡</p><div class="row"><div class="col d-flex flex-column"><p><strong class="txt-dark-blue">出发港口</strong> 上海</p><p><strong class="txt-dark-blue">日期</strong> 2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選</p><p><strong class="txt-dark-blue">优惠</strong></p><p><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="早鸟折扣">早鸟折扣</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="买一增一">买一增一</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="免费升级">免费升级</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="花旗银行专属：免费阳台升级">花旗银行专属：免费阳台升级</span></p><p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p></div><div class="col-12 col-md-auto text-left text-md-right d-flex flex-column justify-content-end"><p class="txt-price text-left text-md-right"><span class="txt-grey sm-txt">价格可低至</span><br><span class="purple-txt">RMB ¥3300</span><br><span class="purple-txt sm-txt">元 /人</span></p><p class="mb-0"><a href="#" class="dc-btn">选 择</a></p><p class="txt-dark-blue">***另收港务费 ¥420/人</p></div></div></div></div></li><li class="hidden"><div class="row mx-0 my-4"><div class="col-12 col-md-4 p-0 px-md-3"><div class="position-relative"><img src="images/dc-data-img/img2.jpg" class="w-100"><div class="icon-destinations">新加坡惊喜之旅</div></div></div><div class="col-12 col-md p-3 py-md-0"><p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號"></p><h2>新加坡惊喜之旅</h2><p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span><span class="icon-tag">浪漫婚典</span><span class="icon-tag">团队游</span></p><p><span class="icon-day">D1 </span> 香港 - <span class="icon-day">D2</span> 香港 - <span class="icon-day">D3</span> 香港 - <span class="icon-day">D4</span> 香港 - <span class="icon-day">D5 </span> 中国香港</p><div class="row"><div class="col d-flex flex-column"><p><strong class="txt-dark-blue">出发港口</strong> 香港</p><p><strong class="txt-dark-blue">日期</strong> 2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選</p><p><strong class="txt-dark-blue">优惠</strong></p><p><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="早鸟折扣">早鸟折扣</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="买一增一">买一增一</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="免费升级">免费升级</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="花旗银行专属：免费阳台升级">花旗银行专属：免费阳台升级</span></p><p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p></div><div class="col-12 col-md-auto text-left text-md-right d-flex flex-column justify-content-end"><p class="txt-price text-left text-md-right"><span class="txt-grey sm-txt">价格可低至</span><br><span class="purple-txt">RMB ¥9900</span><br><span class="purple-txt sm-txt">元 /人</span></p><p class="mb-0"><a href="#" class="dc-btn">选 择</a></p><p class="txt-dark-blue">***另收港务费 ¥420/人</p></div></div></div></div></li><li class="hidden"><div class="row mx-0 my-4"><div class="col-12 col-md-4 p-0 px-md-3"><div class="position-relative"><img src="images/dc-data-img/img1.jpg" class="w-100"><div class="icon-destinations">苏梅假日派对</div></div></div><div class="col-12 col-md p-3 py-md-0"><p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號"></p><h2>苏梅假日派对</h2><p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span><span class="icon-tag">团队游</span></p><p><span class="icon-day">D1 </span> 上海 - <span class="icon-day">D2</span> 香港 - <span class="icon-day">D3</span> 香港 - <span class="icon-day">D4</span> 香港 - <span class="icon-day">D5 </span> 中国香港</p><div class="row"><div class="col d-flex flex-column"><p><strong class="txt-dark-blue">出发港口</strong> 上海</p><p><strong class="txt-dark-blue">日期</strong> 2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選</p><p><strong class="txt-dark-blue">优惠</strong></p><p><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="早鸟折扣">早鸟折扣</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="买一增一">买一增一</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="免费升级">免费升级</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="花旗银行专属：免费阳台升级">花旗银行专属：免费阳台升级</span></p><p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p></div><div class="col-12 col-md-auto text-left text-md-right d-flex flex-column justify-content-end"><p class="txt-price text-left text-md-right"><span class="txt-grey sm-txt">价格可低至</span><br><span class="purple-txt">RMB ¥5700</span><br><span class="purple-txt sm-txt">元 /人</span></p><p class="mb-0"><a href="#" class="dc-btn">选 择</a></p><p class="txt-dark-blue">***另收港务费 ¥420/人</p></div></div></div></div></li><li class="hidden"><div class="row mx-0 my-4"><div class="col-12 col-md-4 p-0 px-md-3"><div class="position-relative"><img src="images/dc-data-img/img2.jpg" class="w-100"><div class="icon-destinations">那霸周末巡航</div></div></div><div class="col-12 col-md p-3 py-md-0"><p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號"></p><h2>那霸周末巡航</h2><p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span><span class="icon-tag">全家游</span></p><p><span class="icon-day">D1 </span> 广洲 - <span class="icon-day">D2 </span> 新加坡</p><div class="row"><div class="col d-flex flex-column"><p><strong class="txt-dark-blue">出发港口</strong> 广洲</p><p><strong class="txt-dark-blue">日期</strong> 2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選</p><p><strong class="txt-dark-blue">优惠</strong></p><p><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="早鸟折扣">早鸟折扣</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="买一增一">买一增一</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="免费升级">免费升级</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="花旗银行专属：免费阳台升级">花旗银行专属：免费阳台升级</span></p><p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p></div><div class="col-12 col-md-auto text-left text-md-right d-flex flex-column justify-content-end"><p class="txt-price text-left text-md-right"><span class="txt-grey sm-txt">价格可低至</span><br><span class="purple-txt">RMB ¥3000</span><br><span class="purple-txt sm-txt">元 /人</span></p><p class="mb-0"><a href="#" class="dc-btn">选 择</a></p><p class="txt-dark-blue">***另收港务费 ¥420/人</p></div></div></div></div></li><li class="hidden"><div class="row mx-0 my-4"><div class="col-12 col-md-4 p-0 px-md-3"><div class="position-relative"><img src="images/dc-data-img/img3.jpg" class="w-100"><div class="icon-destinations">那霸周末巡航</div></div></div><div class="col-12 col-md p-3 py-md-0"><p class="mb-1"><img src="../images/itineraries/icon-dc-wd.jpg" alt="世界夢號"></p><h2>那霸周末巡航</h2><p><span class="icon-offer ml-md-2">特惠</span><span class="icon-vip ml-md-2">专享</span><span class="icon-hot-offer ml-2">热门</span> <span class="icon-child ml-md-2">儿童</span><span class="icon-tag">浪漫婚典</span></p><p><span class="icon-day">D1 </span> 上海 - <span class="icon-day">D2</span> 香港 - <span class="icon-day">D3</span> 香港 - <span class="icon-day">D4</span> 香港 - <span class="icon-day">D5 </span> 中国香港</p><div class="row"><div class="col d-flex flex-column"><p><strong class="txt-dark-blue">出发港口</strong> 上海</p><p><strong class="txt-dark-blue">日期</strong> 2月1, 2019 / 2月8, 2019 / 2月15, 2019 / 2月22, 2019 / 共20個日期可選</p><p><strong class="txt-dark-blue">优惠</strong></p><p><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="早鸟折扣">早鸟折扣</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="买一增一">买一增一</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="免费升级">免费升级</span><span class="icon-tag" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="花旗银行专属：免费阳台升级">花旗银行专属：免费阳台升级</span></p><p class="txt-grey">* 系统会根据你的行程和选位，自动为选取最大的折扣优惠，套用到你的订单中</p></div><div class="col-12 col-md-auto text-left text-md-right d-flex flex-column justify-content-end"><p class="txt-price text-left text-md-right"><span class="txt-grey sm-txt">价格可低至</span><br><span class="purple-txt">RMB ¥4400</span><br><span class="purple-txt sm-txt">元 /人</span></p><p class="mb-0"><a href="#" class="dc-btn">选 择</a></p><p class="txt-dark-blue">***另收港务费 ¥420/人</p></div></div></div></div></li></ul>
+				    <p id="nav-control" class="text-center d-none d-md-block">
+						<a href="javascript:void(0)" id="btn-previous" class="mr-3">
+							&lt;</a> <span id="page-nav"></span>
+							第 <span id="page-current">1</span> 页 共 <span id="page-total">3</span> 页
+							<a href="javascript:void(0)" id="btn-next" class="ml-3">&gt;</a>
+					</p>
+					<p id="nav-mobile-control" class="text-center d-md-none" style="display: block;"><a href="javascript:void(0)" id="btn-extend">更多 + </a>
+					</p>
+				</div>
+				<div class="tab-pane py-3 fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2">
+					<ol>
+						<li>皇宫套房或以上级别的收费为标准价格的全费 2019年9月29日及2020年1月26日的超级旺季航程的各级客房类型将以正价收费。</li>
+						<li>每间客房的第三及第四名乘客的收费以首名乘客支付的推广价格的50%计算。</li>
+						<li>婴儿的收费以首名乘客支付的推广价格的25%计算，须有至少2名付费乘客预订。</li>
+						<li>内侧客房(ISS/ISA)不适用于单人乘客的预订，2019年9月29日及2020年1月26日除外。预订以上航程的单人乘客，收费以双人入住推广价之150％计算。
+							单人乘客预订海景客房至皇宫套房，收费以双人入住推广价之150％计算。</li>
+					</ol>
+				</div>
+				<div class="tab-pane py-3 fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3">
+					<p><strong>邮轮航费包含了那些项目</strong></p>
+					<p>直接网上预订的航费已包括港务费、税费及费用，但邮轮服务费并不包括在内。您的邮轮航费包含以下丰富项目：</p>
+					<ol>
+						<li>您指定的豪华邮轮住宿。</li>
+						<li>指定餐厅餐饮。</li>
+						<li>世界级娱乐享受。</li>
+						<li>优美舒适的休闲设施。</li>
+					</ol>
+					<p>预订日期：即日起至2019年5月31日航行日期：2019年9月1日至2020年3月27日</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- BookNow banner -->
+	<!--#include file="include/ssi/booknow_banner.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+	<!-- Full Menu -->
+	<!--#include file="include/ssi/fullmenu.ssi" -->
+</body>
+
+</html>

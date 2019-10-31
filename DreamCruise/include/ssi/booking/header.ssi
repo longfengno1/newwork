@@ -1,0 +1,55 @@
+<style>
+  .booking-header{
+	  background-color: #FFFFFF;
+	  padding-top:96px;
+  }
+  .booking-header .container{
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+  .booking-header h3,
+  .booking-header span{
+	  color: #445173;
+	  font-weight: bold;
+  }
+  .booking-header .h-mark{
+	  color: #777777;
+	  text-align: center;
+	  margin-bottom: 0;
+  }
+  .booking-header .h-mark span{
+	 white-space: nowrap;
+  }
+  .booking-header .row > div{
+	display: -ms-flexbox;
+    display: flex;
+	-ms-flex-direction: column!important;
+	flex-direction: column!important;
+	-ms-flex-pack: center!important;
+    justify-content: center!important;
+  }
+  @media (max-width: 1150px){
+	.booking-header{
+         padding-top: 0;
+	}
+	.booking-header .h-mark span{
+		white-space:normal;
+	}
+	.booking-header .row > div{
+		-ms-flex-pack: flex-start!important;
+    	justify-content: flex-start!important;
+	}
+  }
+</style>
+<div class="booking-header">
+	<div class="row container py-3 justify-content-between">
+		<div class="col-12 col-md"><h3>世界夢號[限時優惠] 香港-峴港-芽莊-香港</h3><p>由廣洲出發</p></div>
+		<div class="col-12 col-md-auto">
+			<div class="row justify-content-between">
+				<div class="col col-md-auto"><p class="h-mark">日期<br /><span>2019.04.02 - 2019.04.06</span></p></div>
+				<div class="col col-md-auto"><p class="h-mark">房間<br /><span>2</span></p></div>
+				<div class="col col-md-auto"><p class="h-mark">總計<br /><span>RMB $6,600</span><br />已包稅、入境費用</p></div>
+			</div>
+		</div>
+	</div>
+</div>

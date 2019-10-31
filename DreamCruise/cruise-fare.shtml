@@ -1,0 +1,119 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Why Cruise | Dream Cruises</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="include/css/insidepage.css">
+	<!-- Scroll -->
+	<link rel="stylesheet" href="include/css/jquery.mCustomScrollbar.min.css">
+	<script src="include/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+	  $(function(){
+			$('.dc-scroll-wrapper').mCustomScrollbar({
+				axis: "x",
+				theme:"dark-thick",
+				scrollButtons:{
+				  enable:true
+				}
+			});
+		});
+	</script>
+</head>
+
+<body id="plan-your-holiday" class="insidepage insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+		<!-- Banner -->
+		<header class="insidepage-banner">
+			<img src="images/plan-your-holiday/cf-banner.png" alt="Why Crusie" class="img-responsive" />
+			<img src="images/plan-your-holiday/cf-banner.png" alt="Why Crusie" class="img-responsive mobile" />
+			<div class="banner-cover"></div>
+		</header>
+		<!-- Content -->
+		<section>
+			<div class="container pt-5 plan-your-holiday-content">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html" title="Homepage">Homepage</a></li>
+					<li class="breadcrumb-item"><a href="plan-your-holiday.html" title="Plan Your Holiday">Plan Your Holiday</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Why Crusie</li>
+				</ol>
+
+				<!-- Social Share  -->
+				<!--#include file="include/ssi/socialshare.ssi" -->
+				
+				<h2 class="section-header">Why Cruise?</h2>
+				<h3 class="sub-title d-flex"><span class="left-icons"><img src="images/icon-questions.png"></span> What’s Included in
+					My Cruise Fare?</h3>
+				<p>When you book direct online, your cruise fare will already include port charges, taxes, and fees, except gratuities
+					(payable onboard). Your booking comes inclusive of:</p>
+				<table class="w-100 my-5">
+					<tbody>
+						<tr class="row d-md-table-row">
+							<td class="text-center col-6 col-md-auto d-block d-md-table-cell p-3 p-md-0 w-25 align-top"><img src="images/icon-bed.png" /><h4 class="mt-3 txt-sm-bold">Your choice deluxe accommodation</h4></td>
+							<td class="text-center col-6 col-md-auto d-block d-md-table-cell p-3 p-md-0 w-25 align-top"><img src="images/icon-restaurants-large.png" /><h4 class="mt-3 txt-sm-bold">Sumptuous meals
+								at inclusive restaurants</h4></td>
+							<td class="text-center col-6 col-md-auto d-block d-md-table-cell p-3 p-md-0 w-25 align-top"><img src="images/icon-entertainment.png" /><h4 class="mt-3 txt-sm-bold">World-class
+								entertainment</h4></td>
+							<td class="text-center col-6 col-md-auto d-block d-md-table-cell p-3 p-md-0 w-25 align-top"><img src="images/icon-facilities.png" /><h4 class="mt-3 txt-sm-bold">Access to beautifully designed leisure facilities</h4></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 class="section-header">Learn More about the Cruise</h2>
+				<div class="mt-5 position-relative">
+					<a href="javascript:void(0)" class="px-3 py-2 d-block d-md-none dc-tabbtn">SHOWS</a>
+					<ul class="nav nav-pills dc-tab-nav" role="tablist">
+						<li class="nav-item">
+							<a class="active show" data-toggle="pill" href="#pills-shows" role="tab" aria-controls="pills-shows" aria-selected="false">SHOWS
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#pills-facilitiesandactivities" role="tab" aria-controls="pills-facilitiesandactivities" aria-selected="false">FACILITIES AND ACTIVITIES
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="pill" href="#pills-dining" role="tab" aria-controls="pills-dining" aria-selected="true">DINING</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane p-3 fade show active" id="pills-shows" role="tabpanel" aria-labelledby="pills-shows-tab">
+						<!-- Gallery with text -->
+						<!--#include file="include/ssi/gallery_wtxt.ssi" -->
+						<p>See a different destination per day, and enjoy inclusive meals daily in between port visits.</p>
+						<p>So, what meals can you enjoy for free (included in your cruise fare)?</p>
+						<!-- Table -->
+						<!--#include file="include/ssi/table.ssi" -->
+					</div>
+					<div class="tab-pane p-3 fade" id="pills-facilitiesandactivities" role="tabpanel" aria-labelledby="pills-facilitiesandactivities-tab">
+						<!-- Gallery with text -->
+						<!--#include file="include/ssi/gallery_wtxt.ssi" -->
+						<p>See a different destination per day, and enjoy inclusive meals daily in between port visits.</p>
+						<p>So, what meals can you enjoy for free (included in your cruise fare)?</p>
+						<!-- Table -->
+						<!--#include file="include/ssi/table.ssi" -->
+					</div>
+					<div class="tab-pane p-3 fade" id="pills-dining" role="tabpanel" aria-labelledby="pills-dining-tab">
+						<!-- Gallery with text -->
+						<!--#include file="include/ssi/gallery_wtxt.ssi" -->
+						<p>See a different destination per day, and enjoy inclusive meals daily in between port visits.</p>
+						<p>So, what meals can you enjoy for free (included in your cruise fare)?</p>
+						<!-- Table -->
+						<!--#include file="include/ssi/table.ssi" -->
+					</div>
+				</div>
+				<h2 class="section-header">Other Cruise Experiences</h2>
+				<!-- Alubum -->
+				<!--#include file="include/ssi/album.ssi" -->
+				<!--#include file="include/ssi/album.ssi" -->
+			</div>
+		</section>
+	<!-- Award -->
+	<!--#include file="include/ssi/award.ssi" -->
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="include/ssi/cookies_popover.ssi" -->
+</body>
+
+</html>

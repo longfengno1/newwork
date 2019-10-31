@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+
+<head>
+	<title>Dream Cruises - Booking</title>
+	<!--#include file="include/ssi/meta.ssi" -->
+	<link rel="stylesheet" href="../include/css/insidepage.css">
+	<link rel="stylesheet" href="include/css/insidepage_cn.css">
+	<link rel="stylesheet" href="../include/css/booking.css">
+	<!-- JS validation  -->
+	<script src="../include/js/jquery.validate.min.js"></script>
+	<script>
+		$(function () {
+			$('#nav-menu .nav-item:eq(6) > .nav-link').addClass('active');
+
+
+			$('.icon-list li').addClass('active');	
+		});
+	</script>
+</head>
+
+<body class="insidepage-bg blue-bg">
+	<!-- Navigation -->
+	<!--#include file="include/ssi/nav.ssi" -->
+	<!-- Banner -->
+	<header>
+		<!-- Booking header -->
+		<!--#include file="../include/ssi/booking/header.ssi" -->
+	</header>
+	<!-- Content -->
+	<section class="btm-space">
+		<div class="container py-5 position-static">
+			<!-- Step -->
+			<!--#include file="../include/ssi/booking/step-progress.ssi" -->
+			<h2 class="green-header txt-green d-flex justify-content-between align-items-end"><span>他人代付</span> <a
+					href="javascript:void(0)" class="icon-download txt-dark-blue">保存輸入信息</a></h2>
+			<hr class="green-bar" />
+			<div class="rounded bg-white p-3 row mx-0 mb-3">
+				<div class="col">
+					<h2 class="txt-dark-blue">世界夢號[限時優惠]香港-峴港-芽莊-香港</h2>
+					<p class="mb-1">2019.03.02 廣州出發 6天5晚</p>
+					<p class="mb-1">房間: 2間 乘客:2人</p>
+					<p class="mb-1">微信可掃二維碼打開</p>
+				</div>
+				<div class="col-auto">
+                     <img src="../images/booking/booking_flow/img-qr.jpg" class="w-100" />
+				</div>
+			</div>
+
+			<div class="rounded booking-green-panel p-3 mb-5 txt-dark-blue">
+			   <p class="mb-2">親，好友 陳文文 向您發出代付請求，助他完成交易流程，開啟精彩海上郵輪假期!</p>
+			   <p class="mb-0"><span class="mr-3">請在 <span class="txt-green">2019.03.02 18:30</span> 之前支付完成</span><span class="mr-3">應付金額: <span class="txt-green">$ 6,600</span> <span>發起人: 陳大文</span></p>
+			</div>
+			
+            <p class="text-center"><a href="javascript:void(0)" class="dc-btn no-arrow">複制鏈接，找人代付</a></p>
+		</div>
+	</section>
+	<!-- Footer -->
+	<!--#include file="include/ssi/footer.ssi" -->
+	<!-- Cookies Popover -->
+	<!--#include file="../include/ssi/cookies_popover.ssi" -->
+	<!-- Float Button -->
+	<!--#include file="include/ssi/floatbtn.ssi" -->
+</body>
+
+</html>

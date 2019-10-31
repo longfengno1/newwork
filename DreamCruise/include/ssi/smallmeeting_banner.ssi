@@ -1,0 +1,52 @@
+<div class="slider">
+	<div class="slide-item green-theme">
+		<div class="layer"></div>
+		<div class="textlayer">
+			<h1>Palm Court</h1>
+			<ul>
+				<li>Support 12 seats or above – meeting, social venue, conference, team building</li>
+			</ul>
+		</div>
+		<img src="images/small-meeting/banner1.png" class="slide-img" />
+	</div>
+	<div class="slide-item blue-theme">
+		<div class="layer"></div>
+		<div class="textlayer">
+			<h1>Rock Climbing</h1>
+			<ul>
+				<li>With complete equipment and services at the ready, enjoy the various tean building venues, hassle-free</li>
+			</ul>
+		</div>
+		<img src="images/small-meeting/banner2.png" class="slide-img" />
+	</div>
+	<div class="slide-item yellow-theme">
+		<div class="layer"></div>
+		<div class="textlayer">
+			<h1>Vintage Room</h1>
+			<ul>
+				<li>A bevy of cuisines to enjoy while soaking in views of the sea </li>
+			</ul>
+		</div>
+		<img src="images/small-meeting/banner3.png" class="slide-img" />
+	</div>
+	<div class="slide-item yellow-theme">
+		<div class="layer"></div>
+		<div class="textlayer">
+			<h1>Zouk Beach Club</h1>
+			<ul>
+				<li>A bevy of cuisines to enjoy while soaking in views of the sea </li>
+			</ul>
+		</div>
+		<img src="images/small-meeting/banner4.png" class="slide-img" />
+	</div>
+	<div class="slide-item yellow-theme">
+		<div class="layer"></div>
+		<div class="textlayer">
+			<h1>Dedicated European butler concierge service</h1>
+			<ul>
+				<li>A bevy of cuisines to enjoy while soaking in views of the sea </li>
+			</ul>
+		</div>
+		<img src="images/small-meeting/banner5.png" class="slide-img" />
+	</div>
+</div>
