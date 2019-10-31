@@ -46,6 +46,7 @@ const rules = [{
 		test: /\.html$/,
 		// html中的img标签
 		use: ["html-withimg-loader"]
+<<<<<<< HEAD
 	}, {
 		test: /\.less$/,
 		use: [
@@ -62,6 +63,8 @@ const rules = [{
 			'postcss-loader',
 			'less-loader',
 		]
+=======
+>>>>>>> 5b3c09d35cad24fc72fb5e506aed037fd0d7720f
 	},
 ];
 module.exports = rules;
