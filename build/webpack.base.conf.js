@@ -6,16 +6,19 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 //静态资源输出
 const copyWebpackPlugin = require('copy-webpack-plugin');
 const rules = require('./webpack.rules.conf.js');
+const isProd = (process.env.NODE_ENV === 'production');
 // 获取html-webpack-plugin参数的方法
-let getHtmlConfig = function(name, chunks) {
+let getHtmlConfig = function (name, chunks) {
     return {
         template: `./src/pages/${name}/index.html`,
         filename: `${name}.html`,
-        inject: true,
         hash: false, //开启hash  ?[hash]
-		chunks: chunks,
-		// 关闭
-        minify: false,
+        chunks: isProd ? ['vendors', ...chunks] : chunks,
+        // 关闭
+        minify: {
+            collapseWhitespace: true,
+            removeComments: true
+        },
     };
 };
 
@@ -23,7 +26,7 @@ let getHtmlConfig = function(name, chunks) {
 function getEntry(PAGES_DIR) {
     var entry = {};
     //读取src目录所有page入口
-    glob.sync(PAGES_DIR + '**/*.js').forEach(function(name) {
+    glob.sync(PAGES_DIR + '**/*.js').forEach(function (name) {
         var start = name.indexOf('pages/') + 4;
         var end = name.length - 3;
         var eArr = [];
@@ -48,19 +51,17 @@ module.exports = {
             'window.jQuery': 'jquery',
         }),
         //静态资源输出
-        new copyWebpackPlugin([
-            {
-                from: path.resolve(__dirname, '../src/assets'),
-                to: './assets',
-                ignore: ['.*'],
-            },
-        ]),
+        // new copyWebpackPlugin([{
+        //     from: path.resolve(__dirname, '../src/assets'),
+        //     to: './assets',
+        //     ignore: ['.*'],
+        // }, ]),
     ],
 };
 
 //修改   自动化配置页面
 var htmlArray = [];
-Object.keys(entrys).forEach(function(element) {
+Object.keys(entrys).forEach(function (element) {
     htmlArray.push({
         _html: element,
         title: '',

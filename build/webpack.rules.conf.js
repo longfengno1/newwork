@@ -21,7 +21,7 @@ const rules = [{
 		test: /\.js$/,
 		use: ["babel-loader"],
 		// 不检查node_modules下的js文件
-		// exclude: "/node_modules/"
+		exclude: "/node_modules/"
 	}, {
 		test: /\.(png|jpg|gif)$/,
 		use: [{
@@ -46,22 +46,6 @@ const rules = [{
 		test: /\.html$/,
 		// html中的img标签
 		use: ["html-withimg-loader"]
-	}, {
-		test: /\.less$/,
-		use: [
-			// devMode ? 'style-loader' : {
-			// 	loader: MiniCssExtractPlugin.loader,
-			// 	options: {
-			// 		// you can specify a publicPath here
-			// 		// by default it use publicPath in webpackOptions.output
-			// 		publicPath: '../'
-			// 	}
-			// },
-			'style-loader',
-			'css-loader',
-			'postcss-loader',
-			'less-loader',
-		]
-	},
+	}
 ];
 module.exports = rules;

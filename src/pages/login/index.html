@@ -64,7 +64,7 @@
         </div>
     </div>
 
-    <div id="main" class="main">
+    <div id="main" class="main custom-main">
         <section class="signin sign-bg popup-in">
             <div class="container w600">
                 <div class="row">
@@ -72,41 +72,52 @@
                         <div class="sign-content popup-in-content">
                             <div class="popup-in-txt">
                                 <div class="row signin-type">
-                                    <h2 class="col-sm-6"><span class="current">手机登录/注册</span></h2>
-                                    <h2 class="col-sm-6"><span>微信登录</span></h2>
+                                    <h2 class="col-sm-6"><span id='signin-tab-mobile'
+                                            class="signin-type-tab current">手机登录/注册</span></h2>
+                                    <h2 class="col-sm-6"><span id='signin-tab-wx' class="signin-type-tab">微信登录</span>
+                                    </h2>
                                 </div>
-                                <div class="signin-form">
-                                    <form>
-                                        <div class="form-group row">
-                                            <input type="text" class="form-control" id="signin_form"
-                                                placeholder="请输入您的手机号">
-                                        </div>
-                                        <div class="form-group row">
-                                            <input type="text" class="form-control col-sm-8" id="signin_form"
-                                                placeholder="请输入验证码">
-                                            <a class="vaildate-code col-sm-4" href="###">获取验证码</a>
-                                        </div>
-                                        <div class="form-group row">
-                                            <input type="text" class="form-control col-sm-8" id="signin_form"
-                                                placeholder="请输入验证码">
-                                            <img class="col-sm-4" src="../../images/vaildate-code.png"></img>
-                                        </div>
-                                    </form>
+                                <div id='signin-mobile'>
+                                    <div class="signin-form">
+                                        <form>
+                                            <div class="form-group row">
+                                                <input type="text" class="form-control" id="signin_form"
+                                                    placeholder="请输入您的手机号">
+                                            </div>
+                                            <div class="form-group row">
+                                                <input type="text" class="form-control col-sm-8" id="signin_form"
+                                                    placeholder="请输入验证码">
+                                                <a class="vaildate-code col-sm-4" href="###">获取验证码</a>
+                                            </div>
+                                            <div class="form-group row">
+                                                <input type="text" class="form-control col-sm-8" id="signin_form"
+                                                    placeholder="请输入验证码">
+                                                <img class="col-sm-4" src="../../images/vaildate-code.png"></img>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- <div class="awesome-checkbox-list"> -->
+                                    <div class="form-group form-check awesome-checkbox-list">
+                                        <input type="checkbox" class="form-check-input" id="styled-checkbox-2">
+                                        <label for="styled-checkbox-2">
+                                            同意<a href="###">《帐号服务条款》</a>和<a href="###">《隐私政策》</a>
+                                        </label>
+                                    </div>
+
+                                    <!-- </div> -->
+                                    <div class="txt-center">
+                                        <button type="button" class="btn signin_btn">
+                                            登录/注册
+                                        </button>
+                                    </div>
                                 </div>
-                                <!-- <div class="awesome-checkbox-list"> -->
-                                <div class="form-group form-check awesome-checkbox-list">
-                                    <input type="checkbox" class="form-check-input" id="styled-checkbox-2">
-                                    <label for="styled-checkbox-2">
-                                        同意<a href="###">《帐号服务条款》</a>和<a href="###">《隐私政策》</a>
-                                    </label>
+                                <div id="signin-wx">
+                                    <img class="qr-code" src="../../images/qr-code.png" />
+                                    <div class="tip-container">
+                                        <span class="tip">请使用微信扫描二维码登录“星梦邮轮”</span>
+                                    </div>
                                 </div>
 
-                                <!-- </div> -->
-                                <div class="txt-center">
-                                    <button type="button" class="btn signin_btn">
-                                        登录/注册
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,7 +130,5 @@
 
 
 </body>
-<script src="js/jquery-1.6.2.min.js"></script>
-<script src="js/ui.base.js"></script>
 
 </html>

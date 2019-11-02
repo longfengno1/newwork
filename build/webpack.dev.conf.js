@@ -8,7 +8,8 @@ const webpackConfigDev = {
 		path: path.resolve(__dirname, '../dist'),
 		// 打包多出口文件
 		// 生成 a.bundle.js  b.bundle.js
-		filename: './js/[name].bundle.js'
+		filename: './js/[name].js',
+		chunkFilename: './js/[name].chunk.js',
 	},
 	devServer: {
 		contentBase: path.join(__dirname, "../src"),
