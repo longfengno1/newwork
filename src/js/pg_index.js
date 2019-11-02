@@ -16,4 +16,6 @@ $(function(){
 	UI.Xslider($(".floor2 .slideBig"),{showNav:".dotnav a"});	
 	UI.Xslider($(".floor3 .slidearea"),{showNav:".dotnav a"});
 	UI.Xslider($(".floor8 .brandSlider"),{showNav:".dotnav a"});
+	
 });
+

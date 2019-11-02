@@ -46,25 +46,6 @@ const rules = [{
 		test: /\.html$/,
 		// html中的img标签
 		use: ["html-withimg-loader"]
-<<<<<<< HEAD
-	}, {
-		test: /\.less$/,
-		use: [
-			// devMode ? 'style-loader' : {
-			// 	loader: MiniCssExtractPlugin.loader,
-			// 	options: {
-			// 		// you can specify a publicPath here
-			// 		// by default it use publicPath in webpackOptions.output
-			// 		publicPath: '../'
-			// 	}
-			// },
-			'style-loader',
-			'css-loader',
-			'postcss-loader',
-			'less-loader',
-		]
-=======
->>>>>>> 5b3c09d35cad24fc72fb5e506aed037fd0d7720f
 	},
 ];
 module.exports = rules;

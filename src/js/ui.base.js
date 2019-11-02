@@ -359,9 +359,9 @@ $(function () {
     });
 	
 	/* Input text hover */
-	$(".inputhover").live("focusin",function(){
+	$(".inputhover").on("focusin",function(){
 		$(this).addClass("intxtfocus");	
-	}).live("focusout",function(){
+	}).on("focusout",function(){
 		$(this).removeClass("intxtfocus");	
 	});
 	
