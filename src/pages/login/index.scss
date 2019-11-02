@@ -1,15 +1,26 @@
+.custom-main {
+  width: 100%;
+  height: calc(100% - 108px);
+}
+
+.sign-bg {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/bg-login.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .container.w600 {
-  width: 600px
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .txt-center {
   text-align: center;
-}
-
-.sign-bg {
-  background: url(../../images/bg-login.png) no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .sign-content {
@@ -17,15 +28,15 @@
   margin: 0 auto;
   padding: 210px 0px;
   margin-left: 70px;
-}
 
-.sign-content h2 {
-  color: #202e42;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 60px;
-  font-family: "CircularStd-Book";
-  text-transform: uppercase;
+  h2 {
+    color: #202e42;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "CircularStd-Book";
+    text-transform: uppercase;
+  }
 }
 
 /*.signin-form  .form-control*/
@@ -137,17 +148,20 @@
 
 
 .awesome-checkbox-list {
+
   a,
   a:hover,
   a:active {
     color: #00969E;
   }
-  .form-check-input{
+
+  .form-check-input {
     margin-top: 0.2rem;
     margin-left: -1.0rem;
     font-size: 20px;
   }
-  label{
+
+  label {
     padding-left: 7px;
   }
 }
@@ -198,19 +212,22 @@
   transform: rotate(45deg);
 }
 
-.signin-type h2 span {
-  font-size: 26px;
-  font-weight: 500;
-  font-family: "MEllePRC-Medium";
-  color: #999;
-  padding-bottom: 20px;
-}
 
-.signin-type h2 span.current {
-  color: #00969E;
-  border-bottom: 4px solid #00969E;
-}
+.signin-type {
+  .signin-type-tab {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "MEllePRC-Medium";
+    color: #999;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
 
+  .current {
+    color: #00969E;
+    border-bottom: 4px solid #00969E;
+  }
+}
 
 /*.btn.signin_btn*/
 .btn.signin_btn,
@@ -237,33 +254,31 @@
   max-width: 265px;
   margin: 34px auto;
 
-}
-
-.signin-footer p>a {
-  color: #202e42;
-  font-size: 16px;
-  font-family: "CircularStd-Book";
-  font-weight: 500;
-  text-transform: capitalize;
-
+  a {
+    color: #202e42;
+    font-size: 16px;
+    font-family: "CircularStd-Book";
+    font-weight: 500;
+    text-transform: capitalize;
+  }
 }
 
 /*modal-header*/
 .modal-content {
   max-width: 625px;
   margin: 0 auto;
-}
 
-.modal-content .sign-content {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 57px 0px;
-}
+  .sign-content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 57px 0px;
+  }
 
-.modal-content .centered,
-.modal-content .btn.signin_btn,
-.modal-content .btn.signin_btn:focus {
-  max-width: 200px;
+  .centered,
+  .btn.signin_btn,
+  .btn.signin_btn:focus {
+    max-width: 200px;
+  }
 }
 
 .modal-header {
@@ -281,7 +296,7 @@
 
 /*.signin.popup-in*/
 .signin.popup-in {
-  padding: 130px 0;
+  padding: 0;
 }
 
 .signin.signup.popup-up {
@@ -304,6 +319,16 @@
   background: #fff;
   border-radius: 5px;
   padding: 30px 0;
+
+  .btn.signin_btn,
+  .btn.signin_btn:focus {
+    width: 220px;
+  }
+
+  .centered {
+    width: auto;
+    margin: auto;
+  }
 }
 
 .popup-in-txt {
@@ -312,17 +337,29 @@
 
 }
 
-.sign-content.popup-in-content .btn.signin_btn,
-.sign-content.popup-in-content .btn.signin_btn:focus {
-  width: 220px;
-}
-
-.sign-content.popup-in-content .centered {
-  width: auto;
-  margin: auto;
-}
-
 .sign-content.popup-in-content {
   max-width: 620px;
   margin: 0 auto;
+}
+
+#signin-wx {
+  text-align: center;
+  padding-bottom: 71px;
+
+  .qr-code {
+    width: 320px;
+    height: 320px;
+  }
+
+  .tip-container {
+    text-align: center;
+    margin-top: 40px;
+
+    .tip {
+      font-family: MEllePRC-Medium;
+      font-size: 16px;
+      color: #343E57;
+      line-height: 28px;
+    }
+  }
 }
