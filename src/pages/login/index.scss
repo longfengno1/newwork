@@ -1,3 +1,4 @@
+@import '../../css/variables.scss';
 .custom-main {
   width: 100%;
   height: calc(100% - 108px);
@@ -31,10 +32,9 @@
 
   h2 {
     color: #202e42;
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     margin-bottom: 60px;
-    font-family: "CircularStd-Book";
     text-transform: uppercase;
   }
 }
@@ -75,8 +75,7 @@
 
 .signin-form label {
   color: #627183;
-  font-size: 16px;
-  font-family: "CircularStd-Book";
+  font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
   margin-bottom: 15px;
@@ -85,8 +84,7 @@
 .signin-form input[type="text"],
 .signin-form input[type="password"] {
   color: #202e42;
-  font-size: 16px;
-  font-family: "CircularStd-Book";
+  font-size: 14px;
   text-transform: initial;
   padding: 0 18px;
 }
@@ -107,8 +105,8 @@
     text-align: center;
     line-height: 44px;
     text-decoration: underline;
-    font-size: 20px;
-    color: #00969E;
+    font-size: 18px;
+    color: $theme-blue;
   }
 
 }
@@ -141,8 +139,7 @@
   cursor: pointer;
   padding: 0;
   color: #999;
-  font-size: 14px;
-  font-family: "CircularStd-Book";
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -152,13 +149,13 @@
   a,
   a:hover,
   a:active {
-    color: #00969E;
+    color: $theme-blue;
   }
 
   .form-check-input {
     margin-top: 0.2rem;
     margin-left: -1.0rem;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   label {
@@ -215,17 +212,16 @@
 
 .signin-type {
   .signin-type-tab {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
-    font-family: "MEllePRC-Medium";
     color: #999;
     padding-bottom: 20px;
     cursor: pointer;
   }
 
   .current {
-    color: #00969E;
-    border-bottom: 4px solid #00969E;
+    color: $theme-blue;
+    border-bottom: 4px solid $theme-blue;
   }
 }
 
@@ -235,10 +231,9 @@
   width: 200px;
   padding: 0;
   height: 60px;
-  background: #00969E;
+  background: $theme-blue;
   color: #fff;
-  font-family: "MEllePRC-Medium";
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 6.24px;
   text-transform: uppercase;
   border-radius: 8px;
@@ -249,15 +244,13 @@
 
 .signin-footer p {
   color: #a1a5ad;
-  font-size: 16px;
-  font-family: "CircularStd-Book";
+  font-size: 14px;
   max-width: 265px;
   margin: 34px auto;
 
   a {
     color: #202e42;
-    font-size: 16px;
-    font-family: "CircularStd-Book";
+    font-size: 14px;
     font-weight: 500;
     text-transform: capitalize;
   }
@@ -356,8 +349,7 @@
     margin-top: 40px;
 
     .tip {
-      font-family: MEllePRC-Medium;
-      font-size: 16px;
+      font-size: 14px;
       color: #343E57;
       line-height: 28px;
     }

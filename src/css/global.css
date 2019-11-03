@@ -1,3 +1,9 @@
+/* fonts */
+@font-face {
+	font-family: MEllePRC;
+	src: url('../font/MEllePRC-Medium.otf');
+}
+
 /* common css ============================================== */
 html,
 body {
@@ -8,7 +14,18 @@ body {
 body {
 	margin: 0 auto;
 	text-align: center;
-	font-family: "Helvetica", "MEllePRC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: MEllePRC, "Helvetica",
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		"Helvetica Neue",
+		Arial,
+		sans-serif,
+		"Apple Color Emoji",
+		"Segoe UI Emoji",
+		"Segoe UI Symbol",
+		"Noto Color Emoji";
 	font-size: 12px;
 	line-height: 1.5;
 	color: #455272;
