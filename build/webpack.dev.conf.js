@@ -16,6 +16,7 @@ const webpackConfigDev = {
 		publicPath:'/',
 		host: "127.0.0.1",
 		port: "8089",
+		compress: true, // 开启资源的 gzip 压缩
 		overlay: true, // 浏览器页面上显示错误
 		open: true, // 开启浏览器
 		hot: true // 开启热更新
