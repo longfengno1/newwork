@@ -1,0 +1,121 @@
+.prodetailtitle{
+	font-family: SourceHanSans-Regular;
+	font-size: 20px;
+	color: #343E57;
+	font-weight:normal;
+	line-height:24px;
+	margin-top:16px;
+	margin-bottom:25px;
+}
+.proinfo .info{
+	padding-left:30px;
+	width:750px;
+}
+.proinfo .base_price{
+	font-size:14px;
+	color:#F8485E;
+}
+.proinfo .base_price dfn{
+	font-style:normal;
+	font-family:arial;
+}
+.proinfo .base_price .price{
+	font-size:30px;
+	
+}
+.proinfo .priceinfo_link{
+	color:#00969E;
+	margin-left:10px;
+}
+.proinfo .priceinfo_link i{
+	font-style:normal;
+}
+.proinfo .priceinfo_link i{
+	position:relative;
+	top:-1px;
+	margin-right:6px;
+	display:inline-block;
+	font-size:10px;
+	line-height:12px;
+	width:15px;
+	height:15px;
+	border:1px solid #00969E;
+	border-radius:50%;
+	text-align:center;
+}
+.proinfo .prominfop{
+	padding:12px 30px;
+	color:#999999;
+	background:#FBFBFB;
+}
+.proinfo .tags{
+	padding:12px 0;
+}
+.proinfo .tags span{
+	padding-left:18px;
+	font-size:14px;
+	margin-right:10px;
+	line-height:18px;
+}
+.proinfo .tags .sale{
+	background:url(../../images/pro_icon_sale.png) left center no-repeat;
+}
+.proinfo .tags .vip{
+	background:url(../../images/pro_icon_vip.png) left center no-repeat;
+	padding-left:25px;
+}
+.proinfo .tags .hot{
+	background:url(../../images/pro_icon_hot.png) left center no-repeat;
+	padding-left:16px;
+}
+.proinfo .tags .children{
+	background:url(../../images/pro_icon_duck.png) left center no-repeat;
+}
+.proinfo .triplist{
+	padding:6px 0;
+}
+.proinfo .triplist li{
+	float:left;
+	word-break:break-all;
+	white-space: nowrap;
+	padding-left:29px;
+	position:relative;
+	height:24px;
+	line-height:24px;
+	margin:6px 8px 6px 0;
+}
+.proinfo .triplist li span{
+	height:22px;
+	width:22px;
+	line-height:22px;
+	font-size:12px;
+	text-align:center;
+	color:#00969E;
+	border:1px solid #00969E;
+	border-radius:50%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.proinfo .proinfoli{
+	font-size:14px;
+	margin-bottom:20px;
+}
+.proinfo .proinfoli .departure{
+	margin-right:10px;
+}
+.icon_worlddm{
+	background:url(../../images/pro_icon_ship.png) left center no-repeat;
+	padding-left:27px;
+	line-height:18px;
+	margin-right:10px;
+	color:#00969E;
+}
+.proinfo .action .dof-date{
+	padding-left:67px;
+	position:relative;
+}
+.proinfo .action .dof-date label{
+	margin-left:-67px;
+	float:left;
+}
