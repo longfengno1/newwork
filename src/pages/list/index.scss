@@ -1,0 +1,87 @@
+@import '../../css/variables.scss';
+
+.list{
+  width: 1200px;
+  position: relative;
+}
+
+.left-container{
+  position: absolute;
+  box-sizing: border-box;
+  width: 260px;
+  height: 466px;
+  background: rgba(239, 250, 249, 0.50);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: hidden;
+  .select-header{
+    height: 50px;
+    background-color: $theme-blue;
+    padding: 0 10px;
+    span{
+      font-size: 12px;
+      color: $theme-white;
+      line-height: 50px;
+      &:last-child{
+        float: right;
+        font-size: 10px;
+        color: $theme-white;
+        opacity: 0.8;
+      }
+    }
+  }
+  .items{
+    padding-left: 10px;
+    .select-item {
+      padding: 13px 10px 13px 0;
+      border-bottom: 1px solid #eff1f1;
+    }
+    .select-title{
+      margin-bottom: 8px;
+
+      span {
+        font-size: 12px;
+        color: #383838;
+
+        &:last-child {
+          float: right;
+          font-size: 10px;
+          color: $theme-blue;
+        }
+      }
+    }
+    .city {
+      margin-right: 14px;
+    }
+    .special{
+      color: #F5A623;
+    }
+  }
+}
+
+.right-container{
+  float: left;
+  padding-left: 284px;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  clear: both;
+  min-width: 100%;
+  min-height: 500px;
+
+  .boat-card{
+    background-color: rgba(239,250,249,0.50);
+    .picture{
+      width: 240px;
+      height: 160px;
+      background: url();
+    }
+  }
+}
+
+#footer {
+  *,
+  *::before,
+  *::after {
+    box-sizing: content-box;
+  }
+}
