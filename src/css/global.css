@@ -126,6 +126,9 @@ blockquote {
 .red {
 	color: #F8485E !important;
 }
+.redf00 {
+	color: #f00 !important;
+}
 
 .gray,
 .hasDefaultText {
@@ -134,6 +137,9 @@ blockquote {
 
 .gray7 {
 	color: #777;
+}
+.gray9 {
+	color: #999;
 }
 
 .green {
@@ -149,7 +155,7 @@ blockquote {
 }
 
 .black {
-	color: #000;
+	color: #383838;
 }
 
 .khaki {
@@ -231,7 +237,12 @@ b {
 .mr20 {
 	margin-right: 20px;
 }
-
+.mr30{
+	margin-right:30px;
+}
+.mr40{
+	margin-right:40px;
+}
 .mr60 {
 	margin-right: 60px;
 }
@@ -250,6 +261,9 @@ b {
 
 .ml30 {
 	margin-left: 30px;
+}
+.ml40{
+	margin-left: 40px;
 }
 
 .p10 {
@@ -290,6 +304,18 @@ b {
 
 .tc {
 	text-align: center
+}
+.vm{
+	vertical-align:middle
+}
+.vtb{
+	vertical-align:text-bottom;
+}
+.t_lh_15{
+	line-height:1.5em;
+}
+.t_lh_28p{
+	line-height:28px;
 }
 
 /* class css ============================ class css ======== */
@@ -359,10 +385,14 @@ b {
 .fz16 {
 	font-size: 16px;
 }
+.fz20 {
+	font-size: 20px;
+}
 
 .fz24 {
 	font-size: 24px;
 }
+
 
 .fb {
 	font-weight: bold;

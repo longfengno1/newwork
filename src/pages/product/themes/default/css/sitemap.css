@@ -1,9 +1,0 @@
-.div-box h1 { color:#333; font-size:16px; font-weight:bold; line-height:35px; }
-.div-box dl { border-bottom:1px dotted #e7e7e7; background-color:#fff; line-height:40px; padding:18px 0 18px 123px; position:relative;}
-.div-box dl dt { position:absolute; left:15px; top:18px; background:url(../Nest/img/website_map_dt_bg.png) center no-repeat; width:75px; color:White; font-weight:bolder; padding-left:18px;}
-.div-box dl dd { float:left; white-space:nowrap;}
-.div-box dl dd a { color:#666;}
-.div-box dl dd a:hover { color:#c40000; cursor:pointer;}
-.div-box dl dd span { color:#e7e7e7; padding:0px 15px;}
-.div-box dl.last { border-bottom:0px none;}
-.mt18 { margin-top:18px;}
