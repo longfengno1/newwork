@@ -2,7 +2,7 @@ import '../../js/common';
 import './index.scss';
 
 (function () {
-  let currnetStep = 2;
+  let currnetStep = 3;
   let steps = ['selectDate', 'selectRoom', 'fillInfo', 'checkInfo', 'selectPay', 'orderSuccess'];
 
   function init() {
