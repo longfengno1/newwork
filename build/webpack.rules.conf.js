@@ -1,5 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const devMode = process.env.NODE_ENV !== 'production'
+const devMode = process.env.NODE_ENV !== 'production';
+const path = require('path');
+const resolve = file => path.resolve(__dirname, file);
 const rules = [{
 		test: /\.(css|scss|sass)$/,
 		use: [
@@ -36,8 +38,9 @@ const rules = [{
 		}]
 	},
 	{
-		test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,
-		loader: 'url-loader',
+		test: /\.(woff|svg|eot|ttf)\??.*$/,
+		loader: 'url-loader?name=font/[name].[ext]',
+		 include: [resolve('../src/font')],
 	},
 	{
 		test: /\.html$/,
