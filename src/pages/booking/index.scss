@@ -1,0 +1,169 @@
+@import '../../css/variables.scss';
+@import './orderRoom.scss';
+@import './fillInfo.scss';
+
+.order-main {
+  min-height: 100vh;
+  background-color: #f7fcfc;
+  padding-bottom: 300px;
+}
+
+.order {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.product-name {
+  font-size: 20px;
+  color: #343E57;
+}
+
+.product-info {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 15px;
+
+  span {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.product-tags {
+  margin-top: 13px;
+
+  .tag {
+    line-height: 20px;
+    border-radius: 2px;
+    border: 1px solid;
+    padding: 0 8px;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .green {
+    color: #00969E;
+    border-color: #00969E;
+  }
+
+  .blue {
+    color: #4A90E2;
+    border-color: #4A90E2;
+  }
+
+  .purple {
+    color: #A05EB5;
+    border-color: #A05EB5;
+  }
+
+  .yellow {
+    color: #F5A623;
+    border-color: #F5A623;
+  }
+
+  .red {
+    color: #F8485E;
+    border-color: #F8485E;
+  }
+
+  .light-blue {
+    color: #64BDDA;
+    border-color: #64BDDA;
+  }
+}
+
+
+
+.step-item {
+  display: inline-block;
+  position: relative;
+  width: 195px;
+  height: 50px;
+  background-color: #efefef;
+  margin-left: 5px;
+  text-align: center;
+  cursor: pointer;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  span {
+    line-height: 50px;
+    font-size: 15px;
+    color: #343E57;
+  }
+
+  .step-item-before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid #fff;
+  }
+
+  .step-item-after {
+    right: -20px;
+    top: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid #efefef;
+    z-index: 2;
+  }
+
+}
+
+.step {
+  margin-top: 20px;
+
+  .active {
+    background-color: #00969E;
+
+    .step-item-after {
+      border-left-color: #00969E;
+    }
+
+  }
+
+  .active,
+  .selected {
+    span {
+      color: #fff;
+    }
+  }
+}
+
+.selected {
+  background-color: #64CCC9;
+
+  .step-item-after {
+    border-left-color: #64CCC9;
+  }
+}
+
+#modfiy-date {
+  color: $theme-blue;
+  cursor: pointer;
+}
+
+#footer {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: content-box;
+  }
+}
