@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+                            var fontSize = 17 * (clientWidth / 320);
+                            fontSize =Math.round((fontSize > 27) ? 27 : fontSize);
+                            docEl.style.fontSize = fontSize + 'px';
+                            var dpi = window.devicePixelRatio;
+                            docEl.setAttribute('data-dpi', dpi);
+                        };
+                recalc();
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+            })(document, window);
+        </script>
 </head>
 
 <body>
@@ -12,8 +30,9 @@
         <div class="wraper">
             <a class="logo-icon inblock" href="###">星梦邮轮</a>
             <div class="header-bar-inner">
-                <div class="search-input-box fl">
-                    <label class="icon-search" for="search-input">
+                <div class="search-input-box fl hidden-sm">
+                    <label class="label-search tc" for="search-input">
+                    	   <span class="icon-search white"></span>
                         <div class="step"></div>
                     </label>
                     <div class="search-input">
@@ -67,7 +86,7 @@
         </div>
     </div>
 
-    <div id="main" class="main">
+    <div id="main" class="main" style="display:none;">
         <div class="topbanner">
             <div class="wraper">
                 <div class="icon_berlitz"></div>
@@ -2131,7 +2150,7 @@
             </div>
         </div>
     </div>
-    <div id="footer" class="footer">
+    <div id="footer" class="footer" style="display:none">
         <div class="footer_inner">
             <div class="wraper clearfloat">
                 <div class="reader_panel">

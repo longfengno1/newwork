@@ -114,4 +114,4 @@ import "../../js/aos";
 	  return this.height( Math.max.apply( this, maxHeight ) );
 	};
     });
-})
+})()

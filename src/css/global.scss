@@ -450,7 +450,7 @@ b {
 /* layout css ============================================== */
 
 .wraper {
-	width: 1200px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -465,8 +465,8 @@ b {
 
 .header-bar {
 	background: url(../images/header-bg.png) center center no-repeat;
-	max-width: 1920px;
-	height: 108px;
+	max-width: 1920rem/$fit;
+	height: 108rem/$fit;
 	margin: 0 auto;
 }
 .header-bar *{
