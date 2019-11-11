@@ -316,6 +316,9 @@ b {
 .vtb{
 	vertical-align:text-bottom;
 }
+.vb{
+	vertical-align:bottom;
+}
 .t_lh_15{
 	line-height:1.5em;
 }
@@ -736,7 +739,9 @@ b {
 	top: 11px;
 	left: 10px;
 }
-
+.text_linker{
+	text-decoration:underline;
+}
 .linker {
 	float: left;
 	margin-top: 48px;
@@ -1152,6 +1157,7 @@ b {
 }
 .icon-arrowright:before {
   content: "\e910";
+  padding-left:5px;
 }
 .icon-arrowdown:before {
   content: "\e911";
@@ -1339,4 +1345,17 @@ b {
 	  -moz-osx-font-smoothing: grayscale;
 	  content: "\e910";
 	  margin-left:40px;
+}
+.btn-styleE{
+	color:#fff;
+	font-size:12px;
+	padding:7px 16px;
+	background:#00969E;
+	display:inline-block;
+	
+}
+.btn-styleE:hover{
+	text-decoration:none;
+	color:#fff;
+	background:#00b4be;
 }
