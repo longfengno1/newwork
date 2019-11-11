@@ -1,4 +1,4 @@
 import "../../js/common";
-import "../index/index.css";
+import "../index/index.scss";
 import "./index.css";
 

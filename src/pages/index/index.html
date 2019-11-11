@@ -12,7 +12,8 @@
                         recalc = function () {
                             var clientWidth = docEl.clientWidth;
                             if (!clientWidth) return;
-                            var fontSize = 17 * (clientWidth / 320);
+							
+                            var fontSize = 20 * (clientWidth / 320);
                             fontSize =Math.round((fontSize > 40) ? 40 : fontSize);
                             docEl.style.fontSize = fontSize + 'px';
                             var dpi = window.devicePixelRatio;
@@ -98,11 +99,11 @@
                 <div class="topbanner-slider">
                     <ul>
                         <li>
-                            <img src="../../images/Miyakojima.jpg" width="2000" height="500">
+                            <img src="../../images/Miyakojima.jpg" width="100%">
                         </li>
                     </ul>
                 </div>
-                <div class="topbanner-tab tab-left">
+                <div class="topbanner-tab tab-left hidden-sm">
                     <div class="tab" trigger="click">
                         <a href="###" class="tab1 now" rel="0">
                             <span>航线搜索</span>
@@ -178,7 +179,7 @@
             <div class="topbanner-ribbon">
                 <div class="wraper">
 
-                    <div class="main-search-box">
+                    <div class="main-search-box hidden-sm">
                         <div class="box1">出发港口
                             <i class="arrow-down fr"></i>
                         </div>
@@ -206,7 +207,7 @@
         </div>
 
         <!-- 热门推荐 -->
-        <div class="section" style="margin-top:-120px;">
+        <div class="section">
             <div class="wraper">
                 <h2 class="title">热门推荐</h2>
                 <div class="m_tab">
@@ -230,7 +231,7 @@
                                     </div>
                                     <div class="inner">
                                         <div class="caption">
-                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                            <p class="fz14 fb protitle">上海 - 香港 -吉隆坡 - 新加坡</p>
                                             <p class="fz12 gray prodesc mt5">
                                                 指定航次享6折优惠，同房第三/四位免船票费。
                                             </p>
@@ -490,10 +491,8 @@
                                         <p class="article_title">邂逅樱花，品棠梨煎雪</p>
                                         <p class="article_content">走起吗？让邮轮作为自己移动的家。我觉得这是旅游的最好方式！</p>
                                         <div class="tags">
-                                            <span>
-                                                <i class="inblock icon1"></i>广州出发</span>
-                                            <span>
-                                                <i class="inblock icon2"></i>世界梦号</span>
+                                            <span><span class="icon-local2 fz20 vm"></span> <span>广州出发</span></span>
+                                            <span><span class="icon-ship fz20 vm"></span> <span>世界梦号</span></span>
                                         </div>
                                     </div>
                                 </article>
@@ -503,10 +502,8 @@
                                         <p class="article_title">邂逅樱花，品棠梨煎雪</p>
                                         <p class="article_content">走起吗？让邮轮作为自己移动的家。我觉得这是旅游的最好方式！</p>
                                         <div class="tags">
-                                            <span>
-                                                <i class="inblock icon1"></i>广州出发</span>
-                                            <span>
-                                                <i class="inblock icon2"></i>世界梦号</span>
+                                            <span><span class="icon-local2 fz20 vm"></span> <span>广州出发</span></span>
+                                            <span><span class="icon-ship fz20 vm"></span> <span>世界梦号</span></span>
                                         </div>
                                     </div>
                                 </article>
@@ -516,10 +513,8 @@
                                         <p class="article_title">邂逅樱花，品棠梨煎雪</p>
                                         <p class="article_content">走起吗？让邮轮作为自己移动的家。我觉得这是旅游的最好方式！</p>
                                         <div class="tags">
-                                            <span>
-                                                <i class="inblock icon1"></i>广州出发</span>
-                                            <span>
-                                                <i class="inblock icon2"></i>世界梦号</span>
+                                            <span><span class="icon-local2 fz20 vm"></span> <span>广州出发</span></span>
+                                            <span><span class="icon-ship fz20 vm"></span> <span>世界梦号</span></span>
                                         </div>
                                     </div>
                                 </article>
@@ -540,7 +535,7 @@
             </div>
         </div>
         <!-- 特色活动 -->
-        <div class="section spactivity-bg" style="margin-top:-40px;">
+        <div class="section spactivity-bg">
 
             <div class="wrapper spactivity-wrapper">
                 <h2 class="title">特色活动</h2>
@@ -649,7 +644,7 @@
 
                 </div>
 
-                <div class="container pt-5 pb-5">
+                <div class="container">
 
                     <h2 class="section-header" data-aos="fade-up">星梦邮轮
                         <br />带着你的梦想起航</h2>
@@ -1184,7 +1179,7 @@
             <div class="panel-sea-bg-sky"></div>
         </div>
         <!-- 游轮百科 -->
-        <div class="section section-baike">
+        <div class="section section-baike hidden-sm">
             <div class="wrapper">
                 <h2 class="title">邮轮百科</h2>
                 <div class="ylbk_container custom_container">
@@ -1424,7 +1419,7 @@
                 <div class="pictitle tc">
                     <img src="../../images/logo-sc.png">
                 </div>
-                <div>
+                <div class="hidden-sm">
                     <div class="box bookicon fl">
                         <h4>企业出游</h4>
                         <p class="mb20">团建，答谢客户，星梦邮轮都是你的不二之选！</p>
@@ -2154,7 +2149,7 @@
             </div>
         </div>
     </div>
-    <div id="footer" class="footer">
+    <div id="footer" class="footer hidden-sm">
         <div class="footer_inner">
             <div class="wraper clearfloat">
                 <div class="reader_panel">
@@ -2328,6 +2323,6 @@
            </div>
         </div>
     </div>
-
+	<div class="mbottombar show-sm"></div>
 </body>
 </html>

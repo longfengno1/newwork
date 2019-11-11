@@ -452,7 +452,6 @@ b {
 
 .wraper {
 	max-width: 1200rem/$fit;
-	min-width:736rem/$fit;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -690,6 +689,7 @@ b {
 	border-radius: 7rem/$fit;
 	margin: 0 auto;
 	padding: 10rem/$fit 30rem/$fit;
+	overflow:hidden;
 }
 
 .reader_panel .title p {
@@ -1373,7 +1373,9 @@ b {
 	color:#fff;
 	background:#00b4be;
 }
-
+.show-sm{
+	display:none;
+}
 /* 大屏幕 */
 @media (min-width: 1200px) { 
 	.show-sm{
@@ -1399,11 +1401,21 @@ b {
 	.fr-sm{
 		float:right !important;
 	}
+	.header-bar .wraper{
+		background: url(../images/header-bg.png) center center no-repeat;
+		height:108rem/$fit;
+		background-color:#fff;
+		position:fixed;
+		width:100%;
+		top:0;
+		z-index:100;
+	}
 	.header-bar .logo-icon{
 		left:26rem/$fit;
 	}
 	.header-bar .header-bar-inner{
 		padding-top:36rem/$fit;
+		padding-left:0;
 	}
 	.menu-box-inner{
 		width: 40rem/$fit;
@@ -1430,6 +1442,16 @@ b {
 		top: 0rem/$fit;
 		left: 27rem/$fit;
 	}
+	.fz14{
+		font-size:28rem/$fit !important;
+	}
+	.fz12{
+		font-size:24rem/$fit !important;
+	}
+	.mt5{
+		margin-top:10rem/$fit;
+	}
+	
 }
  
 /* 横向放置的手机及分辨率更小的设备 */

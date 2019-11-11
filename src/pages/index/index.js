@@ -1,5 +1,5 @@
 import "../../js/common";
-import "./index.css";
+import "./index.scss";
 import "../../js/ui.base";
 import "../../js/gijgo.min";
 import "../../js/popper.min";
