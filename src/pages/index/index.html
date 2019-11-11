@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
     <script type="text/javascript">
             (function (doc, win) {
                 var docEl = doc.documentElement,
@@ -13,7 +13,7 @@
                             var clientWidth = docEl.clientWidth;
                             if (!clientWidth) return;
                             var fontSize = 17 * (clientWidth / 320);
-                            fontSize =Math.round((fontSize > 27) ? 27 : fontSize);
+                            fontSize =Math.round((fontSize > 40) ? 40 : fontSize);
                             docEl.style.fontSize = fontSize + 'px';
                             var dpi = window.devicePixelRatio;
                             docEl.setAttribute('data-dpi', dpi);
@@ -40,23 +40,27 @@
                     </div>
                     <div class="icon-close"></div>
                 </div>
-                <div class="message-box fl">
-                    <div class="icon-info"></div>
+                <div class="menu-box fl fr-sm show-sm">
+                    <div class="menu-box-inner"><span class="icon-menu"></span></div>
+                </div>
+                <div class="message-box fl fr-sm">
+                    <div class="icon-info"><span class="icon-waring"></span></div>
                     <div class="up-total-cur">99</div>
                 </div>
-                <div class="tel-box fl">
+                
+                <div class="tel-box fl hidden-sm">
                     <div class="tel-box-txt">
                         <i class="icon_tel inblock"></i>
                         <span class="fz24">4008 499 848</span>
                     </div>
                 </div>
-                <div class="login-box fr">
+                <div class="login-box fr hidden-sm">
                     <div class="btn-login">
                         <i class="icon_login"></i>注册/登陆</div>
                 </div>
             </div>
             <div id="navbar">
-                <ul class="navbar-menu">
+                <ul class="navbar-menu hidden-sm">
                     <li>
                         <a href="###">计划行程</a>
                     </li>
@@ -86,7 +90,7 @@
         </div>
     </div>
 
-    <div id="main" class="main" style="display:none;">
+    <div id="main" class="main">
         <div class="topbanner">
             <div class="wraper">
                 <div class="icon_berlitz"></div>
@@ -2150,7 +2154,7 @@
             </div>
         </div>
     </div>
-    <div id="footer" class="footer" style="display:none">
+    <div id="footer" class="footer">
         <div class="footer_inner">
             <div class="wraper clearfloat">
                 <div class="reader_panel">
