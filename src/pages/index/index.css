@@ -2342,3 +2342,43 @@
 .ourships-sea{
 	padding-bottom:37px;
 }
+
+.bg-pic{
+  background-image:url(../../images/pic.jpg)
+}
+
+.bg-pic1{
+  background-image:url(../../images/pic1.jpg);
+}
+
+.bg-sg{
+  background-image: url(../../images/bg-sg.jpg);
+}
+
+.bg-nb{
+  background-image: url(../../images/bg-nb.jpg);
+}
+
+.bg-ks{
+  background-image: url(../../images/bg-ks.jpg);
+}
+
+.bg-hk{
+  background-image: url(../../images/bg-hk.jpg);
+}
+
+.bg-hlb{
+  background-image: url(../../images/bg-hlb.jpg);
+}
+
+.bg-mk{
+  background-image: url(../../images/bg-mk.jpg);
+}
+
+.btn-apple{
+  background:url(../../images/btn_apple.png) no-repeat; width:116px; height:35px;
+}
+
+.btn-google{
+  background:url(../../images/btn_google.png) no-repeat; width:119px; height:35px;
+}
