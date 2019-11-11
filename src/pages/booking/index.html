@@ -328,15 +328,97 @@
             </div>
             <div class="room">
               <h4>房间1：海景客房</h4>
-                <div class="user-row">
-                  <label for="user1">乘客1</label>
-                  <div class="input-item"><input id='user1' type="text" class="" value="邹泉"><a class="edit">编辑</a></div>
-                  <label for="user2">乘客2</label>
-                  <div class="input-item"><input id='user2' type="text" class="" value="" placeholder="选择常用乘客"></div>
+              <div class="user-row">
+                <label for="user1">乘客1</label>
+                <div class="input-item"><input id='user1' type="text" class="" value="邹泉"><a class="edit">编辑</a></div>
+                <label for="user2">乘客2</label>
+                <div class="input-item"><input id='user2' type="text" class="" value="" placeholder="选择常用乘客"></div>
+              </div>
+              <div class="form">
+                <div class="form-row">
+                  <div class="form-item"><label for="">姓名</label><input class="short-input" type="text"
+                      placeholder="姓" /><input class="short-input" type="text" placeholder="名" /></div>
+                  <div class="form-item"><label>姓名全拼</label><input class="short-input" type="text"
+                      placeholder="姓拼音" /><input class="short-input" type="text" placeholder="名拼音" /></div>
                 </div>
-                <div class="form">
+                <div class="form-row">
+                  <div class="form-item"><label for="">国籍</label><select class="form-control long-input">
+                      <option>中国</option>
+                    </select></div>
+                  <div class="form-item"><label>出生日期</label><input class="long-input" type="text" value="1987/10/19" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">性别</label><select class="form-control short-input">
+                      <option>中国</option>
+                    </select><select class="form-control short-input">
+                      <option>中国</option>
+                    </select></div>
+                  <div class="form-item"><label>手机号</label><input class="long-input" type="text"
+                      value="178 8930 0028" /></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">居住地</label><select class="form-control short-input">
+                      <option>中国</option>
+                    </select><select class="form-control short-input">
+                      <option>中国</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件1</label></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件类型</label><select class="form-control long-input">
+                      <option>居民身份证</option></select>
+                  </div>
+                  <div class="form-item"><label for="">证件号码</label><input class="form-control long-input"
+                      value="690004198710197559">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件有效期</label><input class="long-input" type="text"
+                      value="1987/10/19" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件2</label></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件类型</label><select class="form-control long-input">
+                      <option>护照</option>
+                    </select>
+                  </div>
+                  <div class="form-item"><label for="">证件号码</label><input class="form-control long-input"
+                      value="690004198710197559">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件有效期</label><input class="long-input" type="text"
+                      value="1987/10/19" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件2</label></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件类型</label><select class="form-control long-input">
+                      <option>港澳通行证</option>
+                    </select>
+                  </div>
+                  <div class="form-item"><label for="">证件号码</label><input class="form-control long-input"
+                      value="690004198710197559">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-item"><label for="">证件有效期</label><input class="long-input" type="text"
+                      value="1987/10/19" />
+                  </div>
+                </div>
+                <div class="btns">
 
                 </div>
+              </div>
             </div>
           </div>
           <div class="right-container">
@@ -374,192 +456,347 @@
       </div>
       <!-- 核对信息 -->
       <div class="content" id='checkInfo'>
+        <div class="main-content">
+          <div class="left-container">
+            <h3>您的行程</h3>
+            <div class="white-container">
+              <h5>世界梦号 【限时优惠】广州-那霸-宫古岛-广州</h5>
+              <p>广州-海上巡游-那霸-宫古岛-海上巡游-广州</p>
+              <p>出发日期：2019-9-8 周日 广州出发 6天5晚</p>
+              <p class="fz12">星梦邮轮将向星梦套房以下房型每人每晚征收小费港币120元，星梦套房以上含星梦套房每人每晚征收小费港币150元;
+                两周岁以下（不含两周岁）婴孩免小费。邮轮小费将直接记录于个人舱房卡及帐单中，乘客需在离船当天或之前，前往中央大堂前台 / 接待处缴此小费及其他船上消费。星梦邮轮保留随时调整的权利。</p>
+              <p class="cred">请仔细阅读并同意以下细则才能继续</p>
+              <div class="row">
+                <a href="###" class="col-4 cgreen">[航行合约]</a>
+                <a href="###" class="col-4 cgreen tcenter">[重要提示]</a>
+                <a href="###" class="col-4 cgreen tright">[预订条款]</a>
+              </div>
+              <div class="form-group form-check mt20">
+                <input type="checkbox" class="form-check-input" id="styled-checkbox-2">
+                <label for="styled-checkbox-2">
+                  同意以上内容
+                </label>
+              </div>
+            </div>
+            <h3>联系人信息(重要)</h3>
+            <div class="white-container">
+              <div class="row">
+                <div class="col-4">
+                  <label for="user">姓名</label>
+                  <div class="input-item"><input id="user" type="text" class="" value="邹泉"></div>
+                </div>
+                <div class="col-4">
+                  <label for="tel">联系电话</label>
+                  <div class="input-item"><input id="tel" type="text" class="" value="178 8930 0028"></div>
+                </div>
+                <div class="col-4">
+                  <label for="email">Email</label>
+                  <div class="input-item"><input id="email" type="text" class="" value="zhouquan@163.com"></div>
+                </div>
+              </div>
+            </div>
+            <h3>乘客信息</h3>
+            <div class="white-container clearfloat" style="padding-right: 10px;">
+              <h4>房间1：海景客房 </h4>
+              <div class="guest-info">
+                <h5>乘客1：邹泉</h5>
+                <p>姓名拼音：ZHOU QUAN</p>
+                <p>国籍：中国</p>
+                <p>性别：男</p>
+                <p>联系电话：178 8930 0028</p>
+                <p class="cgreen">证件1</p>
+                <p>证件类型：居民身份证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件2</p>
+                <p>证件类型：护照</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件3</p>
+                <p>证件类型：港澳通行证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+              </div>
+              <div class="guest-info">
+                <h5>乘客1：邹泉</h5>
+                <p>姓名拼音：ZHOU QUAN</p>
+                <p>国籍：中国</p>
+                <p>性别：男</p>
+                <p>联系电话：178 8930 0028</p>
+                <p class="cgreen">证件1</p>
+                <p>证件类型：居民身份证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件2</p>
+                <p>证件类型：护照</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件3</p>
+                <p>证件类型：港澳通行证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+              </div>
+              <div class="guest-info">
+                <h5>乘客1：邹泉</h5>
+                <p>姓名拼音：ZHOU QUAN</p>
+                <p>国籍：中国</p>
+                <p>性别：男</p>
+                <p>联系电话：178 8930 0028</p>
+                <p class="cgreen">证件1</p>
+                <p>证件类型：居民身份证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件2</p>
+                <p>证件类型：护照</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件3</p>
+                <p>证件类型：港澳通行证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+              </div>
+              <div class="guest-info">
+                <h5>乘客1：邹泉</h5>
+                <p>姓名拼音：ZHOU QUAN</p>
+                <p>国籍：中国</p>
+                <p>性别：男</p>
+                <p>联系电话：178 8930 0028</p>
+                <p class="cgreen">证件1</p>
+                <p>证件类型：居民身份证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件2</p>
+                <p>证件类型：护照</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件3</p>
+                <p>证件类型：港澳通行证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+              </div>
 
-      </div>
-      <!-- 选择支付方式 -->
-      <div class="content" id='selectPay'>
+            </div>
+            <h3>发票信息</h3>
+            <div class="white-container">
 
-      </div>
-      <!-- 预定成功 -->
-      <div class="content" id="orderSuccess">
-
-      </div>
-    </div>
-  </div>
-  <div id="footer" class="footer">
-    <div class="footer_inner">
-      <div class="wraper clearfloat">
-        <div class="reader_panel">
-          <label class="title fl">
-            <p>电子阅读</p>
-            <p class="sub">立即订阅，不再错过任何优惠！</p>
-          </label>
-          <div class="input_box fl">
-            <input type="input" class="intxt" placeholder="请填写您的Email地址" />
-            <a class="send inblock" href="###">
-              <i class="arrow-right"></i>订阅</a>
+            </div>
           </div>
-          <p>我们承诺保护您的个人信息。
-            <br>提交您的请求前，请仔细阅读我们的
-            <a href="###">隐私政策</a>。</p>
-        </div>
-        <div class="linker">
-          <div class="linker-inner">
-            <ul>
-              <li class="tit">
-                <a href="###">快速链接</a>
-              </li>
-              <li>
-                <a href="###">邮轮航线</a>
-              </li>
-              <li>
-                <a href="###">客房及皇宫</a>
-              </li>
-              <li>
-                <a href="###">免费及特色餐厅</a>
-              </li>
-              <li>
-                <a href="###">常见问题</a>
-              </li>
-              <li>
-                <a href="###">下载邮轮手册</a>
-              </li>
-              <li>
-                <a href="###">媒体中心</a>
-              </li>
-              <li>
-                <a href="###">关于我们</a>
-              </li>
-              <li>
-                <a href="###">网站地图</a>
-              </li>
+          <div class="right-container">
+            <div class="main">
+              <h3>订单详情</h3>
+              <div class="order-info">
+                <p><span></span>
+                  <span class="name">世界梦号</span>
+                  <span>深圳出发</span>
+                  <span>6天5晚</span></p>
+                <p>广州 - 那霸 - 广州</p>
+                <p>2019-11-11至2019-11-18</p>
+              </div>
+              <div class="room-info">
+                <p>房间1</p>
+                <p><span>海景客房-单人入住</span><span class="detail">查看详情</span></p>
+                <p><span>面积：56-80m² </span><span class="delete">删除</span></p>
+              </div>
+              <div class="room-info">
+                <p>房间1</p>
+                <p><span>海景客房-单人入住</span><span class="detail">查看详情</span></p>
+                <p><span>面积：56-80m² </span><span class="delete">删除</span></p>
+              </div>
+              <div class="room-count">
+                <p><span>房间数：</span><span>2间</span></p>
+              </div>
+              <div class="btns">
+                <button type="button" class="btn pre">上一步</button><button type="button"
+                  class="btn next">下一步,填写乘客信息</button>
+              </div>
+            </div>
 
-            </ul>
-            <ul>
-              <li>
-                &nbsp;
-              </li>
-              <li>
-                <a href="###">条款与细则</a>
-              </li>
-              <li>
-                <a href="###">工作机会</a>
-              </li>
-              <li>
-                <a href="###">联系我们</a>
-              </li>
-              <li>
-                <a href="###">法律公告</a>
-              </li>
-              <li>
-                <a href="###">会奖旅游</a>
-              </li>
-              <li>
-                <a href="###">最新资讯</a>
-              </li>
-              <li>
-                <a href="###">会员福利</a>
-              </li>
-              <li>
-                <a href="###">友情链接</a>
-              </li>
-            </ul>
-            <ul>
-              <li class="tit">
-                <a href="###">目的地推荐</a>
-              </li>
-              <li>
-                <a href="###">冲绳</a>
-              </li>
-              <li>
-                <a href="###">下龙湾</a>
-              </li>
-              <li>
-                <a href="###">新加坡</a>
-              </li>
-              <li>
-                <a href="###">苏梅岛</a>
-              </li>
-              <li>
-                <a href="###">巴厘岛</a>
-              </li>
-            </ul>
           </div>
         </div>
-        <div class="contact_us fl">
-          <h4 class="title">联系我们</h4>
-          <ul>
-            <li>
-              <label>中国大陆</label>+86-4008499848
-            </li>
-            <li>
-              <label>中国香港</label>+86-4008499848
-            </li>
-            <li>
-              <label>新加坡</label>+86-4008499848
-            </li>
-            <li>
-              <label>槟城（马来西亚）</label>+604-2631128
-            </li>
-            <li>
-              <label>吉隆坡（马来西亚）</label>+603-2302-1288
-            </li>
-            <li>
-              <label>电子信息</label>reservations.en@gentingcruiselines.com
-            </li>
-          </ul>
+        <!-- 选择支付方式 -->
+        <div class="content" id='selectPay'>
 
         </div>
-      </div>
-      <div class="wraper">
-        <div class="logolinker">
-          <a class="inblock logo1" href="###">c1</a>
-          <a class="inblock logo2" href="###">c2</a>
-          <a class="inblock logo3" href="###">c3</a>
-          <a class="inblock logo4" href="###">c4</a>
-          <a class="inblock logo5" href="###">c5</a>
-          <a class="inblock logo6" href="###">c6</a>
-        </div>
-      </div>
-      <div class="wraper copytxt">
-        <p class="tc">沪ICP备16020645号-2 &copy;2018 Dream Cruises. All rights reserved.</p>
-      </div>
-      <div class="wraper">
-        <div class="fixed_plane">
-          <div class="fixed_plane_inner">
-            <ul>
-              <li class="service">
-                <a href="###">
-                  <div class="btn inblock">客服</div>
-                  <div class="pop">客服</div>
-                </a>
-              </li>
-              <li class="tel">
-                <a href="###">
-                  <div class="btn inblock">电话</div>
-                  <div class="pop">4008 499 848</div>
-                </a>
-              </li>
-              <li class="wx">
-                <a href="###">
-                  <div class="btn inblock">微信</div>
-                  <div class="pop">
-                    <div class="xapp"><img src="../../images/pic3.png" width="80" height="80"></div>
-                    <div class="qcode"><img src="../../images/pic2.png" width="80" height="80"></div>
-                  </div>
-                </a>
-              </li>
-              <li class="up">
-                <a href="###">
-                  <div class="btn inblock">up</div>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <!-- 预定成功 -->
+        <div class="content" id="orderSuccess">
+
         </div>
       </div>
     </div>
-  </div>
+    <div id="footer" class="footer">
+      <div class="footer_inner">
+        <div class="wraper clearfloat">
+          <div class="reader_panel">
+            <label class="title fl">
+              <p>电子阅读</p>
+              <p class="sub">立即订阅，不再错过任何优惠！</p>
+            </label>
+            <div class="input_box fl">
+              <input type="input" class="intxt" placeholder="请填写您的Email地址" />
+              <a class="send inblock" href="###">
+                <i class="arrow-right"></i>订阅</a>
+            </div>
+            <p>我们承诺保护您的个人信息。
+              <br>提交您的请求前，请仔细阅读我们的
+              <a href="###">隐私政策</a>。</p>
+          </div>
+          <div class="linker">
+            <div class="linker-inner">
+              <ul>
+                <li class="tit">
+                  <a href="###">快速链接</a>
+                </li>
+                <li>
+                  <a href="###">邮轮航线</a>
+                </li>
+                <li>
+                  <a href="###">客房及皇宫</a>
+                </li>
+                <li>
+                  <a href="###">免费及特色餐厅</a>
+                </li>
+                <li>
+                  <a href="###">常见问题</a>
+                </li>
+                <li>
+                  <a href="###">下载邮轮手册</a>
+                </li>
+                <li>
+                  <a href="###">媒体中心</a>
+                </li>
+                <li>
+                  <a href="###">关于我们</a>
+                </li>
+                <li>
+                  <a href="###">网站地图</a>
+                </li>
+
+              </ul>
+              <ul>
+                <li>
+                  &nbsp;
+                </li>
+                <li>
+                  <a href="###">条款与细则</a>
+                </li>
+                <li>
+                  <a href="###">工作机会</a>
+                </li>
+                <li>
+                  <a href="###">联系我们</a>
+                </li>
+                <li>
+                  <a href="###">法律公告</a>
+                </li>
+                <li>
+                  <a href="###">会奖旅游</a>
+                </li>
+                <li>
+                  <a href="###">最新资讯</a>
+                </li>
+                <li>
+                  <a href="###">会员福利</a>
+                </li>
+                <li>
+                  <a href="###">友情链接</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="tit">
+                  <a href="###">目的地推荐</a>
+                </li>
+                <li>
+                  <a href="###">冲绳</a>
+                </li>
+                <li>
+                  <a href="###">下龙湾</a>
+                </li>
+                <li>
+                  <a href="###">新加坡</a>
+                </li>
+                <li>
+                  <a href="###">苏梅岛</a>
+                </li>
+                <li>
+                  <a href="###">巴厘岛</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact_us fl">
+            <h4 class="title">联系我们</h4>
+            <ul>
+              <li>
+                <label>中国大陆</label>+86-4008499848
+              </li>
+              <li>
+                <label>中国香港</label>+86-4008499848
+              </li>
+              <li>
+                <label>新加坡</label>+86-4008499848
+              </li>
+              <li>
+                <label>槟城（马来西亚）</label>+604-2631128
+              </li>
+              <li>
+                <label>吉隆坡（马来西亚）</label>+603-2302-1288
+              </li>
+              <li>
+                <label>电子信息</label>reservations.en@gentingcruiselines.com
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="wraper">
+          <div class="logolinker">
+            <a class="inblock logo1" href="###">c1</a>
+            <a class="inblock logo2" href="###">c2</a>
+            <a class="inblock logo3" href="###">c3</a>
+            <a class="inblock logo4" href="###">c4</a>
+            <a class="inblock logo5" href="###">c5</a>
+            <a class="inblock logo6" href="###">c6</a>
+          </div>
+        </div>
+        <div class="wraper copytxt">
+          <p class="tc">沪ICP备16020645号-2 &copy;2018 Dream Cruises. All rights reserved.</p>
+        </div>
+        <div class="wraper">
+          <div class="fixed_plane">
+            <div class="fixed_plane_inner">
+              <ul>
+                <li class="service">
+                  <a href="###">
+                    <div class="btn inblock">客服</div>
+                    <div class="pop">客服</div>
+                  </a>
+                </li>
+                <li class="tel">
+                  <a href="###">
+                    <div class="btn inblock">电话</div>
+                    <div class="pop">4008 499 848</div>
+                  </a>
+                </li>
+                <li class="wx">
+                  <a href="###">
+                    <div class="btn inblock">微信</div>
+                    <div class="pop">
+                      <div class="xapp"><img src="../../images/pic3.png" width="80" height="80"></div>
+                      <div class="qcode"><img src="../../images/pic2.png" width="80" height="80"></div>
+                    </div>
+                  </a>
+                </li>
+                <li class="up">
+                  <a href="###">
+                    <div class="btn inblock">up</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 </body>
 

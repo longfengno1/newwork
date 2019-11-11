@@ -1,17 +1,18 @@
 @import '../../css/variables.scss';
 @import './orderRoom.scss';
 @import './fillInfo.scss';
+@import './checkInfo.scss';
 
 .order-main {
   min-height: 100vh;
   background-color: #f7fcfc;
-  padding-bottom: 300px;
 }
 
 .order {
   width: 1200px;
   margin: 0 auto;
   padding-top: 20px;
+  padding-bottom: 300px;
 }
 
 .product-name {
