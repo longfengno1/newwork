@@ -19,6 +19,13 @@ let getHtmlConfig = function (name, chunks) {
             collapseWhitespace: true,
             removeComments: true
         },
+        meta:{
+            'viewport':"width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover",
+            'applicable-device':'mobile',
+            "format-detection":"telephone=no",
+            "full-screen":"yes",
+            "x5-fullscreen":"true"
+        }
     };
 };
 
