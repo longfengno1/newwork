@@ -6,6 +6,9 @@
     font-weight: 400;
     padding: 20px 0 20px 20px;
   }
+  .mb20{
+    margin-bottom: 20px;
+  }
 
   .main-content {
     display: flex;
@@ -56,6 +59,10 @@
       p.cred{
         color: #FF5050;
         margin-top: 25px;
+      }
+
+      p.mb8{
+        margin-bottom: 8px;
       }
 
       .tcenter{
@@ -112,13 +119,14 @@
 
     label {
       font-size: 14px;
-      color: #343E57;
-      margin-bottom: 0;
+      color: #666;
+      margin-bottom: 8px;
+      margin-right: 50px;
     }
 
     input {
       padding-left: 20px;
-      width: 200px;
+      margin-right: 5px;
       border: none;
       border: 1px solid #D0D7DF;
       border-radius: 2px;
