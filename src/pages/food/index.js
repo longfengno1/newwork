@@ -1,2 +1,4 @@
 import "../../js/common";
-import "./index.css";
+import "./index.scss";
+import '../../bootstrap/css/bootstrap.css';
+import '../../css/global2.scss';

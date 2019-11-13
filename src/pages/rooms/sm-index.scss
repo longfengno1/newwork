@@ -1,6 +1,6 @@
 @import '../../css/variables.scss';
 
-.sm-fleetintro01 {
+.sm-rooms {
   min-height: 100vh;
   width: 100vw;
   font-family: Helvetica;
@@ -55,6 +55,7 @@
       font-size: 32rem/$fit;
       color: #343E57;
       cursor: pointer;
+      font-weight: 300;
     }
     .active{
       color: #00969E;
@@ -69,7 +70,7 @@
     display: flex;
     margin: 0 24rem/$fit;
     padding: 24rem/$fit 0;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1rem/$fit solid #CCCCCC;
   }
   .room-img{
     background: url(../../images/prodetail_pic.jpg) no-repeat center;
