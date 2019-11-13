@@ -1406,7 +1406,7 @@ b {
 /* 横向放置的手机和竖向放置的平板之间的分辨率 */
 @media (max-width: 767px) {
 	.show-sm{
-		display:block;
+		display:initial;
 	}
 	.hidden-sm{
 		display:none;

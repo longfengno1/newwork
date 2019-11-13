@@ -4,10 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Fleet Introduction</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../../css/global.css">
-    <link rel="stylesheet" type="text/css" href="../fleetIntroduction01/index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+							
+                            var fontSize = 20 * (clientWidth / 320);
+                            fontSize =Math.round((fontSize > 40) ? 40 : fontSize);
+                            docEl.style.fontSize = fontSize + 'px';
+                            var dpi = window.devicePixelRatio;
+                            docEl.setAttribute('data-dpi', dpi);
+                        };
+                recalc();
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+            })(document, window);
+        </script>
 </head>
 
 <body>
@@ -15,7 +31,7 @@
         <div class="wraper">
             <a class="logo-icon inblock" href="###">星梦邮轮</a>
             <div class="header-bar-inner">
-                <div class="search-input-box fl">
+                <div class="search-input-box fl hidden-sm">
                     <label class="label-search tc" for="search-input">
                     	   <span class="icon-search white"></span>
                         <div class="step"></div>
@@ -25,23 +41,27 @@
                     </div>
                     <div class="icon-close"></div>
                 </div>
-                <div class="message-box fl">
-                    <div class="icon-info"></div>
+                <div class="menu-box fl fr-sm show-sm">
+                    <div class="menu-box-inner"><span class="icon-menu"></span></div>
+                </div>
+                <div class="message-box fl fr-sm">
+                    <div class="icon-info"><span class="icon-waring"></span></div>
                     <div class="up-total-cur">99</div>
                 </div>
-                <div class="tel-box fl">
+                
+                <div class="tel-box fl hidden-sm">
                     <div class="tel-box-txt">
                         <i class="icon_tel inblock"></i>
                         <span class="fz24">4008 499 848</span>
                     </div>
                 </div>
-                <div class="login-box fr">
+                <div class="login-box fr hidden-sm">
                     <div class="btn-login">
                         <i class="icon_login"></i>注册/登陆</div>
                 </div>
             </div>
             <div id="navbar">
-                <ul class="navbar-menu">
+                <ul class="navbar-menu hidden-sm">
                     <li>
                         <a href="###">计划行程</a>
                     </li>
@@ -74,16 +94,16 @@
     <div id="main" class="fleetintro">
     	<div class="topbanner">
             <div class="wraper">
-                <div class="maintab">
+                <div class="maintab hidden-sm">
                 	<ul class="tabs">
                       <li>世界梦号</li>
                       <li class="current">云顶梦号</li>
                       <li>探索梦号</li>
                     </ul>
                </div>
-               <div class="crumb clearfloat"><a href="###" class="fl green">首页 / 星梦船队</a>
+               <div class="crumb clearfloat hidden-sm"><a href="###" class="fl green">首页 / 星梦船队</a>
                <a href="###" class="fr p5_0"><span class="icon-share green" style="font-size:18px"></span></a></div>
-               <div class="topbanner_plane mt30">
+               <div class="topbanner_plane">
                <div class="content">
                <div class="info">
                	<ul class="row">
@@ -92,13 +112,16 @@
                 	</ul>
                </div>
                <div class="text_box">
-                   <h1>云顶梦号</h1>
+                   <h1><span class="icon-ship show-sm mr10"></span>云顶梦号</h1>
                    <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
-                   <p style="margin-top:25px;"><a href="###" class="btn-styleA" style="position:relative;z-index:9">下载手册</a></p>
+                   <p style="margin-top:25px;" class="hidden-sm"><a href="###" class="btn-styleA" style="position:relative;z-index:9">下载手册</a></p>
                </div>
                </div>
-               <div class="ship" style="top:140px;">
+               <div class="ship ship02">
                	<img src="../../images/genting_dream.png"/>
+                  <div class="ship-intro">
+                  	<div class="btn-icon ship-icon" style="left:0px;top:0"><div class="inner"><span class="icon-ship"></span></div></div>
+                  </div>
                 	<div class="btn-icon" style="left: 580px;top: 50px;"><div class="inner"><span class="icon-sea"></span></div>
                     <div class="open">
                       	<div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
@@ -111,7 +134,7 @@
                          <p class="title">享受您的完美假期！</p>
                          <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span class="icon-arrowright2"></span></a></p>
                       </div></div>
-                  <div class="btn-icon artive" style="left: 480px;top: 170px;">
+                  <div class="btn-icon" style="left: 480px;top: 170px;">
                   	<div class="inner"><span class="icon-bad"></span></div>
                   	<div class="open">
                       	<div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
@@ -139,15 +162,13 @@
                          <p class="title">享受您的完美假期！</p>
                          <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span class="icon-arrowright2"></span></a></p>
                       </div></div>
-                  <div class="ship-intro">
-                  	<div class="btn-icon ship-icon" style="left:0px;top:0"><div class="inner"><span class="icon-ship"></span></div></div>
-                  </div>
+                  
                </div>
-               <button class="btn-prev"><span class="icon-arrowleft"></span></button>
-               <button class="btn-next"><span class="icon-arrowright"></span></button>
+               <button class="btn-prev hidden-sm"><span class="icon-arrowleft"></span></button>
+               <button class="btn-next hidden-sm"><span class="icon-arrowright"></span></button>
                </div>
            </div>
-        <div class="intro-ribbonship"></div>
+        <div class="intro-ribbonship hidden-sm"></div>
         
         </div>
         <div class="section mt30">
@@ -370,8 +391,8 @@
             <p class="tc mt20"><a href="###" class="btn-styleD">预定旅程</a></p>
         </div>
     </div>
-    <div style="height:100px;"></div>
-    <div id="footer" class="footer">
+    <div class="hidden-sm" style="height:100px;"></div>
+    <div id="footer" class="footer hidden-sm">
         <div class="footer_inner">
             <div class="wraper clearfloat">
                 <div class="reader_panel">
@@ -548,9 +569,6 @@
     </div>
 
 </body>
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/popper.min.js"></script>
-<script src="../../bootstrap/js/bootstrap.js"></script>
 <script>
 $(".topbanner_plane .ship .btn-icon").click(function(){
 	$(".topbanner_plane .ship .btn-icon").removeClass("artive");
