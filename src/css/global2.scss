@@ -1380,6 +1380,15 @@ b {
 .show-sm{
 	display:none;
 }
+.mbottombar{
+	background:url(../images/mbottombar@2x.png) left bottom no-repeat;
+	background-size:100%;
+	width: 100%;
+	position:fixed;
+    height: 132rem/$fit;
+    bottom: 0;
+	z-index:100;
+}
 /* 大屏幕 */
 @media (min-width: 1200px) { 
 	.show-sm{

@@ -774,6 +774,9 @@
   border-top-left-radius: 5rem/$fit;
   border-top-right-radius: 5rem/$fit;
 }
+.hotthread .item .thread .pic img{
+	width:100%;
+}
 .hotthread .pic_title{
 	position:absolute;
 	left:0;
