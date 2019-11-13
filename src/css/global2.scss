@@ -1443,10 +1443,16 @@ b {
 		left: 27rem/$fit;
 	}
 	.fz14{
+		font-size:26rem/$fit !important;
+	}
+	.fz16{
 		font-size:28rem/$fit !important;
 	}
 	.fz12{
-		font-size:24rem/$fit !important;
+		font-size:22rem/$fit !important;
+	}
+	.fz20{
+		font-size:30rem/$fit !important;
 	}
 	.mt5{
 		margin-top:10rem/$fit;

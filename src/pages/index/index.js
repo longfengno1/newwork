@@ -1,4 +1,4 @@
-import "../../js/common";
+import "../../js/common2";
 import "./index.scss";
 import "../../js/ui.base";
 import "../../js/gijgo.min";

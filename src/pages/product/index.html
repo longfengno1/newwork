@@ -4,10 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Product</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../../css/global.scss">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+							
+                            var fontSize = 20 * (clientWidth / 320);
+                            fontSize =Math.round((fontSize > 40) ? 40 : fontSize);
+                            docEl.style.fontSize = fontSize + 'px';
+                            var dpi = window.devicePixelRatio;
+                            docEl.setAttribute('data-dpi', dpi);
+                        };
+                recalc();
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+            })(document, window);
+        </script>
 </head>
 
 <body>
@@ -15,8 +31,9 @@
         <div class="wraper">
             <a class="logo-icon inblock" href="###">星梦邮轮</a>
             <div class="header-bar-inner">
-                <div class="search-input-box fl">
-                    <label class="icon-search" for="search-input">
+                <div class="search-input-box fl hidden-sm">
+                    <label class="label-search tc" for="search-input">
+                    	   <span class="icon-search white"></span>
                         <div class="step"></div>
                     </label>
                     <div class="search-input">
@@ -24,23 +41,27 @@
                     </div>
                     <div class="icon-close"></div>
                 </div>
-                <div class="message-box fl">
-                    <div class="icon-info"></div>
+                <div class="menu-box fl fr-sm show-sm">
+                    <div class="menu-box-inner"><span class="icon-menu"></span></div>
+                </div>
+                <div class="message-box fl fr-sm">
+                    <div class="icon-info"><span class="icon-waring"></span></div>
                     <div class="up-total-cur">99</div>
                 </div>
-                <div class="tel-box fl">
+                
+                <div class="tel-box fl hidden-sm">
                     <div class="tel-box-txt">
                         <i class="icon_tel inblock"></i>
                         <span class="fz24">4008 499 848</span>
                     </div>
                 </div>
-                <div class="login-box fr">
+                <div class="login-box fr hidden-sm">
                     <div class="btn-login">
                         <i class="icon_login"></i>注册/登陆</div>
                 </div>
             </div>
             <div id="navbar">
-                <ul class="navbar-menu">
+                <ul class="navbar-menu hidden-sm">
                     <li>
                         <a href="###">计划行程</a>
                     </li>
@@ -71,14 +92,14 @@
     </div>
 
     <div id="main" class="product-main">
-        <div class="proinfo">
+        <div class="proinfo hidden-sm">
             <div class="wraper">
                 <h2 class="prodetailtitle">世界梦号 【限时优惠】广州-那霸（冲绳岛）-宫古岛-广州-海上巡游-蛇口</h2>
                 <div class="row no-gutters">
                     <div class="propic col-auto">
                         <img src="../../images/prodetail_pic@2x.jpg" width="450" height="300" />
                     </div>
-                    <div class="proinfo col-md-auto">
+                    <div class="proinfop col-md-auto">
                         <div class="info">
                             <ul>
                                 <li class="priceinfop base_price">
@@ -154,16 +175,66 @@
                 </div>
             </div>
         </div>
+        <div class="proinfo show-sm">
+            <div class="wraper">
+                <div class="">
+                    <div class="propic">
+                    		<div class="returnbtn"><span class="icon-arrowleft"></span></div>
+                        <img src="../../images/prodetail_pic@2x.jpg" />
+                    </div>
+                    <div class="proinfop">
+                    	<h2 class="prodetailtitle">世界梦号 【限时优惠】广州-那霸（冲绳岛）-宫古岛-广州-海上巡游-蛇口</h2>
+                        <div class="info">
+                            <ul>
+                                <li class="triplist">
+                                    <ol class="list clearfloat">
+                                        <li><span>D1</span>蛇口 - </li>
+                                        <li><span>D2</span>海上巡游 - </li>
+                                        <li><span>D3</span>那霸 - </li>
+                                        <li><span>D4</span>广州 - </li>
+                                        <li><span>D5</span>蛇口 - </li>
+                                        <li><span>D6</span>宫古岛 - </li>
+                                        <li><span>D7</span>海上巡游 - </li>
+                                        <li><span>D8</span>海上巡游 - </li>
+                                        <li><span>D9</span>那霸</li>
+
+                                    </ol>
+                                </li>
+                                <li class="proinfoli"><span class="green mr10"><span class="icon-ship"></span> 世界梦号</span> <span
+                                        class="departure">深圳出发</span> <span class="days">6天5晚</span></li>
+                                <li class="saletags">
+                                		<ol class="list clearfloat">
+                                        <li><span class="icon-gift"></span>买一送一</li>
+                                        <li><span class="icon-sale3"></span>买二送二</li>
+                                        <li><span class="icon-free"></span>第三位免费</li>
+                                        <li><span class="icon-sale2"></span>限时闪促</li>
+                                    </ol>
+                                		<span class="more icon-arrowdown"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottombar show-sm">
+        	<div class="date_box">
+            <a class="btn-styleE fr" href="###">立即预定</a>
+            <p class="label">出行日期</p>
+            <p class="val">2019-12-22</p>
+            
+        	</div>
+            
+        </div>
         <div class="probar wraper mt20">
-            <ul class="bartags fl">
-                <li><a href="#tag1" class="current"><span>行程介绍</span></a></li>
-                <li><a href="#tag2"><span>预定须知</span></a></li>
-                <li><a href="#tag3"><span>签证</span></a></li>
-                <li><a href="#tag4"><span>船上活动</span></a></li>
-                <li><a href="#tag5"><span>岸上观光</span></a></li>
-                <li><a href="#tag5"><span>游记攻略</span></a></li>
-            </ul>
-            <div class="select_date fr">
+        	<div class="select_date  show-sm">
+                <div class="date_box">
+                    <p class="label">出行日期</p>
+                    <p class="val">2019-12-22</p>
+                </div>
+                <a href="###" class="buttom btn-styleE">选择日期</a>
+            </div>
+        	<div class="select_date fr hidden-sm">
                 <div class="date_box">
                     <i class="icon_cal"></i>
                     2019-12-22 (周二)
@@ -173,11 +244,32 @@
                 </div>
                 <a href="###" class="btn_nowbuy">立即预定</a>
             </div>
+            <ul class="bartags fl">
+                <li><a href="#tag1" class="current"><span>行程介绍</span></a></li>
+                <li><a href="#tag2"><span>预定须知</span></a></li>
+                <li><a href="#tag3"><span>签证</span></a></li>
+                <li><a href="#tag4"><span>船上活动</span></a></li>
+                <li><a href="#tag5"><span>岸上观光</span></a></li>
+                <li><a href="#tag5"><span>游记攻略</span></a></li>
+            </ul>
+            
         </div>
         <div class="prointo mt20">
+        	<div class="dayslist show-sm">
+            
+            <ul>
+            	<li><a href="###" class="current">D1</a></li>
+                <li><a href="###">D2</a></li>
+                <li><a href="###">D3</a></li>
+                <li><a href="###">D4</a></li>
+                <li><a href="###">D5</a></li><li><a href="###">D6</a></li>
+            </ul>
+            
+            
+           </div>
             <div id="tag1" class="wraper">
                 <div class="row no-gutters">
-                    <div class="col-auto leftlist">
+                    <div class="col-auto leftlist hidden-sm">
                         <h3><span>行程详情</span></h3>
                         <ul>
                             <li class="current">航程概览</li>
@@ -192,7 +284,7 @@
                     </div>
                     <div class="col content">
                         <div>
-                            <table cellpadding="0" cellspacing="0" class="table_style1">
+                            <table cellpadding="0" cellspacing="0" class="table_style1  hidden-sm">
                                 <tr>
                                     <th>日期</th>
                                     <th>国家/城市</th>
@@ -310,11 +402,11 @@
                     </div>
                 </div>
             </div>
-            <div class="wraper" style="padding-left:60px;">
+            <div class="wraper pl60">
                 <div class="setp_line " id="tag2"></div>
                 <h3 class="fz20 tc">预定须知</h3>
-                <div class="row no-gutters mt30 fz16 t_lh_28p">
-                    <div class="col mr40">
+                <div class="row  mt30 fz16 t_lh_28p">
+                    <div class="col">
                         <p class="green mb15">云顶邮轮 - 自由行旅客政策 (适用於 2018 年 7 月 1 日起预订之航程)</p>
                         <p>付款时间表</p>
                         <p>预订时 (信用卡付款)</p>
@@ -334,7 +426,7 @@
                                 如需分舱至新客房，新客房将被视作全新的预订，并按当时适用之价格收费。</li>
                         </ul>
                     </div>
-                    <div class="col-auto ml40" style="width:436px;">
+                    <div class="col">
                         <p class="green mb15">附注（适用于自由行旅客之预订）：</p>
                         <p class="gray9">于特别假期出发的航班，将征收舱房费全费之 100% 作为取消预订的手续费。
                             如更改原有客房的所有乘客名单，将视作取消，而新预订须支付现行的舱房费。 本公司将根据取消政策的规定征收取消预订的手续费。
@@ -347,7 +439,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wraper mt30" style="padding-left:60px;">
+            <div class="wraper mt30 pl60">
                 <div class="setp_line " id="tag3"></div>
                 <h3 class="fz20 tc">旅游证件及签证</h3>
                 <div class="mt30 fz16 t_lh_28p">
@@ -405,7 +497,7 @@
                 <div class="setp_line " id="tag4"></div>
 
                 <div class="row no-gutters">
-                    <div class="col-auto leftlist">
+                    <div class="col-auto leftlist hidden-sm">
                         <h3><span>船上活动</span></h3>
                         <ul>
                             <li class="current">养生健康</li>
@@ -476,7 +568,7 @@
                 <div class="setp_line " id="tag5"></div>
 
                 <div class="row no-gutters">
-                    <div class="col-auto leftlist">
+                    <div class="col-auto leftlist hidden-sm">
                         <h3><span>岸上观光</span></h3>
                         <ul>
                             <li class="current">那霸</li>
@@ -491,7 +583,7 @@
                             <h4 class="local_title">那霸</h4>
                             <ul class="visitlist mt20">
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img2.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img2.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -500,7 +592,7 @@
                                     <p class="tr"><a href="###" class="btn-stye1">了解详情</a></p>
                                 </li>
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img2.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img2.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -509,7 +601,7 @@
                                     <p class="tr"><a href="###" class="btn-stye1">了解详情</a></p>
                                 </li>
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img2.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img2.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -524,7 +616,7 @@
                             <h4 class="local_title">宫古岛</h4>
                             <ul class="visitlist mt20">
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img1.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img1.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -533,7 +625,7 @@
                                     <p class="tr"><a href="###" class="btn-stye1">了解详情</a></p>
                                 </li>
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img1.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img1.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -542,7 +634,7 @@
                                     <p class="tr"><a href="###" class="btn-stye1">了解详情</a></p>
                                 </li>
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img1.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img1.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -557,7 +649,7 @@
                             <h4 class="local_title">越南</h4>
                             <ul class="visitlist mt20">
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img2.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img2.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -566,7 +658,7 @@
                                     <p class="tr"><a href="###" class="btn-stye1">了解详情</a></p>
                                 </li>
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img2.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img2.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -575,7 +667,7 @@
                                     <p class="tr"><a href="###" class="btn-stye1">了解详情</a></p>
                                 </li>
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img2.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img2.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -590,7 +682,7 @@
                             <h4 class="local_title">苏北克湾</h4>
                             <ul class="visitlist mt20">
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img3.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img3.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -599,7 +691,7 @@
                                     <p class="tr"><a href="###" class="btn-stye1">了解详情</a></p>
                                 </li>
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img2.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img2.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -608,7 +700,7 @@
                                     <p class="tr"><a href="###" class="btn-stye1">了解详情</a></p>
                                 </li>
                                 <li>
-                                    <div class="pic"><img src="../../images/overlay-img4.png" width="230" height="160">
+                                    <div class="pic"><img src="../../images/overlay-img4.png" >
                                     </div>
                                     <p class="title">鲸鱼观赏鱼野生生物探索</p>
                                     <p class="desc">近距离接触大型生物的自然之美，你会发现巨大的鲸鱼也有它的可爱之处。</p>
@@ -624,7 +716,7 @@
                 </div>
             </div>
             
-            <div class="wraper mt30" style="padding-left:60px;">
+            <div class="wraper mt30 pl60">
                 <div class="setp_line " id="tag6"></div>
                 <h3 class="fz20 tc">游记攻略</h3>
                 <div class="travelslist mt40">
@@ -869,8 +961,8 @@
                     </div>
                 </div>
     </div>
-    <div style="height:140px;"></div>
-    <div id="footer" class="footer">
+    <div class="hidden-sm" style="height:140px;"></div>
+    <div id="footer" class="footer hidden-sm">
         <div class="footer_inner">
             <div class="wraper clearfloat">
                 <div class="reader_panel">
@@ -1008,7 +1100,7 @@
             <div class="wraper copytxt">
                 <p class="tc">沪ICP备16020645号-2 &copy;2018 Dream Cruises. All rights reserved.</p>
             </div>
-            <div class="wraper">
+            <div class="wraper hidden-sm">
                 <div class="fixed_plane">
                     <div class="fixed_plane_inner">
                         <ul>
