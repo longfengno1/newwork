@@ -4,71 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <title>登录</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 320);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+
+  </script>
 </head>
 
 <body>
-  <div id="header" class="header-bar">
-    <div class="wraper">
-      <a class="logo-icon inblock" href="###">星梦邮轮</a>
-      <div class="header-bar-inner">
-        <div class="search-input-box fl">
-          <label class="icon-search" for="search-input">
-            <div class="step"></div>
-          </label>
-          <div class="search-input">
-            <input type="text" class="int-txt" id="search-input" />
-          </div>
-          <div class="icon-close"></div>
-        </div>
-        <div class="message-box fl">
-          <div class="icon-info"></div>
-          <div class="up-total-cur">99</div>
-        </div>
-        <div class="tel-box fl">
-          <div class="tel-box-txt"><i class="icon_tel inblock"></i>
-            <span class="fz24">4008 499 848</span>
-          </div>
-        </div>
-        <div class="login-box fr">
-          <div class="btn-login"><i class="icon_login"></i>注册/登陆</div>
-        </div>
-      </div>
-      <div id="navbar">
-        <ul class="navbar-menu">
-          <li>
-            <a href="###">计划行程</a>
-          </li>
-          <li>
-            <a href="###">优惠及特色活动</a>
-          </li>
-          <li>
-            <a href="###">星梦船队</a>
-          </li>
-          <li>
-            <a href="###">邮轮生活</a>
-          </li>
-          <li>
-            <a href="###">游记攻略</a>
-          </li>
-          <li>
-            <a href="###">航程管理</a>
-          </li>
-          <li>
-            <a href="###">客户服务</a>
-          </li>
-          <li>
-            <a href="###">星梦荟</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  #include('../../common/header.html')
 
-  <div id="main" class="main list-main">
+  <div id="main" class="main list-main hidden-sm">
     <h1 class="list-title">世界梦号 华丽梦「赏」 Super Show</h1>
     <div class="calendar-container">
       <div class="calendar-row">
-      <span class="calendar" id="show-calendar">邮轮日历</span>
+        <span class="calendar" id="show-calendar">邮轮日历<span class="icon" id="calendar-icon" /></span>
       </div>
       <div class="travel_calendar_bd" id='travel_calendar'>
         <div class="t2">
@@ -670,7 +637,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="list">
       <div class="left-container">
         <div class="select-header clearfloat">
@@ -774,7 +741,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -831,7 +798,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -888,7 +855,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -945,7 +912,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -1002,7 +969,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -1059,7 +1026,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -1116,7 +1083,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -1173,7 +1140,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -1230,7 +1197,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -1287,7 +1254,7 @@
                   <span class="date-list-item">9月30日</span>
                   <span class="date-list-item">9月30日</span>
                 </div>
-                <span class="date-list-item date-list-item-more">更多</span>
+                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
               </div>
               <div class="price">
                 <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
@@ -1318,13 +1285,13 @@
         <div class="page">
           <span class="page-count">共10页 当前为第1页</span>
           <div class="pagination">
-            <span class="pagination-item"></span>
+            <span class="pagination-item"><span class="icon-arrowleft2"></span></span>
             <span class="pagination-item active-item">1</span>
             <span class="pagination-item">2</span>
             <span class="pagination-item">3</span>
             <span class="pagination-item">...</span>
             <span class="pagination-item">10</span>
-            <span class="pagination-item"></span>
+            <span class="pagination-item"><span class="icon-arrowright21"></span></span>
             <span class="pagination-input"></span>
             <span class="pagination-item">GO</span>
           </div>
@@ -1332,181 +1299,162 @@
       </div>
     </div>
   </div>
-  <div id="footer" class="footer">
-    <div class="footer_inner">
-      <div class="wraper clearfloat">
-        <div class="reader_panel">
-          <label class="title fl">
-            <p>电子阅读</p>
-            <p class="sub">立即订阅，不再错过任何优惠！</p>
-          </label>
-          <div class="input_box fl">
-            <input type="input" class="intxt" placeholder="请填写您的Email地址" />
-            <a class="send inblock" href="###">
-              <i class="arrow-right"></i>订阅</a>
+  <div class="show-sm sm-main">
+    <div class="select-container">
+      <div class="select-item" id='select-port'><img src="../../images/sm-port.png" alt=""><span>出发港口</span></div>
+      <div class="select-item" id='select-place'><img src="../../images/sm-place.png" alt=""><span>目的地</span></div>
+      <div class="select-item" id="select-day"><img src="../../images/sm-day.png" alt=""><span>行程天数</span></div>
+      <div class="select-item" id="select-discount"><img src="../../images/sm-discount.png" alt=""><span>优惠代码</span>
+      </div>
+    </div>
+    <div id="select-place-row">
+      <span class="tag">广州</span>
+      <span class="tag">日本</span>
+      <span class="tag">宫古岛</span>
+      <span class="tag">澳大利亚</span>
+      <span class="tag">澳大利亚</span>
+      <span class="tag">澳大利亚</span></div>
+    <div class="select-tags">
+      <div class="title">
+        <span>筛选标签</span><img src="../../images/sm-delete.png" />
+      </div>
+      <div class="tags">
+        <span class="tag">广州</span>
+        <span class="tag">8天9晚</span>
+        <span class="tag">NGYH123TY</span>
+        <span class="tag">日本</span>
+      </div>
+      <div class="button-row">
+        <span class="button">确认</span>
+      </div>
+    </div>
+    <div class="content">
+      <h3>热门标签</h3>
+      <div class="hot-tags">
+        <span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+        <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+        <span class="hot-tag"><span class="icon-free"></span>第三位免费</span>
+        <span class="hot-tag"><span class="icon-spring1"></span>跨年</span>
+        <span class="hot-tag"><span class="icon-sale2"></span>限时促销</span>
+        <span class="hot-tag"><span class="icon-spring2"></span>春节</span>
+      </div>
+      <div class="tip">本页面展示的价格为在售四人房型的船票和港务税费的人均起价，如需了解价格定义请详见<span>价格说明</span></div>
+    </div>
+    <div class="city-product">
+      <div class="city">广州</div>
+      <div class="product">
+        <div class="product-row">
+          <div class="product-img">
+            <span class="img-tag">世界梦号</span>
           </div>
-          <p>我们承诺保护您的个人信息。
-            <br>提交您的请求前，请仔细阅读我们的
-            <a href="###">隐私政策</a>。</p>
+          <div class="product-detail">
+            <p class="product-name">世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</p>
+            <p class="desc">深圳出发 6天5晚</p>
+            <p class="date">出发日期：2019-12-09/2020-03-01/
+              2020-03-28等 <span>28</span>个出发日期</p>
+            <div class="price-row">
+              <div class="price-text">
+                <span><span class="price">¥2999</span>&nbsp;起/人</span>
+                <span class="old">参考价：<span>¥3699</span></span>
+              </div>
+              <span class="check-detail">查看详情</span>
+            </div>
+          </div>
         </div>
-        <div class="linker">
-          <div class="linker-inner">
-            <ul>
-              <li class="tit">
-                <a href="###">快速链接</a>
-              </li>
-              <li>
-                <a href="###">邮轮航线</a>
-              </li>
-              <li>
-                <a href="###">客房及皇宫</a>
-              </li>
-              <li>
-                <a href="###">免费及特色餐厅</a>
-              </li>
-              <li>
-                <a href="###">常见问题</a>
-              </li>
-              <li>
-                <a href="###">下载邮轮手册</a>
-              </li>
-              <li>
-                <a href="###">媒体中心</a>
-              </li>
-              <li>
-                <a href="###">关于我们</a>
-              </li>
-              <li>
-                <a href="###">网站地图</a>
-              </li>
+        <div class="product-tags">
+          <div><span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+            <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+            <span class="hot-tag"><span class="icon-free"></span>第三位免费</span></div>
+          <span class="icon-arrowdown"></span>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-row">
+          <div class="product-img">
+            <span class="img-tag">世界梦号</span>
+          </div>
+          <div class="product-detail">
+            <p class="product-name">世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</p>
+            <p class="desc">深圳出发 6天5晚</p>
+            <p class="date">出发日期：2019-12-09/2020-03-01/
+              2020-03-28等 <span>28</span>个出发日期</p>
+            <div class="price-row">
+              <div class="price-text">
+                <span><span class="price">¥2999</span>&nbsp;起/人</span>
+                <span class="old">参考价：<span>¥3699</span></span>
+              </div>
+              <span class="check-detail">查看详情</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-tags">
+          <div><span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+            <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+            <span class="hot-tag"><span class="icon-free"></span>第三位免费</span></div>
+          <span class="icon-arrowdown"></span>
+        </div>
+      </div>
+    </div>
+    <div class="city-product">
+      <div class="city">香港</div>
 
-            </ul>
-            <ul>
-              <li>
-                &nbsp;
-              </li>
-              <li>
-                <a href="###">条款与细则</a>
-              </li>
-              <li>
-                <a href="###">工作机会</a>
-              </li>
-              <li>
-                <a href="###">联系我们</a>
-              </li>
-              <li>
-                <a href="###">法律公告</a>
-              </li>
-              <li>
-                <a href="###">会奖旅游</a>
-              </li>
-              <li>
-                <a href="###">最新资讯</a>
-              </li>
-              <li>
-                <a href="###">会员福利</a>
-              </li>
-              <li>
-                <a href="###">友情链接</a>
-              </li>
-            </ul>
-            <ul>
-              <li class="tit">
-                <a href="###">目的地推荐</a>
-              </li>
-              <li>
-                <a href="###">冲绳</a>
-              </li>
-              <li>
-                <a href="###">下龙湾</a>
-              </li>
-              <li>
-                <a href="###">新加坡</a>
-              </li>
-              <li>
-                <a href="###">苏梅岛</a>
-              </li>
-              <li>
-                <a href="###">巴厘岛</a>
-              </li>
-            </ul>
+      <div class="product">
+        <div class="product-row">
+          <div class="product-img">
+            <span class="img-tag">世界梦号</span>
+          </div>
+          <div class="product-detail">
+            <p class="product-name">世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</p>
+            <p class="desc">深圳出发 6天5晚</p>
+            <p class="date">出发日期：2019-12-09/2020-03-01/
+              2020-03-28等 <span>28</span>个出发日期</p>
+            <div class="price-row">
+              <div class="price-text">
+                <span><span class="price">¥2999</span>&nbsp;起/人</span>
+                <span class="old">参考价：<span>¥3699</span></span>
+              </div>
+              <span class="check-detail">查看详情</span>
+            </div>
           </div>
         </div>
-        <div class="contact_us fl">
-          <h4 class="title">联系我们</h4>
-          <ul>
-            <li>
-              <label>中国大陆</label>+86-4008499848
-            </li>
-            <li>
-              <label>中国香港</label>+86-4008499848
-            </li>
-            <li>
-              <label>新加坡</label>+86-4008499848
-            </li>
-            <li>
-              <label>槟城（马来西亚）</label>+604-2631128
-            </li>
-            <li>
-              <label>吉隆坡（马来西亚）</label>+603-2302-1288
-            </li>
-            <li>
-              <label>电子信息</label>reservations.en@gentingcruiselines.com
-            </li>
-          </ul>
+        <div class="product-tags">
+          <div><span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+            <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+            <span class="hot-tag"><span class="icon-free"></span>第三位免费</span></div>
+          <span class="icon-arrowdown"></span>
+        </div>
+      </div>
 
-        </div>
-      </div>
-      <div class="wraper">
-        <div class="logolinker">
-          <a class="inblock logo1" href="###">c1</a>
-          <a class="inblock logo2" href="###">c2</a>
-          <a class="inblock logo3" href="###">c3</a>
-          <a class="inblock logo4" href="###">c4</a>
-          <a class="inblock logo5" href="###">c5</a>
-          <a class="inblock logo6" href="###">c6</a>
-        </div>
-      </div>
-      <div class="wraper copytxt">
-        <p class="tc">沪ICP备16020645号-2 &copy;2018 Dream Cruises. All rights reserved.</p>
-      </div>
-      <div class="wraper">
-        <div class="fixed_plane">
-          <div class="fixed_plane_inner">
-            <ul>
-              <li class="service">
-                <a href="###">
-                  <div class="btn inblock">客服</div>
-                  <div class="pop">客服</div>
-                </a>
-              </li>
-              <li class="tel">
-                <a href="###">
-                  <div class="btn inblock">电话</div>
-                  <div class="pop">4008 499 848</div>
-                </a>
-              </li>
-              <li class="wx">
-                <a href="###">
-                  <div class="btn inblock">微信</div>
-                  <div class="pop">
-                    <div class="xapp"><img src="../../images/pic3.png" width="80" height="80"></div>
-                    <div class="qcode"><img src="../../images/pic2.png" width="80" height="80"></div>
-                  </div>
-                </a>
-              </li>
-              <li class="up">
-                <a href="###">
-                  <div class="btn inblock">up</div>
-                </a>
-              </li>
-            </ul>
+      <div class="product">
+        <div class="product-row">
+          <div class="product-img">
+            <span class="img-tag">世界梦号</span>
           </div>
+          <div class="product-detail">
+            <p class="product-name">世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</p>
+            <p class="desc">深圳出发 6天5晚</p>
+            <p class="date">出发日期：2019-12-09/2020-03-01/
+              2020-03-28等 <span>28</span>个出发日期</p>
+            <div class="price-row">
+              <div class="price-text">
+                <span><span class="price">¥2999</span>&nbsp;起/人</span>
+                <span class="old">参考价：<span>¥3699</span></span>
+              </div>
+              <span class="check-detail">查看详情</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-tags">
+          <div><span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+            <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+            <span class="hot-tag"><span class="icon-free"></span>第三位免费</span></div>
+          <span class="icon-arrowdown"></span>
         </div>
       </div>
     </div>
   </div>
-
+  #include('../../common/footer.html')
+  <div class="mbottombar show-sm"></div>
 </body>
 
 </html>

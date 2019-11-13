@@ -1,4 +1,5 @@
 @import '../../css/variables.scss';
+@import './sm-index.scss';
 
 .row {
   margin: 0;
@@ -32,6 +33,10 @@
     font-size: 16px;
     color: #343E57;
     cursor: pointer;
+    .icon{
+      margin-left: 20px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -244,6 +249,9 @@
       color: #00969E;
       border-color: #00969E;
       cursor: pointer;
+      .icon-arrowdown{
+        margin-left: 10px;
+      }
     }
 
     .price {
@@ -847,4 +855,22 @@
 .t2_td .hover .t2_td_schedule .i_caret {
   background-position: -10px -18px;
   top: 7px;
+}
+
+.show-sm {
+    display: block;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
+
+@media (max-width: 767px){
+  .show-sm {
+    display: block;
+  }
+
+  .hidden-sm {
+    display: none;
+  }
 }
