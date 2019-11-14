@@ -1,0 +1,106 @@
+@import '../../css/variables.scss';
+
+.sm-rooms {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: Helvetica;
+  position: relative;
+  padding-top: 172rem/$fit;
+  .header{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 84rem/$fit;
+    width: 100vw;
+    color: #ffffff;
+    background-color: #00969E;
+    font-size: 32rem/$fit;
+    color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    .icon-arrowleft{
+      position: absolute;
+      left: 36rem/$fit;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+  .scroll-bar{
+    z-index: 2;
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 84rem/$fit;
+    height: 88rem/$fit;
+    width: 100vw;
+    box-shadow: 0 4rem/$fit 8rem/$fit 0 rgba(0, 0, 0, 0.05);
+    border-radius: 8rem/$fit 8rem/$fit 0 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    .items{
+      display: flex;
+      min-width: 100%;
+    }
+    .scroll-item{
+      margin-left: 50rem/$fit;
+      height: 88rem/$fit;
+      line-height: 88rem/$fit;
+      font-size: 32rem/$fit;
+      color: #343E57;
+      cursor: pointer;
+      font-weight: 300;
+    }
+    .active{
+      color: #00969E;
+      border-bottom: 3rem/$fit solid #00969E;
+    }
+  }
+  .rooms{
+    overflow-y: scroll;
+	padding-top:164rem/$fit;
+  }
+  .room-item{
+    width: auto;
+    display: flex;
+    margin: 0 24rem/$fit;
+    padding: 24rem/$fit 0;
+    border-bottom: 1rem/$fit solid #CCCCCC;
+  }
+  .room-img{
+    background: url(../../images/prodetail_pic.jpg) no-repeat center;
+    width: 294rem/$fit;
+    height: 165rem/$fit;
+    position: relative;
+    flex-shrink: 0;
+    span{
+      display: inline-block;
+      position: absolute;
+      font-size: 24rem/$fit;
+      color: #F0F0F0;
+      letter-spacing: 0;
+      left: 20rem/$fit;
+      bottom: 10rem/$fit;
+    }
+  }
+  .room-content{
+    flex: 1;
+    padding-left: 18rem/$fit;
+    .title{
+      font-size: 34rem/$fit;
+      color: #343E57;
+    }
+  }
+  .area,.people{
+    margin-top: 12rem/$fit;
+    font-size: 26rem/$fit;
+    color: #6D6D6D;
+    font-weight: 300;
+  }
+}

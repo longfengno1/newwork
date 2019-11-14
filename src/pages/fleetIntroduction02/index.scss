@@ -374,6 +374,10 @@
 	padding:0 20rem/$fit;
 	margin-top:11rem/$fit;
 }
+.stylemb{
+	margin-top:57rem/$fit; margin-bottom:50rem/$fit;
+}
+
 /* 大屏幕 */
 @media (min-width: 1200px) { 
 	
@@ -402,6 +406,7 @@
 	}
 	.topbanner{
 		background:none;
+		height:auto;
 	}
 	.topbanner .content{
 		padding: 200rem/$fit 30rem/$fit 0 30rem/$fit;
@@ -409,6 +414,7 @@
 	}
 	.topbanner_plane{
 		margin-top:0;
+		height:auto;
 	}
 	.topbanner_plane .ship{
 		text-align:center;
@@ -473,11 +479,153 @@
 	.topbanner_plane .ship-intro:before{
 		display:none;
 	}
-	.probanner img{
-		width:100%;
-	}
+	
 	.section{
 		background:#fff;
+	}
+	.prolist .inner{
+		background:#fff;
+		padding:20rem/$fit 0;
+		margin:0 20rem/$fit;
+		border-top:1px solid #ccc;
+		
+	}
+	.prolist li:first-child .inner{
+		border-top:0;
+	}
+	.prolist .inner .pic{
+		float:left;
+		margin-right:30rem/$fit;
+		height:auto;
+		width:44%;
+	}
+	.section01{
+		margin-top:30rem/$fit;
+		border-radius:8rem/$fit;
+		padding-top:40rem/$fit;
+		position:relative;
+	}
+	.section01:after{
+		content:"";
+		opacity: 0.2;
+		background: #343E57;
+		border-radius: 4rem/$fit;
+		width:80rem/$fit;
+		height:8rem/$fit;
+		position:absolute;
+		left:50%;
+		margin-left:-40rem/$fit;
+		top:15rem/$fit;
+	}
+	.col-4{
+		width:100%;
+		display:block;
+		flex:auto;
+		max-width:none;
+	}
+	
+	.prolist .pic, .prolist .pic img{
+		width:100%;
+	}
+	.prolist .protitle{
+		text-align:left;
+		margin-top:10rem/$fit !important;
+		font-size:28rem/$fit;
+		margin-bottom:10rem/$fit;
+	}
+	.prowraper{
+		width:100%;
+	}
+	.section01 .prolist{
+		margin-top:0 !important;
+	}
+	.prolist .infos .item{
+		font-size:20rem/$fit;
+		line-height:40rem/$fit;
+		color: #6D6D6D;
+		font-weight: 300;
+	}
+	.mbar ul{
+		width:100%;
+		overflow:hidden;
+		clear:both;
+	}
+	.mbar li{
+		width:33%;
+		float:left;
+		text-align:center;
+		font-size:24rem/$fit;
+	}
+	.mbar li a{
+		display:inline-block;
+		height:50rem/$fit;
+	}
+	.mbar li .current{
+		color:#00969E;
+		border-bottom:2px solid #00969E;
+	}
+	.probanner img{
+		height:315rem/$fit;
+	}
+	.probanner .artion-box{
+		left:40rem/$fit;
+		top:25rem/$fit;
+	}
+	.intro-ribbon{
+		width:100%;
+		background-size:100% auto;
+		height:300rem/$fit;
+		margin-top:-85rem/$fit;
+	}
+	.sm-youlist-wraper .title{
+		text-align:left;
+		font-size:30rem/$fit;
+		color:#383838;
+		padding-left:20rem/$fit;
+		margin-top:20rem/$fit;
+	}
+	.sm-youlist-wraper .youlist-s{
+		position:relative;
+		height:500rem/$fit;
+		overflow:scroll;
+		overflow-y:hidden;
+	}
+	.sm-youlist-wraper .youlist{
+		position:absolute;
+		height:460rem/$fit;
+		width:1820rem/$fit;
+	}
+	.sm-youlist-wraper .youlist .pic{
+		width:100%;
+		border-radius:6rem/$fit;
+	}
+	.sm-youlist-wraper .youlist li{
+		width:450rem/$fit;
+		float:left;
+		padding-left:20rem/$fit;
+	}
+	.sm-youlist-wraper .youlist .inner{
+		background:#fff;
+		margin-bottom:0;
+	}
+	.sm-youlist-wraper .youlist .protitle{
+		font-size:24rem/$fit;
+		color:#383838;
+	}
+	.sm-youlist-wraper .youlist .desc{
+		color:#666666;
+		font-size:20rem/$fit;
+	}
+	.sm-youlist-wraper .youlist .pic .tags{
+		font-size:22rem/$fit;
+		padding-top:40rem/$fit;
+	}
+	.btn-return{
+		color:#fff;
+		position:absolute;
+		top:30rem/$fit;
+		left:30rem/$fit;
+		font-size:30rem/$fit;
 	}
 }
  

@@ -1,25 +1,25 @@
-@import '../../css/variables.scss';
+
 
 .topbanner{
-	background:url(../../images/intro.jpg) center -110rem/$fit no-repeat;
-	height:676rem/$fit;
+	background:url(../../images/intro.jpg) center -110px no-repeat;
+	height:676px;
 	position:relative;
 	color:#343E57;
 }
 .topbanner .content{
-	padding:0 77rem/$fit;
+	padding:0 77px;
 }
 .topbanner .btn-prev,
 .topbanner .btn-next
 {
-	width:40rem/$fit;
-	height:40rem/$fit;
+	width:40px;
+	height:40px;
 	position:absolute;
 	background:#fff;
 	border-radius:50%;
 	border:0;
-	top:35rem/$fit;
-	font-size:20rem/$fit;
+	top:35px;
+	font-size:20px;
 	color:#00969E;
 }
 .topbanner .btn-prev:focus,
@@ -37,15 +37,15 @@
 	right:0;
 }
 .maintab{
-	height:40rem/$fit;
+	height:40px;
 	background: rgba(0,0,0,0.10);
 }
 .crumb{
-	line-height:24rem/$fit;
-	height:24rem/$fit;
+	line-height:24px;
+	height:24px;
 }
 .crumb a{
-	font-size: 14rem/$fit;
+	font-size: 14px;
 	color: #20969A;
 }
 .crumb a:hover{
@@ -53,20 +53,20 @@
 }
 .maintab .tabs{
 	margin:0 auto;
-	width:720rem/$fit;
-	height:40rem/$fit;
+	width:720px;
+	height:40px;
 	background:#000;
 }
 .maintab .tabs li{
-	background:url(../../images/wlogo.png) 70rem/$fit center no-repeat;
+	background:url(../../images/wlogo.png) 70px center no-repeat;
 	float:left;
-	font-size: 14rem/$fit;
+	font-size: 14px;
 	color: #FFFFFF;
-	width:240rem/$fit;
-	height:40rem/$fit;
-	line-height:40rem/$fit;
-	padding-left:115rem/$fit;
-	background-size:27rem/$fit 26rem/$fit;
+	width:240px;
+	height:40px;
+	line-height:40px;
+	padding-left:115px;
+	background-size:27px 26px;
 	opacity:0.7;
 }
 .maintab .tabs .current{
@@ -88,38 +88,39 @@
 	position:relative;
 }
 .topbanner_plane .info{
-	width:470rem/$fit;
+	width:470px;
 	float:right;
+	
 }
 .topbanner_plane .info li{
-	border-right:1rem/$fit solid #618AA1;
-	font-size:32rem/$fit;
-	line-height:32rem/$fit;
-	padding:22rem/$fit 0;
+	border-right:1px solid #618AA1;
+	font-size:32px;
+	line-height:32px;
+	padding:22px 0;
 }
 .topbanner_plane .info li:last-child{
 	border:none;
 }
 .topbanner_plane .content h1{
-	font-size:28rem/$fit;
-	line-height:32rem/$fit;
-	margin-bottom:5rem/$fit;
+	font-size:28px;
+	line-height:32px;
+	margin-bottom:5px;
 }
 .topbanner_plane .content p{
-	font-size:16rem/$fit;
-	line-height:32rem/$fit;
+	font-size:16px;
+	line-height:32px;
 }
 .topbanner_plane .text_box{
-	width:398rem/$fit;
+	width:398px;
 }
 .topbanner_plane .ship{
 	position:absolute;
-	top:110rem/$fit;
+	top:110px;
 	right:0;
 }
 .intro-ribbonship{
 	background:url(../../images/intro-ribbonship.png) center top no-repeat;
-	height:155rem/$fit;
+	height:155px;
 	position:absolute;
 	left:0;
 	bottom:0;
@@ -130,13 +131,13 @@
 	background:rgba(255,255,255,0.5);
 	display:block;
 	position:absolute;
-	height:48rem/$fit;
-	width:48rem/$fit;
-	padding:3rem/$fit;
+	height:48px;
+	width:48px;
+	padding:3px;
 	border-radius:50%;
 	color:#fff;
-	font-size:24rem/$fit;
-	line-height:42rem/$fit;
+	font-size:24px;
+	line-height:42px;
 	text-align:center;
 	cursor:pointer;
 }
@@ -146,10 +147,10 @@
 	content:"";
 	background: #80CDCA;
 	background-image: linear-gradient(212deg, #15989D 0%, #301F42 100%, #301F42 200%);
-	height:42rem/$fit;
-	width:42rem/$fit;
+	height:42px;
+	width:42px;
 	border-radius:50%;
-	line-height:42rem/$fit;
+	line-height:42px;
 	overflow:hidden;
 	text-align:center;
 }
@@ -184,135 +185,135 @@
 }
 .topbanner_plane .ship-intro{
 	position:absolute;
-	top: -124rem/$fit;
-    right: 627rem/$fit;
-	height:206rem/$fit;
+	top: -124px;
+    right: 627px;
+	height:206px;
 }
 .topbanner_plane .ship-intro:after{
 	content:"";
 	position:absolute;
-	height:152rem/$fit;
-	width:2rem/$fit;
+	height:152px;
+	width:2px;
 	background: #343E57;
-	top:45rem/$fit;
-	left:23rem/$fit;
+	top:45px;
+	left:23px;
 }
 .topbanner_plane .ship-intro:before{
 	content:"";
 	position:absolute;
 	bottom:0;
-	left:20rem/$fit;
-	width:9rem/$fit;
-	height:9rem/$fit;
+	left:20px;
+	width:9px;
+	height:9px;
 	border-radius:50%;
 	background: #343E57;
 }
 .topbanner_plane .ship .btn-icon .open{
 	background:url(../../images/icon_open@2x.png) center center no-repeat;
 	position:absolute;
-	width:183rem/$fit;
-	height:179rem/$fit;
+	width:183px;
+	height:179px;
 	background-size:100% 100%;
-	padding:6rem/$fit 6rem/$fit 12rem/$fit 6rem/$fit;
+	padding:6px 6px 12px 6px;
 	display:none;
-	bottom:20rem/$fit;
-	left:-190rem/$fit;
+	bottom:20px;
+	left:-190px;
 	z-index:9;
 }
 .topbanner_plane .ship .artive .open{
 	display:block;
 }
 .topbanner_plane .ship .btn-icon .open .pic{
-	border-radius:4rem/$fit;
-	width:166rem/$fit;
-	height:102rem/$fit;
+	border-radius:4px;
+	width:166px;
+	height:102px;
 	overflow:hidden;
 }
 .topbanner_plane .ship .btn-icon .open .title{
-	font-size:12rem/$fit;
+	font-size:12px;
 	color:#fff;
-	line-height:16rem/$fit;
-	height:16rem/$fit;
-	margin-top:8rem/$fit;
+	line-height:16px;
+	height:16px;
+	margin-top:8px;
 }
 .topbanner_plane .ship .btn-icon .open .btn-box{
-	line-height:28rem/$fit;
-	padding-right:6rem/$fit;
+	line-height:28px;
+	padding-right:6px;
 }
 .section .title{
-	font-size:40rem/$fit;
+	font-size:40px;
 	text-align:center;
 }
 .prowraper{
-	width:1140rem/$fit
+	width:1140px
 }
 .prolist .inner{
 	background: #FBFAF9;
-	padding-bottom:16rem/$fit;
-	margin-bottom:30rem/$fit;
-	font-size:14rem/$fit;
+	padding-bottom:16px;
+	margin-bottom:30px;
+	font-size:14px;
 	overflow:hidden;
 }
 .prolist .pic,
 .prolist .pic img{
-	width:360rem/$fit;
+	width:360px;
 }
 .prolist .pic{
-	height:200rem/$fit;
+	height:200px;
 	overflow:hidden;
 }
 .prolist .protitle{
-	font-size:20rem/$fit;
-	line-height:32rem/$fit;
+	font-size:20px;
+	line-height:32px;
 	text-align:center;
 }
 .prolist .desc{
-	margin:18rem/$fit 16rem/$fit;
-	padding:18rem/$fit 0 ;
-	border: 1rem/$fit solid #B8C4CB;
-	border-width:1rem/$fit 0;
+	margin:18px 16px;
+	padding:18px 0 ;
+	border: 1px solid #B8C4CB;
+	border-width:1px 0;
 }
 .prolist .infos{
-	padding:0 16rem/$fit ;
+	padding:0 16px ;
 }
 .prolist .infos .item{
 	width:50%;
 	float:left;
-	line-height:28rem/$fit;
+	line-height:28px;
 }
 .probanner{
 	position:relative;
 }
 .probanner .artion-box{
-	width:280rem/$fit;
-	height:280rem/$fit;
+	width:280px;
+	height:280px;
 	background: rgba(0,0,0,0.30);
 	position:absolute;
-	left:136rem/$fit;
-	top:54rem/$fit;
-	padding:42rem/$fit 0 42rem/$fit 23rem/$fit;
+	left:136px;
+	top:54px;
+	padding:42px 0 42px 23px;
 }
 .probanner .artion-box .title{
-	font-size: 36rem/$fit;
+	font-size: 36px;
 	color: #FFFFFF;
-	letter-spacing: 6.4rem/$fit;
+	letter-spacing: 6.4px;
 	text-align:left;
 }
 .probanner .artion-box .subtitle{
-	font-size: 19rem/$fit;
+	font-size: 19px;
 	color: #FFFFFF;
-	margin-top:10rem/$fit;
+	margin-top:10px;
 }
 .probanner .artion-box .btn-box{
 	position:absolute;
-	bottom:42rem/$fit;
+	bottom:42px;
 }
 .intro-ribbon{
 	background:url(../../images/ribbon-destinations.png) center top no-repeat;
-	height:493rem/$fit;
+	height:493px;
 	pointer-events:none;
-	margin-top:-215rem/$fit;
-	margin-bottom:-160rem/$fit;
+	margin-top:-215px;
+	margin-bottom:-160px;
 	position:relative;
 }
 .prolistB .inner{
@@ -331,11 +332,11 @@
 	width:100%;
 }
 .youlist-wraper{
-	width:1182rem/$fit;
+	width:1182px;
 }
 .youlist .pic{
-	width:576rem/$fit;
-	height:324rem/$fit;
+	width:576px;
+	height:324px;
 	overflow:hidden;
 	position:relative;
 }
@@ -343,29 +344,29 @@
 	width:100%;
 	position:absolute;
 	bottom:0;
-	height:82rem/$fit;
+	height:82px;
 	background:url(../../images/you_rectangle.png) repeat-x;
 	color:#fff;
-	font-size:16rem/$fit;
-	padding-top:46rem/$fit;
-	padding-left:20rem/$fit;
+	font-size:16px;
+	padding-top:46px;
+	padding-left:20px;
 }
 .youlist .pic .tags [class^="icon-"], 
 .youlist .pic .tags [class*=" icon-"]{
-	margin-right:8rem/$fit;
+	margin-right:8px;
 }
 .youlist .inner{
 	background:#FEFAEF;
-	padding-bottom:17rem/$fit;
-	margin-bottom:30rem/$fit;
+	padding-bottom:17px;
+	margin-bottom:30px;
 }
 .youlist .protitle{
-	font-size:18rem/$fit;
-	padding:0 20rem/$fit;
-	margin-top:20rem/$fit;
+	font-size:18px;
+	padding:0 20px;
+	margin-top:20px;
 }
 .youlist .desc{
-	font-size:12rem/$fit;
-	padding:0 20rem/$fit;
-	margin-top:11rem/$fit;
+	font-size:12px;
+	padding:0 20px;
+	margin-top:11px;
 }
