@@ -247,7 +247,7 @@
 	padding-right:6rem/$fit;
 }
 .section .title{
-	font-size:40rem/$fit;
+	font-size:28rem/$fit;
 	text-align:center;
 }
 .prowraper{
@@ -269,13 +269,13 @@
 	overflow:hidden;
 }
 .prolist .protitle{
-	font-size:20rem/$fit;
-	line-height:32rem/$fit;
+	font-size:16rem/$fit;
+	line-height:16rem/$fit;
 	text-align:center;
 }
 .prolist .desc{
-	margin:18rem/$fit 16rem/$fit;
-	padding:18rem/$fit 0 ;
+	margin:10rem/$fit 16rem/$fit;
+	padding:10rem/$fit 0 ;
 	border: 1rem/$fit solid #B8C4CB;
 	border-width:1rem/$fit 0;
 }
@@ -364,7 +364,7 @@
 .youlist .inner{
 	background:#FEFAEF;
 	padding-bottom:17rem/$fit;
-	margin-bottom:30rem/$fit;
+	/*margin-bottom:30rem/$fit;*/
 }
 .youlist .protitle{
 	font-size:18rem/$fit;

@@ -1,7 +1,5 @@
-import "../../js/common";
+import "../../js/common2";
 import "./index.scss";
-import '../../bootstrap/css/bootstrap.css';
-import '../../css/global2.scss';
 
 (function () {
   $(".topbanner_plane .ship .btn-icon").click(function () {

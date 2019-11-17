@@ -1192,6 +1192,13 @@
 		top: 37rem/$fit_m;
 		color: #fff;
 	}
+	.propic .favbtn {
+		position: absolute;
+		font-size: 40rem/$fit_m;
+		right: 37rem/$fit_m;
+		top: 37rem/$fit_m;
+		color: #fff;
+	}
 	.propic{
 		overflow: hidden;
 		height: 470rem/$fit_m;
@@ -1414,21 +1421,12 @@
 		color: #6D6D6D;
 	}
 
-	.prointo .visitlist li {
-		height: auto;
-		overflow: hidden;
-		padding-left: 0;
-	}
-
 	.prointo .visitlist .pic {
 		margin: 0;
 		margin-right: 20rem/$fit;
 	}
 
-	.visitlist li .pic img {
 
-		height: 180rem/$fit;
-	}
 
 	.prointo .local_title {
 		background-size: auto 100%;
@@ -1520,25 +1518,24 @@
 		border-top: 1rem/$fit solid #ccc;
 		background: #fff;
 		width: 100%;
-		height: 100rem/$fit;
+		height: 88rem/$fit_m;
 		position: fixed;
 		bottom: 0;
 		left: 0;
 		z-index: 100;
 	}
 
-	.bottombar .date_box {
-		padding: 15rem/$fit 15rem/$fit 15rem/$fit 20rem/$fit;
-	}
+	
 
 	.bottombar .date_box .label {
-		font-size: 22rem/$fit;
+		font-size: 34rem/$fit_m;
 		color: #ccc;
 	}
 
 	.bottombar .date_box .val {
-		font-size: 26rem/$fit;
+		font-size: 34rem/$fit_m;
 		color: #F8485E;
+		line-height: 88rem/$fit_m;
 	}
 
 	.bottombar .btn-styleE {
@@ -1546,6 +1543,24 @@
 		padding: 15rem/$fit 30rem/$fit;
 		font-size: 28rem/$fit;
 	}
+	.bottombar .btn-money{
+		width: 88rem/$fit_m;
+		border-right:1px solid #00969E;
+		text-align: center;
+		box-sizing: border-box;
+		padding-bottom: 5rem/$fit_m;
+		font-size: 18rem/$fit_m;
+		color: #00969E;
+		line-height: 2;
+		margin-right: 50rem/$fit_m;
+	}
+	.bottombar .btn-money .icon{
+		background: url("../../images/money@2x.png") center bottom no-repeat;
+		background-size: 45rem/$fit_m;
+		height: 47rem/$fit_m;
+		width: 88rem/$fit_m;
+	}
+
 	.table_style1{
 		width: 100%;
 		border: 0;
@@ -1585,6 +1600,232 @@
 	.prointo .tag3_content{
 		padding: 0 32rem/$fit_m;
 	}
+	.prointo .tag4_content .box-sm  .pic-sm{
+		text-align:center;
+		height: 185rem/$fit_m;
+		width: 100%;
+		overflow: hidden;
+	}
+	.prointo .tag4_content .content{
+		padding: 15rem/$fit_m;
+	}
+	.prointo .tag4_content .box-sm{
+		display: block;
+		float: left;
+		position: relative;
+		width: 50%;
+		margin: 0 !important;
+		padding: 15rem/$fit_m;
+	}
+	.prointo .tag4_content .box-sm h4{
+		font-size: 26rem/$fit_m;
+		line-height: 50rem/$fit_m;
+		color: #383838;
+	}
+	.prointo .tag4_content .box-sm p{
+		color:#6D6D6D;
+		font-size: 24rem/$fit_m;
+		height: 68rem/$fit_m;
+		line-height: 34rem/$fit_m;
+		overflow: hidden;
+		text-overflow: -o-ellipsis-lastline;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		-webkit-box-orient: vertical;
+		
+	}
+	.prointo .tag4_content .box-sm p.hidden-sm{
+		display: none;
+	}
+	.tag5_content{
+		padding: 0 32rem/$fit_m !important;
+	}
+	.prointo .visitlist li {
+		height: 258rem/$fit_m;
+		overflow: hidden;
+		padding-left: 0;
+		margin-bottom: 0;
+		background: #F8F8F8;
+		border-bottom:1px solid #D8D8D8 ;
+	}
+	.prointo .visitlist li .title{
+		font-size: 30rem/$fit_m;
+		color: #383838;
+		line-height: 34rem/$fit_m;
+		margin-bottom: 14rem/$fit_m;
+	}
+	.prointo .visitlist li .desc{
+		font-size: 24rem/$fit_m;
+		color: #6D6D6D;
+		line-height: 34rem/$fit_m;
+	}
+	.prointo .visitlist li .pic img {
+		width: 294rem/$fit_m;
+		height: 194rem/$fit_m;
+	}
+	.prointo .visitlist li .pricebtn{
+		position: static;
+	}
+	.prointo .visitlist li .pricebtn .base_price{
+		text-align: left;
+		font-family: MEllePRC-Medium;
+		font-size: 24rem/$fit_m;
+		color: #999999;
+		margin-top: 40rem/$fit_m;
+	}
+	.prointo .visitlist li .pricebtn .base_price dfn,
+	.prointo .visitlist li .pricebtn .base_price .price
+	{ 
+		font-size: 38rem/$fit_m;
+	}
+	.prointo .visitlist li .pricebtn .btn-stye1{
+		display: none;
+	}
+		
+
+	.hotthread .item .thread .pic {
+		height: 346rem/$fit;
+	}
+
+	.m_tab {
+		margin-right: 20rem/$fit;
+		width: auto;
+	}
+
+	.hotthread .item ul li {
+		display: block;
+		height: auto;
+		width: 100%;
+		margin: 0 32rem/$fit_m 32rem/$fit_m;
+	}
+	.hotthread .item ul li:last-child{
+		margin-bottom: 100rem/$fit_m;
+	}
+	.hotthread .item{
+		padding: 0 32rem/$fit_m;
+	}
+	.hotthread .item .inner{
+		box-sizing: border-box;
+	}
+	.hotthread .item .inner .m_base_price{
+		text-align: center;
+		position: relative;
+		top:-32rem/$fit_m;
+	}
+	.hotthread .item .thread .tip {
+		border-bottom-left-radius: 20rem/$fit_m;
+		width: 132rem/$fit_m;
+		height: 40rem/$fit_m;
+		line-height: 40rem/$fit_m;
+		font-size: 22rem/$fit_m;
+
+		background: #F8485E;
+		border-radius: 0 6px 0 6px;
+		margin-top: 32rem/$fit_m;
+	}
+	.hotthread .item .thread .pic .icon_tags{
+		display: none;
+	}
+	.m_tab .tab_item {
+		float: right;
+		position: relative;
+		margin-left: 20rem/$fit;
+		width: 180rem/$fit;
+		height: 60rem/$fit;
+		line-height: 60rem/$fit;
+		font-size: 24rem/$fit;
+		color: #383838;
+		cursor: pointer;
+		border: 1rem/$fit solid #d0d7df;
+		border-radius: 7rem/$fit;
+		background: #fff;
+
+	}
+
+	.m_tab .tab_item:hover,
+	.m_tab .current {
+		color: #fff;
+		background: #00969E;
+	}
+
+	.hotthread .pic_title {
+		height: 24rem/$fit;
+		line-height: 24rem/$fit;
+		padding: 0 12rem/$fit;
+		font-size: 24rem/$fit;
+		display: none;
+	}
+
+	.hotthread .item .thread {
+		line-height: 1;
+		border-radius: 10rem/$fit_m;
+		overflow: hidden;
+	}
+
+	.hotthread .tags {
+		height: 30rem/$fit;
+		padding: 10rem/$fit;
+		display: none;
+	}
+
+	.hotthread .tags span {
+		height: 28rem/$fit;
+		line-height: 28rem/$fit;
+		border-radius: 5rem/$fit;
+		font-size: 20rem/$fit;
+	}
+
+	.hotthread .item .thread .inner .caption {
+		padding-top: 20rem/$fit;
+	}
+	.hotthread .item .thread .inner .caption p{
+		color: #fff;
+	}
+	.hotthread .item .thread .inner .caption .protitle{
+		font-size: 34rem/$fit_m !important;
+	}
+	.hotthread .base_price {
+		font-size: 24rem/$fit;
+		color: #fff;
+	}
+
+	.hotthread .base_price dfn {
+		font-size: 24rem/$fit;
+	}
+	.hotthread .item .one-pro .thread .inner{
+		width: auto;
+
+	}
+	.hotthread .item .thread .inner {
+		position: absolute;
+		width:100%;
+		height: auto;
+		background: none;
+		bottom: 0;
+		border: 0;
+	}
+
+	.hotthread .base_price .price {
+		font-size: 36rem/$fit;
+	}
+
+	.hotthread .item .sale .base_price {
+		bottom: 0;
+	}
+	.section{
+		padding: 1px;
+	}
+	.section .title{
+		height: 34rem/$fit_m;
+		font-size: 34rem/$fit_m;
+		line-height: 34rem/$fit_m;
+		margin: 32rem/$fit_m;
+		text-align: left;
+		color: #383838;
+	}
+
 }
 
 /* 横向放置的手机及分辨率更小的设备 */

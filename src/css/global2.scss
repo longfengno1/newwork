@@ -124,7 +124,9 @@ blockquote {
 .red {
 	color: #F8485E !important;
 }
-
+.white {
+	color: #fff !important;
+}
 .redf00 {
 	color: #f00 !important;
 }
@@ -1487,7 +1489,14 @@ b {
 	.ml32{
 		margin-left: 32rem/$fit_m;
 	}
-	
+	.topbannerB {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		height: 454rem/$fit;
+		margin-bottom: -110rem/$fit;
+	}
 
 }
 
