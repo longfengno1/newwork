@@ -4,104 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
     <script type="text/javascript">
-            (function (doc, win) {
-                var docEl = doc.documentElement,
-                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                        recalc = function () {
-                            var clientWidth = docEl.clientWidth;
-                            if (!clientWidth) return;
-							
-                            var fontSize = 20 * (clientWidth / 320);
-                            fontSize =Math.round((fontSize > 40) ? 40 : fontSize);
-                            docEl.style.fontSize = fontSize + 'px';
-                            var dpi = window.devicePixelRatio;
-                            docEl.setAttribute('data-dpi', dpi);
-                        };
-                recalc();
-                if (!doc.addEventListener) return;
-                win.addEventListener(resizeEvt, recalc, false);
-            })(document, window);
-        </script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 320);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
 </head>
 
 <body>
-    <div id="header" class="header-bar">
-        <div class="wraper">
-            <a class="logo-icon inblock" href="###">星梦邮轮</a>
-            <div class="header-bar-inner">
-                <div class="search-input-box fl hidden-sm">
-                    <label class="label-search tc" for="search-input">
-                    	   <span class="icon-search white"></span>
-                        <div class="step"></div>
-                    </label>
-                    <div class="search-input">
-                        <input type="text" class="int-txt" id="search-input" />
-                    </div>
-                    <div class="icon-close"></div>
-                </div>
-                <div class="menu-box fl fr-sm show-sm">
-                    <div class="menu-box-inner"><span class="icon-menu"></span></div>
-                </div>
-                <div class="message-box fl fr-sm">
-                    <div class="icon-info"><span class="icon-waring"></span></div>
-                    <div class="up-total-cur">99</div>
-                </div>
-                
-                <div class="tel-box fl hidden-sm">
-                    <div class="tel-box-txt">
-                        <i class="icon_tel inblock"></i>
-                        <span class="fz24">4008 499 848</span>
-                    </div>
-                </div>
-                <div class="login-box fr hidden-sm">
-                    <div class="btn-login">
-                        <i class="icon_login"></i>注册/登陆</div>
-                </div>
-            </div>
-            <div id="navbar">
-                <ul class="navbar-menu hidden-sm">
-                    <li>
-                        <a href="###">计划行程</a>
-                    </li>
-                    <li>
-                        <a href="###">优惠及特色活动</a>
-                    </li>
-                    <li>
-                        <a href="###">星梦船队</a>
-                    </li>
-                    <li>
-                        <a href="###">邮轮生活</a>
-                    </li>
-                    <li>
-                        <a href="###">游记攻略</a>
-                    </li>
-                    <li>
-                        <a href="###">航程管理</a>
-                    </li>
-                    <li>
-                        <a href="###">客户服务</a>
-                    </li>
-                    <li>
-                        <a href="###">星梦荟</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div>
+        #include('../../common/header.html')
     </div>
-
     <div id="main" class="main">
         <div class="topbanner">
             <div class="wraper">
                 <div class="icon_berlitz"></div>
 
-                <div class="topbanner-slider">
-                    <ul>
-                        <li>
-                            <img src="../../images/Miyakojima.jpg" width="100%">
-                        </li>
-                    </ul>
+                <div class="topbanner-slider-box">
+                    <div class="topbanner-slider">
+                        <img src="../../images/Miyakojima.jpg" width="100%">
+                    </div>
+                    <div class="topbanner-slider">
+                        <img src="../../images/Miyakojima.jpg" width="100%">
+                    </div>
+                    <div class="topbanner-slider">
+                        <img src="../../images/Miyakojima.jpg" width="100%">
+                    </div>
                 </div>
                 <div class="topbanner-tab tab-left hidden-sm">
                     <div class="tab" trigger="click">
@@ -143,28 +87,42 @@
                         </div>
                         <div class="tabc" style="display:none;">
                             <h3>团队预订</h3>
-                            <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
-                                <div class="arrow-down fr"></div>
+                            <div class="clearfloat">
+                                <div class="input-box noarrow fl mr10" style="width:120px">
+                                    <input class="input-txt fl" placeholder="团队联系人">
+                                    <div class="arrow-down fr"></div>
+                                </div>
+                                <div class="input-box fl" style="width:48px">
+                                        <input class="input-txt fl" placeholder="称谓">
+                                        <div class="arrow-down fr"></div>
+                                    </div>
                             </div>
-                            <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
+
+                            <div class="input-box noarrow">
+                                <input class="input-txt fl" placeholder="手机">
                                 <div class="arrow-up fr"></div>
                             </div>
+                            <div class="input-box noarrow">
+                                    <input class="input-txt fl" placeholder="邮箱">
+                                    <div class="arrow-up fr"></div>
+                                </div>
+                                <div class="clearfloat">
+                                        <div class="input-box fl mr10" style="width:74px">
+                                            <input class="input-txt fl" placeholder="团队类型">
+                                            <div class="arrow-down fr"></div>
+                                        </div>
+                                        <div class="input-box fl" style="width:74px">
+                                                <input class="input-txt fl" placeholder="团队人数">
+                                                <div class="arrow-down fr"></div>
+                                            </div>
+                                    </div>
+        
                             <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
+                                <div class="input-txt fl">出发城市</div>
                                 <div class="arrow-down fr"></div>
                             </div>
                             <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
-                                <div class="arrow-down fr"></div>
-                            </div>
-                            <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
-                                <div class="arrow-down fr"></div>
-                            </div>
-                            <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
+                                <div class="input-txt fl">出发日期</div>
                                 <div class="arrow-down fr"></div>
                             </div>
                             <div class="button-box">
@@ -176,47 +134,105 @@
                     </div>
                 </div>
             </div>
-            <div class="topbanner-ribbon">
-                <div class="wraper">
-
-                    <div class="main-search-box hidden-sm">
-                        <div class="box1">出发港口
-                            <i class="arrow-down fr"></i>
-                        </div>
-                        <div class="step"></div>
-                        <div class="box1">目的地
-                            <i class="arrow-up fr"></i>
-                        </div>
-                        <div class="step"></div>
-                        <div class="box1">出发月份
-                            <i class="arrow-down fr"></i>
-                        </div>
-                        <div class="step"></div>
-                        <div class="box2">
-                            <p class="label">优惠代码</p>
-                            <p>2EDC786DS</p>
-                        </div>
-                        <div class="box3 fr">
-                            <div class="btn-mainsearch">搜 索</div>
-                        </div>
+            <div class="wraper">
+                <div class="main-search-box hidden-sm">
+                    <div class="box1">出发港口
+                        <i class="arrow-down fr"></i>
+                    </div>
+                    <div class="step"></div>
+                    <div class="box1">目的地
+                        <i class="arrow-up fr"></i>
+                    </div>
+                    <div class="step"></div>
+                    <div class="box1">出发月份
+                        <i class="arrow-down fr"></i>
+                    </div>
+                    <div class="step"></div>
+                    <div class="box2">
+                        <p class="label">优惠代码</p>
+                        <p>2EDC786DS</p>
+                    </div>
+                    <div class="box3 fr">
+                        <div class="btn-mainsearch">搜 索</div>
                     </div>
                 </div>
             </div>
+            <div class="topbanner-ribbon hidden-sm"></div>
 
 
         </div>
+        <div class="section show-sm">
+            <div class="m-main-btnbox">
+                <ul class="row">
+                    <li class="col-3 mb40">
+                        <a href="###">
+                            <p class="btn-icon"><span class="icon-ship2"></span></p>
+                            <p>热门航线</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
 
+                        <a href="###">
+                            <p class="btn-icon"><span class="icon-sale3"></span></p>
+                            <p>官网特惠</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="###">
+                            <p class="btn-icon"><span class="icon-ship3"></span></p>
+                            <p>星梦船队</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="###">
+                            <p class="btn-icon"><span class="icon-active2"></span></p>
+                            <p>特色活动</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="###">
+                            <p class="btn-icon"><span class="icon-order"></span></p>
+                            <p>邮轮百科</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="###">
+                            <p class="btn-icon"><span class="icon-group"></span></p>
+                            <p>团队咨询</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="###">
+                            <p class="btn-icon"><span class="icon-you2"></span></p>
+                            <p>游记攻略</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="###">
+                            <p class="btn-icon"><span class="icon-member"></span></p>
+                            <p>星级体验</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- 热门推荐 -->
         <div class="section">
             <div class="wraper">
-                <h2 class="title">热门推荐</h2>
+                <h2 class="title">热门推荐<span class="icon-arrowright fr show-sm"></span></h2>
                 <div class="m_tab">
                     <a href="###" class="tab_item current">
-                        <span>热门航次</span>
+                        <span>热门促销</span>
                     </a>
 
                     <a href="###" class="tab_item">
-                        <span>活动推荐</span>
+                        <span>热门航次</span>
                     </a>
                 </div>
                 <div class="hotthread clearfloat">
@@ -243,14 +259,15 @@
                                                 <dfn class="red">¥</dfn>
                                                 <span class="price red">3330</span>起/人
                                             </p>
+
                                         </div>
                                     </div>
                                     <div class="timer">
-                                    	<div class="title">限时特惠</div>
+                                        <div class="title">限时特惠</div>
                                         <div class="time_tit">截止日期：2019年12月6日 18:00</div>
-                                       <div class="time_p">
-                                       		<span>01</span>:<span>88</span>:<span>88</span>
-                                       </div>
+                                        <div class="time_p">
+                                            <span>01</span>:<span>88</span>:<span>88</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -261,14 +278,14 @@
         </div>
         <div class="section">
             <div class="wraper">
-                <h2 class="title">热门推荐</h2>
+                <h2 class="title">热门推荐<span class="icon-arrowright fr show-sm"></span></h2>
                 <div class="m_tab">
                     <a href="###" class="tab_item current">
-                        <span>热门航次</span>
+                        <span>热门促销</span>
                     </a>
 
                     <a href="###" class="tab_item">
-                        <span>活动推荐</span>
+                        <span>热门航次</span>
                     </a>
                 </div>
                 <div class="hotthread clearfloat">
@@ -287,91 +304,29 @@
                                         </div>
                                     </div>
                                     <div class="inner">
+                                        <div class="fr m_base_price show-sm">
+                                            <p class="base_price mt5">
+                                                <dfn class="red">¥</dfn>
+                                                <span class="price red">3330</span>起/人
+                                            </p>
+                                            <p><a href="###" class="mt10 btn-styleF">查看详情</a></p>
+                                        </div>
                                         <div class="caption">
                                             <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
                                             <p class="fz12 gray mt5">
                                                 <span>世界梦号</span>
                                                 <span class="ml15">2019/10/29</span>
                                             </p>
-                                            <p class="base_price mt5">
+                                            <p class="base_price mt5 hidden-sm">
                                                 <dfn class="red">¥</dfn>
                                                 <span class="price red">3330</span>起/人
                                             </p>
+
                                         </div>
                                     </div>
                                     <em class="tip">特惠航线</em>
                                 </div>
                             </li>
-
-                            <li class="col">
-                                <div class="thread">
-                                    <div class="pic">
-                                        <a href="###" target="_blank">
-                                            <div class="pic bg-pic"></div>
-                                        </a>
-                                    </div>
-                                    <div class="inner">
-                                        <div class="caption">
-                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
-                                            <p class="fz12 gray mt5">
-                                                <span>世界梦号</span>
-                                                <span class="ml15">6天5晚，周六-周四</span>
-                                            </p>
-                                            <p class="base_price mt5">
-                                                <dfn class="red">¥</dfn>
-                                                <span class="price red">3330</span>起/人
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <em class="tip">特惠航线</em>
-                                </div>
-                            </li>
-
-                            <li class="col">
-                                <div class="thread">
-                                    <div class="pic">
-                                        <a href="###" target="_blank">
-                                            <div class="pic bg-pic"></div>
-                                        </a>
-                                    </div>
-                                    <div class="inner">
-                                        <div class="caption">
-                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
-                                            <p class="fz12 gray prodesc mt5">
-                                                <span>世界梦号</span>
-                                                <span class="ml15">6天5晚，周六-周四</span>
-                                            </p>
-                                            <p class="base_price mt5">
-                                                <dfn class="red">¥</dfn>
-                                                <span class="price red">3330</span>起/人
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <em class="tip">特惠航线</em>
-                                </div>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <div class="wraper">
-                <h2 class="title">热门推荐</h2>
-                <div class="m_tab">
-                    <a href="###" class="tab_item current">
-                        <span>热门航次</span>
-                    </a>
-
-                    <a href="###" class="tab_item">
-                        <span>活动推荐</span>
-                    </a>
-                </div>
-                <div class="hotthread clearfloat">
-                    <div class="item">
-                        <ul class="row">
                             <li class="col">
                                 <div class="thread">
                                     <div class="pic">
@@ -385,40 +340,60 @@
                                         </div>
                                     </div>
                                     <div class="inner">
-                                        <div class="caption">
-                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
-                                            <p class="fz12 gray prodesc mt5">
-                                                <span>世界梦号</span>
-                                                <span class="ml15">6天5晚，周六-周四</span>
-                                            </p>
+                                        <div class="fr m_base_price show-sm">
                                             <p class="base_price mt5">
                                                 <dfn class="red">¥</dfn>
                                                 <span class="price red">3330</span>起/人
                                             </p>
+                                            <p><a href="###" class="mt10 btn-styleF">查看详情</a></p>
+                                        </div>
+                                        <div class="caption">
+                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                            <p class="fz12 gray mt5">
+                                                <span>世界梦号</span>
+                                                <span class="ml15">2019/10/29</span>
+                                            </p>
+                                            <p class="base_price mt5 hidden-sm">
+                                                <dfn class="red">¥</dfn>
+                                                <span class="price red">3330</span>起/人
+                                            </p>
+
                                         </div>
                                     </div>
                                     <em class="tip">特惠航线</em>
                                 </div>
                             </li>
-
                             <li class="col">
                                 <div class="thread">
                                     <div class="pic">
                                         <a href="###" target="_blank">
                                             <div class="pic bg-pic"></div>
                                         </a>
+                                        <div class="pic_title">新加坡·惊奇之旅</div>
+                                        <div class="tags">
+                                            <span>亲子游</span>
+                                            <span>亲子游</span>
+                                        </div>
                                     </div>
                                     <div class="inner">
-                                        <div class="caption">
-                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
-                                            <p class="fz12 gray prodesc mt5">
-                                                <span>世界梦号</span>
-                                                <span class="ml15">6天5晚，周六-周四</span>
-                                            </p>
+                                        <div class="fr m_base_price show-sm">
                                             <p class="base_price mt5">
                                                 <dfn class="red">¥</dfn>
                                                 <span class="price red">3330</span>起/人
                                             </p>
+                                            <p><a href="###" class="mt10 btn-styleF">查看详情</a></p>
+                                        </div>
+                                        <div class="caption">
+                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                            <p class="fz12 gray mt5">
+                                                <span>世界梦号</span>
+                                                <span class="ml15">2019/10/29</span>
+                                            </p>
+                                            <p class="base_price mt5 hidden-sm">
+                                                <dfn class="red">¥</dfn>
+                                                <span class="price red">3330</span>起/人
+                                            </p>
+
                                         </div>
                                     </div>
                                     <em class="tip">特惠航线</em>
@@ -432,14 +407,108 @@
         </div>
         <div class="section">
             <div class="wraper">
-                <h2 class="title">热门推荐</h2>
+                <h2 class="title">热门推荐<span class="icon-arrowright fr show-sm"></span></h2>
                 <div class="m_tab">
                     <a href="###" class="tab_item current">
-                        <span>热门航次</span>
+                        <span>热门促销</span>
                     </a>
 
                     <a href="###" class="tab_item">
-                        <span>活动推荐</span>
+                        <span>热门航次</span>
+                    </a>
+                </div>
+                <div class="hotthread clearfloat">
+                    <div class="item">
+                        <ul class="row">
+
+                            <li class="col">
+                                <div class="thread">
+                                    <div class="pic">
+                                        <a href="###" target="_blank">
+                                            <div class="pic bg-pic"></div>
+                                        </a>
+                                        <div class="pic_title">新加坡·惊奇之旅</div>
+                                        <div class="tags">
+                                            <span>亲子游</span>
+                                            <span>亲子游</span>
+                                        </div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="fr m_base_price show-sm">
+                                            <p class="base_price mt5">
+                                                <dfn class="red">¥</dfn>
+                                                <span class="price red">3330</span>起/人
+                                            </p>
+                                            <p><a href="###" class="mt10 btn-styleF">查看详情</a></p>
+                                        </div>
+                                        <div class="caption">
+                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                            <p class="fz12 gray mt5">
+                                                <span>世界梦号</span>
+                                                <span class="ml15">2019/10/29</span>
+                                            </p>
+                                            <p class="base_price mt5 hidden-sm">
+                                                <dfn class="red">¥</dfn>
+                                                <span class="price red">3330</span>起/人
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <em class="tip">特惠航线</em>
+                                </div>
+                            </li>
+                            <li class="col">
+                                <div class="thread">
+                                    <div class="pic">
+                                        <a href="###" target="_blank">
+                                            <div class="pic bg-pic"></div>
+                                        </a>
+                                        <div class="pic_title">新加坡·惊奇之旅</div>
+                                        <div class="tags">
+                                            <span>亲子游</span>
+                                            <span>亲子游</span>
+                                        </div>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="fr m_base_price show-sm">
+                                            <p class="base_price mt5">
+                                                <dfn class="red">¥</dfn>
+                                                <span class="price red">3330</span>起/人
+                                            </p>
+                                            <p><a href="###" class="mt10 btn-styleF">查看详情</a></p>
+                                        </div>
+                                        <div class="caption">
+                                            <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                            <p class="fz12 gray mt5">
+                                                <span>世界梦号</span>
+                                                <span class="ml15">2019/10/29</span>
+                                            </p>
+                                            <p class="base_price mt5 hidden-sm">
+                                                <dfn class="red">¥</dfn>
+                                                <span class="price red">3330</span>起/人
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <em class="tip">特惠航线</em>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="wraper">
+                <h2 class="title">热门推荐<span class="icon-arrowright fr show-sm"></span></h2>
+                <div class="m_tab">
+                    <a href="###" class="tab_item current">
+                        <span>热门促销</span>
+                    </a>
+
+                    <a href="###" class="tab_item">
+                        <span>热门航次</span>
                     </a>
                 </div>
                 <div class="hotthread clearfloat">
@@ -478,7 +547,7 @@
         </div>
         <div class="ribbon-destinations"></div>
         <!-- “邮”记 -->
-        <div class="section" style="padding-top: 140px;">
+        <div class="section mt50 hidden-sm">
             <div class="wrapper">
                 <h2 class="title">星梦“邮”记，多航线多玩法</h2>
                 <div class="shiprecord custom_container">
@@ -537,654 +606,426 @@
         <!-- 特色活动 -->
         <div class="section spactivity-bg">
 
-            <div class="wrapper spactivity-wrapper">
-                <h2 class="title">特色活动</h2>
-                <div class="spactivity-context">
-                    <div class="spactivity-context-inner">
-                        <p class="desc-title">和海豚一起共度夏日</p>
-                        <p class="dec">在深海中与海豚嬉戏，与海豚一起度过快乐的时光，让你拥有快乐的回忆，与海豚一起度过快乐的时光，让你拥有快乐的回忆</p>
-                        <p>
-                            <a href="###" class="btn-stye1 mr10">了解更多
-                                <i class="arrow-right"></i>
-                            </a>
-                        </p>
+            <div class="spactivity-wrapper">
+                <div class="spactivity-wrapper-inner">
+                    <img class="bg-img hidden-sm" src="../../images/bg-spactivity.jpg">
+
+                    <div class="wrapper txt_content">
+                        <h2 class="title">特色活动<span class="icon-arrowright fr show-sm"></span></h2>
+                        <div class="spactivity-context">
+                            <div class="spactivity-context-inner">
+                                <p class="desc-title">和海豚一起共度夏日</p>
+                                <p class="dec">在深海中与海豚嬉戏，与海豚一起度过快乐的时光，让你拥有快乐的回忆，与海豚一起度过快乐的时光，让你拥有快乐的回忆</p>
+                                <p class="m">
+                                    <a href="###" class="btn-stye1 mr10">了解更多
+                                        <i class="arrow-right"></i>
+                                    </a>
+                                </p>
+
+                            </div>
+
+                        </div>
+
                     </div>
-                    <div class="dot_container">
-                        <a href="###" class="dot active"></a>
-                        <a href="###" class="dot"></a>
-                        <a href="###" class="dot"></a>
-                    </div>
+                    <img class="bg-img show-sm" src="../../images/bg-spactivity-m.jpg">
+                </div>
+                <div class="dot_container">
+                    <a href="###" class="dot active"></a>
+                    <a href="###" class="dot"></a>
+                    <a href="###" class="dot"></a>
                 </div>
             </div>
         </div>
         <div class="ribbon-destinations2"></div>
         <!-- 船上体验 -->
-        <div class="section">
+        <div class="section hidden-sm">
             <div class="wrapper">
-                <h2 class="title">船上体验</h2>
+                <h2 class="title">船上体验<span class="icon-arrowright fr show-sm"></span></h2>
                 <div class="shipexperience custom_container">
                     <div class="content">
                         <div class="exp_item">
                             <a href="###">
-                                <article>
-                                    <img src="../../images/bg-act-1.png" width="355" height="487">
+                                <article class="exp_box1 mb10">
+                                    <img src="../../images/bg-act-1.jpg">
                                     <div class="exp_text_wrap">
-                                        <p class="exp_text_tit">浪漫婚典</p>
-                                        <p class="exp_text_subtit">唯美浪漫的海上婚礼</p>
+                                        <span class="exp_text_tit">浪漫婚典</span>
+                                        <span class="exp_text_subtit">唯美浪漫的海上婚礼</span>
                                     </div>
                                 </article>
                             </a>
                             <a href="###">
-                                <article>
-                                    <img src="../../images/bg-act-2.png" width="355" height="194">
+                                <article class="exp_box2">
+                                    <img src="../../images/bg-act-2.png">
                                     <div class="exp_text_wrap">
-                                        <p class="exp_text_tit">全家游</p>
-                                        <p class="exp_text_subtit">点亮梦想</p>
-                                    </div>
-                                </article>
-                            </a>
-                        </div>
-                        <div class="exp_item">
-                            <a href="###">
-                                <article>
-                                    <img src="../../images/bg-act-3.png" width="355" height="195">
-                                    <div class="exp_text_wrap">
-                                        <p class="exp_text_tit">用vr探索</p>
-                                        <p class="exp_text_subtit">细节尽显奢华</p>
-                                    </div>
-                                </article>
-                            </a>
-                            <a href="###">
-                                <article>
-                                    <img src="../../images/bg-act-4.png" width="355" height="486">
-                                    <div class="exp_text_wrap">
-                                        <p class="exp_text_tit">中国达人秀</p>
-                                        <p class="exp_text_subtit">寻爱·起航 </p>
+                                        <span class="exp_text_tit">全家游</span>
+                                        <span class="exp_text_subtit">点亮梦想</span>
                                     </div>
                                 </article>
                             </a>
                         </div>
                         <div class="exp_item">
                             <a href="###">
-                                <article>
-                                    <img src="../../images/bg-act-5.png" width="355" height="487">
+                                <article class="exp_box2 mb10">
+                                    <img src="../../images/bg-act-3.png">
                                     <div class="exp_text_wrap">
-                                        <p class="exp_text_tit">团队预定</p>
-                                        <p class="exp_text_subtit">默契·快乐 </p>
+                                        <span class="exp_text_tit">用vr探索</span>
+                                        <span class="exp_text_subtit">细节尽显奢华</span>
                                     </div>
                                 </article>
                             </a>
                             <a href="###">
-                                <article>
-                                    <img src="../../images/bg-act-6.png" width="355" height="194">
+                                <article class="exp_box1">
+                                    <img src="../../images/bg-act-4.png">
                                     <div class="exp_text_wrap">
-                                        <p class="exp_text_tit">精彩视频</p>
-                                        <p class="exp_text_subtit">幻彩奇妙的海上之旅 </p>
+                                        <span class="exp_text_tit">中国达人秀</span>
+                                        <span class="exp_text_subtit">寻爱·起航 </span>
+                                    </div>
+                                </article>
+                            </a>
+                        </div>
+                        <div class="exp_item">
+                            <a href="###">
+                                <article class="exp_box1 mb10">
+                                    <img src="../../images/bg-act-5.jpg">
+                                    <div class="exp_text_wrap">
+                                        <span class="exp_text_tit">团队预定</span>
+                                        <span class="exp_text_subtit">默契·快乐 </span>
+                                    </div>
+                                </article>
+                            </a>
+                            <a href="###">
+                                <article class="exp_box2">
+                                    <img src="../../images/bg-act-6.png">
+                                    <div class="exp_text_wrap">
+                                        <span class="exp_text_tit">精彩视频</span>
+                                        <span class="exp_text_subtit">幻彩奇妙的海上之旅 </span>
                                     </div>
                                 </article>
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="section show-sm">
+            <div class="wrapper">
+                <h2 class="title">船上体验<span class="icon-arrowright fr show-sm"></span></h2>
+                <div class="m_shipexperience">
+                    <div class="row no-gutters">
+                        <div class="col-6">
+                            <div class="box">
+                                <a href="###">
+                                    <article class="exp_box1">
+                                        <img src="../../images/rc3.jpg" width="100%">
+                                        <div class="exp_text_wrap">
+                                            <span class="exp_text_tit">浪漫婚典</span>
+                                            <span class="exp_text_subtit">唯美浪漫的海上婚礼</span>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="box">
+                                        <a href="###">
+                                            <article class="exp_box1">
+                                                <img src="../../images/rc2.jpg" width="100%">
+                                                <div class="exp_text_wrap">
+                                                    <span class="exp_text_tit">浪漫婚典</span>
+                                                    <span class="exp_text_subtit">唯美浪漫的海上婚礼</span>
+                                                </div>
+                                            </article>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <div class="box">
+                                        <a href="###">
+                                            <article class="exp_box1">
+                                                <img src="../../images/rc1.jpg" width="100%">
+                                                <div class="exp_text_wrap">
+                                                    <span class="exp_text_tit">浪漫婚典</span>
+                                                    <span class="exp_text_subtit">唯美浪漫的海上婚礼</span>
+                                                </div>
+                                            </article>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
         <!-- 游轮介绍 -->
-        <div class="section ourships-sea">
-            <div id="bg-ourships-sea" class="position-relative">
-                <div class="position-absolute w-100 h-100">
-
-                    <!-- Dummy Button for Test start -->
-
-                    <button class="position-absolute" onclick="switchbg.changevideo();">Switch video</button>
-
-                    <!-- Dummy Button for Test end -->
-
-                    <video src="../video/dreamcruise_effect1.mp4" class="w-auto h-auto" style="object-fit: cover;  min-height: 100%;  pointer-events: none;"
-                        muted loop></video>
-
-                </div>
-
-                <div class="container">
-
-                    <h2 class="section-header" data-aos="fade-up">星梦邮轮
-                        <br />带着你的梦想起航</h2>
-
-                    <div class="ships-slide">
-
-                        <div class="panel-slide-item">
-
-                            <div class="ship-detail">
-
-                                <div class="row justify-content-between mb-0 mb-md-3">
-
-                                    <div class="col-7 col-md-6">
-
-                                        <h3>WORLD DREAM</h3>
-
-                                        <p>is a vessel for your dreams - it features all the comfort of authentic Asian hospitaity,
-                                            combined with the finest experiences from around the world.</p>
-
-                                    </div>
-
-                                    <div class="col-5 col-md-4 p-0">
-
-                                        <div class="row mx-0 my-3 ship-info">
-
-                                            <div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
-
-                                                <h3>
-                                                    <span>150,695</span>
-                                                    <br />吨</h3>
-
-                                            </div>
-
-                                            <div class="col-12 col-md-6 text-center">
-
-                                                <h3>
-                                                    <span>3,352</span>
-                                                    <br />旅客</h3>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <p>
-                                    <a href="###" class="btn-stye1 mb10">了解更多
-                                        <i class="arrow-right"></i>
-                                    </a>
-                                </p>
-
-                            </div>
-
-                            <div class="position-relative mb-5 mb-md-0">
-
-                                <div id="icon-genting-dream" class="btn-overlay">
-
-                                    <a href="javascript:void(0)" id="btn-wd-icon1" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', '360']);"></a>
-
-                                    <a href="javascript:void(0)" id="btn-wd-icon2" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'ships'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-wd-icon3" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'video'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-wd-icon4" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'room'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-wd-icon5" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'slides'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-wd-icon6" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'sunbath'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-wd-icon7" class="btn-ourships" onclick="ospopover.click(['WORLDDREAM', 'dining'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-wd-icon8" class="btn-ourships d-md-none" onclick="ospopover.click(['WORLDDREAM'])"></a>
-
-                                    <img src="../../images/genting-dream-icon.png" class="img-responsive" />
-
-                                    <img src="../../images/genting-dream-icon_m.png" class="img-responsive mobile">
-
-                                </div>
-
-                                <img src="../../images/world-dream.png" class="img-ship" />
-
-                            </div>
-
+        <div class="shipinto">
+            <h2 class="title">
+                星梦邮轮<br>带着你的梦想起航
+            </h2>
+            <div class="wraper ships-slide">
+                <div class="topbanner_plane">
+                    <div class="content">
+                        <h1 class="show-sm">云顶梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
+                        </h1>
+                        <div class="info">
+                            <ul class="row">
+                                <li class="col dw tc">151,300<br><span class="fz24">吨</span></li>
+                                <li class="col num tc">3,400<br><span class="fz24">旅客</span></li>
+                            </ul>
                         </div>
-
-                        <div class="panel-slide-item">
-
-                            <div class="ship-detail">
-
-                                <div class="row justify-content-between mb-0 mb-md-3">
-
-                                    <div class="col-7 col-md-6">
-
-                                        <h3>云顶梦号</h3>
-
-                                        <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
-
-                                    </div>
-
-                                    <div class="col-5 col-md-4 p-0">
-
-                                        <div class="row mx-0 my-3 ship-info">
-
-                                            <div class="col-12 col-md-6 mb-3 mb-md-0 text-center">
-
-                                                <h3>
-                                                    <span>150,695</span>
-                                                    <br />吨</h3>
-
-                                            </div>
-
-                                            <div class="col-12 col-md-6 text-center">
-
-                                                <h3>
-                                                    <span>3,352</span>
-                                                    <br />旅客</h3>
-
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <p>
-                                    <a href="###" class="btn-stye1 mb10">了解更多
-                                        <i class="arrow-right"></i>
-                                    </a>
-                                </p>
-
-
+                        <div class="text_box">
+                            <h1 class="hidden-sm"><span class="icon-ship show-sm mr10"></span>云顶梦号<img class="made ml20"
+                                    src="../../images/madeing@2x.png" width="86" height="80" /></h1>
+                            <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
+                            <p style="margin-top:25px;" class="hidden-sm"><a href="###" class="btn-styleA"
+                                    style="position:relative;z-index:9">下载手册</a></p>
+                        </div>
+                    </div>
+                    <div class="ship ship02 m_ship1">
+                        <img src="../../images/genting_dream.png" />
+                        <div class="ship-intro">
+                            <div class="btn-icon ship-icon" style="left:0px;top:0">
+                                <div class="inner"><span class="icon-ship"></span></div>
                             </div>
-
-                            <div class="position-relative mb-5 mb-md-0">
-
-                                <div id="icon-genting-dream" class="btn-overlay">
-
-                                    <a href="javascript:void(0)" id="btn-gd-icon1" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', '360']);"></a>
-
-                                    <a href="javascript:void(0)" id="btn-gd-icon2" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'ships'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-gd-icon3" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'video'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-gd-icon4" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'room'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-gd-icon5" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'slides'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-gd-icon6" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'sunbath'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-gd-icon7" class="btn-ourships" onclick="ospopover.click(['GENTINGDREAM', 'dining'])"></a>
-
-                                    <a href="javascript:void(0)" id="btn-gd-icon8" class="btn-ourships d-md-none" onclick="ospopover.click(['GENTINGDREAM'])"></a>
-
-                                    <img src="../../images/genting-dream-icon.png" class="img-responsive" />
-
-                                    <img src="../../images/genting-dream-icon_m.png" class="img-responsive mobile">
-
-                                </div>
-
-                                <img src="../../images/genting-dream.png" class="img-ship" />
-
+                        </div>
+                        <div class="btn-icon" style="left: 580px;top: 50px;">
+                            <div class="inner"><span class="icon-sea"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
                             </div>
-
+                        </div>
+                        <div class="btn-icon" style="left: 820px;top: 67px;">
+                            <div class="inner"><span class="icon-sunshine"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 480px;top: 170px;">
+                            <div class="inner"><span class="icon-bad"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 980px;top: 50px;">
+                            <div class="inner"><span class="icon-food"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 288px;top:102px;">
+                            <div class="inner"><span class="icon-360"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left:440px;top:102px;">
+                            <div class="inner"><span class="icon-video"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
                         </div>
 
                     </div>
-
                 </div>
-
-
-
-                <!-- Overlay -->
-
-                <div class="our-ship-overlay">
-
-                    <div class="container p-0 p-md-3">
-
-                        <div class="overlay-slide">
-
-                            <!-- WORLDDREAM -->
-
-                            <div class="overlay-slide-item WORLDDREAM 360">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img1.png" />
-
-                                    <div class="p-3">
-
-                                        <p>Depart from the ordinary</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-vr">Virtual reality
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item WORLDDREAM sunbath">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img2.png" />
-
-                                    <div class="p-3">
-
-                                        <p>Start a new family tradition</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-deck">Main pool deck
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item WORLDDREAM dining">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img3.png" />
-
-                                    <div class="p-3">
-
-                                        <p>Explore the world one meal at a time</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-dinning">Dining</a>
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item WORLDDREAM slides">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img4.png" />
-
-                                    <div class="p-3">
-
-                                        <p>An endless assortment of fun activities</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-slides">Ropes course
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item WORLDDREAM video">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img4.png" />
-
-                                    <div class="p-3">
-
-                                        <p>An endless assortment of fun activities</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-slides">Ropes course
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item WORLDDREAM room">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img4.png" />
-
-                                    <div class="p-3">
-
-                                        <p>An endless assortment of fun activities</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-slides">Ropes course
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item WORLDDREAM ships">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img4.png" />
-
-                                    <div class="p-3">
-
-                                        <p>An endless assortment of fun activities</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-slides">Ropes course
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- GENTINGDREAM -->
-
-                            <div class="overlay-slide-item GENTINGDREAM 360">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img1.png" />
-
-                                    <div class="p-3">
-
-                                        <p>Depart from the ordinary</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-vr">Virtual reality
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item GENTINGDREAM sunbath">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img2.png" />
-
-                                    <div class="p-3">
-
-                                        <p>Start a new family tradition</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-deck">Main pool deck
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item GENTINGDREAM dining">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img3.png" />
-
-                                    <div class="p-3">
-
-                                        <p>Explore the world one meal at a time</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-dinning">Dining</a>
-
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item GENTINGDREAM slides">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img4.png" />
-
-                                    <div class="p-3">
-
-                                        <p>An endless assortment of fun activities</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-slides">Ropes course
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item GENTINGDREAM video">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img4.png" />
-
-                                    <div class="p-3">
-
-                                        <p>An endless assortment of fun activities</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-slides">Ropes course
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item GENTINGDREAM room">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img4.png" />
-
-                                    <div class="p-3">
-
-                                        <p>An endless assortment of fun activities</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-slides">Ropes course
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="overlay-slide-item GENTINGDREAM ships">
-
-                                <div class="slide-box">
-
-                                    <a href="javascript:void(0)" class="icon-close btn-overlay-close" tabindex="0">BACK</a>
-
-                                    <img src="../../images/overlay-img4.png" />
-
-                                    <div class="p-3">
-
-                                        <p>An endless assortment of fun activities</p>
-
-                                        <p class="text-right mb-0">
-                                            <a href="javascript:void(0)" class="icon-slides">Ropes course
-
-                                            </a>
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
+                <div class="topbanner_plane">
+                    <div class="content">
+                        <h1 class="show-sm">世界梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
+                        </h1>
+                        <div class="info">
+                            <ul class="row">
+                                <li class="col dw tc">151,300<br><span class="fz24">吨</span></li>
+                                <li class="col num tc">3,400<br><span class="fz24">旅客</span></li>
+                            </ul>
                         </div>
-
-
-
+                        <div class="text_box">
+                            <h1 class="hidden-sm">世界梦号</h1>
+                            <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
+                            <p class="hidden-sm" style="margin-top:25px;"><a href="###" class="btn-styleA"
+                                    style="position:relative;z-index:9">下载手册</a></p>
+                        </div>
+                    </div>
+                    <div class="ship mship2">
+                        <img src="../../images/worldd.png" />
+                        <div class="btn-icon" style="left: 580px;top: 50px;">
+                            <div class="inner"><span class="icon-sea"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 820px;top: 67px;">
+                            <div class="inner"><span class="icon-sunshine"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 480px;top: 170px;">
+                            <div class="inner"><span class="icon-bad"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 980px;top: 50px;">
+                            <div class="inner"><span class="icon-food"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 288px;top:102px;">
+                            <div class="inner"><span class="icon-360"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left:440px;top:102px;">
+                            <div class="inner"><span class="icon-video"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="ship-intro">
+                            <div class="btn-icon ship-icon" style="left:0px;top:0">
+                                <div class="inner"><span class="icon-ship"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbanner_plane">
+                    <div class="content">
+                        <h1 class="show-sm">探索梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
+                        </h1>
+                        <div class="info">
+                            <ul class="row">
+                                <li class="col dw tc">151,300<br><span class="fz24">吨</span></li>
+                                <li class="col num tc">3,400<br><span class="fz24">旅客</span></li>
+                            </ul>
+                        </div>
+                        <div class="text_box">
+                            <h1 class="hidden-sm">探索梦号</h1>
+                            <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
+                            <p style="margin-top:25px;" class="hidden-sm"><a href="###" class="btn-styleA"
+                                    style="position:relative;z-index:9">下载手册</a></p>
+                        </div>
+                    </div>
+                    <div class="ship m_ship3">
+                        <img src="../../images/discory_ship.png" />
+                        <div class="btn-icon" style="left: 580px;top: 50px;">
+                            <div class="inner"><span class="icon-sea"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 820px;top: 67px;">
+                            <div class="inner"><span class="icon-sunshine"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon artive" style="left: 480px;top: 170px;">
+                            <div class="inner"><span class="icon-bad"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 980px;top: 50px;">
+                            <div class="inner"><span class="icon-food"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left: 288px;top:102px;">
+                            <div class="inner"><span class="icon-360"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="btn-icon" style="left:440px;top:102px;">
+                            <div class="inner"><span class="icon-video"></span></div>
+                            <div class="open">
+                                <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
+                                <p class="title">享受您的完美假期！</p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
+                                            class="icon-arrowright2"></span></a></p>
+                            </div>
+                        </div>
+                        <div class="ship-intro" style="right:596px;top:-92px;">
+                            <div class="btn-icon ship-icon" style="left:0px;top:0">
+                                <div class="inner"><span class="icon-ship"></span></div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-
-
             </div>
-            <div id="panel-sea-bg"></div>
-            <div class="panel-sea-bg-sky"></div>
+            <div class="intro-ribbonship hidden-sm"></div>
+
         </div>
+        <div class="ribbon-destinations3"></div>
         <!-- 游轮百科 -->
         <div class="section section-baike hidden-sm">
             <div class="wrapper">
                 <h2 class="title">邮轮百科</h2>
-                <div class="ylbk_container custom_container">
-                    <div class="content">
-                        <div>
+                <div class="ylbk_container mt40">
+                    <div class="content sliderbase">
+                        <div class="item clearfloat">
                             <a herf="###" class="ylbk-bg ylbk-bg1">
                                 <div class="icon"></div>
                                 <p>常见问题</p>
@@ -1202,19 +1043,31 @@
                                 <p>船上体验</p>
                             </a>
                         </div>
+                        <div class="item clearfloat">
+                            <a herf="###" class="ylbk-bg ylbk-bg1">
+                                <div class="icon"></div>
+                                <p>常见问题</p>
+                            </a>
+                            <a herf="###" class="ylbk-bg ylbk-bg2">
+                                <div class="icon"></div>
+                                <p>出发前准备</p>
+                            </a>
+                            <a herf="###" class="ylbk-bg ylbk-bg3">
+                                <div class="icon"></div>
+                                <p>报道与登船</p>
+                            </a>
+                            <a herf="###" class="ylbk-bg ylbk-bg4">
+                                <div class="icon"></div>
+                                <p>船上体验</p>
+                            </a>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="left_container">
-                        <a href="###" class="left_btn"></a>
-                    </div>
-                    <div class="right_container">
-                        <a href="###" class="right_btn"></a>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class=" destination position-relative d-none d-md-block">
+        <div class=" destination position-relative d-none d-md-block hidden-sm">
             <div class="overflow-hide position-relative section">
 
                 <div class="wrapper">
@@ -1230,24 +1083,29 @@
                     <div class="donitem bg-sg">
                         <h2 class="donslide-title">新加坡</h2>
                         <div class="donslide-content">
-                            <h2>新加坡</h2>
-                            <div class="don-extend-panel">
-                                <div class="row">
-                                    <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
-                                            both luxury travellers and budget backpackers. White sand beachess are rarely
-                                            more than a few steps away, while festivals offer a glimpase of the rich local
-                                            culture.
-                                        </p>
-                                    </div>
-
-                                </div>
+                            <h2 class="clearfloat">
                                 <div class="btn-plane">
                                     <p class="mb-0">
                                         <a href="###" class="btn-stye1 mr10">了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
+                                </div>
+                                <span>新加坡</span>
+                            </h2>
+                            <div class="don-extend-panel">
+                                <div class="row">
+                                    <div class="col-xs-12 col">
+                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                            for
+                                            both luxury travellers and budget backpackers. White sand beachess are
+                                            rarely
+                                            more than a few steps away, while festivals offer a glimpase of the rich
+                                            local
+                                            culture.
+                                        </p>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1259,9 +1117,12 @@
                             <div class="don-extend-panel">
                                 <div class="row">
                                     <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
-                                            both luxury travellers and budget backpackers. White sand beachess are rarely
-                                            more than a few steps away, while festivals offer a glimpase of the rich local
+                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                            for
+                                            both luxury travellers and budget backpackers. White sand beachess are
+                                            rarely
+                                            more than a few steps away, while festivals offer a glimpase of the rich
+                                            local
                                             culture.
                                         </p>
                                     </div>
@@ -1281,7 +1142,15 @@
                         <h2 class="donslide-title">苏梅岛</h2>
                         <div class="donslide-content">
 
-                            <h2>苏梅岛</h2>
+                            <h2>
+                                <div class="btn-plane">
+                                    <p class="mb-0">
+                                        <a href="###" class="btn-stye1 mr10">了解详情
+                                            <i class="arrow-right"></i>
+                                        </a>
+                                    </p>
+                                </div>苏梅岛
+                            </h2>
                             <div class="don-extend-panel">
                                 <div class="row">
                                     <div class="col-xs-12 col">
@@ -1297,87 +1166,98 @@
                                     </div>
 
                                 </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donitem bg-hk">
+                        <h2 class="donslide-title">
+                            香港
+                        </h2>
+                        <div class="donslide-content">
+
+                            <h2>
                                 <div class="btn-plane">
                                     <p class="mb-0">
                                         <a href="###" class="btn-stye1 mr10">了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="donitem bg-hk">
-                        <h2 class="donslide-title">香港</h2>
-                        <div class="donslide-content">
-
-                            <h2>香港</h2>
+                                </div>香港
+                            </h2>
                             <div class="don-extend-panel">
                                 <div class="row">
                                     <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
-                                            both luxury travellers and budget backpackers. White sand beachess are rarely
-                                            more than a few steps away, while festivals offer a glimpase of the rich local
+                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                            for
+                                            both luxury travellers and budget backpackers. White sand beachess are
+                                            rarely
+                                            more than a few steps away, while festivals offer a glimpase of the rich
+                                            local
                                             culture.
                                         </p>
                                     </div>
 
                                 </div>
-                                <div class="btn-plane">
-                                    <p class="mb-0">
-                                        <a href="###" class="btn-stye1 mr10">了解详情
-                                            <i class="arrow-right"></i>
-                                        </a>
-                                    </p>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="donitem bg-hlb">
                         <h2 class="donslide-title">越南 下龙湾</h2>
                         <div class="donslide-content">
-                            <h2>越南 下龙湾</h2>
-                            <div class="don-extend-panel">
-                                <div class="row">
-                                    <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
-                                            both luxury travellers and budget backpackers. White sand beachess are rarely
-                                            more than a few steps away, while festivals offer a glimpase of the rich local
-                                            culture.
-                                        </p>
-                                    </div>
-                                </div>
+                            <h2>
                                 <div class="btn-plane">
                                     <p class="mb-0">
                                         <a href="###" class="btn-stye1 mr10">了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
+                                </div>越南 下龙湾
+                            </h2>
+                            <div class="don-extend-panel">
+                                <div class="row">
+                                    <div class="col-xs-12 col">
+                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                            for
+                                            both luxury travellers and budget backpackers. White sand beachess are
+                                            rarely
+                                            more than a few steps away, while festivals offer a glimpase of the rich
+                                            local
+                                            culture.
+                                        </p>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="donitem bg-mk">
                         <h2 class="donslide-title">宫古岛</h2>
                         <div class="donslide-content">
-                            <h2>宫古岛</h2>
-                            <div class="don-extend-panel">
-                                <div class="row">
-                                    <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination for
-                                            both luxury travellers and budget backpackers. White sand beachess are rarely
-                                            more than a few steps away, while festivals offer a glimpase of the rich local
-                                            culture.
-                                        </p>
-                                    </div>
-                                </div>
+                            <h2>
                                 <div class="btn-plane">
                                     <p class="mb-0">
                                         <a href="###" class="btn-stye1 mr10">了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
+                                </div>宫古岛
+                            </h2>
+                            <div class="don-extend-panel">
+                                <div class="row">
+                                    <div class="col-xs-12 col">
+                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                            for
+                                            both luxury travellers and budget backpackers. White sand beachess are
+                                            rarely
+                                            more than a few steps away, while festivals offer a glimpase of the rich
+                                            local
+                                            culture.
+                                        </p>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -1414,7 +1294,8 @@
             </div>
             <div id="bg-our-destinations"></div>
         </div>
-        <div class="footerinfo">
+
+        <div class="footerinfo  hidden-sm">
             <div class="wraper">
                 <div class="pictitle tc">
                     <img src="../../images/logo-sc.png">
@@ -1435,8 +1316,8 @@
                         <h4>手机应用</h4>
                         <p class="mb20">为你的邮轮假期更新。</p>
 
-                        <a class="inblock mr10 btn-apple" href="###" >apple</a>
-                        <a class="inblock btn-google" href="###" >google</a>
+                        <a class="inblock mr10 btn-apple" href="###">apple</a>
+                        <a class="inblock btn-google" href="###">google</a>
                         </p>
                     </div>
                     <div class="box fl bl">
@@ -1452,6 +1333,7 @@
             </div>
         </div>
     </div>
+
     <div class="travel_calendar_bg" style="display:none;">
         <div class="travel_calendar">
             <div class="travel_calendar_switch ">
@@ -1696,7 +1578,8 @@
                                 <a href="###" class="a_available">
                                     <div class="t2_td_tit">
                                         <div class="label_box">
-                                            <span class="s_03" data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
+                                            <span class="s_03"
+                                                data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
                                         </div>
                                         <span class="t2_td_day">26</span>
                                     </div>
@@ -2111,12 +1994,14 @@
                                 <a href="###" class="a_available">
                                     <div class="t2_td_tit">
                                         <div class="label_box">
-                                            <span class="s_03" data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
+                                            <span class="s_03"
+                                                data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
                                         </div>
                                         <span class="t2_td_day">23</span>
                                     </div>
                                     <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">跟团游·11月23日重庆出发，领队服务，火车往返——重庆-上海-大阪（过夜）-神户-东京（横滨）-上海-重庆，日本航线，赠送岸上观光</div>
+                                    <div class="t2_td_port">
+                                        跟团游·11月23日重庆出发，领队服务，火车往返——重庆-上海-大阪（过夜）-神户-东京（横滨）-上海-重庆，日本航线，赠送岸上观光</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
                                         <span class="price">7399</span>起</span>
@@ -2132,7 +2017,8 @@
                 <div class="t2_loading" style="display: none;">
                     <i></i>正在为您努力加载...
                 </div>
-                <div class="pop_months" style="position: absolute; background-color: #ffffff; z-index: 99;right:0px;display:none;">
+                <div class="pop_months"
+                    style="position: absolute; background-color: #ffffff; z-index: 99;right:0px;display:none;">
                 </div>
 
                 <div class="pop_calendar01" style="display: none; background-color: #ffffff;z-index: 99;">
@@ -2144,9 +2030,46 @@
                             <i></i>
                         </a>
                     </div>
-                    <div class="pop_months" style="position: absolute; background-color: #ffffff; z-index: 99;left:0px;display:none;"></div>
+                    <div class="pop_months"
+                        style="position: absolute; background-color: #ffffff; z-index: 99;left:0px;display:none;"></div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="mdestination section hidden-sm">
+        <div class="wraper">
+            <h2 class="title">目的地<span class="icon-arrowright fr show-sm"></span></h2>
+        </div>
+        <div class="sliderbox">
+            <ul class="">
+                <li>
+                    <div class="box">
+                        <div class="pic"><img src="../../images/destination-pic.jpg" width="100%"></div>
+                        <div class="txt_box">
+                            <p class="txt_title">马来西亚</p>
+                            <p>马来西亚的双子座非常的迷人</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <div class="pic"><img src="../../images/destination-pic.jpg" width="100%"></div>
+                        <div class="txt_box">
+                            <p class="txt_title">马来西亚</p>
+                            <p>马来西亚的双子座非常的迷人</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <div class="pic"><img src="../../images/destination-pic.jpg" width="100%"></div>
+                        <div class="txt_box">
+                            <p class="txt_title">马来西亚</p>
+                            <p>马来西亚的双子座非常的迷人</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div id="footer" class="footer hidden-sm">
@@ -2190,7 +2113,7 @@
                             <li>
                                 <a href="###">媒体中心</a>
                             </li>
-							   <li>
+                            <li>
                                 <a href="###">关于我们</a>
                             </li>
                             <li>
@@ -2271,58 +2194,61 @@
                             <label>电子信息</label>reservations.en@gentingcruiselines.com
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
             <div class="wraper">
-            <div class="logolinker">
-                        <a class="inblock logo1" href="###">c1</a>
-                        <a class="inblock logo2" href="###">c2</a>
-                        <a class="inblock logo3" href="###">c3</a>
-                        <a class="inblock logo4" href="###">c4</a>
-                        <a class="inblock logo5" href="###">c5</a>
-                        <a class="inblock logo6" href="###">c6</a>
-                    </div>
+                <div class="logolinker">
+                    <a class="inblock logo1" href="###">c1</a>
+                    <a class="inblock logo2" href="###">c2</a>
+                    <a class="inblock logo3" href="###">c3</a>
+                    <a class="inblock logo4" href="###">c4</a>
+                    <a class="inblock logo5" href="###">c5</a>
+                    <a class="inblock logo6" href="###">c6</a>
+                </div>
             </div>
             <div class="wraper copytxt">
                 <p class="tc">沪ICP备16020645号-2 &copy;2018 Dream Cruises. All rights reserved.</p>
             </div>
             <div class="wraper">
-           	<div class="fixed_plane">
-            		<div class="fixed_plane_inner">
-                  	<ul>
-                    		<li class="service">
-                            <a href="###">
-                            <div class="btn inblock">客服</div>
-                            <div class="pop">客服</div>
-                            </a>
-                         </li>
-                         <li class="tel">
-                            <a href="###">
-                            <div class="btn inblock">电话</div>
-                            <div class="pop">4008 499 848</div>
-                            </a>
-                         </li>
-                         <li class="wx">
-                            <a href="###">
-                            <div class="btn inblock">微信</div>
-                            <div class="pop">
-                            		<div class="xapp"><img src="../../images/pic3.png" width="80" height="80"></div>
-                                <div class="qcode"><img src="../../images/pic2.png" width="80" height="80"></div>
-                            </div>
-                            </a>
-                         </li>
-                         <li class="up">
-                            <a href="###">
-                            <div class="btn inblock">up</div>
-                            </a>
-                         </li>
-                      </ul>  
-                  </div>
-            	</div>
-           </div>
+                <div class="fixed_plane">
+                    <div class="fixed_plane_inner">
+                        <ul>
+                            <li class="service">
+                                <a href="###">
+                                    <div class="btn inblock">客服</div>
+                                    <div class="pop">客服</div>
+                                </a>
+                            </li>
+                            <li class="tel">
+                                <a href="###">
+                                    <div class="btn inblock">电话</div>
+                                    <div class="pop">4008 499 848</div>
+                                </a>
+                            </li>
+                            <li class="wx">
+                                <a href="###">
+                                    <div class="btn inblock">微信</div>
+                                    <div class="pop">
+                                        <div class="xapp"><img src="../../images/pic3.png" width="80" height="80"></div>
+                                        <div class="qcode"><img src="../../images/pic2.png" width="80" height="80">
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="up">
+                                <a href="###">
+                                    <div class="btn inblock">up</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-	<div class="mbottombar show-sm"></div>
+    <div class="show-sm" style="height:100px"></div>
+    <div class="mbottombar show-sm"></div>
 </body>
+
 </html>

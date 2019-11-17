@@ -1,2 +1,2 @@
-import "../../js/common";
+import "../../js/common2";
 import "./index.css";

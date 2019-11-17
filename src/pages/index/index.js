@@ -6,7 +6,7 @@ import "../../js/popper.min";
 import "../../js/slick.min";
 import "../../js/aos";
 
-(function(){
+(function () {
     $(document).ready(function () {
         /* Swith BG video */
         var switchbg = {
@@ -47,12 +47,12 @@ import "../../js/aos";
                 var vobj = $(switchbg.el.obj).find('video')[0];
                 vobj.currentTime = 0;
                 vobj.pause();
-				  if($(switchbg.el.obj).find('video').attr('src')==switchbg.el.nightvideo){
-					  $(switchbg.el.obj).find('video').attr('src', switchbg.el.dayvideo);
-				  }else{
-					  $(switchbg.el.obj).find('video').attr('src', switchbg.el.nightvideo);
-				  }
-                
+                if ($(switchbg.el.obj).find('video').attr('src') == switchbg.el.nightvideo) {
+                    $(switchbg.el.obj).find('video').attr('src', switchbg.el.dayvideo);
+                } else {
+                    $(switchbg.el.obj).find('video').attr('src', switchbg.el.nightvideo);
+                }
+
                 vobj.play();
             }
         };
@@ -77,41 +77,75 @@ import "../../js/aos";
             }
         };
 
-        switchbg.init();
+        //switchbg.init();
 
         ospopover.init();
         window.ospopover = ospopover;
         window.switchbg = switchbg;
+        var sliderbase = $('.sliderbase');
+        var sliderbase2 = $('.sliderbase2');
         var sslider = $('.ships-slide');
         var oslider = $('.overlay-slide');
+        sliderbase.slick({
+            infinite: false
+        });
+        sliderbase2.slick({
+            infinite: false,
+            arrows:false
+        });
         sslider.slick({
             infinite: false
         });
         oslider.slick({
             slidesToShow: 3,
             slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true
-                    }
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
                 }
-            ]
+            }]
         }).on('setPosition', function (event, slick) {
             $('.overlay-slide-item').equalizeHeights();
 
         });
-		$.fn.equalizeHeights = function() {
+        $.fn.equalizeHeights = function () {
 
-	  this.css('height', 'auto'); 
+            this.css('height', 'auto');
 
-	  var maxHeight = this.map(function( i, e ) {
-	    return $( e ).height();
-	  }).get();
-	  return this.height( Math.max.apply( this, maxHeight ) );
-	};
+            var maxHeight = this.map(function (i, e) {
+                return $(e).height();
+            }).get();
+            return this.height(Math.max.apply(this, maxHeight));
+        };
+        $(".topbanner_plane .ship .btn-icon").click(function () {
+            $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+            $(this).addClass("artive");
+            return false;
+        })
+        $(".topbanner_plane").click(function () {
+            $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+        })
     });
+    $("#header .menu-box-inner").click(function () {
+        $("body").addClass("show_menu");
+        setTimeout(function () {
+            $(".m_menu .navbar-menu").addClass("w80r")
+        }, 100);
+    })
+    $(".m_menu").click(function () {
+        $("body").removeClass("show_menu");
+        setTimeout(function () {
+            $(".m_menu .navbar-menu").removeClass("w80r")
+        }, 100);
+        return false;
+    })
+    $(".m_menu ul>li>a").click(function () {
+        var $this = $(this)
+        $this.parent().toggleClass("showsub");
+        $this.parent().find(".icon-arrow").toggleClass("icon-arrowdown");
+        return false;
+    })
 })()

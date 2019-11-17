@@ -15,8 +15,10 @@ body {
 		"Segoe UI",
 		Roboto,
 		"Helvetica Neue",
-		Arial,
-		sans-serif,
+		"microsoft yahei",
+		tahoma,
+		arial,
+		\5b8b\4f53,
 		"Apple Color Emoji",
 		"Segoe UI Emoji",
 		"Segoe UI Symbol",
@@ -471,10 +473,8 @@ b {
 	height: 108px;
 	margin: 0 auto;
 }
-.header-bar *{
-	box-sizing:content-box;
-}
 .header-bar .wraper {
+	max-width:1200px;
 	position: relative;
 }
 

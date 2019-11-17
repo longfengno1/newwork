@@ -1,6 +1,7 @@
 @import '../../css/variables.scss';
 
 .topbanner{
+	padding-top: 40rem/$fit;
 	background:url(../../images/intro.jpg) center -110rem/$fit no-repeat;
 	height:676rem/$fit;
 	position:relative;
@@ -18,7 +19,8 @@
 	background:#fff;
 	border-radius:50%;
 	border:0;
-	top:35rem/$fit;
+	top:50%;
+	margin-top: 80rem/$fit;
 	font-size:20rem/$fit;
 	color:#00969E;
 }
@@ -115,7 +117,7 @@
 .topbanner_plane .ship{
 	position:absolute;
 	top:110rem/$fit;
-	right:0;
+	right:40rem/$fit;
 }
 .intro-ribbonship{
 	background:url(../../images/intro-ribbonship.png) center top no-repeat;
