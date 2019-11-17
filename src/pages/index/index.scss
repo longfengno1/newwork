@@ -2917,7 +2917,7 @@
 		height: 34rem/$fit_m;
 		font-size: 34rem/$fit_m;
 		line-height: 34rem/$fit_m;
-		margin: 30rem/$fit_m;
+		margin: 32rem/$fit_m;
 		text-align: left;
 		color: #383838;
 	}
@@ -2928,7 +2928,7 @@
 
 	.topbanner-slider-box,
 	.topbanner-slider-box .topbanner-slider {
-		height: 430rem/$fit_m;
+		height: 432rem/$fit_m;
 	}
 
 	.topbanner .topbanner-ribbon {
@@ -2956,10 +2956,10 @@
 		display: block;
 		height: auto;
 		width: 100%;
-		margin: 0 30rem/$fit_m 30rem/$fit_m;
+		margin: 0 32rem/$fit_m 32rem/$fit_m;
 	}
 	.hotthread .item ul li:last-child{
-		margin:0 30rem/$fit_m 30rem/$fit_m;
+		margin:0 32rem/$fit_m 32rem/$fit_m;
 	}
 	.row .col {
 		margin: 0 32rem/$fit_m;
@@ -2969,14 +2969,14 @@
 
 	.hotthread .item .thread .tip {
 		border-bottom-left-radius: 20rem/$fit_m;
-		width: 130rem/$fit_m;
+		width: 132rem/$fit_m;
 		height: 40rem/$fit_m;
 		line-height: 40rem/$fit_m;
 		font-size: 22rem/$fit_m;
 
 		background: #F8485E;
 		border-radius: 0 6px 0 6px;
-		margin-top: 30rem/$fit_m;
+		margin-top: 32rem/$fit_m;
 	}
 
 	.m_tab .tab_item {
@@ -3163,7 +3163,7 @@
 		height: auto;
 		width: 100%;
 		position: absolute;
-		top:30rem/$fit_m;
+		top:32rem/$fit_m;
 		left: 0;
 
 	}
@@ -3201,7 +3201,7 @@
 	.m_shipexperience{
 		position: relative;
 		z-index: 1;
-		padding: 0 15rem/$fit_m 30rem/$fit_m 15rem/$fit_m;
+		padding: 0 15rem/$fit_m 32rem/$fit_m 15rem/$fit_m;
 	}
 	.m_shipexperience .box{
 		padding: 0 15rem/$fit_m;
@@ -3273,8 +3273,8 @@
 		text-align:center;
 	}
 	.topbanner_plane .ship img{
-		width:100%;
-		margin-left:-50rem/$fit;
+		height: 250rem/$fit_m;
+		margin-left:20rem/$fit_m;
 		display:block;
 	}
 	.topbanner_plane .ship02{
@@ -3349,7 +3349,7 @@
 	}
 	.shipinto .topbanner_plane .info{
 		width: 224rem/$fit_m;
-		margin-left: 30rem/$fit_m;
+		margin-left: 32rem/$fit_m;
 	}
 	.shipinto .topbanner_plane .info li{
 		padding: 20rem/$fit_m 0;
@@ -3361,6 +3361,10 @@
 	}
 	.shipinto .topbanner_plane{
 		height: 1160rem/$fit_m;
+	}
+	.shipinto .topbanner_plane .ship{
+		left: 50%;
+		margin-left: -50%;
 	}
 	.shipinto .topbanner_plane .ship,
 	.shipinto .topbanner_plane .ship02{
@@ -3511,10 +3515,10 @@
 		font-size:30rem/$fit;
 	}
 	.ribbon-destinations3{
-		background: url("../../images/ship-rd.png") center center no-repeat;
+		background: url("../../images/ship-rd.png") center top no-repeat;
 		height: 300rem/$fit_m;
 		background-size:100%;
-		margin-top: -200rem/$fit_m;
+		margin-top: -198rem/$fit_m;
 		margin-bottom: -125rem/$fit_m;
 		position: relative;
 		z-index: 1;
@@ -3522,13 +3526,13 @@
 	.topbanner_plane .ship-intro{
 		display: none;
 	}
-	.m_ship1{
+	/*.m_ship1{
 		top:194px !important;
 	}
 	
 	.m_ship3{
 		top:160px !important;
-	}
+	}*/
 	.mdestination .sliderbox{
 		width: 100%;
 		overflow: hidden;
@@ -3537,7 +3541,7 @@
 	.mdestination ul{
 		height: 408rem/$fit_m;
 		width: 200000px;
-		margin-left: 30rem/$fit_m;
+		margin-left: 32rem/$fit_m;
 	}
 	.mdestination li{
 		width: 640rem/$fit_m !important;
@@ -3569,7 +3573,7 @@
 		bottom: 0;
 		color: #fff;
 		font-size: 26rem/$fit_m;
-		padding: 0 30rem/$fit_m;
+		padding: 0 32rem/$fit_m;
 	}
 	.mdestination .txt_box .txt_title{
 		font-size: 36rem/$fit_m;
