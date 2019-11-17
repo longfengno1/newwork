@@ -24,13 +24,14 @@
       if (!doc.addEventListener) return;
       win.addEventListener(resizeEvt, recalc, false);
     })(document, window);
+
   </script>
 </head>
 
 <body>
   #include('../../common/header.html')
 
-  <div id="main" class="main order-main">
+  <div id="main" class="main order-main hidden-sm">
     <div class="order">
       <h3 class="product-name">世界梦号 【限时优惠】广州-那霸-宫古岛-广州</h3>
       <div class="product-info clearfloat">
@@ -264,6 +265,170 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="show-sm sm-main">
+    <div class="order-info">
+      <h3>世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</h3>
+      <p><span>出发港口：广州</span><span class="ml32">行程天数：6天5晚</span></p>
+      <p><span>出发日期：2019-09-29</span><span class="ml32 green">修改日期</span></p>
+    </div>
+    <div class="product-tags">
+      <span class="tag blue">买一送一</span>
+      <span class="tag purple">买二送二</span>
+      <span class="tag green">第三位免费</span>
+      <span class="tag yellow">限时闪促</span>
+      <i class="arrow-down fr mt10"></i>
+    </div>
+    <div class="step">
+      <div class="step-item selected" id="step1">
+        <span>选择房间</span>
+        <div class="step-item-after"></div>
+      </div>
+      <div class="step-item selected" id="step2">
+        <span>填写乘客信息</span>
+        <div class="step-item-before"></div>
+        <div class="step-item-after"></div>
+      </div>
+      <div class="step-item active" id="step3">
+        <span>核对乘客信息</span>
+        <div class="step-item-before"></div>
+        <div class="step-item-after"></div>
+      </div>
+      <div class="step-item" id="step4">
+        <span>选择支付方式</span>
+        <div class="step-item-before"></div>
+      </div>
+    </div>
+    <div class="trip">
+      <h3>您的行程</h3>
+      <p>广州-海上巡游-那霸-宫古岛-海上巡游-广州</p>
+      <p>出发日期：2019-9-8 周日 广州出发 6天5晚</p>
+      <p>星梦邮轮将向星梦套房以下房型每人每晚征收小费港币120元，星梦套房以上含星梦套房每人每晚征收小费港币150元;
+        两周岁以下（不含两周岁）婴孩免小费。邮轮小费将直接记录于个人舱房卡及帐单中，乘客需在离船当天或之前，前往中央大堂前台 / 接待处缴此小费及其他船上消费。星梦邮轮保留随时调整的权利。</p>
+      <p class="notice">请仔细阅读并同意以下细则才能继续</p>
+      <div class="data">
+        <a href="">[航行合约]</a>
+        <a href="">[重要提示]</a>
+        <a href="">[预订条款]</a>
+      </div>
+      <div class="check-row">
+        <input type="checkbox">同意以上内容
+      </div>
+    </div>
+    <div class="split"></div>
+    <div class="info">
+      <h3>联系人信息(重要,必填)</h3>
+      <div class="fill-row"><label for="">姓名：</label><input type="text" class="input" placeholder="姓名">
+      </div>
+      <div class="fill-row"><label for="">联系电话：</label><input type="text" class="input" placeholder="联系电话">
+      </div>
+      <div class="fill-row"><label for="">E-mail：</label><input type="text" class="input" placeholder="E-mail">
+      </div>
+    </div>
+    <div class="split"></div>
+    <div class="check-info">
+      <h3>乘客信息</h3>
+      <div class="room">
+        <h5>房间1：海景客房</h5>
+        <div class="user">
+          <div class="name">
+            <span class="name-t">乘客1</span><span class="name-v">邹泉</span>
+          </div>
+          <div class="content">
+            <p>姓名全拼：<span class="value">LI MEI</span></p>
+            <p>国籍：<span class="value">中国</span></p>
+            <p>性别：<span class="value">女</span></p>
+            <p>联系电话：<span class="value">18900000007</span></p>
+            <p class="sub-title">证件1</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+            <p class="sub-title">证件2</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+            <p class="sub-title">证件3</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="room">
+        <h5>房间2：海景客房</h5>
+        <div class="user">
+          <div class="name">
+            <span class="name-t">乘客1</span><span class="name-v">邹泉</span>
+          </div>
+          <div class="content">
+            <p>姓名全拼：<span class="value">LI MEI</span></p>
+            <p>国籍：<span class="value">中国</span></p>
+            <p>性别：<span class="value">女</span></p>
+            <p>联系电话：<span class="value">18900000007</span></p>
+            <p class="sub-title">证件1</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+            <p class="sub-title">证件2</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+            <p class="sub-title">证件3</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+          </div>
+        </div>
+        <div class="user">
+          <div class="name">
+            <span class="name-t">乘客2</span><span class="name-v">邹泉</span>
+          </div>
+          <div class="content">
+            <p>姓名全拼：<span class="value">LI MEI</span></p>
+            <p>国籍：<span class="value">中国</span></p>
+            <p>性别：<span class="value">女</span></p>
+            <p>联系电话：<span class="value">18900000007</span></p>
+            <p class="sub-title">证件1</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+            <p class="sub-title">证件2</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+            <p class="sub-title">证件3</p>
+            <p>证件类型：<span class="value">居民身份证</span></p>
+            <p>证件号码：<span class="value">360008199002028394</span></p>
+            <p>证件有效期：<span class="value">2020/09/23</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="split"></div>
+    <div class="fa-piao">
+      <h3>发票信息</h3>
+      <div class="fill-row"><label for="">发票信息：</label>
+        <div class="radio"><input type="radio" class="sex">不需要发票</div>
+        <div class="radio"><input type="radio" class="sex">个人</div>
+        <div class="radio"><input type="radio" class="sex">公司</div>
+      </div>
+      <div class="fill-row"><label for="">发票抬头：</label><input type="text" class="input" placeholder="发票抬头（个人或企业名称）">
+      </div>
+      <div class="fill-row"><label for="">税号：</label><input type="text" class="input" placeholder="税号">
+      </div>
+      <div class="fill-row"><label for="">邮寄地址：</label><input type="text" class="input" placeholder="邮寄地址">
+      </div>
+    </div>
+  </div>
+  <div class="price-bar show-sm">
+    <div class="left">
+      <p class="total">总计：<span class="price">¥8930</span></p>
+    </div>
+    <div class="right">
+      <p class="main">下一步</p>
+      <p class="sub">核对资料</p>
     </div>
   </div>
   #include('../../common/footer.html')
