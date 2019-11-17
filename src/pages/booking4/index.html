@@ -94,8 +94,8 @@
                 <a href="###" class="col-4 cgreen tcenter">[重要提示]</a>
                 <a href="###" class="col-4 cgreen tright">[预订条款]</a>
               </div>
-              <div class="form-group form-check mt20">
-                <input type="checkbox" class="form-check-input" id="styled-checkbox-2">
+              <div class="check-btns">
+                <input type="checkbox" id="styled-checkbox-2">
                 <label for="styled-checkbox-2">
                   同意以上内容
                 </label>
@@ -103,18 +103,21 @@
             </div>
             <h3>联系人信息(重要)</h3>
             <div class="white-container">
-              <div class="row">
-                <div class="col-4">
+              <div class="info-row">
+                <div class="info-item">
                   <label for="user">姓名</label>
-                  <div class="input-item"><input id="user" type="text" class="" value="邹泉"></div>
+                  <input id="user" type="text" class="" value="邹泉">
+                  <span>*</span>
                 </div>
-                <div class="col-4">
+                <div class="info-item">
                   <label for="tel">联系电话</label>
-                  <div class="input-item"><input id="tel" type="text" class="" value="178 8930 0028"></div>
+                  <input id="tel" type="text" class="" value="178 8930 0028">
+                  <span>*</span>
                 </div>
-                <div class="col-4">
+                <div class="info-item">
                   <label for="email">Email</label>
-                  <div class="input-item"><input id="email" type="text" class="" value="zhouquan@163.com"></div>
+                  <input id="email" type="text" class="" value="zhouquan@163.com">
+                  <span>*</span>
                 </div>
               </div>
             </div>
@@ -224,42 +227,41 @@
           <div class="right-container">
             <div class="main">
               <h3>订单详情</h3>
-              <div class="order-info">
+              <!-- <div class="order-info">
                 <p><span></span>
                   <span class="name">世界梦号</span>
                   <span>深圳出发</span>
                   <span>6天5晚</span></p>
                 <p>广州 - 那霸 - 广州</p>
                 <p>2019-11-11至2019-11-18</p>
+              </div> -->
+              <div class="room-info">
+                <p>房间1:海景客房</p>
+                <p><span>乘客1</span><span>¥3999</span></p>
+                <p><span>港务费</span><span>¥300×1</span></p>
               </div>
               <div class="room-info">
-                <p>房间1</p>
-                <p><span>海景客房-单人入住</span><span class="detail">查看详情</span></p>
-                <p><span>面积：56-80m² </span><span class="delete">删除</span></p>
-              </div>
-              <div class="room-info">
-                <p>房间1</p>
-                <p><span>海景客房-单人入住</span><span class="detail">查看详情</span></p>
-                <p><span>面积：56-80m² </span><span class="delete">删除</span></p>
+                <p>房间2:海景客房</p>
+                <p><span>乘客1</span><span>¥3999</span></p>
+                <p><span>乘客2</span><span>—</span></p>
+                <p><span>港务费</span><span>¥300×2</span></p>
               </div>
               <div class="room-count">
-                <p><span>房间数：</span><span>2间</span></p>
+                <p><span>优惠金额：</span><span>-¥399</span></p>
+              </div>
+              <div class="price-desc">
+                <div class="total-price">
+                  <span>总计</span><span>¥8499</span>
+                </div>
+                <p>价格说明：本页面展示的价格为在售四人房型的船票及港务税费的人均起价，如需了解价格定义请详见价格说明。</p>
               </div>
               <div class="btns">
                 <button type="button" class="btn pre">上一步</button><button type="button"
-                  class="btn next">下一步,填写乘客信息</button>
+                  class="btn next">下一步,核对资料</button>
               </div>
             </div>
 
           </div>
-        </div>
-        <!-- 选择支付方式 -->
-        <div class="content" id='selectPay'>
-
-        </div>
-        <!-- 预定成功 -->
-        <div class="content" id="orderSuccess">
-
         </div>
       </div>
     </div>

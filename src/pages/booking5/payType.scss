@@ -1,0 +1,72 @@
+#selectPay {
+   width: 1200px;
+  h3{
+    font-size: 20px;
+    color: #343E57;
+    padding: 20px 0 20px 10px;
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 138px;
+    background-color: #ffffff;
+    .center{
+      display: flex;
+      align-items: center;
+    }
+    .price-count {
+      width: 82px;
+      margin-right: 60px;
+    }
+    .price-num{
+      font-size: 20px;
+      color: #383838;
+    }
+    .price{
+      font-size: 28px;
+      color: #F8485E;
+      margin-left: 14px;
+      span{
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+  .pay-types{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 30px;
+    .pay-item{
+      width: 262px;
+      height: 90px;
+      cursor: pointer;
+    }
+  }
+  .btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    button{
+      width: 230px;
+      height: 54px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .back{
+      border: 1px solid #D0D7DF;
+      border-radius: 2px;
+      
+      color: #343E57;
+    }
+    .pay{
+      color: #ffffff;
+      background-color: #00969E;
+      border-radius: 2px;
+    }
+  }
+}
