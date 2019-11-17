@@ -129,23 +129,5 @@ import "../../js/aos";
             $(".topbanner_plane .ship .btn-icon").removeClass("artive");
         })
     });
-    $("#header .menu-box-inner").click(function () {
-        $("body").addClass("show_menu");
-        setTimeout(function () {
-            $(".m_menu .navbar-menu").addClass("w80r")
-        }, 100);
-    })
-    $(".m_menu").click(function () {
-        $("body").removeClass("show_menu");
-        setTimeout(function () {
-            $(".m_menu .navbar-menu").removeClass("w80r")
-        }, 100);
-        return false;
-    })
-    $(".m_menu ul>li>a").click(function () {
-        var $this = $(this)
-        $this.parent().toggleClass("showsub");
-        $this.parent().find(".icon-arrow").toggleClass("icon-arrowdown");
-        return false;
-    })
+    
 })()

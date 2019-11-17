@@ -1,5 +1,5 @@
 @import './variables.scss';
-
+@import './fontstyle.css';
 /* common css ============================================== */
 html,
 body {
@@ -141,6 +141,9 @@ blockquote {
 .gray9 {
 	color: #999;
 }
+.gray8{
+	color: #888;
+}
 
 .green {
 	color: #15989D;
@@ -157,7 +160,9 @@ blockquote {
 .white {
 	color: #fff;
 }
-
+.yellow{
+	color: #FDD26E !important;
+}
 .black {
 	color: #383838;
 }
@@ -397,7 +402,9 @@ b {
 	margin-right: -1em;
 	white-space: nowrap;
 }
-
+.fz12 {
+	font-size: 12rem/$fit !important;
+}
 .fz14 {
 	font-size: 14rem/$fit !important;
 }
@@ -414,7 +421,9 @@ b {
 	font-size: 24rem/$fit !important;
 }
 
-
+.fw100{
+	font-weight: 100;
+}
 .fb {
 	font-weight: bold;
 }
@@ -503,12 +512,15 @@ b {
 .header-bar .sub_header_menu {
 	width: 100%;
 	position: absolute;
-	background: rgba(0, 150, 158, 0.40);
+	background: #fff;
 	height: 40rem/$fit;
 	text-align: center;
 	z-index: 1000;
+	display:none;
 }
-
+.header-bar .sub_header_menu ul{
+	background: rgba(0, 150, 158, 0.40);
+}
 .header-bar .header-bar-inner {
 	padding-top: 10rem/$fit;
 	padding-left: 460rem/$fit;
@@ -1120,261 +1132,13 @@ b {
 	background: url(../images/arrow-up.png) center no-repeat;
 	padding: 0;
 }
-
-/*---iconA----*/
-@font-face {
-	font-family: 'icomoon';
-	src: url('../font/icomoon.eot');
-	src: url('../font/icomoon.eot') format('embedded-opentype'),
-		url('../font/icomoon.ttf') format('truetype'),
-		url('../font/icomoon.woff') format('woff'),
-		url('../font/icomoon.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
+.boxfixed_w100{
+	position: fixed !important;
+	z-index: 9;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 0 8rem/$fit rgba(0, 0, 0, .5);
 }
-
-[class^="icon-"],
-[class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-order:before {
-	content: "\e948";
-  }
-  .icon-sale3:before {
-	content: "\e949";
-  }
-  .icon-you2:before {
-	content: "\e94a";
-  }
-  .icon-active2:before {
-	content: "\e900";
-  }
-  .icon-ship2:before {
-	content: "\e90a";
-  }
-  .icon-ship3:before {
-	content: "\e90b";
-  }
-  .icon-member:before {
-	content: "\e90c";
-  }
-  .icon-group:before {
-	content: "\e90e";
-  }
-  .icon-menu:before {
-	content: "\e942";
-  }
-  .icon-arrowleft2:before {
-	content: "\e93e";
-  }
-  .icon-arrowright21:before {
-	content: "\e93f";
-  }
-  .icon-arrowdown2:before {
-	content: "\e940";
-  }
-  .icon-arrowup2:before {
-	content: "\e941";
-  }
-  .icon-local2:before {
-	content: "\e932";
-  }
-  .icon-cal2:before {
-	content: "\e933";
-  }
-  .icon-timer:before {
-	content: "\e934";
-  }
-  .icon-start:before {
-	content: "\e935";
-  }
-  .icon-spring1:before {
-	content: "\e936";
-  }
-  .icon-spring2:before {
-	content: "\e937";
-  }
-  .icon-tree:before {
-	content: "\e938";
-  }
-  .icon-sale2:before {
-	content: "\e939";
-  }
-  .icon-gift2:before {
-	content: "\e93a";
-  }
-  .icon-sale31:before {
-	content: "\e93b";
-  }
-  .icon-snow:before {
-	content: "\e93c";
-  }
-  .icon-free:before {
-	content: "\e93d";
-  }
-  .icon-play:before {
-	content: "\e92f";
-  }
-  .icon-fillsreen:before {
-	content: "\e930";
-  }
-  .icon-pase:before {
-	content: "\e931";
-  }
-  .icon-msg:before {
-	content: "\e92e";
-  }
-  .icon-x:before {
-	content: "\e92b";
-  }
-  .icon-question:before {
-	content: "\e907";
-  }
-  .icon-line:before {
-	content: "\e924";
-  }
-  .icon-fav:before {
-	content: "\e925";
-  }
-  .icon-arrowright2:before {
-	content: "\e926";
-  }
-  .icon-cal:before {
-	content: "\e927";
-  }
-  .icon-price:before {
-	content: "\e928";
-  }
-  .icon-edit:before {
-	content: "\e929";
-  }
-  .icon-view:before {
-	content: "\e92a";
-  }
-  .icon-good:before {
-	content: "\e92c";
-  }
-  .icon-wx2:before {
-	content: "\e92d";
-  }
-  .icon-plus:before {
-	content: "\e908";
-  }
-  .icon-subs:before {
-	content: "\e909";
-  }
-  .icon-tag:before {
-	content: "\e90d";
-  }
-  .icon-search:before {
-	content: "\e90f";
-  }
-  .icon-fire:before {
-	content: "\e910";
-  }
-  .icon-children:before {
-	content: "\e911";
-  }
-  .icon-gift:before {
-	content: "\e912";
-  }
-  .icon-reward:before {
-	content: "\e913";
-  }
-  .icon-arrowright:before {
-	content: "\e914";
-  }
-  .icon-arrowdown:before {
-	content: "\e915";
-  }
-  .icon-arrowleft:before {
-	content: "\e916";
-  }
-  .icon-arrowup:before {
-	content: "\e917";
-  }
-  .icon-local:before {
-	content: "\e918";
-  }
-  .icon-holiday:before {
-	content: "\e919";
-  }
-  .icon-kingsize:before {
-	content: "\e91a";
-  }
-  .icon-foods:before {
-	content: "\e91b";
-  }
-  .icon-happy:before {
-	content: "\e91c";
-  }
-  .icon-fitness:before {
-	content: "\e91d";
-  }
-  .icon-face:before {
-	content: "\e91e";
-  }
-  .icon-pay:before {
-	content: "\e91f";
-  }
-  .icon-diamond:before {
-	content: "\e920";
-  }
-  .icon-note:before {
-	content: "\e921";
-  }
-  .icon-service:before {
-	content: "\e922";
-  }
-  .icon-sea:before {
-	content: "\e906";
-  }
-  .icon-food:before {
-	content: "\e905";
-  }
-  .icon-bad:before {
-	content: "\e904";
-  }
-  .icon-video:before {
-	content: "\e903";
-  }
-  .icon-360:before {
-	content: "\e902";
-  }
-  .icon-sunshine:before {
-	content: "\e901";
-  }
-  .icon-ship:before {
-	content: "\e923";
-  }
-  .icon-waring:before {
-	content: "\e943";
-  }
-  .icon-share:before {
-	content: "\e944";
-  }
-  .icon-user:before {
-	content: "\e945";
-  }
-  .icon-tel:before {
-	content: "\e946";
-  }
-  .icon-wx:before {
-	content: "\e947";
-  }
 
 .btn-styleA {
 	color: #fff;
@@ -1460,7 +1224,7 @@ b {
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	content: "\e911";
+	content: "\e914";
 	margin-left: 20rem/$fit;
 	color: #999;
 }
@@ -1492,7 +1256,7 @@ b {
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	content: "\e910";
+	content: "\e926";
 	margin-left: 40rem/$fit;
 }
 
@@ -1540,8 +1304,7 @@ b {
 }
 
 .show_menu {
-	height: 100%;
-	overflow: hidden;
+	
 }
 
 .show_menu .m_menu {
@@ -1640,9 +1403,11 @@ b {
 @media (max-width: 767px) {
 
 	.show-sm {
-		display:inherit;
+		display:block;
 	}
-
+	.show-inline-sm {
+		display: inline;
+	}
 	.hidden-sm {
 		display: none;
 	}
@@ -1699,24 +1464,30 @@ b {
 	}
 
 	.fz14 {
-		font-size: 26rem/$fit !important;
+		font-size: 28rem/$fit_m !important;
 	}
-
+	.fz13 {
+		font-size: 26rem/$fit_m !important;
+	}
 	.fz16 {
-		font-size: 28rem/$fit !important;
+		font-size: 32rem/$fit_m !important;
 	}
 
 	.fz12 {
-		font-size: 22rem/$fit !important;
+		font-size: 24rem/$fit_m !important;
 	}
 
 	.fz20 {
-		font-size: 30rem/$fit !important;
+		font-size: 40rem/$fit_m !important;
 	}
 
 	.mt5 {
-		margin-top: 10rem/$fit;
+		margin-top: 10rem/$fit_m;
 	}
+	.ml32{
+		margin-left: 32rem/$fit_m;
+	}
+	
 
 }
 
