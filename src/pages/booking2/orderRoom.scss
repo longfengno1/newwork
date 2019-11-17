@@ -277,12 +277,14 @@
     }
 
     .num-select {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
       border: 1px solid #64CCC9;
       border-radius: 2px;
       padding: 1px;
-      text-align: center;
       width: 100px;
+      text-align: center;
     }
 
     .num {

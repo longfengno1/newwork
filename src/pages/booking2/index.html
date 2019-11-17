@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 320);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+  </script>
+</head>
+
+<body>
+  #include('../../common/header.html')
+
+  <div id="main" class="main order-main">
+    <div class="order">
+      <h3 class="product-name">世界梦号 【限时优惠】广州-那霸-宫古岛-广州</h3>
+      <div class="product-info clearfloat">
+        <span>出发港口： 广州</span><span>行程天数： 6天5晚</span><span>出发日期： 2019-09-29</span><span
+          id='modfiy-date'>修改日期</span></span>
+      </div>
+      <div class="product-tags">
+        <span class="tag green">暑假优惠</span>
+        <span class="tag blue">买一送一</span>
+        <span class="tag purple">特惠</span>
+        <span class="tag yellow">儿童</span>
+        <span class="tag red">热门</span>
+        <span class="tag light-blue">专享</span>
+      </div>
+      <div class="step">
+        <div class="step-item selected" id="step1">
+          <!-- <div class="step-item-before"></div> -->
+          <span>1、选择航线、日期</span>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item active" id="step2">
+          <span>2、选择房间</span>
+          <div class="step-item-before"></div>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item" id="step3">
+          <span>3、填写乘客信息</span>
+          <div class="step-item-before"></div>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item" id="step4">
+          <span>4、核对乘客信息</span>
+          <div class="step-item-before"></div>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item" id="step5">
+          <span>5、选择支付方式</span>
+          <div class="step-item-before"></div>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item" id="step6">
+          <span>6、预订成功</span>
+          <div class="step-item-before"></div>
+          <!-- <div class="step-item-after"></div> -->
+        </div>
+      </div>
+      <!-- 选择房间 -->
+      <div class="content" id="selectRoom">
+        <h3><span>选择房间</span><span class="tip">本页面展示的价格为人均优惠价，可能根据入住人不同而调整如需了解价格定义请详见<a href="###">价格说明</a></span></h3>
+        <div class="main-content">
+          <div class="left-container">
+            <div class="select-container">
+              <div class="left">
+                <p class="select-people">选择每房<br>入住人数</p>
+                <p class="select-room">选择房型</p>
+              </div>
+              <div class="right">
+                <div class="people-row">
+                  <div class="people-row-item active">单人入住<span>(1)</span></div>
+                  <div class="people-row-item">双人入住<span>(1)</span></div>
+                  <div class="people-row-item">三人入住</div>
+                  <div class="people-row-item">四人入住</div>
+                </div>
+                <div class="room-row">
+                  <div class="room-row-left"></div>
+                  <div class="room-row-item active">
+                    <div class="item-name">
+                      <p class="room-name">全部房型</p>
+                      <p class="price">￥<span>2999</span> 起/人</p>
+                    </div>
+                  </div>
+                  <div class="room-row-item">
+                    <div class="item-name">
+                      <p class="room-name">全部房型</p>
+                      <p class="price">￥<span>2999</span> 起/人</p>
+                    </div>
+                  </div>
+                  <div class="room-row-item">
+                    <div class="item-name">
+                      <p class="room-name">全部房型</p>
+                      <p class="price">￥<span>2999</span> 起/人</p>
+                    </div>
+                  </div>
+                  <div class="room-row-item disable">
+                    <div class="item-name">
+                      <p class="room-name">全部房型</p>
+                      <p class="price">￥<span>2999</span> 起/人</p>
+                    </div>
+                    <div class="tag sold-out">告罄</div>
+                  </div>
+                  <div class="room-row-item">
+                    <div class="item-name">
+                      <p class="room-name">全部房型</p>
+                      <p class="price">￥<span>2999</span> 起/人</p>
+                    </div>
+                    <div class="tag prime">优选</div>
+                  </div>
+                  <div class="room-row-right"></div>
+                </div>
+              </div>
+            </div>
+            <div class="rooms">
+              <div class="room-item">
+                <img src="../../images/pic.jpg" alt="房型图片">
+                <div class="room-content">
+                  <div class="content-left">
+                    <div>
+                      <p class="room-name"><span>内侧客房-单人入住</span><span class="detail">查看详情</span></p>
+                      <p class="facility">面积：56 - 80m² 房型分布：甲板11楼层</p>
+                    </div>
+                    <p class="price"><span class="current">¥<span>3,999</span>起/人</span><span
+                        class="old">参考价：<span>¥8999/人</span></span></p>
+                  </div>
+                  <div class="content-right">
+                    <div class="order-num">可预定房间数：6间</div>
+                    <div class="num-select">
+                      <span class="minus">—</span>
+                      <span class="num">1</span>
+                      <span class="plus">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="room-item">
+                <img src="../../images/pic.jpg" alt="房型图片">
+                <div class="room-content">
+                  <div class="content-left">
+                    <div>
+                      <p class="room-name"><span>内侧客房-单人入住</span><span class="detail">查看详情</span></p>
+                      <p class="facility">面积：56 - 80m² 房型分布：甲板11楼层</p>
+                    </div>
+                    <p class="price"><span class="current">¥<span>3,999</span>起/人</span><span
+                        class="old">参考价：<span>¥8999/人</span></span></p>
+                  </div>
+                  <div class="content-right">
+                    <div class="order-num">可预定房间数：6间</div>
+                    <div class="num-select">
+                      <span class="minus">—</span>
+                      <span class="num">1</span>
+                      <span class="plus">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="room-item">
+                <img src="../../images/pic.jpg" alt="房型图片">
+                <div class="room-content">
+                  <div class="content-left">
+                    <div>
+                      <p class="room-name"><span>内侧客房-单人入住</span><span class="detail">查看详情</span></p>
+                      <p class="facility">面积：56 - 80m² 房型分布：甲板11楼层</p>
+                    </div>
+                    <p class="price"><span class="current">¥<span>3,999</span>起/人</span><span
+                        class="old">参考价：<span>¥8999/人</span></span></p>
+                  </div>
+                  <div class="content-right">
+                    <div class="order-num">可预定房间数：6间</div>
+                    <div class="num-select">
+                      <span class="minus">—</span>
+                      <span class="num">1</span>
+                      <span class="plus">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="room-item">
+                <img src="../../images/pic.jpg" alt="房型图片">
+                <div class="room-content">
+                  <div class="content-left">
+                    <div>
+                      <p class="room-name"><span>内侧客房-单人入住</span><span class="detail">查看详情</span></p>
+                      <p class="facility">面积：56 - 80m² 房型分布：甲板11楼层</p>
+                    </div>
+                    <p class="price"><span class="current">¥<span>3,999</span>起/人</span><span
+                        class="old">参考价：<span>¥8999/人</span></span></p>
+                  </div>
+                  <div class="content-right">
+                    <div class="order-num">可预定房间数：<span>仅剩1间</span></div>
+                    <div class="num-select">
+                      <span class="minus">—</span>
+                      <span class="num">1</span>
+                      <span class="plus">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="room-item">
+                <img src="../../images/pic.jpg" alt="房型图片">
+                <div class="room-content">
+                  <div class="content-left">
+                    <div>
+                      <p class="room-name"><span>内侧客房-单人入住</span><span class="detail">查看详情</span></p>
+                      <p class="facility">面积：56 - 80m² 房型分布：甲板11楼层</p>
+                    </div>
+                    <p class="price"><span class="current">¥<span>3,999</span>起/人</span><span
+                        class="old">参考价：<span>¥8999/人</span></span></p>
+                  </div>
+                  <div class="content-right">
+                    <div class="order-num">可预定房间数：6间</div>
+                    <div class="num-select">
+                      <span class="minus">—</span>
+                      <span class="num">1</span>
+                      <span class="plus">+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="main">
+              <h3>订单详情</h3>
+              <div class="order-info">
+                <p><span></span>
+                  <span class="name">世界梦号</span>
+                  <span>深圳出发</span>
+                  <span>6天5晚</span></p>
+                <p>广州 - 那霸 - 广州</p>
+                <p>2019-11-11至2019-11-18</p>
+              </div>
+              <div class="room-info">
+                <p>房间1</p>
+                <p><span>海景客房-单人入住</span><span class="detail">查看详情</span></p>
+                <p><span>面积：56-80m² </span><span class="delete">删除</span></p>
+              </div>
+              <div class="room-info">
+                <p>房间1</p>
+                <p><span>海景客房-单人入住</span><span class="detail">查看详情</span></p>
+                <p><span>面积：56-80m² </span><span class="delete">删除</span></p>
+              </div>
+              <div class="room-count">
+                <p><span>房间数：</span><span>2间</span></p>
+              </div>
+              <div class="btns">
+                <button type="button" class="btn pre">上一步</button><button type="button"
+                  class="btn next">下一步,填写乘客信息</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  #include('../../common/footer.html')
+
+</body>
+
+</html>

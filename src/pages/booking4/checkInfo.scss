@@ -1,5 +1,6 @@
 #checkInfo {
   background-color: #f7fcfc;
+  
   h3 {
     font-size: 26px;
     color: #343E57;
@@ -22,6 +23,7 @@
 
     .right-container {
       width: 300px;
+      margin-top: 81px;
 
       .main {
         padding: 0 4px;
@@ -36,6 +38,25 @@
     .white-container{
       background-color: #fff;
       padding:20px 30px 24px;
+
+      .info-row{
+        display: flex;
+        align-items: center;
+      }
+
+      .info-item{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        label{
+          margin: 0;
+          margin-right: 10px;
+        }
+        span{
+          font-size: 18px;
+          color: #FF5050;
+        }
+      }
 
       h5{
         font-size: 18px;
@@ -124,6 +145,20 @@
       margin-right: 50px;
     }
 
+    .check-btns {
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+
+      label {
+        margin-bottom: 0;
+        margin-right: 0;
+        font-size: 12px;
+        color: #343E57;
+        margin-left: 16px;
+      }
+    }
+
     input {
       padding-left: 20px;
       margin-right: 5px;
@@ -132,6 +167,14 @@
       border-radius: 2px;
       font-size: 14px;
       color: #343E57;
+    }
+
+    .form-group{
+      margin-bottom: 10px;
+    }
+
+    .form-control{
+      height: 30px;
     }
 
     .input-item {
@@ -206,7 +249,7 @@
 
     p {
       font-size: 14px;
-      color: #383838;
+      color: #343E57;
       letter-spacing: 0.88px;
       margin-top: 10px;
 
@@ -234,8 +277,30 @@
     }
   }
 
-  .room-count {
-    background-color: #EFFAF9;
+  .price-desc {
+    padding: 0 16px 10px;
+
+    .total-price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        font-size: 18px;
+        color: #343E57;
+
+        &:last-child {
+          font-size: 18px;
+          color: #FF5050;
+        }
+      }
+    }
+
+    p {
+      font-size: 12px;
+      color: #999999;
+      line-height: 20px;
+    }
   }
 
   .btns {
