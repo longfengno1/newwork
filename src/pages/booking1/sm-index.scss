@@ -1,0 +1,310 @@
+@import '../../css/variables.scss';
+
+.sm-main {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: Helvetica;
+  padding-bottom: 120rem/$fit_m;
+  .arrow-down {
+    width: 0.25rem;
+    height: 0.25rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 0.025rem solid #999;
+    border-width: 0 0.025rem 0.025rem 0;
+    display: block;
+  }
+
+  .arrow-up {
+    width: 0.25rem;
+    height: 0.25rem;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 0.025rem solid #999;
+    border-width: 0.025rem 0 0 0.025rem;
+    display: block;
+  }
+
+  .order-info {
+    margin: 24rem/$fit_m;
+    border-bottom: 1px dotted #e5e5e5;
+    padding-left: 8rem/$fit_m;
+
+    h3 {
+      font-size: 34rem/$fit_m;
+      color: #383838;
+      line-height: 55rem/$fit_m;
+      margin-bottom: 24rem/$fit_m;
+    }
+
+    p {
+      font-size: 26rem/$fit_m;
+      color: #666666;
+      line-height: 1;
+      margin-bottom: 24rem/$fit_m;
+    }
+
+    .ml32 {
+      margin-left: 32rem/$fit_m;
+    }
+  }
+
+  .product-tags {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 0 36rem/$fit_m 20rem/$fit_m;
+  }
+
+  .step {
+    padding: 0 32rem/$fit_m;
+    margin-top: 22rem/$fit_m;
+    display: flex;
+    justify-content: space-between;
+
+    .step-item {
+      width: 188rem/$fit_m;
+      height: 50rem/$fit_m;
+      margin-left: 5rem/$fit_m;
+      text-align: center;
+
+      span {
+        line-height: 50rem/$fit_m;
+        font-size: 22rem/$fit_m;
+      }
+
+      .step-item-before {
+        border-top-width: 25rem/$fit_m;
+        border-bottom-width: 25rem/$fit_m;
+        border-left-width: 12rem/$fit_m;
+      }
+
+      .step-item-after {
+        right: -12rem/$fit_m;
+        border-top-width: 25rem/$fit_m;
+        border-bottom-width: 25rem/$fit_m;
+        border-left-width: 12rem/$fit_m;
+      }
+    }
+  }
+
+  h4.title {
+    font-size: 24rem/$fit_m;
+    color: #383838;
+    padding: 30rem/$fit_m 32rem/$fit_m 24rem/$fit_m;
+  }
+
+  .price-desc{
+    display: flex;
+    align-items: center;
+    .icon-question{
+      font-size: 26rem/$fit_m;
+      margin-right: 6rem/$fit_m;
+      cursor: pointer;
+    }
+  }
+
+  .m_tab {
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    padding: 0 32rem/$fit_m;
+    justify-content: space-between;
+  }
+
+  .m_tab .tab_item {
+    height: 60rem/$fit_m;
+    width: 156rem/$fit_m;
+    line-height: 60rem/$fit_m;
+    font-size: 24rem/$fit_m;
+    color: #00969e;
+    cursor: pointer;
+    border: 1px solid #06929a;
+    border-radius: 4rem/$fit_m;
+  }
+
+  .m_tab .tab_item:hover,
+  .m_tab .current {
+    color: #fff;
+    text-decoration: none;
+    background: #00969E;
+  }
+
+  .room-all {
+    background: #F1F7F7;
+    margin: 0 32rem/$fit_m;
+    padding: 31rem/$fit_m 32rem/$fit_m;
+    display: flex;
+    align-items: center;
+
+    .green {
+      font-size: 26rem/$fit_m;
+      font-weight: 700;
+      color: #00969E;
+      flex: 2;
+    }
+
+    .price {
+      font-size: 22rem/$fit_m;
+      color: #666666;
+      margin-right: 32rem/$fit_m;
+
+      .red {
+        font-size: 40rem/$fit_m;
+      }
+    }
+
+    .arrow-down,
+    .arrow-up {
+      width: 0.45rem;
+      height: 0.45rem;
+    }
+  }
+
+  .room-list {
+    .product {
+      margin: 0 32rem/$fit_m;
+      padding-top: 24rem/$fit_m;
+      border-bottom: 1px solid #E5E5E5;
+      margin-bottom: 24rem/$fit_m;
+    }
+
+    .product-row {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 16rem/$fit_m;
+    }
+
+    .product-img {
+      background: url(../../images/prodetail_pic.jpg) no-repeat center;
+      width: 240rem/$fit_m;
+      height: 135rem/$fit_m;
+    }
+
+    .product-detail {
+      padding-left: 20rem/$fit_m;
+    }
+
+    .product-name {
+      font-size: 30rem/$fit_m;
+      color: #383838;
+      margin-bottom: 8rem/$fit_m;
+    }
+
+    .desc {
+      font-size: 26rem/$fit_m;
+      color: #999999;
+      font-weight: 300;
+      line-height: 34rem/$fit_m;
+
+    }
+
+    .price-row {
+      margin-top: 32rem/$fit_m;
+      font-size: 30rem/$fit_m;
+      color: #001E00;
+      line-height: 31rem/$fit_m;
+
+      .price {
+        color: #F8485E;
+      }
+    }
+
+    .order-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15rem/$fit_m;
+
+      .room-count {
+        font-size: 26rem/$fit_m;
+        color: #06929A;
+      }
+
+      .minus-plus {
+        display: flex;
+        align-items: center;
+
+        .minus,
+        .plus {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 46rem/$fit_m;
+          height: 46rem/$fit_m;
+          border-radius: 50%;
+        }
+
+        .minus {
+          border: 1px solid #00969E;
+          color: #00969E;
+        }
+
+        .plus {
+          background-color: #00969E;
+          color: #fff;
+        }
+
+        .num {
+          font-size: 28rem/$fit_m;
+          padding: 0 20rem/$fit_m;
+        }
+      }
+    }
+
+  }
+
+}
+
+.price-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 120rem/$fit_m;
+  display: flex;
+  background-color: #fff;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    justify-content: space-around;
+    // align-items: ;
+    padding: 17rem/$fit_m 0 0 24rem/$fit_m;
+    .total{
+      font-size: 32rem/$fit_m;
+      color: #383838;
+    }
+    .price{
+      font-size: 30rem/$fit_m;
+      color: #F8485E;
+    }
+    .count{
+      font-size: 26rem/$fit_m;
+      color: #999999;
+      // margin-top: 10rem/$fit_m;
+    }
+  }
+
+  .right {
+    width: 354rem/$fit_m;
+    flex-shrink: 0;
+    background-color: #00969E;
+    align-items: center;
+    justify-content: center;
+    .main {
+      font-size: 32rem/$fit_m;
+      color: #FFFFFF;
+      letter-spacing: 0.52rem/$fit_m;
+      font-weight: 500;
+    }
+    .sub{
+      font-size: 28rem/$fit_m;
+      color: #FFFFFF;
+      letter-spacing: 0.52rem/$fit_m;
+      font-weight: 300;
+    }
+  }
+}
