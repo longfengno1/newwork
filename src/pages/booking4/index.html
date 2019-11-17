@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 320);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+  </script>
+</head>
+
+<body>
+  #include('../../common/header.html')
+
+  <div id="main" class="main order-main">
+    <div class="order">
+      <h3 class="product-name">世界梦号 【限时优惠】广州-那霸-宫古岛-广州</h3>
+      <div class="product-info clearfloat">
+        <span>出发港口： 广州</span><span>行程天数： 6天5晚</span><span>出发日期： 2019-09-29</span><span
+          id='modfiy-date'>修改日期</span></span>
+      </div>
+      <div class="product-tags">
+        <span class="tag green">暑假优惠</span>
+        <span class="tag blue">买一送一</span>
+        <span class="tag purple">特惠</span>
+        <span class="tag yellow">儿童</span>
+        <span class="tag red">热门</span>
+        <span class="tag light-blue">专享</span>
+      </div>
+      <div class="step">
+        <div class="step-item selected" id="step1">
+          <!-- <div class="step-item-before"></div> -->
+          <span>1、选择航线、日期</span>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item active" id="step2">
+          <span>2、选择房间</span>
+          <div class="step-item-before"></div>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item" id="step3">
+          <span>3、填写乘客信息</span>
+          <div class="step-item-before"></div>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item" id="step4">
+          <span>4、核对乘客信息</span>
+          <div class="step-item-before"></div>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item" id="step5">
+          <span>5、选择支付方式</span>
+          <div class="step-item-before"></div>
+          <div class="step-item-after"></div>
+        </div>
+        <div class="step-item" id="step6">
+          <span>6、预订成功</span>
+          <div class="step-item-before"></div>
+          <!-- <div class="step-item-after"></div> -->
+        </div>
+      </div>
+      <!-- 核对信息 -->
+      <div class="content" id='checkInfo'>
+        <div class="main-content">
+          <div class="left-container">
+            <h3>您的行程</h3>
+            <div class="white-container">
+              <h5>世界梦号 【限时优惠】广州-那霸-宫古岛-广州</h5>
+              <p>广州-海上巡游-那霸-宫古岛-海上巡游-广州</p>
+              <p>出发日期：2019-9-8 周日 广州出发 6天5晚</p>
+              <p class="fz12">星梦邮轮将向星梦套房以下房型每人每晚征收小费港币120元，星梦套房以上含星梦套房每人每晚征收小费港币150元;
+                两周岁以下（不含两周岁）婴孩免小费。邮轮小费将直接记录于个人舱房卡及帐单中，乘客需在离船当天或之前，前往中央大堂前台 / 接待处缴此小费及其他船上消费。星梦邮轮保留随时调整的权利。</p>
+              <p class="cred">请仔细阅读并同意以下细则才能继续</p>
+              <div class="row">
+                <a href="###" class="col-4 cgreen">[航行合约]</a>
+                <a href="###" class="col-4 cgreen tcenter">[重要提示]</a>
+                <a href="###" class="col-4 cgreen tright">[预订条款]</a>
+              </div>
+              <div class="form-group form-check mt20">
+                <input type="checkbox" class="form-check-input" id="styled-checkbox-2">
+                <label for="styled-checkbox-2">
+                  同意以上内容
+                </label>
+              </div>
+            </div>
+            <h3>联系人信息(重要)</h3>
+            <div class="white-container">
+              <div class="row">
+                <div class="col-4">
+                  <label for="user">姓名</label>
+                  <div class="input-item"><input id="user" type="text" class="" value="邹泉"></div>
+                </div>
+                <div class="col-4">
+                  <label for="tel">联系电话</label>
+                  <div class="input-item"><input id="tel" type="text" class="" value="178 8930 0028"></div>
+                </div>
+                <div class="col-4">
+                  <label for="email">Email</label>
+                  <div class="input-item"><input id="email" type="text" class="" value="zhouquan@163.com"></div>
+                </div>
+              </div>
+            </div>
+            <h3>乘客信息</h3>
+            <div class="white-container clearfloat" style="padding-right: 10px;">
+              <h4>房间1：海景客房 </h4>
+              <div class="guest-info">
+                <h5>乘客1：邹泉</h5>
+                <p>姓名拼音：ZHOU QUAN</p>
+                <p>国籍：中国</p>
+                <p>性别：男</p>
+                <p>联系电话：178 8930 0028</p>
+                <p class="cgreen">证件1</p>
+                <p>证件类型：居民身份证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件2</p>
+                <p>证件类型：护照</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件3</p>
+                <p>证件类型：港澳通行证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+              </div>
+              <div class="guest-info">
+                <h5>乘客1：邹泉</h5>
+                <p>姓名拼音：ZHOU QUAN</p>
+                <p>国籍：中国</p>
+                <p>性别：男</p>
+                <p>联系电话：178 8930 0028</p>
+                <p class="cgreen">证件1</p>
+                <p>证件类型：居民身份证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件2</p>
+                <p>证件类型：护照</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件3</p>
+                <p>证件类型：港澳通行证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+              </div>
+              <div class="guest-info">
+                <h5>乘客1：邹泉</h5>
+                <p>姓名拼音：ZHOU QUAN</p>
+                <p>国籍：中国</p>
+                <p>性别：男</p>
+                <p>联系电话：178 8930 0028</p>
+                <p class="cgreen">证件1</p>
+                <p>证件类型：居民身份证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件2</p>
+                <p>证件类型：护照</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件3</p>
+                <p>证件类型：港澳通行证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+              </div>
+              <div class="guest-info">
+                <h5>乘客1：邹泉</h5>
+                <p>姓名拼音：ZHOU QUAN</p>
+                <p>国籍：中国</p>
+                <p>性别：男</p>
+                <p>联系电话：178 8930 0028</p>
+                <p class="cgreen">证件1</p>
+                <p>证件类型：居民身份证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件2</p>
+                <p>证件类型：护照</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+                <p class="cgreen">证件3</p>
+                <p>证件类型：港澳通行证</p>
+                <p>证件号码：360008199002028394</p>
+                <p>证件有效期：2020/09/23</p>
+              </div>
+
+            </div>
+            <h3>发票信息</h3>
+            <div class="white-container">
+              <div class="mb20">
+                <p class="mb8">发票信息</p>
+                <label class="radio-inline"><input type="radio" name="optradio">不需要发票</label>
+                <label class="radio-inline"><input type="radio" name="optradio">个人</label>
+                <label class="radio-inline"><input type="radio" name="optradio">公司</label>
+              </div>
+              <div class="form-group">
+                <label for="title">发票抬头(个人或企业名称)</label>
+                <input type="text" class="form-control" id="title" value="上海达预信息科技有限公司">
+              </div>
+              <div class="form-group">
+                <label for="no">税号</label>
+                <input type="text" class="form-control" id="no" value="9378 8083 0023 89">
+              </div>
+              <div class="form-group">
+                <label for="address">邮寄地址</label>
+                <input type="text" class="form-control" id="address" placeholder="请输入地址">
+              </div>
+            </div>
+          </div>
+          <div class="right-container">
+            <div class="main">
+              <h3>订单详情</h3>
+              <div class="order-info">
+                <p><span></span>
+                  <span class="name">世界梦号</span>
+                  <span>深圳出发</span>
+                  <span>6天5晚</span></p>
+                <p>广州 - 那霸 - 广州</p>
+                <p>2019-11-11至2019-11-18</p>
+              </div>
+              <div class="room-info">
+                <p>房间1</p>
+                <p><span>海景客房-单人入住</span><span class="detail">查看详情</span></p>
+                <p><span>面积：56-80m² </span><span class="delete">删除</span></p>
+              </div>
+              <div class="room-info">
+                <p>房间1</p>
+                <p><span>海景客房-单人入住</span><span class="detail">查看详情</span></p>
+                <p><span>面积：56-80m² </span><span class="delete">删除</span></p>
+              </div>
+              <div class="room-count">
+                <p><span>房间数：</span><span>2间</span></p>
+              </div>
+              <div class="btns">
+                <button type="button" class="btn pre">上一步</button><button type="button"
+                  class="btn next">下一步,填写乘客信息</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- 选择支付方式 -->
+        <div class="content" id='selectPay'>
+
+        </div>
+        <!-- 预定成功 -->
+        <div class="content" id="orderSuccess">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  #include('../../common/footer.html')
+
+</body>
+
+</html>
