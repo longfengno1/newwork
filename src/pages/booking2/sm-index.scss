@@ -5,44 +5,6 @@
   width: 100vw;
   font-family: Helvetica;
   padding-bottom: 120rem/$fit_m;
-
-  input {
-    border: 1px solid #E5E5E5;
-    border-radius: 8rem/$fit_m;
-    height: 60rem/$fit_m;
-    padding-left: 16rem/$fit_m;
-    font-size: 26rem/$fit_m;
-    color: #666666;
-  }
-
-  label {
-    font-size: 26rem/$fit_m;
-    color: #666666;
-    margin-bottom: 0;
-  }
-
-  .select {
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    border-radius: 8rem/$fit_m;
-    height: 60rem/$fit_m;
-    padding-left: 16rem/$fit_m;
-    padding-right: 20rem/$fit_m;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 26rem/$fit_m;
-    color: #999999;
-    margin-right: 20rem/$fit_m;
-    cursor: pointer;
-  }
-
-  button{
-     width: 148rem/$fit_m;
-     height: 54rem/$fit_m;
-     font-size: 24rem/$fit_m;
-  }
-
   .arrow-down {
     width: 0.25rem;
     height: 0.25rem;
@@ -124,310 +86,169 @@
     }
   }
 
-  .user,
-  .quan,
-  .fill {
-    h3 {
-      font-size: 28rem/$fit_m;
-      color: #383838;
-      padding: 24rem/$fit_m 0 32rem/$fit_m;
-    }
+  h4.title {
+    font-size: 24rem/$fit_m;
+    color: #383838;
+    padding: 30rem/$fit_m 32rem/$fit_m 24rem/$fit_m;
+  }
 
-    .check-row {
-      display: flex;
-      align-items: baseline;
-      font-size: 22rem/$fit_m;
-      color: #666666;
-      padding-left: 36rem/$fit_m;
-      margin-top: 21rem/$fit_m;
-      margin-bottom: 33rem/$fit_m;
-
-      input {
-        height: auto;
-        margin-right: 24rem/$fit_m;
-      }
+  .price-desc{
+    display: flex;
+    align-items: center;
+    .icon-question{
+      font-size: 26rem/$fit_m;
+      margin-right: 6rem/$fit_m;
+      cursor: pointer;
     }
   }
 
-  .user {
+  .m_tab {
+    text-align: center;
+    overflow: hidden;
+    display: flex;
     padding: 0 32rem/$fit_m;
+    justify-content: space-between;
+  }
 
-    .user-row {
-      display: flex;
-      align-items: center;
-      margin-bottom: 28rem/$fit_m;
+  .m_tab .tab_item {
+    height: 60rem/$fit_m;
+    width: 156rem/$fit_m;
+    line-height: 60rem/$fit_m;
+    font-size: 24rem/$fit_m;
+    color: #00969e;
+    cursor: pointer;
+    border: 1px solid #06929a;
+    border-radius: 4rem/$fit_m;
+  }
 
-      &:last-child {
-        margin-bottom: 10rem/$fit_m;
-      }
-    }
+  .m_tab .tab_item:hover,
+  .m_tab .current {
+    color: #fff;
+    text-decoration: none;
+    background: #00969E;
+  }
 
-    label {
-      width: 93rem/$fit_m;
-    }
+  .room-all {
+    background: #F1F7F7;
+    margin: 0 32rem/$fit_m;
+    padding: 31rem/$fit_m 32rem/$fit_m;
+    display: flex;
+    align-items: center;
 
-    span {
+    .green {
       font-size: 26rem/$fit_m;
-      color: #666666;
-    }
-
-    .add {
-      width: 50rem/$fit_m;
-      height: 50rem/$fit_m;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid #00969E;
+      font-weight: 700;
       color: #00969E;
-      margin-left: 21rem/$fit_m;
+      flex: 2;
+    }
 
-      span {
-        color: #00969E;
+    .price {
+      font-size: 22rem/$fit_m;
+      color: #666666;
+      margin-right: 32rem/$fit_m;
+
+      .red {
+        font-size: 40rem/$fit_m;
       }
     }
 
-    .input-row {
-      input {
-        width: 504rem/$fit_m;
-      }
+    .arrow-down,
+    .arrow-up {
+      width: 0.45rem;
+      height: 0.45rem;
     }
   }
 
-  .fill {
-    background-color: #FBFBFB;
-    padding-top: 24rem/$fit_m;
-
-    .fill-row {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20rem/$fit_m;
-
-      label {
-        width: 171rem/$fit_m;
-        margin-bottom: 0;
-        text-align: right;
-      }
-
-      .name1 {
-        width: 200rem/$fit_m;
-      }
-
-      .name2 {
-        width: 320rem/$fit_m;
-        margin-left: 20rem/$fit_m;
-      }
-
-      .country {
-        width: 540rem/$fit_m;
-      }
-
-      .radio {
-        display: flex;
-        align-items: baseline;
-        margin-right: 54rem/$fit_m;
-
-        input {
-          margin-right: 24rem/$fit_m;
-          height: auto;
-        }
-
-        font-size: 26rem/$fit_m;
-        color: #383838;
-      }
-
-      .select {
-        width: 260rem/$fit_m;
-      }
-
-      .sub-title {
-        color: #999999;
-        padding-right: 10rem/$fit_m;
-      }
-
-      .id-card {
-        width: 540rem/$fit_m;
-      }
-    }
-
-    .btns {
-      display: flex;
-      flex-direction: row-reverse;
-      padding-right: 40rem/$fit_m;
+  .room-list {
+    .product {
+      margin: 0 32rem/$fit_m;
+      padding-top: 24rem/$fit_m;
+      border-bottom: 1px solid #E5E5E5;
       margin-bottom: 24rem/$fit_m;
+    }
 
-      .cancel,
-      .submit {
-        width: 148rem/$fit_m;
-        height: 54rem/$fit_m;
-      }
-
-      .cancel {
-        background: #FFFFFF;
-        border: 1px solid #E5E5E5;
-        color: #00969E;
-      }
-
-      .submit {
-        background-color: #00969E;
-        color: #fff;
-        margin-left: 20rem/$fit_m;
-      }
-    }
-  }
-
-  .user.later {
-    padding-bottom: 22rem/$fit_m;
-  }
-
-  .split {
-    height: 24rem/$fit_m;
-    background-color: #FBFBFB;
-  }
-
-  .quan {
-    padding: 0 32rem/$fit_m;
-
-    h5 {
-      font-size: 22rem/$fit_m;
-      color: #383838;
-      font-weight: 300;
-    }
-    .check-row{
-      padding-left: 0;
-      font-size: 26rem/$fit_m;
-      color: #383838;
-      margin-bottom: 10rem/$fit_m;
-    }
-    .desc{
-      font-size: 22rem/$fit_m;
-      color: #999999;
-      line-height: 30rem/$fit_m;
-      padding-left: 48rem/$fit_m;
-    }
-    .coupon{
-      margin-top: 32rem/$fit_m;
-    }
-  }
-  .package{
-    padding: 0 32rem/$fit_m;
-    .code{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 24rem/$fit_m;
-      margin-bottom: 32rem/$fit_m;
-      span{
-        font-size: 26rem/$fit_m;
-        color: #666666;
-        margin-right: 20rem/$fit_m;
-      }
-      input{
-        width: 382rem/$fit_m;
-        margin-right: 10rem/$fit_m;
-      }
-      .ensure{
-        width: 148rem/$fit_m;
-        height: 54rem/$fit_m;
-        color: #fff;
-        background-color: #00969E;
-        font-size: 24rem/$fit_m;
-      }
-    }
-    h3{
-      font-size: 28rem/$fit_m;
-      color: #383838;
-      margin-bottom: 36rem/$fit_m;
-    }
-    .content{
-      background: #FFFFFF;
-      border: 1px solid #D0D7DF;
-    }
-    .tab{
-      height: 66rem/$fit_m;
-      display: flex;
-      .tab-item{
-        background-color: #f7fcfc;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        border-left: 1px solid #D0D7DF;
-        border-right: 1px solid #D0D7DF;
-        border-bottom: 1px solid #D0D7DF;
-        font-size: 28rem/$fit_m;
-        color: #383838;
-      }
-      .active{
-        background-color: #fff;
-        border-bottom: none;
-        color: #00969E;
-        font-weight: 500;
-      }
-    }
-    .package-item{
-      padding: 24rem/$fit_m 0;
-      margin: 0 20rem/$fit_m;
-      border-bottom: 1px solid #D0D7DF;
-      img{
-        width: 200rem/$fit_m;
-        height: 130rem/$fit_m;
-        flex-shrink: 0;
-      }
-    }
-    .package-row{
+    .product-row {
       display: flex;
       flex-wrap: nowrap;
-      .right{
-        flex: 1;
-        padding-left: 20rem/$fit_m;
-      }
-      h3{
-        font-size: 28rem/$fit_m;
-        color: #383838;
-        margin-bottom: 8rem/$fit_m;
-      }
-      .desc{
-        font-size: 24rem/$fit_m;
-        color: #6D6D6D;
-        line-height: 34rem/$fit_m;
-      }
-      
+      padding-bottom: 16rem/$fit_m;
     }
-    .bottom {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
 
-      .example {
-        font-size: 22rem/$fit_m;
-        color: #999999;
-        margin-right: 53rem/$fit_m;
-        span {
-          text-decoration-line: line-through;
-        }
-      }
+    .product-img {
+      background: url(../../images/prodetail_pic.jpg) no-repeat center;
+      width: 240rem/$fit_m;
+      height: 135rem/$fit_m;
+    }
+
+    .product-detail {
+      padding-left: 20rem/$fit_m;
+    }
+
+    .product-name {
+      font-size: 30rem/$fit_m;
+      color: #383838;
+      margin-bottom: 8rem/$fit_m;
+    }
+
+    .desc {
+      font-size: 26rem/$fit_m;
+      color: #999999;
+      font-weight: 300;
+      line-height: 34rem/$fit_m;
+
+    }
+
+    .price-row {
+      margin-top: 32rem/$fit_m;
+      font-size: 30rem/$fit_m;
+      color: #001E00;
+      line-height: 31rem/$fit_m;
 
       .price {
-        font-size: 34rem/$fit_m;
         color: #F8485E;
-        
-      }
-
-      .order-btn {
-        background-color: #00969E;
-        color: #fff;
       }
     }
-    .tip{
-      font-size: 22rem/$fit_m;
-      color: #FF0000;
-      padding: 24rem/$fit_m 20rem/$fit_m;
-    }
-  }
 
-  .service{
-    padding-top: 24rem/$fit_m;
+    .order-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15rem/$fit_m;
+
+      .room-count {
+        font-size: 26rem/$fit_m;
+        color: #06929A;
+      }
+
+      .minus-plus {
+        display: flex;
+        align-items: center;
+
+        .minus,
+        .plus {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 46rem/$fit_m;
+          height: 46rem/$fit_m;
+          border-radius: 50%;
+        }
+
+        .minus {
+          border: 1px solid #00969E;
+          color: #00969E;
+        }
+
+        .plus {
+          background-color: #00969E;
+          color: #fff;
+        }
+
+        .num {
+          font-size: 28rem/$fit_m;
+          padding: 0 20rem/$fit_m;
+        }
+      }
+    }
+
   }
 
 }
@@ -452,18 +273,15 @@
     justify-content: space-around;
     // align-items: ;
     padding: 17rem/$fit_m 0 0 24rem/$fit_m;
-
-    .total {
+    .total{
       font-size: 32rem/$fit_m;
       color: #383838;
     }
-
-    .price {
+    .price{
       font-size: 30rem/$fit_m;
       color: #F8485E;
     }
-
-    .count {
+    .count{
       font-size: 26rem/$fit_m;
       color: #999999;
       // margin-top: 10rem/$fit_m;
@@ -476,15 +294,13 @@
     background-color: #00969E;
     align-items: center;
     justify-content: center;
-
     .main {
       font-size: 32rem/$fit_m;
       color: #FFFFFF;
       letter-spacing: 0.52rem/$fit_m;
       font-weight: 500;
     }
-
-    .sub {
+    .sub{
       font-size: 28rem/$fit_m;
       color: #FFFFFF;
       letter-spacing: 0.52rem/$fit_m;

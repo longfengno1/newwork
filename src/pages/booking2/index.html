@@ -291,11 +291,11 @@
       <i class="arrow-down fr mt10"></i>
     </div>
     <div class="step">
-      <div class="step-item selected" id="step1">
+      <div class="step-item active" id="step1">
         <span>选择房间</span>
         <div class="step-item-after"></div>
       </div>
-      <div class="step-item active" id="step2">
+      <div class="step-item" id="step2">
         <span>填写乘客信息</span>
         <div class="step-item-before"></div>
         <div class="step-item-after"></div>
@@ -310,236 +310,137 @@
         <div class="step-item-before"></div>
       </div>
     </div>
-    <div class="user">
-      <h3>乘客信息</h3>
-      <div class="user-row">
-        <label for="">房间1：</label><span>海景客房</span>
-      </div>
-      <div class="user-row">
-        <label for="">乘客1：</label>
-        <div class="input-row"><input type="text" value="邹泉"></div>
-        <span class="add"><span class="icon-plus"></span></span>
-      </div>
-      <div class="user-row">
-        <label for="">房间2：</label><span>海景客房</span>
-      </div>
-      <div class="user-row">
-        <label for="">乘客1：</label>
-        <div class="input-row"><input type="text" value="邹泉"></div>
-        <span class="add"><span class="icon-plus"></span></span>
-      </div>
+    <h4 class="title">选择每房入住人数<span class="fr green price-desc"><span class="icon-question"></span>价格说明</span></h4>
+    <div class="m_tab">
+      <a href="###" class="tab_item current"><span>单人入住</span></a>
+      <a href="###" class="tab_item"><span>双人入住</span></a>
+      <a href="###" class="tab_item"><span>三人入住</span></a>
+      <a href="###" class="tab_item"><span>四人入住</span></a>
     </div>
-    <div class="fill">
-      <div class="fill-row"><label for="">姓名：</label><input type="text" class="name1" placeholder="姓"><input type="text"
-          class="name2" placeholder="名">
-      </div>
-      <div class="fill-row"><label for="">姓名全拼：</label><input type="text" class="name1" placeholder="姓拼音"><input type="text"
-          class="name2" placeholder="名拼音">
-      </div>
-      <div class="fill-row"><label for="">国籍：</label><input type="text" class="country" value="中国">
-      </div>
-      <div class="fill-row"><label for="">出生日期：</label><input type="text" class="country" >
-      </div>
-      <div class="fill-row"><label for="">性别：</label>
-        <div class="radio"><input type="radio" class="sex">男</div>
-        <div class="radio"><input type="radio" class="sex">女</div>
-      </div>
-      <div class="fill-row"><label for="">手机号码：</label><input type="text" class="country" placeholder="中国大陆手机号码">
-      </div>
-      <div class="fill-row"><label for="">居住地：</label>
-        <div class="select">省份<span class="icon-arrowdown"></span></div>
-        <div class="select">城市<span class="icon-arrowdown"></span></div>
-      </div>
-      <div class="fill-row"><label class="sub-title" for="">证件1</label>
-      </div>
-      <div class="fill-row"><label for="">证件类型：</label>
-        <div class="select id-card">居民身份证<span class="icon-arrowdown"></span></div>
-      </div>
-      <div class="fill-row"><label for="">证件号码：</label><input type="text" class="country">
-      </div>
-      <div class="fill-row"><label for="">证件有效期：</label><input type="text" class="country">
-      </div>
-      <div class="fill-row"><label class="sub-title" for="">证件2</label>
-      </div>
-      <div class="fill-row"><label for="">证件类型：</label>
-        <div class="select id-card">护照<span class="icon-arrowdown"></span></div>
-      </div>
-      <div class="fill-row"><label for="">证件号码：</label><input type="text" class="country">
-      </div>
-      <div class="fill-row"><label for="">证件有效期：</label><input type="text" class="country">
-      </div>
-      <div class="fill-row"><label class="sub-title" for="">证件3</label>
-      </div>
-      <div class="fill-row"><label for="">证件类型：</label>
-        <div class="select id-card">港澳通行证<span class="icon-arrowdown"></span></div>
-      </div>
-      <div class="fill-row"><label for="">证件号码：</label><input type="text" class="country">
-      </div>
-      <div class="fill-row"><label for="">证件有效期：</label><input type="text" class="country">
-      </div>
-      <div class="check-row">
-        <input type="checkbox">设为常用乘客
-      </div>
-      <div class="btns">
-        <button type="button" class="submit">提交</button><button type="button" class="cancel">取消</button>
-      </div>
+    <h4 class="title">选择房型</h4>
+    <div class="room-all">
+      <span class="green">全部房型</span>
+      <span class="price">￥<span class="red">2999</span>起/人</span>
+      <i class="arrow-down fr"></i>
     </div>
-    <div class="user later">
-      <div class="user-row">
-        <label for="">乘客2：</label>
-        <div class="input-row"><input type="text" value="邹泉"></div>
-        <span class="add"><span class="icon-plus"></span></span>
-      </div>
-    </div>
-    <div class="split"></div>
-    <div class="quan">
-      <h3>选择优惠券</h3>
-      <h5>现金抵用券</h5>
-      <div class="check-row">
-        <input type="checkbox">800元抵用券
-      </div>
-      <p class="desc">
-        即日起预订11月3日、10日、17日、12月1日、12月15日出发航次之内舱客房至豪华露台客房可享船票费6折优惠，同一客房第三位乘客免船票费；预定内舱客房或海景客房可享额外立减500元优惠(不适用于11月3日、10日出发航次)，预定露台客房或豪华露台客房可享额外立减800元优惠。
-      </p>
-      <div class="check-row">
-        <input type="checkbox">500元抵用券
-      </div>
-      <p class="desc">适用出发日期为9月1日至12月29日。优惠房间数量有限，先到先得，订完即止。港务费、小费、岸上观光等个人费用不免费、不打折。</p>
-      <h5 class="coupon">优惠券</h5>
-      <div class="check-row">
-        <input type="checkbox">幸运大抽奖-300元电子优惠券
-      </div>
-      <p class="desc">1. 船票优惠券兑换截止日期为2020年4月3日，房间先到先得，以实际房态为准。 2. 优惠券适用于指定的出发日期及房型。 3. 活动最终解释归丽星/星梦邮轮所有。</p>
-      <div class="check-row">
-        <input type="checkbox">500元抵用券
-      </div>
-      <p class="desc">适用出发日期为9月1日至12月29日。优惠房间数量有限，先到先得，订完即止。港务费、小费、岸上观光等个人费用不免费、不打折。</p>
-    </div>
-    <div class="split"></div>
-    <div class="package">
-      <div class="code"><span>邀请码</span><input type="text" class="input-code" placeholder="请输入邀请码"><button class="ensure"
-          type="button">确认</button></div>
-          <h3>官网专享礼包</h3>
-          <div class="content">
-            <div class="tab">
-              <div class="tab-item active">邀请码礼包</div>
-              <div class="tab-item">双十一礼包</div>
-              <div class="tab-item">兑换码礼包</div>
+    <ul class="room-list">
+      <li class="product">
+        <div class="product-row">
+          <div class="product-img"></div>
+          <div class="product-detail">
+            <p class="product-name">内侧客房-单人入住</p>
+            <p class="desc">面积：56-80m²</p>
+            <p class="desc">房型分布：甲板11楼层</p>
+            <div class="price-row">
+              <span>&yen;<span class="price">2999</span>&nbsp;起/人</span>
             </div>
-            <div class="package-item">
-              <div class="package-row"><img src="../../images/prodetail_pic.jpg" alt="">
-                <div class="right">
-                  <h3>岸上游</h3>
-                  <p class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴，马克•贝斯特星厨为…</p>
-                </div>
-              </div>
-              <div class="bottom">
-                <div class="price">
-                  <span class="example">参考价：<span>¥899/人</span></span>
-                  <span class="price">¥0</span>
-                </div>
-                <button type="button" class="order-btn">立即预订</button>
-              </div>
-            </div>
-            <div class="package-item">
-              <div class="package-row"><img src="../../images/prodetail_pic.jpg" alt="">
-                <div class="right">
-                  <h3>岸上游</h3>
-                  <p class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴，马克•贝斯特星厨为…</p>
-                </div>
-              </div>
-              <div class="bottom">
-                <div class="price">
-                  <span class="example">参考价：<span>¥899/人</span></span>
-                  <span class="price">¥0</span>
-                </div>
-                <button type="button" class="order-btn">立即预订</button>
-              </div>
-            </div>
-            <div class="package-item">
-              <div class="package-row"><img src="../../images/prodetail_pic.jpg" alt="">
-                <div class="right">
-                  <h3>岸上游</h3>
-                  <p class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴，马克•贝斯特星厨为…</p>
-                </div>
-              </div>
-              <div class="bottom">
-                <div class="price">
-                  <span class="example">参考价：<span>¥899/人</span></span>
-                  <span class="price">¥0</span>
-                </div>
-                <button type="button" class="order-btn">立即预订</button>
-              </div>
-            </div>
-            <div class="tip">
-              *特惠套餐三选二，请至少选择两项服务
-            </div>
-          </div>
-    </div>
-    <div class="split"></div>
-    <div class="package service">
-      <h3>特惠套餐及增值服务</h3>
-      <div class="content">
-        <div class="tab">
-          <div class="tab-item active">特惠套餐</div>
-          <div class="tab-item">岸上观光</div>
-          <div class="tab-item">船上服务</div>
-        </div>
-        <div class="package-item">
-          <div class="package-row"><img src="../../images/prodetail_pic.jpg" alt="">
-            <div class="right">
-              <h3>岸上游</h3>
-              <p class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴，马克•贝斯特星厨为…</p>
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="price">
-              <span class="example">参考价：<span>¥899/人</span></span>
-              <span class="price">¥399</span>
-            </div>
-            <button type="button" class="order-btn">立即预订</button>
           </div>
         </div>
-        <div class="package-item">
-          <div class="package-row"><img src="../../images/prodetail_pic.jpg" alt="">
-            <div class="right">
-              <h3>岸上游</h3>
-              <p class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴，马克•贝斯特星厨为…</p>
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="price">
-              <span class="example">参考价：<span>¥899/人</span></span>
-              <span class="price">¥399</span>
-            </div>
-            <button type="button" class="order-btn">立即预订</button>
+        <div class="order-row">
+          <span class="room-count">可预定房间数：6间</span>
+          <div class="minus-plus">
+            <span class="minus"><span class="icon-subs"></span></span>
+            <span class="num">0</span>
+            <span class="plus"><span class="icon-plus"></span></span>
           </div>
         </div>
-        <div class="package-item">
-          <div class="package-row"><img src="../../images/prodetail_pic.jpg" alt="">
-            <div class="right">
-              <h3>岸上游</h3>
-              <p class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴，马克•贝斯特星厨为…</p>
+      </li>
+      <li class="product">
+        <div class="product-row">
+          <div class="product-img"></div>
+          <div class="product-detail">
+            <p class="product-name">内侧客房-单人入住</p>
+            <p class="desc">面积：56-80m²</p>
+            <p class="desc">房型分布：甲板11楼层</p>
+            <div class="price-row">
+              <span>&yen;<span class="price">2999</span>&nbsp;起/人</span>
             </div>
-          </div>
-          <div class="bottom">
-            <div class="price">
-              <span class="example">参考价：<span>¥899/人</span></span>
-              <span class="price">¥399</span>
-            </div>
-            <button type="button" class="order-btn">立即预订</button>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="order-row">
+          <span class="room-count">可预定房间数：6间</span>
+          <div class="minus-plus">
+            <span class="minus"><span class="icon-subs"></span></span>
+            <span class="num">0</span>
+            <span class="plus"><span class="icon-plus"></span></span>
+          </div>
+        </div>
+      </li>
+      <li class="product">
+        <div class="product-row">
+          <div class="product-img"></div>
+          <div class="product-detail">
+            <p class="product-name">内侧客房-单人入住</p>
+            <p class="desc">面积：56-80m²</p>
+            <p class="desc">房型分布：甲板11楼层</p>
+            <div class="price-row">
+              <span>&yen;<span class="price">2999</span>&nbsp;起/人</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-row">
+          <span class="room-count">可预定房间数：6间</span>
+          <div class="minus-plus">
+            <span class="minus"><span class="icon-subs"></span></span>
+            <span class="num">0</span>
+            <span class="plus"><span class="icon-plus"></span></span>
+          </div>
+        </div>
+      </li>
+      <li class="product">
+        <div class="product-row">
+          <div class="product-img"></div>
+          <div class="product-detail">
+            <p class="product-name">内侧客房-单人入住</p>
+            <p class="desc">面积：56-80m²</p>
+            <p class="desc">房型分布：甲板11楼层</p>
+            <div class="price-row">
+              <span>&yen;<span class="price">2999</span>&nbsp;起/人</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-row">
+          <span class="room-count">可预定房间数：6间</span>
+          <div class="minus-plus">
+            <span class="minus"><span class="icon-subs"></span></span>
+            <span class="num">0</span>
+            <span class="plus"><span class="icon-plus"></span></span>
+          </div>
+        </div>
+      </li>
+      <li class="product">
+        <div class="product-row">
+          <div class="product-img"></div>
+          <div class="product-detail">
+            <p class="product-name">内侧客房-单人入住</p>
+            <p class="desc">面积：56-80m²</p>
+            <p class="desc">房型分布：甲板11楼层</p>
+            <div class="price-row">
+              <span>&yen;<span class="price">2999</span>&nbsp;起/人</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-row">
+          <span class="room-count">可预定房间数：6间</span>
+          <div class="minus-plus">
+            <span class="minus"><span class="icon-subs"></span></span>
+            <span class="num">0</span>
+            <span class="plus"><span class="icon-plus"></span></span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
   </div>
+
   <div class="price-bar show-sm">
     <div class="left">
-      <p class="total">总计<span class="price">¥8930</span></p>
+      <p class="total">房间总费用：<span class="price">¥8930</span></p>
+      <p class="count">已选房间2间</p>
     </div>
     <div class="right">
       <p class="main">下一步</p>
-      <p class="sub">核对资料</p>
+      <p class="sub">填写乘客信息</p>
     </div>
   </div>
 
