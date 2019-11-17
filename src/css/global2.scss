@@ -1276,6 +1276,19 @@ b {
 	color: #fff;
 	background: #00b4be;
 }
+.btn-styleE-s {
+	color: #fff;
+	font-size: 12rem/$fit;
+	padding: 1rem/$fit 16rem/$fit;
+	background: #00969E;
+	display: inline-block;
+}
+
+.btn-styleE-s:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #00b4be;
+}
 .btn-styleF {
 	color: #fff;
 	font-size: 24rem/$fit_m;
@@ -1286,6 +1299,32 @@ b {
 }
 
 .btn-styleF:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #00b4be;
+}
+.btn-styleG {
+	color: #00969E;
+	font-size: 12rem/$fit;
+	padding: 7rem/$fit 16rem/$fit;
+	background: #fff;
+	display: inline-block;
+}
+
+.btn-styleG:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #00b4be;
+}
+.btn-styleG-s {
+	color: #00969E;
+	font-size: 12rem/$fit;
+	padding: 1rem/$fit 16rem/$fit;
+	background: #fff;
+	display: inline-block;
+}
+
+.btn-styleG-s:hover {
 	text-decoration: none;
 	color: #fff;
 	background: #00b4be;
