@@ -4,19 +4,19 @@
   min-height: 100vh;
   width: 100vw;
   font-family: Helvetica;
-  padding-bottom: 120rem/$fit_m;
+  padding-bottom: 120rem/$fit;
 
   input {
     border: 1px solid #E5E5E5;
-    border-radius: 8rem/$fit_m;
-    height: 60rem/$fit_m;
-    padding-left: 16rem/$fit_m;
-    font-size: 26rem/$fit_m;
+    border-radius: 8rem/$fit;
+    height: 60rem/$fit;
+    padding-left: 16rem/$fit;
+    font-size: 26rem/$fit;
     color: #666666;
   }
 
   label {
-    font-size: 26rem/$fit_m;
+    font-size: 26rem/$fit;
     color: #666666;
     margin-bottom: 0;
   }
@@ -24,32 +24,32 @@
   .select {
     background: #FFFFFF;
     border: 1px solid #E5E5E5;
-    border-radius: 8rem/$fit_m;
-    height: 60rem/$fit_m;
-    padding-left: 16rem/$fit_m;
-    padding-right: 20rem/$fit_m;
+    border-radius: 8rem/$fit;
+    height: 60rem/$fit;
+    padding-left: 16rem/$fit;
+    padding-right: 20rem/$fit;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 26rem/$fit_m;
+    font-size: 26rem/$fit;
     color: #999999;
-    margin-right: 20rem/$fit_m;
+    margin-right: 20rem/$fit;
     cursor: pointer;
   }
 
   h3{
-    font-size: 28rem/$fit_m;
+    font-size: 28rem/$fit;
     color: #383838;
   }
 
   button{
-     width: 148rem/$fit_m;
-     height: 54rem/$fit_m;
-     font-size: 24rem/$fit_m;
+     width: 148rem/$fit;
+     height: 54rem/$fit;
+     font-size: 24rem/$fit;
   }
 
   .split {
-    height: 24rem/$fit_m;
+    height: 24rem/$fit;
     background-color: #FBFBFB;
   }
 
@@ -74,72 +74,72 @@
   }
 
   .order-info {
-    margin: 24rem/$fit_m;
+    margin: 24rem/$fit;
     border-bottom: 1px dotted #e5e5e5;
-    padding-left: 8rem/$fit_m;
+    padding-left: 8rem/$fit;
 
     h3 {
-      font-size: 34rem/$fit_m;
+      font-size: 34rem/$fit;
       color: #383838;
-      line-height: 55rem/$fit_m;
-      margin-bottom: 24rem/$fit_m;
+      line-height: 55rem/$fit;
+      margin-bottom: 24rem/$fit;
     }
 
     p {
-      font-size: 26rem/$fit_m;
+      font-size: 26rem/$fit;
       color: #666666;
       line-height: 1;
-      margin-bottom: 24rem/$fit_m;
+      margin-bottom: 24rem/$fit;
     }
 
     .ml32 {
-      margin-left: 32rem/$fit_m;
+      margin-left: 32rem/$fit;
     }
   }
 
   .product-tags {
     border-bottom: 1px solid #E5E5E5;
-    padding: 0 36rem/$fit_m 20rem/$fit_m;
+    padding: 0 36rem/$fit 20rem/$fit;
   }
 
   .step {
-    padding: 0 32rem/$fit_m;
-    margin-top: 22rem/$fit_m;
+    padding: 0 32rem/$fit;
+    margin-top: 22rem/$fit;
     display: flex;
     justify-content: space-between;
 
     .step-item {
-      width: 188rem/$fit_m;
-      height: 50rem/$fit_m;
-      margin-left: 5rem/$fit_m;
+      width: 188rem/$fit;
+      height: 50rem/$fit;
+      margin-left: 5rem/$fit;
       text-align: center;
 
       span {
-        line-height: 50rem/$fit_m;
-        font-size: 22rem/$fit_m;
+        line-height: 50rem/$fit;
+        font-size: 22rem/$fit;
       }
 
       .step-item-before {
-        border-top-width: 25rem/$fit_m;
-        border-bottom-width: 25rem/$fit_m;
-        border-left-width: 12rem/$fit_m;
+        border-top-width: 25rem/$fit;
+        border-bottom-width: 25rem/$fit;
+        border-left-width: 12rem/$fit;
       }
 
       .step-item-after {
-        right: -12rem/$fit_m;
-        border-top-width: 25rem/$fit_m;
-        border-bottom-width: 25rem/$fit_m;
-        border-left-width: 12rem/$fit_m;
+        right: -12rem/$fit;
+        border-top-width: 25rem/$fit;
+        border-bottom-width: 25rem/$fit;
+        border-left-width: 12rem/$fit;
       }
     }
   }
 
   .ensure-price,
   .pay-type {
-    padding: 24rem/$fit_m 32rem/$fit_m;
+    padding: 24rem/$fit 32rem/$fit;
 
     h3 {
-      margin-bottom: 32rem/$fit_m;
+      margin-bottom: 32rem/$fit;
     }
     
   }
@@ -151,23 +151,23 @@
       align-items: center;
 
       img {
-        width: 80rem/$fit_m;
+        width: 80rem/$fit;
       }
 
       p {
-        margin-top: 24rem/$fit_m;
-        font-size: 22rem/$fit_m;
+        margin-top: 24rem/$fit;
+        font-size: 22rem/$fit;
         color: #999999;
         letter-spacing: 0;
-        line-height: 34rem/$fit_m;
+        line-height: 34rem/$fit;
 
         .price {
-          margin-left: 20rem/$fit_m;
+          margin-left: 20rem/$fit;
           color: #FF5050;
-          font-size: 34rem/$fit_m;
+          font-size: 34rem/$fit;
 
           span {
-            font-size: 22rem/$fit_m;
+            font-size: 22rem/$fit;
           }
         }
       }
@@ -179,9 +179,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 32rem/$fit_m;
+      margin-bottom: 32rem/$fit;
       img{
-        width: 302rem/$fit_m;
+        width: 302rem/$fit;
         cursor: pointer;
       }
     }
@@ -195,7 +195,7 @@
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 120rem/$fit_m;
+  height: 120rem/$fit;
   display: flex;
   background-color: #fff;
 
@@ -209,43 +209,43 @@
     flex: 1;
     justify-content: space-around;
     // align-items: ;
-    padding: 17rem/$fit_m 0 0 24rem/$fit_m;
+    padding: 17rem/$fit 0 0 24rem/$fit;
 
     .total {
-      font-size: 32rem/$fit_m;
+      font-size: 32rem/$fit;
       color: #383838;
     }
 
     .price {
-      font-size: 30rem/$fit_m;
+      font-size: 30rem/$fit;
       color: #F8485E;
     }
 
     .count {
-      font-size: 26rem/$fit_m;
+      font-size: 26rem/$fit;
       color: #999999;
-      // margin-top: 10rem/$fit_m;
+      // margin-top: 10rem/$fit;
     }
   }
 
   .right {
-    width: 354rem/$fit_m;
+    width: 354rem/$fit;
     flex-shrink: 0;
     background-color: #00969E;
     align-items: center;
     justify-content: center;
 
     .main {
-      font-size: 32rem/$fit_m;
+      font-size: 32rem/$fit;
       color: #FFFFFF;
-      letter-spacing: 0.52rem/$fit_m;
+      letter-spacing: 0.52rem/$fit;
       font-weight: 500;
     }
 
     .sub {
-      font-size: 28rem/$fit_m;
+      font-size: 28rem/$fit;
       color: #FFFFFF;
-      letter-spacing: 0.52rem/$fit_m;
+      letter-spacing: 0.52rem/$fit;
       font-weight: 300;
     }
   }

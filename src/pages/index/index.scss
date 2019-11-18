@@ -1067,6 +1067,7 @@
 	padding-top: 30rem/$fit;
 	font-size: 30rem/$fit;
 	line-height: 30rem/$fit;
+	text-align: center;
 
 }
 
@@ -2877,28 +2878,28 @@
 }
 
 .m-main-btnbox {
-	margin: 32rem/$fit_m 60rem/$fit_m 0;
+	margin: 32rem/$fit 60rem/$fit 0;
 }
 
 .m-main-btnbox li {
 	text-align: center;
-	margin-bottom: 40rem/$fit_m;
+	margin-bottom: 40rem/$fit;
 }
 
 .m-main-btnbox a {
-	font-size: 26rem/$fit_m;
+	font-size: 26rem/$fit;
 }
 
 .m-main-btnbox .btn-icon {
 	display: inline-block;
-	height: 90rem/$fit_m;
-	line-height: 90rem/$fit_m;
-	width: 90rem/$fit_m;
-	font-size: 44rem/$fit_m;
+	height: 90rem/$fit;
+	line-height: 90rem/$fit;
+	width: 90rem/$fit;
+	font-size: 44rem/$fit;
 	background-image: linear-gradient(143deg, #FFFFFF 0%, #00969E 100%);
 	border-radius: 45px;
 	color: #fff;
-	margin-bottom: 26rem/$fit_m;
+	margin-bottom: 26rem/$fit;
 }
 
 /* 大屏幕 */
@@ -2910,14 +2911,14 @@
 /* 横向放置的手机和竖向放置的平板之间的分辨率 */
 @media (max-width: 767px) {
 	.section{
-		border-bottom: 24rem/$fit_m solid #F8F8F8;
+		border-bottom: 24rem/$fit solid #F8F8F8;
 		padding: 0;
 	}
 	.section .title{
-		height: 34rem/$fit_m;
-		font-size: 34rem/$fit_m;
-		line-height: 34rem/$fit_m;
-		margin: 32rem/$fit_m;
+		height: 34rem/$fit;
+		font-size: 34rem/$fit;
+		line-height: 34rem/$fit;
+		margin: 32rem/$fit;
 		text-align: left;
 		color: #383838;
 	}
@@ -2928,7 +2929,7 @@
 
 	.topbanner-slider-box,
 	.topbanner-slider-box .topbanner-slider {
-		height: 432rem/$fit_m;
+		height: 432rem/$fit;
 	}
 
 	.topbanner .topbanner-ribbon {
@@ -2956,27 +2957,27 @@
 		display: block;
 		height: auto;
 		width: 100%;
-		margin: 0 32rem/$fit_m 32rem/$fit_m;
+		margin: 0 32rem/$fit 32rem/$fit;
 	}
 	.hotthread .item ul li:last-child{
-		margin:0 32rem/$fit_m 32rem/$fit_m;
+		margin:0 32rem/$fit 32rem/$fit;
 	}
 	.row .col {
-		margin: 0 32rem/$fit_m;
+		margin: 0 32rem/$fit;
 		flex: auto;
 	}
 
 
 	.hotthread .item .thread .tip {
-		border-bottom-left-radius: 20rem/$fit_m;
-		width: 132rem/$fit_m;
-		height: 40rem/$fit_m;
-		line-height: 40rem/$fit_m;
-		font-size: 22rem/$fit_m;
+		border-bottom-left-radius: 20rem/$fit;
+		width: 132rem/$fit;
+		height: 40rem/$fit;
+		line-height: 40rem/$fit;
+		font-size: 22rem/$fit;
 
 		background: #F8485E;
 		border-radius: 0 6px 0 6px;
-		margin-top: 32rem/$fit_m;
+		margin-top: 32rem/$fit;
 	}
 
 	.m_tab .tab_item {
@@ -3011,7 +3012,7 @@
 
 	.hotthread .item .thread {
 		line-height: 1;
-		border-radius: 10rem/$fit_m;
+		border-radius: 10rem/$fit;
 		overflow: hidden;
 	}
 
@@ -3035,7 +3036,7 @@
 		color: #fff;
 	}
 	.hotthread .item .thread .inner .caption .protitle{
-		font-size: 34rem/$fit_m !important;
+		font-size: 34rem/$fit !important;
 	}
 	.hotthread .base_price {
 		font-size: 24rem/$fit;
@@ -3068,7 +3069,7 @@
 .m_base_price{
 	text-align: center;
 	position: relative;
-	top:-20rem/$fit_m;
+	top:-20rem/$fit;
 }
 	.wrapper {
 		width: 100%;
@@ -3130,7 +3131,7 @@
 		font-size: 20rem/$fit;
 		line-height: 1.5;
 		width: auto;
-		margin: 256rem/$fit_m 0 40rem/$fit_m 0;
+		margin: 150rem/$fit 0 40rem/$fit 0;
 	}
 	.spactivity-context .m{
 		text-align: center;
@@ -3163,7 +3164,7 @@
 		height: auto;
 		width: 100%;
 		position: absolute;
-		top:32rem/$fit_m;
+		top:32rem/$fit;
 		left: 0;
 
 	}
@@ -3171,7 +3172,7 @@
 		height: 44rem/$fit;
 		font-size: 20rem/$fit;
 		line-height: 44rem/$fit;
-		padding-right: 50rem/$fit_m;
+		padding-right: 50rem/$fit;
 		width: auto;
 	}
 
@@ -3201,19 +3202,19 @@
 	.m_shipexperience{
 		position: relative;
 		z-index: 1;
-		padding: 0 15rem/$fit_m 32rem/$fit_m 15rem/$fit_m;
+		padding: 0 15rem/$fit 32rem/$fit 15rem/$fit;
 	}
 	.m_shipexperience .box{
-		padding: 0 15rem/$fit_m;
+		padding: 0 15rem/$fit;
 	}
 	.m_shipexperience .box img{
-		height: 250rem/$fit_m;
+		height: 250rem/$fit;
 	}
 	.m_shipexperience .no-gutters .row:last-child .box{
-		padding-top:30rem/$fit_m;
+		padding-top:30rem/$fit;
 	}
 	.m_shipexperience .no-gutters .col-6:first-child .box img{
-		height: 530rem/$fit_m;
+		height: 530rem/$fit;
 	}
 	.exp_box1{
 		position: relative;
@@ -3225,8 +3226,8 @@
 		position: absolute;
 		width: auto;
 		height: auto;
-		bottom: 24rem/$fit_m;
-		left: 24rem/$fit_m;
+		bottom: 24rem/$fit;
+		left: 24rem/$fit;
 		background: none;
 	}
 	.exp_box1 .exp_text_wrap span{
@@ -3235,13 +3236,13 @@
 		text-indent:0;
 	}
 	.exp_box1 .exp_text_wrap .exp_text_tit{
-		font-size: 28rem/$fit_m;
+		font-size: 28rem/$fit;
 		font-weight: 500;
 	}
 	.exp_box1 .exp_text_wrap .exp_text_subtit{
-		font-size: 22rem/$fit_m;
+		font-size: 22rem/$fit;
 		font-weight: 100;
-		margin-top: 16rem/$fit_m;
+		margin-top: 16rem/$fit;
 	}
 	
 	#panel-sea-bg {
@@ -3285,8 +3286,8 @@
 		text-align:center;
 	}
 	.topbanner_plane .ship img{
-		height: 250rem/$fit_m;
-		margin-left:20rem/$fit_m;
+		height: 250rem/$fit;
+		margin-left:20rem/$fit;
 		display:block;
 	}
 	.topbanner_plane .ship02{
@@ -3302,7 +3303,7 @@
 		width:60%;
 	}
 	.topbanner_plane .content p{
-		font-size:22rem/$fit;
+		font-size:22rem/$fit !important;
 		line-height:2;
 		color: #fff;
 	}
@@ -3346,25 +3347,25 @@
 		margin-top: 0;
 		background: url("../../images/shipbg-m.jpg") center top no-repeat;
 		background-size:100%;
-		height: 1160rem/$fit_m;
+		height: 1160rem/$fit;
 	}
 	.shipinto .topbanner_plane .content h1{
 		color: #fff;
-		margin-bottom: 15rem/$fit_m;
+		margin-bottom: 15rem/$fit;
 	}
 	.shipinto .slick-arrow{
 		display: none !important;
 	}
 	.shipinto > .title{
-		padding-top: 59rem/$fit_m;
-		padding-bottom: 50rem/$fit_m;
+		padding-top: 59rem/$fit;
+		padding-bottom: 50rem/$fit;
 	}
 	.shipinto .topbanner_plane .info{
-		width: 224rem/$fit_m;
-		margin-left: 32rem/$fit_m;
+		width: 224rem/$fit;
+		margin-left: 32rem/$fit;
 	}
 	.shipinto .topbanner_plane .info li{
-		padding: 20rem/$fit_m 0;
+		padding: 20rem/$fit 0;
 		
 		border: 0;
 	}
@@ -3372,7 +3373,7 @@
 		width: auto;
 	}
 	.shipinto .topbanner_plane{
-		height: 1160rem/$fit_m;
+		height: 1160rem/$fit;
 	}
 	.shipinto .topbanner_plane .ship{
 		left: 50%;
@@ -3380,7 +3381,7 @@
 	}
 	.shipinto .topbanner_plane .ship,
 	.shipinto .topbanner_plane .ship02{
-		top:360rem/$fit_m;
+		top:360rem/$fit;
 	}
 	.prolist .inner{
 		background:#fff;
@@ -3528,10 +3529,10 @@
 	}
 	.ribbon-destinations3{
 		background: url("../../images/ship-rd.png") center top no-repeat;
-		height: 300rem/$fit_m;
+		height: 300rem/$fit;
 		background-size:100%;
-		margin-top: -198rem/$fit_m;
-		margin-bottom: -125rem/$fit_m;
+		margin-top: -198rem/$fit;
+		margin-bottom: -125rem/$fit;
 		position: relative;
 		z-index: 1;
 	}
@@ -3548,48 +3549,48 @@
 	.mdestination .sliderbox{
 		width: 100%;
 		overflow: hidden;
-		height: 408rem/$fit_m;
+		height: 408rem/$fit;
 	}
 	.mdestination ul{
-		height: 408rem/$fit_m;
+		height: 408rem/$fit;
 		width: 200000px;
-		margin-left: 32rem/$fit_m;
+		margin-left: 32rem/$fit;
 	}
 	.mdestination li{
-		width: 640rem/$fit_m !important;
-		height: 408rem/$fit_m;
-		padding: 3rem/$fit_m 15rem/$fit_m 15rem/$fit_m 0;
+		width: 640rem/$fit !important;
+		height: 408rem/$fit;
+		padding: 3rem/$fit 15rem/$fit 15rem/$fit 0;
 		float: left;
 	}
 	.mdestination li .box{
-		width: 610rem/$fit_m;
-		height: 378rem/$fit_m;
+		width: 610rem/$fit;
+		height: 378rem/$fit;
 		background: #D8D8D8;
-		box-shadow: 0 3rem/$fit_m 15rem/$fit_m 0 rgba(0,0,0,0.50);
-		border-radius: 10rem/$fit_m;
+		box-shadow: 0 3rem/$fit 15rem/$fit 0 rgba(0,0,0,0.50);
+		border-radius: 10rem/$fit;
 		overflow: hidden;
 		position: relative;
 	}
 	.mdestination .li2{
-		width: 610rem/$fit_m;
-		height: 378rem/$fit_m;
+		width: 610rem/$fit;
+		height: 378rem/$fit;
 		background: #D8D8D8;
-		box-shadow: 0 3rem/$fit_m 15rem/$fit_m 0 rgba(0,0,0,0.50);
-		border-radius: 10rem/$fit_m;
+		box-shadow: 0 3rem/$fit 15rem/$fit 0 rgba(0,0,0,0.50);
+		border-radius: 10rem/$fit;
 	}
 	.mdestination .txt_box{
 		position: absolute;
-		width: 610rem/$fit_m;
-		height: 144rem/$fit_m;
+		width: 610rem/$fit;
+		height: 144rem/$fit;
 		background: rgba(255,255,255,0.40);
 		bottom: 0;
 		color: #fff;
-		font-size: 26rem/$fit_m;
-		padding: 0 32rem/$fit_m;
+		font-size: 26rem/$fit;
+		padding: 0 32rem/$fit;
 	}
 	.mdestination .txt_box .txt_title{
-		font-size: 36rem/$fit_m;
-		margin-top: 28rem/$fit_m;
+		font-size: 36rem/$fit;
+		margin-top: 28rem/$fit;
 	}
 }
 

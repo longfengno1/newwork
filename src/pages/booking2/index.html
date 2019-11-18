@@ -14,7 +14,7 @@
           var clientWidth = docEl.clientWidth;
           if (!clientWidth) return;
 
-          var fontSize = 20 * (clientWidth / 320);
+          var fontSize = 20 * (clientWidth / 375);
           fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
           docEl.style.fontSize = fontSize + 'px';
           var dpi = window.devicePixelRatio;

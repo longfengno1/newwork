@@ -437,12 +437,12 @@
 .probar .bartags li a:hover {
 	text-decoration: none;
 	color: #00969E;
-	border-bottom: 4rem/$fit_m solid #00969E;
+	border-bottom: 4rem/$fit solid #00969E;
 }
 
 .probar .bartags li .current {
 	color: #00969E;
-	border-bottom: 4rem/$fit_m solid #00969E;
+	border-bottom: 4rem/$fit solid #00969E;
 }
 
 .probar .select_date {
@@ -1172,7 +1172,8 @@
 		padding-left: 0;
 	}
 
-	#header {
+	#header,
+	.mbottombar-box{
 		display: none;
 	}
 
@@ -1187,61 +1188,61 @@
 
 	.propic .returnbtn {
 		position: absolute;
-		font-size: 40rem/$fit_m;
-		left: 37rem/$fit_m;
-		top: 37rem/$fit_m;
+		font-size: 40rem/$fit;
+		left: 37rem/$fit;
+		top: 37rem/$fit;
 		color: #fff;
 	}
 	.propic .favbtn {
 		position: absolute;
-		font-size: 40rem/$fit_m;
-		right: 37rem/$fit_m;
-		top: 37rem/$fit_m;
+		font-size: 40rem/$fit;
+		right: 37rem/$fit;
+		top: 37rem/$fit;
 		color: #fff;
 	}
 	.propic{
 		overflow: hidden;
-		height: 470rem/$fit_m;
+		height: 470rem/$fit;
 	}
 	.propic img {
 		width: 100%;
 	}
 
 	.proinfop {
-		border-radius: 6rem/$fit_m 6rem/$fit_m 0 0;
-		padding: 43rem/$fit_m 32rem/$fit_m 0 32rem/$fit_m;
-		margin-top: -10rem/$fit_m;
+		border-radius: 6rem/$fit 6rem/$fit 0 0;
+		padding: 43rem/$fit 32rem/$fit 0 32rem/$fit;
+		margin-top: -10rem/$fit;
 		background: #fff;
 		position: relative;
 	}
 
 	.proinfop:before {
 		content: "";
-		width: 78rem/$fit_m;
-		height: 6rem/$fit_m;
+		width: 78rem/$fit;
+		height: 6rem/$fit;
 		opacity: 0.2;
 		background: #343E57;
-		border-radius: 3rem/$fit_m;
+		border-radius: 3rem/$fit;
 		position: absolute;
 		left: 50%;
-		top: 24rem/$fit_m;
-		margin-left: -50rem/$fit_m;
+		top: 24rem/$fit;
+		margin-left: -50rem/$fit;
 	}
 
 	.prodetailtitle {
-		font-size: 48rem/$fit_m;
-		line-height: 80rem/$fit_m;
+		font-size: 48rem/$fit;
+		line-height: 80rem/$fit;
 		margin: 0;
 		position: absolute;
-		top: -340rem/$fit_m;
+		top: -340rem/$fit;
 		left: 0;
-		padding: 0 32rem/$fit_m;
+		padding: 0 32rem/$fit;
 		color: #fff;
 		text-align: center;
 		text-shadow: 0 2px 4px rgba(0,0,0,0.80);
 	}
 	.proinfo .base_price{
-		font-size: 22rem/$fit_m;
+		font-size: 22rem/$fit;
 	}
 	.proinfop .info {
 		padding: 0;
@@ -1250,20 +1251,20 @@
 
 
 	.proinfo .triplist li {
-		font-size: 26rem/$fit_m;
-		line-height: 44rem/$fit_m;
-		height: 44rem/$fit_m;
+		font-size: 26rem/$fit;
+		line-height: 44rem/$fit;
+		height: 44rem/$fit;
 		padding: 0;
-		padding-left: 54rem/$fit_m;
+		padding-left: 54rem/$fit;
 	}
 
 	.proinfo .triplist li span {
-		height: 44rem/$fit_m;
-		width: 44rem/$fit_m;
-		line-height: 42rem/$fit_m;
-		font-size: 26rem/$fit_m;
+		height: 44rem/$fit;
+		width: 44rem/$fit;
+		line-height: 42rem/$fit;
+		font-size: 26rem/$fit;
 		border-radius: 50%;
-		margin-right: 10rem/$fit_m;
+		margin-right: 10rem/$fit;
 	}
 
 	.proinfo .proinfoli {
@@ -1271,13 +1272,13 @@
 		line-height: 30rem/$fit;
 	}
 	.proinfo .proinfoli .icon-share{
-		font-size: 44rem/$fit_m;
+		font-size: 44rem/$fit;
 		position: relative;
-		top:-10rem/$fit_m;
+		top:-10rem/$fit;
 	}
 
 	.probar {
-		height: 100rem/$fit_m;
+		height: 100rem/$fit;
 		overflow: hidden;
 	}
 
@@ -1297,12 +1298,12 @@
 
 	.saletags li {
 		float: left;
-		font-size: 20rem/$fit_m;
-		margin-right: 16rem/$fit_m;
+		font-size: 20rem/$fit;
+		margin-right: 16rem/$fit;
 	}
 	.saletags li span{
 		border: 1px solid;
-		padding: 4rem/$fit_m 17rem/$fit_m;
+		padding: 4rem/$fit 17rem/$fit;
 	}
 	
 	.saletags li:nth-child(1) {
@@ -1367,16 +1368,16 @@
 	}
 
 	.probar .bartags li {
-		height: 100rem/$fit_m;
+		height: 100rem/$fit;
 	}
 
 	.probar .bartags li a {
-		height: 100rem/$fit_m;
-		line-height: 100rem/$fit_m;
+		height: 100rem/$fit;
+		line-height: 100rem/$fit;
 		padding-top: 0;
 		padding-bottom: 0;
 		display: inline-block;
-		font-size: 32rem/$fit_m;
+		font-size: 32rem/$fit;
 		color: #6D6D6D
 	}
 
@@ -1432,12 +1433,12 @@
 		background-size: auto 100%;
 	}
 	.travelslist ul{
-		padding: 0 32rem/$fit_m;
+		padding: 0 32rem/$fit;
 	}
 	.travelslist li {
-		padding: 32rem/$fit_m 0;
-		padding-left:318rem/$fit_m ;
-		height: 258rem/$fit_m;
+		padding: 32rem/$fit 0;
+		padding-left:318rem/$fit ;
+		height: 258rem/$fit;
 		position: relative;
 		border: 0;
 		border-bottom: 1px solid #D8D8D8;
@@ -1447,16 +1448,16 @@
 
 	.travelslist .pic {
 		float: left;
-		height: 194rem/$fit_m;
-		width: 294rem/$fit_m;
+		height: 194rem/$fit;
+		width: 294rem/$fit;
 		overflow: hidden;
-		margin: 0 0 0 -318rem/$fit_m;
+		margin: 0 0 0 -318rem/$fit;
 
 	}
 	
 	.travelslist .pic img {
-		height: 194rem/$fit_m;
-		width: 294rem/$fit_m;
+		height: 194rem/$fit;
+		width: 294rem/$fit;
 	}
 	.travelslist .userinfo {
 		display: none;
@@ -1476,14 +1477,14 @@
 		
 	}
 	.travelslist .proinfo .title{
-		margin: 0 0 8rem/$fit_m 0;
-		font-size: 30rem/$fit_m;
-		line-height: 28rem/$fit_m;
+		margin: 0 0 8rem/$fit 0;
+		font-size: 30rem/$fit;
+		line-height: 28rem/$fit;
 	}
 	.travelslist .prominfop{
-		font-size: 24rem/$fit_m;
+		font-size: 24rem/$fit;
 		color: #6D6D6D;
-		line-height: 34rem/$fit_m;
+		line-height: 34rem/$fit;
 		overflow: hidden;
 		text-overflow: -o-ellipsis-lastline;
 		text-overflow: ellipsis;
@@ -1548,7 +1549,7 @@
 		border-top: 1rem/$fit solid #ccc;
 		background: #fff;
 		width: 100%;
-		height: 88rem/$fit_m;
+		height: 88rem/$fit;
 		position: fixed;
 		bottom: 0;
 		left: 0;
@@ -1558,14 +1559,14 @@
 	
 
 	.bottombar .date_box .label {
-		font-size: 34rem/$fit_m;
+		font-size: 34rem/$fit;
 		color: #ccc;
 	}
 
 	.bottombar .date_box .val {
-		font-size: 34rem/$fit_m;
+		font-size: 34rem/$fit;
 		color: #F8485E;
-		line-height: 88rem/$fit_m;
+		line-height: 88rem/$fit;
 	}
 
 	.bottombar .btn-styleE {
@@ -1574,21 +1575,21 @@
 		font-size: 28rem/$fit;
 	}
 	.bottombar .btn-money{
-		width: 88rem/$fit_m;
+		width: 88rem/$fit;
 		border-right:1px solid #00969E;
 		text-align: center;
 		box-sizing: border-box;
-		padding-bottom: 5rem/$fit_m;
-		font-size: 18rem/$fit_m;
+		padding-bottom: 5rem/$fit;
+		font-size: 18rem/$fit;
 		color: #00969E;
 		line-height: 2;
-		margin-right: 50rem/$fit_m;
+		margin-right: 50rem/$fit;
 	}
 	.bottombar .btn-money .icon{
 		background: url("../../images/money@2x.png") center bottom no-repeat;
-		background-size: 45rem/$fit_m;
-		height: 47rem/$fit_m;
-		width: 88rem/$fit_m;
+		background-size: 45rem/$fit;
+		height: 47rem/$fit;
+		width: 88rem/$fit;
 	}
 
 	.table_style1{
@@ -1598,8 +1599,8 @@
 	}
 	.table_style1 th,
 	.table_style1 td{
-		height: 100rem/$fit_m;
-		font-size: 28rem/$fit_m;
+		height: 100rem/$fit;
+		font-size: 28rem/$fit;
 	}
 	.days_box img{
 		display: block;
@@ -1609,35 +1610,35 @@
 		margin: 0 !important;
 	}
 	.days_box .days_box_title{
-		height: 111rem/$fit_m;
-		padding: 28rem/$fit_m 32rem/$fit_m 0 32rem/$fit_m;
+		height: 111rem/$fit;
+		padding: 28rem/$fit 32rem/$fit 0 32rem/$fit;
 		background: #fff;
 	}
 	.days_box .days_box_title i{
 		display: none;
 	}
 	.days_box .days_box_content{
-		padding:0 32rem/$fit_m;
+		padding:0 32rem/$fit;
 	}
 	.days_box .days_box_title span{
-		font-size: 28rem/$fit_m;
+		font-size: 28rem/$fit;
 	}
 	.days_box .days_box_title .subtitle{
-		font-size: 20rem/$fit_m;
+		font-size: 20rem/$fit;
 		display: block;
 	}
 	.prointo .tag2_content,
 	.prointo .tag3_content{
-		padding: 0 32rem/$fit_m;
+		padding: 0 32rem/$fit;
 	}
 	.prointo .tag4_content .box-sm  .pic-sm{
 		text-align:center;
-		height: 185rem/$fit_m;
+		height: 185rem/$fit;
 		width: 100%;
 		overflow: hidden;
 	}
 	.prointo .tag4_content .content{
-		padding: 15rem/$fit_m;
+		padding: 15rem/$fit;
 	}
 	.prointo .tag4_content .box-sm{
 		display: block;
@@ -1645,18 +1646,18 @@
 		position: relative;
 		width: 50%;
 		margin: 0 !important;
-		padding: 15rem/$fit_m;
+		padding: 15rem/$fit;
 	}
 	.prointo .tag4_content .box-sm h4{
-		font-size: 26rem/$fit_m;
-		line-height: 50rem/$fit_m;
+		font-size: 26rem/$fit;
+		line-height: 50rem/$fit;
 		color: #383838;
 	}
 	.prointo .tag4_content .box-sm p{
 		color:#6D6D6D;
-		font-size: 24rem/$fit_m;
-		height: 68rem/$fit_m;
-		line-height: 34rem/$fit_m;
+		font-size: 24rem/$fit;
+		height: 68rem/$fit;
+		line-height: 34rem/$fit;
 		overflow: hidden;
 		text-overflow: -o-ellipsis-lastline;
 		text-overflow: ellipsis;
@@ -1670,10 +1671,10 @@
 		display: none;
 	}
 	.tag5_content{
-		padding: 0 32rem/$fit_m !important;
+		padding: 0 32rem/$fit !important;
 	}
 	.prointo .visitlist li {
-		height: 258rem/$fit_m;
+		height: 258rem/$fit;
 		overflow: hidden;
 		padding-left: 0;
 		margin-bottom: 0;
@@ -1681,19 +1682,19 @@
 		border-bottom:1px solid #D8D8D8 ;
 	}
 	.prointo .visitlist li .title{
-		font-size: 30rem/$fit_m;
+		font-size: 30rem/$fit;
 		color: #383838;
-		line-height: 34rem/$fit_m;
-		margin-bottom: 14rem/$fit_m;
+		line-height: 34rem/$fit;
+		margin-bottom: 14rem/$fit;
 	}
 	.prointo .visitlist li .desc{
-		font-size: 24rem/$fit_m;
+		font-size: 24rem/$fit;
 		color: #6D6D6D;
-		line-height: 34rem/$fit_m;
+		line-height: 34rem/$fit;
 	}
 	.prointo .visitlist li .pic img {
-		width: 294rem/$fit_m;
-		height: 194rem/$fit_m;
+		width: 294rem/$fit;
+		height: 194rem/$fit;
 	}
 	.prointo .visitlist li .pricebtn{
 		position: static;
@@ -1701,14 +1702,14 @@
 	.prointo .visitlist li .pricebtn .base_price{
 		text-align: left;
 		font-family: MEllePRC-Medium;
-		font-size: 24rem/$fit_m;
+		font-size: 24rem/$fit;
 		color: #999999;
-		margin-top: 40rem/$fit_m;
+		margin-top: 40rem/$fit;
 	}
 	.prointo .visitlist li .pricebtn .base_price dfn,
 	.prointo .visitlist li .pricebtn .base_price .price
 	{ 
-		font-size: 38rem/$fit_m;
+		font-size: 38rem/$fit;
 	}
 	.prointo .visitlist li .pricebtn .btn-stye1{
 		display: none;
@@ -1728,13 +1729,13 @@
 		display: block;
 		height: auto;
 		width: 100%;
-		margin: 0 32rem/$fit_m 32rem/$fit_m;
+		margin: 0 32rem/$fit 32rem/$fit;
 	}
 	.hotthread .item ul li:last-child{
-		margin-bottom: 100rem/$fit_m;
+		margin-bottom: 100rem/$fit;
 	}
 	.hotthread .item{
-		padding: 0 32rem/$fit_m;
+		padding: 0 32rem/$fit;
 	}
 	.hotthread .item .inner{
 		box-sizing: border-box;
@@ -1742,18 +1743,18 @@
 	.hotthread .item .inner .m_base_price{
 		text-align: center;
 		position: relative;
-		top:-32rem/$fit_m;
+		top:-32rem/$fit;
 	}
 	.hotthread .item .thread .tip {
-		border-bottom-left-radius: 20rem/$fit_m;
-		width: 132rem/$fit_m;
-		height: 40rem/$fit_m;
-		line-height: 40rem/$fit_m;
-		font-size: 22rem/$fit_m;
+		border-bottom-left-radius: 20rem/$fit;
+		width: 132rem/$fit;
+		height: 40rem/$fit;
+		line-height: 40rem/$fit;
+		font-size: 22rem/$fit;
 
 		background: #F8485E;
 		border-radius: 0 6px 0 6px;
-		margin-top: 32rem/$fit_m;
+		margin-top: 32rem/$fit;
 	}
 	.hotthread .item .thread .pic .icon_tags{
 		display: none;
@@ -1790,7 +1791,7 @@
 
 	.hotthread .item .thread {
 		line-height: 1;
-		border-radius: 10rem/$fit_m;
+		border-radius: 10rem/$fit;
 		overflow: hidden;
 	}
 
@@ -1814,7 +1815,7 @@
 		color: #fff;
 	}
 	.hotthread .item .thread .inner .caption .protitle{
-		font-size: 34rem/$fit_m !important;
+		font-size: 34rem/$fit !important;
 	}
 	.hotthread .base_price {
 		font-size: 24rem/$fit;
@@ -1848,16 +1849,16 @@
 		padding: 1px;
 	}
 	.section .title{
-		height: 34rem/$fit_m;
-		font-size: 34rem/$fit_m;
-		line-height: 34rem/$fit_m;
-		margin: 32rem/$fit_m;
+		height: 34rem/$fit;
+		font-size: 34rem/$fit;
+		line-height: 34rem/$fit;
+		margin: 32rem/$fit;
 		text-align: left;
 		color: #383838;
 	}
 	.btn-stye1{
-		font-size: 24rem/$fit_m;
-		padding: 16rem/$fit_m 36rem/$fit_m;
+		font-size: 24rem/$fit;
+		padding: 16rem/$fit 36rem/$fit;
 	}
 
 }

@@ -1,0 +1,473 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Activity Detail</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 375);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+  </script>
+</head>
+
+<body>
+  #include('../../common/header.html')
+
+  <div id="main" class="main list-main hidden-sm">
+    <div class="topbannerB">
+      <img src="../../images/tobannerB_pic.jpg" />
+      <div class="intro-ribbonship"></div>
+    </div>
+    <div class="wraper">
+      <h3 class="activity-title">活动详情</h3>
+      <p class="timer mb20">
+        <span class="icon-cal mr10 fz16"></span><span>2018/06/28 ～ 2018/12</span>
+        <span class="icon-ship2 mr10 ml20 fz16"></span><span>世界梦号</span>
+      </p>
+
+    </div>
+    <div class="list">
+      <div class="list-container clearfloat">
+        <p class="fz16">想知道如何安排一个自在无忧的邮轮假期？以下的简单导览为您介绍所需的旅游证件、邮轮船费已包项目、船上活动，以及有关船上的限制等，让您轻松计划完美的星梦旅程！</p>
+        <div class="list-mtab mt20">
+          <ul>
+            <li><a href="###">详细信息</a></li>
+            <li class="current"><a href="###">航线</a></li>
+            <li><a href="###">预定须知</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li class="boat-card">
+            <div class="detail row">
+              <div class="picture"><img src="../../images/bottom-tag.png"></div>
+              <div class="detail-content">
+                <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                <div class="route-line row">
+                  <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                  <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                  <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                  <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                  <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                  <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                </div>
+                <div class="row">
+                  <span class="cruises-name mr12">
+                    <span class="icon-ship2 mr5 fz14"></span>世界梦号
+                  </span>
+                  <span class="cruises-from mr12">深圳出发</span>
+                  <span class="cruises-days mr12">6天5晚</span>
+                </div>
+                <div class="row cruises-from-date">
+                  <span>出发日期 </span>
+                  <div class="date-list">
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                  </div>
+                  <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
+                </div>
+                <div class="price">
+                  <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                  <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="description clearfloat">
+              <div class="desc-left">
+                <div class="tags">
+                  <span class="hot-tag hot-tag1"><span class="icon-gift"></span>买二送一</span>
+                  <span class="hot-tag hot-tag2"><span class="icon-sale3"></span>买二送二</span>
+                  <span class="hot-tag hot-tag3"><span class="icon-free"></span>第三位免费</span>
+                  <span class="hot-tag hot-tag4"><span class="icon-spring1"></span>跨年</span>
+                  <span class="hot-tag hot-tag5"><span class="icon-sale2"></span>限时促销</span>
+                  <span class="hot-tag hot-tag6"><span class="icon-spring2"></span>春节</span>
+                </div>
+                <p class="tip">
+                  即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                </p>
+              </div>
+              <div class="desc-right">
+                <div class="buttons">
+                  <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button
+                    type="button" class="btn">查看详情</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="boat-card">
+            <div class="detail row">
+              <div class="picture"><img src="../../images/bottom-tag.png"></div>
+              <div class="detail-content">
+                <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                <div class="route-line row">
+                  <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                  <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                  <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                  <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                  <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                  <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                </div>
+                <div class="row">
+                  <span class="cruises-name mr12">
+                    <span class="icon-ship2 mr5 fz14"></span>世界梦号
+                  </span>
+                  <span class="cruises-from mr12">深圳出发</span>
+                  <span class="cruises-days mr12">6天5晚</span>
+                </div>
+                <div class="row cruises-from-date">
+                  <span>出发日期 </span>
+                  <div class="date-list">
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                  </div>
+                  <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
+                </div>
+                <div class="price">
+                  <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                  <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="description clearfloat">
+              <div class="desc-left">
+                <div class="tags">
+                  <span class="hot-tag hot-tag1"><span class="icon-gift"></span>买二送一</span>
+                  <span class="hot-tag hot-tag2"><span class="icon-sale3"></span>买二送二</span>
+                  <span class="hot-tag hot-tag3"><span class="icon-free"></span>第三位免费</span>
+                  <span class="hot-tag hot-tag4"><span class="icon-spring1"></span>跨年</span>
+                  <span class="hot-tag hot-tag5"><span class="icon-sale2"></span>限时促销</span>
+                  <span class="hot-tag hot-tag6"><span class="icon-spring2"></span>春节</span>
+                </div>
+                <p class="tip">
+                  即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                </p>
+              </div>
+              <div class="desc-right">
+                <div class="buttons">
+                  <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button
+                    type="button" class="btn">查看详情</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="boat-card">
+            <div class="detail row">
+              <div class="picture"><img src="../../images/bottom-tag.png"></div>
+              <div class="detail-content">
+                <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                <div class="route-line row">
+                  <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                  <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                  <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                  <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                  <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                  <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                </div>
+                <div class="row">
+                  <span class="cruises-name mr12">
+                    <span class="icon-ship2 mr5 fz14"></span>世界梦号
+                  </span>
+                  <span class="cruises-from mr12">深圳出发</span>
+                  <span class="cruises-days mr12">6天5晚</span>
+                </div>
+                <div class="row cruises-from-date">
+                  <span>出发日期 </span>
+                  <div class="date-list">
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                  </div>
+                  <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
+                </div>
+                <div class="price">
+                  <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                  <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="description clearfloat">
+              <div class="desc-left">
+                <div class="tags">
+                  <span class="hot-tag hot-tag1"><span class="icon-gift"></span>买二送一</span>
+                  <span class="hot-tag hot-tag2"><span class="icon-sale3"></span>买二送二</span>
+                  <span class="hot-tag hot-tag3"><span class="icon-free"></span>第三位免费</span>
+                  <span class="hot-tag hot-tag4"><span class="icon-spring1"></span>跨年</span>
+                  <span class="hot-tag hot-tag5"><span class="icon-sale2"></span>限时促销</span>
+                  <span class="hot-tag hot-tag6"><span class="icon-spring2"></span>春节</span>
+                </div>
+                <p class="tip">
+                  即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                </p>
+              </div>
+              <div class="desc-right">
+                <div class="buttons">
+                  <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button
+                    type="button" class="btn">查看详情</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="boat-card">
+            <div class="detail row">
+              <div class="picture"><img src="../../images/bottom-tag.png"></div>
+              <div class="detail-content">
+                <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                <div class="route-line row">
+                  <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                  <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                  <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                  <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                  <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                  <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                </div>
+                <div class="row">
+                  <span class="cruises-name mr12">
+                    <span class="icon-ship2 mr5 fz14"></span>世界梦号
+                  </span>
+                  <span class="cruises-from mr12">深圳出发</span>
+                  <span class="cruises-days mr12">6天5晚</span>
+                </div>
+                <div class="row cruises-from-date">
+                  <span>出发日期 </span>
+                  <div class="date-list">
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                    <span class="date-list-item">9月30日</span>
+                  </div>
+                  <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
+                </div>
+                <div class="price">
+                  <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                  <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
+                </div>
+              </div>
+            </div>
+            <div class="description clearfloat">
+              <div class="desc-left">
+                <div class="tags">
+                  <span class="hot-tag hot-tag1"><span class="icon-gift"></span>买二送一</span>
+                  <span class="hot-tag hot-tag2"><span class="icon-sale3"></span>买二送二</span>
+                  <span class="hot-tag hot-tag3"><span class="icon-free"></span>第三位免费</span>
+                  <span class="hot-tag hot-tag4"><span class="icon-spring1"></span>跨年</span>
+                  <span class="hot-tag hot-tag5"><span class="icon-sale2"></span>限时促销</span>
+                  <span class="hot-tag hot-tag6"><span class="icon-spring2"></span>春节</span>
+                </div>
+                <p class="tip">
+                  即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                </p>
+              </div>
+              <div class="desc-right">
+                <div class="buttons">
+                  <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button
+                    type="button" class="btn">查看详情</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+
+        <div class="page">
+          <span class="page-count">共10页 当前为第1页</span>
+          <div class="pagination">
+            <span class="pagination-item"><span class="icon-arrowleft2"></span></span>
+            <span class="pagination-item active-item">1</span>
+            <span class="pagination-item">2</span>
+            <span class="pagination-item">3</span>
+            <span class="pagination-item">...</span>
+            <span class="pagination-item">10</span>
+            <span class="pagination-item"><span class="icon-arrowright21"></span></span>
+            <span class="pagination-input"></span>
+            <span class="pagination-item">GO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 150px;"></div>
+  </div>
+  <div class="show-sm sm-main">
+    <div class="select-container">
+      <div class="select-item" id='select-port'><img src="../../images/sm-port.png" alt=""><span>出发港口</span></div>
+      <div class="select-item" id='select-place'><img src="../../images/sm-place.png" alt=""><span>目的地</span></div>
+      <div class="select-item" id="select-day"><img src="../../images/sm-day.png" alt=""><span>行程天数</span></div>
+      <div class="select-item" id="select-discount"><img src="../../images/sm-discount.png" alt=""><span>优惠代码</span>
+      </div>
+    </div>
+    <div id="select-place-row">
+      <span class="tag">广州</span>
+      <span class="tag">日本</span>
+      <span class="tag">宫古岛</span>
+      <span class="tag">澳大利亚</span>
+      <span class="tag">澳大利亚</span>
+      <span class="tag">澳大利亚</span></div>
+    <div class="select-tags">
+      <div class="title">
+        <span>筛选标签</span><img src="../../images/sm-delete.png" />
+      </div>
+      <div class="tags">
+        <span class="tag">广州</span>
+        <span class="tag">8天9晚</span>
+        <span class="tag">NGYH123TY</span>
+        <span class="tag">日本</span>
+      </div>
+      <div class="button-row">
+        <span class="button">确认</span>
+      </div>
+    </div>
+    <div class="content">
+      <h3>热门标签</h3>
+      <div class="hot-tags">
+        <span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+        <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+        <span class="hot-tag"><span class="icon-free"></span>第三位免费</span>
+        <span class="hot-tag"><span class="icon-spring1"></span>跨年</span>
+        <span class="hot-tag"><span class="icon-sale2"></span>限时促销</span>
+        <span class="hot-tag"><span class="icon-spring2"></span>春节</span>
+      </div>
+      <div class="tip">本页面展示的价格为在售四人房型的船票和港务税费的人均起价，如需了解价格定义请详见<span>价格说明</span></div>
+    </div>
+    <div class="city-product">
+      <div class="city">广州</div>
+      <div class="product">
+        <div class="product-row">
+          <div class="product-img">
+            <span class="img-tag">世界梦号</span>
+          </div>
+          <div class="product-detail">
+            <p class="product-name">世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</p>
+            <p class="desc">深圳出发 6天5晚</p>
+            <p class="date">出发日期：2019-12-09/2020-03-01/
+              2020-03-28等 <span>28</span>个出发日期</p>
+            <div class="price-row">
+              <div class="price-text">
+                <span><span class="price">¥2999</span>&nbsp;起/人</span>
+                <span class="old">参考价：<span>¥3699</span></span>
+              </div>
+              <span class="check-detail">查看详情</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-tags">
+          <div><span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+            <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+            <span class="hot-tag"><span class="icon-free"></span>第三位免费</span></div>
+          <span class="icon-arrowdown"></span>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-row">
+          <div class="product-img">
+            <span class="img-tag">世界梦号</span>
+          </div>
+          <div class="product-detail">
+            <p class="product-name">世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</p>
+            <p class="desc">深圳出发 6天5晚</p>
+            <p class="date">出发日期：2019-12-09/2020-03-01/
+              2020-03-28等 <span>28</span>个出发日期</p>
+            <div class="price-row">
+              <div class="price-text">
+                <span><span class="price">¥2999</span>&nbsp;起/人</span>
+                <span class="old">参考价：<span>¥3699</span></span>
+              </div>
+              <span class="check-detail">查看详情</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-tags">
+          <div><span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+            <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+            <span class="hot-tag"><span class="icon-free"></span>第三位免费</span></div>
+          <span class="icon-arrowdown"></span>
+        </div>
+      </div>
+    </div>
+    <div class="city-product">
+      <div class="city">香港</div>
+
+      <div class="product">
+        <div class="product-row">
+          <div class="product-img">
+            <span class="img-tag">世界梦号</span>
+          </div>
+          <div class="product-detail">
+            <p class="product-name">世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</p>
+            <p class="desc">深圳出发 6天5晚</p>
+            <p class="date">出发日期：2019-12-09/2020-03-01/
+              2020-03-28等 <span>28</span>个出发日期</p>
+            <div class="price-row">
+              <div class="price-text">
+                <span><span class="price">¥2999</span>&nbsp;起/人</span>
+                <span class="old">参考价：<span>¥3699</span></span>
+              </div>
+              <span class="check-detail">查看详情</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-tags">
+          <div><span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+            <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+            <span class="hot-tag"><span class="icon-free"></span>第三位免费</span></div>
+          <span class="icon-arrowdown"></span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-row">
+          <div class="product-img">
+            <span class="img-tag">世界梦号</span>
+          </div>
+          <div class="product-detail">
+            <p class="product-name">世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</p>
+            <p class="desc">深圳出发 6天5晚</p>
+            <p class="date">出发日期：2019-12-09/2020-03-01/
+              2020-03-28等 <span>28</span>个出发日期</p>
+            <div class="price-row">
+              <div class="price-text">
+                <span><span class="price">¥2999</span>&nbsp;起/人</span>
+                <span class="old">参考价：<span>¥3699</span></span>
+              </div>
+              <span class="check-detail">查看详情</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-tags">
+          <div><span class="hot-tag"><span class="icon-gift"></span>买二送一</span>
+            <span class="hot-tag"><span class="icon-sale3"></span>买二送二</span>
+            <span class="hot-tag"><span class="icon-free"></span>第三位免费</span></div>
+          <span class="icon-arrowdown"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  #include('../../common/footer.html')
+
+</body>
+
+</html>

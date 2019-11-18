@@ -1300,8 +1300,8 @@ b {
 }
 .btn-styleF {
 	color: #fff;
-	font-size: 24rem/$fit_m;
-	padding: 17rem/$fit_m 24rem/$fit_m;
+	font-size: 24rem/$fit;
+	padding: 17rem/$fit 24rem/$fit;
 	background: #00969E;
 	display: inline-block;
 
@@ -1341,16 +1341,92 @@ b {
 .show-sm {
 	display: none;
 }
-
+.mbottombar-box{
+	height: 144rem/$fit;
+}
 .mbottombar {
 	background: url(../images/mbottombar@2x.png) left bottom no-repeat;
 	background-size: 100%;
 	width: 100%;
 	position: fixed;
-	height: 132rem/$fit;
+	height: 144rem/$fit;
 	bottom: 0;
 	z-index: 100;
 	left: 0;
+}
+.mbottombar ul{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 100rem/$fit;
+}
+.mbottombar li{
+	height: 100rem/$fit !important;
+	width: 20%;
+	float: left;
+	min-height: auto!important;
+	text-align: center;
+	position: relative;
+}
+.mbottombar li a{
+	width: 100%;
+	height: 100rem/$fit;
+	min-height: auto!important;
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+.mbottombar .phone a{
+	height: 120rem/$fit;
+}
+.mbottombar li a span{
+	display: block;
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 7rem/$fit;
+	font-size: 22rem/$fit;
+	color: #999999;
+}
+.mbottombar li a.current span{
+	color: #00969E;
+}
+.mbottombar .home a{
+	background: url(../images/home@2x.png) center 15rem/$fit no-repeat;
+	background-size:44rem/$fit;
+}
+.mbottombar .list a{
+	background: url(../images/list@2x.png) center 15rem/$fit no-repeat;
+	background-size:44rem/$fit;
+}
+.mbottombar .group a{
+	background: url(../images/group@2x.png) center 15rem/$fit no-repeat;
+	background-size:60rem/$fit;
+}
+.mbottombar .account a{
+	background: url(../images/account@2x.png) center 15rem/$fit no-repeat;
+	background-size:44rem/$fit;
+}
+
+.mbottombar .home a.current{
+	background: url(../images/home_cur@2x.png) center 15rem/$fit no-repeat;
+	background-size:44rem/$fit;
+}
+.mbottombar .list a.current{
+	background: url(../images/list_cur@2x.png) center 15rem/$fit no-repeat;
+	background-size:44rem/$fit;
+}
+.mbottombar .group a.current{
+	background: url(../images/group_cur@2x.png) center 15rem/$fit no-repeat;
+	background-size:60rem/$fit;
+}
+.mbottombar .account a.current{
+	background: url(../images/account_cur@2x.png) center 15rem/$fit no-repeat;
+	background-size:44rem/$fit;
+}
+
+.mbottombar .phone span{
+	display: none;
 }
 
 .show_menu {
@@ -1382,7 +1458,7 @@ b {
 	position: relative;
 	transition: left 0.5s;
 	transition-timing-function: ease-in;
-	padding: 40rem/$fit_m 0;
+	padding: 40rem/$fit 0;
 }
 
 .m_menu .w80r {
@@ -1407,15 +1483,15 @@ b {
 
 .m_menu li a {
 	display: block;
-	height: 88rem/$fit_m;
-	line-height: 88rem/$fit_m;
-	font-size: 32rem/$fit_m;
+	height: 88rem/$fit;
+	line-height: 88rem/$fit;
+	font-size: 32rem/$fit;
 	border-bottom: 1px solid rgba(255, 255, 255, .5);
-	padding: 0 40rem/$fit_m;
+	padding: 0 40rem/$fit;
 }
 
 .m_menu li a span {
-	margin-top: 28rem/$fit_m;
+	margin-top: 28rem/$fit;
 }
 
 .m_menu .submenu {
@@ -1432,7 +1508,7 @@ b {
 }
 
 .m_menu .submenu li a {
-	padding-left: 60rem/$fit_m;
+	padding-left: 60rem/$fit;
 }
 
 /* 大屏幕 */
@@ -1514,28 +1590,28 @@ b {
 	}
 
 	.fz14 {
-		font-size: 28rem/$fit_m !important;
+		font-size: 28rem/$fit !important;
 	}
 	.fz13 {
-		font-size: 26rem/$fit_m !important;
+		font-size: 26rem/$fit !important;
 	}
 	.fz16 {
-		font-size: 32rem/$fit_m !important;
+		font-size: 32rem/$fit !important;
 	}
 
 	.fz12 {
-		font-size: 24rem/$fit_m !important;
+		font-size: 24rem/$fit !important;
 	}
 
 	.fz20 {
-		font-size: 40rem/$fit_m !important;
+		font-size: 40rem/$fit !important;
 	}
 
 	.mt5 {
-		margin-top: 10rem/$fit_m;
+		margin-top: 10rem/$fit;
 	}
 	.ml32{
-		margin-left: 32rem/$fit_m;
+		margin-left: 32rem/$fit;
 	}
 	.topbannerB {
 		width: 100%;

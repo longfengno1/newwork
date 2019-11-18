@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Activity Detail</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 375);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+  </script>
+</head>
+
+<body>
+  #include('../../common/header.html')
+
+  <div id="main" class="main list-main hidden-sm">
+    <div class="topbannerB">
+      <img src="../../images/tobannerB_pic.jpg" />
+      <div class="intro-ribbonship"></div>
+    </div>
+    <div class="wraper">
+      <h3 class="activity-title">活动详情</h3>
+      <p class="timer mb20">
+        <span class="icon-cal mr10 fz16"></span><span>2018/06/28 ～ 2018/12</span>
+        <span class="icon-ship2 mr10 ml20 fz16"></span><span>世界梦号</span>
+      </p>
+
+    </div>
+    <div class="list">
+      <div class="list-container clearfloat">
+        <p class="fz16">想知道如何安排一个自在无忧的邮轮假期？以下的简单导览为您介绍所需的旅游证件、邮轮船费已包项目、船上活动，以及有关船上的限制等，让您轻松计划完美的星梦旅程！</p>
+        <div class="list-mtab mt20">
+          <ul>
+            <li><a href="###">详细信息</a></li>
+            <li><a href="###">航线</a></li>
+            <li class="current"><a href="###">预定须知</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h4>于预订后可否取消/更改行程?</h4>
+          <p>可以安排，需另行收费。详情请参阅行程更改条款或行程<a class="green" href="###">取消条款</a>。</p>
+          <h4>若旅客因生病或身体不适未能如期出发，可以取消订位吗？</h4>
+          <p>预订一旦确认，任何修改或取消需另行计费。如因特殊情况取消时的处理细则待定。</p>
+          <h4>若旅客到达码头时，邮轮已经离开，可以自行飞往下个港口登船吗？</h4>
+          <p>视乎下个停靠港口的海关入境规定，费用由旅客自行承担，错过的航程部分不做退款。</p>
+          <h4>学校集体出游或未成年人出游的政策是什么？</h4>
+          <p>一位成人/监护人/老师最多可照顾 3 名 18 岁以下的儿童或青少年， 并需出示家长授权书或/和儿童保育资格证。每间客房至少需有一名18岁以上的宾客入住。</p>
+          
+          
+        </div>
+      </div>
+    </div>
+    
+    <div style="height: 150px;"></div>
+  </div>
+  <div class="show-sm sm-food">
+      <div class="header">
+        <span class="icon-arrowleft"></span>活动详情
+      </div>
+      <div class="scroll-bar">
+        <div class="items">
+          <div class="scroll-item"><span>详细信息</span></div>
+          <div class="scroll-item"><span>航线</span></div>
+          <div class="scroll-item active"><span>预定须知</span></div>
+        </div>
+      </div>
+      <div class="info">
+          <h4>于预订后可否取消/更改行程?</h4>
+          <p>可以安排，需另行收费。详情请参阅行程更改条款或行程<a class="green" href="###">取消条款</a>。</p>
+          <h4>若旅客因生病或身体不适未能如期出发，可以取消订位吗？</h4>
+          <p>预订一旦确认，任何修改或取消需另行计费。如因特殊情况取消时的处理细则待定。</p>
+          <h4>若旅客到达码头时，邮轮已经离开，可以自行飞往下个港口登船吗？</h4>
+          <p>视乎下个停靠港口的海关入境规定，费用由旅客自行承担，错过的航程部分不做退款。</p>
+          <h4>学校集体出游或未成年人出游的政策是什么？</h4>
+          <p>一位成人/监护人/老师最多可照顾 3 名 18 岁以下的儿童或青少年， 并需出示家长授权书或/和儿童保育资格证。每间客房至少需有一名18岁以上的宾客入住。</p>
+          
+          
+        </div>
+    </div>
+
+  #include('../../common/footer.html')
+
+</body>
+
+</html>

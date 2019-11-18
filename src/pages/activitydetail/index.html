@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Activity Detail</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 375);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+  </script>
+</head>
+
+<body>
+  #include('../../common/header.html')
+
+  <div id="main" class="main list-main hidden-sm">
+    <div class="topbannerB">
+      <img src="../../images/tobannerB_pic.jpg" />
+      <div class="intro-ribbonship"></div>
+    </div>
+    <div class="wraper">
+      <h3 class="activity-title">活动详情</h3>
+      <p class="timer mb20">
+        <span class="icon-cal mr10 fz16"></span><span>2018/06/28 ～ 2018/12</span>
+        <span class="icon-ship2 mr10 ml20 fz16"></span><span>世界梦号</span>
+      </p>
+
+    </div>
+    <div class="list">
+      <div class="list-container clearfloat">
+        <p class="fz16">想知道如何安排一个自在无忧的邮轮假期？以下的简单导览为您介绍所需的旅游证件、邮轮船费已包项目、船上活动，以及有关船上的限制等，让您轻松计划完美的星梦旅程！</p>
+        <div class="list-mtab mt20">
+          <ul>
+            <li class="current"><a href="###">详细信息</a></li>
+            <li><a href="###">航线</a></li>
+            <li><a href="###">预定须知</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h2>世界梦号“一「促」即发”快闪优惠 只限6</h2>
+          <p class="infotime">2019年9月1日至10月29日</p>
+          <p>这个秋季，「云顶梦号」为大家带来船上太极课程和健康饮食菜单，让身心再度恢复活力神采。让我们重新开始吧！</p>
+          <p>预订世界梦号航程，每间客房的第二名乘客可以免收基本船费，优惠期至2019年11月14日止！ 此单身节优惠适用于2019年11月17日至2020年2月23日的航程（2019年11月24日，2020年2月2日除外）。<br>
+          预订日期：即日起至2019年11月14日 <br>
+          航行日期：2019年11月17日至2020年2月23日（2019年11月24日，2020年2月2日除外）  </p>
+          <p><img src="../../images/pic7.jpg"><img src="../../images/pic8.jpg"> </p>
+          <p>现在预订2020年1月5日至3月15日期间的世界梦号航程，可以高达半价优惠入住皇宫套房，享受世界梦号的奢华服务。 另外，在优惠期间参加个别精选航程，每个客房的第三和第四名乘客更可免基本船费。 从速预订，以免向隅！</p>
+
+          <div class="section mt50 hidden-sm">
+              <div><p class="tc fz16">立即预订您的星梦假期</p><p class="tc mt20"><a href="###" class="btn-styleD">预定旅程</a></p></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div style="height: 150px;"></div>
+  </div>
+  <div class="show-sm sm-food">
+      <div class="header">
+        <span class="icon-arrowleft"></span>活动详情
+      </div>
+      <div class="scroll-bar">
+        <div class="items">
+          <div class="scroll-item"><span>详细信息</span></div>
+          <div class="scroll-item"><span>航线</span></div>
+          <div class="scroll-item active"><span>预定须知</span></div>
+        </div>
+      </div>
+      <div class="info">
+          <h2>世界梦号“一「促」即发”快闪优惠 只限6</h2>
+          <p class="infotime">2019年9月1日至10月29日</p>
+          <p>这个秋季，「云顶梦号」为大家带来船上太极课程和健康饮食菜单，让身心再度恢复活力神采。让我们重新开始吧！</p>
+          <p>预订世界梦号航程，每间客房的第二名乘客可以免收基本船费，优惠期至2019年11月14日止！ 此单身节优惠适用于2019年11月17日至2020年2月23日的航程（2019年11月24日，2020年2月2日除外）。<br>
+          预订日期：即日起至2019年11月14日 <br>
+          航行日期：2019年11月17日至2020年2月23日（2019年11月24日，2020年2月2日除外）  </p>
+          <p><img src="../../images/pic7.jpg"><img src="../../images/pic8.jpg"> </p>
+          <p>现在预订2020年1月5日至3月15日期间的世界梦号航程，可以高达半价优惠入住皇宫套房，享受世界梦号的奢华服务。 另外，在优惠期间参加个别精选航程，每个客房的第三和第四名乘客更可免基本船费。 从速预订，以免向隅！</p>
+
+          <div class="section mt50 hidden-sm">
+              <div><p class="tc fz16">立即预订您的星梦假期</p><p class="tc mt20"><a href="###" class="btn-styleD">预定旅程</a></p></div>
+            </div>
+        </div>
+    </div>
+
+  #include('../../common/footer.html')
+
+</body>
+
+</html>

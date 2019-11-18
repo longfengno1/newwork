@@ -14,7 +14,7 @@
           var clientWidth = docEl.clientWidth;
           if (!clientWidth) return;
 
-          var fontSize = 20 * (clientWidth / 320);
+          var fontSize = 20 * (clientWidth / 375);
           fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
           docEl.style.fontSize = fontSize + 'px';
           var dpi = window.devicePixelRatio;
@@ -1454,7 +1454,17 @@
     </div>
   </div>
   #include('../../common/footer.html')
-  <div class="mbottombar show-sm"></div>
+  <div class="show-sm mbottombar-box">
+      <div class="mbottombar">
+          <ul>
+              <li class="home"><a href="###"><span>首页</span></a></li>
+              <li class="list"><a class="current" href="###"><span>所有航线</span></a></li>
+              <li class="phone"><a href="###"><span>电话</span></a></li>
+              <li class="group"><a href="###"><span>团队预定</span></a></li>
+              <li class="account"><a href="###"><span>个人中心</span></a></li>
+          </ul>
+      </div>
+  </div>
 </body>
 
 </html>
