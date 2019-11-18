@@ -500,7 +500,6 @@ b {
 	max-width: 1920rem/$fit;
 	height: 88rem/$fit;
 	margin: 0 auto;
-	overflow: hidden;
 }
 
 .header-bar .wraper {
@@ -514,6 +513,8 @@ b {
 .header-bar .sub_header_menu {
 	width: 100%;
 	position: absolute;
+	left: 0;
+	top:88rem/$fit;
 	background: #fff;
 	height: 40rem/$fit;
 	text-align: center;
@@ -522,6 +523,7 @@ b {
 }
 .header-bar .sub_header_menu ul{
 	background: rgba(0, 150, 158, 0.40);
+	overflow: hidden;
 }
 .header-bar .header-bar-inner {
 	padding-top: 10rem/$fit;
@@ -535,6 +537,7 @@ b {
 }
 
 .header-bar .sub_header_menu li {
+	float: none;
 	display: inline-block;
 	height: 40rem/$fit;
 	font-size: 14rem/$fit;
@@ -543,11 +546,17 @@ b {
 }
 
 .header-bar .sub_header_menu li a {
+	border: 0;
 	color: #fff;
 }
 
-.header-bar .sub_header_menu .current a {
+.header-bar .sub_header_menu .current a,
+.header-bar .sub_header_menu a:hover {
+	border: 0;
 	color: #4F3964;
+}
+.header-bar .current .sub_header_menu  li{
+	border:0;
 }
 
 .logo-icon {
@@ -720,7 +729,7 @@ b {
 }
 
 .navbar-menu {
-	margin-top: 10rem/$fit;
+	margin-top: 12rem/$fit;
 	float: right;
 }
 

@@ -1431,37 +1431,67 @@
 	.prointo .local_title {
 		background-size: auto 100%;
 	}
-
+	.travelslist ul{
+		padding: 0 32rem/$fit_m;
+	}
 	.travelslist li {
-		padding: 20rem/$fit;
-		height: auto;
+		padding: 32rem/$fit_m 0;
+		padding-left:318rem/$fit_m ;
+		height: 258rem/$fit_m;
 		position: relative;
+		border: 0;
+		border-bottom: 1px solid #D8D8D8;
+		margin: 0;
 		
 	}
 
 	.travelslist .pic {
-		float: none;
-		margin: 0 0 20rem/$fit;
+		float: left;
+		height: 194rem/$fit_m;
+		width: 294rem/$fit_m;
+		overflow: hidden;
+		margin: 0 0 0 -318rem/$fit_m;
 
 	}
-
+	
 	.travelslist .pic img {
-		width: 100%;
+		height: 194rem/$fit_m;
+		width: 294rem/$fit_m;
 	}
-
+	.travelslist .userinfo {
+		display: none;
+	}
 	.travelslist .row {
 		display: block;
 		margin: 0;
 	}
-
+	.travelslist .proinfo{
+		padding: 0;
+	}
 	.travelslist .probtn {
 		padding: 20rem/$fit 30rem/$fit;
 	}
 
-	.travelslist .probtn .more {
-		position: static;
+	.travelslist .probtn {
+		
 	}
-
+	.travelslist .proinfo .title{
+		margin: 0 0 8rem/$fit_m 0;
+		font-size: 30rem/$fit_m;
+		line-height: 28rem/$fit_m;
+	}
+	.travelslist .prominfop{
+		font-size: 24rem/$fit_m;
+		color: #6D6D6D;
+		line-height: 34rem/$fit_m;
+		overflow: hidden;
+		text-overflow: -o-ellipsis-lastline;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
+		-webkit-box-orient: vertical;
+	}
 	.hotthread .row {
 		display: block;
 		margin: 0;
@@ -1824,6 +1854,10 @@
 		margin: 32rem/$fit_m;
 		text-align: left;
 		color: #383838;
+	}
+	.btn-stye1{
+		font-size: 24rem/$fit_m;
+		padding: 16rem/$fit_m 36rem/$fit_m;
 	}
 
 }

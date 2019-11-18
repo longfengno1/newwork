@@ -4,21 +4,26 @@ import './ui.base';
 import '../css/global2.scss';
 (function () {
     $(document).ready(function () {
-        $("#header .navbar-menu li").hover(function(){
+        $("#header .navbar-menu>li").hover(function(){
             var $this = $(this)
-            $("#header .navbar-menu li").removeClass("current");
+            $("#header .navbar-menu>li").removeClass("current");
+            $(".header-bar .sub_header_menu").hide();
+            $this.find(".sub_header_menu").show();
             $this.addClass("current");
             
-        })
-        $("#header .navbar-menu").hover(function(){
-            $(".header-bar .sub_header_menu").show();
         },function(){
-            $(".header-bar .sub_header_menu").delay(100,"showsubmenu").hide();
+            $("#header .navbar-menu>li").removeClass("current");
+            $(".header-bar .sub_header_menu").hide();
         })
-        $(".header-bar .sub_header_menu").hover(function(){
+        // $("#header .navbar-menu").hover(function(){
+        //     $(".header-bar .sub_header_menu").show();
+        // },function(){
+        //     $(".header-bar .sub_header_menu").delay(100,"showsubmenu").hide();
+        // })
+        // $(".header-bar .sub_header_menu").hover(function(){
            
             
-        })
+        // })
         $("#header .menu-box-inner").click(function () {
             $("body").addClass("show_menu");
             setTimeout(function () {

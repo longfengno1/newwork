@@ -3206,8 +3206,20 @@
 	.m_shipexperience .box{
 		padding: 0 15rem/$fit_m;
 	}
+	.m_shipexperience .box img{
+		height: 250rem/$fit_m;
+	}
+	.m_shipexperience .no-gutters .row:last-child .box{
+		padding-top:30rem/$fit_m;
+	}
+	.m_shipexperience .no-gutters .col-6:first-child .box img{
+		height: 530rem/$fit_m;
+	}
 	.exp_box1{
 		position: relative;
+	}
+	.exp_box1 img{
+		width: 100%;
 	}
 	.exp_box1 .exp_text_wrap{
 		position: absolute;
