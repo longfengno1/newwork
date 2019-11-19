@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Activity Detail</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 375);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+  </script>
+</head>
+
+<body>
+  #include('../../common/header.html')
+
+  <div id="main" class="main list-main hidden-sm">
+    <div class="topbannerB">
+      <img src="../../images/tobannerB_pic.jpg" />
+      <div class="intro-ribbonship"></div>
+    </div>
+    <div class="wraper">
+      <h3 class="activity-title">游记攻略</h3>
+      <div class="filter">
+        <ul>
+          <li class="current">
+            <div>世界梦号<span class="icon-arrowdown2 ml10 fz16"></span></div>
+            <div class="subfilter" style="display: none;">
+              <ol>
+                <li><a href="">subfitler1</a></li>
+                <li><a href="">subfitler2</a></li>
+                <li><a href="">subfitler3</a></li>
+              </ol>
+            </div>
+          </li>
+          <li class="">
+            <div>目的地<span class="icon-arrowdown2 ml10 fz16"></span></div>
+          </li>
+          <li class="">
+            <div>游记类型<span class="icon-arrowdown2 ml10 fz16"></span></div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="wraper mt20">
+      <div class="travelslist">
+        <ul>
+          <li>
+            <div class="pic">
+              <img src="../../images/bg-act-2.png" width="240" height="135">
+              <div class="tagsbox">
+                <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+              </div>
+            </div>
+            <div class="userinfo">
+              <div class="fl">
+                <div class="nick">
+                  <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                  <span class="nickname">无敌小海星</span>
+                </div>
+              </div>
+              <div class="fr">
+                <span class="good">2897</span>
+                <span class="view">2908</span>
+                <span class="timer">发布时间: 2019/10/02</span>
+              </div>
+            </div>
+            <div>
+              <div class="proinfo">
+                <p class="title">邂逅樱花，品棠梨煎雪</p>
+                <p class="prominfop">
+                  夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。 </p>
+
+              </div>
+              <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="pic">
+              <img src="../../images/bg-act-2.png" width="240" height="135">
+              <div class="tagsbox">
+                <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+              </div>
+            </div>
+            <div class="userinfo">
+              <div class="fl">
+                <div class="nick">
+                  <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                  <span class="nickname">无敌小海星</span>
+                </div>
+              </div>
+              <div class="fr">
+                <span class="good">2897</span>
+                <span class="view">2908</span>
+                <span class="timer">发布时间: 2019/10/02</span>
+              </div>
+            </div>
+            <div>
+              <div class="proinfo">
+                <p class="title">邂逅樱花，品棠梨煎雪</p>
+                <p class="prominfop">
+                  夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。 </p>
+
+              </div>
+              <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="pic">
+              <img src="../../images/bg-act-2.png" width="240" height="135">
+              <div class="tagsbox">
+                <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+              </div>
+            </div>
+            <div class="userinfo">
+              <div class="fl">
+                <div class="nick">
+                  <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                  <span class="nickname">无敌小海星</span>
+                </div>
+              </div>
+              <div class="fr">
+                <span class="good">2897</span>
+                <span class="view">2908</span>
+                <span class="timer">发布时间: 2019/10/02</span>
+              </div>
+            </div>
+            <div>
+              <div class="proinfo">
+                <p class="title">邂逅樱花，品棠梨煎雪</p>
+                <p class="prominfop">
+                  夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。 </p>
+
+              </div>
+              <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+            </div>
+          </li>
+          <li>
+            <div class="pic">
+              <img src="../../images/bg-act-2.png" width="240" height="135">
+              <div class="tagsbox">
+                <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+              </div>
+            </div>
+            <div class="userinfo">
+              <div class="fl">
+                <div class="nick">
+                  <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                  <span class="nickname">无敌小海星</span>
+                </div>
+              </div>
+              <div class="fr">
+                <span class="good">2897</span>
+                <span class="view">2908</span>
+                <span class="timer">发布时间: 2019/10/02</span>
+              </div>
+            </div>
+            <div>
+              <div class="proinfo">
+                <p class="title">邂逅樱花，品棠梨煎雪</p>
+                <p class="prominfop">
+                  夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。 </p>
+
+              </div>
+              <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="page">
+          <span class="page-count">共10页 当前为第1页</span>
+          <div class="pagination">
+            <span class="pagination-item"><span class="icon-arrowleft2"></span></span>
+            <span class="pagination-item active-item">1</span>
+            <span class="pagination-item">2</span>
+            <span class="pagination-item">3</span>
+            <span class="pagination-item">...</span>
+            <span class="pagination-item">10</span>
+            <span class="pagination-item"><span class="icon-arrowright21"></span></span>
+            <span class="pagination-input"></span>
+            <span class="pagination-item">GO</span>
+          </div>
+        </div>
+    </div>
+
+    <div style="height: 150px;"></div>
+  </div>
+  <div class="show-sm sm-main">
+    <div class="filter filter-sm">
+      <ul>
+        <li class="current">
+          <div>世界梦号<span class="icon-arrowdown2 ml10 fz16"></span></div>
+        </li>
+        <li class="">
+          <div>优惠类别<span class="icon-arrowdown2 ml10 fz16"></span></div>
+        </li>
+        <li class="">
+            <div>游记类型<span class="icon-arrowdown2 ml10 fz16"></span></div>
+          </li>
+      </ul>
+    </div>
+    <div class="wraper mt20">
+        <div class="travelslist">
+          <ul>
+            <li>
+              <div class="pic">
+                <img src="../../images/bg-act-2.png" width="240" height="135">
+                <div class="tagsbox">
+                  <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                  <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+                </div>
+              </div>
+              <div class="userinfo">
+                <div class="fl">
+                  <div class="nick">
+                    <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                    <span class="nickname">无敌小海星</span>
+                  </div>
+                </div>
+                <div class="fr">
+                  <span class="good">2897</span>
+                  <span class="view">2908</span>
+                  <span class="timer">发布时间: 2019/10/02</span>
+                </div>
+              </div>
+              <div>
+                <div class="proinfo">
+                  <p class="title">邂逅樱花，品棠梨煎雪</p>
+                  <p class="prominfop">
+                    夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。 </p>
+  
+                </div>
+                <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="pic">
+                <img src="../../images/bg-act-2.png" width="240" height="135">
+                <div class="tagsbox">
+                  <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                  <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+                </div>
+              </div>
+              <div class="userinfo">
+                <div class="fl">
+                  <div class="nick">
+                    <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                    <span class="nickname">无敌小海星</span>
+                  </div>
+                </div>
+                <div class="fr">
+                  <span class="good">2897</span>
+                  <span class="view">2908</span>
+                  <span class="timer">发布时间: 2019/10/02</span>
+                </div>
+              </div>
+              <div>
+                <div class="proinfo">
+                  <p class="title">邂逅樱花，品棠梨煎雪</p>
+                  <p class="prominfop">
+                    夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。 </p>
+  
+                </div>
+                <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="pic">
+                <img src="../../images/bg-act-2.png" width="240" height="135">
+                <div class="tagsbox">
+                  <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                  <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+                </div>
+              </div>
+              <div class="userinfo">
+                <div class="fl">
+                  <div class="nick">
+                    <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                    <span class="nickname">无敌小海星</span>
+                  </div>
+                </div>
+                <div class="fr">
+                  <span class="good">2897</span>
+                  <span class="view">2908</span>
+                  <span class="timer">发布时间: 2019/10/02</span>
+                </div>
+              </div>
+              <div>
+                <div class="proinfo">
+                  <p class="title">邂逅樱花，品棠梨煎雪</p>
+                  <p class="prominfop">
+                    夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。 </p>
+  
+                </div>
+                <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="pic">
+                <img src="../../images/bg-act-2.png" width="240" height="135">
+                <div class="tagsbox">
+                  <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                  <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+                </div>
+              </div>
+              <div class="userinfo">
+                <div class="fl">
+                  <div class="nick">
+                    <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                    <span class="nickname">无敌小海星</span>
+                  </div>
+                </div>
+                <div class="fr">
+                  <span class="good">2897</span>
+                  <span class="view">2908</span>
+                  <span class="timer">发布时间: 2019/10/02</span>
+                </div>
+              </div>
+              <div>
+                <div class="proinfo">
+                  <p class="title">邂逅樱花，品棠梨煎雪</p>
+                  <p class="prominfop">
+                    夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。 </p>
+  
+                </div>
+                <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+  </div>
+
+  #include('../../common/footer.html')
+
+</body>
+
+</html>
