@@ -312,15 +312,18 @@
     cursor: pointer;
   }
 }
-.sm-main .filter-sm{
+
+.sm-main .filter-sm {
   height: 88rem/$fit;
-    line-height: 88rem/$fit;
-  li{
+  line-height: 88rem/$fit;
+
+  li {
     height: 88rem/$fit;
     line-height: 88rem/$fit;
-    font-size:28rem/$fit;
+    font-size: 28rem/$fit;
     padding: 0 20rem/$fit;
   }
+
   .filter .timerbox {
     display: inline-block;
     height: 44rem/$fit;
@@ -328,22 +331,24 @@
     background: #fff;
     padding: 0 20rem/$fit 0 30rem/$fit;
     font-size: 24rem/$fit;
+  }
+
 }
-  
-}
-.sm-main{
-  .travelslist ul{
+
+.sm-main {
+  .travelslist ul {
     padding: 0 32rem/$fit;
   }
+
   .travelslist li {
     padding: 32rem/$fit 0;
-    padding-left:318rem/$fit ;
+    padding-left: 318rem/$fit;
     height: 258rem/$fit;
     position: relative;
     border: 0;
     border-bottom: 1px solid #D8D8D8;
     margin: 0;
-    
+
   }
 
   .travelslist .pic {
@@ -359,16 +364,20 @@
     height: 194rem/$fit;
     width: 294rem/$fit;
   }
+
   .travelslist .userinfo {
     display: none;
   }
+
   .travelslist .row {
     display: block;
     margin: 0;
   }
-  .travelslist .proinfo{
+
+  .travelslist .proinfo {
     padding: 0;
   }
+
   .travelslist .probtn {
     padding: 20rem/$fit 30rem/$fit;
   }
@@ -377,12 +386,14 @@
     bottom: 20rem/$fit;
     right: 20rem/$fit;
   }
-  .travelslist .proinfo .title{
+
+  .travelslist .proinfo .title {
     margin: 0 0 20rem/$fit 0;
     font-size: 30rem/$fit;
     line-height: 28rem/$fit;
   }
-  .travelslist .prominfop{
+
+  .travelslist .prominfop {
     font-size: 24rem/$fit;
     color: #6D6D6D;
     line-height: 34rem/$fit;
@@ -394,21 +405,100 @@
     line-clamp: 2;
     -webkit-box-orient: vertical;
   }
-  .travelslist .pic .tagsbox{
+
+  .travelslist .pic .tagsbox {
     position: absolute;
     width: 100%;
     height: 50rem/$fit;
     line-height: 50rem/$fit;
     color: #fff;
     font-size: 16rem/$fit;
-    background: rgba(0,150,158,0.50);
+    background: rgba(0, 150, 158, 0.50);
     bottom: 0;
     left: 0;
     padding: 0 30rem/$fit;
   }
-  .btn-style1{
+
+  .btn-style1 {
     font-size: 16rem/$fit;
     line-height: 45rem/$fit;
     padding: 0 28rem/$fit;
+  }
+
+  .activity-title {
+    position: relative;
+    text-align: center;
+    font-size: 28rem/$fit;
+    margin-bottom: 18rem/$fit;
+  }
+
+  .sub-title {
+    color: #999999;
+    font-size: 14rem/$fit;
+    border-bottom: 1px solid #00969E;
+    line-height: 30rem/$fit;
+    margin-bottom: 10rem/$fit;
+  }
+
+  .timer {
+    position: relative;
+    text-align: center;
+    font-size: 14rem/$fit;
+  }
+
+  .wraper,
+  .wraper-st {
+    width: 100%;
+    padding: 0 32rem/$fit;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .userinfo {
+    .nick {
+      font-size: 16rem/$fit;
+
+      img {
+        width: 100rem/$fit;
+        height: 100rem/$fit;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 40rem/$fit;
+      }
+
+      .nickname {
+        font-size: 20rem/$fit;
+        padding-top: 25rem/$fit;
+        padding-bottom: 20rem/$fit;
+      }
+    }
+  }
+
+  .desc_content {
+    .title {
+      font-size: 20px;
+      padding: 26px 0 20px 0;
+    }
+  }
+
+  .setp_line {
+    width: 100%;
+    height: 30rem/$fit;
+    position: relative;
+    text-align: center;
+    margin: 30rem/$fit auto;
+  }
+
+  .setp_line:after {
+    content: "";
+    display: inline-block;
+    height: 30rem/$fit;
+    width: 86rem/$fit;
+    background: url(../../images/Shape.png) center center no-repeat #FFF;
+    background-size: auto 100%;
+    position: relative;
   }
 }
