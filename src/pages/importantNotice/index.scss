@@ -1,0 +1,102 @@
+@import '../../css/variables.scss';
+@import './sm-index.scss';
+
+.notice-main {
+    background: url('../../images/list-banner.png') no-repeat;
+    background-position: top;
+    background-size: 100%;
+    padding-bottom: 150px;
+
+    .content {
+        background-color: transparent;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 450px 0 320px;
+        min-height: 600px;
+
+        .title-row{
+            display: flex;
+        }
+
+        .title {
+            width: 240px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            letter-spacing: 5px;
+            background-color: #00969d;
+            color: #fff;
+            font-size: 25px;
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .title-p{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-top: 70px solid transparent;
+            border-right: 20px solid #fff;
+        }
+
+        .title-right{
+            flex: 1;
+            background-color: #F8FCFD;
+            margin-left: 10px;
+            position: relative;
+        }
+
+        .title-right-p {
+            position: absolute;
+            left: -20px;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-top: 70px solid transparent;
+            border-right: 20px solid #F8FCFD;
+        }
+
+        .notice-list{
+            margin-top: 15px;
+        }
+
+        .notice-item {
+            display: flex;
+            padding:30px 50px 30px 25px;
+            background-color: #F8FCFD;
+            border: 1px solid #F8FCFD;
+            cursor: pointer;
+
+            &:active,&:hover{
+                border-color: #00969d;;
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            img {
+                width: 195px;
+                height: 145px;
+                margin-right: 35px;
+            }
+        }
+
+        .notice-content {
+            h4 {
+                color: #00969d;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .tips {
+                color: #666;
+                font-size: 16px;
+                line-height: 30px;
+                margin-top: 8px;
+            }
+        }
+    }
+}

@@ -382,7 +382,14 @@
     display: flex;
     flex-wrap: nowrap;
 
+    .pre,.next{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .pre {
+      flex-shrink: 0;
       font-size: 16px;
       background: #FFFFFF;
       color: #00969E;
