@@ -85,6 +85,10 @@
         }
 
         .notice-content {
+            .header{
+                display: flex;
+                justify-content: space-between;
+            }
             h4 {
                 color: #00969d;
                 font-size: 20px;

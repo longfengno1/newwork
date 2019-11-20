@@ -89,7 +89,7 @@
 	width: 900rem/$fit;
 	position: absolute;
 	z-index: 100;
-	left: 300rem/$fit;
+	left: 160rem/$fit;
 	top: -28rem/$fit;
 }
 
@@ -920,7 +920,9 @@
 	text-align: center;
 	overflow: hidden;
 	margin: 5rem/$fit 0 5rem/$fit auto;
-	width: 400rem/$fit;
+	width: 1200rem/$fit;
+	position: absolute;
+	top: 30rem/$fit;
 }
 
 .m_tab .tab_item {
@@ -1255,7 +1257,7 @@
 }
 
 .shiprecord .content .article .article_right .article_title {
-	font-size: 20rem/$fit;
+	font-size: 16rem/$fit;
 	color: #343940;
 }
 
@@ -1267,7 +1269,7 @@
 }
 
 .shiprecord .content .article .article_right .tags {
-	font-size: 14rem/$fit;
+	font-size: 12rem/$fit;
 	color: #777777;
 	line-height: 30rem/$fit;
 	margin-top: 10rem/$fit;
@@ -1455,7 +1457,7 @@
 
 .spactivity-context .dec {
 	margin: 30rem/$fit 0;
-	font-size: 12rem/$fit;
+	font-size: 14rem/$fit;
 	line-height: 2;
 	width: 380rem/$fit;
 }
@@ -1510,7 +1512,7 @@
 
 .footerinfo .box h4 {
 	color: #169298;
-	font-size: 24rem/$fit;
+	font-size: 20rem/$fit;
 	font-weight: normal;
 }
 
@@ -1725,7 +1727,7 @@
 
 .shipinto .topbanner_plane .info li {
 	border-right: 1rem/$fit solid #618AA1;
-	font-size: 32rem/$fit;
+	font-size: 20rem/$fit;
 	line-height: 32rem/$fit;
 	padding: 22rem/$fit 0;
 }
@@ -1735,7 +1737,7 @@
 }
 
 .shipinto .topbanner_plane .content h1 {
-	font-size: 28rem/$fit;
+	font-size: 20rem/$fit;
 	line-height: 32rem/$fit;
 	margin-bottom: 5rem/$fit;
 }
@@ -1947,7 +1949,7 @@
 	line-height: 40rem/$fit;
 	height: 41rem/$fit;
 	background: #00969E;
-	font-size: 18rem/$fit;
+	font-size: 16rem/$fit;
 	color: #fff;
 }
 
@@ -2116,7 +2118,7 @@
 }
 
 .donslide .donslide-title {
-	font-size: 34rem/$fit;
+	font-size: 20rem/$fit;
 	width: 100%;
 	position: absolute;
 	display: block;
@@ -2160,7 +2162,7 @@
 
 .donslide-content h2 {
 	color: #13989D;
-	font-size: 2em;
+	font-size: 20rem/$fit;
 }
 
 .donslide-content h2:before {
