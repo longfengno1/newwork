@@ -146,7 +146,9 @@ blockquote {
 .gray8{
 	color: #888;
 }
-
+.gray6{
+	color: #666;
+}
 .green {
 	color: #15989D;
 }
@@ -636,6 +638,7 @@ b {
 	line-height: 32rem/$fit;
 	text-align: center;
 }
+
 
 .menu-box {
 	position: relative;
@@ -1572,6 +1575,18 @@ b {
 	.message-box .icon-info {
 		width: 40rem/$fit;
 		height: 40rem/$fit;
+		font-size: 40rem/$fit;
+		line-height: 40rem/$fit;
+		text-align: center;
+	}
+	.tel-box-txt{
+		margin-right: 20rem/$fit;
+	}
+	.tel-box-txt .icon-tel {
+		width: 40rem/$fit;
+		height: 40rem/$fit;
+		position: relative;
+		color: #fff;
 		font-size: 40rem/$fit;
 		line-height: 40rem/$fit;
 		text-align: center;

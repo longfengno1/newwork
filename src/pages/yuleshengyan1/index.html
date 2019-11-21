@@ -1,0 +1,137 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>星梦游轮</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 320);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="hidden-sm">
+        #include('../../common/header.html')
+    </div>
+
+    <div id="main" class="fleetintro hidden-sm">
+    	
+        <div class="topbannerB">
+        	<img src="../../images/tobannerB_pic.jpg" />
+           <div class="intro-ribbonship"></div>
+        </div>
+        <div class="section mt20">
+        	<div class="wraper">
+                <h2 class="title">关于星梦游轮</h2>
+               
+                <ul class="prolist prolistD mt10">
+                	<li>
+                    <div class="inner">
+                    	<div class="pic">
+                        <img src="../../images/guanyu2.jpg">
+                      </div>
+                      <p class="protitle mt10">云顶香港 倾力打造</p>
+                      <div class="desc">任务指派则通过以下国家的当地授权职员代理商进
+                        行任务指派则通过以下国家的当地授权务指派则通
+                    过以下国家的当地授权职员代理商进行任务指派则通过以下国家的则通过以下国家的则通过以下国家的
+                    务指派则通过以下国家的当地授权职员代理商进行任务指派则通过以下国家的当地授权当地授权
+                      
+                     </div>
+                  </li>
+                  
+
+                  <li>
+                    <div class="inner">
+                    	<div class="pic">
+                        <img src="../../images/guanyu1.jpg">
+                      </div>
+                      <p class="protitle mt10">云顶香港 倾力打造</p>
+                      <div class="desc">任务指派则通过以下国家的当地授权职员代理商进
+                        行任务指派则通过以下国家的当地授权务指派则通
+                    过以下国家的当地授权职员代理商进行任务指派则通过以下国家的则通过以下国家的则通过以下国家的
+                    务指派则通过以下国家的当地授权职员代理商进行任务指派则通过以下国家的当地授权当地授权
+                      
+                     </div>
+                  </li>
+                  
+                  
+                 
+                  
+                </ul>
+                <div class="page_plane">
+                	
+                  <div class="fr pagenum">
+                  	<input class="intxt">
+                    	
+                  </div>
+                  <div class="fr">
+                  
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="section mt50 hidden-sm">
+       
+    </div>
+    <div style="height:100px;" class="hidden-sm"></div>
+     <div class="show-sm sm-rooms">
+         <div class="header">
+             <span class="icon-arrowleft"></span>关于我们
+         </div>
+         <div >云顶香港 倾力打造</div>
+         <p>云顶香港凭借25年的丰富亚洲市场经验，孕育出旗下全新
+             品牌—星梦邮轮。星梦邮轮致力成为区内业界典范，满足
+             自信、独立思考、追求高尚优质享受之亚洲旅客的需求。
+             品牌完美融合中西元素，为旅客带来独特的海上旅游享受
+             。屡获赞誉的「云顶梦号及世界梦号」于邮轮业界权威指
+             南《2019伯利兹邮轮年鉴》星级十优评选中获评「世界
+             十大最佳大型邮轮」，并获2018年《TTG》中国旅游大
+             奖之「最佳新邮轮」殊荣。除此之外，星梦邮轮亦获得
+             许多亚洲区荣誉，例如《悦游》金榜之「大中型邮轮T
+             op 5」及2018年《旅讯》亚洲版「读者之选」之「最
+             佳新邮轮」。</p>
+             <img src="" alt="">
+             <h1>星梦游轮</h1>
+             <p>云顶香港凭借25年的丰富亚洲市场经验，
+                 孕育出旗下全新品牌—星梦邮轮。星梦邮轮致力成为区
+                 内业界典范，满足自信、独立思考、追求高尚优质享受
+                 之亚洲旅客的需求。品牌完美融合中西元素，为旅客带来
+                 独特的海上旅游享受。屡获赞誉的「云顶梦号及世界梦号
+                 」于邮轮业界权威指南《2019伯利兹邮轮年鉴》星级十优
+                 评选中获评「世界十大最佳大型邮轮」，并获2018年《TTG
+                 》中国旅游大奖之「最佳新邮轮」殊荣。除此之外，星梦邮
+                 轮亦获得许多亚洲区荣誉，例如《悦游》金榜之「大中型
+                 邮轮Top 5」及
+                 2018年《旅讯》亚洲版「读者之选」之「最佳新邮轮」。</p>
+                 <img src="" alt="">
+    <div class="hidden-sm">
+        #include('../../common/footer.html')
+    </div>
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+</html>
