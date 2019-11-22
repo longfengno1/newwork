@@ -1204,7 +1204,7 @@
 /* ================ “邮”记 =================== */
 .custom_container {
 	overflow: hidden;
-	padding: 0 52rem/$fit 0;
+	padding: 0 32rem/$fit 0;
 	margin-top: 26rem/$fit;
 	position: relative;
 	z-index: 1;
@@ -1754,7 +1754,7 @@
 .shipinto .topbanner_plane .ship {
 	position: absolute;
 	top: 110rem/$fit;
-	right: 0;
+	right: 80rem/$fit;
 }
 
 .shipinto .topbanner_plane .ship02 {
@@ -2749,12 +2749,12 @@
 }
 
 .slick-prev {
-	left: -5%;
+	left: 0;
 	background-image: url(../../images/arrow_left.png);
 }
 
 .slick-next {
-	right: -5%;
+	right: 0;
 	background-image: url(../../images/arrow_right.png);
 }
 
@@ -2898,10 +2898,43 @@
 	line-height: 90rem/$fit;
 	width: 90rem/$fit;
 	font-size: 44rem/$fit;
-	background-image: linear-gradient(143deg, #FFFFFF 0%, #00969E 100%);
+	/*background-image: linear-gradient(143deg, #FFFFFF 0%, #00969E 100%);*/
 	border-radius: 45px;
 	color: #fff;
 	margin-bottom: 26rem/$fit;
+}
+
+.m-main-btnbox .bg-color1 {
+	background-image: linear-gradient(143deg, #00969E 0%, #0F767C 100%);
+	box-shadow: 0 0.075rem 0.125rem 0 rgba(15,118,124, 0.3);
+}
+.m-main-btnbox .bg-color2 {
+	background-image: linear-gradient(143deg, #FF7788 0%, #F8485E 100%);
+	box-shadow: 0 0.075rem 0.125rem 0 rgba(248,72,94, 0.3);
+}
+.m-main-btnbox .bg-color3 {
+	background-image: linear-gradient(143deg, #5A92E2 0%, #1E6DDE 100%);
+	box-shadow: 0 0.075rem 0.125rem 0 rgba(30,109,222, 0.3);
+}
+.m-main-btnbox .bg-color4 {
+	background-image: linear-gradient(143deg, #FFC574 0%, #FF9500 100%);
+	box-shadow: 0 0.075rem 0.125rem 0 rgba(255,149,0, 0.3);
+}
+.m-main-btnbox .bg-color5 {
+	background-image: linear-gradient(143deg, #A05EB5 0%, #7B3B8F 100%);
+	box-shadow: 0 0.075rem 0.125rem 0 rgba(123,59,143, 0.3);
+}
+.m-main-btnbox .bg-color6 {
+	background-image: linear-gradient(143deg, #99D6EA 0%, #70C1DB 100%);
+	box-shadow: 0 0.075rem 0.125rem 0 rgba(112,193,219, 0.3);
+}
+.m-main-btnbox .bg-color7 {
+	background-image: linear-gradient(143deg, #FDD26E 0%, #F8BA2A 100%);
+	box-shadow: 0 0.075rem 0.125rem 0 rgba(248,186,42, 0.3);
+}
+.m-main-btnbox .bg-color8 {
+	background-image: linear-gradient(143deg, #64CCC9 0%, #43B0AD 100%);
+	box-shadow: 0 0.075rem 0.125rem 0 rgba(67,176,173,0.3);
 }
 
 /* 大屏幕 */
@@ -2931,7 +2964,7 @@
 
 	.topbanner-slider-box,
 	.topbanner-slider-box .topbanner-slider {
-		height: 432rem/$fit;
+		height: 392rem/$fit;
 	}
 
 	.topbanner .topbanner-ribbon {
@@ -3038,7 +3071,7 @@
 		color: #fff;
 	}
 	.hotthread .item .thread .inner .caption .protitle{
-		font-size: 34rem/$fit !important;
+		/*font-size: 34rem/$fit !important;*/
 	}
 	.hotthread .base_price {
 		font-size: 24rem/$fit;
@@ -3166,7 +3199,7 @@
 		height: auto;
 		width: 100%;
 		position: absolute;
-		top:32rem/$fit;
+		top:0rem/$fit;
 		left: 0;
 
 	}
@@ -3349,7 +3382,7 @@
 		margin-top: 0;
 		background: url("../../images/shipbg-m.jpg") center top no-repeat;
 		background-size:100%;
-		height: 1160rem/$fit;
+		height: 920rem/$fit;
 	}
 	.shipinto .topbanner_plane .content h1{
 		color: #fff;

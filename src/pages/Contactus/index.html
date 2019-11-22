@@ -1,0 +1,138 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 320);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <link rel="stylesheet" href="index.scss">
+</head>
+
+<body>
+    #include('../../common/header.html')
+
+    <div id="main" class="fleetintro hidden-sm">
+
+        <div class="topbannerB">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+        <div class="section mt20">
+            <div class="wraper">
+                <h2 class="title">联系我们</h2>
+
+                <div class="q1">
+
+                    <div class="c1">
+                        <img class="s_img" src="../../images/dianhua.png" alt="">
+                        <b class="b1">预定热线</b>
+                    </div>
+                    <div class="q2">
+                        <div class="a1">
+                            <p class="s_p1">中国内地:</p>
+                            <span class="s_span">
+                                +86-4008499848
+                            </span>
+                        </div>
+                        <div class="a3">
+                            <p class="s_p1">中国香港:</p>
+                            <span class="s_span">+852-2317-7711</span>
+                        </div>
+                        <div class="a1">
+                            <p class="s_p1">新加坡:</p>
+                            <span class="s_span">+65-6808-2288</span>
+                        </div>
+                        <div class="a3">
+                            <p class="s_p1">槟城（马来西亚）:</p>
+                            <span class="s_span">+604-2631128</span>
+                        </div>
+                        <div class="a1">
+                            <p class="s_p1">吉隆坡（马来西亚）:</p>
+                            <span class="s_span">+603-2302-1288</span>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <img class="s_img" src="../../images/dingwei.png" alt="">
+                        <b class="b1">通信地址</b>
+                    </div>
+                    <div class="a2">
+                        <div class="s_text mt20">所在国家:中国广州</div>
+                        <div class="s_text mt20">详细地址:广州市中山六路238号越秀新都会大厦西座1908室</div>
+                        <div class="s_text mt20">邮编:344908</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="height:100px;" class="hidden-sm"></div>
+
+    <div class="show-sm sm-rooms">
+        <script>document.getElementById('title_name').textContent = '联系我们';</script>
+
+        <div class="header">
+            <span class="icon-arrowleft"></span>
+        </div>
+
+
+        <!--移动端-->
+        <div class="food">
+            <div class="mt30 ml30 mb20">
+                <img class="m_mg" src="../../images/dianhua.png" alt="">
+                <b class="m_yd">预定热线</b>
+            </div>
+        </div>
+        <div class="m_ca">
+            <p class="m_p">中国内地：<span class="m_span">+86-4008499848</span></p>
+            <p class="m_p m_p-bg">
+                中国香港：&nbsp;&nbsp;<span class="m_span">+852-2317-7711</span>
+            </p>
+            <p class="m_p">新加坡：&nbsp;&nbsp;<span class="m_span">+65-6808-2288</span></p>
+            <p class="m_p m_p-bg">槟城（马来西亚）：&nbsp;&nbsp;<span class="m_span">+604-2631128</span></p>
+            <p class="m_p">吉隆坡（马来西亚）：&nbsp;&nbsp;<span class="m_span">+603-2302-1288</span></p>
+        </div>
+        <div class="mt30 ml30 mb20">
+            <img class="m_mg" src="../../images/dingwei.png" alt="">
+            <b class="m_yd">通信地址</b>
+        </div>
+        <div class="a2">
+            <div class="mt20 ml20 mr20 m_te">所在国家:中国 - 广州</div>
+            <div class="mt20 ml20 mr20 m_te">详细地址:广州市中山六路238号越秀新都会大厦西座1908室</div>
+            <div class="mt20 ml20 mr20 m_te">邮编:344908</div>
+        </div>
+
+
+    </div>
+    <div class="hidden-sm">
+        #include('../../common/footer.html')
+    </div>
+    #include('../../common/sm_footer_button.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+</html>

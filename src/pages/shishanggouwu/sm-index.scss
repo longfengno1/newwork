@@ -76,32 +76,32 @@
 
   .food {
     overflow-y: scroll;
-	padding-top:164rem/$fit;
+	padding-top:80/$fit;
   }
 
   .food-row {
     width: 100vw;
     padding-left: 30rem/$fit;
     display: flex;
-    padding: 32rem/$fit 0 0;
+    padding: 8rem/$fit 0 0;
     flex-wrap: nowrap;
   }
 
   .food-item {
     width: 50%;
-    font-weight: 300;
+    /*font-weight: 300;*/
 
     &:first-child {
-      padding: 0 15rem/$fit 0 30rem/$fit;
+      padding: 0 4rem/$fit 0 32rem/$fit;
     }
 
     &:last-child {
-      padding: 0 30rem/$fit 0 15rem/$fit;
+      padding: 0 32rem/$fit 0 4rem/$fit;
     }
 
     img {
       width: 100%;
-      height: 185rem/$fit;
+      /*height: 185rem/$fit;*/
     }
 
     .wrap {

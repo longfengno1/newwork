@@ -29,7 +29,7 @@
 
 <body>
     <div>
-        #include('../../common/header.html')
+        #include('../../common/header_home.html')
     </div>
     <div id="main" class="main">
         <div class="topbanner">
@@ -53,7 +53,7 @@
                             <span>航线搜索</span>
                         </a>
                         <a href="###" class="tab2" rel="1">
-                            <span>团队预定</span>
+                            <span>团队预订</span>
                         </a>
 
                     </div>
@@ -67,17 +67,17 @@
                             </div>
                             <label>出发月份</label>
                             <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
+                                <div class="input-txt fl">请选择月份</div>
                                 <div class="arrow-up fr"></div>
                             </div>
                             <label>目的地</label>
                             <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
+                                <div class="input-txt fl">请选择目的地</div>
                                 <div class="arrow-down fr"></div>
                             </div>
                             <label>乘坐邮轮</label>
                             <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
+                                <div class="input-txt fl">请选择邮轮</div>
                                 <div class="arrow-down fr"></div>
                             </div>
                             <div class="button-box">
@@ -93,30 +93,20 @@
                                     <div class="arrow-down fr"></div>
                                 </div>
                                 <div class="input-box fl" style="width:48px">
-                                        <input class="input-txt fl" placeholder="称谓">
-                                        <div class="arrow-down fr"></div>
-                                    </div>
-                            </div>
-
-                            <div class="input-box noarrow">
-                                <input class="input-txt fl" placeholder="手机">
-                                <div class="arrow-up fr"></div>
-                            </div>
-                            <div class="input-box noarrow">
-                                    <input class="input-txt fl" placeholder="邮箱">
-                                    <div class="arrow-up fr"></div>
+                                    <input class="input-txt fl" placeholder="称谓">
+                                    <div class="arrow-down fr"></div>
                                 </div>
-                                <div class="clearfloat">
-                                        <div class="input-box fl mr10" style="width:74px">
-                                            <input class="input-txt fl" placeholder="团队类型">
-                                            <div class="arrow-down fr"></div>
-                                        </div>
-                                        <div class="input-box fl" style="width:74px">
-                                                <input class="input-txt fl" placeholder="团队人数">
-                                                <div class="arrow-down fr"></div>
-                                            </div>
-                                    </div>
-        
+                            </div>
+                            <div class="clearfloat">
+                                <div class="input-box fl mr10" style="width:74px">
+                                    <input class="input-txt fl" placeholder="团队类型">
+                                    <div class="arrow-down fr"></div>
+                                </div>
+                                <div class="input-box fl" style="width:74px">
+                                    <input class="input-txt fl" placeholder="团队人数">
+                                    <div class="arrow-down fr"></div>
+                                </div>
+                            </div>
                             <div class="input-box">
                                 <div class="input-txt fl">出发城市</div>
                                 <div class="arrow-down fr"></div>
@@ -125,8 +115,19 @@
                                 <div class="input-txt fl">出发日期</div>
                                 <div class="arrow-down fr"></div>
                             </div>
+                            <div class="input-box noarrow">
+                                <input class="input-txt fl" placeholder="手机号码">
+                                <div class="arrow-up fr"></div>
+                            </div>
+                            <div class="input-box noarrow">
+                                <input class="input-txt fl" placeholder="电子邮箱">
+                                <div class="arrow-up fr"></div>
+                            </div>
+
+
+
                             <div class="button-box">
-                                <div class="btn-green fr">团队预定</div>
+                                <div class="btn-green fr">确定提交</div>
                             </div>
                         </div>
 
@@ -136,15 +137,18 @@
             </div>
             <div class="wraper">
                 <div class="main-search-box hidden-sm">
-                    <div class="box1">出发港口
+                    <div class="box1">
+                        出发港口
                         <i class="arrow-down fr"></i>
                     </div>
                     <div class="step"></div>
-                    <div class="box1">目的地
+                    <div class="box1">
+                        目的地
                         <i class="arrow-up fr"></i>
                     </div>
                     <div class="step"></div>
-                    <div class="box1">出发月份
+                    <div class="box1">
+                        出发月份
                         <i class="arrow-down fr"></i>
                     </div>
                     <div class="step"></div>
@@ -165,58 +169,58 @@
             <div class="m-main-btnbox">
                 <ul class="row">
                     <li class="col-3 mb40">
-                        <a href="###">
-                            <p class="btn-icon"><span class="icon-ship2"></span></p>
-                            <p>热门航线</p>
+                        <a href="list.html">
+                            <p class="btn-icon bg-color1"><span class="icon-ship2"></span></p>
+                            <p>找航线</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="activityDiscount.html">
+                            <p class="btn-icon bg-color2"><span class="icon-sale3"></span></p>
+                            <p>抢优惠</p>
                         </a>
                     </li>
                     <li class="col-3">
 
                         <a href="###">
-                            <p class="btn-icon"><span class="icon-sale3"></span></p>
-                            <p>官网特惠</p>
-                        </a>
-                    </li>
-                    <li class="col-3">
-
-                        <a href="###">
-                            <p class="btn-icon"><span class="icon-ship3"></span></p>
-                            <p>星梦船队</p>
-                        </a>
-                    </li>
-                    <li class="col-3">
-
-                        <a href="###">
-                            <p class="btn-icon"><span class="icon-active2"></span></p>
-                            <p>特色活动</p>
-                        </a>
-                    </li>
-                    <li class="col-3">
-
-                        <a href="###">
-                            <p class="btn-icon"><span class="icon-order"></span></p>
-                            <p>邮轮百科</p>
-                        </a>
-                    </li>
-                    <li class="col-3">
-
-                        <a href="###">
-                            <p class="btn-icon"><span class="icon-group"></span></p>
+                            <p class="btn-icon bg-color3"><span class="icon-group"></span></p>
                             <p>团队咨询</p>
                         </a>
                     </li>
                     <li class="col-3">
 
-                        <a href="###">
-                            <p class="btn-icon"><span class="icon-you2"></span></p>
-                            <p>游记攻略</p>
+                        <a href="help.html">
+                            <p class="btn-icon bg-color4"><span class="icon-order"></span></p>
+                            <p>邮轮百科</p>
                         </a>
                     </li>
                     <li class="col-3">
 
-                        <a href="###">
-                            <p class="btn-icon"><span class="icon-member"></span></p>
-                            <p>星级体验</p>
+                        <a href="fleetIntroduction02.html">
+                            <p class="btn-icon bg-color5"><span class="icon-ship3"></span></p>
+                            <p>星梦船队</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="activity.html">
+                            <p class="btn-icon bg-color6"><span class="icon-active2"></span></p>
+                            <p>特色活动</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="yuleshengyan.html">
+                            <p class="btn-icon bg-color7"><span class="icon-member"></span></p>
+                            <p>船上体验</p>
+                        </a>
+                    </li>
+                    <li class="col-3">
+
+                        <a href="strategy.html">
+                            <p class="btn-icon bg-color8"><span class="icon-you2"></span></p>
+                            <p>游记攻略</p>
                         </a>
                     </li>
                 </ul>
@@ -555,9 +559,15 @@
                         <div class="slider">
                             <div class="article">
                                 <article>
-                                    <img class="article_img" src="../../images/pic.jpg" alt="">
+                                    <a href="###">
+                                        <img class="article_img" src="../../images/pic.jpg" alt="">
+                                    </a>
                                     <div class="article_right">
-                                        <p class="article_title">邂逅樱花，品棠梨煎雪</p>
+                                        <p class="article_title">
+                                            <a href="###">
+                                                邂逅樱花，品棠梨煎雪
+                                                </a>
+</p>
                                         <p class="article_content">走起吗？让邮轮作为自己移动的家。我觉得这是旅游的最好方式！</p>
                                         <div class="tags">
                                             <span><span class="icon-local2 fz20 vm"></span> <span>广州出发</span></span>
@@ -566,9 +576,15 @@
                                     </div>
                                 </article>
                                 <article>
+                                    <a href="###">
                                     <img class="article_img" src="../../images/pic.jpg" alt="">
+                                                </a>
                                     <div class="article_right">
-                                        <p class="article_title">邂逅樱花，品棠梨煎雪</p>
+                                        <p class="article_title">
+                                            <a href="###">
+                                                邂逅樱花，品棠梨煎雪
+                                            </a>
+                                        </p>
                                         <p class="article_content">走起吗？让邮轮作为自己移动的家。我觉得这是旅游的最好方式！</p>
                                         <div class="tags">
                                             <span><span class="icon-local2 fz20 vm"></span> <span>广州出发</span></span>
@@ -577,9 +593,15 @@
                                     </div>
                                 </article>
                                 <article>
+                                    <a href="###">
                                     <img class="article_img" src="../../images/pic.jpg" alt="">
+                                                </a>
                                     <div class="article_right">
-                                        <p class="article_title">邂逅樱花，品棠梨煎雪</p>
+                                        <p class="article_title">
+                                            <a href="###">
+                                                邂逅樱花，品棠梨煎雪
+                                            </a>
+                                        </p>
                                         <p class="article_content">走起吗？让邮轮作为自己移动的家。我觉得这是旅游的最好方式！</p>
                                         <div class="tags">
                                             <span><span class="icon-local2 fz20 vm"></span> <span>广州出发</span></span>
@@ -591,7 +613,8 @@
                             <div class="more">
                                 <div class="more_bg"></div>
                                 <div class="more_btn">
-                                    <a href="###" class="btn-stye1">更多游记
+                                    <a href="###" class="btn-stye1">
+                                        更多游记
                                         <i class="arrow-right"></i>
                                     </a>
                                 </div>
@@ -611,13 +634,14 @@
                     <img class="bg-img hidden-sm" src="../../images/bg-spactivity.jpg">
 
                     <div class="wraper txt_content">
-                        <h2 class="title">特色活动<span class="icon-arrowright fr show-sm"></span></h2>
+                        <h2 class="title hidden-sm">特色活动<span class="icon-arrowright fr show-sm"></span></h2>
                         <div class="spactivity-context">
                             <div class="spactivity-context-inner">
                                 <p class="desc-title">和海豚一起共度夏日</p>
-                                <p class="dec">在深海中与海豚嬉戏，与海豚一起度过快乐的时光，让你拥有快乐的回忆，与海豚一起度过快乐的时光，让你拥有快乐的回忆</p>
+                                <p class="dec">在深海中与海豚嬉戏，与海豚一起度过快乐的时光，让您拥有快乐的回忆，与海豚一起度过快乐的时光，让你拥有快乐的回忆</p>
                                 <p class="m">
-                                    <a href="###" class="btn-stye1 mr10">了解更多
+                                    <a href="###" class="btn-stye1 mr10">
+                                        了解更多
                                         <i class="arrow-right"></i>
                                     </a>
                                 </p>
@@ -688,7 +712,7 @@
                                 <article class="exp_box1 mb10">
                                     <img src="../../images/bg-act-5.jpg">
                                     <div class="exp_text_wrap">
-                                        <span class="exp_text_tit">团队预定</span>
+                                        <span class="exp_text_tit">团队预订</span>
                                         <span class="exp_text_subtit">默契·快乐 </span>
                                     </div>
                                 </article>
@@ -768,12 +792,13 @@
         <!-- 游轮介绍 -->
         <div class="shipinto">
             <h2 class="title">
-                星梦邮轮<br>带着你的梦想起航
+                星梦邮轮<br>带着您的梦想起航
             </h2>
             <div class="wraper ships-slide">
                 <div class="topbanner_plane">
                     <div class="content">
-                        <h1 class="show-sm">云顶梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
+                        <h1 class="show-sm">
+                            云顶梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
                         </h1>
                         <div class="info">
                             <ul class="row">
@@ -782,15 +807,19 @@
                             </ul>
                         </div>
                         <div class="text_box">
-                            <h1 class="hidden-sm"><span class="icon-ship show-sm mr10"></span>云顶梦号<img class="made ml20"
-                                    src="../../images/madeing@2x.png" width="86" height="80" /></h1>
+                            <h1 class="hidden-sm">
+                                <span class="icon-ship show-sm mr10"></span>云顶梦号<img class="made ml20"
+                                                                                     src="../../images/madeing@2x.png" width="86" height="80" />
+                            </h1>
                             <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
-                            <p style="margin-top:25px;" class="hidden-sm"><a href="###" class="btn-styleA"
-                                    style="position:relative;z-index:9">下载手册</a></p>
+                            <p style="margin-top:25px;" class="hidden-sm">
+                                <a href="###" class="btn-styleA"
+                                   style="position:relative;z-index:9">下载手册</a>
+                            </p>
                         </div>
                     </div>
                     <div class="ship ship02 m_ship1">
-                        <img src="../../images/genting_dream.png" />
+                        <img src="../../images/genting_dream_new.png" />
                         <div class="ship-intro">
                             <div class="btn-icon ship-icon" style="left:0px;top:0">
                                 <div class="inner"><span class="icon-ship"></span></div>
@@ -801,8 +830,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 820px;top: 67px;">
@@ -810,8 +842,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 480px;top: 170px;">
@@ -819,17 +854,23 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
-                        <div class="btn-icon" style="left: 980px;top: 50px;">
+                        <div class="btn-icon" style="left: 680px;top: 50px;">
                             <div class="inner"><span class="icon-food"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 288px;top:102px;">
@@ -837,8 +878,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left:440px;top:102px;">
@@ -846,8 +890,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
 
@@ -855,7 +902,8 @@
                 </div>
                 <div class="topbanner_plane">
                     <div class="content">
-                        <h1 class="show-sm">世界梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
+                        <h1 class="show-sm">
+                            世界梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
                         </h1>
                         <div class="info">
                             <ul class="row">
@@ -866,19 +914,24 @@
                         <div class="text_box">
                             <h1 class="hidden-sm">世界梦号</h1>
                             <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
-                            <p class="hidden-sm" style="margin-top:25px;"><a href="###" class="btn-styleA"
-                                    style="position:relative;z-index:9">下载手册</a></p>
+                            <p class="hidden-sm" style="margin-top:25px;">
+                                <a href="###" class="btn-styleA"
+                                   style="position:relative;z-index:9">下载手册</a>
+                            </p>
                         </div>
                     </div>
                     <div class="ship mship2">
-                        <img src="../../images/worldd.png" />
+                        <img src="../../images/worldd_new.png" />
                         <div class="btn-icon" style="left: 580px;top: 50px;">
                             <div class="inner"><span class="icon-sea"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 820px;top: 67px;">
@@ -886,8 +939,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 480px;top: 170px;">
@@ -895,17 +951,23 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
-                        <div class="btn-icon" style="left: 980px;top: 50px;">
+                        <div class="btn-icon" style="left: 680px;top: 50px;">
                             <div class="inner"><span class="icon-food"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 288px;top:102px;">
@@ -913,8 +975,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left:440px;top:102px;">
@@ -922,8 +987,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="ship-intro">
@@ -935,7 +1003,8 @@
                 </div>
                 <div class="topbanner_plane">
                     <div class="content">
-                        <h1 class="show-sm">探索梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
+                        <h1 class="show-sm">
+                            探索梦号<img class="made ml40" src="../../images/madeing@2x.png" height="40" />
                         </h1>
                         <div class="info">
                             <ul class="row">
@@ -946,19 +1015,24 @@
                         <div class="text_box">
                             <h1 class="hidden-sm">探索梦号</h1>
                             <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
-                            <p style="margin-top:25px;" class="hidden-sm"><a href="###" class="btn-styleA"
-                                    style="position:relative;z-index:9">下载手册</a></p>
+                            <p style="margin-top:25px;" class="hidden-sm">
+                                <a href="###" class="btn-styleA"
+                                   style="position:relative;z-index:9">下载手册</a>
+                            </p>
                         </div>
                     </div>
                     <div class="ship m_ship3">
-                        <img src="../../images/discory_ship.png" />
+                        <img src="../../images/discory_ship_new.png" />
                         <div class="btn-icon" style="left: 580px;top: 50px;">
                             <div class="inner"><span class="icon-sea"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 820px;top: 67px;">
@@ -966,8 +1040,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 480px;top: 170px;">
@@ -975,17 +1052,23 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
-                        <div class="btn-icon" style="left: 980px;top: 50px;">
+                        <div class="btn-icon" style="left: 680px;top: 50px;">
                             <div class="inner"><span class="icon-food"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 288px;top:102px;">
@@ -993,8 +1076,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left:440px;top:102px;">
@@ -1002,8 +1088,11 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box">
+                                    <a href="###" class="btn-styleB">
+                                        精致客房<span class="icon-arrowright2"></span>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div class="ship-intro" style="right:596px;top:-92px;">
@@ -1018,7 +1107,7 @@
             <div class="intro-ribbonship hidden-sm"></div>
 
         </div>
-        <div class="ribbon-destinations3"></div>
+        <div class="ribbon-destinations3" style="display:none;"></div>
         <!-- 游轮百科 -->
         <div class="section section-baike hidden-sm">
             <div class="wrapper">
@@ -1026,9 +1115,9 @@
                 <div class="ylbk_container mt40">
                     <div class="content sliderbase">
                         <div class="item clearfloat">
-                            <a herf="###" class="ylbk-bg ylbk-bg1">
+                            <a herf="###" class="ylbk-bg ylbk-bg4">
                                 <div class="icon"></div>
-                                <p>常见问题</p>
+                                <p>新手导览</p>
                             </a>
                             <a herf="###" class="ylbk-bg ylbk-bg2">
                                 <div class="icon"></div>
@@ -1038,15 +1127,15 @@
                                 <div class="icon"></div>
                                 <p>报道与登船</p>
                             </a>
-                            <a herf="###" class="ylbk-bg ylbk-bg4">
+                            <a herf="###" class="ylbk-bg ylbk-bg1">
                                 <div class="icon"></div>
-                                <p>船上体验</p>
+                                <p>常见问题</p>
                             </a>
                         </div>
                         <div class="item clearfloat">
-                            <a herf="###" class="ylbk-bg ylbk-bg1">
+                            <a herf="###" class="ylbk-bg ylbk-bg4">
                                 <div class="icon"></div>
-                                <p>常见问题</p>
+                                <p>新手导览</p>
                             </a>
                             <a herf="###" class="ylbk-bg ylbk-bg2">
                                 <div class="icon"></div>
@@ -1056,9 +1145,9 @@
                                 <div class="icon"></div>
                                 <p>报道与登船</p>
                             </a>
-                            <a herf="###" class="ylbk-bg ylbk-bg4">
+                            <a herf="###" class="ylbk-bg ylbk-bg1">
                                 <div class="icon"></div>
-                                <p>船上体验</p>
+                                <p>常见问题</p>
                             </a>
                         </div>
                     </div>
@@ -1073,7 +1162,8 @@
                 <div class="wrapper">
                     <h2 class="title">目的地</h2>
                     <p class="text-center">
-                        <a href="###" class="btn-stye1" tabindex="0">探索更多
+                        <a href="###" class="btn-stye1" tabindex="0">
+                            探索更多
                             <i class="arrow-right"></i>
                         </a>
                     </p>
@@ -1086,7 +1176,8 @@
                             <h2 class="clearfloat">
                                 <div class="btn-plane">
                                     <p class="mb-0">
-                                        <a href="###" class="btn-stye1 mr10">了解详情
+                                        <a href="###" class="btn-stye1 mr10">
+                                            了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
@@ -1096,7 +1187,8 @@
                             <div class="don-extend-panel">
                                 <div class="row">
                                     <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                        <p>
+                                            An enchanting island in southern Thailand, Ko Samui is a popular destination
                                             for
                                             both luxury travellers and budget backpackers. White sand beachess are
                                             rarely
@@ -1117,7 +1209,8 @@
                             <div class="don-extend-panel">
                                 <div class="row">
                                     <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                        <p>
+                                            An enchanting island in southern Thailand, Ko Samui is a popular destination
                                             for
                                             both luxury travellers and budget backpackers. White sand beachess are
                                             rarely
@@ -1130,7 +1223,8 @@
                                 </div>
                                 <div class="btn-plane">
                                     <p class="mb-0">
-                                        <a href="###" class="btn-stye1 mr10">了解详情
+                                        <a href="###" class="btn-stye1 mr10">
+                                            了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
@@ -1145,7 +1239,8 @@
                             <h2>
                                 <div class="btn-plane">
                                     <p class="mb-0">
-                                        <a href="###" class="btn-stye1 mr10">了解详情
+                                        <a href="###" class="btn-stye1 mr10">
+                                            了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
@@ -1179,7 +1274,8 @@
                             <h2>
                                 <div class="btn-plane">
                                     <p class="mb-0">
-                                        <a href="###" class="btn-stye1 mr10">了解详情
+                                        <a href="###" class="btn-stye1 mr10">
+                                            了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
@@ -1188,7 +1284,8 @@
                             <div class="don-extend-panel">
                                 <div class="row">
                                     <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                        <p>
+                                            An enchanting island in southern Thailand, Ko Samui is a popular destination
                                             for
                                             both luxury travellers and budget backpackers. White sand beachess are
                                             rarely
@@ -1209,7 +1306,8 @@
                             <h2>
                                 <div class="btn-plane">
                                     <p class="mb-0">
-                                        <a href="###" class="btn-stye1 mr10">了解详情
+                                        <a href="###" class="btn-stye1 mr10">
+                                            了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
@@ -1218,7 +1316,8 @@
                             <div class="don-extend-panel">
                                 <div class="row">
                                     <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                        <p>
+                                            An enchanting island in southern Thailand, Ko Samui is a popular destination
                                             for
                                             both luxury travellers and budget backpackers. White sand beachess are
                                             rarely
@@ -1238,7 +1337,8 @@
                             <h2>
                                 <div class="btn-plane">
                                     <p class="mb-0">
-                                        <a href="###" class="btn-stye1 mr10">了解详情
+                                        <a href="###" class="btn-stye1 mr10">
+                                            了解详情
                                             <i class="arrow-right"></i>
                                         </a>
                                     </p>
@@ -1247,7 +1347,8 @@
                             <div class="don-extend-panel">
                                 <div class="row">
                                     <div class="col-xs-12 col">
-                                        <p>An enchanting island in southern Thailand, Ko Samui is a popular destination
+                                        <p>
+                                            An enchanting island in southern Thailand, Ko Samui is a popular destination
                                             for
                                             both luxury travellers and budget backpackers. White sand beachess are
                                             rarely
@@ -1303,16 +1404,17 @@
                 <div class="hidden-sm">
                     <div class="box bookicon fl">
                         <h4>企业出游</h4>
-                        <p class="mb20">团建，答谢客户，星梦邮轮都是你的不二之选！</p>
-                        
-                        <a href="###" class="btn-stye1">了解更多
+                        <p class="mb20">团建，答谢客户，星梦邮轮都是您的不二之选！</p>
+
+                        <a href="###" class="btn-stye1">
+                            了解详情
                             <i class="arrow-right"></i>
                         </a>
                         </p>
                     </div>
                     <div class="box fl bl">
                         <h4>手机应用</h4>
-                        <p class="mb20">为你的邮轮假期更新。</p>
+                        <p class="mb20">为您的邮轮假期更新。</p>
 
                         <a class="inblock mr10 btn-apple" href="###">apple</a>
                         <a class="inblock btn-google" href="###">google</a>
@@ -1322,7 +1424,8 @@
                         <h4>邮轮资讯</h4>
                         <p class="mb20">请时常关注星梦邮轮的最新动态。</p>
 
-                        <a href="###" class="btn-stye1 mr10">了解更多
+                        <a href="###" class="btn-stye1 mr10">
+                            了解详情
                             <i class="arrow-right"></i>
                         </a>
                         </p>
@@ -1453,7 +1556,8 @@
                                     <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">5140</span>起</span>
+                                        <span class="price">5140</span>起
+                                    </span>
                                     <span class="t2_td_schedule" data-id="2019-10-20"></span>
                                 </a>
                             </div>
@@ -1474,8 +1578,10 @@
                                     <div class="t2_td_port">佐世保+长崎</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">5140</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-10-22">更多航线
+                                        <span class="price">5140</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-10-22">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1485,7 +1591,8 @@
                                         <li>
                                             <p>
                                                 <a href="###">
-                                                    <i class="inblock icon1"></i>广州-香港-吉隆坡-新加坡-苏比克湾-广州</a>
+                                                    <i class="inblock icon1"></i>广州-香港-吉隆坡-新加坡-苏比克湾-广州
+                                                </a>
                                             </p>
                                             <p>
                                                 <i class="inblock icon2"></i>
@@ -1504,12 +1611,14 @@
                                             <p class="base_price tc">
                                                 <dfn>&yen;</dfn>
                                                 <span class="price">3,300</span>
-                                                <br>起/人</p>
+                                                <br>起/人
+                                            </p>
                                         </li>
                                         <li>
                                             <p>
                                                 <a href="###">
-                                                    <i class="inblock icon1"></i>广州-香港-吉隆坡-新加坡-苏比克湾-广州</a>
+                                                    <i class="inblock icon1"></i>广州-香港-吉隆坡-新加坡-苏比克湾-广州
+                                                </a>
                                             </p>
                                             <p>
                                                 <i class="inblock icon2"></i>
@@ -1528,7 +1637,8 @@
                                             <p class="base_price tc">
                                                 <dfn>&yen;</dfn>
                                                 <span class="price">3,300</span>
-                                                <br>起/人</p>
+                                                <br>起/人
+                                            </p>
                                         </li>
                                     </ul>
 
@@ -1544,8 +1654,10 @@
                                     <div class="t2_td_port">下关+福冈</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">5140</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-10-23">更多航线
+                                        <span class="price">5140</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-10-23">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1560,7 +1672,8 @@
                                     <div class="t2_td_port">宫崎+天津+上海</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">5140</span>起</span>
+                                        <span class="price">5140</span>起
+                                    </span>
                                     <span class="t2_td_schedule" data-id="2019-10-24"></span>
                                 </a>
                             </div>
@@ -1577,7 +1690,7 @@
                                     <div class="t2_td_tit">
                                         <div class="label_box">
                                             <span class="s_03"
-                                                data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
+                                                  data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
                                         </div>
                                         <span class="t2_td_day">26</span>
                                     </div>
@@ -1585,8 +1698,10 @@
                                     <div class="t2_td_port">跟团游·10月26日重庆出发，火车往返，领队服务——重庆-上海-神户（过夜）-大阪-东京（横滨）-上海-重庆</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">10799</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-10-26">更多航线
+                                        <span class="price">10799</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-10-26">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1601,8 +1716,10 @@
                                     <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">3075</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-10-27">更多航线
+                                        <span class="price">3075</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-10-27">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1619,8 +1736,10 @@
                                     <div class="t2_td_port">那霸（冲绳）</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1804</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-10-28">更多航线
+                                        <span class="price">1804</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-10-28">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1643,8 +1762,10 @@
                                     <div class="t2_td_port">宫古岛</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1469</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-10-30">更多航线
+                                        <span class="price">1469</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-10-30">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1659,7 +1780,8 @@
                                     <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2099</span>起</span>
+                                        <span class="price">2099</span>起
+                                    </span>
                                     <span class="t2_td_schedule" data-id="2019-10-31"></span>
                                 </a>
                             </div>
@@ -1675,8 +1797,10 @@
                                     <div class="t2_td_port">长崎</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2099</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-1">更多航线
+                                        <span class="price">2099</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-1">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1694,8 +1818,10 @@
                                     <div class="t2_td_port">福冈+长崎</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2299</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-2">更多航线
+                                        <span class="price">2299</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-2">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1712,8 +1838,10 @@
                                     <div class="t2_td_port">那霸（冲绳）</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2788</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-3">更多航线
+                                        <span class="price">2788</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-3">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1736,7 +1864,8 @@
                                     <div class="t2_td_port">佐世保</div>
                                     <span class="base_price">
                                         <dfn>&yen;</dfn>
-                                        <span class="price">1999</span>起/人</span>
+                                        <span class="price">1999</span>起/人
+                                    </span>
                                     <span class="t2_td_schedule" data-id="2019-11-5"></span>
                                 </a>
                             </div>
@@ -1750,8 +1879,10 @@
                                     <div class="t2_td_port">福冈+佐世保</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2199</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-6">更多航线
+                                        <span class="price">2199</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-6">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1766,8 +1897,10 @@
                                     <div class="t2_td_port">北九州+长崎</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2199</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-7">更多航线
+                                        <span class="price">2199</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-7">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1791,8 +1924,10 @@
                                     <div class="t2_td_port">福冈</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1999</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-9">更多航线
+                                        <span class="price">1999</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-9">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1807,8 +1942,10 @@
                                     <div class="t2_td_port">八重山郡</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1769</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-10">更多航线
+                                        <span class="price">1769</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-10">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1823,7 +1960,8 @@
                                     <div class="t2_td_port">长崎（青岛回）</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2300</span>起</span>
+                                        <span class="price">2300</span>起
+                                    </span>
                                     <span class="t2_td_schedule" data-id="2019-11-11"></span>
                                 </a>
                             </div>
@@ -1837,8 +1975,10 @@
                                     <div class="t2_td_port">跟团游·厦门-佐世保（日本）-天津（经济游）</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1599</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-12">更多航线
+                                        <span class="price">1599</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-12">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1853,8 +1993,10 @@
                                     <div class="t2_td_port">宫古岛</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1769</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-13">更多航线
+                                        <span class="price">1769</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-13">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1869,7 +2011,8 @@
                                     <div class="t2_td_port">佐世保（天津回）</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1599</span>起</span>
+                                        <span class="price">1599</span>起
+                                    </span>
                                     <span class="t2_td_schedule" data-id="2019-11-14"></span>
                                 </a>
                             </div>
@@ -1885,8 +2028,10 @@
                                     <div class="t2_td_port">福冈</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2688</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-15">更多航线
+                                        <span class="price">2688</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-15">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1911,8 +2056,10 @@
                                     <div class="t2_td_port">八重山郡</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1810</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-17">更多航线
+                                        <span class="price">1810</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-17">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1935,8 +2082,10 @@
                                     <div class="t2_td_port">宫古岛</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1769</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-19">更多航线
+                                        <span class="price">1769</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-19">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1951,7 +2100,8 @@
                                     <div class="t2_td_port">福冈</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">2679</span>起</span>
+                                        <span class="price">2679</span>起
+                                    </span>
                                     <span class="t2_td_schedule" data-id="2019-11-20"></span>
                                 </a>
                             </div>
@@ -1967,8 +2117,10 @@
                                     <div class="t2_td_port">八重山郡</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1810</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-21">更多航线
+                                        <span class="price">1810</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-21">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -1983,7 +2135,8 @@
                                     <div class="t2_td_port">宫古岛</div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">1769</span>起</span>
+                                        <span class="price">1769</span>起
+                                    </span>
                                     <span class="t2_td_schedule" data-id="2019-11-22"></span>
                                 </a>
                             </div>
@@ -1993,17 +2146,20 @@
                                     <div class="t2_td_tit">
                                         <div class="label_box">
                                             <span class="s_03"
-                                                data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
+                                                  data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
                                         </div>
                                         <span class="t2_td_day">23</span>
                                     </div>
                                     <div class="t2_td_ship">世界梦号</div>
                                     <div class="t2_td_port">
-                                        跟团游·11月23日重庆出发，领队服务，火车往返——重庆-上海-大阪（过夜）-神户-东京（横滨）-上海-重庆，日本航线，赠送岸上观光</div>
+                                        跟团游·11月23日重庆出发，领队服务，火车往返——重庆-上海-大阪（过夜）-神户-东京（横滨）-上海-重庆，日本航线，赠送岸上观光
+                                    </div>
                                     <span class="base_price">
                                         <dfn>¥</dfn>
-                                        <span class="price">7399</span>起</span>
-                                    <span class="t2_td_schedule" data-id="2019-11-23">更多航线
+                                        <span class="price">7399</span>起
+                                    </span>
+                                    <span class="t2_td_schedule" data-id="2019-11-23">
+                                        更多航线
                                         <i class="i_caret"></i>
                                     </span>
                                 </a>
@@ -2016,7 +2172,7 @@
                     <i></i>正在为您努力加载...
                 </div>
                 <div class="pop_months"
-                    style="position: absolute; background-color: #ffffff; z-index: 99;right:0px;display:none;">
+                     style="position: absolute; background-color: #ffffff; z-index: 99;right:0px;display:none;">
                 </div>
 
                 <div class="pop_calendar01" style="display: none; background-color: #ffffff;z-index: 99;">
@@ -2024,12 +2180,13 @@
                     <div class="pop_calendar01_bd">
                         <!-- hover有个状态，如果在列表上也想有hover的效果，请追加pop_calendar01_select_active -->
                         您可以选择其它月份
-                        <a href="###" class="pop_calendar01_select">选择月份
+                        <a href="###" class="pop_calendar01_select">
+                            选择月份
                             <i></i>
                         </a>
                     </div>
                     <div class="pop_months"
-                        style="position: absolute; background-color: #ffffff; z-index: 99;left:0px;display:none;"></div>
+                         style="position: absolute; background-color: #ffffff; z-index: 99;left:0px;display:none;"></div>
                 </div>
             </div>
         </div>
@@ -2071,17 +2228,8 @@
         </div>
     </div>
     #include('../../common/footer.html')
-    <div class="show-sm mbottombar-box">
-            <div class="mbottombar">
-                <ul>
-                    <li class="home"><a class="current" href="###"><span>首页</span></a></li>
-                    <li class="list"><a href="###"><span>所有航线</span></a></li>
-                    <li class="phone"><a href="###"><span>电话</span></a></li>
-                    <li class="group"><a href="###"><span>团队预定</span></a></li>
-                    <li class="account"><a href="###"><span>个人中心</span></a></li>
-                </ul>
-            </div>
-        </div>
+    #include('../../common/sm_footer_button.html')
+
 </body>
 
 </html>

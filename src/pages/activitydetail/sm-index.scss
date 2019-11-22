@@ -86,15 +86,15 @@
 
   .info {
     overflow-y: scroll;
-    padding-top:88rem/$fit;
+    /*padding-top:88rem/$fit;*/
     h2{
       font-size: 28rem/$fit;
       color: #383838;
     }
     .infotime{
-      font-size: 22rem/$fit;;
+      font-size: 22rem/$fit;
       color: #999999;
-      text-align: right;
+      /*text-align: left;*/
     }
     h4{
       font-size: 26rem/$fit;

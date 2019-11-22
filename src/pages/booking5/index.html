@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 
 <head>
   <meta charset="UTF-8">
-  <title>登录</title>
+  <title>航线预订- 支付</title>
   <meta name="viewport"
     content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
   <script type="text/javascript">
@@ -35,10 +35,10 @@
     <div class="order">
       <h3 class="product-name">世界梦号 【限时优惠】广州-那霸-宫古岛-广州</h3>
       <div class="product-info clearfloat">
-        <span>出发港口： 广州</span><span>行程天数： 6天5晚</span><span>出发日期： 2019-09-29</span><span
-          id='modfiy-date'>修改日期</span></span>
+        <span>出发港口：广州</span><span>行程天数： 6天5晚</span><span>出发日期： 2019-09-29</span><span
+          id='modfiy-date' style="display:none;">修改日期</span></span>
       </div>
-      <div class="product-tags">
+      <div class="product-tags" style="display:none;">
         <span class="tag green">暑假优惠</span>
         <span class="tag blue">买一送一</span>
         <span class="tag purple">特惠</span>
@@ -102,55 +102,57 @@
   </div>
 
   <div class="show-sm sm-main">
-    <div class="order-info">
-      <h3>世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</h3>
-      <p><span>出发港口：广州</span><span class="ml32">行程天数：6天5晚</span></p>
-      <p><span>出发日期：2019-09-29</span></p>
-    </div>
-    <div class="product-tags">
-      <span class="tag blue">买一送一</span>
-      <span class="tag purple">买二送二</span>
-      <span class="tag green">第三位免费</span>
-      <span class="tag yellow">限时闪促</span>
-      <i class="arrow-down fr mt10"></i>
-    </div>
-    <div class="step">
-      <div class="step-item selected" id="step1">
-        <span>选择房间</span>
-        <div class="step-item-after"></div>
+      <script>document.getElementById('title_name').textContent = '预订航线 - 支付';</script>
+
+      <div class="order-info">
+          <h3>世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</h3>
+          <p><span>出发港口：广州</span><span class="ml32">行程天数：6天5晚</span></p>
+          <p><span>出发日期：2019-09-29</span></p>
       </div>
-      <div class="step-item selected" id="step2">
-        <span>填写乘客信息</span>
-        <div class="step-item-before"></div>
-        <div class="step-item-after"></div>
+      <div class="product-tags">
+          <span class="tag blue">买一送一</span>
+          <span class="tag purple">买二送二</span>
+          <span class="tag green">第三位免费</span>
+          <span class="tag yellow">限时闪促</span>
+          <i class="arrow-down fr mt10"></i>
       </div>
-      <div class="step-item selected" id="step3">
-        <span>核对乘客信息</span>
-        <div class="step-item-before"></div>
-        <div class="step-item-after"></div>
+      <div class="step">
+          <div class="step-item selected" id="step1">
+              <span>选择房间</span>
+              <div class="step-item-after"></div>
+          </div>
+          <div class="step-item selected" id="step2">
+              <span>填写乘客信息</span>
+              <div class="step-item-before"></div>
+              <div class="step-item-after"></div>
+          </div>
+          <div class="step-item selected" id="step3">
+              <span>核对乘客信息</span>
+              <div class="step-item-before"></div>
+              <div class="step-item-after"></div>
+          </div>
+          <div class="step-item active" id="step4">
+              <span>选择支付方式</span>
+              <div class="step-item-before"></div>
+          </div>
       </div>
-      <div class="step-item active" id="step4">
-        <span>选择支付方式</span>
-        <div class="step-item-before"></div>
+      <div class="ensure-price">
+          <h3>订单总金额</h3>
+          <div class="content">
+              <img src="../../images/price-count.png" alt="" />
+              <p>您需要支付<span class="price"><span>&yen;</span>9154</span></p>
+          </div>
       </div>
-    </div>
-    <div class="ensure-price">
-      <h3>订单总金额</h3>
-      <div class="content">
-        <img src="../../images/price-count.png" alt="" />
-        <p>您需要支付<span class="price"><span>&yen;</span>9154</span></p>
+      <div class="split"></div>
+      <div class="pay-type">
+          <h3>选择支付方式</h3>
+          <div class="type-row">
+              <img src="../../images/ali-pay.png" alt=""><img src="../../images/wechat-pay.png" alt="">
+          </div>
+          <div class="type-row">
+              <img src="../../images/yinlian-pay.png" alt=""><img src="../../images/other-pay.png" alt="">
+          </div>
       </div>
-    </div>
-    <div class="split"></div>
-    <div class="pay-type">
-      <h3>选择支付方式</h3>
-        <div class="type-row">
-          <img src="../../images/ali-pay.png" alt=""><img src="../../images/wechat-pay.png" alt="">
-        </div>
-        <div class="type-row">
-          <img src="../../images/yinlian-pay.png" alt=""><img src="../../images/other-pay.png" alt="">
-        </div>
-    </div>
   </div>
   <div class="price-bar show-sm">
     <div class="left">

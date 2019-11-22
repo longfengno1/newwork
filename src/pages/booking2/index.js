@@ -77,7 +77,7 @@ import './index.scss';
     }
 
   });
-  $(".room-row-item,.people-row-item").click(function(){
+  $(".detail").click(function(){
     $(".mark").show();
   });
   $(".mark").click(function(){
@@ -93,4 +93,7 @@ import './index.scss';
     $(".room-box-show").toggle();
     return false;
   });
+    $(".room-row-item,.people-row-item").click(function () {
+        //$("room-row-item").addClass("active");
+    })
 })();

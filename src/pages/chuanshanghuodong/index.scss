@@ -252,14 +252,14 @@
 }
 .prolist .inner{
 	background: #FBFAF9;
-	padding-bottom:16rem/$fit;
-	margin-bottom:30rem/$fit;
+	/*padding-bottom:16rem/$fit;*/
+	/*margin-bottom:30rem/$fit;*/
 	font-size:14rem/$fit;
 	overflow:hidden;
 }
 .prolist .pic,
 .prolist .pic img{
-	width:360rem/$fit;
+	/*width:360rem/$fit;*/
 }
 .prolist .pic{
 	height:200rem/$fit;
@@ -416,24 +416,24 @@
 .prolistD li{
 	background: #F7FCFC;
 	padding:10rem/$fit;
-	height:254rem/$fit;
+	/*height:254rem/$fit;*/
 	margin-bottom:10rem/$fit;
 }
 .prolistD li .inner{
-	padding-left:466rem/$fit;
-	padding-right:90rem/$fit;
+	/*padding-left:466rem/$fit;*/
+	/*padding-right:90rem/$fit;*/
 	background:none;
 }
 .prolistD li .pic{
 	float:left;
-	margin-left:-466rem/$fit;
-	width:416rem/$fit;
-	height:234rem/$fit;
+	/*margin-left:-466rem/$fit;*/
+	/*width:416rem/$fit;*/
+	/*height:234rem/$fit;*/
 	position:relative;
 }
 .prolistD li .pic img{
-	width:416rem/$fit;
-	height:234rem/$fit;
+	/*width:416rem/$fit;
+	height:234rem/$fit;*/
 }
 .prolistD .protitle{
 	font-size:20rem/$fit;
@@ -448,6 +448,9 @@
 	font-size:16rem/$fit;
 	line-height:28rem/$fit;
 }
+.prolistD .desc-left {
+	margin-left: 336rem/$fit;
+}
 .prolistD .infos{
 	overflow:hidden;
 	padding:0;
@@ -455,26 +458,29 @@
 }
 .prolistD li:nth-child(2n) .inner{
 	padding-left:40rem/$fit;
-	padding-right:466rem/$fit;
+	padding-right:336rem/$fit;
 }
 .prolistD li:nth-child(2n) .pic{
 	float:right;
 	margin-left:0;
-	margin-right:-466rem/$fit;
+	margin-right:-336rem/$fit;
 }
-.prolistD .pic .op{
-	position:absolute;
-	width:50rem/$fit;
-	height:50rem/$fit;
-	top:50%;
-	left:50%;
-	margin:-25rem/$fit 0 0 -25rem/$fit;
-	line-height:42rem/$fit;
-	color:#fff;
-	font-size:20rem/$fit;
-	text-align:center;
-	border:4rem/$fit solid #fff;
-	border-radius:50%;
+.prolistD .pic{
+	height:auto;
+}
+.prolistD .pic .op {
+	position: absolute;
+	width: 50rem/$fit;
+	height: 50rem/$fit;
+	top: 50%;
+	left: 50%;
+	margin: -25rem/$fit 0 0 -25rem/$fit;
+	line-height: 42rem/$fit;
+	color: #fff;
+	font-size: 20rem/$fit;
+	text-align: center;
+	border: 4rem/$fit solid #fff;
+	border-radius: 50%;
 }
 .prolistD .pic .fill{
 	position:absolute;
