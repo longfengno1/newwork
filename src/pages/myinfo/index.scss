@@ -1,0 +1,203 @@
+@import '../../css/variables.scss';
+@import '../../css/navbar.scss';
+@import './sm-index.scss';
+
+body {
+    background-color: #f7fcfc;
+}
+
+.my-order {
+    padding: 19rem/$fit 0 200rem/$fit;
+    width: 1200rem/$fit;
+    display: flex;
+
+    .left-container {
+        width: 210rem/$fit;
+        margin-right: 20rem/$fit;
+    }
+
+    .right-container {
+        width: 940rem/$fit;
+        font-family: Helvetica;
+
+        .bread-crumb {
+            display: flex;
+            align-items: center;
+            font-size: 14rem/$fit;
+            color: #6D6D6D;
+            margin-bottom: 22rem/$fit;
+
+            .item {
+                cursor: pointer;
+            }
+
+            .selected {
+                cursor: default;
+                color: #343E57;
+            }
+
+            .split {
+                margin: 0 4rem/$fit;
+            }
+        }
+
+        section {
+            width: 100%;
+            background-color: #ffffff;
+
+            h5 {
+                display: none;
+            }
+        }
+
+        h3 {
+            padding: 20rem/$fit 0;
+            font-size: 20rem/$fit;
+            color: #343E57;
+        }
+    }
+
+    .mt0 {
+        margin-bottom: 0;
+    }
+
+    .user-info {
+        display: flex;
+        flex-wrap: wrap;
+
+        padding: 10rem/$fit 20rem/$fit 16rem/$fit;
+
+        .input-item {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            span {
+                width: 50px;
+                text-align: right;
+                margin-right: 10px;
+                font-size: 12px;
+                color: #343E57;
+            }
+
+            .input-text {
+                width: 186px;
+                background: #FFFFFF;
+                border: none;
+                border: 1px solid #E3E2E5;
+                border-radius: 2px;
+                padding-left: 10px;
+                font-size: 12px;
+                color: #343E57;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            .check-item {
+                display: flex;
+                align-items: center;
+                width: 93px;
+                font-size: 12px;
+                color: #343E57;
+
+                input {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+    }
+
+    .line-recommend {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        flex-wrap: wrap;
+
+        .product,
+        .line-product {
+            width: 220px;
+            height: 248px;
+            border: 1px solid #F0F0F0;
+
+            img {
+                width: 100%;
+                height: 150px;
+            }
+
+            .content {
+                padding: 11px 14px 9px;
+                background-color: #ffffff;
+            }
+
+            .name {
+                font-size: 16px;
+                color: #383838;
+            }
+
+            .desc {
+                font-size: 12px;
+                color: #788995;
+                margin-top: 8px;
+            }
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 7px;
+            }
+
+            .price {
+                font-size: 16px;
+                color: #F8485E;
+            }
+
+            .old {
+                text-decoration-line: line-through;
+                font-size: 12px;
+                color: #788995;
+                letter-spacing: 0;
+                text-align: center;
+                margin-left: 7px;
+            }
+
+            .every {
+                text-decoration-line: none;
+                color: #999999;
+            }
+
+            .buy {
+                display: inline-block;
+                text-align: center;
+                background-color: #00969E;
+                border-radius: 3px;
+                width: 66px;
+                height: 26px;
+                line-height: 26px;
+                color: #ffffff;
+                font-size: 12px;
+            }
+        }
+
+        .line-product {
+            .name {
+                font-size: 12px;
+                color: #343940;
+            }
+
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .my-order {
+        display: none !important;
+    }
+}
