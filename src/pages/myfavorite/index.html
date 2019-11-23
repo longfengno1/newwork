@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+
+    </script>
+</head>
+
+<body>
+    <div class="hidden-sm">
+        #include('../../common/header.html')
+    </div>
+
+    <header class="my-order-header show-sm">
+        <i class="icon icon-arrowleft"></i>
+        我的信息
+    </header>
+
+    <div id="main" class="main my-order">
+        <div class="left-container">
+            #include('../../common/navbar.html')
+        </div>
+        <div class="right-container">
+            <div class="bread-crumb">
+                <span class="item">个人中心</span>
+                <span class="split">-</span>
+                <span class="item">个人资料</span>
+                <span class="split">-</span>
+                <span class="item selected">我的收藏</span>
+            </div>
+            <h3>我的收藏</h3>
+            <section class="line-recommend">
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <span class="tag">降价</span>
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <span class="tag">降价</span>
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <span class="tag">降价</span>
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <span class="tag">特惠航线</span>
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+           <div class="page">
+               <span class="page-count">共10页 当前为第1页</span>
+               <div class="pagination">
+                   <span class="pagination-item"><span class="icon-arrowleft2"></span></span>
+                   <span class="pagination-item active-item">1</span>
+                   <span class="pagination-item">2</span>
+                   <span class="pagination-item">3</span>
+                   <span class="pagination-item">...</span>
+                   <span class="pagination-item">10</span>
+                   <span class="pagination-item"><span class="icon-arrowright21"></span></span>
+                   <span class="pagination-input"></span>
+                   <span class="pagination-item">GO</span>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="sm-my-order show-sm">
+        <section class="user-info">
+            <h5>您的信息</h5>
+            <div class="input-item"><span>手机号码：</span><input class="input-text" type="text" value="178 8930 0028">
+            </div>
+
+            <div class="input-item"><span>姓名：</span><input class="input-text" type="text" value="陈宇晨"></div>
+            <div class="input-item"><span>姓名拼音：</span><input class="input-text" type="text" value="chenyuchen"></div>
+            <div class="input-item mt0"><span>性别：</span>
+                <div class="check-item"><input type="checkbox" checked>男</div>
+                <div class="check-item"><input type="checkbox">女</div>
+            </div>
+            <div class="input-item"><span>邮箱：</span><input class="input-text" type="text"
+                    value="chenyuchen23@ctufo.com">
+            </div>
+            <div class="input-item mt0"><span>出生日期：</span><input class="input-text" type="text" value="1987/10/19">
+            </div>
+        </section>
+        <section class="my-favorite">
+            <h5>我的收藏</h5>
+            <article class="favorite-item">
+                <span class="tag">特惠航线</span>
+                <div class="content">
+                    <div class="left">
+                        <p class="name">7晚塔斯马尼亚探索之旅</p>
+                        <p class="time">世界梦号 6天5晚 周六-周四</p>
+                    </div>
+                    <div class="right">
+                        <p class="price">¥3669&nbsp;<span>起/人</span></p>
+                        <span class="detail">查看详情</span>
+                    </div>
+                </div>
+            </article>
+            <article class="favorite-item">
+                <span class="tag">特惠航线</span>
+                <div class="content">
+                    <div class="left">
+                        <p class="name">7晚塔斯马尼亚探索之旅</p>
+                        <p class="time">世界梦号 6天5晚 周六-周四</p>
+                    </div>
+                    <div class="right">
+                        <p class="price">¥3669&nbsp;<span>起/人</span></p>
+                        <span class="detail">查看详情</span>
+                    </div>
+                </div>
+            </article>
+            <article class="favorite-item">
+                <span class="tag">特惠航线</span>
+                <div class="content">
+                    <div class="left">
+                        <p class="name">7晚塔斯马尼亚探索之旅</p>
+                        <p class="time">世界梦号 6天5晚 周六-周四</p>
+                    </div>
+                    <div class="right">
+                        <p class="price">¥3669&nbsp;<span>起/人</span></p>
+                        <span class="detail">查看详情</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </div>
+
+    #include('../../common/footer.html')
+</body>
+
+</html>

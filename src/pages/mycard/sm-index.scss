@@ -1,0 +1,150 @@
+@import '../../css/variables.scss';
+
+@media (max-width: 767px) {
+    body {
+        background-color: #F8F8F8 !important;
+        font-family: Helvetica;
+    }
+
+    .my-order {
+        display: none !important;
+    }
+
+    .my-order-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00969E;
+        height: 88rem/$fit;
+        color: #ffffff;
+        font-size: 32rem/$fit;
+        color: #F0F0F0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    .icon {
+        position: absolute;
+        left: 37rem/$fit;
+        font-size: 40rem/$fit;
+        cursor: pointer;
+    }
+
+    .tabs {
+        position: fixed;
+        top: 88rem/$fit;
+        left: 0;
+        width: 100vw;
+        height: 88rem/$fit;
+        padding: 0 32rem/$fit 0 50rem/$fit;
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+
+        .item {
+            display: inline-block;
+            height: 88rem/$fit;
+            line-height: 88rem/$fit;
+            text-align: center;
+            font-size: 32rem/$fit;
+            color: #343E57;
+            font-weight: 300;
+            border-bottom: 3rem/$fit solid transparent;
+        }
+
+        .active {
+            color: #00969E;
+            border-bottom-color: #00969E;
+        }
+    }
+}
+
+.my-order-sm {
+    width: 100vw;
+    margin-top: 176rem/$fit;
+
+    .mb24 {
+        margin-bottom: 24rem/$fit;
+    }
+
+    .my-card {
+        width: 100vw;
+        padding: 32rem/$fit;
+        background-color: #ffffff;
+        font-size: 24em/$fit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            color: #00969E;
+        }
+
+        .date {
+            margin-top: 20rem/$fit;
+            color: #6D6D6D;
+        }
+
+        .count {
+            margin-top: 14rem/$fit;
+            color: #999999;
+        }
+
+        .operation {
+            display: inline-block;
+            height: 54rem/$fit;
+            line-height: 54rem/$fit;
+            width: 148rem/$fit;
+            border-radius: 27rem/$fit;
+            border: 1px solid #00969E;
+            font-size: 24rem/$fit;
+            color: #00969E;
+            text-align: center;
+        }
+
+    }
+
+    .my-card-detail {
+        background-color: #F8F8F8;
+        padding: 14rem/$fit 32rem/$fit;
+        display: flex;
+        flex-direction: column;
+
+        .price-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .price {
+            font-size: 54rem/$fit;
+            color: #00969E;
+
+            span {
+                font-size: 14rem/$fit;
+            }
+        }
+
+        .date {
+            font-size: 20rem/$fit;
+            color: #00969E;
+        }
+
+        .title {
+            font-size: 24rem/$fit;
+            color: #383838;
+            margin-top: 14rem/$fit;
+        }
+
+        .desc {
+            font-size: 22rem/$fit;
+            color: #999999;
+            line-height: 38rem/$fit;
+            margin-top: 14rem/$fit;
+        }
+    }
+
+}

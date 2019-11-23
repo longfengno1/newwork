@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="hidden-sm">
+        #include('../../common/header.html')
+    </div>
+
+    <header class="my-order-header show-sm">
+        <i class="icon icon-arrowleft"></i>
+        我的卡券
+    </header>
+
+    <div class="tabs show-sm">
+        <span class="item active" id="my-card-sm">优惠券</span>
+        <span class="item">礼品券</span>
+        <span class="item">实物卡</span>
+        <span class="item" id="my-code-sm">兑换码</span>
+    </div>
+
+    <div id="main" class="main my-order hidden-sm">
+        <div class="left-container">
+            #include('../../common/navbar.html')
+        </div>
+        <div class="right-container">
+            <div class="bread-crumb">
+                <span class="item">个人中心</span>
+                <span class="split">-</span>
+                <span class="item selected">我的卡券</span>
+            </div>
+            <ul class="order-tabs">
+                <li class="tab-item active" id="my-card">优惠券</li>
+                <li class="tab-item">礼品券</li>
+                <li class="tab-item">实物卡</li>
+                <li class="tab-item" id="my-code">兑换码</li>
+            </ul>
+            <div class="order-list-wrap" id="my-card-container">
+                <table class="order-list">
+                    <thead>
+                        <tr>
+                            <th>类型</th>
+                            <th>券名称</th>
+                            <th>有效期</th>
+                            <th>数量</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                        <tr class="expand">
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>优惠券</td>
+                            <td class="order-num">圣诞幸运大转盘专属电子礼品券300元</td>
+                            <td>
+                                2019/12/20 -2019/12/30
+                            </td>
+                            <td>2</td>
+                            <td class="order-operation">
+                                <a>立即使用</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="card-detail">
+                    <div class="left">
+                        <p class="price">
+                            300
+                            <span>元</span>
+                        </p>
+                        <p class="date">2019/12/20 -2019/12/30</p>
+                    </div>
+                    <div class="right">
+                        <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                        <p class="desc">使用说明：<br>
+                            1.优惠券仅适用于丽星邮轮中国官网、APP、官方微信内购买丽星邮轮及星梦邮轮指定航线船票时使用，通过其他渠道购票不享有此优惠。<br>
+                            2.一个订单仅限使用一张优惠券，不同面值优惠券适用于不同航线，用户可在“会员中心”-“我的卡券”中查看所得优惠券的具体使用规则。<br>
+                            3.每张优惠券仅限使用一次，兑换有效期截止到2020年4月3日，过期作废。<br>
+                            4.除特别注明外，通过船票礼品卡/置换船票预订不可使用以上奖品。<br>
+                            5.优惠内容及价格仅适用于中国内地居民（非内地居民须提供相关证明）。<br>
+                            6.更多问题，详询官网/微信客服</p>
+                    </div>
+                </div>
+            </div>
+            <div class="" id="my-code-container">
+                <h5>兑换码</h5>
+                <div class="code-row">
+                    <input type="text">
+                    <span>立即兑换</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-order-sm show-sm">
+        <div class="" id="sm-my-card">
+            <article class="my-card">
+                <div class="left">
+                    <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                    <p class="date">有效期：2019/12/20 -2019/12/30</p>
+                    <p class="count">数量：2</p>
+                </div>
+                <span class="operation">立即使用</span>
+            </article>
+            <div class="my-card-detail">
+                <div class="price-row">
+                    <p class="price">
+                        300<span>元</span>
+                    </p>
+                    <span class="date">2019/12/20 -2019/12/30</span>
+                </div>
+                <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                <p class="desc">使用说明：<br>
+                    1.优惠券仅适用于丽星邮轮中国官网、APP、官方微信内购买丽星邮轮及星梦邮轮指定航线船票时使用，通过其他渠道购票不享有此优惠。<br>
+                    2.一个订单仅限使用一张优惠券，不同面值优惠券适用于不同航线，用户可在“会员中心”-“我的卡券”中查看所得优惠券的具体使用规则。<br>
+                    3.每张优惠券仅限使用一次，兑换有效期截止到2020年4月3日，过期作废。<br>
+                    4.除特别注明外，通过船票礼品卡/置换船票预订不可使用以上奖品。<br>
+                    5.优惠内容及价格仅适用于中国内地居民（非内地居民须提供相关证明）。<br>
+                    6.更多问题，详询官网/微信客服</p>
+            </div>
+            <article class="my-card">
+                <div class="left">
+                    <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                    <p class="date">有效期：2019/12/20 -2019/12/30</p>
+                    <p class="count">数量：2</p>
+                </div>
+                <span class="operation">立即使用</span>
+            </article>
+            <article class="my-card">
+                <div class="left">
+                    <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                    <p class="date">有效期：2019/12/20 -2019/12/30</p>
+                    <p class="count">数量：2</p>
+                </div>
+                <span class="operation">立即使用</span>
+            </article>
+            <article class="my-card">
+                <div class="left">
+                    <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                    <p class="date">有效期：2019/12/20 -2019/12/30</p>
+                    <p class="count">数量：2</p>
+                </div>
+                <span class="operation">立即使用</span>
+            </article>
+            <article class="my-card">
+                <div class="left">
+                    <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                    <p class="date">有效期：2019/12/20 -2019/12/30</p>
+                    <p class="count">数量：2</p>
+                </div>
+                <span class="operation">立即使用</span>
+            </article>
+            <article class="my-card">
+                <div class="left">
+                    <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                    <p class="date">有效期：2019/12/20 -2019/12/30</p>
+                    <p class="count">数量：2</p>
+                </div>
+                <span class="operation">立即使用</span>
+            </article>
+            <article class="my-card">
+                <div class="left">
+                    <p class="title">圣诞幸运大转盘专属电子礼品券300元</p>
+                    <p class="date">有效期：2019/12/20 -2019/12/30</p>
+                    <p class="count">数量：2</p>
+                </div>
+                <span class="operation">立即使用</span>
+            </article>
+        </div>
+    </div>
+
+    #include('../../common/footer.html')
+
+</body>
+
+</html>

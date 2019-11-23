@@ -2,1349 +2,1317 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>登录</title>
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
-  <script type="text/javascript">
-    (function (doc, win) {
-      var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          if (!clientWidth) return;
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
 
-          var fontSize = 20 * (clientWidth / 375);
-          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
-          docEl.style.fontSize = fontSize + 'px';
-          var dpi = window.devicePixelRatio;
-          docEl.setAttribute('data-dpi', dpi);
-        };
-      recalc();
-      if (!doc.addEventListener) return;
-      win.addEventListener(resizeEvt, recalc, false);
-    })(document, window);
-
-  </script>
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
 </head>
 
 <body>
     #include('../../common/header.html')
 
-    <div id="main" class="main list-main hidden-sm">
+    <div id="main" class="main list-main">
         <h1 class="list-title">世界梦号 华丽梦「赏」 Super Show</h1>
         <div class="calendar-container">
             <div class="calendar-row">
                 <span class="calendar" id="show-calendar">邮轮日历<span class="icon" id="calendar-icon" /></span>
             </div>
-            <div class="travel_calendar_bd" id='travel_calendar'>
-                <div class="t2">
-                    <div class="t2_thead">
-                        <span class="t2_th">星期日</span>
-                        <span class="t2_th">星期一</span>
-                        <span class="t2_th">星期二</span>
-                        <span class="t2_th">星期三</span>
-                        <span class="t2_th">星期四</span>
-                        <span class="t2_th">星期五</span>
-                        <span class="t2_th">星期六</span>
-                    </div>
-                    <div class="t2_tbody">
-                        <div style="margin-top: 0px;">
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">13</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">14</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">15</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">16</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">01</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">18</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td t2_last">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">19</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">20</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">5140</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-20"></span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">21</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <span class="t2_td_day">22</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">佐世保+长崎</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">5140</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-22">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                                <div class="t2_td_schedule_more">
-                                    <h4 class="title">2018.07.09 所有航线</h4>
-                                    <ul>
-                                        <li>
-                                            <p><a href="###"><i class="inblock icon1"></i>广州-香港-吉隆坡-新加坡-苏比克湾-广州</a></p>
-                                            <p>
-                                                <i class="inblock icon2"></i><span class="mr20">世界梦号</span><i class="inblock icon4"></i><span>6天5晚，周六-周四</span>
-                                            </p>
-                                            <p>
-                                                <i class="inblock icon3"></i><span>限时至2018.08.21</span>
-                                                <span class="inblock sale">特惠</span><span class="inblock hot">热门</span>
-                                                <span class="tag">亲子游</span><span class="tag">周末游</span>
-                                            </p>
-                                            <p class="base_price tc"><dfn>&yen;</dfn><span class="price">3,300</span><br>起/人</p>
-                                        </li>
-                                        <li>
-                                            <p><a href="###"><i class="inblock icon1"></i>广州-香港-吉隆坡-新加坡-苏比克湾-广州</a></p>
-                                            <p>
-                                                <i class="inblock icon2"></i><span class="mr20">世界梦号</span><i class="inblock icon3"></i><span>6天5晚，周六-周四</span>
-                                            </p>
-                                            <p>
-                                                <i class="inblock icon4"></i><span>限时至2018.08.21</span>
-                                                <span class="inblock sale">特惠</span><span class="inblock hot">热门</span>
-                                                <span class="tag">亲子游</span><span class="tag">周末游</span>
-                                            </p>
-                                            <p class="base_price tc"><dfn>&yen;</dfn><span class="price">3,300</span><br>起/人</p>
-                                        </li>
-                                    </ul>
 
-                                </div>
+            <div class="travel_calendar" id='travel_calendar'>
+                <div class="travel_calendar_switch ">
+                    <div class="travel_cs_right">
+                        <div class="travel_cs_title">出发港口</div>
+                        <div class="city_box">
+                            <div class="city_item">
+                                <div class="city_item_txt">广州</div>
+                                <div class="arrow-down fr"></div>
                             </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">23</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">下关+福冈</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">5140</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-23">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">24</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">宫崎+天津+上海</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">5140</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-24"></span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">25</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td t2_last">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
-                                            <span class="s_03" data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
-                                        </div>
-                                        <span class="t2_td_day">26</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">跟团游·10月26日重庆出发，火车往返，领队服务——重庆-上海-神户（过夜）-大阪-东京（横滨）-上海-重庆</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">10799</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-26">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">27</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">3075</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-27">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
 
-                                        </div>
-                                        <span class="t2_td_day">28</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">那霸（冲绳）</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1804</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-28">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">29</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">30</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">宫古岛</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1469</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-30">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">31</span>
-                                    </div>
-                                    <div class="t2_td_ship">大西洋号</div>
-                                    <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2099</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-10-31"></span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
-
-                                        </div>
-                                        <span class="t2_td_day">11</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">长崎</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2099</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-1">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td t2_last">
-
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
-
-                                        </div>
-                                        <span class="t2_td_day">2</span>
-                                    </div>
-                                    <div class="t2_td_ship">MSC地中海</div>
-                                    <div class="t2_td_port">福冈+长崎</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2299</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-2">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
-
-                                        </div>
-                                        <span class="t2_td_day">3</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">那霸（冲绳）</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2788</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-3">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">4</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">5</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">佐世保</div>
-                                    <span class="base_price">
-                                        <dfn>&yen;</dfn><span class="price">1999</span>起/人
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-5"></span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">6</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">福冈+佐世保</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2199</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-6">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">7</span>
-                                    </div>
-                                    <div class="t2_td_ship">MSC地中海</div>
-                                    <div class="t2_td_port">北九州+长崎</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2199</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-7">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">8</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td t2_last">
-
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">9</span>
-                                    </div>
-                                    <div class="t2_td_ship">鼓浪屿号</div>
-                                    <div class="t2_td_port">福冈</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1999</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-9">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">10</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">八重山郡</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1769</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-10">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">11</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">长崎（青岛回）</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2300</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-11"></span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">12</span>
-                                    </div>
-                                    <div class="t2_td_ship">大西洋号</div>
-                                    <div class="t2_td_port">跟团游·厦门-佐世保（日本）-天津（经济游）</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1599</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-12">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">13</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">宫古岛</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1769</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-13">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">14</span>
-                                    </div>
-                                    <div class="t2_td_ship">大西洋号</div>
-                                    <div class="t2_td_port">佐世保（天津回）</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1599</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-14"></span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
-
-                                        </div>
-                                        <span class="t2_td_day">15</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">福冈</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2688</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-15">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td t2_last">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">16</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
-
-                                        </div>
-                                        <span class="t2_td_day">17</span>
-                                    </div>
-                                    <div class="t2_td_ship">新浪漫号</div>
-                                    <div class="t2_td_port">八重山郡</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1810</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-17">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_unavailable" id="">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">18</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">19</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">宫古岛</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1769</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-19">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">20</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">福冈</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">2679</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-20"></span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
-
-                                        </div>
-                                        <span class="t2_td_day">21</span>
-                                    </div>
-                                    <div class="t2_td_ship">新浪漫号</div>
-                                    <div class="t2_td_port">八重山郡</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1810</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-21">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="t2_td">
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box"></div>
-                                        <span class="t2_td_day">22</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">宫古岛</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">1769</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-22"></span>
-                                </a>
-                            </div>
-                            <div class="t2_td t2_last">
-
-                                <a href="###" class="a_available">
-                                    <div class="t2_td_tit">
-                                        <div class="label_box">
-                                            <span class="s_03" data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
-                                        </div>
-                                        <span class="t2_td_day">23</span>
-                                    </div>
-                                    <div class="t2_td_ship">世界梦号</div>
-                                    <div class="t2_td_port">跟团游·11月23日重庆出发，领队服务，火车往返——重庆-上海-大阪（过夜）-神户-东京（横滨）-上海-重庆，日本航线，赠送岸上观光</div>
-                                    <span class="base_price">
-                                        <dfn>¥</dfn><span class="price">7399</span>起
-                                    </span>
-                                    <span class="t2_td_schedule" data-id="2019-11-23">
-                                        更多航线
-                                        <i class="i_caret"></i>
-                                    </span>
-                                </a>
-                            </div>
                         </div>
                     </div>
-                    <div class="t2_mask" style="display: none;"></div>
-                </div>
-                <div class="t2_loading" style="display: none;">
-                    <i></i>正在为您努力加载...
-                </div>
-                <div class="pop_months"
-                     style="position: absolute; background-color: #ffffff; z-index: 99;right:0px;display:none;">
+                    <div class="travel_cs_left">
+                        <div class="travel_cs_title">邮轮</div>
+                        <div class="city_box">
+                            <div class="city_item">
+                                <div class="city_item_txt fl">世界梦号</div>
+                                <div class="arrow-down fr"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="travel_cs_col">
+                        <div class="switch_month">
+                            <a href="###" class="sm_prev smp_dis">
+                                <i class="i_caret"></i>
+                            </a>
+                            <a href="###" class="sm_cont">
+                                <span class="txt">2019年10月</span>
+                                <i class="i_caret"></i>
+                            </a>
+                            <a href="###" class="sm_next">
+                                <i class="i_caret"></i>
+                            </a>
+                            <div class="sm_cont_list" style="z-index: 99;"></div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="pop_calendar01" style="display: none; background-color: #ffffff;z-index: 99;">
-                    <div class="pop_calendar01_hd"></div>
-                    <div class="pop_calendar01_bd">
-                        <!-- hover有个状态，如果在列表上也想有hover的效果，请追加pop_calendar01_select_active -->
-                        您可以选择其它月份
-                        <a href="###" class="pop_calendar01_select">
-                            选择月份
-                            <i></i>
-                        </a>
+
+                <div class="travel_calendar_bd">
+                    <div class="t2">
+                        <div class="t2_thead">
+                            <span class="t2_th">星期日</span>
+                            <span class="t2_th">星期一</span>
+                            <span class="t2_th">星期二</span>
+                            <span class="t2_th">星期三</span>
+                            <span class="t2_th">星期四</span>
+                            <span class="t2_th">星期五</span>
+                            <span class="t2_th">星期六</span>
+                        </div>
+                        <div class="t2_tbody">
+                            <div style="margin-top: 0px;">
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">13</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">14</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">15</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">16</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">01</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">18</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td t2_last">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">19</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">20</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">5140</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-20"></span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">21</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available hover">
+                                        <div class="t2_td_tit">
+                                            <span class="t2_td_day">22</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">佐世保+长崎</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">5140</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-22">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                    <div class="t2_td_schedule_more">
+                                        <h4 class="title">2018.07.09 所有航线</h4>
+                                        <ul>
+                                            <li>
+                                                <p><a href="###"><i class="inblock icon1"></i>广州-香港-吉隆坡-新加坡-苏比克湾-广州</a>
+                                                </p>
+                                                <p><i class="inblock icon2"></i><span class="mr20">世界梦号</span><i
+                                                        class="inblock icon4"></i><span>6天5晚，周六-周四</span></p>
+                                                <p><i class="inblock icon3"></i><span>限时至2018.08.21</span>
+                                                    <span class="inblock sale">特惠</span><span
+                                                        class="inblock hot">热门</span>
+                                                    <span class="tag">亲子游</span><span class="tag">周末游</span>
+                                                </p>
+                                                <p class="base_price tc"><dfn>&yen;</dfn><span
+                                                        class="price">3,300</span><br>起/人</p>
+                                            </li>
+                                            <li>
+                                                <p><a href="###"><i class="inblock icon1"></i>广州-香港-吉隆坡-新加坡-苏比克湾-广州</a>
+                                                </p>
+                                                <p><i class="inblock icon2"></i><span class="mr20">世界梦号</span><i
+                                                        class="inblock icon3"></i><span>6天5晚，周六-周四</span></p>
+                                                <p><i class="inblock icon4"></i><span>限时至2018.08.21</span>
+                                                    <span class="inblock sale">特惠</span><span
+                                                        class="inblock hot">热门</span>
+                                                    <span class="tag">亲子游</span><span class="tag">周末游</span>
+                                                </p>
+                                                <p class="base_price tc"><dfn>&yen;</dfn><span
+                                                        class="price">3,300</span><br>起/人</p>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">23</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">下关+福冈</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">5140</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-23">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">24</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">宫崎+天津+上海</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">5140</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-24"></span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">25</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td t2_last">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+                                                <span class="s_03"
+                                                    data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
+                                            </div>
+                                            <span class="t2_td_day">26</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">跟团游·10月26日重庆出发，火车往返，领队服务——重庆-上海-神户（过夜）-大阪-东京（横滨）-上海-重庆
+                                        </div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">10799</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-26">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">27</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">3075</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-27">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+
+                                            </div>
+                                            <span class="t2_td_day">28</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">那霸（冲绳）</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1804</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-28">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">29</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">30</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">宫古岛</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1469</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-30">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">31</span>
+                                        </div>
+                                        <div class="t2_td_ship">大西洋号</div>
+                                        <div class="t2_td_port">那霸（冲绳）+宫古岛</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2099</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-10-31"></span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+
+                                            </div>
+                                            <span class="t2_td_day">11</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">长崎</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2099</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-1">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td t2_last">
+
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+
+                                            </div>
+                                            <span class="t2_td_day">2</span>
+                                        </div>
+                                        <div class="t2_td_ship">MSC地中海</div>
+                                        <div class="t2_td_port">福冈+长崎</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2299</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-2">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+
+                                            </div>
+                                            <span class="t2_td_day">3</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">那霸（冲绳）</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2788</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-3">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">4</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">5</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">佐世保</div>
+                                        <span class="base_price">
+                                            <dfn>&yen;</dfn><span class="price">1999</span>起/人</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-5"></span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">6</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">福冈+佐世保</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2199</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-6">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">7</span>
+                                        </div>
+                                        <div class="t2_td_ship">MSC地中海</div>
+                                        <div class="t2_td_port">北九州+长崎</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2199</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-7">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">8</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td t2_last">
+
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">9</span>
+                                        </div>
+                                        <div class="t2_td_ship">鼓浪屿号</div>
+                                        <div class="t2_td_port">福冈</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1999</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-9">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">10</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">八重山郡</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1769</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-10">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">11</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">长崎（青岛回）</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2300</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-11"></span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">12</span>
+                                        </div>
+                                        <div class="t2_td_ship">大西洋号</div>
+                                        <div class="t2_td_port">跟团游·厦门-佐世保（日本）-天津（经济游）</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1599</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-12">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">13</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">宫古岛</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1769</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-13">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">14</span>
+                                        </div>
+                                        <div class="t2_td_ship">大西洋号</div>
+                                        <div class="t2_td_port">佐世保（天津回）</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1599</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-14"></span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+
+                                            </div>
+                                            <span class="t2_td_day">15</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">福冈</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2688</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-15">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td t2_last">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">16</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+
+                                            </div>
+                                            <span class="t2_td_day">17</span>
+                                        </div>
+                                        <div class="t2_td_ship">新浪漫号</div>
+                                        <div class="t2_td_port">八重山郡</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1810</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-17">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_unavailable" id="">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">18</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">19</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">宫古岛</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1769</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-19">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">20</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">福冈</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">2679</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-20"></span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+
+                                            </div>
+                                            <span class="t2_td_day">21</span>
+                                        </div>
+                                        <div class="t2_td_ship">新浪漫号</div>
+                                        <div class="t2_td_port">八重山郡</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1810</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-21">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="t2_td">
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box"></div>
+                                            <span class="t2_td_day">22</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">宫古岛</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">1769</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-22"></span>
+                                    </a>
+                                </div>
+                                <div class="t2_td t2_last">
+
+                                    <a href="###" class="a_available">
+                                        <div class="t2_td_tit">
+                                            <div class="label_box">
+                                                <span class="s_03"
+                                                    data-title="该出发日期产品预订成功保证发团（天气、战争、罢工等不可抗力因素除外）。">成团</span>
+                                            </div>
+                                            <span class="t2_td_day">23</span>
+                                        </div>
+                                        <div class="t2_td_ship">世界梦号</div>
+                                        <div class="t2_td_port">
+                                            跟团游·11月23日重庆出发，领队服务，火车往返——重庆-上海-大阪（过夜）-神户-东京（横滨）-上海-重庆，日本航线，赠送岸上观光</div>
+                                        <span class="base_price">
+                                            <dfn>¥</dfn><span class="price">7399</span>起</span>
+                                        <span class="t2_td_schedule" data-id="2019-11-23">更多航线
+                                            <i class="i_caret"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t2_mask" style="display: none;"></div>
+                    </div>
+                    <div class="t2_loading" style="display: none;">
+                        <i></i>正在为您努力加载...
                     </div>
                     <div class="pop_months"
-                         style="position: absolute; background-color: #ffffff; z-index: 99;left:0px;display:none;"></div>
+                        style="position: absolute; background-color: #ffffff; z-index: 99;right:0px;display:none;">
+                    </div>
+
+                    <div class="pop_calendar01" style="display: none; background-color: #ffffff;z-index: 99;">
+                        <div class="pop_calendar01_hd"></div>
+                        <div class="pop_calendar01_bd">
+                            <!-- hover有个状态，如果在列表上也想有hover的效果，请追加pop_calendar01_select_active -->
+                            您可以选择其它月份
+                            <a href="###" class="pop_calendar01_select">选择月份
+                                <i></i>
+                            </a>
+                        </div>
+                        <div class="pop_months"
+                            style="position: absolute; background-color: #ffffff; z-index: 99;left:0px;display:none;">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="list">
-            <div class="left-container">
-                <div class="select-header clearfloat">
-                    <span>筛选条件</span>
-                    <span>清空</span>
+        <div class="list clearfloat">
+            <div class="select-container mb10">
+                <div class="tr sort">
+                    <span>共244条航线</span>
                 </div>
-                <div class="items">
-                    <div class="select-item">
-                        <div class="select-title clearfloat">
-                            <span>出发港口</span>
-                            <span>不限 ></span>
-                        </div>
-                        <span class="city">广州</span>
-                        <span class="city">上海</span>
-                        <span class="city">香港</span>
-                        <span class="city">深圳</span>
+            </div>
+            <div class="left-container">
+                <div class="box">
+                    <div class="select-header clearfloat">
+                        <span>筛选条件</span>
+                        <span>清空</span>
                     </div>
-                    <div class="select-item">
-                        <div class="select-title clearfloat">
-                            <span>目的地</span>
-                            <span>不限 ></span>
+                    <div class="items">
+                        <div class="select-item hashover">
+                            <div class="select-inner">
+                                <div class="select-title clearfloat">
+                                    <span>出发港口</span>
+                                    <span>更多 ></span>
+                                </div>
+                                <span class="city">广州</span>
+                                <span class="city">上海</span>
+                                <span class="city">香港</span>
+                                <span class="city">深圳</span>
+                            </div>
+                            <div class="select-opener">
+                                <div class="inner">
+                                    <div class="inner-item">
+                                        <span class="city">广州</span>
+                                        <span class="city">上海</span>
+                                        <span class="city">香港</span>
+                                        <span class="city">深圳</span>
+                                        <span class="city">广州</span>
+                                        <span class="city">上海</span>
+                                        <span class="city">香港</span>
+                                        <span class="city">深圳</span>
+                                        <span class="city">广州</span>
+                                        <span class="city">上海</span>
+                                        <span class="city">香港</span>
+                                        <span class="city">深圳</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <span class="city">日本</span>
-                        <span class="city">菲律宾</span>
-                        <span class="city">澳大利亚</span>
-                        <span class="city">韩国</span>
+                        <div class="select-item hashover">
+                            <div class="select-inner">
+                                <div class="select-title clearfloat">
+                                    <span>目的地</span>
+                                    <span>更多 ></span>
+                                </div>
+                                <span class="city">日本</span>
+                                <span class="city">菲律宾</span>
+                                <span class="city">澳大利亚</span>
+                                <span class="city">韩国</span>
+                            </div>
+                            <div class="select-opener">
+                                <div class="inner">
+                                    <div class="inner-item">
+                                        <span class="city">日本</span>
+                                        <span class="city">菲律宾</span>
+                                        <span class="city">澳大利亚</span>
+                                        <span class="city">韩国</span>
+                                        <span class="city">日本</span>
+                                        <span class="city">菲律宾</span>
+                                        <span class="city">澳大利亚</span>
+                                        <span class="city">韩国</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-item hashover">
+                            <div class="select-inner">
+                                <div class="select-title clearfloat">
+                                    <span>日期</span>
+                                    <span>更多 ></span>
+                                </div>
+                                <span class="city">8月</span>
+                                <span class="city">9月</span>
+                                <span class="city">10月</span>
+                                <span class="city">11月</span>
+                            </div>
+                            <div class="select-opener">
+                                <div class="inner">
+                                    <div class="inner-item">
+                                        <div class="inner-title">2019年</div>
+                                        <span class="city">8月</span>
+                                        <span class="city">9月</span>
+                                        <span class="city">10月</span>
+                                        <span class="city">11月</span>
+                                    </div>
+                                    <div class="inner-item">
+                                        <div class="inner-title">2020年</div>
+                                        <span class="city">8月</span>
+                                        <span class="city">9月</span>
+                                        <span class="city">10月</span>
+                                        <span class="city">11月</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-item">
+                                <div class="select-inner">
+                            <div class="select-title clearfloat">
+                                <span>邮轮</span>
+                                <span>更多 ></span>
+                            </div>
+                            <span class="city">世界梦号</span>
+                            <span class="city">云顶梦号</span>
+                            <span class="city">探索梦号</span>
+                            </div>
+
+                        </div>
+                        <div class="select-item">
+                                <div class="select-inner">
+                            <div class="select-title clearfloat">
+                                <span>航行天数</span>
+                                <span>更多 ></span>
+                            </div>
+                            <span class="city">6天5晚</span>
+                            <span class="city">5天4晚</span>
+                            <span class="city">4天3晚</span>
+                            </div>
+                        </div>
+                        <div class="select-item">
+                                <div class="select-inner">
+                            <div class="select-title clearfloat">
+                                <span>热门标签</span>
+                                <span></span>
+                            </div>
+                            <span class="city special">本周特价</span>
+                            <span class="city">中秋国庆</span>
+                            <span class="city">臻邮会</span>
+                                </div>
+                        </div>
                     </div>
-                    <div class="select-item">
-                        <div class="select-title clearfloat">
-                            <span>日期</span>
-                            <span>不限 ></span>
-                        </div>
-                        <span class="city">8月</span>
-                        <span class="city">9月</span>
-                        <span class="city">10月</span>
-                        <span class="city">11月</span>
+                </div>
+                <div class="items mt10">
+                    <div class="select-title clearfloat">
+                        <span>热门标签</span>
+                        <span></span>
                     </div>
-                    <div class="select-item">
-                        <div class="select-title clearfloat">
-                            <span>邮轮</span>
-                            <span>不限 ></span>
-                        </div>
-                        <span class="city">世界梦号</span>
-                        <span class="city">云顶梦号</span>
-                        <span class="city">探索梦号</span>
+                    <div class="row tags">
+                        <span class="hot-tag hot-tag1"><span class="icon-gift"></span> 买二送一</span>
+                        <span class="hot-tag hot-tag2"><span class="icon-sale3"></span> 买二送二</span>
+                        <span class="hot-tag hot-tag3"><span class="icon-free"></span> 第三位免费</span>
+                        <span class="hot-tag hot-tag4"><span class="icon-spring1"></span> 跨年</span>
+                        <span class="hot-tag hot-tag5"><span class="icon-sale2"></span> 限时促销</span>
+                        <span class="hot-tag hot-tag6"><span class="icon-spring2"></span> 春节</span>
                     </div>
-                    <div class="select-item">
-                        <div class="select-title clearfloat">
-                            <span>航行天数</span>
-                            <span>不限 ></span>
+                </div>
+            </div>
+            <div class="right-container clearfloat">
+
+                <div class="boat-card">
+                    <div class="detail row no-gutters">
+                        <div class="picture col-auto"><img src="../../images/pic4.jpg"></div>
+                        <div class="detail-content col">
+                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                            <div class="route-line showmore clearfloat">
+                                <div class="route-line-more fr">
+                                    <div class="route-item"><span class="route-item-day">...</span><em>更多</em></div>
+                                </div>
+                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                            </div>
+                            <div class="row">
+                                <span class="cruises-name mr12">
+                                    <span class="icon-ship2"></span> 世界梦号
+                                </span>
+                                <span class="cruises-from mr12">深圳出发</span>
+                                <span class="cruises-days mr12">6天5晚</span>
+                            </div>
+                            <div class="cruises-from-date">
+                                <span class="label fz12">出发日期</span>
+                                <div class="date-list clearfloat showmore">
+                                    <span class="date-list-item date-list-item-more fr"><em>更多</em><span
+                                            class="icon-arrowdown"></span></span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+
+                                </div>
+
+                            </div>
+                            <div class="row tags">
+                                <span class="hot-tag hot-tag1"><span class="icon-gift"></span> 买二送一</span>
+                                <span class="hot-tag hot-tag2"><span class="icon-sale3"></span> 买二送二</span>
+                                <span class="hot-tag hot-tag3"><span class="icon-free"></span> 第三位免费</span>
+                                <span class="hot-tag hot-tag4"><span class="icon-spring1"></span> 跨年</span>
+                                <span class="hot-tag hot-tag5"><span class="icon-sale2"></span> 限时促销</span>
+                                <span class="hot-tag hot-tag6"><span class="icon-spring2"></span> 春节</span>
+                            </div>
+                            <div class="price">
+                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                                <p class="old-price mb10">参考价：<span>&yen;8999<span>/人</span></span>
+                                </p>
+                                <div class="desc-right">
+                                    <div class="buttons">
+                                        <a href="###" class="btnA">
+                                            查看详情
+                                        </a>
+                                        <p class="intro"><span class="icon-question"></span> 价格说明</p>
+                                        <div class="opener">
+                                            <div class="priceinfo">
+                                                <div class="title">价格说明<span class="icon-x fr opener-close"></span>
+                                                </div>
+                                                <div class="inner">
+                                                    <p>
+                                                        即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <span class="city">6天5晚</span>
-                        <span class="city">5天4晚</span>
-                        <span class="city">4天3晚</span>
                     </div>
-                    <div class="select-item">
-                        <div class="select-title clearfloat">
-                            <span>热门标签</span>
-                            <span></span>
+                    <div class="description clearfloat">
+                        <div class="desc-left">
+                            <p class="tip">
+                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                            </p>
                         </div>
-                        <span class="city special">本周特价</span>
-                        <span class="city">中秋国庆</span>
-                        <span class="city">臻邮会</span>
+                    </div>
+                </div>
+                <div class="boat-card">
+                    <div class="detail row no-gutters">
+                        <div class="picture col-auto"><img src="../../images/pic4.jpg"></div>
+                        <div class="detail-content col">
+                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                            <div class="route-line showmore clearfloat">
+                                <div class="route-line-more fr">
+                                    <div class="route-item"><span class="route-item-day">...</span><em>更多</em></div>
+                                </div>
+                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                            </div>
+                            <div class="row">
+                                <span class="cruises-name mr12">
+                                    <span class="icon-ship2"></span> 世界梦号
+                                </span>
+                                <span class="cruises-from mr12">深圳出发</span>
+                                <span class="cruises-days mr12">6天5晚</span>
+                            </div>
+                            <div class="cruises-from-date">
+                                <span class="label fz12">出发日期</span>
+                                <div class="date-list clearfloat showmore">
+                                    <span class="date-list-item date-list-item-more fr"><em>更多</em><span
+                                            class="icon-arrowdown"></span></span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                </div>
+
+                            </div>
+                            <div class="row tags">
+                                <span class="hot-tag hot-tag1"><span class="icon-gift"></span> 买二送一</span>
+                                <span class="hot-tag hot-tag2"><span class="icon-sale3"></span> 买二送二</span>
+                                <span class="hot-tag hot-tag3"><span class="icon-free"></span> 第三位免费</span>
+                                <span class="hot-tag hot-tag4"><span class="icon-spring1"></span> 跨年</span>
+                                <span class="hot-tag hot-tag5"><span class="icon-sale2"></span> 限时促销</span>
+                                <span class="hot-tag hot-tag6"><span class="icon-spring2"></span> 春节</span>
+                            </div>
+                            <div class="price">
+                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                                <p class="old-price mb10">参考价：<span>&yen;8999<span>/人</span></span>
+                                </p>
+                                <div class="desc-right">
+                                    <div class="buttons">
+                                        <a href="###" class="btnA">
+                                            查看详情
+                                        </a>
+                                        <p class="intro"><span class="icon-question"></span> 价格说明</p>
+                                        <div class="opener">
+                                            <div class="priceinfo">
+                                                <div class="title">价格说明<span class="icon-x fr opener-close"></span>
+                                                </div>
+                                                <div class="inner">
+                                                    <p>
+                                                        即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三同房入住第
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="description clearfloat">
+                        <div class="desc-left">
+                            <p class="tip">
+                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boat-card">
+                    <div class="detail row no-gutters">
+                        <div class="picture col-auto"><img src="../../images/pic4.jpg"></div>
+                        <div class="detail-content col">
+                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                            <div class="route-line showmore clearfloat">
+                                <div class="route-line-more fr">
+                                    <div class="route-item"><span class="route-item-day">...</span><em>更多</em></div>
+                                </div>
+                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                            </div>
+                            <div class="row">
+                                <span class="cruises-name mr12">
+                                    <span class="icon-ship2"></span> 世界梦号
+                                </span>
+                                <span class="cruises-from mr12">深圳出发</span>
+                                <span class="cruises-days mr12">6天5晚</span>
+                            </div>
+                            <div class="cruises-from-date">
+                                <span class="label fz12">出发日期</span>
+                                <div class="date-list clearfloat showmore">
+                                    <span class="date-list-item date-list-item-more fr"><em>更多</em><span
+                                            class="icon-arrowdown"></span></span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                </div>
+
+                            </div>
+                            <div class="row tags">
+                                <span class="hot-tag hot-tag1"><span class="icon-gift"></span> 买二送一</span>
+                                <span class="hot-tag hot-tag2"><span class="icon-sale3"></span> 买二送二</span>
+                                <span class="hot-tag hot-tag3"><span class="icon-free"></span> 第三位免费</span>
+                                <span class="hot-tag hot-tag4"><span class="icon-spring1"></span> 跨年</span>
+                                <span class="hot-tag hot-tag5"><span class="icon-sale2"></span> 限时促销</span>
+                                <span class="hot-tag hot-tag6"><span class="icon-spring2"></span> 春节</span>
+                            </div>
+                            <div class="price">
+                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                                <p class="old-price mb10">参考价：<span>&yen;8999<span>/人</span></span>
+                                </p>
+                                <div class="desc-right">
+                                    <div class="buttons">
+                                        <a href="###" class="btnA">
+                                            查看详情
+                                        </a>
+                                        <p class="intro"><span class="icon-question"></span> 价格说明</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="description clearfloat">
+                        <div class="desc-left">
+                            <p class="tip">
+                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boat-card">
+                    <div class="detail row no-gutters">
+                        <div class="picture col-auto"><img src="../../images/pic4.jpg"></div>
+                        <div class="detail-content col">
+                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                            <div class="route-line showmore clearfloat">
+                                <div class="route-line-more fr">
+                                    <div class="route-item"><span class="route-item-day">...</span><em>更多</em></div>
+                                </div>
+                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                            </div>
+                            <div class="row">
+                                <span class="cruises-name mr12">
+                                    <span class="icon-ship2"></span> 世界梦号
+                                </span>
+                                <span class="cruises-from mr12">深圳出发</span>
+                                <span class="cruises-days mr12">6天5晚</span>
+                            </div>
+                            <div class="cruises-from-date">
+                                <span class="label fz12">出发日期</span>
+                                <div class="date-list clearfloat showmore">
+                                    <span class="date-list-item date-list-item-more fr"><em>更多</em><span
+                                            class="icon-arrowdown"></span></span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                </div>
+
+                            </div>
+                            <div class="row tags">
+                                <span class="hot-tag hot-tag1"><span class="icon-gift"></span> 买二送一</span>
+                                <span class="hot-tag hot-tag2"><span class="icon-sale3"></span> 买二送二</span>
+                                <span class="hot-tag hot-tag3"><span class="icon-free"></span> 第三位免费</span>
+                                <span class="hot-tag hot-tag4"><span class="icon-spring1"></span> 跨年</span>
+                                <span class="hot-tag hot-tag5"><span class="icon-sale2"></span> 限时促销</span>
+                                <span class="hot-tag hot-tag6"><span class="icon-spring2"></span> 春节</span>
+                            </div>
+                            <div class="price">
+                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                                <p class="old-price mb10">参考价：<span>&yen;8999<span>/人</span></span>
+                                </p>
+                                <div class="desc-right">
+                                    <div class="buttons">
+                                        <a href="###" class="btnA">
+                                            查看详情
+                                        </a>
+                                        <p class="intro"><span class="icon-question"></span> 价格说明</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="description clearfloat">
+                        <div class="desc-left">
+                            <p class="tip">
+                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boat-card">
+                    <div class="detail row no-gutters">
+                        <div class="picture col-auto"><img src="../../images/pic4.jpg"></div>
+                        <div class="detail-content col">
+                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                            <div class="route-line showmore clearfloat">
+                                <div class="route-line-more fr">
+                                    <div class="route-item"><span class="route-item-day">...</span><em>更多</em></div>
+                                </div>
+                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                            </div>
+                            <div class="row">
+                                <span class="cruises-name mr12">
+                                    <span class="icon-ship2"></span> 世界梦号
+                                </span>
+                                <span class="cruises-from mr12">深圳出发</span>
+                                <span class="cruises-days mr12">6天5晚</span>
+                            </div>
+                            <div class="cruises-from-date">
+                                <span class="label fz12">出发日期</span>
+                                <div class="date-list clearfloat showmore">
+                                    <span class="date-list-item date-list-item-more fr"><em>更多</em><span
+                                            class="icon-arrowdown"></span></span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                </div>
+
+                            </div>
+                            <div class="row tags">
+                                <span class="hot-tag hot-tag1"><span class="icon-gift"></span> 买二送一</span>
+                                <span class="hot-tag hot-tag2"><span class="icon-sale3"></span> 买二送二</span>
+                                <span class="hot-tag hot-tag3"><span class="icon-free"></span> 第三位免费</span>
+                                <span class="hot-tag hot-tag4"><span class="icon-spring1"></span> 跨年</span>
+                                <span class="hot-tag hot-tag5"><span class="icon-sale2"></span> 限时促销</span>
+                                <span class="hot-tag hot-tag6"><span class="icon-spring2"></span> 春节</span>
+                            </div>
+                            <div class="price">
+                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                                <p class="old-price mb10">参考价：<span>&yen;8999<span>/人</span></span>
+                                </p>
+                                <div class="desc-right">
+                                    <div class="buttons">
+                                        <a href="###" class="btnA">
+                                            查看详情
+                                        </a>
+                                        <p class="intro"><span class="icon-question"></span> 价格说明</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="description clearfloat">
+                        <div class="desc-left">
+                            <p class="tip">
+                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boat-card">
+                    <div class="detail row no-gutters">
+                        <div class="picture col-auto"><img src="../../images/pic4.jpg"></div>
+                        <div class="detail-content col">
+                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
+                            <div class="route-line showmore clearfloat">
+                                <div class="route-line-more fr">
+                                    <div class="route-item"><span class="route-item-day">...</span><em>更多</em></div>
+                                </div>
+                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
+                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
+                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
+                            </div>
+                            <div class="row">
+                                <span class="cruises-name mr12">
+                                    <span class="icon-ship2"></span> 世界梦号
+                                </span>
+                                <span class="cruises-from mr12">深圳出发</span>
+                                <span class="cruises-days mr12">6天5晚</span>
+                            </div>
+                            <div class="cruises-from-date">
+                                <span class="label fz12">出发日期</span>
+                                <div class="date-list clearfloat showmore">
+                                    <span class="date-list-item date-list-item-more fr"><em>更多</em><span
+                                            class="icon-arrowdown"></span></span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                    <span class="date-list-item">9月30日</span>
+                                </div>
+
+                            </div>
+                            <div class="row tags">
+                                <span class="hot-tag hot-tag1"><span class="icon-gift"></span> 买二送一</span>
+                                <span class="hot-tag hot-tag2"><span class="icon-sale3"></span> 买二送二</span>
+                                <span class="hot-tag hot-tag3"><span class="icon-free"></span> 第三位免费</span>
+                                <span class="hot-tag hot-tag4"><span class="icon-spring1"></span> 跨年</span>
+                                <span class="hot-tag hot-tag5"><span class="icon-sale2"></span> 限时促销</span>
+                                <span class="hot-tag hot-tag6"><span class="icon-spring2"></span> 春节</span>
+                            </div>
+                            <div class="price">
+                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
+                                <p class="old-price mb10">参考价：<span>&yen;8999<span>/人</span></span>
+                                </p>
+                                <div class="desc-right">
+                                    <div class="buttons">
+                                        <a href="###" class="btnA">
+                                            查看详情
+                                        </a>
+                                        <p class="intro"><span class="icon-question"></span> 价格说明</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="description clearfloat">
+                        <div class="desc-left">
+                            <p class="tip">
+                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-            </div>
-            <div class="right-container clearfloat">
-                <div class="select-container">
-                    <div class="sort">
-                        <span>共244条航线</span>
-                        <span>价格</span>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="boat-card">
-                    <div class="detail row">
-                        <div class="picture"><img src="../../images/bottom-tag.png"></div>
-                        <div class="detail-content">
-                            <h3 class="route-name">【世界梦号】广州-海上巡游-广州</h3>
-                            <div class="route-line row">
-                                <div class="route-item"><span class="route-item-day">D1</span>蛇口</div>
-                                <div class="route-item"><span class="route-item-day">D2</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D3</span>那霸 (冲绳岛)</div>
-                                <div class="route-item"><span class="route-item-day">D4</span>宫古岛</div>
-                                <div class="route-item"><span class="route-item-day">D5</span>海上巡游</div>
-                                <div class="route-item"><span class="route-item-day">D6</span>蛇口</div>
-                            </div>
-                            <div class="row">
-                                <span class="cruises-name mr12">
-                                    <img class="mr10" src="../../images/icon-dream.png">世界梦号
-                                </span>
-                                <span class="cruises-from mr12">深圳出发</span>
-                                <span class="cruises-days mr12">6天5晚</span>
-                            </div>
-                            <div class="row cruises-from-date">
-                                <span>出发日期 </span>
-                                <div class="date-list">
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                    <span class="date-list-item">9月30日</span>
-                                </div>
-                                <span class="date-list-item date-list-item-more">更多<span class="icon-arrowdown"></span></span>
-                            </div>
-                            <div class="price">
-                                <p class="cur-price"><span>&yen;</span>2999<span>起/人</span></p>
-                                <p class="old-price">参考价：<span>&yen;8999<span style="font-size:12px">/人</span></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="description clearfloat">
-                        <div class="desc-left">
-                            <div class="tags">
-                                <span class="tag"><img src="../../images/cheap.png" style="margin-right: 4px;">特惠</span>
-                                <span class="tag"><img src="../../images/VIP.png" style="margin-right: 4px;">专享</span>
-                                <span class="tag"><img src="../../images/fire.png" style="margin-right: 4px;">热门</span>
-                                <span class="tag"><img src="../../images/duck.png" style="margin-right: 4px;">儿童</span>
-                            </div>
-                            <p class="tip">
-                                即日起预订广州南沙或香港出发2晚航线之豪华露台之以下房型可享受船票6.5折优惠，同房入住第三位乘客可免船票费优惠
-                            </p>
-                        </div>
-                        <div class="desc-right">
-                            <div class="buttons">
-                                <span class="intro"><img src="../../images/question.png" style="margin-right: 4px;">价格说明</span><button type="button" class="btn">
-                                    查看详情
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="page">
                     <span class="page-count">共10页 当前为第1页</span>
                     <div class="pagination">
@@ -1362,10 +1330,19 @@
             </div>
         </div>
     </div>
-    <div class="show-sm sm-main">
+    <div class="fullmark" style="display: none;">
+        <div class="layerout">
+            <h3 class="title">价格说明<span class="icon-x fr"></span></h3>
+            <div class="inner">
+                <p>价格说明价格说明价格说明价格说明价格说明价格说明价格说明价格说明</p>
+            </div>
+        </div>
+    </div>
+    <div class="show-sm sm-main hidden-sm">
         <div class="select-container">
             <div class="select-item" id='select-port'><img src="../../images/sm-port.png" alt=""><span>出发港口</span></div>
-            <div class="select-item" id='select-place'><img src="../../images/sm-place.png" alt=""><span>目的地</span></div>
+            <div class="select-item" id='select-place'><img src="../../images/sm-place.png" alt=""><span>目的地</span>
+            </div>
             <div class="select-item" id="select-day"><img src="../../images/sm-day.png" alt=""><span>行程天数</span></div>
             <div class="select-item" id="select-discount">
                 <img src="../../images/sm-discount.png" alt=""><span>优惠代码</span>
