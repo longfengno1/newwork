@@ -1,5 +1,268 @@
 @import '../../css/variables.scss';
 
+/* 大屏幕 */
+@media (min-width: 1200px) {}
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979rem/$fit) {}
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+  body {
+    background: #F8F8F8;
+  }
+
+  .list-main {
+    background: none;
+  }
+
+  .list {
+    width: 100%;
+
+  }
+
+  .select-container {
+    display: none;
+  }
+
+  .right-container {
+    padding: 0;
+
+    .cruises-from-date-sm {
+      font-size: 24rem/$fit;
+      color: #6D6D6D;
+      padding-bottom: 24rem/$fit;
+      border-bottom: 1px dashed #D8D8D8;
+
+      .label {
+        font-size: 24rem/$fit;
+
+      }
+    }
+
+    .boat-card {
+      padding: 24rem/$fit;
+      padding-bottom: 10rem/$fit;
+      margin-bottom: 0;
+      box-shadow: none;
+      border-bottom: 1px solid #D8D8D8;
+
+      .detail-content>.row {
+        margin: 14rem/$fit 0;
+      }
+
+      .picture {
+        width: 294rem/$fit;
+        height: 196rem/$fit;
+        border-radius: 6rem/$fit;
+      }
+
+      .cruises-name {
+        display: none;
+      }
+
+      .cruises-from {
+        font-size: 24rem/$fit;
+        color: #6D6D6D;
+      }
+
+      .cruises-days {
+        font-size: 24rem/$fit;
+        color: #6D6D6D;
+      }
+
+      .tags {
+        margin: 20rem/$fit 0;
+
+        .icon-arrowdown {
+          color: #D8D8D8;
+          font-size: 20rem/$fit;
+          margin-top: 3rem/$fit;
+        }
+      }
+
+      .tags .hot-tag {
+        font-size: 20rem/$fit;
+
+        span {
+          display: none;
+        }
+      }
+
+      .detail-content {
+        width: 50%;
+        padding-top: 0;
+        padding-right: 0;
+
+        .tags {
+          display: none;
+        }
+
+        .desc-right {
+          margin-top: 16rem/$fit;
+        }
+
+        .btnA {
+          padding: 17rem/$fit 24rem/$fit;
+          font-size: 24rem/$fit;
+          border-radius: 0;
+
+        }
+
+        .cruises-from-date {
+          display: none;
+        }
+
+        .route-name {
+          font-size: 28rem/$fit;
+          line-height: 34rem/$fit;
+        }
+
+        .route-line {
+          display: none;
+        }
+
+        .price {
+          right: 0;
+          bottom: -24rem/$fit;
+
+          .cur-price {
+            font-size: 34rem/$fit;
+          }
+
+          .cur-price span {
+            font-size: 34rem/$fit;
+          }
+
+          .cur-price span:last-child {
+            font-size: 20rem/$fit;
+            color: #999999;
+          }
+
+          .intro {
+            display: none;
+          }
+
+          .old-price {
+            font-size: 22rem/$fit;
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+
+  .queryfitler {
+    height: 82rem/$fit;
+    overflow-x: scroll;
+    padding-left: 32rem/$fit;
+    width: 100%;
+
+    .tags {
+      line-height: 82rem/$fit;
+      white-space: nowrap;
+    }
+
+    span {
+      display: inline-block;
+      height: 50rem/$fit;
+      line-height: 50rem/$fit;
+      text-align: center;
+      border-radius: 25rem/$fit;
+      background: #fff;
+      padding: 0 24rem/$fit;
+      white-space: nowrap;
+    }
+  }
+
+  .filter-sm-opener {
+    background: #fff;
+    .inner{
+      padding: 0 32rem/$fit;
+      .inner-title{
+        
+      }
+    }
+    .fitlered {
+      height: 88rem/$fit;
+      line-height: 88rem/$fit;
+      padding-left: 32rem/$fit;
+      background: #F8F8F8;
+      font-size: 24rem/$fit;
+
+      .label {
+        color: #999999;
+        margin-right: 8rem/$fit;
+      }
+
+      .item {
+        display: inline-block;
+        height: 50rem/$fit;
+        line-height: 50rem/$fit;
+        background: #fff;
+        padding: 0 24rem/$fit;
+        color: #00969E;
+        border-radius: 25rem/$fit;
+        .icon-x{
+          margin-left: 37rem/$fit;
+        }
+      }
+      
+    }
+  }
+
+  .filter-sm {
+    height: 88rem/$fit;
+    background: #fff;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    display: flex;
+
+    .filter-item {
+      font-size: 28rem/$fit;
+      flex: 1;
+      height: 88rem/$fit;
+      line-height: 88rem/$fit;
+      position: relative;
+      text-align: center;
+
+      .num {
+        background: #F8485E;
+        font-size: 20rem/$fit;
+        color: #fff;
+        height: 28rem/$fit;
+        width: 28rem/$fit;
+        text-align: center;
+        line-height: 28rem/$fit;
+        border-radius: 50%;
+        position: absolute;
+        right: 4rem/$fit;
+        top: 6rem/$fit;
+      }
+    }
+
+    .filter-item.current {
+      color: #00969E;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 50rem/$fit;
+        height: 4rem/$fit;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        background: #00969E;
+      }
+
+    }
+  }
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {}
+
 .sm-main {
   min-height: 100vh;
   width: 100vw;

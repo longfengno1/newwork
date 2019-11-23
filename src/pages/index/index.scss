@@ -1117,6 +1117,9 @@
 	overflow: hidden;
 	border-top-left-radius: 5rem/$fit;
 	border-top-right-radius: 5rem/$fit;
+	img{
+		width: 100%;
+	}
 }
 
 .hotthread .pic_title {
@@ -1199,6 +1202,30 @@
 .hotthread .base_price .price {
 	font-size: 18rem/$fit;
 	color: #15989D;
+}
+.hotthreadB .item .thread .inner{
+	height: 50rem/$fit;
+}
+.hotthreadB .item .thread{
+	
+}
+.hotthreadB .item .thread .pic{
+	background: #000;
+	img{
+		opacity: 0.6;
+	}
+	.pic_title{
+		position: static;
+		padding: 0;
+	}
+	.text-desc{
+		position: absolute;
+		left: 0;
+		top:0;
+		width: 100%;
+		padding: 60rem/$fit 20rem/$fit 0 20rem/$fit;
+		color: #fff;
+	}
 }
 
 /* ================ “邮”记 =================== */

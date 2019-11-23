@@ -1,18 +1,18 @@
 @import '../../css/variables.scss';
-@import './sm-index.scss';
+
 
 .row {
   margin: 0;
 }
-.boxfixed{
-  position: fixed !important;
-  display: block !important;
+.left-container.boxfixed{
+  position: fixed;
+  display: block;
   z-index: 100;
   top:0
 }
-.boxbottom{
-  position: absolute !important;
-  display: block !important;
+.left-container.boxbottom{
+  position: absolute;
+  display: block;
   bottom: 0;
   top: auto;
 }
@@ -1192,3 +1192,5 @@
   background-position: -10px -18px;
   top: 5px;
 }
+
+@import './sm-index.scss';
