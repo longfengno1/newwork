@@ -1,0 +1,35 @@
+#userinfo-navbar {
+    background-color: #ffffff;
+    padding: 0 15px;
+    width: 100%;
+
+    .navbar-item {
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        width: 100%;
+        box-shadow: 0 1px 0 0 rgba(229, 229, 229, 0.50);
+        font-size: 13px;
+        color: #383838;
+        height: 50px;
+        cursor: pointer;
+
+        &:hover {
+            color: #00969E;
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .active {
+        color: #00969E;
+
+        img {
+            display: block;
+            width: 19px;
+            margin-right: 10px;
+        }
+    }
+}

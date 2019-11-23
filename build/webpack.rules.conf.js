@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 const path = require('path');
 const resolve = file => path.resolve(__dirname, file);
+
 const rules = [{
 		test: /\.(css|scss|sass)$/,
 		use: [
@@ -21,11 +22,13 @@ const rules = [{
 	},
 	{
 		test: /\.js$/,
-		use: ["babel-loader"],
+		include: [resolve("../src")],
+		use: ["happypack/loader?id=js-loader"],
 		// 不检查node_modules下的js文件
 		exclude: "/node_modules/"
 	}, {
 		test: /\.(png|jpg|gif)$/,
+		include: [resolve("../src")],
 		use: [{
 			// 需要下载file-loader和url-loader
 			loader: "url-loader",
@@ -39,12 +42,13 @@ const rules = [{
 	},
 	{
 		test: /\.(woff|svg|eot|ttf)\??.*$/,
+		include: [resolve('../src/font')],
 		loader: 'url-loader?name=font/[name].[ext]',
-		 include: [resolve('../src/font')],
 	},
 	{
 		test: /\.html$/,
 		// html中的img标签
+		include: [resolve("../src")],
 		use: ["html-withimg-loader"]
 	}
 ];
