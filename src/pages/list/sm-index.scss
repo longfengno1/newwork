@@ -174,15 +174,95 @@
       white-space: nowrap;
     }
   }
-
+  .markop0{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+  }
   .filter-sm-opener {
     background: #fff;
-    .inner{
-      padding: 0 32rem/$fit;
-      .inner-title{
-        
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top:176rem/$fit;
+    .sortlist{
+      ul{
+        padding: 0 32rem/$fit;
+      }
+      li{
+        color: #6D6D6D;
+      height: 88rem/$fit;
+      line-height: 88rem/$fit;
+      font-size:26rem/$fit;
+      border-bottom: 1px solid #F0F0F0;
+        &.current{
+          color:#00969E;
+        }
       }
     }
+    .intxt{
+      margin: 22rem/$fit 0;
+      height: 80rem/$fit;
+      line-height: 76rem/$fit;
+      background: #FFFFFF;
+      border: 1px solid #E5E5E5;
+      border-radius: 8px;
+      width: 688rem/$fit;
+      input {
+        font-size: 24rem/$fit;
+      }
+    }
+    .inner{
+      padding: 0 32rem/$fit;
+      height: 654rem/$fit;
+      overflow-y: scroll;
+      .inner-title{
+        font-size: 26rem/$fit;
+        line-height: 76rem/$fit;
+        border-bottom: 1px solid #F0F0F0;
+        color: #6D6D6D;
+      }
+      .inner-list{
+        line-height: 88rem/$fit;
+        font-size: 24rem/$fit;
+        .item {
+          display: inline-block;
+          height: 50rem/$fit;
+          line-height: 50rem/$fit;
+          background: #F0F0F0;
+          padding: 0 24rem/$fit;
+          color: #999;
+          border-radius: 25rem/$fit;
+          margin-right: 32rem/$fit;
+          &.current{
+            background: #00969E;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .bottom-btn{
+      height: 80rem/$fit;
+      .item{
+        display: block;
+        height: 80rem/$fit;
+        line-height: 80rem/$fit;
+        width: 50%;
+        float: left;
+        font-size: 32rem/$fit;
+        text-align: center;
+        color: #00969E;
+        border-top: 1px solid #F0F0F0;
+        &.current{
+          background: #00969E;
+          color: #fff;
+        }
+      }
+    }
+
     .fitlered {
       height: 88rem/$fit;
       line-height: 88rem/$fit;
