@@ -4,47 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Fleet Introduction</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
     <script type="text/javascript">
-        (function (doc, win) {
-            var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
-
-                    var fontSize = 20 * (clientWidth / 375);
-                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
-                    docEl.style.fontSize = fontSize + 'px';
-                    var dpi = window.devicePixelRatio;
-                    docEl.setAttribute('data-dpi', dpi);
-                };
-            recalc();
-            if (!doc.addEventListener) return;
-            win.addEventListener(resizeEvt, recalc, false);
-        })(document, window);
-
-    </script>
+            (function (doc, win) {
+                var docEl = doc.documentElement,
+                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                        recalc = function () {
+                            var clientWidth = docEl.clientWidth;
+                            if (!clientWidth) return;
+							
+                            var fontSize = 20 * (clientWidth / 375);
+                            fontSize =Math.round((fontSize > 40) ? 40 : fontSize);
+                            docEl.style.fontSize = fontSize + 'px';
+                            var dpi = window.devicePixelRatio;
+                            docEl.setAttribute('data-dpi', dpi);
+                        };
+                recalc();
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+            })(document, window);
+        </script>
 </head>
 
 <body>
-        <div>
-                #include('../../common/header.html')
-            </div>
-    <div id="main" class="fleetintro hidden-sm">
+    <div>
+        #include('../../common/header.html')
+    </div>
+
+    <div id="main" class="fleetintro">
+        <div class="btn-return show-sm"><span class="icon-arrowleft"></span></div>
         <div class="topbanner">
             <div class="wraper">
-                <div class="maintab" style="display: none;">
-                    <ul class="tabs">
-                        <li class="current">世界梦号</li>
-                        <li>云顶梦号</li>
-                        <li>探索梦号</li>
-                    </ul>
-                </div>
-                <div class="crumb clearfloat" style="display: none;"><a href="###" class="fl green">首页 / 星梦船队</a>
-                    <a href="###" class="fr p5_0"><span class="icon-share green" style="font-size:18px"></span></a>
-                </div>
-                <div class="topbanner_plane mt30">
+
+                <div class="topbanner_plane">
                     <div class="content">
                         <div class="info">
                             <ul class="row">
@@ -53,21 +45,22 @@
                             </ul>
                         </div>
                         <div class="text_box">
-                            <h1>世界梦号</h1>
+                            <h1><span class="icon-ship show-sm show-inline-sm mr10" style="font-size:.8rem;"></span>探索梦号</h1>
                             <p>作为星梦邮轮品牌旗下的首艘豪华邮轮，融合亚洲诚挚好客的服务理念，荟萃世界顶级娱乐悠闲设施，为您量身打造毕生难忘的梦想之旅。</p>
-                            <p style="margin-top:25px;"><a href="###" class="btn-styleA"
-                                    style="position:relative;z-index:9">下载手册</a></p>
+                            <p style="margin-top:25px;" class="hidden-sm"><a href="###" class="btn-styleA" style="position:relative;z-index:9">下载手册</a></p>
                         </div>
                     </div>
-                    <div class="ship">
-                        <img src="../../images/worldd.png" width="1123" height="404" />
+                    <div class="ship ship02">
+                        <img src="../../images/tsmh1.png" />
+                        <div class="ship-intro">
+                            <div class="btn-icon ship-icon" style="left:0px;top:0"><div class="inner"><span class="icon-ship"></span></div></div>
+                        </div>
                         <div class="btn-icon" style="left: 580px;top: 50px;">
                             <div class="inner"><span class="icon-sea"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">云顶梦号<span class="icon-arrowright2"></span></a></p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 820px;top: 67px;">
@@ -75,26 +68,23 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span class="icon-arrowright2"></span></a></p>
                             </div>
                         </div>
-                        <div class="btn-icon artive" style="left: 480px;top: 170px;">
+                        <div class="btn-icon" style="left: 480px;top: 170px;">
                             <div class="inner"><span class="icon-bad"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span class="icon-arrowright2"></span></a></p>
                             </div>
                         </div>
-                        <div class="btn-icon" style="left: 980px;top: 50px;">
+                        <div class="btn-icon" style="left: 580px;top: 50px;">
                             <div class="inner"><span class="icon-food"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span class="icon-arrowright2"></span></a></p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left: 288px;top:102px;">
@@ -102,8 +92,7 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span class="icon-arrowright2"></span></a></p>
                             </div>
                         </div>
                         <div class="btn-icon" style="left:440px;top:102px;">
@@ -111,119 +100,123 @@
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
                                 <p class="title">享受您的完美假期！</p>
-                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span
-                                            class="icon-arrowright2"></span></a></p>
+                                <p class="tr btn-box"><a href="###" class="btn-styleB">精致客房<span class="icon-arrowright2"></span></a></p>
                             </div>
                         </div>
-                        <div class="ship-intro">
-                            <div class="btn-icon ship-icon" style="left:0px;top:0">
-                                <div class="inner"><span class="icon-ship"></span></div>
-                            </div>
-                        </div>
+
                     </div>
-                    <button class="btn-prev"><span class="icon-arrowleft"></span></button>
-                    <button class="btn-next"><span class="icon-arrowright"></span></button>
+                    <button class="btn-prev hidden-sm"><span class="icon-arrowleft"></span></button>
+                    <button class="btn-next hidden-sm"><span class="icon-arrowright"></span></button>
                 </div>
             </div>
-            <div class="intro-ribbonship"></div>
+            <div class="intro-ribbonship hidden-sm"></div>
 
         </div>
-        <div class="section mt30">
+
+        <div class="section section01">
             <div class="wraper prowraper">
-                <h2 class="title">精致客房</h2>
-                <ul class="row prolist prolistA mt30">
+                <div class="mbar show-sm">
+                    <ul>
+                        <li><a href="###" class="current">云顶梦号</a></li>
+                        <li><a href="###">世界梦号</a></li>
+                        <li><a href="###">探索梦号</a></li>
+                    </ul>
+                </div>
+                <h2 class="title hidden-sm">精致客房</h2>
+                <ul class="row prolist prolistA mt20">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/shiproom_pic.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-kingsize mr12"></span>露天四人房</p>
-                            <div class="desc">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</div>
+                            <p class="protitle mt10"><span class="icon-kingsize mr12 hidden-sm"></span>露天四人房</p>
+                            <div class="desc hidden-sm">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</div>
                             <div class="infos">
                                 <div class="item">面积：56 - 80m&sup2;</div>
-                                <div class="item">房型分布：甲板11楼层</div>
-                                <div class="item">容纳人数：1- 4 人</div>
-                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                                <div class="item  hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item ">容纳人数：1- 4 人</div>
+                                <div class="item  hidden-sm">浴室：浴缸/淋浴及化妆间</div>
                             </div>
                         </div>
                     </li>
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/shiproom_pic.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-kingsize mr12"></span>露天四人房</p>
-                            <div class="desc">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</div>
+                            <p class="protitle mt10"><span class="icon-kingsize mr12 hidden-sm"></span>露天四人房</p>
+                            <div class="desc hidden-sm">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</div>
                             <div class="infos">
                                 <div class="item">面积：56 - 80m&sup2;</div>
-                                <div class="item">房型分布：甲板11楼层</div>
-                                <div class="item">容纳人数：1- 4 人</div>
-                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                                <div class="item  hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item ">容纳人数：1- 4 人</div>
+                                <div class="item  hidden-sm">浴室：浴缸/淋浴及化妆间</div>
                             </div>
                         </div>
                     </li>
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/shiproom_pic.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-kingsize mr12"></span>露天四人房</p>
-                            <div class="desc">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</div>
+                            <p class="protitle mt10"><span class="icon-kingsize mr12 hidden-sm"></span>露天四人房</p>
+                            <div class="desc hidden-sm">露台海景，1张双人床及1张双人沙发床 或2张单人床及1张双人沙发床 或2张单人床及1张单人沙发床</div>
                             <div class="infos">
                                 <div class="item">面积：56 - 80m&sup2;</div>
-                                <div class="item">房型分布：甲板11楼层</div>
-                                <div class="item">容纳人数：1- 4 人</div>
-                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                                <div class="item  hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item ">容纳人数：1- 4 人</div>
+                                <div class="item  hidden-sm">浴室：浴缸/淋浴及化妆间</div>
                             </div>
                         </div>
                     </li>
+
 
                 </ul>
             </div>
         </div>
-        <div class="section" style="margin-top:108px;">
+        <div class="section">
             <div class="wraper probanner">
                 <img src="../../images/banner2.jpg" />
                 <div class="artion-box">
                     <p class="title">皇宫</p>
                     <p class="subtitle">这是您远洋之旅的专属乐园</p>
-                    <p class="btn-box"><a href="###" class="btn-styleA">探索更多</a></p>
+                    <p class="btn-box hidden-sm"><a href="###" class="btn-styleA">探索更多</a></p>
                 </div>
             </div>
-            <div class="intro-ribbon"></div>
+            <div class="intro-ribbon hidden-sm"></div>
             <div class="wraper prowraper">
-                <h2 class="title">美食餐饮</h2>
-                <ul class="row prolist prolistB mt30">
+                <h2 class="title hidden-sm">美食餐饮</h2>
+                <ul class="row prolist prolistB mt20">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/pro_food.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-foods mr12"></span>马克•贝斯特星厨</p>
-                            <div class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</div>
+                            <p class="protitle mt10"><span class="icon-foods mr12 hidden-sm"></span>马克•贝斯特星厨</p>
+                            <div class="desc hidden-sm">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</div>
                             <div class="infos">
-                                <div class="item">适用于：云顶梦号</div>
+                                <div class="item hidden-sm">适用于：云顶梦号</div>
                                 <div class="item">餐饮种类：午餐 / 晚餐</div>
                                 <div class="item">餐厅种类：自费</div>
-                                <div class="item">预定：需提前预定</div>
+                                <div class="item hidden-sm">预定：需提前预定</div>
                             </div>
                         </div>
                     </li>
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/pro_food.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-foods mr12"></span>马克•贝斯特星厨</p>
-                            <div class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</div>
+                            <p class="protitle mt10"><span class="icon-foods mr12 hidden-sm"></span>马克•贝斯特星厨</p>
+                            <div class="desc hidden-sm">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</div>
                             <div class="infos">
-                                <div class="item">适用于：云顶梦号</div>
+                                <div class="item hidden-sm">适用于：云顶梦号</div>
                                 <div class="item">餐饮种类：午餐 / 晚餐</div>
                                 <div class="item">餐厅种类：自费</div>
-                                <div class="item">预定：需提前预定</div>
+                                <div class="item hidden-sm">预定：需提前预定</div>
                             </div>
                         </div>
                     </li>
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/pro_food.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-foods mr12"></span>马克•贝斯特星厨</p>
-                            <div class="desc">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</div>
+                            <p class="protitle mt10"><span class="icon-foods mr12 hidden-sm"></span>马克•贝斯特星厨</p>
+                            <div class="desc hidden-sm">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</div>
                             <div class="infos">
-                                <div class="item">适用于：云顶梦号</div>
+                                <div class="item hidden-sm">适用于：云顶梦号</div>
                                 <div class="item">餐饮种类：午餐 / 晚餐</div>
                                 <div class="item">餐厅种类：自费</div>
-                                <div class="item">预定：需提前预定</div>
+                                <div class="item hidden-sm">预定：需提前预定</div>
                             </div>
                         </div>
                     </li>
@@ -232,14 +225,14 @@
                 <div class="mt10 tc"><a href="###" class="btn-styleC">探索更多</a></div>
             </div>
 
-            <div class="wraper prowraper" style="margin-top:57px; margin-bottom:50px;">
-                <h2 class="title">娱乐盛宴</h2>
-                <ul class="row prolist prolistC mt30">
+            <div class="wraper prowraper stylemb">
+                <h2 class="title hidden-sm">娱乐盛宴</h2>
+                <ul class="row prolist prolistC mt20">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/happy_pic.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-happy mr12"></span>中国达人秀</p>
-                            <div class="desc">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。</div>
+                            <p class="protitle mt10"><span class="icon-happy mr12 hidden-sm"></span>中国达人秀</p>
+                            <div class="desc hidden-sm">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。</div>
                             <div class="infos">
                                 <div class="item">
                                     <p>适用于：云顶梦号及世界梦号</p>
@@ -251,8 +244,8 @@
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/happy_pic.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-happy mr12"></span>中国达人秀</p>
-                            <div class="desc">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。</div>
+                            <p class="protitle mt10"><span class="icon-happy mr12 hidden-sm"></span>中国达人秀</p>
+                            <div class="desc hidden-sm">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。</div>
                             <div class="infos">
                                 <div class="item">
                                     <p>适用于：云顶梦号及世界梦号</p>
@@ -264,8 +257,8 @@
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/happy_pic.jpg"></div>
-                            <p class="protitle mt20"><span class="icon-happy mr12"></span>中国达人秀</p>
-                            <div class="desc">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。</div>
+                            <p class="protitle mt10"><span class="icon-happy mr12 hidden-sm"></span>中国达人秀</p>
+                            <div class="desc hidden-sm">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。</div>
                             <div class="infos">
                                 <div class="item">
                                     <p>适用于：云顶梦号及世界梦号</p>
@@ -280,8 +273,67 @@
                 <div class="mt10 tc"><a href="###" class="btn-styleC">探索更多</a></div>
             </div>
 
-            <div class="intro-ribbon"></div>
-            <div class="wraper youlist-wraper" style="margin-top:57px;">
+            <div class="intro-ribbon hidden-sm"></div>
+            <div class="wraper sm-youlist-wraper show-sm">
+                <h2 class="title">星梦“邮”记<span class="icon-arrowright fr mr40"></span></h2>
+                <div class="youlist-s">
+                    <ul class="youlist mt20">
+                        <li>
+                            <div class="inner">
+                                <div class="pic">
+                                    <img src="../../images/you_pic.jpg">
+                                    <div class="tags">
+                                        <div class="fl mr30"><span class="icon-local"></span>上海出发</div>
+                                        <div class="fl"><span class="icon-ship"></span>世界梦号</div>
+                                    </div>
+                                </div>
+                                <p class="protitle mt20 ellipsis">去这座小岛看一场“蓝色荧光派对”</p>
+                                <div class="desc ellipsis">夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <div class="pic">
+                                    <img src="../../images/you_pic.jpg">
+                                    <div class="tags">
+                                        <div class="fl mr30"><span class="icon-local"></span>上海出发</div>
+                                        <div class="fl"><span class="icon-ship"></span>世界梦号</div>
+                                    </div>
+                                </div>
+                                <p class="protitle mt20 ellipsis">去这座小岛看一场“蓝色荧光派对”</p>
+                                <div class="desc ellipsis">夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <div class="pic">
+                                    <img src="../../images/you_pic.jpg">
+                                    <div class="tags">
+                                        <div class="fl mr30"><span class="icon-local"></span>上海出发</div>
+                                        <div class="fl"><span class="icon-ship"></span>世界梦号</div>
+                                    </div>
+                                </div>
+                                <p class="protitle mt20 ellipsis">去这座小岛看一场“蓝色荧光派对”</p>
+                                <div class="desc ellipsis">夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner">
+                                <div class="pic">
+                                    <img src="../../images/you_pic.jpg">
+                                    <div class="tags">
+                                        <div class="fl mr30"><span class="icon-local"></span>上海出发</div>
+                                        <div class="fl"><span class="icon-ship"></span>世界梦号</div>
+                                    </div>
+                                </div>
+                                <p class="protitle mt20 ellipsis">去这座小岛看一场“蓝色荧光派对”</p>
+                                <div class="desc ellipsis">夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wraper youlist-wraper hidden-sm">
                 <h2 class="title">星梦“邮”记</h2>
                 <ul class="row youlist mt30">
                     <li class="col-6">
@@ -342,17 +394,25 @@
             </div>
         </div>
     </div>
-    <div class="section mt50 hidden-sm">
+    <div class="section mt50  hidden-sm">
         <div class="wraper">
             <p class="tc fz16">立即预订您的星梦假期</p>
             <p class="tc mt20"><a href="###" class="btn-styleD">预定旅程</a></p>
         </div>
     </div>
-    <div style="height:100px;" class="hidden-sm"></div>
+    <div class="hidden-sm" style="height:100px;"></div>
     #include('../../common/footer.html')
-</body>
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/popper.min.js"></script>
-<script src="../../bootstrap/js/bootstrap.js"></script>
+    #include('../../common/sm_footer_button.html')
 
+</body>
+<script>
+$(".topbanner_plane .ship .btn-icon").click(function(){
+	$(".topbanner_plane .ship .btn-icon").removeClass("artive");
+	$(this).addClass("artive");
+	return false;
+})
+$(".topbanner_plane").click(function(){
+	$(".topbanner_plane .ship .btn-icon").removeClass("artive");
+})
+</script>
 </html>
