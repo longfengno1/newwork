@@ -503,6 +503,9 @@ b {
 	max-width: 1920rem/$fit;
 	height: 88rem/$fit;
 	margin: 0 auto;
+	.wraper{
+		position: static;
+	}
 }
 
 .wraper-box{
@@ -1631,7 +1634,7 @@ b {
 		}
 
 		.hidden-sm {
-			display: none;
+			display: none !important;
 		}
 
 		.fr-sm {

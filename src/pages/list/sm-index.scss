@@ -1,5 +1,50 @@
 @import '../../css/variables.scss';
 
+/* 大屏幕 */
+@media (min-width: 1200px) {}
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979rem/$fit) {}
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+	body {
+		background: #F8F8F8;
+	} 
+  .list-main{
+    background: none;
+  }
+  .list{
+    width: 100%;
+
+  }
+  .select-container{
+    display: none;
+  }
+  .right-container{
+    padding: 0;
+  }
+  .right-container {
+    .boat-card {
+      .picture{
+        width:294rem/$fit;
+        height: 196rem/$fit;
+      }
+      .detail-content{
+        width:50%;
+        padding-top: 0;
+        .route-name{
+          font-size: 28rem/$fit;
+
+        }
+      }
+    }
+  }
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {}
+
 .sm-main {
   min-height: 100vh;
   width: 100vw;
