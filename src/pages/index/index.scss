@@ -1754,6 +1754,16 @@
 .shipinto .topbanner_plane .ship {
 	position: absolute;
 	top: 110rem/$fit;
+	/*right: 80rem/$fit;*/
+}
+
+.shipinto .topbanner_plane .ship1 {
+	right: 80rem/$fit;
+}
+.shipinto .topbanner_plane .ship2 {
+	right: -280rem/$fit;
+}
+.shipinto .topbanner_plane .ship3 {
 	right: 80rem/$fit;
 }
 
@@ -1835,7 +1845,7 @@
 .topbanner_plane .ship-intro {
 	position: absolute;
 	top: -114rem/$fit;
-	right: 627rem/$fit;
+	right: 867rem/$fit;
 	height: 186rem/$fit;
 }
 
@@ -3325,6 +3335,15 @@
 		margin-left:20rem/$fit;
 		display:block;
 	}
+	.topbanner_plane .ship .img2 {
+		position: relative;
+		left: -130rem/$fit;
+	}
+	.topbanner_plane .ship .img3 {
+		position: relative;
+		left: 70rem/$fit;
+	}
+
 	.topbanner_plane .ship02{
 		
 		position:static;
@@ -3417,6 +3436,7 @@
 	.shipinto .topbanner_plane .ship,
 	.shipinto .topbanner_plane .ship02{
 		top:360rem/$fit;
+		width:100%;
 	}
 	.prolist .inner{
 		background:#fff;
