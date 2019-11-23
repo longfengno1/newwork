@@ -51,29 +51,6 @@ module.exports = {
     module: {
         rules: [...rules],
     },
-    optimization: {
-        // 分割代码块
-        splitChunks: {
-            // 缓存组
-            cacheGroups: {
-                // 公共模块
-                common: {
-                    chunks: "initial",
-                    minSize: 0,
-                    // 最小公用模块次数
-                    minChunks: 2
-                },
-                vendor: {
-                    priority: 1,
-                    // 抽离出来
-                    test: /node_modules/,
-                    chunks: "initial",
-                    minSize: 0,
-                    minChunks: 2
-                }
-            }
-        }
-    },
     plugins: [
         ...happyConfig,
         // 全局暴露统一入口
