@@ -1,0 +1,616 @@
+@import '../../css/variables.scss';
+@import '../../css/navbar.scss';
+
+body {
+    background-color: #f7fcfc;
+}
+
+.my-order {
+    padding: 19rem/$fit 0 200rem/$fit;
+    width: 1200rem/$fit;
+    display: flex;
+
+    .left-container {
+        width: 210rem/$fit;
+        margin-right: 20rem/$fit;
+    }
+
+    .right-container {
+        max-width: 940rem/$fit;
+        font-family: Helvetica;
+
+        section {
+            width: 100%;
+            padding: 10rem/$fit 20rem/$fit;
+            background-color: #ffffff;
+            h5{
+                display: none;
+            }
+        }
+
+        h3 {
+            padding: 20rem/$fit 0;
+            font-size: 20rem/$fit;
+            color: #343E57;
+        }
+    }
+
+    .bread-crumb {
+        display: flex;
+        align-items: center;
+        font-size: 14rem/$fit;
+        color: #6D6D6D;
+        margin-bottom: 22rem/$fit;
+
+        .item {
+            cursor: pointer;
+        }
+
+        .selected {
+            cursor: default;
+            color: #343E57;
+        }
+
+        .split {
+            margin: 0 4rem/$fit;
+        }
+    }
+
+    .order-info {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+            width: 50%;
+            font-size: 14rem/$fit;
+            color: #343E57;
+            margin-bottom: 10rem/$fit;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .order-status {
+            color: #a363b8;
+        }
+    }
+
+    .trip-info {
+        .title {
+            font-size: 18rem/$fit;
+            color: #343E57;
+        }
+
+        .router,
+        .time {
+            font-size: 14rem/$fit;
+            color: #343E57;
+            margin-top: 10rem/$fit;
+        }
+
+        .desc {
+            font-size: 13rem/$fit;
+            color: #666666;
+            line-height: 24rem/$fit;
+            margin-top: 10rem/$fit;
+        }
+
+        .btns {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-top: 20rem/$fit;
+        }
+
+        .btn-item {
+            flex: 1;
+            font-size: 14rem/$fit;
+            color: #00969E;
+            cursor: pointer;
+
+            &:hover {
+                color: #00969E;
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+
+        span {
+            font-size: 14rem/$fit;
+            color: #343E57;
+            margin-right: 87rem/$fit;
+        }
+    }
+
+    .user-info {
+        h4 {
+            font-size: 18rem/$fit;
+            color: #343E57;
+            margin-bottom: 10rem/$fit;
+        }
+
+        article {
+            width: 435rem/$fit;
+            background-color: #FBFBFB;
+        }
+
+        .users {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10rem/$fit;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .user-name {
+            font-size: 14rem/$fit;
+            color: #343E57;
+            padding: 7rem/$fit 0 7rem/$fit 20rem/$fit;
+        }
+
+        .info {
+            padding: 10rem/$fit 20rem/$fit;
+            background-color: rgba(0, 0, 0, 0.03);
+
+            p {
+                font-size: 12rem/$fit;
+                color: #343E57;
+                margin-bottom: 10rem/$fit;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .sub-title {
+                color: #00969E;
+            }
+        }
+
+        .sub-info {
+            display: flex;
+            flex-wrap: wrap;
+
+            span {
+                width: 50%;
+                margin-bottom: 10rem/$fit;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .price-info {
+        h4 {
+            font-size: 16rem/$fit;
+            color: #343E57;
+            margin-bottom: 15rem/$fit;
+        }
+
+        .price-detail {
+            font-size: 14rem/$fit;
+            color: #666666;
+            margin-bottom: 20rem/$fit;
+
+            span {
+                margin-right: 242rem/$fit;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .total-price {
+            font-size: 18rem/$fit;
+            color: #343E57;
+            margin-bottom: 15rem/$fit;
+        }
+
+        .price {
+            color: #ff5656;
+        }
+
+        .split {
+            height: 4rem/$fit;
+            background-color: #F7FCFC;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 12rem/$fit 0 10rem/$fit;
+
+            img {
+                width: 150rem/$fit;
+                height: 100rem/$fit;
+                flex-shrink: 0;
+            }
+        }
+
+        .product-title {
+            font-weight: 500;
+            font-size: 16rem/$fit;
+            color: #343E57;
+        }
+
+        .product-detail {
+            font-size: 12rem/$fit;
+            color: #343E57;
+            letter-spacing: 0;
+            line-height: 24rem/$fit;
+        }
+
+        .product-right {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20rem/$fit;
+        }
+
+        .product-price {
+            font-size: 20rem/$fit;
+            color: #F8485E;
+        }
+
+        .border-bm {
+            border-bottom: 1px solid #E5E5E5;
+        }
+
+        .mt10 {
+            margin-top: 10rem/$fit;
+        }
+
+        .all-price {
+            text-align: right;
+
+            p {
+                margin-top: 10rem/$fit;
+            }
+
+            .fee {
+                font-size: 14rem/$fit;
+                color: #343E57;
+
+            }
+
+            .all-price-num {
+                font-size: 18rem/$fit;
+                color: #343E57;
+            }
+        }
+    }
+
+    .invoice-info {
+        p {
+            font-size: 14rem/$fit;
+            color: #343E57;
+            margin-bottom: 10rem/$fit;
+
+            span {
+                display: inline-block;
+                width: 50%;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    .order-btns {
+        text-align: right;
+        margin-top: 20rem/$fit;
+
+        a {
+            display: inline-block;
+            cursor: pointer;
+            width: 128rem/$fit;
+            height: 50rem/$fit;
+            line-height: 50rem/$fit;
+            font-size: 16rem/$fit;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .back {
+            background-color: #ffffff;
+            border: 1px solid #D0D7DF;
+            color: #343E57;
+        }
+
+        .buy {
+            background-color: #00969E;
+            border: 1px solid #00969E;
+            color: #ffffff;
+            margin-left: 20rem/$fit;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: #F8F8F8;
+    }
+    .my-order-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00969E;
+        height: 88rem/$fit;
+        color: #ffffff;
+        font-size: 32rem/$fit;
+        color: #F0F0F0;
+        position: relative;
+    }
+    .icon{
+        position: absolute;
+        left: 37rem/$fit;
+        font-size: 40rem/$fit;
+        cursor: pointer;
+    }
+
+    .my-order{
+        padding: 0;
+        width: 100vw;
+        flex-direction: column;
+        .right-container {
+            max-width: auto;
+            width: 100%;
+            font-family: Helvetica;
+
+            section {
+                width: 100%;
+                padding: 32rem/$fit;
+                background-color: #ffffff;
+                margin-bottom: 24rem/$fit;
+                h5{
+                    display: block;
+                    font-size: 28rem/$fit;
+                    color: #383838;
+                    margin-bottom: 32rem/$fit;
+                }
+                h5.title{
+margin-bottom: 24rem/$fit;
+                }
+            }
+
+            h3 {
+                display: none;
+            }
+        }
+
+        .bread-crumb{
+            display: none;
+        }
+
+        .order-info {
+            .item {
+                width: 100%;
+                font-size: 24rem/$fit;
+                color: #6D6D6D;
+                margin-bottom: 20rem/$fit;
+            }
+        }
+
+        .trip-info{
+            p{
+                font-size: 26rem/$fit !important;
+                color: #6D6D6D !important;
+                font-weight: 300;
+            }
+            .btns {
+                justify-content: space-between;
+                margin-top: 32rem/$fit;
+            }
+
+            .router{
+                margin-top: 0;
+            }
+
+            .time{
+                margin-top: 24rem/$fit;
+            }
+            .desc{
+                margin-top: 24rem/$fit;
+                line-height: 40rem/$fit;
+            }
+
+            .btn-item {
+                font-size: 26rem/$fit;
+                color: #06929A;
+                flex: auto;
+                flex-grow: 0;
+                cursor: pointer;
+
+                &:hover {
+                    color: #00969E;
+                    text-decoration-line: underline;
+                }
+            }
+        }
+        
+        .contact-info{
+            display: flex;
+            flex-direction: column;
+            span{
+                font-weight: 300;
+                font-size: 24rem/$fit;
+                color: #6D6D6D;
+                margin-bottom: 20rem/$fit;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .price-info {
+            h4 {
+                font-size: 26rem/$fit;
+                color: #383838;
+                margin-bottom: 24rem/$fit;
+            }
+
+            .price-detail {
+                font-size: 24rem/$fit;
+                color: #6D6D6D;
+                margin-bottom: 32rem/$fit;
+
+                span {
+                    display: inline-block;
+                    width: 50%;
+                    margin-right: 0;
+                }
+            }
+
+            .total-price {
+                font-size: 32rem/$fit;
+                color: #383838;
+                margin-bottom: 32rem/$fit;
+                padding-bottom: 24rem/$fit;
+                border-bottom: 1px solid #E5E5E5;
+            }
+
+            .price {
+                color: #ff5656;
+            }
+
+            .product {
+                display: flex;
+                flex-wrap: nowrap;
+                padding: 12rem/$fit 0 10rem/$fit;
+
+                img {
+                    width: 240rem/$fit;
+                    height: 160rem/$fit;
+                    flex-shrink: 0;
+                }
+            }
+
+            .product-title {
+                font-weight: 500;
+                font-size: 30rem/$fit;
+                color: #383838;
+                line-height: 34rem/$fit;
+            }
+
+            .product-people{
+                margin-top: 10rem/$fit;
+                font-size: 24rem/$fit;
+                color: #6D6D6D;
+                line-height: 38rem/$fit;
+            }
+
+            .product-detail-sm{
+                font-size: 24rem/$fit;
+                color: #999999;
+                padding: 18rem/$fit 74rem/$fit 9rem/$fit 10rem/$fit;
+                background-color: #FBFBFB;
+                border-radius: 4rem/$fit;
+                margin-top: 20rem/$fit;
+            }
+
+            .product-right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                padding-left: 30rem/$fit;
+            }
+
+            .product-price {
+                font-size: 38rem/$fit;
+                color: #F8485E;
+            }
+
+            .border-bm {
+                border-bottom: 1px solid #E5E5E5;
+            }
+
+            .all-price {
+                text-align: right;
+
+                p {
+                    margin-top: 24rem/$fit;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
+
+                .fee {
+                    font-size: 26rem/$fit;
+                    color: #383838;
+
+                }
+
+                .all-price-num {
+                    font-size: 34rem/$fit;
+                    color: #343E57;
+                }
+            }
+        }
+        .invoice-info {
+            margin-bottom: 0 !important;
+
+            p {
+                font-size: 24rem/$fit ;
+                color: #6D6D6D ;
+                margin-bottom: 24rem/$fit ;
+
+                span {
+                    width: 100% ;
+                    margin-bottom: 24rem/$fit;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0 ;
+                }
+            }
+
+        }
+
+        .order-btns {
+            text-align: right;
+            margin-top: 0;
+            background-color: #ffffff;
+            padding: 0 32rem/$fit 56rem/$fit 0;
+            margin-bottom: 100rem/$fit;
+
+            a {
+                display: inline-block;
+                width: 180rem/$fit;
+                height: 54rem/$fit;
+                line-height: 54rem/$fit;
+                font-size: 24rem/$fit;
+                font-weight: 400;
+            }
+
+            .back {
+                background-color: #ffffff;
+                border: 1px solid #00969E;
+                color: #00969E;
+            }
+
+            .buy {
+                background-color: #00969E;
+                border: 1px solid #00969E;
+                color: #ffffff;
+                margin-left: 20rem/$fit;
+            }
+        }
+    }
+    
+}
