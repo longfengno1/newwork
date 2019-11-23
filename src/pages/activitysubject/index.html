@@ -1,0 +1,256 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>主题活动</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+    <div id="main" class="fleetintro  hidden-sm">
+
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+        <div class="section mt20 ">
+            <div class="wraper">
+                <h2 class="title">主题活动</h2>
+                <div class="filter_plane mt30 hidden-sm">
+                    <ul>
+                        <li class="current">活动列表</li>
+                        <li>增益活动</li>
+                        <li>乐想生活家</li>
+                        <li>海上学堂</li>
+                        <li>主题活动</li>
+                    </ul>
+                </div>
+                <div class="show-sm mt30"></div>
+                <ul class="prolist prolistD mt10">
+                    <li>
+                        <div class="inner">
+                            <div class="pic">
+                                <img src="../../images/hd1.jpg">
+                                <div class="op hidden-sm"><span class="icon-pase"></span></div>
+                                <div class="fill hidden-sm"><span class="icon-fillsreen"></span></div>
+                                <div class="btn-prev hidden-sm"><span class="icon-arrowleft"></span></div>
+                                <div class="btn-next hidden-sm"><span class="icon-arrowright"></span></div>
+                            </div>
+                            <p class="protitle mt10">派对狂欢</p>
+                            <div class="desc hidden-sm">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。您可选择欣赏世界艺人的杂技表演。</div>
+                            <div class="infos">
+                                <div class="item">适用于：云顶梦号及世界梦号</div>
+                                <div class="item">门票数量有限，宾客需通过星梦邮轮手机App预订</div>
+                            </div>
+                            <div class="arction mt10 hidden-sm">
+                                <a href="###" class="text_linker green vb mr30">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/hd2.jpg"></div>
+                            <p class="protitle mt10">国宝之旅</p>
+                            <div class="desc">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。您可选择欣赏世界艺人的杂技表演。</div>
+                            <div class="infos">
+                                <div class="item">适用于：云顶梦号及世界梦号</div>
+                                <div class="item">门票数量有限，宾客需通过星梦邮轮手机App预订</div>
+                            </div>
+                            <div class="arction mt10">
+                                <a href="###" class="text_linker green vb mr30">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/hd3.jpg"></div>
+                            <p class="protitle mt10">养生与健康</p>
+                            <div class="desc">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。您可选择欣赏世界艺人的杂技表演。</div>
+                            <div class="infos">
+                                <div class="item">适用于：云顶梦号及世界梦号</div>
+                                <div class="item">门票数量有限，宾客需通过星梦邮轮手机App预订</div>
+                            </div>
+                            <div class="arction mt10">
+                                <a href="###" class="text_linker green vb mr30">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/hd4.jpg"></div>
+                            <p class="protitle mt10">德国啤酒节</p>
+                            <div class="desc">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。您可选择欣赏世界艺人的杂技表演。</div>
+                            <div class="infos">
+                                <div class="item">适用于：云顶梦号及世界梦号</div>
+                                <div class="item">门票数量有限，宾客需通过星梦邮轮手机App预订</div>
+                            </div>
+                            <div class="arction mt10">
+                                <a href="###" class="text_linker green vb mr30">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/hd5.jpg"></div>
+                            <p class="protitle mt10">
+                                万圣节小丑乐园</p>
+                            <div class="desc">为您无与伦比的海上假期而精心打造，精彩绝伦的现场大型表演，引领您投入如梦似真的氛围中。您可选择欣赏世界艺人的杂技表演。</div>
+                            <div class="infos">
+                                <div class="item">适用于：云顶梦号及世界梦号</div>
+                                <div class="item">门票数量有限，宾客需通过星梦邮轮手机App预订</div>
+                            </div>
+                            <div class="arction mt10">
+                                <a href="###" class="text_linker green vb mr30">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="page_plane hidden-sm">
+                    <div class="fl">共10页 当前为第1页</div>
+                    <div class="fr pagenum">
+                        <input class="intxt">
+                        <a href="###">Go</a>
+                    </div>
+                    <div class="fr">
+                        <ul class="pages">
+                            <li><a href="###"><span class="icon-arrowleft2"></span></a></li>
+                            <li><a href="###" class="now">1</a></li>
+                            <li><a href="###">2</a></li>
+                            <li><a href="###">3</a></li>
+                            <li><a href="###">...</a></li>
+                            <li><a href="###">10</a></li>
+                            <li><a href="###"><span class="icon-arrowright21"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section mt50 hidden-sm">
+        <div class="wraper">
+            <p class="tc fz16">立即预订您的星梦假期</p>
+            <p class="tc mt20"><a href="###" class="btn-styleD">预定旅程</a></p>
+        </div>
+    </div>
+    <div style="height:100px;" class="hidden-sm"></div>
+    <div class="show-sm sm-rooms">
+        <script>document.getElementById('title_name').textContent = '主题活动';</script>
+        <div class="header">
+            <span class="icon-arrowleft"></span>主题活动
+        </div>
+        <div class="scroll-bar">
+            <div class="items">
+                <div class="scroll-item active">云顶梦号</div>
+                <div class="scroll-item">世界梦号</div>
+                <div class="scroll-item">探索梦号</div>
+            </div>
+        </div>
+
+        <div class="scroll-bar" style="display:none;">
+            <div class="items">
+                <div class="scroll-item active">全部</div>
+                <div class="scroll-item">皇宫套房</div>
+                <div class="scroll-item">露台客房</div>
+                <div class="scroll-item">海景客房</div>
+                <div class="scroll-item">内侧客房</div>
+            </div>
+        </div>
+        <div class="rooms">
+            <div class="room-item">
+                <div class="room-img room-img-bg1"><span>查看详情</span></div>
+                <div class="room-content">
+                    <p class="title">派对狂欢</p>
+                    <p class="area">适用于：云顶梦号及世界梦号</p>
+                    <p class="people">门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+                </div>
+            </div>
+            <div class="room-item">
+                <div class="room-img room-img-bg2"><span>查看详情</span></div>
+                <div class="room-content">
+                    <p class="title">国宝之旅</p>
+                    <p class="area">适用于：云顶梦号及世界梦号</p>
+                    <p class="people">门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+                </div>
+            </div>
+            <div class="room-item">
+                <div class="room-img room-img-bg3"><span>查看详情</span></div>
+                <div class="room-content">
+                    <p class="title">养生与健康</p>
+                    <p class="area">适用于：云顶梦号及世界梦号</p>
+                    <p class="people">门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+                </div>
+            </div>
+            <div class="room-item">
+                <div class="room-img room-img-bg4"><span>查看详情</span></div>
+                <div class="room-content">
+                    <p class="title">德国啤酒节</p>
+                    <p class="area">适用于：云顶梦号及世界梦号</p>
+                    <p class="people">门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+                </div>
+            </div>
+            <div class="room-item">
+                <div class="room-img room-img-bg5"><span>查看详情</span></div>
+                <div class="room-content">
+                    <p class="title">万圣节小丑乐园</p>
+                    <p class="area">适用于：云顶梦号及世界梦号</p>
+                    <p class="people">门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+                </div>
+            </div>
+            <div class="room-item">
+                <div class="room-img room-img-bg6"><span>查看详情</span></div>
+                <div class="room-content">
+                    <p class="title">派对狂欢</p>
+                    <p class="area">适用于：云顶梦号及世界梦号</p>
+                    <p class="people">门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+                </div>
+            </div>
+            <div class="room-item">
+                <div class="room-img room-img-bg1"><span>查看详情</span></div>
+                <div class="room-content">
+                    <p class="title">国宝之旅</p>
+                    <p class="area">适用于：云顶梦号及世界梦号</p>
+                    <p class="people">门票数量有限，宾客需通过星梦邮轮手机App预订</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden-sm">
+        #include('../../common/footer.html')
+    </div>
+    #include('../../common/sm_footer_button.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+</html>
