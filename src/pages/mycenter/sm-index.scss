@@ -1,0 +1,82 @@
+@import '../../css/variables.scss';
+
+.sm-my-order{
+    width: 100vw;
+    background-color: #F8F8F8;
+    section{
+        background-color: #ffffff;
+        margin-bottom: 24rem/$fit;
+    }
+    .join-in{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250rem/$fit;
+        padding: 34rem/$fit 0 32rem/$fit;
+        h3{
+            font-size: 26rem/$fit;
+            color: #00969E;
+            margin-top: 22rem/$fit;
+        }
+        h4{
+            font-size: 24rem/$fit;
+            color: #999999;
+            margin-top: 20rem/$fit;
+        }
+    }
+    .logo{
+        background: url(../../images/navbar-select.png) no-repeat center;
+        width: 93rem/$fit;
+        height: 90rem/$fit;
+        background-size: cover;
+        opacity: 0.2;
+    }
+
+    .user-info{
+        padding: 32rem/$fit;
+        h3{
+            font-size: 28rem/$fit;
+            color: #383838;
+            margin-bottom: 24rem/$fit;
+        }
+        p{
+            font-size: 24rem/$fit;
+            color: #6D6D6D;
+            margin-bottom: 24rem/$fit;
+            span{
+                display: inline-block;
+                width: 50%;
+            }
+            .click{
+                color: #00969E;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .other-modules{
+        padding-bottom: 300rem/$fit;
+        li{
+            display: flex;
+            align-items: center;
+            margin: 0 32rem/$fit;
+            height: 88rem/$fit;
+            flex-wrap: nowrap;
+            border-bottom:1px solid #E5E5E5;
+            img{
+                width: 36rem/$fit;
+            }
+            span{
+                flex: 1;
+                font-size: 26rem/$fit;
+                color: #6D6D6D;
+                margin-left: 30rem/$fit;
+            }
+            i{
+                color: #666666;
+                font-size: 30rem/$fit;
+            }
+        }
+    }
+
+}

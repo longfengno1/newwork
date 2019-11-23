@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+
+    <div id="main" class="main my-order">
+        <div class="left-container">
+            #include('../../common/navbar.html')
+        </div>
+        <div class="right-container">
+            <h3>用户信息</h3>
+            <section class="user-info">
+                <div class="user">
+                    <p class="title mb10">用户信息</p>
+                    <p class="info mb10">手机号：138****0293</p>
+                    <p class="info mb10">姓名：陈宇晨</p>
+                    <div class="info-row">
+                        <p class="info">绑定的微信号：chenyuc9022</p>
+                        <a>解除关联</a>
+                    </div>
+                </div>
+                <div class="member">
+                    <p class="title">您已成功将您的星梦会员绑定，你的会员：</p>
+                    <p class="info-row mb10">
+                        <span class="info-item">会员号：<span class="num">N793078720800</span></span>
+                        <span class="info-item">会员等级：<span class="num">钻石会员</span></span>
+                    </p>
+                    <p class="info mb10">
+                        <span>会员积分：<span class="num">28081</span></span>
+                    </p>
+                    <a class="refresh">刷新</a>
+                </div>
+            </section>
+            <h3>未出行清单</h3>
+            <section class="to-trip">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>订单号</th>
+                            <th>航线</th>
+                            <th>出发日期</th>
+                            <th>订单金额</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>343297982299</td>
+                            <td>新加坡 – 海上巡游 – 苏梅岛 – 曼谷 (兰察鹏甲) – 海上巡游 – 新加坡</td>
+                            <td>2019-10-11</td>
+                            <td>¥8,920</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="">查看详情</a>
+                <span>购买商品</span>
+            </section>
+            <h3>未支付清单</h3>
+            <section class="to-pay">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>订单号</th>
+                            <th>航线</th>
+                            <th>出发日期</th>
+                            <th>订单金额</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>343297982299</td>
+                            <td>新加坡 – 海上巡游 – 苏梅岛 – 曼谷 (兰察鹏甲) – 海上巡游 – 新加坡</td>
+                            <td>2019-10-11</td>
+                            <td>¥8,920</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="">查看详情</a>
+                <span>立即支付</span>
+            </section>
+            <h3>精品推荐</h3>
+            <section class="product-recommend">
+                <article class="product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">蓝宝石钻戒</p>
+                        <p class="desc">五星60%</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old">¥3829</span></p>
+                            <span class="buy">立即抢购</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">蓝宝石钻戒</p>
+                        <p class="desc">五星60%</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old">¥3829</span></p>
+                            <span class="buy">立即抢购</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">蓝宝石钻戒</p>
+                        <p class="desc">五星60%</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old">¥3829</span></p>
+                            <span class="buy">立即抢购</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">蓝宝石钻戒</p>
+                        <p class="desc">五星60%</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old">¥3829</span></p>
+                            <span class="buy">立即抢购</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <h3>航线推荐</h3>
+            <section class="line-recommend">
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+                <article class="line-product">
+                    <img src="../../images/pro_food.jpg" alt="">
+                    <div class="content">
+                        <p class="name">悉尼 / 亚瑟港 / 霍巴特 / 墨尔本 / 伯尼 / 伊登 / 悉尼</p>
+                        <p class="desc">世界梦号&nbsp;&nbsp;6天5晚，周六-周四</p>
+                        <div class="bottom">
+                            <p class="price">¥2667<span class="old every">起/人</span></p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <h3>提醒信息</h3>
+            <section class="notice-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>交易信息</th>
+                            <th>消息提醒</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>待支付订单 0</td>
+                            <td>可用优惠券 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <div class="sm-my-order show-sm">
+        <section class="join-in">
+            <div class="logo"></div>
+            <h3>加入星梦荟</h3>
+            <h4>立即注册成为星梦荟会员，享受更多专属礼遇及船上服务！</h4>
+        </section>
+        <section class="user-info">
+            <h3>用户信息</h3>
+            <p>手机号：138****0293</p>
+            <p>姓名：陈宇晨</p>
+            <p><span>绑定的微信号：chenyuc9022</span><span class="click">解除关联</span></p>
+            <h3>您的会员</h3>
+            <p><span>会员号：N793078720800</span><span>会员等级：钻石会员</span></p>
+            <p><span>会员积分：28081</span><span class="click">刷新</span></p>
+        </section>
+        <section class="other-modules">
+            <ul>
+                <li><img src="../../images/icon-user-center1.png" alt=""><span>我的信息</span><i
+                        class="icon-arrowright"></i></li>
+                <li><img src="../../images/icon-user-center2.png" alt=""><span>我的订单</span><i
+                        class="icon-arrowright"></i></li>
+                <li><img src="../../images/icon-user-center3.png" alt=""><span>我的卡券</span><i
+                        class="icon-arrowright"></i></li>
+                <li><img src="../../images/icon-user-center4.png" alt=""><span>常用乘客</span><i
+                        class="icon-arrowright"></i></li>
+                <li><img src="../../images/icon-user-center5.png" alt=""><span>重要通知</span><i
+                        class="icon-arrowright"></i></li>
+            </ul>
+        </section>
+    </div>
+
+    #include('../../common/footer.html')
+    #include('../../common/sm_footer_button.html')
+</body>
+
+</html>
