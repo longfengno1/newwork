@@ -7,6 +7,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const copyWebpackPlugin = require('copy-webpack-plugin');
 const rules = require('./webpack.rules.conf.js');
 const isProd = (process.env.NODE_ENV === 'production');
+const happyConfig = require('./happypack.conf');
 // 获取html-webpack-plugin参数的方法
 let getHtmlConfig = function (name, chunks) {
     return {
@@ -19,12 +20,12 @@ let getHtmlConfig = function (name, chunks) {
             collapseWhitespace: true,
             removeComments: true
         },
-        meta:{
-            'viewport':"width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover",
-            'applicable-device':'mobile',
-            "format-detection":"telephone=no",
-            "full-screen":"yes",
-            "x5-fullscreen":"true"
+        meta: {
+            'viewport': "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover",
+            'applicable-device': 'mobile',
+            "format-detection": "telephone=no",
+            "full-screen": "yes",
+            "x5-fullscreen": "true"
         }
     };
 };
@@ -50,7 +51,31 @@ module.exports = {
     module: {
         rules: [...rules],
     },
+    optimization: {
+        // 分割代码块
+        splitChunks: {
+            // 缓存组
+            cacheGroups: {
+                // 公共模块
+                common: {
+                    chunks: "initial",
+                    minSize: 0,
+                    // 最小公用模块次数
+                    minChunks: 2
+                },
+                vendor: {
+                    priority: 1,
+                    // 抽离出来
+                    test: /node_modules/,
+                    chunks: "initial",
+                    minSize: 0,
+                    minChunks: 2
+                }
+            }
+        }
+    },
     plugins: [
+        ...happyConfig,
         // 全局暴露统一入口
         new webpack.ProvidePlugin({
             $: 'jquery',
