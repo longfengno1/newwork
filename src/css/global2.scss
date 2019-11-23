@@ -1608,7 +1608,28 @@ b {
 	.m_menu .submenu li a {
 		padding-left: 60rem/$fit;
 	}
-
+.fullmark{
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	.layerout{
+		background: #fff;
+		box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+		width: 80%;
+		margin: 0 auto;
+		top:50%;
+		transform: translateY(-50%);
+		position: relative;
+		padding: 20px;
+		.title{
+			margin-bottom: 20px;
+		}
+		
+	}
+}
 	/* 大屏幕 */
 	@media (min-width: 1200px) {
 		.show-sm {

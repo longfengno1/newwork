@@ -4,7 +4,18 @@
 .row {
   margin: 0;
 }
-
+.boxfixed{
+  position: fixed !important;
+  display: block !important;
+  z-index: 100;
+  top:0
+}
+.boxbottom{
+  position: absolute !important;
+  display: block !important;
+  bottom: 0;
+  top: auto;
+}
 .list-main {
   background: url('../../images/list-banner.png') no-repeat;
   background-position: top;
@@ -63,7 +74,7 @@
 
   .hot-tag {
     margin-right: 10px;
-
+    cursor: pointer;
     &.hot-tag1 {
       color: #4A90E2
     }
@@ -126,16 +137,67 @@
   }
 
   .items {
-    padding-left: 10px;
-
-    .select-item {
-      padding: 13px 10px 13px 0;
-      border-bottom: 1px solid #eff1f1;
+    
+    .tags{
+      line-height: 28px;
     }
-
+    .select-item {
+      border-bottom: 1px solid #eff1f1;
+      position: relative;
+      height: 74px;
+      .select-inner{
+        padding: 13px 10px;
+        width: 100%;
+        height: 73px;
+      }
+      &.hashover{
+        &:hover{
+          box-shadow: 0 0 7px 0 rgba(0,0,0,0.15);
+        }
+        &:hover .select-inner{
+          position: absolute;
+          background: #fff;
+          z-index: 11;
+        }
+        &:hover .select-opener{
+          display: block;
+        }
+      }
+    }
+    .select-opener{
+      position: absolute;
+      background: #fff;
+      left: 100%;
+      width: 324px;
+      min-height: 100%;
+      padding: 12px;
+      z-index: 10;
+      box-shadow: 0 0 7px 0 rgba(0,0,0,0.15);
+      transform: translateY(-50%);
+      top:50%;
+      display: none;
+      .inner-item{
+        border-bottom: 1px solid #eff1f1;
+        padding-top:10px;
+        span{
+          padding-bottom: 5px;
+          display: inline-block;
+        }
+        &:first-child{
+          padding-top: 0;
+        }
+        &:last-child{
+          border:0;
+        }
+        .inner-title{
+          padding-bottom: 6px;
+          color:#666 ;
+        }
+      }
+    }
     .select-title {
       margin-bottom: 8px;
-
+      
       span {
         font-size: 14px;
         color: #383838;
@@ -151,6 +213,7 @@
 
     .city {
       margin-right: 14px;
+      white-space:nowrap;
       cursor: pointer;
     }
 
@@ -238,7 +301,9 @@
 
       .route-line-more {
         cursor: pointer;
-
+        em{
+          font-style: normal;;
+        }
         .route-item-day {
           background: #00969E;
           color: #fff;
@@ -331,7 +396,9 @@
       background-color: #00969E;
       cursor: pointer;
       margin-bottom: 0;
-
+      em{
+        font-style: normal;
+      }
       .icon-arrowdown {
         margin-left: 10px;
       }
@@ -398,6 +465,7 @@
   .description {
     padding: 10px;
     background: #F8F8F8;
+    display: none;
 
     .tag {
       font-size: 14px;
@@ -419,6 +487,39 @@
 
   .desc-right {
     float: right;
+    position: relative;
+    .intro{
+      cursor: pointer;
+    }
+    .opener{
+      position: absolute;
+      right: 100%;
+      top:-100px;
+      background: #fff;
+      width: 430px;
+      height: 309px;
+      z-index: 1;
+      padding: 20px;
+      box-shadow: 0 3px 15px 0 rgba(0,0,0,0.10);
+      border-radius: 2px;
+      display: none;
+      .title{
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #00969E;
+      }
+      .opener-close{
+        cursor: pointer;
+      }
+      .inner{
+        height: 240px;
+        text-align: left;
+        overflow-y:scroll;
+        p{
+          text-align: left;
+        }
+      }
+    }
   }
 
   .page {
