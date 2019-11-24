@@ -88,8 +88,8 @@ import "../../js/aos";
             infinite: false
         });
         sliderbase2.slick({
-            infinite: false,
-            arrows:false
+            arrows: false,
+            infinite: true
         });
         sslider.slick({
             infinite: false
@@ -128,5 +128,5 @@ import "../../js/aos";
         })
 
     });
-    
+
 })()

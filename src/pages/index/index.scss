@@ -3640,27 +3640,26 @@
 	.mdestination .sliderbox{
 		width: 100%;
 		overflow: hidden;
-		height: 408rem/$fit;
 	}
 	.mdestination ul{
-		height: 408rem/$fit;
-		width: 200000px;
+		overflow: hidden;
 		margin-left: 32rem/$fit;
 	}
 	.mdestination li{
-		width: 640rem/$fit !important;
-		height: 408rem/$fit;
+		width: 100%;
+		
 		padding: 3rem/$fit 15rem/$fit 15rem/$fit 0;
-		float: left;
 	}
 	.mdestination li .box{
-		width: 610rem/$fit;
-		height: 378rem/$fit;
+		
 		background: #D8D8D8;
 		box-shadow: 0 3rem/$fit 15rem/$fit 0 rgba(0,0,0,0.50);
 		border-radius: 10rem/$fit;
 		overflow: hidden;
 		position: relative;
+		img{
+			width: 100%;
+		}
 	}
 	.mdestination .li2{
 		width: 610rem/$fit;
@@ -3671,7 +3670,7 @@
 	}
 	.mdestination .txt_box{
 		position: absolute;
-		width: 610rem/$fit;
+		width: 100%;
 		height: 144rem/$fit;
 		background: rgba(255,255,255,0.40);
 		bottom: 0;
