@@ -11,12 +11,11 @@ body {
 body {
 	margin: 0 auto;
 	text-align: center;
-	font-family: MEllePRC, "Helvetica",
+	font-family: 
 		-apple-system,
 		BlinkMacSystemFont,
 		"Segoe UI",
 		Roboto,
-		"Helvetica Neue",
 		"microsoft yahei",
 		tahoma,
 		arial,
@@ -1186,7 +1185,7 @@ b {
 .fixed_plane {
 	position: fixed;
 	bottom: 100rem/$fit;
-	right: 12rem/$fit;
+	right: 0;
 	z-index: 100;
 }
 
@@ -1197,7 +1196,7 @@ b {
 .fixed_plane .fixed_plane_inner {}
 
 .fixed_plane .fixed_plane_inner li {
-	margin-bottom: 10rem/$fit;
+	margin-bottom: 5rem/$fit;
 }
 
 .fixed_plane .fixed_plane_inner li a {
@@ -1205,7 +1204,7 @@ b {
 	height: 50rem/$fit;
 	width: 50rem/$fit;
 	background: #00969E;
-	border: 1rem/$fit solid #E5E5E5;
+	border: 1rem/$fit solid #00969E;
 	border-radius: 4rem/$fit;
 	border-radius: 4rem/$fit;
 	position: relative;
@@ -1846,7 +1845,7 @@ b {
 	}
 }
 .ships-slide .slick-dots{
-	display:none;
+	display:none !important;
 }
 
 /* 大屏幕 */
@@ -1868,6 +1867,7 @@ b {
 	.ships-slide .slick-dots{
 		top:580rem/$fit;
 		bottom: auto;
+		display: block !important;
 	}
 	.left-select-ship {
 		display: none;
