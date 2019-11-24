@@ -721,8 +721,9 @@ b {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 2.1rem;
-	width: 88vw;
+	height: 88rem/$fit;
+	padding-left: 88rem/$fit;
+	right: 88rem/$fit;
 	color: #ffffff;
 	/* background-color: #00969E; */
 	font-size: .8rem;
