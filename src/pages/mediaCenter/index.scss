@@ -268,9 +268,8 @@
     }
 
     .detail-content {
-      width: calc(100% - 240px);
-      padding: 19px 10px 0 10px;
-      font-family: MEllePRC-Medium;
+      width: calc(100% - 120px);
+      padding-left: 16px;
       color: #383838;
       position: relative;
 
@@ -316,9 +315,11 @@
     .cruises-from-date {
       padding-right: 150px;
     }
-
+    .detail-content .time {
+      margin-top: 13px;
+    }
     .detail-content .row {
-      margin: 16px 0;
+     
     }
 
     .cruises-name {
@@ -388,8 +389,7 @@
   }
 
   .description {
-    padding: 16px 22px 12px 8px;
-    font-family: MEllePRC-Medium;
+    padding: 0;
 
     .tags {
       .hot-tag {
@@ -1038,6 +1038,7 @@
       width: 614px;
       height: 208px;
       box-shadow: 0 7px 15px 0 rgba(0,0,0,0.10);
+      padding: 18px;
       .picture {
         width: 120px;
         height: 132px;
