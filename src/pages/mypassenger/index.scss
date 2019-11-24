@@ -1,0 +1,133 @@
+@import '../../css/variables.scss';
+@import '../../css/navbar.scss';
+@import './sm-index.scss';
+
+body {
+    background-color: #f7fcfc;
+}
+
+.my-order {
+    padding: 19rem/$fit 0 200rem/$fit;
+    width: 1200rem/$fit;
+    display: flex;
+
+    .left-container {
+        width: 210rem/$fit;
+        margin-right: 20rem/$fit;
+    }
+
+    .right-container {
+        width: 940rem/$fit;
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 17px;
+            h3{
+                font-size: 20px;
+                color: #343E57;
+            }
+            a{
+                font-size: 15px;
+                color: #00969E;
+            }
+        }
+    }
+
+    .order-list {
+        width: 940px;
+        background-color: #ffffff;
+        table-layout:fixed;
+
+        thead {
+            background-color: #00969E;
+            color: #ffffff;
+            height: 37px;
+            line-height: 37px;
+            font-size: 14px;
+        }
+
+        tr {
+
+            th,
+            td {
+                &:first-child {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        .operation{
+            text-align: center;
+            width: 230px;
+        }
+
+        tbody {
+            font-family: Helvetica;
+            font-size: 12px;
+            color: #343E57;
+
+            tr {
+                border-top: 4px solid #f7fcfc;
+                height: 48px;
+            }
+        }
+
+        .order-num {
+            color: #00969E;
+        }
+
+        .order-content p {
+            margin-bottom: 24px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .paied{
+            color: #b27ec3;
+        }
+
+        .to-pay{
+            color: #F8485E;
+        }
+
+        .cancel{
+            color: #788995;
+        }
+
+        .order-operation {
+            text-align: right;
+            .operations {
+                display: inline-flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 30px;
+            }
+
+            a {
+                margin-right: 23px;
+                color: #00969E;
+                cursor: pointer;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            .common{
+                color: #A05EB5;
+            }
+
+            .pay {
+                padding: 3px 6px;
+                background-color: #00969E;
+                border-radius: 2px;
+                color: #ffffff;
+            }
+        }
+       
+    }
+
+}

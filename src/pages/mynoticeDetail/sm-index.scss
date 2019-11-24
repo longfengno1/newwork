@@ -1,0 +1,109 @@
+@import '../../css/variables.scss';
+
+@media (max-width: 767px) {
+    body {
+        background-color: #F8F8F8 !important;
+        font-family: Helvetica;
+    }
+
+    .my-order {
+        display: none !important;
+    }
+
+    .my-order-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00969E;
+        height: 88rem/$fit;
+        color: #ffffff;
+        font-size: 32rem/$fit;
+        color: #F0F0F0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    .icon {
+        position: absolute;
+        left: 37rem/$fit;
+        font-size: 40rem/$fit;
+        cursor: pointer;
+    }
+}
+
+.my-order-sm {
+    width: 100vw;
+    margin-top: 88rem/$fit;
+    padding: 26rem/$fit 32rem/$fit;
+    .title{
+        text-align: center;
+        font-size: 28rem/$fit;
+        color: #00969E;
+    }
+    .desc{
+        font-size: 22rem/$fit;
+        color: #999999;
+        text-align: right;
+        margin-top: 38rem/$fit;
+        border-bottom: 1px solid #00969E;
+        padding-bottom: 6rem/$fit;
+        margin-bottom: 13rem/$fit;
+        .icon-view{
+            margin-right: 20rem/$fit;
+        }
+    }
+    .content{
+        font-size: 26rem/$fit;
+        color: #6D6D6D;
+        line-height: 40rem/$fit;
+        margin-bottom:20rem/$fit;
+    }
+    img{
+        width: 100%;
+        margin-bottom: 14rem/$fit;
+    }
+    .content-bottom{
+        font-size: 26rem/$fit;
+        color: #6D6D6D;
+        line-height: 40prem/$fit;
+    }
+
+    .sign-row {
+        margin-bottom: 93em/$fit;
+        margin-top: 50rem/$fit;
+        overflow: hidden;
+    }
+
+    .sign {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .name,
+        .time {
+            font-size: 26rem/$fit;
+            color: #00969E;
+            line-height: 40rem/$fit;
+            font-weight: 300;
+        }
+
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url(../../images/navbar-select.png) no-repeat center;
+            background-size: contain;
+            width: 93rem/$fit;
+            height: 91rem/$fit;
+            opacity: 0.2;
+        }
+
+    }
+}
