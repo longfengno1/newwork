@@ -60,13 +60,20 @@ import '../css/global2.scss';
     })
 
     $(".scroll-item").click(function () {
-        $(".scroll-item").removeClass("active");
-        $(this).addClass("active");
+        
+        if($(this).hasClass("active")){
+            $(".scroll-item").removeClass("active");
+            $(this).removeClass("active");
+        }else{
+            $(".scroll-item").removeClass("active");
+            $(this).toggleClass("active");
+        }
+        
     });
 
     $(".scroll-item-sub").click(function () {
         $(".scroll-item-sub").removeClass("active");
-        $(this).addClass("active");
+        $(this).toggleClass("active");
     });
 
     $(".tab-title").click(function () {
