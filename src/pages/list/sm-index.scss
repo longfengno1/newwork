@@ -15,7 +15,26 @@
   .list-main {
     background: none;
     padding-top: 88rem/$fit;
-    padding-bottom: 88rem/$fit;
+    padding-bottom: 20rem/$fit;
+  }
+  .list-bottom-line{
+    position: relative;
+    &::after{
+      content: "";
+      height: 1px;
+      border-bottom:1px solid #ccc;
+      position: absolute;
+      width: 80%;
+      top:50%;
+      left:50%;
+      transform: translateX(-50%);
+    }
+    span{
+      background: #F8F8F8;
+      position: relative;
+      padding: 0 20rem/$fit;
+      z-index: 1;
+    }
   }
 
   .list {

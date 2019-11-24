@@ -1,5 +1,12 @@
 @import '../../css/variables.scss';
-
+.days_box_title{
+	.icon-arrowup{
+		display: none;
+	}
+	.icon-arrowdown{
+		display: none;
+	}
+}
 .prodetailtitle {
 	font-family: SourceHanSans-Regular;
 	font-size: 20rem/$fit;
@@ -456,8 +463,8 @@
 	height: 60rem/$fit;
 }
 .probar .probar_inner{
-	overflow: hidden;
 	background: #fff;
+	
 }
 .probar .bartags {
 	padding-left: 32rem/$fit;
@@ -493,6 +500,49 @@
 	height: 60rem/$fit;
 	background: #00969E;
 	padding: 12rem/$fit 12rem/$fit 12rem/$fit 20rem/$fit;
+	display: none;
+	position: relative;
+	.opener{
+		position: absolute;
+		width: 304px;
+		background: #fff;
+		box-shadow:0 3px 7px 0 rgba(0,0,0,0.15);
+		top:53px;
+		display: none;
+		.pricebase{
+			color:#e8485e;
+			font-size:12px;
+			font-family: Arial;
+			margin-left: 7rem/$fit;
+			dfn{
+				font-style: normal;
+			}
+			.price{
+				font-size:16px;
+			}
+		}
+		.sale {
+			background: url(../../images/pro_icon_sale@2x.png) left center no-repeat;
+			background-size: 14rem/$fit;
+			padding-left: 18rem/$fit;
+			font-size: 12rem/$fit;
+			color:#e8485e;
+			margin-left: 7rem/$fit;
+		}
+		ul{
+			padding: 0 12px;
+		}
+		li{
+			height: 40px;
+			line-height: 40px;
+			border-bottom:1px solid #7fcace;
+			font-size: 16px;
+			color: #343e57;
+			&:last-child{
+				border:0;
+			}
+		}
+	}
 }
 
 .probar .select_date .date_box {
@@ -553,6 +603,9 @@
 	margin-left: -15rem/$fit;
 	z-index: 8;
 	box-shadow: none;
+}
+.boxfixed_w100 .select_date{
+	display: block;
 }
 
 .leftlist h3 {
@@ -1214,7 +1267,17 @@
 	.pl60 {
 		padding-left: 0;
 	}
-
+	.days_box_title{
+		.icon-arrowup{
+			display: inline-block;
+		}
+		.icon-arrowdown{
+			display: inline-block;
+		}
+	}
+	.days_box_content{
+		display: none;
+	}
 	#header,
 	.mbottombar-box{
 		display: none;
@@ -1614,8 +1677,10 @@
 
 	.bottombar .btn-styleE {
 		color: #fff;
-		padding: 15rem/$fit 30rem/$fit;
+		padding: 0 30rem/$fit;
 		font-size: 28rem/$fit;
+		height: 88rem/$fit;
+		line-height: 88rem/$fit;
 	}
 	.bottombar .btn-money{
 		width: 88rem/$fit;
