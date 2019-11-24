@@ -11,12 +11,11 @@ body {
 body {
 	margin: 0 auto;
 	text-align: center;
-	font-family: MEllePRC, "Helvetica",
+	font-family: 
 		-apple-system,
 		BlinkMacSystemFont,
 		"Segoe UI",
 		Roboto,
-		"Helvetica Neue",
 		"microsoft yahei",
 		tahoma,
 		arial,
@@ -1186,7 +1185,7 @@ b {
 .fixed_plane {
 	position: fixed;
 	bottom: 100rem/$fit;
-	right: 0rem/$fit;
+	right: 0;
 	z-index: 100;
 }
 
@@ -1197,7 +1196,7 @@ b {
 .fixed_plane .fixed_plane_inner {}
 
 .fixed_plane .fixed_plane_inner li {
-	margin-bottom: 10rem/$fit;
+	margin-bottom: 5rem/$fit;
 }
 
 .fixed_plane .fixed_plane_inner li a {
@@ -1205,7 +1204,7 @@ b {
 	height: 50rem/$fit;
 	width: 50rem/$fit;
 	background: #00969E;
-	border: 1rem/$fit solid #E5E5E5;
+	border: 1rem/$fit solid #00969E;
 	border-radius: 4rem/$fit;
 	border-radius: 4rem/$fit;
 	position: relative;
@@ -1845,6 +1844,9 @@ b {
 		background-size: 100%;
 	}
 }
+.ships-slide .slick-dots{
+	display:none !important;
+}
 
 /* 大屏幕 */
 @media (min-width: 1200px) {
@@ -1862,6 +1864,11 @@ b {
 
 /* 横向放置的手机和竖向放置的平板之间的分辨率 */
 @media (max-width: 767px) {
+	.ships-slide .slick-dots{
+		top:580rem/$fit;
+		bottom: auto;
+		display: block !important;
+	}
 	.left-select-ship {
 		display: none;
 	}
@@ -1971,7 +1978,7 @@ b {
 .show-sm {
 	.fixed_plane {
 		bottom: auto;
-		top:300rem/$fit;
+		top:600rem/$fit;
 		.fixed_plane_inner {
 			.service .pop{
 				display: block;
@@ -2002,7 +2009,36 @@ b {
 					text-align: center;
 					padding-top: 4rem/$fit;
 				}
+				&:hover{
+					text-decoration: none;
+					.pop{
+						top:auto;
+					}
+				}
 			}
+		}
+	}
+}
+
+
+.slick-dots{
+	position: absolute !important;
+	left: 50%;
+	bottom: 10rem/$fit;
+	transform: translateX(-50%);
+	li{
+		float: left;
+		background: #ccc;
+		width: 22rem/$fit !important;
+		height: 22rem/$fit;
+		border-radius: 50%;
+		margin-right: 20rem/$fit;
+		border: 1px solid #fff;
+	&.slick-active{
+		background: #00969E;
+	}
+		button{
+			display: none;
 		}
 	}
 }

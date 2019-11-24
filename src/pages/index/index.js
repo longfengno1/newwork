@@ -89,10 +89,12 @@ import "../../js/aos";
         });
         sliderbase2.slick({
             arrows: false,
-            infinite: true
+            infinite: true,
+            dots: true
         });
         sslider.slick({
-            infinite: false
+            infinite: false,
+            dots: true
         });
         oslider.slick({
             slidesToShow: 3,
