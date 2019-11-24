@@ -118,6 +118,16 @@
 	top:110px;
 	right:0;
 }
+.col-4 {
+	padding-bottom: 8px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+
+.row {
+	margin-right: -4px;
+	margin-left: -4px;
+}
 .intro-ribbonship{
 	background:url(../../images/intro-ribbonship.png) center top no-repeat;
 	height:155px;
@@ -252,14 +262,14 @@
 }
 .prolist .inner{
 	background: #FBFAF9;
-	padding-bottom:16px;
-	margin-bottom:10px;
+	/*padding-bottom:16px;
+	margin-bottom:10px;*/
 	font-size:14px;
 	overflow:hidden;
 }
 .prolist .pic,
 .prolist .pic img{
-	width:360px;
+	width:380px;
 }
 .prolist .pic{
 	height:200px;
@@ -379,6 +389,8 @@
 	text-align:center;
 	height:454px;
 	margin-bottom:-110px;
+	width:100%;
+	overflow:hidden;
 }
 .topbannerB .intro-ribbonship{
 	background:url(../../images/banner-cover.png) center top no-repeat;

@@ -56,5 +56,20 @@ import '../css/global2.scss';
             $(this).css('top', y+'px');
             
             });
-        })
+    })
+
+    $(".scroll-item").click(function () {
+        $(".scroll-item").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".scroll-item-sub").click(function () {
+        $(".scroll-item-sub").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".tab-title").click(function () {
+        $(".tab-title").removeClass("current");
+        $(this).addClass("current");
+    });
 })();

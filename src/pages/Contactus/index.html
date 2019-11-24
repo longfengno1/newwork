@@ -110,22 +110,29 @@
             </div>
         </div>
         <div class="m_ca">
-            <p class="m_p">中国内地：<span class="m_span">+86-4008499848</span></p>
-            <p class="m_p m_p-bg">
+            <p class="m_p" onclick="showtipsdetail1('所在国家：中国 广州','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">中国内地：<span class="m_span">+86-4008499848</span></p>
+            <p class="m_p m_p-bg" onclick="showtipsdetail1('所在国家：中国 香港','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
                 中国香港：&nbsp;&nbsp;<span class="m_span">+852-2317-7711</span>
             </p>
-            <p class="m_p">新加坡：&nbsp;&nbsp;<span class="m_span">+65-6808-2288</span></p>
-            <p class="m_p m_p-bg">槟城（马来西亚）：&nbsp;&nbsp;<span class="m_span">+604-2631128</span></p>
-            <p class="m_p">吉隆坡（马来西亚）：&nbsp;&nbsp;<span class="m_span">+603-2302-1288</span></p>
+            <p class="m_p" onclick="showtipsdetail1('所在国家：新加坡','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">新加坡：&nbsp;&nbsp;<span class="m_span">+65-6808-2288</span></p>
+            <p class="m_p m_p-bg" onclick="showtipsdetail1('所在国家：马来西亚 槟城','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">槟城（马来西亚）：&nbsp;&nbsp;<span class="m_span">+604-2631128</span></p>
+            <p class="m_p" onclick="showtipsdetail1('所在国家：马来西亚 吉隆坡','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">吉隆坡（马来西亚）：&nbsp;&nbsp;<span class="m_span">+603-2302-1288</span></p>
         </div>
         <div class="mt30 ml30 mb20">
             <img class="m_mg" src="../../images/dingwei.png" alt="">
             <b class="m_yd">通信地址</b>
         </div>
+        <script>
+            function showtipsdetail1(t1, t2, t3) {
+                document.getElementById('m1').innerText = t1;
+                document.getElementById('m2').innerText = t2;
+                document.getElementById('m3').innerText = t3;
+            }
+        </script>
         <div class="a2">
-            <div class="mt20 ml20 mr20 m_te">所在国家:中国 - 广州</div>
-            <div class="mt20 ml20 mr20 m_te">详细地址:广州市中山六路238号越秀新都会大厦西座1908室</div>
-            <div class="mt20 ml20 mr20 m_te">邮编:344908</div>
+            <div class="mt20 ml20 mr20 m_te" id="m1">所在国家:中国 - 广州</div>
+            <div class="mt20 ml20 mr20 m_te" id="m2">详细地址:广州市中山六路238号越秀新都会大厦西座1908室</div>
+            <div class="mt20 ml20 mr20 m_te" id="m3">邮编:344908</div>
         </div>
 
 
