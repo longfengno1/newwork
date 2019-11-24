@@ -128,6 +128,7 @@ import "../../js/aos";
         $(".topbanner_plane").click(function () {
             $(".topbanner_plane .ship .btn-icon").removeClass("artive");
         })
+
     });
     
 })()

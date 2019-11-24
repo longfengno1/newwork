@@ -61,24 +61,59 @@
                         <div class="tabc" style="display: none;">
                             <h3>热门航线搜索</h3>
                             <label>出发港口</label>
-                            <div class="input-box">
-                                <div class="input-txt fl">请选择港口</div>
-                                <div class="arrow-down fr"></div>
+                            <div>
+                                <div class="input-box dropdown-toggle" data-toggle="dropdown">
+                                    <div class="input-txt fl">请选择港口</div>
+                                    <div class="arrow-down fr"></div>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">广州</a>
+                                    <a class="dropdown-item" href="#">深圳</a>
+                                    <a class="dropdown-item" href="#">香港</a>
+                                    <a class="dropdown-item" href="#">新加坡</a>
+                                    <a class="dropdown-item" href="#">悉尼</a>
+                                </div>
                             </div>
                             <label>出发月份</label>
-                            <div class="input-box">
-                                <div class="input-txt fl">请选择月份</div>
-                                <div class="arrow-up fr"></div>
+                            <div>
+                                <div class="input-box dropdown-toggle" data-toggle="dropdown">
+                                    <div class="input-txt fl">请选择月份</div>
+                                    <div class="arrow-down fr"></div>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">12月</a>
+                                    <a class="dropdown-item" href="#">2020年1月</a>
+                                    <a class="dropdown-item" href="#">2月</a>
+                                    <a class="dropdown-item" href="#">3月</a>
+                                    <a class="dropdown-item" href="#">4月</a>
+                                </div>
                             </div>
                             <label>目的地</label>
-                            <div class="input-box">
-                                <div class="input-txt fl">请选择目的地</div>
-                                <div class="arrow-down fr"></div>
+                            <div>
+                                <div class="input-box dropdown-toggle" data-toggle="dropdown">
+                                    <div class="input-txt fl">请选择目的地</div>
+                                    <div class="arrow-down fr"></div>
+
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">中国</a>
+                                    <a class="dropdown-item" href="#">中国香港</a>
+                                    <a class="dropdown-item" href="#">新加坡</a>
+                                    <a class="dropdown-item" href="#">泰国</a>
+                                    <a class="dropdown-item" href="#">越南</a>
+                                </div>
                             </div>
                             <label>乘坐邮轮</label>
-                            <div class="input-box">
-                                <div class="input-txt fl">请选择邮轮</div>
-                                <div class="arrow-down fr"></div>
+                            <div>
+                                <div class="input-box dropdown-toggle" data-toggle="dropdown">
+                                    <div class="input-txt fl">请选择邮轮</div>
+                                    <div class="arrow-down fr"></div>
+                                </div>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">云顶梦号</a>
+                                    <a class="dropdown-item" href="#">世界梦号</a>
+                                    <a class="dropdown-item" href="#">探索梦号</a>
+                                </div>
                             </div>
                             <div class="button-box">
                                 <div class="btn-green fr">搜索航线</div>
@@ -92,42 +127,57 @@
                                     <input class="input-txt fl" placeholder="团队联系人">
                                     <div class="arrow-down fr"></div>
                                 </div>
-                                <div class="input-box fl" style="width:48px">
-                                    <input class="input-txt fl" placeholder="称谓">
-                                    <div class="arrow-down fr"></div>
+                                <div>
+                                    <div class="input-box fl dropdown-toggle" data-toggle="dropdown" style="width:48px">
+                                        <input class="input-txt fl" placeholder="称谓">
+                                        <div class="arrow-down fr"></div>
+                                    </div>
+                                    <div class="dropdown-menu" style="min-width:2rem;">
+                                        <a class="dropdown-item" href="#">先生</a>
+                                        <a class="dropdown-item" href="#">女士</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="clearfloat">
-                                <div class="input-box fl mr10" style="width:74px">
-                                    <input class="input-txt fl" placeholder="团队类型">
-                                    <div class="arrow-down fr"></div>
+                                <div>
+                                    <div class="input-box fl mr10 dropdown-toggle" data-toggle="dropdown" style="width:74px">
+                                        <input class="input-txt fl" placeholder="团队类型">
+                                        <div class="arrow-down fr"></div>
+                                    </div>
+                                    <div class="dropdown-menu" style="min-width:3rem;">
+                                        <a class="dropdown-item" href="#">个人出行</a>
+                                        <a class="dropdown-item" href="#">公司出行</a>
+                                        <a class="dropdown-item" href="#">旅行社咨询</a>
+                                        <a class="dropdown-item" href="#">其他合作</a>
+                                    </div>
                                 </div>
-                                <div class="input-box fl" style="width:74px">
-                                    <input class="input-txt fl" placeholder="团队人数">
-                                    <div class="arrow-down fr"></div>
+                                <div>
+                                    <div class="input-box fl  dropdown-toggle" data-toggle="dropdown" style="width:74px">
+                                        <input class="input-txt fl" placeholder="团队人数">
+                                        <div class="arrow-down fr"></div>
+                                    </div>
+                                    <div class="dropdown-menu" style="min-width:3rem;">
+                                        <a class="dropdown-item" href="#">16人以下</a>
+                                        <a class="dropdown-item" href="#">16-50人</a>
+                                        <a class="dropdown-item" href="#">50人以上</a>
+                                    </div>
                                 </div>
                             </div>
+
                             <div class="input-box">
-                                <div class="input-txt fl">出发城市</div>
-                                <div class="arrow-down fr"></div>
+                                <input class="input-txt fl" placeholder="出发城市">
                             </div>
                             <div class="input-box">
-                                <div class="input-txt fl">出发日期</div>
-                                <div class="arrow-down fr"></div>
+                                <input class="input-txt fl" placeholder="出发日期">
                             </div>
                             <div class="input-box noarrow">
                                 <input class="input-txt fl" placeholder="手机号码">
-                                <div class="arrow-up fr"></div>
                             </div>
                             <div class="input-box noarrow">
                                 <input class="input-txt fl" placeholder="电子邮箱">
-                                <div class="arrow-up fr"></div>
                             </div>
-
-
-
                             <div class="button-box">
-                                <div class="btn-green fr">确定提交</div>
+                                <div class="btn-green fr" data-toggle="modal" data-target="#gropuModal">确定提交</div>
                             </div>
                         </div>
 
@@ -135,26 +185,83 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="gropuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">
+                                提交成功
+                            </h4><button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            
+                        </div>
+                        <div class="modal-body">
+                            您的需求已成功提交，我们的客户服务团队将尽快与您联系提供协助，感谢。
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">
+                                关闭
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                确定
+                            </button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
+            </div>
+
+
             <div class="wraper">
                 <div class="main-search-box hidden-sm">
-                    <div class="box1">
-                        出发港口
-                        <i class="arrow-down fr"></i>
+                    <div>
+                        <div class="box1 dropdown-toggle" data-toggle="dropdown">
+                            出发港口
+                            <div class="arrow-down fr"></div>
+                        </div>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">广州</a>
+                            <a class="dropdown-item" href="#">深圳</a>
+                            <a class="dropdown-item" href="#">香港</a>
+                            <a class="dropdown-item" href="#">新加坡</a>
+                            <a class="dropdown-item" href="#">悉尼</a>
+                        </div>
+                    </div>
+
+                    <div class="step"></div>
+                    <div>
+                        <div class="box1 dropdown-toggle" data-toggle="dropdown">
+                            目的地
+                            <div class="arrow-down fr"></div>
+                        </div>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">中国</a>
+                            <a class="dropdown-item" href="#">中国香港</a>
+                            <a class="dropdown-item" href="#">新加坡</a>
+                            <a class="dropdown-item" href="#">泰国</a>
+                            <a class="dropdown-item" href="#">越南</a>
+                        </div>
                     </div>
                     <div class="step"></div>
-                    <div class="box1">
-                        目的地
-                        <i class="arrow-up fr"></i>
-                    </div>
-                    <div class="step"></div>
-                    <div class="box1">
-                        出发月份
-                        <i class="arrow-down fr"></i>
+                    <div>
+                        <div class="box1 dropdown-toggle" data-toggle="dropdown">
+                            出发月份
+                            <div class="arrow-down fr"></div>
+                        </div>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">12月</a>
+                            <a class="dropdown-item" href="#">2020年1月</a>
+                            <a class="dropdown-item" href="#">2月</a>
+                            <a class="dropdown-item" href="#">3月</a>
+                            <a class="dropdown-item" href="#">4月</a>
+                        </div>
                     </div>
                     <div class="step"></div>
                     <div class="box2">
                         <p class="label">优惠代码</p>
-                        <p>2EDC786DS</p>
+
+                        <p><input class="input-txt fl" value="2EDC786DS" placeholder="" style="border:0;"></p>
                     </div>
                     <div class="box3 fr">
                         <div class="btn-mainsearch">搜 索</div>
@@ -422,7 +529,6 @@
                     <a href="###" class="tab_item current">
                         <span>热门促销</span>
                     </a>
-
                     <a href="###" class="tab_item">
                         <span>热门航次</span>
                     </a>
@@ -432,7 +538,7 @@
                         <ul class="row">
                             <li class="col">
                                 <div class="thread">
-                                    <div class="pic">
+                                    <div class="pic" >
                                         <a href="###" target="_blank">
                                             <div class="pic bg-pic">
                                                 <img src="../../images/pic.jpg" >
@@ -449,6 +555,10 @@
                                         
                                         <div class="caption">
                                             <p class="fz16 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                            <p class="fz12 gray mt5 mb10 show-sm">
+                                                <span>2019/11/12~2019/11/22</span><br>
+                                                <span>把握2019/11/12最佳优惠时间，或得9.5折扣优惠大酬宾。把握2019/11/12最佳优惠时间，或得9.5折扣优惠大酬宾</span>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -472,6 +582,10 @@
                                             
                                             <div class="caption">
                                                 <p class="fz16 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                                <p class="fz12 gray mt5 mb10 show-sm">
+                                                        <span>2019/11/12~2019/11/22</span><br>
+                                                        <span>把握2019/11/12最佳优惠时间，或得9.5折扣优惠大酬宾。把握2019/11/12最佳优惠时间，或得9.5折扣优惠大酬宾</span>
+                                                    </p>
                                             </div>
                                         </div>
                                     </div>
@@ -495,6 +609,10 @@
                                                 
                                                 <div class="caption">
                                                     <p class="fz16 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                                    <p class="fz12 gray mt5 mb10 show-sm">
+                                                            <span>2019/11/12~2019/11/22</span><br>
+                                                            <span>把握2019/11/12最佳优惠时间，或得9.5折扣优惠大酬宾。把握2019/11/12最佳优惠时间，或得9.5折扣优惠大酬宾</span>
+                                                        </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -917,9 +1035,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ship ship02 m_ship1">
+                    <div class="ship ship1 ship02 m_ship1">
                         <img src="../../images/genting_dream_new.png" />
-                        <div class="ship-intro">
+                        <div class="ship-intro" style="right: 520px;top: -148px;">
                             <div class="btn-icon ship-icon" style="left:0px;top:0">
                                 <div class="inner"><span class="icon-ship"></span></div>
                             </div>
@@ -1018,8 +1136,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ship mship2">
-                        <img src="../../images/worldd_new.png" />
+                    <div class="ship ship2 mship2">
+                        <img src="../../images/worldd_new.png" class="img2" />
                         <div class="btn-icon" style="left: 580px;top: 50px;">
                             <div class="inner"><span class="icon-sea"></span></div>
                             <div class="open">
@@ -1044,7 +1162,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="btn-icon" style="left: 480px;top: 170px;">
+                        <div class="btn-icon" style="left: 880px;top: 170px;">
                             <div class="inner"><span class="icon-bad"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
@@ -1068,7 +1186,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="btn-icon" style="left: 288px;top:102px;">
+                        <div class="btn-icon" style="left: 488px;top:102px;">
                             <div class="inner"><span class="icon-360"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
@@ -1080,7 +1198,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="btn-icon" style="left:440px;top:102px;">
+                        <div class="btn-icon" style="left:740px;top:102px;">
                             <div class="inner"><span class="icon-video"></span></div>
                             <div class="open">
                                 <div class="pic"><img src="../../images/icon_open2x.jpg" width="166"></div>
@@ -1118,8 +1236,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ship m_ship3">
-                        <img src="../../images/discory_ship_new.png" />
+                    <div class="ship ship3 m_ship3">
+                        <img src="../../images/discory_ship_new.png" class="img3" />
                         <div class="btn-icon" style="left: 580px;top: 50px;">
                             <div class="inner"><span class="icon-sea"></span></div>
                             <div class="open">
