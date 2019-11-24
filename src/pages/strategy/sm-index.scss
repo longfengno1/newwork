@@ -1,7 +1,6 @@
 @import '../../css/variables.scss';
 
 .sm-main {
-  min-height: 100vh;
   width: 100vw;
   font-family: Helvetica;
 
@@ -320,6 +319,7 @@
     line-height: 88rem/$fit;
     font-size:28rem/$fit;
     padding: 0 20rem/$fit;
+    width: 33.33%;
   }
   .filter .timerbox {
     display: inline-block;
@@ -337,30 +337,29 @@
   }
   .travelslist li {
     padding: 32rem/$fit 0;
-    padding-left:318rem/$fit ;
-    height: 258rem/$fit;
     position: relative;
     border: 0;
     border-bottom: 1px solid #D8D8D8;
     margin: 0;
+    box-shadow: none;
+    height: auto;
     
   }
 
   .travelslist .pic {
-    float: left;
-    height: 194rem/$fit;
-    width: 294rem/$fit;
+    height: auto;
+    width: 100%;
     overflow: hidden;
-    margin: 0 0 0 -318rem/$fit;
-
+    padding-left:0;
+    margin-left: 0;
   }
 
   .travelslist .pic img {
-    height: 194rem/$fit;
-    width: 294rem/$fit;
+    height: auto;
+    width: 100%;
   }
   .travelslist .userinfo {
-    display: none;
+    display: block;
   }
   .travelslist .row {
     display: block;
@@ -376,6 +375,7 @@
   .travelslist .probtn {
     bottom: 20rem/$fit;
     right: 20rem/$fit;
+    display: none;
   }
   .travelslist .proinfo .title{
     margin: 0 0 20rem/$fit 0;
@@ -443,11 +443,13 @@
         color: #666666;
         cursor: pointer;
         font-weight: 300;
+        width: 33.33%;
+        text-align: center;
     }
 
     .icon-arrowdown {
-        font-size: 14rem/$fit;
-        margin-left: 16rem/$fit;
+        font-size: 24rem/$fit;
+        margin-left: 8rem/$fit;
     }
 
     .active {
