@@ -120,5 +120,10 @@ import "./index.scss";
             },300)
             
         })
+        $(".days_box_title").click(function(){
+            var $this = $(this);
+            $this.find(".icon-arrowdown").toggleClass("icon-arrowup");
+            $this.parent().find(".days_box_content").toggle();
+        })
     })
 })();
