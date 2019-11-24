@@ -3058,7 +3058,7 @@
 		display: block;
 		height: auto;
 		width: 100%;
-		margin: 0 32rem/$fit 20rem/$fit;
+		margin: 0 32rem/$fit 8rem/$fit;
 	}
 	.hotthread .item ul li:last-child{
 		margin:0 32rem/$fit 32rem/$fit;
@@ -3137,7 +3137,8 @@
 		color: #fff;
 	}
 	.hotthread .item .thread .inner .caption .protitle{
-		/*font-size: 34rem/$fit !important;*/
+		font-size: 32rem/$fit;
+		line-height: 1.2;
 	}
 	.hotthread .base_price {
 		font-size: 24rem/$fit;
@@ -3702,6 +3703,7 @@
 		font-size: 36rem/$fit;
 		margin-top: 28rem/$fit;
 	}
+	
 }
 
 /* 横向放置的手机及分辨率更小的设备 */
