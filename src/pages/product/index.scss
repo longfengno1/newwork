@@ -1350,6 +1350,9 @@
 	.proinfo .base_price{
 		font-size: 22rem/$fit;
 	}
+	.proinfo .base_price .price{
+		font-size: 34rem/$fit;
+	}
 	.proinfop .info {
 		padding: 0;
 		width: auto;
@@ -1757,13 +1760,13 @@
 		padding: 15rem/$fit;
 	}
 	.prointo .tag4_content .box-sm h4{
-		font-size: 26rem/$fit;
+		font-size: 26rem/$fit !important;
 		line-height: 50rem/$fit;
 		color: #383838;
 	}
 	.prointo .tag4_content .box-sm p{
 		color:#6D6D6D;
-		font-size: 24rem/$fit;
+		font-size: 24rem/$fit !important;
 		height: 68rem/$fit;
 		line-height: 34rem/$fit;
 		overflow: hidden;
@@ -1967,6 +1970,12 @@
 	.btn-stye1{
 		font-size: 24rem/$fit;
 		padding: 16rem/$fit 36rem/$fit;
+	}
+	.proinfo .priceinfo_link{
+		font-size: 24rem/$fit;
+		i{
+			font-size: 24rem/$fit;
+		}
 	}
 
 }

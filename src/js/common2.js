@@ -73,4 +73,7 @@ import '../css/global2.scss';
         $(".tab-title").removeClass("current");
         $(this).addClass("current");
     });
+    $(".agreebox a").click(function(){
+        $(".agreebox").hide();
+    });
 })();

@@ -3666,20 +3666,21 @@
 		overflow: hidden;
 		margin-left: 32rem/$fit;
 	}
+	.mdestination .slick-dots{
+		margin-left: -16rem/$fit !important;
+	}
 	.mdestination li{
-		width: 100%;
-		
+		width: 686rem/$fit;
 		padding: 3rem/$fit 15rem/$fit 15rem/$fit 0;
 	}
 	.mdestination li .box{
 		
-		background: #D8D8D8;
-		box-shadow: 0 3rem/$fit 15rem/$fit 0 rgba(0,0,0,0.50);
+		
 		border-radius: 10rem/$fit;
 		overflow: hidden;
 		position: relative;
 		img{
-			width: 100%;
+			width: 686rem/$fit;
 		}
 	}
 	.mdestination .li2{
@@ -3702,6 +3703,9 @@
 	.mdestination .txt_box .txt_title{
 		font-size: 36rem/$fit;
 		margin-top: 28rem/$fit;
+	}
+	.topbanner_plane .ship .btn-icon .open{
+		display: none;
 	}
 	
 }
