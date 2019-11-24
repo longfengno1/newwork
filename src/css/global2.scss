@@ -1827,8 +1827,12 @@ b {
 		span {
 			display: none;
 		}
+		&.current{
+			background: url("../images/ship01_cur.png") left top no-repeat #fff;
+			background-size: 100%;
+		}
 	}
-
+	
 	.ship01:hover {
 		background: url("../images/ship01_cur.png") left top no-repeat #fff;
 		background-size: 100%;
@@ -1841,19 +1845,27 @@ b {
 		span {
 			display: none;
 		}
+		&.current{
+			background: url("../images/ship02_cur.png") left top no-repeat #fff;
+			background-size: 100%;
+		}
 	}
-
+	
 	.ship02:hover {
 		background: url("../images/ship02_cur.png") left top no-repeat #fff;
 		background-size: 100%;
 	}
-
+	
 	.ship03 {
 		background: url("../images/ship03.png") left top no-repeat #fff;
 		background-size: 100%;
 
 		span {
 			display: none;
+		}
+		&.current{
+			background: url("../images/ship03_cur.png") left top no-repeat #fff;
+			background-size: 100%;
 		}
 	}
 
@@ -1911,6 +1923,13 @@ b {
 		width: 100%;
 		bottom: 0;
 		z-index: 1000;
+		.row{
+			display:block;
+			margin: 0;
+			.col{
+				margin: 0;
+			}
+		}
 		h3{
 			margin-bottom: 20rem/$fit;
 			font-size: 28rem/$fit;
@@ -2044,49 +2063,34 @@ b {
 
 .show-sm {
 	.fixed_plane {
-		bottom: auto;
-		top: 600rem/$fit;
+		bottom: 300rem/$fit;
+		top: auto;
 
 		.fixed_plane_inner {
-			.service .pop {
-				display: block;
-				background: none;
-				left: 0;
-				bottom: 2px;
-				width: 100%;
-				line-height: 1;
-				font-size: 24rem/$fit;
-				line-height: 20rem/$fit;
-				height: 20rem/$fit;
-				color: #00969E;
-			}
-
+			
 			.icon-service {
 				font-size: 42rem/$fit;
-				color: #00969E;
+				color: #ffffff;
 			}
 
 			li a {
 				display: block;
 				height: 80rem/$fit;
 				width: 80rem/$fit;
-				background: rgba(255, 255, 255, 0.50);
-				border: 1px solid #00969E;
+				background: #00969E;
+				opacity: 0.7;
 				border-radius: 4px;
 				position: relative;
 				text-align: center;
 
 				div {
 					text-align: center;
-					padding-top: 4rem/$fit;
+					padding-top: 18rem/$fit;
 				}
 
 				&:hover {
 					text-decoration: none;
 
-					.pop {
-						top: auto;
-					}
 				}
 			}
 		}

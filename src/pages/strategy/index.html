@@ -2,29 +2,29 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>游记攻略</title>
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
-  <script type="text/javascript">
-    (function (doc, win) {
-      var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          if (!clientWidth) return;
+    <meta charset="UTF-8">
+    <title>游记攻略</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
 
-          var fontSize = 20 * (clientWidth / 375);
-          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
-          docEl.style.fontSize = fontSize + 'px';
-          var dpi = window.devicePixelRatio;
-          docEl.setAttribute('data-dpi', dpi);
-        };
-      recalc();
-      if (!doc.addEventListener) return;
-      win.addEventListener(resizeEvt, recalc, false);
-    })(document, window);
-  </script>
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
             <div class="filter">
                 <ul>
                     <li class="current">
-                        <div>世界梦号<span class="icon-arrowdown2 ml10 fz16"></span></div>
+                        <div>世界梦号<span class="icon-arrowdown2 ml10 fz14"></span></div>
                         <div class="subfilter" style="display: none;">
                             <ol>
                                 <li><a href="">subfitler1</a></li>
@@ -50,10 +50,10 @@
                         </div>
                     </li>
                     <li class="">
-                        <div>目的地<span class="icon-arrowdown2 ml10 fz16"></span></div>
+                        <div>目的地<span class="icon-arrowdown2 ml10 fz14"></span></div>
                     </li>
                     <li class="">
-                        <div>游记类型<span class="icon-arrowdown2 ml10 fz16"></span></div>
+                        <div>游记类型<span class="icon-arrowdown2 ml10 fz14"></span></div>
                     </li>
                 </ul>
             </div>
@@ -85,7 +85,9 @@
                         </div>
                         <div>
                             <div class="proinfo">
-                                <a href="strategydetail.html"><p class="title">邂逅樱花，品棠梨煎雪</p></a>
+                                <a href="strategydetail.html">
+                                    <p class="title">邂逅樱花，品棠梨煎雪</p>
+                                </a>
                                 <p class="prominfop">
                                     夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。
                                 </p>
@@ -211,34 +213,25 @@
         <div style="height: 150px;"></div>
     </div>
     <div class="show-sm sm-main">
-        <script>document.getElementById('title_name').textContent = '游记攻略';</script>
+        <script>
+            document.getElementById('title_name').textContent = '游记攻略';
+        </script>
 
         <div class="scroll-bar">
             <div class="items">
-                <div class="scroll-item active"><span>云顶梦号</span></div>
-                <div class="scroll-item"><span>世界梦号</span></div>
-                <div class="scroll-item"><span>探索梦号</span></div>
+                <div class="scroll-item active"><span>云顶梦号</span><span class="icon-arrowdown"></span></div>
+                <div class="scroll-item"><span>目的地</span><span class="icon-arrowdown"></span></div>
+                <div class="scroll-item"><span>游记类型</span><span class="icon-arrowdown"></span></div>
             </div>
         </div>
         <div class="filter filter-sm">
-            <ul>
-                <li class="current">
-                    <div>云顶梦号</div>
-                </li>
-                <li class="">
-                    <div>世界梦号</div>
-                </li>
-                <li class="">
-                    <div>探索梦号</div>
-                </li>
-            </ul>
         </div>
         <div class="wraper mt20">
             <div class="travelslist">
                 <ul>
                     <li>
                         <div class="pic">
-                            <img src="../../images/bg-act-2.png" width="240" height="135">
+                            <img src="../../images/j2.jpg" width="240" height="135">
                             <div class="tagsbox">
                                 <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
                                 <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
@@ -252,8 +245,8 @@
                                 </div>
                             </div>
                             <div class="fr">
-                                <span class="good">2897</span>
-                                <span class="view">2908</span>
+                                <span class="good"><span class="icon-good"></span> 2897</span>
+                                <span class="view"><span class="icon-view"></span> 2908</span>
                                 <span class="timer">发布时间: 2019/10/02</span>
                             </div>
                         </div>
@@ -270,7 +263,7 @@
                     </li>
                     <li>
                         <div class="pic">
-                            <img src="../../images/bg-act-2.png" width="240" height="135">
+                            <img src="../../images/j2.jpg" width="240" height="135">
                             <div class="tagsbox">
                                 <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
                                 <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
@@ -284,8 +277,8 @@
                                 </div>
                             </div>
                             <div class="fr">
-                                <span class="good">2897</span>
-                                <span class="view">2908</span>
+                                <span class="good"><span class="icon-good"></span> 2897</span>
+                                <span class="view"><span class="icon-view"></span> 2908</span>
                                 <span class="timer">发布时间: 2019/10/02</span>
                             </div>
                         </div>
@@ -302,7 +295,7 @@
                     </li>
                     <li>
                         <div class="pic">
-                            <img src="../../images/bg-act-2.png" width="240" height="135">
+                            <img src="../../images/j2.jpg" width="240" height="135">
                             <div class="tagsbox">
                                 <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
                                 <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
@@ -316,8 +309,8 @@
                                 </div>
                             </div>
                             <div class="fr">
-                                <span class="good">2897</span>
-                                <span class="view">2908</span>
+                                <span class="good"><span class="icon-good"></span> 2897</span>
+                                <span class="view"><span class="icon-view"></span> 2908</span>
                                 <span class="timer">发布时间: 2019/10/02</span>
                             </div>
                         </div>
@@ -334,7 +327,7 @@
                     </li>
                     <li>
                         <div class="pic">
-                            <img src="../../images/bg-act-2.png" width="240" height="135">
+                            <img src="../../images/j2.jpg" width="240" height="135">
                             <div class="tagsbox">
                                 <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
                                 <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
@@ -348,8 +341,72 @@
                                 </div>
                             </div>
                             <div class="fr">
-                                <span class="good">2897</span>
-                                <span class="view">2908</span>
+                                <span class="good"><span class="icon-good"></span> 2897</span>
+                                <span class="view"><span class="icon-view"></span> 2908</span>
+                                <span class="timer">发布时间: 2019/10/02</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="proinfo">
+                                <p class="title">邂逅樱花，品棠梨煎雪</p>
+                                <p class="prominfop">
+                                    夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。
+                                </p>
+
+                            </div>
+                            <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="../../images/j2.jpg" width="240" height="135">
+                            <div class="tagsbox">
+                                <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                                <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+                            </div>
+                        </div>
+                        <div class="userinfo">
+                            <div class="fl">
+                                <div class="nick">
+                                    <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                                    <span class="nickname">无敌小海星</span>
+                                </div>
+                            </div>
+                            <div class="fr">
+                                <span class="good"><span class="icon-good"></span> 2897</span>
+                                <span class="view"><span class="icon-view"></span> 2908</span>
+                                <span class="timer">发布时间: 2019/10/02</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="proinfo">
+                                <p class="title">邂逅樱花，品棠梨煎雪</p>
+                                <p class="prominfop">
+                                    夏天是看海的最好季节。对我这个“海迷”来说，去发现不同的海域是打开夏天最好的方式。去发现不同的海域是打开夏天最好的方式。
+                                </p>
+
+                            </div>
+                            <div class="probtn"><a href="###" class="more btn-style1">了解详情</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <img src="../../images/j2.jpg" width="240" height="135">
+                            <div class="tagsbox">
+                                <div class="box fl"><span class="icon-local"></span> <span>广州出发</span></div>
+                                <div class="box fr"><span class="icon-ship2"></span> <span>世界梦号</span></div>
+                            </div>
+                        </div>
+                        <div class="userinfo">
+                            <div class="fl">
+                                <div class="nick">
+                                    <img class="nickavanda" src="../../images/nick.png" width="30" height="30">
+                                    <span class="nickname">无敌小海星</span>
+                                </div>
+                            </div>
+                            <div class="fr">
+                                <span class="good"><span class="icon-good"></span> 2897</span>
+                                <span class="view"><span class="icon-view"></span> 2908</span>
                                 <span class="timer">发布时间: 2019/10/02</span>
                             </div>
                         </div>

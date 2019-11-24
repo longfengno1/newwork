@@ -1,9 +1,7 @@
 @import '../../css/variables.scss';
 
 .sm-main {
-  min-height: 100vh;
   width: 100vw;
-  font-family: Helvetica;
 
   .select-container {
     display: flex;
@@ -383,6 +381,7 @@
 @media (max-width: 767px) {
 	.list{
     width: 100%;
+    padding-top: 48rem/$fit;
   }
   .activiylist{
     width:100%;
@@ -391,20 +390,34 @@
     padding: 32rem/$fit 24rem/$fit;
   }
   .list-container .boat-card .picture{
-    width: 294rem/$fit;
-    height: 165rem/$fit;
+    width: 100%;
   }
   .list-container .boat-card .detail-content{
     width: auto;
+    padding-left: 0;
+  }
+  .activiylist .boat-card .description{
+    display: none;
+  }
+  .list-container .boat-card .desc{
+    width: auto;
+    padding-left: 0;
+    padding-top: 20rem/$fit;
   }
   .activiylist .boat-card .desc{
     padding: 0;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
   }
   .activiylist h3{
     font-size: 24rem/$fit !important;
+    padding-top: 24rem/$fit;
   }
-  .activiylist h3 .icon-ship{
-    
+  .list-container .page{
+    display: none
   }
 }
 

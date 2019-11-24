@@ -417,11 +417,12 @@
 	background: #F7FCFC;
 	padding:10rem/$fit;
 	height:254rem/$fit;
-	margin-bottom:10rem/$fit;
+	margin-bottom:20rem/$fit;
+	box-shadow: 0 2rem/$fit 10rem/$fit rgba(0,0,0,0.30);
 }
 .prolistD li .inner{
 	padding-left:466rem/$fit;
-	padding-right:90rem/$fit;
+	padding-right:30rem/$fit;
 	background:none;
 }
 .prolistD li .pic{
