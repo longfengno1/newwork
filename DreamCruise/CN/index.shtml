@@ -54,7 +54,7 @@
 						<span>航线搜索</span>
 					</a>
 					<a href="###" class="tab2" rel="1">
-						<span>团队预定</span>
+						<span>团队预订</span>
 					</a>
 					
 				</div>
@@ -113,7 +113,7 @@
 							<div class="arrow-down fr"></div>
 						</div>
 						<div class="button-box">
-							<div class="btn-green fr">团队预定</div>
+							<div class="btn-green fr">团队预订</div>
 						</div>
 					</div>
 					
@@ -1651,7 +1651,7 @@
 							<div class="item-onboardexp" data-aos="fade-up">
 								<img src="images/oe-img5.jpg" />
 								<div class="item-onboardexp-desc">
-									<h4 class="txt-green">团队预定</h4>
+									<h4 class="txt-green">团队预订</h4>
 									<h3>默契 · 快乐</h3>
 								</div>
 							</div>
@@ -1725,7 +1725,7 @@
 							<div class="item-onboardexp" data-aos="fade-up">
 								<img src="images/oe-img5.jpg" />
 								<div class="item-onboardexp-desc">
-									<h4 class="txt-green">团队预定</h4>
+									<h4 class="txt-green">团队预订</h4>
 									<h3>默契 · 快乐</h3>
 								</div>
 							</div>
@@ -2039,7 +2039,7 @@
 	<section class="bg-light-green overflow-hide d-none d-md-block">
 		<div class="container">
 			<h2 class="section-header" data-aos="fade-up">邮轮百科</h2>
-			<p class="text-right"><a href="#" class="dc-btn mb-3" title="预定须知">预定须知</a> <a href="#"
+			<p class="text-right"><a href="#" class="dc-btn mb-3" title="预订须知">预订须知</a> <a href="#"
 					class="dc-btn ml-0 ml-md-3" title="问题清单">问题清单</a></p>
 			<div id="tips-wrapper" class="p-5">
 				<div class="tips-slide">
@@ -2248,7 +2248,7 @@
 							<div class="col">
 								<h3 class="d-none d-md-block">企业出游</h3>
 								<p>团建，答谢客户，星梦邮轮都是你的不二之选！</p>
-								<p><a href="#" class="dc-btn mr-2 mb-2">登陆预定</a> <a href="#" class="dc-btn ">了解更多</a>
+								<p><a href="#" class="dc-btn mr-2 mb-2">登陆预订</a> <a href="#" class="dc-btn ">了解更多</a>
 								</p>
 							</div>
 						</div>

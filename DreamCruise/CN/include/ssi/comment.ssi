@@ -1,5 +1,5 @@
 <div class="row d-md-none text-center comment-control">
-  <div class="col-3"><a href="javascript:void(0)"><img src="images/comment/icon-ship.png" /><span class="d-block mt-2">预定航线</span></a></div>
+  <div class="col-3"><a href="javascript:void(0)"><img src="images/comment/icon-ship.png" /><span class="d-block mt-2">预订航线</span></a></div>
   <div class="col-3"><a href="javascript:void(0)"><img src="images/comment/icon-comment.png" /><span class="d-block mt-2">评论</span></a></div>
   <div class="col-3"><a href="javascript:void(0)"><img src="images/comment/icon-like.png" /><span class="d-block mt-2">1250</span></a></div>
   <div class="col-3"><a href="javascript:void(0)" class="active"><img src="images/comment/icon-favourite.png" /><span class="d-block mt-2">已收藏</span></a></div>

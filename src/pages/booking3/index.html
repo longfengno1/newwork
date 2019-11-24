@@ -82,10 +82,37 @@
             <div class="room">
               <h4>房间1：海景客房</h4>
               <div class="users">
-                <div class="user-row">
-                  <label for="user1">乘客1</label>
-                  <div class="input-item"><input id='user1' type="text" class="" value="邹泉"><a class="edit">编辑</a></div>
-                </div>
+                  <div class="user-row">
+                      <label for="user1">乘客1</label>
+                      <div class="input-item" id="selectuser1" data-toggle="dropdown"><input id='user1' type="text" class="" value="邹泉"><a class="edit">编辑</a></div>
+                      <style>
+                          .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    font-size:14px;
+}
+                      </style>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="selectuser1" >
+                          <li role="presentation">
+                              <a role="menuitem" tabindex="-1" href="#">Java</a>
+                          </li>
+                          <li role="presentation">
+                              <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+                          </li>
+                          <li role="presentation">
+                              <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
+                          </li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation">
+                              <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+                          </li>
+                      </ul>
+                  </div>
                 <button type="button" class="btn add-user">+添加新乘客</button>
               </div>
             </div>
