@@ -310,12 +310,55 @@
 	opacity: 0.8;
 }
 
+.desc-right {
+	float: right;
+	position: relative;
+
+	.intro {
+		cursor: pointer;
+	}
+
+	.opener {
+		position: absolute;
+		right: 100%;
+		top: -100px;
+		background: #fff;
+		width: 430px;
+		height: 309px;
+		z-index: 1;
+		padding: 20px;
+		box-shadow: 0 3px 15px 0 rgba(0,0,0,0.10);
+		border-radius: 2px;
+		display: none;
+
+		.title {
+			margin-bottom: 10px;
+			font-size: 16px;
+			color: #00969E;
+		}
+
+		.opener-close {
+			cursor: pointer;
+		}
+
+		.inner {
+			height: 240px;
+			text-align: left;
+			overflow-y: scroll;
+
+			p {
+				text-align: left;
+			}
+		}
+	}
+}
+
 .date_plane_box {
 	background: #FFFFFF;
 	border: 1rem/$fit solid #00969E;
-	width: 568rem/$fit;
-	height: 310rem/$fit;
-	padding: 8rem/$fit 53rem/$fit 30rem/$fit 53rem/$fit;
+	/*width: 568rem/$fit;
+	height: 310rem/$fit;*/
+	padding: 1rem/$fit 1rem/$fit 1rem/$fit 1rem/$fit;
 	margin-top: 16rem/$fit;
 	position: relative;
 }

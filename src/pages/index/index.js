@@ -77,8 +77,6 @@ import "../../js/aos";
             }
         };
 
-        //switchbg.init();
-
         ospopover.init();
         window.ospopover = ospopover;
         window.switchbg = switchbg;
@@ -128,6 +126,7 @@ import "../../js/aos";
         $(".topbanner_plane").click(function () {
             $(".topbanner_plane .ship .btn-icon").removeClass("artive");
         })
+
     });
     
 })()

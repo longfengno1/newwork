@@ -1,5 +1,6 @@
 import '../../js/common2';
 import './index.scss';
+import "../../js/slick.min";
 
 (function () {
   let expand = false;
@@ -111,5 +112,24 @@ import './index.scss';
     }
 
   });
-
+  var slickobj;
+  $(".filter-sm .filter-item").click(function(e){
+    $(".markop0").show();
+    var $this = $(this);
+    $(".filter-sm .filter-item").removeClass("current");
+    $this.addClass("current");
+    $(".filter-sm-opener").hide();
+    $(".filter-sm-opener").eq($this.index()).show();
+    if($this.index()==1 && !slickobj){
+      slickobj=$(".xslider").slick({
+        infinite: false,
+        arrows:false
+    });
+    }
+  })
+  $(".markop0").click(function(){
+    $(".filter-sm-opener").hide();
+    $(".markop0").hide();
+  });
+  
 })();

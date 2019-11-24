@@ -77,23 +77,33 @@ import './index.scss';
     }
 
   });
+    $(".next").click(function () { $(".login").show(); });
+
   $(".detail").click(function(){
-    $(".mark").show();
+    $(".layerout1").show();
   });
-  $(".mark").click(function(){
-    $(".mark").hide();
+  $("#modfiy-date").click(function(){
+    $(".layerout2").show();
   });
-  $(".layer").click(function(){
-    return false;
+    $(".mark").click(function () {
+        $(".mark").hide();
+    });
+    $(".layer").click(function () {
+        return false;
+    });
+    $(".layer .close").click(function () {
+        $(".mark").hide();
+    });
+    $(".room-all").click(function () {
+        $(".room-box-show").toggle();
+        return false;
+    });
+  $(".room-row-item,.people-row-item").click(function () {
+    $(".people-row-item").removeClass("active");        
+    $(this).addClass("active");
   });
-  $(".layer .close").click(function(){
-    $(".mark").hide();
-  });
-  $(".room-all").click(function(){
-    $(".room-box-show").toggle();
-    return false;
-  });
-    $(".room-row-item,.people-row-item").click(function () {
-        //$("room-row-item").addClass("active");
-    })
+    $(".room-row-item").click(function () {
+        $(".room-row-item").removeClass("active");
+        $(this).addClass("active");
+    });
 })();

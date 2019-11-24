@@ -53,6 +53,16 @@ import "./index.scss";
             }
                 
         });
+
+        $(".priceinfo_link").click(function () {
+            var $this = $(this);
+            $this.parent().find(".opener").show();
+
+        });
+        $(".opener .opener-close").click(function () {
+            $(".opener").hide();
+        });
+
         $("#header .navbar-menu li").hover(function(){
             var $this = $(this)
             $("#header .navbar-menu li").removeClass("current");

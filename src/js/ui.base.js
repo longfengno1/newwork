@@ -226,8 +226,14 @@ var tabPanel=function(obj){
 			if($this.attr("enableLink")!="true"){
 				if($this.attr("trigger")!="click"){return false;}	
 			}
-			$(this).addClass("now").siblings().removeClass("now");
-			tabc.hide().eq(parseInt($(this).attr("rel"))).show();
+			$(this).toggleClass("now").siblings().removeClass("now");
+			tabc.hide();//.eq(parseInt($(this).attr("rel"))).show();
+
+			if($(this).hasClass("now")){
+				tabc.eq(parseInt($(this).attr("rel"))).show();
+			}else{
+				tabc.eq(parseInt($(this).attr("rel"))).hide();
+			}
 			//if($(this).prev().is("input")){$(this).prev().attr("checked","checked")}
 			if($(this).attr("command")){
 				eval($(this).attr('command')+"(this)");

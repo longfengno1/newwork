@@ -156,7 +156,7 @@
 	position: absolute;
 	top: 41rem/$fit;
 	left: -46rem/$fit;
-	z-index: 3;
+	z-index: 101;
 }
 
 .topbanner-tab {
@@ -1117,6 +1117,9 @@
 	overflow: hidden;
 	border-top-left-radius: 5rem/$fit;
 	border-top-right-radius: 5rem/$fit;
+	img{
+		width: 100%;
+	}
 }
 
 .hotthread .pic_title {
@@ -1199,6 +1202,39 @@
 .hotthread .base_price .price {
 	font-size: 18rem/$fit;
 	color: #15989D;
+}
+.hotthreadB .item .thread .inner{
+	height: 50rem/$fit;
+}
+.hotthreadB .item .thread{
+	
+}
+.hotthreadB .item .thread .pic{
+	background: #000;
+	img {
+		opacity: 1;
+	}
+
+	.pic_title {
+		position: static;
+		padding: 0;
+	}
+	.text-desc {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		padding: 60rem/$fit 20rem/$fit 0 20rem/$fit;
+		color: #fff;
+		display: none;
+	}
+	&:hover .text-desc{
+		display: block;
+	}
+	&:hover img{
+		opacity: 0.6;
+	}
+	
 }
 
 /* ================ “邮”记 =================== */
@@ -1302,7 +1338,7 @@
 
 .shiprecord .content .more .more_btn {
 	position: absolute;
-	left: 30rem/$fit;
+	right: 30rem/$fit;
 	bottom: 18rem/$fit;
 }
 
@@ -1754,6 +1790,16 @@
 .shipinto .topbanner_plane .ship {
 	position: absolute;
 	top: 110rem/$fit;
+	/*right: 80rem/$fit;*/
+}
+
+.shipinto .topbanner_plane .ship1 {
+	right: 80rem/$fit;
+}
+.shipinto .topbanner_plane .ship2 {
+	right: -200rem/$fit;
+}
+.shipinto .topbanner_plane .ship3 {
 	right: 80rem/$fit;
 }
 
@@ -1835,7 +1881,7 @@
 .topbanner_plane .ship-intro {
 	position: absolute;
 	top: -114rem/$fit;
-	right: 627rem/$fit;
+	right: 867rem/$fit;
 	height: 186rem/$fit;
 }
 
@@ -1953,7 +1999,7 @@
 	color: #fff;
 }
 
-.ylbk-bg1 {
+.ylbk-bg4 {
 
 	margin-left: 70rem/$fit;
 }
@@ -3325,6 +3371,15 @@
 		margin-left:20rem/$fit;
 		display:block;
 	}
+	.topbanner_plane .ship .img2 {
+		position: relative;
+		left: -130rem/$fit;
+	}
+	.topbanner_plane .ship .img3 {
+		position: relative;
+		left: 70rem/$fit;
+	}
+
 	.topbanner_plane .ship02{
 		
 		position:static;
@@ -3417,6 +3472,7 @@
 	.shipinto .topbanner_plane .ship,
 	.shipinto .topbanner_plane .ship02{
 		top:360rem/$fit;
+		width:100%;
 	}
 	.prolist .inner{
 		background:#fff;
