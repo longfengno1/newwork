@@ -487,6 +487,14 @@
 	.section{
 		background:#fff;
 	}
+	.section .title {
+		height: .85rem;
+		font-size: .85rem;
+		line-height: .85rem;
+		margin: .8rem;
+		text-align: center;
+		color: #383838;
+	}
 	.prolist .inner {
 		background: #fff;
 		padding: 20rem/$fit 0;
@@ -582,7 +590,7 @@
 		margin-top:-85rem/$fit;
 	}
 	.sm-youlist-wraper .title{
-		text-align:left;
+		text-align:center;
 		font-size:30rem/$fit;
 		color:#383838;
 		padding-left:20rem/$fit;
@@ -594,6 +602,7 @@
 		overflow:scroll;
 		overflow-y:hidden;
 	}
+
 	.sm-youlist-wraper .youlist{
 		position:absolute;
 		height:460rem/$fit;

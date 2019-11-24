@@ -382,7 +382,7 @@
 	/*margin-bottom:30rem/$fit;*/
 }
 .youlist .protitle{
-	font-size:18rem/$fit;
+	font-size:16rem/$fit;
 	padding:0 20rem/$fit;
 	margin-top:20rem/$fit;
 }
@@ -508,6 +508,20 @@
 		border-top: 1px solid #ccc;
 			box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3);
 	}
+	.prolist .desc {
+		margin: 10rem/$fit 16rem/$fit;
+		padding: 10rem/$fit 0;
+		border: 0;
+		border-width: 1rem/$fit 0;
+	}
+	.section .title {
+		height: .85rem;
+		font-size: .85rem;
+		line-height: .85rem;
+		margin: .8rem;
+		text-align: center;
+		color: #383838;
+	}
 	.prolist li:first-child .inner{
 		border-top:0;
 	}
@@ -596,7 +610,7 @@
 		margin-top:-85rem/$fit;
 	}
 	.sm-youlist-wraper .title{
-		text-align:left;
+		text-align:center;
 		font-size:30rem/$fit;
 		color:#383838;
 		padding-left:20rem/$fit;
