@@ -213,9 +213,10 @@
       background: #FFFFFF;
       border: 1px solid #E5E5E5;
       border-radius: 8px;
-      width: 680rem/$fit;
+      width: 90%;
       input {
         font-size: 24rem/$fit;
+        border:0;
       }
     }
     .inner{
