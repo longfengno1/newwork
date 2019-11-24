@@ -119,7 +119,7 @@
 .topbanner_plane .ship{
 	position:absolute;
 	top:110rem/$fit;
-	right:0;
+	right:-250px;
 }
 .topbanner_plane .ship02{
 	top:140rem/$fit;
@@ -189,11 +189,11 @@
 	background: #343E57;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
-.topbanner_plane .ship-intro{
-	position:absolute;
+.topbanner_plane .ship-intro {
+	position: absolute;
 	top: -124rem/$fit;
-    right: 627rem/$fit;
-	height:206rem/$fit;
+	right: 867rem/$fit;
+	height: 206rem/$fit;
 }
 .topbanner_plane .ship-intro:after{
 	content:"";
@@ -253,12 +253,13 @@
 .prowraper{
 	width:1140rem/$fit
 }
-.prolist .inner{
+.prolist .inner {
 	background: #FBFAF9;
-	padding-bottom:16rem/$fit;
-	margin-bottom:30rem/$fit;
-	font-size:14rem/$fit;
-	overflow:hidden;
+	padding-bottom: 16rem/$fit;
+	margin-bottom: 30rem/$fit;
+	font-size: 14rem/$fit;
+	overflow: hidden;
+	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
 }
 .prolist .pic,
 .prolist .pic img{
@@ -486,12 +487,12 @@
 	.section{
 		background:#fff;
 	}
-	.prolist .inner{
-		background:#fff;
-		padding:20rem/$fit 0;
-		margin:0 20rem/$fit;
-		border-top:1px solid #ccc;
-		
+	.prolist .inner {
+		background: #fff;
+		padding: 20rem/$fit 0;
+		margin: 0 20rem/$fit;
+		border-top: 1px solid #ccc;
+		box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3);
 	}
 	.prolist li:first-child .inner{
 		border-top:0;

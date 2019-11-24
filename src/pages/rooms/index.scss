@@ -118,6 +118,81 @@
 	top:110rem/$fit;
 	right:0;
 }
+.mark {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.20);
+	z-index: 1000;
+
+	.layer {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 1080px;
+		padding: 30px;
+		background: #FFFFFF;
+		box-shadow: 0 3px 15px 0 rgba(0,0,0,0.15);
+
+		.close {
+			width: 30px;
+			height: 30px;
+			color: #fff !important;
+			font-size: 16px;
+			line-height: 30px;
+			text-align: center;
+			position: absolute;
+			right: 14px;
+			top: 16px;
+			background: #00969E;
+			border-radius: 50%;
+			opacity: 1;
+		}
+
+		.room-title {
+			margin-top: 10px;
+			font-size: 26px;
+			margin-bottom: 37px;
+		}
+
+		.layer-left {
+			.price {
+				color: #F8485E;
+				font-size: 14px;
+				margin-right: 5px;
+
+				span {
+					font-size: 30px;
+				}
+			}
+
+			.old {
+				color: #bbb;
+				text-decoration: line-through;
+			}
+
+			.price-desc {
+				margin-left: 16px;
+			}
+		}
+
+		.layer-right {
+			padding-left: 46px;
+			font-size: 16px;
+
+			.list,
+			.list2 {
+				li {
+					height: 32px;
+					line-height: 32px;
+				}
+			}
+		}
+	}
+}
 .intro-ribbonship{
 	background:url(../../images/intro-ribbonship.png) center top no-repeat;
 	height:155rem/$fit;
@@ -420,16 +495,17 @@
 	margin-bottom:10rem/$fit;
 }
 .prolistD li .inner{
-	padding-left:466rem/$fit;
-	padding-right:90rem/$fit;
+	/*padding-left:466rem/$fit;*/
+	padding-right:20rem/$fit;
 	background:none;
 }
 .prolistD li .pic{
 	float:left;
-	margin-left:-466rem/$fit;
+	/*margin-left:-466rem/$fit;*/
 	width:416rem/$fit;
 	height:234rem/$fit;
 	position:relative;
+	margin-right:.5rem;
 }
 .prolistD li .pic img{
 	width:416rem/$fit;
@@ -447,6 +523,7 @@
 	margin-top:20rem/$fit;
 	font-size:16rem/$fit;
 	line-height:28rem/$fit;
+	/*margin-left:20rem/$fit;*/
 }
 .prolistD .infos{
 	overflow:hidden;
@@ -454,13 +531,13 @@
 	margin-top:10rem/$fit;
 }
 .prolistD li:nth-child(2n) .inner{
-	padding-left:40rem/$fit;
-	padding-right:466rem/$fit;
+	padding-left:20rem/$fit;
+	/*padding-right:466rem/$fit;*/
 }
 .prolistD li:nth-child(2n) .pic{
 	float:right;
 	margin-left:0;
-	margin-right:-466rem/$fit;
+	/*margin-right:-466rem/$fit;*/
 }
 .prolistD .pic .op{
 	position:absolute;

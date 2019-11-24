@@ -10,4 +10,13 @@ import "./index.scss";
   $(".topbanner_plane").click(function () {
     $(".topbanner_plane .ship .btn-icon").removeClass("artive");
   })
+    $(".detail").click(function () {
+        $(".layerout1").show();
+    });
+    $(".layer").click(function () {
+        return false;
+    });
+    $(".layer .close").click(function () {
+        $(".mark").hide();
+    });
 })()
