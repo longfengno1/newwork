@@ -1776,6 +1776,10 @@ b {
 	border: 0;
 	font-size: 14rem/$fit;
 }
+.main-search-box .dropdown-toggle:after,
+.topbanner-tab .dropdown-toggle:after{
+	display: none;
+}
 
 /* 大屏幕 */
 @media (min-width: 1200px) {

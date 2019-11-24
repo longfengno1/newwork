@@ -156,7 +156,7 @@
 	position: absolute;
 	top: 41rem/$fit;
 	left: -46rem/$fit;
-	z-index: 3;
+	z-index: 101;
 }
 
 .topbanner-tab {
@@ -1209,17 +1209,16 @@
 .hotthreadB .item .thread{
 	
 }
-.hotthreadB .item .thread .pic {
+.hotthreadB .item .thread .pic{
 	background: #000;
 	img {
-		opacity: 0.6;
+		opacity: 1;
 	}
 
 	.pic_title {
 		position: static;
 		padding: 0;
 	}
-
 	.text-desc {
 		position: absolute;
 		left: 0;
@@ -1227,12 +1226,17 @@
 		width: 100%;
 		padding: 60rem/$fit 20rem/$fit 0 20rem/$fit;
 		color: #fff;
+		display: none;
 	}
-	.text-desc p{
-		font-size:16rem/$fit;
-		line-height:40rem/$fit;
+	&:hover .text-desc{
+		display: block;
 	}
+	&:hover img{
+		opacity: 0.6;
+	}
+	
 }
+
 /* ================ “邮”记 =================== */
 .custom_container {
 	overflow: hidden;

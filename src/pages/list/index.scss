@@ -1195,5 +1195,30 @@
   background-position: -10px -18px;
   top: 5px;
 }
+.intxt{
+  height: 30px;
+  width: 159px;
+  background: #F8F8F8;
+  border: 0;
+  margin-right: 5px;
+}
+.btn-stye1 {
+	display: inline-block;
+	position: relative;
+	background: #B2DFE1;
+	height: 30rem/$fit;
+	border-radius: 3rem/$fit;
+	color: #fff;
+	font-size: 12rem/$fit;
+	text-align: left;
+	line-height: 30rem/$fit;
+	cursor: pointer;
+	padding: 0 14rem/$fit;
+}
 
+.btn-stye1:hover {
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.8;
+}
 @import './sm-index.scss';
