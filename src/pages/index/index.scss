@@ -2991,6 +2991,26 @@
 
 /* 横向放置的手机和竖向放置的平板之间的分辨率 */
 @media (max-width: 767px) {
+	.shipexperience .exp_item .exp_box1 img {
+		height: 600rem/$fit;
+		width: 100%;
+	}
+	
+	.shipexperience .exp_item .exp_box2 img {
+		height: 340rem/$fit;
+		width: 100%;
+	}
+	.exp_text_wrap{
+		width: 100%;
+		height: 80rem/$fit;
+		line-height: 80rem/$fit;
+	}
+	.exp_text_tit{
+		font-size: 32rem/$fit;
+	}
+	.exp_text_subtit{
+		font-size: 24rem/$fit;
+	}
 	.section{
 		border-bottom: 24rem/$fit solid #F8F8F8;
 		padding: 0;
@@ -3038,7 +3058,7 @@
 		display: block;
 		height: auto;
 		width: 100%;
-		margin: 0 32rem/$fit 32rem/$fit;
+		margin: 0 32rem/$fit 20rem/$fit;
 	}
 	.hotthread .item ul li:last-child{
 		margin:0 32rem/$fit 32rem/$fit;

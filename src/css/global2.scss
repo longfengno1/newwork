@@ -1780,7 +1780,50 @@ b {
 .topbanner-tab .dropdown-toggle:after{
 	display: none;
 }
-
+.left-select-ship{
+	position: fixed;
+	top:100px;
+	width: 40px;
+	li{
+		width: 40px;
+		height: 140px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+	}
+	.ship01{
+		background: url("../images/ship01.png") left top no-repeat #fff;
+		background-size: 100%;
+		span{
+			display: none;
+		}
+	}
+	.ship01:hover{
+		background: url("../images/ship01_cur.png") left top no-repeat #fff;
+		background-size: 100%;
+	}
+	.ship02{
+		background: url("../images/ship02.png") left top no-repeat #fff;
+		background-size: 100%;
+		span{
+			display: none;
+		}
+	}
+	.ship02:hover{
+		background: url("../images/ship02_cur.png") left top no-repeat #fff;
+		background-size: 100%;
+	}
+	.ship03{
+		background: url("../images/ship03.png") left top no-repeat #fff;
+		background-size: 100%;
+		span{
+			display: none;
+		}
+	}
+	.ship03:hover{
+		background: url("../images/ship03_cur.png") left top no-repeat #fff;
+		background-size: 100%;
+	}
+}
 /* 大屏幕 */
 @media (min-width: 1200px) {
 	.show-sm {
@@ -1797,7 +1840,9 @@ b {
 
 /* 横向放置的手机和竖向放置的平板之间的分辨率 */
 @media (max-width: 767px) {
-
+	.left-select-ship{
+		display: none;
+	}
 	.show-sm {
 		display: block;
 	}

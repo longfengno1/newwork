@@ -373,3 +373,37 @@
         color: #00969E;
     }
 }
+/* 大屏幕 */
+@media (min-width: 1200px) {}
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979rem/$fit) {}
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+	.list{
+    width: 100%;
+  }
+  .activiylist{
+    width:100%;
+  }
+  .activiylist .boat-card{
+    padding: 32rem/$fit 24rem/$fit;
+  }
+  .list-container .boat-card .picture{
+    width: 294rem/$fit;
+    height: 165rem/$fit;
+  }
+  .list-container .boat-card .detail-content{
+    width: auto;
+  }
+  .activiylist .boat-card .desc{
+    padding: 0;
+  }
+  .activiylist h3{
+    font-size: 24rem/$fit !important;
+  }
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {}
