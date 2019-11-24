@@ -43,5 +43,18 @@ import '../css/global2.scss';
             $this.parent().find(".icon-arrow").toggleClass("icon-arrowdown");
             return false;
         })
-    })
+        $('.show-sm .fixed_plane').bind('touchmove',function(e){
+           
+            e.preventDefault();
+            var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+            var elm = $(this).offset();
+            var w = $(this).find("a").width();
+            var h = $(this).find("a").height()
+            var x = touch.pageX - w/2;
+            var y = touch.pageY - h/2;
+            $(this).css('left', x+'px');
+            $(this).css('top', y+'px');
+            
+            });
+        })
 })();
