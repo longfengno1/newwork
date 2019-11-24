@@ -76,4 +76,13 @@ import '../css/global2.scss';
     $(".agreebox a").click(function(){
         $(".agreebox").hide();
     });
+    $(window).bind("scroll", function () {
+        var st = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+       
+        if (st < 400) {
+            $(".fixed_plane,.left-select-ship").hide()
+        }else{
+            $(".fixed_plane,.left-select-ship").show()
+        }
+    })
 })();
