@@ -313,7 +313,7 @@
     }
 
     .detail-content .row {
-      margin: 16px 0;
+      margin: 10px 0;
     }
 
     .cruises-name {
@@ -982,31 +982,37 @@
   background-position: -10px -18px;
   top: 7px;
 }
-.activiylist{
-  background: #FFFFFF; 
-  width: 1200px;
-  margin-top: 25px;
-  h3 .icon-ship{
-    font-size: 40px;
-  }
-  .boat-card{
+.activiylist {
     background: #FFFFFF;
-    border: 2px solid #EFFAF9;
-    position: relative;
-    padding: 20px;
-    .desc{
-      padding-right: 198px;
+    width: 1200px;
+    margin-top: 25px;
+
+    h3 .icon-ship {
+        font-size: 40px;
     }
-    .description{
-      padding: 0;
-      overflow: hidden;
-      position: absolute;
-      bottom: 20px;
-      right:20px;
+
+    .boat-card {
+        background: #FFFFFF;
+        /*border: 2px solid #EFFAF9;*/
+        position: relative;
+        /*padding: 20px;*/
+        .desc {
+            padding-right: 150px;
+        }
+
+        .description {
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .detail-content {
+            padding: 0 0 0 20px;
+        }
+
+        
     }
-    .detail-content{
-      padding: 0 0 0 20px;
-    }
-  }
 }
 @import './sm-index.scss';

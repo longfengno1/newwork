@@ -248,9 +248,9 @@
 	text-align:center;
 }
 .col-4 {
-	padding-bottom: 8px;
-	padding-right: 4px;
-	padding-left: 4px;
+	padding-bottom: 16px;
+	padding-right: 8px;
+	padding-left: 8px;
 }
 .row {
 	margin-right: -4px;
@@ -259,12 +259,13 @@
 .prowraper{
 	width:1140px
 }
-.prolist .inner{
+.prolist .inner {
 	background: #FBFAF9;
-	padding-bottom:16px;
+	padding-bottom: 8px;
 	/*margin-bottom:10px;*/
-	font-size:14px;
-	overflow:hidden;
+	font-size: 14px;
+	overflow: hidden;
+	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
 }
 .prolist .pic,
 .prolist .pic img{
@@ -278,10 +279,10 @@
 	font-size: 16px;
 	line-height: 32px;
 	text-align: left;
-	padding: 0 0 0 20px;
+	padding: 0 20px 0 20px;
 }
 .prolist .desc {
-	margin: 5px 16px;
+	margin: 5px 20px;
 	/*padding:18px 0 ;*/
 	border: 1px solid #B8C4CB;
 	border-width: 1px 0;
@@ -289,10 +290,10 @@
 }
 .prolist .infos{
 	overflow:hidden;
-	padding:0 16px ;
+	padding:0 20px ;
 }
 .prolist .infos .item{
-	width:90%;
+	width:100%;
 	float:left;
 	line-height:28px;
 }
