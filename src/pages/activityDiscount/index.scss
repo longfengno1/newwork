@@ -381,6 +381,8 @@
 	text-align:center;
 	height:454px;
 	margin-bottom:-110px;
+	width:100%;
+	overflow:hidden;
 }
 .topbannerB .intro-ribbonship{
 	background:url(../../images/banner-cover.png) center top no-repeat;
@@ -396,7 +398,7 @@
 .filter_plane li{
 	height:45px;
 	float:left;
-	font-size:20px;
+	font-size:16px;
 	
 	padding:0 12px;
 	margin-right:20px;
@@ -590,7 +592,7 @@
 		float: left;
 		height: 60px;
 		line-height: 60px;
-		font-size: 20px;
+		font-size: 16px;
 		padding: 0 18px;
 	}
 

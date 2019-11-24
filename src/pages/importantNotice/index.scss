@@ -20,13 +20,13 @@
 
         .title {
             width: 240px;
-            height: 70px;
-            line-height: 70px;
+            height: 40px;
+            line-height: 40px;
             text-align: center;
             letter-spacing: 5px;
             background-color: #00969d;
             color: #fff;
-            font-size: 20px;
+            font-size: 16px;
             position: relative;
             flex-shrink: 0;
         }
@@ -37,7 +37,7 @@
             top: 0;
             width: 0;
             height: 0;
-            border-top: 70px solid transparent;
+            border-top: 40px solid transparent;
             border-right: 20px solid #fff;
         }
 
@@ -54,7 +54,7 @@
             top: 0;
             width: 0;
             height: 0;
-            border-top: 70px solid transparent;
+            border-top: 40px solid transparent;
             border-right: 20px solid #F8FCFD;
         }
 
@@ -64,7 +64,7 @@
 
         .notice-item {
             display: flex;
-            padding: 5px 0px 5px 0px;
+            padding: 10px 20px 10px 20px;
             background-color: #F8FCFD;
             border: 1px solid #fff;
             cursor: pointer;
@@ -76,6 +76,7 @@
 
             &:first-child {
                 margin-top: 0;
+                padding: 10px 20px 10px 20px;
             }
 
             img {
@@ -86,10 +87,11 @@
         }
 
         .notice-content {
-            .header{
+            .header {
                 display: flex;
                 justify-content: space-between;
             }
+
             h4 {
                 color: #00969d;
                 font-size: 16px;

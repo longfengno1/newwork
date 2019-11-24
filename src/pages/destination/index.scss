@@ -374,11 +374,13 @@
 	padding:0 20rem/$fit;
 	margin-top:11rem/$fit;
 }
-.topbannerB{
-	position:relative;
-	text-align:center;
-	height:454rem/$fit;
-	margin-bottom:-110rem/$fit;
+.topbannerB {
+	position: relative;
+	text-align: center;
+	height: 454rem/$fit;
+	margin-bottom: -110rem/$fit;
+	width: 100%;
+	overflow: hidden;
 }
 .topbannerB .intro-ribbonship{
 	background:url(../../images/banner-cover.png) center top no-repeat;

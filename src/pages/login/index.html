@@ -42,14 +42,23 @@
                     <div class="popup-in-txt">
                         <div class="row signin-type">
                             <h2 class="col-sm-6">
-                                <span id='signin-tab-wx' class="signin-type-tab ">微信登录</span>
+                                <span id='signin-tab-wx' class="signin-type-tab " onclick="tabChange(1);">微信登录</span>
                             </h2>
                             <h2 class="col-sm-6">
-                                <span id='signin-tab-mobile'
-                                      class="signin-type-tab current">手机登录/注册</span>
+                                <span id='signin-tab-mobile' class="signin-type-tab current"  onclick="tabChange(2);">手机登录/注册</span>
                             </h2>
-
                         </div>
+                        <script>
+                            function tabChange(t) {
+                                if (t == 1) {
+                                    document.getElementById('signin-mobile').style.display = 'none';
+                                    document.getElementById('signin-wx').style.display = '';
+                                } else {
+                                    document.getElementById('signin-mobile').style.display = '';
+                                    document.getElementById('signin-wx').style.display = 'none';
+                                }
+                            }
+                        </script>
                         <div id='signin-mobile' >
                             <div class="signin-form">
                                 <form>

@@ -2,8 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\pages"
+    "\\src\\pages",
+    "\\src\\pages\\login",
+    "\\src\\pages\\rooms",
+    "\\src\\pages\\xinshoudaolan",
+    "\\src\\pages\\yuleshengyan",
+    "\\src\\pages\\yundongxiuxian"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\pages\\login\\index.js",
   "PreviewInSolutionExplorer": false
 }
