@@ -460,7 +460,7 @@
 
   .userinfo {
     .nick {
-      font-size: 16rem/$fit;
+      font-size: 24rem/$fit;
 
       img {
         width: 100rem/$fit;
@@ -471,7 +471,7 @@
       }
 
       .nickname {
-        font-size: 20rem/$fit;
+        font-size: 24rem/$fit;
         padding-top: 25rem/$fit;
         padding-bottom: 20rem/$fit;
       }
@@ -480,7 +480,7 @@
 
   .desc_content {
     .title {
-      font-size: 36rem/$fit;
+      font-size: 32rem/$fit;
       padding: 26rem/$fit 0 20rem/$fit 0;
     }
   }
