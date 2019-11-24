@@ -15,12 +15,37 @@
     line-height: 40px;
     font-size: 16px;
     padding: 0 18px;
-   
+    position: relative;
+    .opener{
+      position: absolute;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+      display: none;
+      left: 0;
+    }
   }
   li.current{
     background: #00969E;
     color: #fff;
+    .opener{
+      display: block;
+      z-index: 111;
+      .openeritem{
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+      }
+      li{
+        color:#666
+      }
+    }
   }
+  &.current{
+    .timerbox  span{
+        color: #333;
+      }
+    }
   .timerbox{
     display: inline-block;
     height: 32px;
@@ -29,6 +54,7 @@
     padding: 0 20px 0 30px;
     span{
       vertical-align: middle;
+      color: #333;
     }
     
   }
@@ -254,7 +280,7 @@
       height: 160px;
       background: url(../../images/pic1.jpg);
       position: relative;
-
+      overflow: hidden;
       img {
         position: absolute;
         left: 0;
