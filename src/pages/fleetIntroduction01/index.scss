@@ -260,6 +260,7 @@
 	margin-bottom:30rem/$fit;
 	font-size:14rem/$fit;
 	overflow:hidden;
+	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
 }
 .prolist .pic,
 .prolist .pic img{
@@ -487,12 +488,12 @@
 	.section{
 		background:#fff;
 	}
-	.prolist .inner{
-		background:#fff;
-		padding:20rem/$fit 0;
-		margin:0 20rem/$fit;
-		border-top:1px solid #ccc;
-		
+	.prolist .inner {
+		background: #fff;
+		padding: 20rem/$fit 0;
+		margin: 0 20rem/$fit;
+		border-top: 1px solid #ccc;
+		box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3);
 	}
 	.prolist li:first-child .inner{
 		border-top:0;

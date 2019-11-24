@@ -36,7 +36,9 @@
             font-size: 28rem/$fit;
             color: #343E57;
             cursor: pointer;
-            font-weight: 300;
+            /*font-weight: 300;*/
+            width:33%;
+            text-align:center;
         }
 
         .active {
