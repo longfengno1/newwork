@@ -1209,25 +1209,30 @@
 .hotthreadB .item .thread{
 	
 }
-.hotthreadB .item .thread .pic{
+.hotthreadB .item .thread .pic {
 	background: #000;
-	img{
+	img {
 		opacity: 0.6;
 	}
-	.pic_title{
+
+	.pic_title {
 		position: static;
 		padding: 0;
 	}
-	.text-desc{
+
+	.text-desc {
 		position: absolute;
 		left: 0;
-		top:0;
+		top: 0;
 		width: 100%;
 		padding: 60rem/$fit 20rem/$fit 0 20rem/$fit;
 		color: #fff;
 	}
+	.text-desc p{
+		font-size:16rem/$fit;
+		line-height:40rem/$fit;
+	}
 }
-
 /* ================ “邮”记 =================== */
 .custom_container {
 	overflow: hidden;

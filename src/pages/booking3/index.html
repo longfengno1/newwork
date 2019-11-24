@@ -82,10 +82,37 @@
             <div class="room">
               <h4>房间1：海景客房</h4>
               <div class="users">
-                <div class="user-row">
-                  <label for="user1">乘客1</label>
-                  <div class="input-item"><input id='user1' type="text" class="" value="邹泉"><a class="edit">编辑</a></div>
-                </div>
+                  <div class="user-row">
+                      <label for="user1">乘客1</label>
+                      <div class="input-item" id="selectuser1" data-toggle="dropdown"><input id='user1' type="text" class="" value="邹泉"><a class="edit">编辑</a></div>
+                      <style>
+                          .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    font-size:14px;
+}
+                      </style>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="selectuser1" >
+                          <li role="presentation">
+                              <a role="menuitem" tabindex="-1" href="#">Java</a>
+                          </li>
+                          <li role="presentation">
+                              <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+                          </li>
+                          <li role="presentation">
+                              <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
+                          </li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation">
+                              <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+                          </li>
+                      </ul>
+                  </div>
                 <button type="button" class="btn add-user">+添加新乘客</button>
               </div>
             </div>
@@ -240,7 +267,7 @@
             <input type="checkbox" id="inlineCheckbox1" value="option1"><span>800元抵用券</span>
           </div>
           <p class="quan-desc">
-            即日起预订11月3日、10日、17日、12月1日、12月15日出发航次之内舱客房至豪华露台客房可享船票费6折优惠，同一客房第三位乘客免船票费；预定内舱客房或海景客房可享额外立减500元优惠(不适用于11月3日、10日出发航次)，预定露台客房或豪华露台客房可享额外立减800元优惠。
+            即日起预订11月3日、10日、17日、12月1日、12月15日出发航次之内舱客房至豪华露台客房可享船票费6折优惠，同一客房第三位乘客免船票费；预订内舱客房或海景客房可享额外立减500元优惠(不适用于11月3日、10日出发航次)，预订露台客房或豪华露台客房可享额外立减800元优惠。
           </p>
           <div class="check-row">
             <input type="checkbox" id="inlineCheckbox1" value="option1"><span>500元抵用券</span>
@@ -282,7 +309,7 @@
                 </div>
                 <div class="right-bottom">
                   <a href="###">查看详情</a>
-                  <button type="button" class="order-btn" >立即预定</button>
+                  <button type="button" class="order-btn" >立即预订</button>
                 </div>
               </div>
             </div>
@@ -298,7 +325,7 @@
                 </div>
                 <div class="right-bottom">
                   <a href="###">查看详情</a>
-                  <button type="button" class="order-btn">立即预定</button>
+                  <button type="button" class="order-btn">立即预订</button>
                 </div>
               </div>
             </div>
@@ -378,7 +405,7 @@
                 </div>
                 <div class="right-bottom">
                   <a href="###">查看详情</a>
-                  <button type="button" class="order-btn">立即预定</button>
+                  <button type="button" class="order-btn">立即预订</button>
                 </div>
               </div>
             </div>
@@ -410,7 +437,7 @@
                  </div>
                  <div class="right-bottom">
                    <a href="###">查看详情</a>
-                   <button type="button" class="order-btn">立即预定</button>
+                   <button type="button" class="order-btn">立即预订</button>
                  </div>
                </div>
              </div>
@@ -433,7 +460,7 @@
                   </div>
                   <div class="right-bottom">
                     <a href="###">查看详情</a>
-                    <button type="button" class="order-btn">立即预定</button>
+                    <button type="button" class="order-btn">立即预订</button>
                   </div>
                 </div>
               </div>
@@ -456,7 +483,7 @@
                    </div>
                    <div class="right-bottom">
                      <a href="###">查看详情</a>
-                     <button type="button" class="order-btn">立即预定</button>
+                     <button type="button" class="order-btn">立即预订</button>
                    </div>
                  </div>
                </div>
@@ -608,7 +635,7 @@
               <input type="checkbox">800元抵用券
           </div>
           <p class="desc">
-              即日起预订11月3日、10日、17日、12月1日、12月15日出发航次之内舱客房至豪华露台客房可享船票费6折优惠，同一客房第三位乘客免船票费；预定内舱客房或海景客房可享额外立减500元优惠(不适用于11月3日、10日出发航次)，预定露台客房或豪华露台客房可享额外立减800元优惠。
+              即日起预订11月3日、10日、17日、12月1日、12月15日出发航次之内舱客房至豪华露台客房可享船票费6折优惠，同一客房第三位乘客免船票费；预订内舱客房或海景客房可享额外立减500元优惠(不适用于11月3日、10日出发航次)，预订露台客房或豪华露台客房可享额外立减800元优惠。
           </p>
           <div class="check-row">
               <input type="checkbox">500元抵用券
