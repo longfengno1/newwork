@@ -77,8 +77,6 @@ import "../../js/aos";
             }
         };
 
-        //switchbg.init();
-
         ospopover.init();
         window.ospopover = ospopover;
         window.switchbg = switchbg;
