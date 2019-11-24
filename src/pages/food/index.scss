@@ -254,7 +254,7 @@
 .prolist .inner {
 	background: #FBFAF9;
 	padding-bottom: 16rem/$fit;
-	margin-bottom: 30rem/$fit;
+	margin-bottom: 8rem/$fit;
 	font-size: 14rem/$fit;
 	overflow: hidden;
 	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
@@ -327,8 +327,8 @@
 	padding-left: 4px;
 }
 .row {
-	padding-right: -8px;
-	padding-left: -8px;
+	margin-right: -4px;
+	margin-left: -4px;
 }
 .prolistB .inner {
 	/*background:#EFF9F9;*/

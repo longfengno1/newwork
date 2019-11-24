@@ -369,7 +369,7 @@
 	/*margin-bottom:30rem/$fit;*/
 }
 .youlist .protitle{
-	font-size:18rem/$fit;
+	font-size:16rem/$fit;
 	padding:0 20rem/$fit;
 	margin-top:20rem/$fit;
 }
@@ -424,6 +424,9 @@
 	.topbanner_plane .ship{
 		text-align:center;
 	}
+	.prolist .desc {
+		border: 0;
+	}
 	.topbanner_plane .ship img{
 		width:100%;
 		margin-left:-50rem/$fit;
@@ -475,7 +478,15 @@
 		line-height:54rem/$fit;
 		font-size:32rem/$fit;
 	}
-	.topbanner_plane .ship .ship-icon{
+	.section .title {
+		height: .85rem;
+		font-size: .85rem;
+		line-height: .85rem;
+		margin: .8rem;
+		text-align: center;
+		color: #383838;
+	}
+	.topbanner_plane .ship .ship-icon {
 		background: rgba(255, 255, 255, 0.5);
 	}
 	.topbanner_plane .ship-intro:after{
