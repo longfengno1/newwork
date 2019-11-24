@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="hidden-sm">
+        #include('../../common/header.html')
+    </div>
+
+    <header class="my-order-header show-sm">
+        <i class="icon icon-arrowleft"></i>
+        重要通知
+    </header>
+
+    <div id="main" class="main my-order">
+        <div class="left-container hidden-sm">
+            #include('../../common/navbar.html')
+        </div>
+        <div class="right-container">
+            <h3>重要通知</h3>
+            <div class="order-list-wrap">
+                <article class="notice">
+                    <div class="title-row">
+                        <span class="title">预订后可否取消/更改行程? </span>
+                        <span class="time">2019/10/19</span>
+                    </div>
+                    <p class="desc">可以安排，需另行收费。详情请参阅行程更改条款或行程</p>
+                </article>
+                <article class="notice">
+                    <div class="title-row">
+                        <span class="title">预订后可否取消/更改行程? </span>
+                        <span class="time">2019/10/19</span>
+                    </div>
+                    <p class="desc">可以安排，需另行收费。详情请参阅行程更改条款或行程</p>
+                </article>
+                <article class="notice">
+                    <div class="title-row">
+                        <span class="title">预订后可否取消/更改行程? </span>
+                        <span class="time">2019/10/19</span>
+                    </div>
+                    <p class="desc">可以安排，需另行收费。详情请参阅行程更改条款或行程</p>
+                </article>
+                <article class="notice">
+                    <div class="title-row">
+                        <span class="title">预订后可否取消/更改行程? </span>
+                        <span class="time">2019/10/19</span>
+                    </div>
+                    <p class="desc">可以安排，需另行收费。详情请参阅行程更改条款或行程</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    #include('../../common/footer.html')
+
+</body>
+
+</html>
