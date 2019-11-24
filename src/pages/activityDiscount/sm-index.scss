@@ -60,7 +60,9 @@
             font-size: 28rem/$fit;
             color: #666666;
             cursor: pointer;
-            font-weight: 300;
+            /*font-weight: 300;*/
+            width:33%;
+            text-align:center;
         }
 
         .icon-arrowdown {

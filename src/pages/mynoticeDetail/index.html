@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    <div class="hidden-sm">
+        #include('../../common/header.html')
+    </div>
+
+    <header class="my-order-header show-sm">
+        <i class="icon icon-arrowleft"></i>
+        重要通知
+    </header>
+
+    <div id="main" class="main my-order hidden-sm">
+        <div class="left-container">
+            #include('../../common/navbar.html')
+        </div>
+        <div class="right-container">
+            <div class="bread-crumb">
+                <span class="item">个人中心</span>
+                <span class="split">-</span>
+                <span class="item">重要通知</span>
+                <span class="split">-</span>
+                <span class="item selected">内容详情</span>
+            </div>
+            <div class="order-list-wrap" id="my-card-container">
+                <div class="title">关于探索梦号9月26日航次航程调整的通知</div>
+                <p class="content">尊敬的旅客：<br>
+                    我们非常抱歉地通知您，因航程调整，「探索梦号」2019年9月26日（周四）从上海出发之五天四晚日本大阪（神户）之旅将改为四晚日本福冈之旅。<br>
+                    星梦邮轮挚诚用心为您缔造难忘旅程──福冈是一座富有经典日式风格的都市，无论是自然风光、休闲娱乐、美味佳肴，还是历史底蕴，都能让您在本次旅程中发现这座城市不为人知的独特魅力。欢迎您参与我们精心规划的岸上观光团一同领略福冈的迷人风情！<br>
+                    我们非常期待在「探索梦号」与您见面。对于此行程变更给您造成的不便，我们深感抱歉。<br>
+                    具体行程变更如下</p>
+                <table class="order-list">
+                    <thead>
+                        <tr>
+                            <th>日期</th>
+                            <th>港口</th>
+                            <th>抵港时间</th>
+                            <th>离港时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2019年10月17日(周四)</td>
+                            <td>上海</td>
+                            <td>08:00</td>
+                            <td>14:00</td>
+                        </tr>
+                        <tr>
+                            <td>2019年10月17日(周四)</td>
+                            <td>上海</td>
+                            <td>08:00</td>
+                            <td>14:00</td>
+                        </tr>
+                        <tr>
+                            <td>2019年10月17日(周四)</td>
+                            <td>上海</td>
+                            <td>08:00</td>
+                            <td>14:00</td>
+                        </tr>
+                        <tr>
+                            <td>2019年10月17日(周四)</td>
+                            <td>上海</td>
+                            <td>08:00</td>
+                            <td>14:00</td>
+                        </tr>
+                        <tr>
+                            <td>2019年10月17日(周四)</td>
+                            <td>上海</td>
+                            <td>08:00</td>
+                            <td>14:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="bottom-content">有关条款及细则详情，请参考行程的订位确认单。</p>
+                <div class="sign-row">
+                    <div class="sign">
+                        <p class="name">星梦邮轮</p>
+                        <p class="time">2019/10/15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-order-sm show-sm">
+        <p class="title">关于探索梦号9月26日航次航程调整的通知</p>
+        <div class="desc">
+           <span><i class="icon-view"></i>2908 发布时间：2019/10/02</span>
+        </div>
+        <p class="content">尊敬的旅客：<br>
+            我们非常抱歉地通知您，因航程调整，「探索梦号」2019年9月26日（周四）从上海出发之五天四晚日本大阪（神户）之旅将改为四晚日本福冈之旅。<br>
+            星梦邮轮挚诚用心为您缔造难忘旅程──福冈是一座富有经典日式风格的都市，无论是自然风光、休闲娱乐、美味佳肴，还是历史底蕴，都能让您在本次旅程中发现这座城市不为人知的独特魅力。欢迎您参与我们精心规划的岸上观光团一同领略福冈的迷人风情！<br>
+            我们非常期待在「探索梦号」与您见面。对于此行程变更给您造成的不便，我们深感抱歉。<br>
+            具体行程变更如下：</p>
+            <img src="../../images/notice-table.png" alt="">
+            <p class="content-bottom">有关条款及细则详情，请参考行程的订位确认单。</p>
+            <div class="sign-row">
+                <div class="sign">
+                    <p class="name">星梦邮轮</p>
+                    <p class="time">2019/10/15</p>
+                </div>
+            </div>
+    </div>
+
+    #include('../../common/footer.html')
+
+</body>
+
+</html>
