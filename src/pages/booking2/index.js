@@ -80,7 +80,10 @@ import './index.scss';
     $(".next").click(function () { $(".login").show(); });
 
   $(".detail").click(function(){
-    $(".mark").show();
+    $(".layerout1").show();
+  });
+  $("#modfiy-date").click(function(){
+    $(".layerout2").show();
   });
     $(".mark").click(function () {
         $(".mark").hide();
