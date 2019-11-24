@@ -332,22 +332,41 @@
   
 }
 .sm-main{
+  
+  .travelslist .nick{
+    position: absolute;
+    height: 80rem/$fit;
+    top:32rem/$fit;
+    left: 20rem/$fit;
+    .nickname{
+      font-size:24rem/$fit;
+    }
+    img{
+      height: 80rem/$fit;
+      width: 80rem/$fit;
+    }
+  }
+  .travelslist .userinfo .timer{
+    position: absolute;
+    top:48rem/$fit;
+    right: 20rem/$fit;
+  }
   .travelslist ul{
     padding: 0 32rem/$fit;
   }
   .travelslist li {
-    padding: 32rem/$fit 0;
+    padding: 132rem/$fit 20rem/$fit 80rem/$fit 20rem/$fit;
     position: relative;
     border: 0;
-    border-bottom: 1px solid #D8D8D8;
     margin: 0;
-    box-shadow: none;
+    margin-bottom: 20rem/$fit;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
     height: auto;
     
   }
 
   .travelslist .pic {
-    height: auto;
+    height: 386rem/$fit;
     width: 100%;
     overflow: hidden;
     padding-left:0;
@@ -355,8 +374,8 @@
   }
 
   .travelslist .pic img {
-    height: auto;
     width: 100%;
+    height: auto;
   }
   .travelslist .userinfo {
     display: block;
@@ -378,9 +397,10 @@
     display: none;
   }
   .travelslist .proinfo .title{
-    margin: 0 0 20rem/$fit 0;
+    margin: 20rem/$fit 0;
     font-size: 30rem/$fit;
-    line-height: 28rem/$fit;
+    line-height: 1;
+    color: #383838;
   }
   .travelslist .prominfop{
     font-size: 24rem/$fit;
@@ -394,17 +414,38 @@
     line-clamp: 2;
     -webkit-box-orient: vertical;
   }
+  .travelslist .userinfo .good,
+  .travelslist .userinfo .view{
+    background: none;
+    padding: 0;
+    position: absolute;
+    bottom: 32rem/$fit;
+    margin: 0;
+  }
+  .travelslist .userinfo .good{
+    right: 150rem/$fit;
+  }
+  .travelslist .userinfo .view{
+    right: 20rem/$fit;
+  }
   .travelslist .pic .tagsbox{
     position: absolute;
     width: 100%;
-    height: 50rem/$fit;
+    height: 150rem/$fit;
     line-height: 50rem/$fit;
     color: #fff;
     font-size: 16rem/$fit;
-    background: rgba(0,150,158,0.50);
+    background: none;
     bottom: 0;
     left: 0;
     padding: 0 30rem/$fit;
+    padding-top:100rem/$fit;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.00) 20%, rgba(0,0,0,0.60) 70%);
+    .box{
+      float: left;
+      margin-right: 30rem/$fit;
+      font-size: 24rem/$fit;
+    }
   }
   .btn-style1{
     font-size: 16rem/$fit;
