@@ -1845,6 +1845,9 @@ b {
 		background-size: 100%;
 	}
 }
+.ships-slide .slick-dots{
+	display:none;
+}
 
 /* 大屏幕 */
 @media (min-width: 1200px) {
@@ -1862,6 +1865,10 @@ b {
 
 /* 横向放置的手机和竖向放置的平板之间的分辨率 */
 @media (max-width: 767px) {
+	.ships-slide .slick-dots{
+		top:580rem/$fit;
+		bottom: auto;
+	}
 	.left-select-ship {
 		display: none;
 	}
@@ -1971,7 +1978,7 @@ b {
 .show-sm {
 	.fixed_plane {
 		bottom: auto;
-		top:300rem/$fit;
+		top:600rem/$fit;
 		.fixed_plane_inner {
 			.service .pop{
 				display: block;
@@ -2002,7 +2009,36 @@ b {
 					text-align: center;
 					padding-top: 4rem/$fit;
 				}
+				&:hover{
+					text-decoration: none;
+					.pop{
+						top:auto;
+					}
+				}
 			}
+		}
+	}
+}
+
+
+.slick-dots{
+	position: absolute !important;
+	left: 50%;
+	bottom: 10rem/$fit;
+	transform: translateX(-50%);
+	li{
+		float: left;
+		background: #ccc;
+		width: 22rem/$fit !important;
+		height: 22rem/$fit;
+		border-radius: 50%;
+		margin-right: 20rem/$fit;
+		border: 1px solid #fff;
+	&.slick-active{
+		background: #00969E;
+	}
+		button{
+			display: none;
 		}
 	}
 }

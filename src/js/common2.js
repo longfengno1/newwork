@@ -50,8 +50,9 @@ import '../css/global2.scss';
             var elm = $(this).offset();
             var w = $(this).find("a").width();
             var h = $(this).find("a").height()
-            var x = touch.pageX - w/2;
-            var y = touch.pageY - h/2;
+            var x = touch.clientX - w/2;
+            var y = touch.clientY - h/2;
+            
             $(this).css('left', x+'px');
             $(this).css('top', y+'px');
             
