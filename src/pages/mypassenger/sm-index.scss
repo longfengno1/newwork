@@ -1,0 +1,116 @@
+@import '../../css/variables.scss';
+
+@media (max-width: 767px) {
+    body {
+        background-color: #F8F8F8 !important;
+        font-family: Helvetica;
+    }
+
+    .my-order{
+        display: none !important;
+    }
+
+    .my-order-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #00969E;
+        height: 88rem/$fit;
+        color: #ffffff;
+        font-size: 32rem/$fit;
+        color: #F0F0F0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    .icon {
+        position: absolute;
+        left: 37rem/$fit;
+        font-size: 40rem/$fit;
+        cursor: pointer;
+    }
+    .del {
+        position: absolute;
+        right: 32rem/$fit;
+        font-size: 28rem/$fit;
+        color: #F0F0F0;
+    }
+}
+
+.my-order-sm {
+    width: 100vw;
+    margin-top: 88rem/$fit;
+   .order-card{
+       width: 100vw;
+       height: 310rem/$fit;
+       padding: 32rem/$fit;
+       background-color: #ffffff;
+       margin-bottom: 24rem/$fit;
+       .title{
+           display: flex;
+           align-items: center;
+           flex-wrap: nowrap;
+            margin-bottom: 8rem/$fit;
+       }
+       .line{
+           font-size: 30rem/$fit;
+           color: #383838;
+       }
+       .num{
+           font-size: 24rem/$fit;
+           color: #00969E;
+           margin-left: 20rem/$fit;
+       }
+       
+
+       .desc{
+           font-size: 24rem/$fit;
+           color: #6D6D6D;
+           line-height: 38rem/$fit;
+       }
+       
+
+       .operation{
+           display: inline-block;
+           height: 54rem/$fit;
+           line-height: 54rem/$fit;
+           width: 148rem/$fit;
+           border-radius: 27rem/$fit;
+           border: 1px solid #E0E0E0;
+           font-size: 24rem/$fit;
+           color: #6D6D6D;
+           text-align: center;
+           margin-right: 24rem/$fit;
+           &:last-child{
+               margin-right:0;
+           }
+       }
+
+       .operations {
+           text-align: right;
+            margin-top: 24rem/$fit;
+           .pay {
+               border-color: #00969E;
+               color: #00969E;
+           }
+       }
+
+       .common{
+           width: 200rem/$fit;
+           border: 1px solid #00969E;
+           color: #00969E;
+           float: left;
+       }
+
+       .selected{
+           float: left;
+           color: #A05EB5;
+           border: none;
+           text-align: left;
+       }
+   }
+  
+}
+

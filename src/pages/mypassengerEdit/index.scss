@@ -1,0 +1,161 @@
+@import '../../css/variables.scss';
+@import '../../css/navbar.scss';
+@import './sm-index.scss';
+
+body {
+    background-color: #f7fcfc;
+}
+
+.my-order {
+    padding: 19rem/$fit 0 200rem/$fit;
+    width: 1200rem/$fit;
+    display: flex;
+
+    .left-container {
+        width: 210rem/$fit;
+        margin-right: 20rem/$fit;
+    }
+
+    .right-container {
+        width: 940rem/$fit;
+        font-family: Helvetica;
+    }
+
+    .bread-crumb {
+        display: flex;
+        align-items: center;
+        font-size: 14rem/$fit;
+        color: #6D6D6D;
+        margin-bottom: 22rem/$fit;
+
+        .item {
+            cursor: pointer;
+        }
+
+        .selected {
+            cursor: default;
+            color: #343E57;
+        }
+
+        .split {
+            margin: 0 4rem/$fit;
+        }
+    }
+
+    .edit-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 940px;
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 20px;
+            color: #343E57;
+        }
+
+        a {
+            font-size: 14px;
+            color: #666666;
+            cursor: pointer;
+        }
+    }
+
+    .edit-form {
+        width: 940px;
+        background-color: #ffffff;
+        padding: 30px 32px;
+
+        label {
+            margin: 0;
+            margin-bottom: 14px;
+            font-size: 14px;
+            color: #666666;
+
+            span {
+                color: red;
+            }
+        }
+
+        .input-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            span {
+                font-size: 12px;
+                color: #343E57;
+            }
+        }
+
+        .input-text {
+            height: 54px;
+            line-height: 54px;
+            background: #FFFFFF;
+            border: 1px solid #D0D7DF;
+            border-radius: 2px;
+            font-size: 16px;
+            color: #343E57;
+            padding-left: 20px;
+        }
+
+        .long {
+            width: 530px;
+        }
+
+        .short {
+            width: 260px;
+        }
+
+        .radio {
+            margin-right: 8px;
+        }
+
+        .mr10 {
+            margin-right: 10px;
+        }
+
+        .mr102 {
+            margin-right: 102px;
+        }
+
+        .mr45 {
+            margin-right: 45px;
+        }
+
+        .checkbox {
+            margin-right: 12px;
+        }
+
+        .btns {
+            text-align: right;
+            margin-top: 18px;
+            margin-bottom: 16px;
+        }
+
+        .cancel,
+        .save {
+            width: 128px;
+            height: 50px;
+            display: inline-block;
+            font-size: 16px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+
+        .cancel {
+            color: #343E57;
+            border: 1px solid #D0D7DF;
+            background-color: #ffffff;
+            margin-right: 20px;
+        }
+
+        .save {
+            color: #ffffff;
+            border: 1px solid #00969E;
+            background-color: #00969E;
+        }
+    }
+
+}
