@@ -23,23 +23,23 @@ const webpackConfigProd = {
         publicPath: './',
     },
     devtool: 'none',
-    optimization: {
-        splitChunks: {
-            minSize: 0,
-            minChunks: 1,
-            maxAsyncRequests: 50,
-            maxInitialRequests: 30,
-            name: true,
-            cacheGroups: {
-                vendors: {
-                    test: /[\\/]node_modules[\\/]/,
-                    priority: -1,
-                    chunks: 'all',
-                    name: 'vendors'
-                },
-            }
-        }
-    },
+    // optimization: {
+    //     splitChunks: {
+    //         minSize: 0,
+    //         minChunks: 1,
+    //         maxAsyncRequests: 50,
+    //         maxInitialRequests: 30,
+    //         name: true,
+    //         cacheGroups: {
+    //             vendors: {
+    //                 test: /[\\/]node_modules[\\/]/,
+    //                 priority: -1,
+    //                 chunks: 'all',
+    //                 name: 'vendors'
+    //             },
+    //         }
+    //     }
+    // },
     plugins: [
         //删除dist目录
         new cleanWebpackPlugin({

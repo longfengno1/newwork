@@ -258,3 +258,10 @@
   content: "\e94c";
 }
 
+
+@font-face {
+  font-family: 'SourceHanSans1';
+  src:url('http://font.d4-1.com/SourceHanSans-Medium.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

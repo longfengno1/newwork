@@ -52,7 +52,7 @@ module.exports = {
         rules: [...rules],
     },
     plugins: [
-        ...happyConfig,
+        // ...happyConfig,
         // 全局暴露统一入口
         new webpack.ProvidePlugin({
             $: 'jquery',

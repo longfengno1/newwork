@@ -22,8 +22,7 @@ const rules = [{
 	},
 	{
 		test: /\.js$/,
-		include: [resolve("../src")],
-		use: ["happypack/loader?id=js-loader"],
+		use: ["babel-loader"],
 		// 不检查node_modules下的js文件
 		exclude: "/node_modules/"
 	}, {
@@ -41,7 +40,7 @@ const rules = [{
 		}]
 	},
 	{
-		test: /\.(woff|svg|eot|ttf)\??.*$/,
+		test: /\.(woff|svg|eot|ttf|ttc)\??.*$/,
 		include: [resolve('../src/font')],
 		loader: 'url-loader?name=font/[name].[ext]',
 	},
