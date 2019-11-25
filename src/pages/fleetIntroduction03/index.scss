@@ -400,6 +400,9 @@
 		position:relative;
 		margin-top:30rem/$fit;
 	}
+	.prolist .desc {
+		border: 0;
+	}
 	.fleetintro{
 		width:100%;
 		overflow:hidden;
@@ -487,9 +490,19 @@
 	.section{
 		background:#fff;
 	}
+	.section .title {
+		/*height: .85rem;*/
+		font-size: .7rem;
+		line-height: .85rem;
+		/*margin: .8rem;*/
+		text-align: center;
+		color: #383838;
+		background-color: #eee;
+		padding: .4rem .4rem .4rem .4rem;
+	}
 	.prolist .inner {
 		background: #fff;
-		padding: 20rem/$fit 0;
+		padding: 10rem/$fit 0;
 		margin: 0 20rem/$fit;
 		border-top: 1px solid #ccc;
 		box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3);
@@ -582,7 +595,7 @@
 		margin-top:-85rem/$fit;
 	}
 	.sm-youlist-wraper .title{
-		text-align:left;
+		text-align:center;
 		font-size:30rem/$fit;
 		color:#383838;
 		padding-left:20rem/$fit;
@@ -594,6 +607,7 @@
 		overflow:scroll;
 		overflow-y:hidden;
 	}
+
 	.sm-youlist-wraper .youlist{
 		position:absolute;
 		height:460rem/$fit;

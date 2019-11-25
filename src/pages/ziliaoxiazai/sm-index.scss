@@ -61,7 +61,9 @@
       font-size: 28rem/$fit;
       color: #666666;
       cursor: pointer;
-      font-weight: 300;
+      /*font-weight: 300;*/
+      width:100%;
+      text-align:center;
     }
 
     .icon-arrowdown {
@@ -83,7 +85,7 @@
     width: 100vw;
     padding-left: 30rem/$fit;
     display: flex;
-    padding: 32rem/$fit 0 0;
+    padding: 10rem/$fit 0 0;
     flex-wrap: nowrap;
   }
 
@@ -92,11 +94,11 @@
     font-weight: 300;
 
     &:first-child {
-      padding: 0 15rem/$fit 0 30rem/$fit;
+      padding: 0 5rem/$fit 0 10rem/$fit;
     }
 
     &:last-child {
-      padding: 0 30rem/$fit 0 15rem/$fit;
+      padding: 0 10rem/$fit 0 5rem/$fit;
     }
 
     img {
@@ -120,7 +122,7 @@
     }
 
     .desc {
-      font-size: 16rem/$fit;
+      font-size: 20rem/$fit;
       color: #6D6D6D;
       line-height: 34rem/$fit;
       overflow: hidden;

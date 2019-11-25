@@ -93,11 +93,11 @@
         width: 50%;
         /*font-weight: 300;*/
         &:first-child {
-            padding: 0 4rem/$fit 0 32rem/$fit;
+            padding: 0 5rem/$fit 0 15rem/$fit;
         }
 
         &:last-child {
-            padding: 0 32rem/$fit 0 4rem/$fit;
+            padding: 0 15rem/$fit 0 5rem/$fit;
         }
 
         img {
@@ -121,7 +121,7 @@
         }
 
         .desc {
-            font-size: 16rem/$fit;
+            font-size: 20rem/$fit;
             color: #6D6D6D;
             line-height: 34rem/$fit;
             overflow: hidden;

@@ -37,8 +37,8 @@
             color: #343E57;
             cursor: pointer;
             /*font-weight: 300;*/
-            width:33%;
-            text-align:center;
+            width: 33%;
+            text-align: center;
         }
 
         .active {
@@ -56,7 +56,7 @@
         width: auto;
         display: flex;
         margin: 0 24rem/$fit;
-        padding: 24rem/$fit 0;
+        padding: 10rem/$fit 0;
         border-bottom: 1rem/$fit solid #CCCCCC;
     }
 
@@ -90,7 +90,7 @@
 
     .area, .people {
         margin-top: 12rem/$fit;
-        font-size: 16rem/$fit;
+        font-size: 20rem/$fit;
         color: #6D6D6D;
         font-weight: 300;
     }
@@ -100,7 +100,7 @@
     .cshd-img1 {
         background: url(../../images/hd1.jpg) no-repeat center;
         width: 294rem/$fit;
-        height: 220rem/$fit;
+        height: 165rem/$fit;
         position: relative;
         flex-shrink: 0;
 
@@ -118,7 +118,7 @@
     .cshd-img2 {
         background: url(../../images/hd2.jpg) no-repeat center;
         width: 294rem/$fit;
-        height: 220rem/$fit;
+        height: 165rem/$fit;
         position: relative;
         flex-shrink: 0;
 
@@ -136,7 +136,7 @@
     .cshd-img3 {
         background: url(../../images/hd3.jpg) no-repeat center;
         width: 294rem/$fit;
-        height: 220rem/$fit;
+        height: 165rem/$fit;
         position: relative;
         flex-shrink: 0;
 
@@ -154,7 +154,7 @@
     .cshd-img4 {
         background: url(../../images/hd4.jpg) no-repeat center;
         width: 294rem/$fit;
-        height: 220rem/$fit;
+        height: 165rem/$fit;
         position: relative;
         flex-shrink: 0;
 
@@ -172,7 +172,7 @@
     .cshd-img5 {
         background: url(../../images/hd1.jpg) no-repeat center;
         width: 294rem/$fit;
-        height: 220rem/$fit;
+        height: 165rem/$fit;
         position: relative;
         flex-shrink: 0;
 
@@ -190,7 +190,7 @@
     .cshd-img6 {
         background: url(../../images/hd2.jpg) no-repeat center;
         width: 294rem/$fit;
-        height: 220rem/$fit;
+        height: 165rem/$fit;
         position: relative;
         flex-shrink: 0;
 

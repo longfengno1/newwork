@@ -280,10 +280,11 @@
 	overflow:hidden;
 	padding:0 16rem/$fit ;
 }
-.prolist .infos .item{
-	width:80%;
-	float:left;
-	line-height:28rem/$fit;
+.prolist .infos .item {
+	font-size: 12rem/$fit;
+	width: 80%;
+	float: left;
+	line-height: 28rem/$fit;
 }
 .probanner{
 	position:relative;
@@ -396,7 +397,7 @@
 .filter_plane li{
 	height:36rem/$fit;
 	float:left;
-	font-size:20rem/$fit;
+	font-size:16rem/$fit;
 	
 	padding:0 12rem/$fit;
 	margin-right:20rem/$fit;
@@ -421,7 +422,7 @@
 }
 .prolistD li .inner{
 	padding-left:466rem/$fit;
-	padding-right:90rem/$fit;
+	padding-right:40rem/$fit;
 	background:none;
 }
 .prolistD li .pic{
@@ -436,7 +437,7 @@
 	height:234rem/$fit;
 }
 .prolistD .protitle{
-	font-size:20rem/$fit;
+	font-size:18rem/$fit;
 	text-align:left;
 	margin:0;
 }
@@ -445,7 +446,7 @@
 	border:0;
 	margin:0;
 	margin-top:20rem/$fit;
-	font-size:16rem/$fit;
+	font-size:14rem/$fit;
 	line-height:28rem/$fit;
 }
 .prolistD .infos{

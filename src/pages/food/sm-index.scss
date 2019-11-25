@@ -40,8 +40,8 @@
         width: 100vw;
         box-shadow: 0 4rem/$fit 8rem/$fit 0 rgba(0, 0, 0, 0.05);
         border-radius: 8rem/$fit 8rem/$fit 0 0;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        /*overflow-x: scroll;
+        overflow-y: hidden;*/
         white-space: nowrap;
 
         &::-webkit-scrollbar {
@@ -61,8 +61,29 @@
             color: #666666;
             cursor: pointer;
             /*font-weight: 300;*/
-            width: 33%;
+            width: 33.33%;
             text-align: center;
+            position: relative;
+
+            .opener {
+                position: absolute;
+                width: 100%;
+                background: #fff;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+                left: 0;
+                display: none;
+            }
+
+            &.active {
+                .opener {
+                    display: block;
+
+                    li {
+                        text-align: center;
+                        color: #666666;
+                    }
+                }
+            }
         }
 
         .icon-arrowdown {
@@ -84,20 +105,22 @@
         width: 100vw;
         padding-left: 30rem/$fit;
         display: flex;
-        padding: 32rem/$fit 0 0;
+        padding: 10rem/$fit 0 0;
         flex-wrap: nowrap;
     }
+
+
 
     .food-item {
         width: 50%;
         font-weight: 300;
 
         &:first-child {
-            padding: 0 15rem/$fit 0 30rem/$fit;
+            padding: 0 5rem/$fit 0 10rem/$fit;
         }
 
         &:last-child {
-            padding: 0 30rem/$fit 0 15rem/$fit;
+            padding: 0 10rem/$fit 0 5rem/$fit;
         }
 
         img {
@@ -121,7 +144,7 @@
         }
 
         .desc {
-            font-size: 16rem/$fit;
+            font-size: 20rem/$fit;
             color: #6D6D6D;
             line-height: 34rem/$fit;
             overflow: hidden;
