@@ -49,6 +49,14 @@
 	font-size: 14px;
 	color: #20969A;
 }
+.col-4 {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.row {
+	margin-right: -5px;
+	margin-left: -5px;
+}
 .crumb a:hover{
 	text-decoration:none;
 }
@@ -250,23 +258,24 @@
 .prowraper{
 	width:1140px
 }
-.prolist .inner{
+.prolist .inner {
 	background: #FBFAF9;
-	padding-bottom:16px;
-	margin-bottom:10px;
-	font-size:14px;
-	overflow:hidden;
+	padding-bottom: 16px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	overflow: hidden;
+	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
 }
 .prolist .pic,
 .prolist .pic img{
-	width:360px;
+	width:100%;
 }
 .prolist .pic{
 	height:200px;
 	overflow:hidden;
 }
 .prolist .protitle{
-	font-size:20px;
+	font-size:18px;
 	line-height:32px;
 	text-align:center;
 }
@@ -563,7 +572,7 @@
 	margin-left:-152px;
 	font-size: 16px;
 	color: #343E57;
-	letter-spacing: 2.77px;
+	/*letter-spacing: 2.77px;*/
 	text-align: center;
 }
 .filter_planeB li a{
