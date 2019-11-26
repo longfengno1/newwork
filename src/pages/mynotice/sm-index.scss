@@ -14,8 +14,9 @@
         display: none;
     }
 
+
     .my-order {
-        margin-top: 88rem/$fit;
+        /*margin-top: 88rem/$fit;*/
         width: 100vw;
 
         .notice {
@@ -25,7 +26,12 @@
             margin-bottom: 24rem/$fit !important;
         }
 
-        .desc{
+        .title {
+            font-size: 28rem/$fit;
+        }
+
+        .desc {
+            font-size: 20rem/$fit;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;

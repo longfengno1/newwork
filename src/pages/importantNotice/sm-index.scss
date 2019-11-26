@@ -24,14 +24,22 @@
     }
 
     .title {
-        font-size: 0.75rem;
+        font-size: 28rem/$fit;
+        color: #00969E;
+        
+    }
+
+    .time {
+        font-size: 20rem/$fit;
+        color: #00969E;
     }
 
     .notice-list {
-        position: relative;
+        /*position: relative;
         margin-top: 0.75rem;
         border-radius: 0.2rem;
-        padding-top: 1rem;
+        padding-top: 1rem;*/
+        padding: 0.8rem;
         background-color: #fff;
 
         &::after {
@@ -70,14 +78,14 @@
         .notice-content {
             h4 {
                 color: #00969d;
-                font-size: 20rem/$fit;
+                font-size: 28rem/$fit;
                 margin-bottom: 10rem/$fit;
             }
 
             .tips {
                 color: #666;
-                font-size: 16rem/$fit;
-                line-height: 30rem/$fit;
+                font-size: 20rem/$fit;
+                line-height: 40rem/$fit;
                 margin-top: 8rem/$fit;
             }
         }

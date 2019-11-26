@@ -379,6 +379,8 @@
 	text-align:center;
 	height:454px;
 	margin-bottom:-110px;
+	width:100%;
+	overflow:hidden;
 }
 .topbannerB .intro-ribbonship{
 	background:url(../../images/banner-cover.png) center top no-repeat;
@@ -581,43 +583,43 @@
 	color:#00969E;
 }
 //@at-root
-.xxzz{
+.aboutus-main {
 	width: 100%;
-	height:2000px;  
-	position: relative; 
+	/*height: 2000px;*/
+	position: relative;
 	margin-top: 30px;
 }
 .pic{
 	width:422px;
 	height:380px;
 }
-.ww1q{
-	width:708px;
-	height:380px;
+.q1 {
+	width: 708px;
+	height: 380px;
 	background: #FFFFFF;
 	box-shadow: 0 7px 15px 0 rgba(0,0,0,0.15);
 	position: relative;
 	position: absolute;
-	top:0px;
-	left:500px;
+	top: 0px;
+	left: 11.5rem;
+
+	.title {
+		color: #00969E;
+		font-size:20rem/$fit;
+	}
 }
 .xxzz1{
 	position: absolute;
 	top:49px;
 	left:110px;
-	font-family: MEllePRC-Medium;
 	font-size: 20px;
 	color: #00969E; 
 }
-.desc{
-	position: absolute;
-	top:80px;
-	left:110px;
-	right:45px;
-	font-family: MEllePRC-Medium;
-	font-size: 16px;
+.desc {
+	font-size: 16rem/$fit;
 	color: #343E57;
-	line-height: 28px;
+	line-height: 30rem/$fit;
+	margin:1rem 1rem 1rem 1rem;
 }
 .xxzz2{
 	background: rgba(153,214,234,0.10);
@@ -637,12 +639,10 @@
 	position: absolute;
 	left:635px;
 	top:512px;
-	font-family: MEllePRC-Medium;
 	font-size: 20px;
 	color: #00969E;
 }
 .desc1{
-	font-family: MEllePRC-Medium;
 	font-size: 16px;
 	color: #343E57;
 	line-height: 28px;
