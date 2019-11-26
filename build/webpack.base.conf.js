@@ -1,20 +1,16 @@
 const path = require('path');
 const webpack = require('webpack');
 const glob = require('glob');
-// html模板
 const htmlWebpackPlugin = require('html-webpack-plugin');
-//静态资源输出
-const copyWebpackPlugin = require('copy-webpack-plugin');
 const rules = require('./webpack.rules.conf.js');
 const isProd = (process.env.NODE_ENV === 'production');
 const happyConfig = require('./happypack.conf');
-// 获取html-webpack-plugin参数的方法
 let getHtmlConfig = function (name, chunks) {
     return {
         template: `./src/pages/${name}/index.html`,
         filename: `${name}.html`,
         hash: false, //开启hash  ?[hash]
-        chunks: isProd ? ['vendors', ...chunks] : chunks,
+        chunks:['commons', ...chunks],
         // 关闭
         minify: {
             collapseWhitespace: true,
@@ -26,7 +22,8 @@ let getHtmlConfig = function (name, chunks) {
             "format-detection": "telephone=no",
             "full-screen": "yes",
             "x5-fullscreen": "true"
-        }
+        },
+        inject: true,
     };
 };
 
@@ -50,6 +47,18 @@ module.exports = {
     entry: entrys,
     module: {
         rules: [...rules],
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    chunks: 'initial',
+                    minChunks: 2,
+                    minSize: 0,
+                    name: 'commons'
+                }
+            }
+        }
     },
     plugins: [
         // ...happyConfig,
