@@ -1,9 +1,9 @@
 @import '../../css/variables.scss';
 
 .sm-food {
-  min-height: 100vh;
   width: 100vw;
   position: relative;
+
   .header {
     z-index: 2;
     position: fixed;
@@ -72,7 +72,8 @@
       color: #00969E;
       position: relative;
     }
-    .active:after{
+
+    .active:after {
       content: "";
       position: absolute;
       width: 50rem/$fit;
@@ -84,85 +85,154 @@
     }
   }
 
-  .info {
-    overflow-y: scroll;
-    padding-top:88rem/$fit;
-    h2{
-      font-size: 28rem/$fit;
-      color: #383838;
-    }
-    .infotime{
-      font-size: 22rem/$fit;;
-      color: #999999;
-      text-align: right;
-    }
-    h4{
-      font-size: 26rem/$fit;
-      margin: 24rem/$fit 0 6rem/$fit 0;
-    }
-    p{
-      font-size: 26rem/$fit;
-      line-height: 40rem/$fit;
-      margin: 0;
-    }
-    img{
-      width: 100%;
-      padding: 10rem/$fit 0;
-    }
+}
+
+/* 大屏幕 */
+@media (min-width: 1200px) {}
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979rem/$fit) {}
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+  .list {
+    width: auto;
+    min-height: auto;
+    padding-top: 88rem/$fit;
   }
 
-  .food-row {
-    width: 100vw;
-    padding-left: 30rem/$fit;
-    display: flex;
-    padding: 32rem/$fit 0 0;
-    flex-wrap: nowrap;
+  .mediacenter_wraper {
+    margin: 0;
+    width: 100%;
   }
 
-  .food-item {
-    width: 50%;
-    font-weight: 300;
-
-    &:first-child {
-      padding: 0 15rem/$fit 0 30rem/$fit;
-    }
-
-    &:last-child {
-      padding: 0 30rem/$fit 0 15rem/$fit;
-    }
-
-    img {
-      width: 100%;
-      height: 185rem/$fit;
-    }
-
-    .wrap {
-      border: 1rem/$fit solid #E5E5E5;
-    }
-
-    .content {
-      padding: 16rem/$fit 16rem/$fit 0;
-      height: 130rem/$fit;
-    }
+  .mediadetail {
+    background: none;
+    padding: 28rem/$fit 32rem/$fit;
 
     .title {
-      font-size: 28rem/$fit;
-      color: #383838;
-      line-height: 28rem/$fit;
+      display: none;
     }
 
-    .desc {
-      font-size: 16rem/$fit;
-      color: #6D6D6D;
-      line-height: 34rem/$fit;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      line-clamp: 2;
-      -webkit-box-orient: vertical;
-      margin-top: 10rem/$fit;
+    .subtitle {
+      display: none;
+    }
+
+    .tablestyle {
+      width: 100%;
+      margin: 0;
+
+      td,
+      th {
+        height: 60rem/$fit;
+        font-size: 22rem/$fit;
+        color: #999999;
+      }
+
+      th {
+        font-size: 26rem/$fit;
+        color: #fff;
+      }
+
+      .t-subtitle {
+        font-size: 24rem/$fit;
+        color: #FFFFFF;
+      }
     }
   }
 
+  .mediacenter_wraper .mediacenter_left {
+    width: 100%;
+    background: none;
+    margin: 0;
+    padding: 19rem/$fit 40rem/$fit;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    .timer_title {
+      display: none;
+    }
+    
+    li {
+      display: inline-block;
+      font-size: 28rem/$fit;
+      color: #666666;
+      height: 50rem/$fit;
+      padding: 0 22rem/$fit;
+      line-height: 50rem/$fit;
+      border: 1px solid #E5E5E5;
+      border-radius: 2px;
+      margin-right:24rem/$fit;
+    &.now{
+      border-color: #00969E;
+      background: none;
+      color: #00969E;
+    }
+    }
+  }
+  .mediacenter_wraper .mediacenter_right{
+    background: #fff;
+    padding: 0 24rem/$fit;
+    margin: 0;
+    width:100%;
+    .boat-card{
+      width: 100%;
+      padding: 32rem/$fit 0;
+      height: auto;
+      position: relative;
+      box-shadow: none;
+      border-bottom: 1px solid #D8D8D8;
+      
+      .picture{
+        width:230rem/$fit;
+        height: 253rem/$fit;
+      }
+      .route-name{
+        font-size: 30rem/$fit;
+        color: #383838;
+        line-height: 34rem/$fit;
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .time{
+        font-size: 22rem/$fit;
+        color: #999999;
+        line-height: 31rem/$fit;
+        margin-top: 11rem/$fit;
+      }
+      .desc{
+        font-size: 24rem/$fit;
+        color: #6D6D6D;
+        line-height: 34rem/$fit;
+        margin-top: 13rem/$fit;
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+      .description{
+        position: absolute;
+        right: 32rem/$fit;
+        bottom: 32rem/$fit;
+      }
+      .btn{
+        height: 54rem/$fit;
+        line-height: 54rem/$fit;
+        font-size: 24rem/$fit;
+        padding: 0 24rem/$fit;
+        border-radius: 0;
+      }
+    }
+  }
 }
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {}

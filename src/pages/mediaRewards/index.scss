@@ -259,10 +259,8 @@
       height: 160px;
       background: url(../../images/pic1.jpg);
       position: relative;
-      overflow: hidden;
+
       img {
-        height: 100%;
-        
         position: absolute;
         left: 0;
         bottom: 0;
@@ -317,12 +315,12 @@
     .cruises-from-date {
       padding-right: 150px;
     }
+
     .detail-content .time {
       margin-top: 13px;
     }
-    .detail-content .row {
-     
-    }
+
+    .detail-content .row {}
 
     .cruises-name {
       color: $theme-blue;
@@ -1035,17 +1033,63 @@
   .mediacenter_right {
     background: #F7FCFC;
     padding: 20px 15px;
+
     .boat-card {
       background: #fff;
       width: 614px;
       height: 208px;
-      box-shadow: 0 7px 15px 0 rgba(0,0,0,0.10);
+      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.10);
       padding: 18px;
+
       .picture {
         width: 120px;
         height: 132px;
 
       }
+    }
+  }
+}
+
+.mediadetail {
+  background: #F7FCFC;
+  padding: 30px 0 50px 0;
+  .title {
+    font-size: 20px;
+    color: #343E57;
+    letter-spacing: 2.4px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    color: #343E57;
+    text-align: center;
+    margin-top: 6px;
+  }
+  .tablestyle{
+    width: 815px;
+    table-layout: fixed;
+    margin: 17px auto 0;
+    background: #fff;
+    th,td{
+      text-align: center;
+      height: 60px;
+    }
+    th{
+      
+      background: #00969E;
+      color:#fff;
+      font-size: 20px;
+      font-weight: normal;
+    }
+    td{
+      font-size: 14px;
+      color: #999999;
+    }
+    .t-subtitle{
+      background: #ADDCDE;
+      color:#fff;
+      font-size: 20px;
     }
   }
 }
