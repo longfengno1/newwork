@@ -189,11 +189,11 @@
 	background: #343E57;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
-.topbanner_plane .ship-intro{
-	position:absolute;
-	top: -124rem/$fit;
-    right: 627rem/$fit;
-	height:206rem/$fit;
+.topbanner_plane .ship-intro {
+	position: absolute;
+	top: -164rem/$fit;
+	right: 547rem/$fit;
+	height: 206rem/$fit;
 }
 .topbanner_plane .ship-intro:after{
 	content:"";
@@ -288,19 +288,21 @@
 	line-height:16rem/$fit;
 	text-align:center;
 }
-.prolist .desc{
-	margin:10rem/$fit 16rem/$fit;
-	padding:10rem/$fit 0 ;
+.prolist .desc {
+	margin: 10rem/$fit 16rem/$fit;
+	padding: 10rem/$fit 0;
 	border: 1rem/$fit solid #B8C4CB;
-	border-width:1rem/$fit 0;
+	border-width: 1rem/$fit 0;
+	/*font-size: 20rem/$fit;*/
 }
-.prolist .infos{
-	padding:0 16rem/$fit ;
+.prolist .infos {
+	/*padding: 0 16rem/$fit;*/
+	margin: 0.25rem 0.4rem;
 }
 .prolist .infos .item{
 	width:50%;
 	float:left;
-	line-height:28rem/$fit;
+	/*line-height:28rem/$fit;*/
 }
 .probanner{
 	position:relative;
@@ -378,8 +380,8 @@
 }
 .youlist .inner{
 	background:#FEFAEF;
-	padding-bottom:17rem/$fit;
-	/*margin-bottom:30rem/$fit;*/
+	padding-bottom:10rem/$fit;
+	margin-bottom:10rem/$fit;
 }
 .youlist .protitle{
 	font-size:16rem/$fit;
@@ -394,7 +396,11 @@
 .stylemb{
 	margin-top:57rem/$fit; margin-bottom:50rem/$fit;
 }
-
+.prolist .infos .item-down {
+	width: 50%;
+	float: left;
+	line-height: 0.7rem;
+}
 /* 大屏幕 */
 @media (min-width: 1200px) { 
 	
@@ -426,7 +432,7 @@
 		height:auto;
 	}
 	.topbanner .content{
-		padding: 120rem/$fit 30rem/$fit 0 30rem/$fit;
+		padding: 40rem/$fit 30rem/$fit 0 30rem/$fit;
 		color:#fff;
 		text-shadow: 0 0 3px #000;
 	}
@@ -497,20 +503,27 @@
 	.topbanner_plane .ship-intro:before{
 		display:none;
 	}
-	
+
+	.prolist .desc {
+		margin: 10rem/$fit 16rem/$fit;
+		/*padding: 10rem/$fit 0;*/
+		border: 1rem/$fit solid #B8C4CB;
+		border-width: 1rem/$fit 0;
+		font-size: 20rem/$fit;
+	}
 	.section{
 		background:#fff;
 	}
 	.prolist .inner {
 		background: #fff;
-		padding: 20rem/$fit 0;
+		padding: 10rem/$fit 0;
 		margin: 0 20rem/$fit;
 		border-top: 1px solid #ccc;
 			box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3);
 	}
 	.prolist .desc {
 		margin: 10rem/$fit 16rem/$fit;
-		padding: 10rem/$fit 0;
+		padding: 0rem/$fit 0;
 		border: 0;
 		border-width: 1rem/$fit 0;
 	}
@@ -555,15 +568,24 @@
 		flex:auto;
 		max-width:none;
 	}
-	
+	.stylemb {
+		margin-top: 0rem/$fit;
+		margin-bottom: 0rem/$fit;
+	}
+	.prolist .infos .item-down {
+		width: 20%;
+		float: left;
+		line-height: 0.9rem;
+	}
 	.prolist .pic, .prolist .pic img{
 		width:100%;
 	}
 	.prolist .protitle{
 		text-align:left;
-		margin-top:10rem/$fit !important;
+		/*margin-top:10rem/$fit !important;*/
 		font-size:28rem/$fit;
-		margin-bottom:10rem/$fit;
+		/*margin-bottom:10rem/$fit;*/
+		line-height:1rem;
 	}
 	.prowraper{
 		width:100%;
@@ -573,9 +595,9 @@
 	}
 	.prolist .infos .item{
 		font-size:20rem/$fit;
-		line-height:40rem/$fit;
+		/*line-height:40rem/$fit;*/
 		color: #6D6D6D;
-		font-weight: 300;
+		/*font-weight: 300;*/
 	}
 	.mbar ul{
 		width:100%;
@@ -586,7 +608,7 @@
 		width:33%;
 		float:left;
 		text-align:center;
-		font-size:24rem/$fit;
+		font-size:28rem/$fit;
 	}
 	.mbar li a{
 		display:inline-block;

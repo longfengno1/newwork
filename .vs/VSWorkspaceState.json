@@ -3,12 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\login",
-    "\\src\\pages\\rooms",
-    "\\src\\pages\\xinshoudaolan",
-    "\\src\\pages\\yuleshengyan",
-    "\\src\\pages\\yundongxiuxian"
+    "\\src\\pages\\fleetIntroduction01",
+    "\\src\\pages\\fleetIntroduction03",
+    "\\src\\pages\\importantNotice",
+    "\\src\\pages\\jobs",
+    "\\src\\pages\\myorder",
+    "\\src\\pages\\mypassenger",
+    "\\src\\pages\\mypassengerEdit"
   ],
-  "SelectedNode": "\\src\\pages\\login\\index.js",
+  "SelectedNode": "\\src\\pages\\fleetIntroduction01\\index.html",
   "PreviewInSolutionExplorer": false
 }

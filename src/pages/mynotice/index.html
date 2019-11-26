@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>我的订单</title>
+    <title>个人中心 - 重要通知</title>
     <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
     <script type="text/javascript">
@@ -28,11 +28,12 @@
 </head>
 
 <body>
-    <div class="hidden-sm">
-        #include('../../common/header.html')
-    </div>
 
-    <header class="my-order-header show-sm">
+    #include('../../common/header.html')
+
+    <script>document.getElementById('title_name').textContent = '个人中心 - 重要通知';</script>
+
+    <header class="my-order-header hidden-sm">
         <i class="icon icon-arrowleft"></i>
         重要通知
     </header>
