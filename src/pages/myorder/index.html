@@ -28,9 +28,8 @@
 </head>
 
 <body>
-    <div class="hidden-sm">
-        #include('../../common/header.html')
-    </div>
+    #include('../../common/header.html')
+    <script>document.getElementById('title_name').textContent = '个人中心 - 我的订单';</script>
 
     <header class="my-order-header show-sm">
         <i class="icon icon-arrowleft"></i>
@@ -38,10 +37,10 @@
     </header>
 
     <div class="tabs show-sm">
-        <span class="item active">全部</span>
-        <span class="item">未付款</span>
-        <span class="item">未出行</span>
-        <span class="item">已完成</span>
+        <span class="tab-item active">全部</span>
+        <span class="tab-item">未付款</span>
+        <span class="tab-item">未出行</span>
+        <span class="tab-item">已完成</span>
     </div>
 
     <div id="main" class="main my-order hidden-sm">
@@ -86,18 +85,21 @@
                         <td class="order-operation">
                             <div class="operations">
                                 <a>查看详情</a>
-                                <a id="modify-order">更改预订<div class="modify-order-layer" id="modify-order-layer">
+                                <a id="modify-order">
+                                    更改预订<div class="modify-order-layer" id="modify-order-layer">
                                         <p class="title">更改预订</p>
                                         <p class="tip">请选择您想要的修改项目。提交请求后，我们的客户服务团队将与您联系确认修改。</p>
-                                        <div class="modify-row"><input type="checkbox"
-                                                checked><span>添加/减少客舱</span></label></div>
+                                        <div class="modify-row">
+                                            <input type="checkbox"
+                                                   checked><span>添加/减少客舱</span></label>
+                                        </div>
                                         <div class="modify-row"><input type="checkbox"><span>添加/减少客舱</span></div>
                                         <div class="modify-row"><input type="checkbox"><span>添加/减少客舱</span></div>
                                         <div class="modify-row"><input type="checkbox"><span>添加/减少客舱</span></div>
                                         <div class="modify-row"><input type="checkbox"><span>添加/减少客舱</span></div>
                                         <div class="modify-btns">
                                             <span class="cancel" id="modify-cancel">取消</span><span class="ensure"
-                                                id="modify-ensure">确定</span>
+                                                                                                   id="modify-ensure">确定</span>
                                         </div>
                                     </div>
                                 </a>
@@ -255,6 +257,7 @@
         </div>
     </div>
     #include('../../common/footer.html')
+    #include('../../common/sm_footer_button.html')
 
 </body>
 

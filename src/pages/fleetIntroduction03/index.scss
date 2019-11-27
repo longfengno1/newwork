@@ -3,7 +3,7 @@
 .topbanner {
 	padding-top: 40rem/$fit;
 	background: url(../../images/intro.jpg) center -110rem/$fit no-repeat;
-	height: 676rem/$fit;
+	height: 636rem/$fit;
 	position: relative;
 	color: #343E57;
 }
@@ -20,7 +20,7 @@
 	background: #fff;
 	border-radius: 50%;
 	border: 0;
-	top: 50%;
+	top: 40%;
 	margin-top: 80rem/$fit;
 	font-size: 20rem/$fit;
 	color: #00969E;
@@ -142,7 +142,7 @@
 .topbanner_plane .ship {
 	position: absolute;
 	top: 110rem/$fit;
-	right: 50px;
+	right: -5.75rem;
 }
 
 .topbanner_plane .ship02 {
@@ -223,7 +223,7 @@
 .topbanner_plane .ship-intro {
 	position: absolute;
 	top: -124rem/$fit;
-	right: 627rem/$fit;
+	right: 867rem/$fit;
 	height: 206rem/$fit;
 }
 
@@ -312,7 +312,7 @@
 .prolist .inner {
 	background: #FBFAF9;
 	padding-bottom: 16rem/$fit;
-	margin-bottom: 30rem/$fit;
+	/*margin-bottom: 30rem/$fit;*/
 	font-size: 14rem/$fit;
 	overflow: hidden;
 	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
@@ -518,6 +518,7 @@
 		width: 100%;
 		margin-left: -50rem/$fit;
 		display: block;
+		margin-bottom:-40rem/$fit;
 	}
 
 	.topbanner_plane .ship02 {
@@ -614,14 +615,22 @@
 	}
 
 	.section .title {
-		height: .85rem;
+		height: 1.85rem;
 		font-size: .85rem;
-		line-height: .85rem;
-		margin: .8rem;
-		text-align: center;
+		line-height: 1.85rem;
+		margin: .2rem;
+		text-align: left;
 		color: #383838;
+		background-color: #eee;
+		padding-left: .5rem;
 	}
-
+	.title-arrowight {
+		height: 1.85rem;
+		line-height: 1.85rem;
+	}
+	.bg-transparent {
+		background-color: transparent;
+	}
 	.prolist li:first-child .inner {
 		border-top: 0;
 	}
@@ -635,7 +644,7 @@
 
 	.section01 {
 		margin-top: 30rem/$fit;
-		border-radius: 8rem/$fit;
+		border-radius: 8rem/$fit 8rem/$fit 0rem/$fit 0rem/$fit;
 		padding-top: 40rem/$fit;
 		position: relative;
 	}
@@ -739,7 +748,7 @@
 
 	.sm-youlist-wraper .title {
 		text-align: center;
-		font-size: 30rem/$fit;
+		font-size: 34rem/$fit;
 		color: #383838;
 		padding-left: 20rem/$fit;
 		margin-top: 20rem/$fit;
@@ -747,7 +756,7 @@
 
 	.sm-youlist-wraper .youlist-s {
 		position: relative;
-		height: 500rem/$fit;
+		height: 460rem/$fit;
 		overflow: scroll;
 		overflow-y: hidden;
 	}
@@ -796,6 +805,7 @@
 		left: 30rem/$fit;
 		font-size: 30rem/$fit;
 	}
+
 }
 
 /* 横向放置的手机及分辨率更小的设备 */

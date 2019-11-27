@@ -77,6 +77,18 @@ import '../css/global2.scss';
         
     });
 
+    $(".tab-item").click(function () {
+
+        if ($(this).hasClass("active")) {
+            $(".tab-item").removeClass("active");
+            $(this).removeClass("active");
+        } else {
+            $(".tab-item").removeClass("active");
+            $(this).toggleClass("active");
+        }
+
+    });
+
     $(".scroll-item-sub").click(function () {
         $(".scroll-item-sub").removeClass("active");
         $(this).toggleClass("active");

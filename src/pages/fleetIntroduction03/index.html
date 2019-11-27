@@ -6,24 +6,24 @@
     <title>世界梦号</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
     <script type="text/javascript">
-            (function (doc, win) {
-                var docEl = doc.documentElement,
-                        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                        recalc = function () {
-                            var clientWidth = docEl.clientWidth;
-                            if (!clientWidth) return;
-							
-                            var fontSize = 20 * (clientWidth / 375);
-                            fontSize =Math.round((fontSize > 40) ? 40 : fontSize);
-                            docEl.style.fontSize = fontSize + 'px';
-                            var dpi = window.devicePixelRatio;
-                            docEl.setAttribute('data-dpi', dpi);
-                        };
-                recalc();
-                if (!doc.addEventListener) return;
-                win.addEventListener(resizeEvt, recalc, false);
-            })(document, window);
-        </script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
 </head>
 
 <body>
@@ -106,8 +106,8 @@
                         </div>
 
                     </div>
-                    <button class="btn-prev hidden-sm"><span class="icon-arrowleft"></span></button>
-                    <button class="btn-next hidden-sm"><span class="icon-arrowright"></span></button>
+                    <button class="btn-prev hidden-sm"><a href="fleetIntroduction02.html"><span class="icon-arrowleft"></span></a></button>
+                    <button class="btn-next hidden-sm"><a href="fleetIntroduction01.html"><span class="icon-arrowright"></span></a></button>
                 </div>
             </div>
             <div class="intro-ribbonship hidden-sm"></div>
@@ -123,7 +123,7 @@
                         <li><a href="fleetIntroduction01.html">探索梦号</a></li>
                     </ul>
                 </div>
-                <h2 class="title">精致客房<span class="icon-arrowright fr show-sm"></span></h2>
+                <h2 class="title"><span class="icon-kingsize show-inline-sm mr20 fz12 show-sm"></span>精致客房<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
                 <ul class="row prolist prolistA mt20">
                     <li class="col-4">
                         <div class="inner">
@@ -164,26 +164,27 @@
                             </div>
                         </div>
                     </li>
-
-
                 </ul>
                 <div class="mt10 hidden-sm tc"><a href="###" class="btn-styleC">探索更多</a></div>
 
             </div>
         </div>
-        <div class="section mt30">
-            <div class="wraper probanner">
-                <img src="../../images/banner2.jpg" />
+        <div class="section mt30 hidden-sm"></div>
+        <div class="section ">
+            <div class="probanner">
+                <img src="../../images/banner2.jpg" style="width:100%" />
                 <div class="artion-box">
-                    <p class="title">皇宫</p>
+                    <p class="title bg-transparent">皇宫</p>
                     <p class="subtitle">这是您远洋之旅的专属乐园</p>
                     <p class="btn-box hidden-sm"><a href="###" class="btn-styleA">探索更多</a></p>
                 </div>
             </div>
             <div class="intro-ribbon hidden-sm"></div>
+            <div class="section mt10 show-sm"></div>
             <div class="wraper prowraper">
-                <h2 class="title">环球美食<span class="icon-arrowright fr show-sm"></span></h2>
-                <ul class="row prolist prolistA mt20">
+                <h2 class="title"><span class="icon-foods show-inline-sm mr20 fz12 show-sm"></span>环球美食<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
+                <div class="section mt20 hidden-sm"></div>
+                <ul class="row prolist prolistA">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/f1.png"></div>
@@ -227,10 +228,11 @@
 
                 <div class="mt10 hidden-sm tc"><a href="###" class="btn-styleC">探索更多</a></div>
             </div>
-
-            <div class="wraper prowraper stylemb">
-                <h2 class="title">娱乐盛宴<span class="icon-arrowright fr show-sm"></span></h2>
-                <ul class="row prolist prolistA mt20">
+            <div class="section mt30 hidden-sm"></div>
+            <div class="wraper prowraper">
+                <h2 class="title"><span class="icon-happy show-inline-sm mr20 fz12 show-sm"></span>娱乐盛宴<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
+                <div class="section mt20 hidden-sm"></div>
+                <ul class="row prolist prolistA ">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/yl1.png"></div>
@@ -274,8 +276,9 @@
             <div class="intro-ribbon hidden-sm"></div>
 
             <div class="wraper prowraper">
-                <h2 class="title">运动休闲<span class="icon-arrowright fr show-sm"></span></h2>
-                <ul class="row prolist prolistA mt20">
+                <h2 class="title"><span class="icon-fitness show-inline-sm mr20 fz12 show-sm"></span>运动休闲<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
+                <div class="section mt20 hidden-sm"></div>
+                <ul class="row prolist prolistA">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/yl6.png"></div>
@@ -304,10 +307,12 @@
 
                 <div class="mt10 hidden-sm tc"><a href="###" class="btn-styleC">探索更多</a></div>
             </div>
+            <div class="section mt30 hidden-sm"></div>
 
-            <div class="wraper prowraper stylemb">
-                <h2 class="title">船上活动<span class="icon-arrowright fr show-sm"></span></h2>
-                <ul class="row prolist prolistA mt20">
+            <div class="wraper prowraper ">
+                <h2 class="title"><span class="icon-happy show-inline-sm mr20 fz12 show-sm"></span>船上活动<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
+                <div class="section mt20 hidden-sm"></div>
+                <ul class="row prolist prolistA ">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/c2.png"></div>
@@ -349,8 +354,9 @@
 
             <div class="intro-ribbon hidden-sm"></div>
             <div class="wraper prowraper">
-                <h2 class="title">时尚购物<span class="icon-arrowright fr show-sm"></span></h2>
-                <ul class="row prolist prolistA mt20">
+                <h2 class="title"><span class="icon-diamond show-inline-sm mr20 fz12 show-sm"></span>时尚购物<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
+                <div class="section mt20 hidden-sm"></div>
+                <ul class="row prolist prolistA ">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/s1.png"></div>
@@ -380,9 +386,11 @@
                 <div class="mt10 hidden-sm tc"><a href="###" class="btn-styleC">探索更多</a></div>
             </div>
 
-            <div class="wraper prowraper stylemb">
-                <h2 class="title">美容养生<span class="icon-arrowright fr show-sm"></span></h2>
-                <ul class="row prolist prolistA mt20">
+            <div class="section mt30 hidden-sm"></div>
+            <div class="wraper prowraper">
+                <h2 class="title"><span class="icon-face show-inline-sm mr20 fz12 show-sm"></span>美容养生<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
+                <div class="section mt20 hidden-sm"></div>
+                <ul class="row prolist prolistA">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/m1.png"></div>
@@ -415,8 +423,9 @@
 
             <div class="intro-ribbon hidden-sm"></div>
             <div class="wraper prowraper">
-                <h2 class="title">精彩视频<span class="icon-arrowright fr show-sm"></span></h2>
-                <ul class="row prolist prolistA mt20">
+                <h2 class="title"><span class="icon-pay show-inline-sm mr20 fz12 show-sm"></span>精彩视频<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
+                <div class="section mt20 hidden-sm"></div>
+                <ul class="row prolist prolistA">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic">
@@ -455,10 +464,12 @@
 
                 <div class="mt10 hidden-sm tc"><a href="###" class="btn-styleC">探索更多</a></div>
             </div>
+            <div class="section mt30 hidden-sm"></div>
 
-            <div class="wraper prowraper stylemb">
-                <h2 class="title">资料下载<span class="icon-arrowright fr show-sm"></span></h2>
-                <ul class="row prolist prolistA mt20">
+            <div class="wraper prowraper ">
+                <h2 class="title"><span class="icon-note show-inline-sm mr20 fz12 show-sm"></span>资料下载<span class="icon-arrowright fr show-sm title-arrowight"></span></h2>
+                <div class="section mt20 hidden-sm"></div>
+                <ul class="row prolist prolistA ">
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic"><img src="../../images/1.png"></div>
@@ -494,9 +505,10 @@
             <div class="intro-ribbon hidden-sm"></div>
 
             <div class="wraper sm-youlist-wraper show-sm">
-                <h2 class="title">星梦“邮”记<span class="icon-arrowright fr mr40"></span></h2>
+                <h2 class="title">星梦“邮”记<span class="icon-arrowright fr mr40 title-arrowight"></span></h2>
                 <div class="youlist-s">
-                    <ul class="youlist mt20">
+                    <div class="section mt20 hidden-sm"></div>
+                    <ul class="youlist ">
                         <li>
                             <div class="inner">
                                 <div class="pic">
@@ -613,13 +625,14 @@
             </div>
         </div>
     </div>
-    <div class="section mt50  hidden-sm">
+    <div class="section mt20  hidden-sm">
         <div class="wraper">
             <p class="tc fz16">立即预订您的星梦假期</p>
-            <p class="tc mt20"><a href="###" class="btn-styleD">预定旅程</a></p>
+            <p class="tc mt10"><a href="###" class="btn-styleD">预订旅程</a></p>
         </div>
     </div>
-    <div class="hidden-sm" style="height:100px;"></div>
+    <div class="hidden-sm mt30"></div>
+
     <div class="left-select-ship hidden-sm">
         <ul>
             <li class="ship01">
@@ -644,13 +657,13 @@
 
 </body>
 <script>
-$(".topbanner_plane .ship .btn-icon").click(function(){
-	$(".topbanner_plane .ship .btn-icon").removeClass("artive");
-	$(this).addClass("artive");
-	return false;
-})
-$(".topbanner_plane").click(function(){
-	$(".topbanner_plane .ship .btn-icon").removeClass("artive");
-})
+    $(".topbanner_plane .ship .btn-icon").click(function () {
+        $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+        $(this).addClass("artive");
+        return false;
+    })
+    $(".topbanner_plane").click(function () {
+        $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+    })
 </script>
 </html>

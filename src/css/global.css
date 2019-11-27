@@ -1302,7 +1302,7 @@ b {
 }
 .btn-styleC{
 	background:#fff;
-	border: 1px solid #D0D7DF;
+	/*border: 1px solid #D0D7DF;*/
 	font-size: 18px;
 	color: #343E57;
 	letter-spacing: 3.2px;
