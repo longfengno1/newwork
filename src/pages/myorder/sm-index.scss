@@ -42,7 +42,7 @@
          justify-content: space-between;
          background-color: #ffffff;
          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
-         .item{
+         .tab-item{
              display: inline-block;
              height: 88rem/$fit;
              line-height: 88rem/$fit;
@@ -61,23 +61,27 @@
 
 .my-order-sm {
     width: 100vw;
-    margin-top: 176rem/$fit;
-   .order-card{
-       width: 100vw;
-       height: 310rem/$fit;
-       padding: 32rem/$fit;
-       background-color: #ffffff;
-       margin-bottom: 24rem/$fit;
-       .title{
-           display: flex;
-           align-items: center;
-           flex-wrap: nowrap;
-           .order-status{
-               flex: 1;
-               font-size: 24rem/$fit;
-               color: #6D6D6D;
-               text-align: right;
-           }
+    margin-top: 96rem/$fit;
+
+    .order-card {
+        width: 100vw;
+        height: 310rem/$fit;
+        padding: 32rem/$fit;
+        background-color: #ffffff;
+        margin-bottom: 24rem/$fit;
+
+        .title {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+
+            .order-status {
+                flex: 1;
+                font-size: 28rem/$fit;
+                color: #6D6D6D;
+                text-align: right;
+            }
+
             .paied {
                 color: #b27ec3;
             }
@@ -89,65 +93,71 @@
             .cancel {
                 color: #788995;
             }
-       }
-       .line{
-           font-size: 30rem/$fit;
-           color: #383838;
-       }
-       .num{
-           font-size: 24rem/$fit;
-           color: #00969E;
-           margin-left: 20rem/$fit;
-       }
-       
+        }
 
-       .desc{
-           font-size: 24rem/$fit;
-           color: #6D6D6D;
-           line-height: 38rem/$fit;
-       }
-       .bottom{
-           display: flex;
-           justify-content: space-between;
-           align-items: flex-end;
-           margin-top: 11rem/$fit;
-       }
-       .time{
-           font-size: 24rem/$fit;
-           color: #999999;
-       }
+        .line {
+            font-size: 28rem/$fit;
+            color: #383838;
+        }
 
-       .price{
-           font-size: 38rem/$fit;
-           color: #F8485E;
-       }
+        .num {
+            font-size: 28rem/$fit;
+            color: #00969E;
+            margin-left: 20rem/$fit;
+        }
 
-       .operation{
-           display: inline-block;
-           height: 54rem/$fit;
-           line-height: 54rem/$fit;
-           width: 148rem/$fit;
-           border-radius: 27rem/$fit;
-           border: 1px solid #E0E0E0;
-           font-size: 24rem/$fit;
-           color: #6D6D6D;
-           text-align: center;
-           margin-right: 24rem/$fit;
-           &:last-child{
-               margin-right:0;
-           }
-       }
 
-       .operations {
-           text-align: right;
+        .desc {
+            font-size: 20rem/$fit;
+            color: #6D6D6D;
+            line-height: 38rem/$fit;
+            margin-top: 8rem/$fit;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 8rem/$fit;
+        }
+
+        .time {
+            font-size: 20rem/$fit;
+            color: #999999;
+        }
+
+        .price {
+            font-size: 38rem/$fit;
+            color: #F8485E;
+        }
+
+        .operation {
+            display: inline-block;
+            height: 54rem/$fit;
+            line-height: 54rem/$fit;
+            width: 148rem/$fit;
+            border-radius: 27rem/$fit;
+            border: 1px solid #E0E0E0;
+            font-size: 20rem/$fit;
+            color: #6D6D6D;
+            text-align: center;
+            margin-right: 24rem/$fit;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .operations {
+            text-align: right;
             margin-top: 24rem/$fit;
-           .pay {
-               border-color: #00969E;
-               color: #00969E;
-           }
-       }
-   }
-  
+
+            .pay {
+                border-color: #00969E;
+                color: #00969E;
+            }
+        }
+    }
 }
 
  #sm-modify-order-layer {

@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\common",
+    "\\src\\js",
     "\\src\\pages",
-    "\\src\\pages\\fleetIntroduction01",
-    "\\src\\pages\\fleetIntroduction03",
-    "\\src\\pages\\importantNotice",
-    "\\src\\pages\\jobs",
-    "\\src\\pages\\myorder",
-    "\\src\\pages\\mypassenger",
-    "\\src\\pages\\mypassengerEdit"
+    "\\src\\pages\\mycard",
+    "\\src\\pages\\mycenter",
+    "\\src\\pages\\mynotice",
+    "\\src\\pages\\mynoticeDetail",
+    "\\src\\pages\\myorder"
   ],
-  "SelectedNode": "\\src\\pages\\fleetIntroduction01\\index.html",
+  "SelectedNode": "\\src\\pages\\mynoticeDetail\\index.html",
   "PreviewInSolutionExplorer": false
 }

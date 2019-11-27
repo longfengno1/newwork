@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>个人中心 - 我的信息</title>
     <meta name="viewport"
-        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
     <script type="text/javascript">
         (function (doc, win) {
             var docEl = doc.documentElement,
@@ -29,9 +29,7 @@
 </head>
 
 <body>
-    <div class="hidden-sm">
-        #include('../../common/header.html')
-    </div>
+    #include('../../common/header.html')
 
     <header class="my-order-header show-sm">
         <i class="icon icon-arrowleft"></i>
@@ -50,17 +48,22 @@
                 <span class="item selected">个人资料</span>
             </div>
             <section class="user-info">
-                <div class="input-item"><span>手机号</span><input class="input-text" type="text" value="178 8930 0028">
+                <div class="input-item">
+                    <span>手机号</span><input class="input-text" type="text" value="178 8930 0028">
                 </div>
-                <div class="input-item"><span>邮箱</span><input class="input-text" type="text"
-                        value="chenyuchen23@ctufo.com"></div>
+                <div class="input-item">
+                    <span>邮箱</span><input class="input-text" type="text"
+                                          value="chenyuchen23@ctufo.com">
+                </div>
                 <div class="input-item"><span>姓名</span><input class="input-text" type="text" value="陈宇晨"></div>
                 <div class="input-item"><span>姓名拼音</span><input class="input-text" type="text" value="chenyuchen"></div>
-                <div class="input-item mt0"><span>性别</span>
+                <div class="input-item mt0">
+                    <span>性别</span>
                     <div class="check-item"><input type="checkbox" checked>男</div>
                     <div class="check-item"><input type="checkbox">女</div>
                 </div>
-                <div class="input-item mt0"><span>出生日期</span><input class="input-text" type="text" value="1987/10/19">
+                <div class="input-item mt0">
+                    <span>出生日期</span><input class="input-text" type="text" value="1987/10/19">
                 </div>
             </section>
             <h3>我的收藏</h3>
@@ -218,6 +221,7 @@
     </div>
 
     #include('../../common/footer.html')
+    #include('../../common/sm_footer_button.html')
 </body>
 
 </html>
