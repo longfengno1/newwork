@@ -265,3 +265,15 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SourceHanSans2';
+  src:url('http://font.d4-1.com/SourceHanSans-Regular.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceHanSans3';
+  src:url('http://font.d4-1.com/MEllePRC-Medium.OTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

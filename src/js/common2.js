@@ -53,10 +53,16 @@ import '../css/global2.scss';
             var x = touch.clientX - w/2;
             var y = touch.clientY - h/2;
             
-            $(this).css('left', x+'px');
-            $(this).css('top', y+'px');
-            
-            });
+            $(this).css(
+                'left', x+'px'
+            ).css(
+                'top', y+'px'
+            ).css(
+                'height','2rem'
+            ).css(
+                'width','2rem'
+            );
+        });
     })
 
     $(".scroll-item").click(function () {

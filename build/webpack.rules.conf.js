@@ -9,8 +9,6 @@ const rules = [{
 			devMode ? 'style-loader' : {
 				loader: MiniCssExtractPlugin.loader,
 				options: {
-					// you can specify a publicPath here
-					// by default it use publicPath in webpackOptions.output
 					publicPath: '../'
 				}
 			},
@@ -23,17 +21,14 @@ const rules = [{
 	{
 		test: /\.js$/,
 		use: ["babel-loader"],
-		// 不检查node_modules下的js文件
 		exclude: "/node_modules/"
 	}, {
 		test: /\.(png|jpg|gif)$/,
 		include: [resolve("../src")],
 		use: [{
-			// 需要下载file-loader和url-loader
 			loader: "url-loader",
 			options: {
-				limit: 1024, //小于这个时将会已base64位图片打包处理
-				// 图片文件输出的文件夹
+				limit: 10, //小于这个时将会已base64位图片打包处理
 				outputPath: "images",
 				name: "[name].[ext]"
 			}
