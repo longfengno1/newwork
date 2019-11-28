@@ -1,0 +1,248 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+
+    #include('../../common/header.html')
+
+    <div id="main" class="main product-detail">
+        <div class="product">
+            <img class="product-image" src="../../images/m1.png" alt="">
+            <div class="product-content">
+                <p class="name">精选航选一日游</p>
+                <p class="desc">
+                    世界梦号汇聚环球精粹，致力为宾客奉上难忘的梦想之旅：船上包罗亚洲及全球各地的美食风情，汇集缤纷多彩的休闲活动与设施，更携手多个国际知名品牌打造餐饮及娱乐体验；宾客在畅享邮轮生活的同时，还能尽情游览亚洲迷人景致。
+                </p>
+                <div class="price-row">
+                    <div class="price-item">
+                        <p class="type">成人</p>
+                        <p class="tax">(含税)</p>
+                        <p class="price">&yen;2667<span>/人</span</p>
+                    </div>
+                    <div class="price-item">
+                        <p class="type">成人</p>
+                        <p class="tax">(含税)</p>
+                        <p class="price">&yen;2667<span>/人</span</p>
+                    </div>
+                    <div class="price-item">
+                        <p class="type">成人</p>
+                        <p class="tax">(含税)</p>
+                        <p class="price">&yen;2667<span>/人</span</p>
+                    </div>
+                </div>
+                <div class="mt20 clearfloat">
+                    <button type="button" class="btnadd fr">添加</button>
+                    <button type="button" class="btnfav mr20 fr">收藏</button>
+                </div>
+                
+            </div>
+        </div>
+        <ul class="tablist tablist_ptb_40">
+            <li class="current"><a href="###">商品详情</a></li>
+            <li><a href="###">条款及细则</a></li>
+        </ul>
+        <!-- 商品详情 -->
+        <div class="wraper">
+            <div class="desc_content clearfloat">
+                <ul class="dec_icon clearfloat">
+                    <li class="item">
+                        <div class="item-icon">
+                            <img src="../../images/product-youhui-icon.png">
+                        </div>
+                        <p>附赠优惠</p>
+                    </li>
+                    <li class="item">
+                        <div class="item-icon">
+                            <img src="../../images/product-member-icon.png" alt="">
+                        </div>
+                        <p>会员96折</p>
+                    </li>
+                    <li class="item">
+                        <div class="item-icon">
+                            <img src="../../images/product-present-icon.png" alt="">
+                        </div>
+                        <p>小礼物赠送</p>
+                    </li>
+                    <li class="item">
+                        <div class="item-icon">
+                            <img src="../../images/product-more-icon.png" alt="">
+                        </div>
+                        <p>多人优惠</p>
+                    </li>
+                </ul>
+                <p class="desc_txt">典雅的香槟吧为您奉上选择丰富的各款香槟及气泡酒，您可浅尝一杯或与知己好友畅饮一番。</p>
+                <p class="mt20 mb10">
+                    <img class="desc_pic_big mb10" src="../../images/pic1.jpg">
+                </p>
+                <p class="desc_txt">
+                    香槟似乎适合于任何一种场合或心情－无论是浪漫约会、社交聚会、庆典祝贺还是悠闲独处都适合。典雅的香槟吧为您奉上选择丰富的各款香槟及气泡酒，您可浅尝一杯或与知己好友畅饮一番，让细腻的酒香在您的舌尖上跃然舞蹈，再配以精致可口的小食，心情备感舒畅。香槟似乎适合于任何一种场合或心情－无论是浪漫约会、社交聚会、庆典祝贺还是悠闲独处都适合。典雅的香槟吧为您奉上选择丰富的各款香槟及气泡酒，您可浅尝一杯或与知己好友畅饮一番。
+                </p>
+                <p class="mt20 mb10">
+                    <img class="desc_pic mb10" src="../../images/pic2.jpg">
+                    <img class="desc_pic mr0 mb10" src="../../images/pic3.jpg">
+                </p>
+                <p class="desc_txt">
+                    香槟似乎适合于任何一种场合或心情－无论是浪漫约会、社交聚会、庆典祝贺还是悠闲独处都适合。典雅的香槟吧为您奉上选择丰富的各款香槟及气泡酒，您可浅尝一杯或与知己好友畅饮一番，让细腻的酒香在您的舌尖上跃然舞蹈，再配以精致可口的小食，心情备感舒畅。香槟似乎适合于任何一种场合或心情－无论是浪漫约会、社交聚会、庆典祝贺还是悠闲独处都适合。典雅的香槟吧为您奉上选择丰富的各款香槟及气泡酒，您可浅尝一杯或与知己好友畅饮一番。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-image"></div>
+    <div id="main2" class="main product-detail">
+<!-- 热门推荐 -->
+<div class="section">
+    <div class="wraper">
+        <h2 class="hot_title">热门推荐</h2>
+
+        <div class="hotthread clearfloat">
+            <div class="item">
+                <ul class="row">
+                    <li class="col">
+                        <div class="thread">
+                            <div class="pic">
+                                <a href="###" target="_blank">
+                                    <div class="pic"><img src="../../images/pic.jpg"></div>
+                                </a>
+                                <div class="pic_title">新加坡·惊奇之旅</div>
+
+                                <div class="icon_tags">
+                                    <img src="../../images/world_titlesub.png" width="67" height="41" />
+                                </div>
+
+                            </div>
+                            <div class="inner">
+                                <div class="fr m_base_price show-sm">
+                                    <p class="base_price mt5">
+                                        <dfn class="red">¥</dfn>
+                                        <span class="price red">3330</span>起/人
+                                    </p>
+                                    <p><a href="###" class="mt10 btn-styleF">查看详情</a></p>
+                                </div>
+                                <div class="caption">
+                                    <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                    <p class="fz12 gray mt5">
+                                        <span>世界梦号</span>
+                                        <span class="ml15">2019/10/29</span>
+                                    </p>
+                                    <p class="base_price mt5 hidden-sm">
+                                        <dfn class="red">¥</dfn>
+                                        <span class="price red">3330</span>起/人
+                                    </p>
+                                </div>
+                            </div>
+                            <em class="tip">特惠航线</em>
+                        </div>
+                    </li>
+
+                    <li class="col">
+                        <div class="thread">
+                            <div class="pic">
+                                <a href="###" target="_blank">
+                                    <div class="pic"><img src="../../images/pic.jpg"></div>
+                                </a>
+                                <div class="pic_title">新加坡·惊奇之旅</div>
+
+                                <div class="icon_tags">
+                                    <img src="../../images/world_titlesub.png" width="67" height="41" />
+                                </div>
+
+                            </div>
+                            <div class="inner">
+                                <div class="fr m_base_price show-sm">
+                                    <p class="base_price mt5">
+                                        <dfn class="red">¥</dfn>
+                                        <span class="price red">3330</span>起/人
+                                    </p>
+                                    <p><a href="###" class="mt10 btn-styleF">查看详情</a></p>
+                                </div>
+                                <div class="caption">
+                                    <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                    <p class="fz12 gray mt5">
+                                        <span>世界梦号</span>
+                                        <span class="ml15">2019/10/29</span>
+                                    </p>
+                                    <p class="base_price mt5 hidden-sm">
+                                        <dfn class="red">¥</dfn>
+                                        <span class="price red">3330</span>起/人
+                                    </p>
+                                </div>
+                            </div>
+                            <em class="tip">特惠航线</em>
+                        </div>
+                    </li>
+
+                    <li class="col">
+                        <div class="thread">
+                            <div class="pic">
+                                <a href="###" target="_blank">
+                                    <div class="pic"><img src="../../images/pic.jpg"></div>
+                                </a>
+                                <div class="pic_title">新加坡·惊奇之旅</div>
+
+                                <div class="icon_tags">
+                                    <img src="../../images/world_titlesub.png" width="67" height="41" />
+                                </div>
+
+                            </div>
+                            <div class="inner">
+                                <div class="fr m_base_price show-sm">
+                                    <p class="base_price mt5">
+                                        <dfn class="red">¥</dfn>
+                                        <span class="price red">3330</span>起/人
+                                    </p>
+                                    <p><a href="###" class="mt10 btn-styleF">查看详情</a></p>
+                                </div>
+                                <div class="caption">
+                                    <p class="fz14 fb protitle ellipsis">上海 - 香港 -吉隆坡 - 新加坡</p>
+                                    <p class="fz12 gray mt5">
+                                        <span>世界梦号</span>
+                                        <span class="ml15">2019/10/29</span>
+                                    </p>
+                                    <p class="base_price mt5 hidden-sm">
+                                        <dfn class="red">¥</dfn>
+                                        <span class="price red">3330</span>起/人
+                                    </p>
+                                </div>
+                            </div>
+                            <em class="tip">特惠航线</em>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>  
+
+    #include('../../common/footer.html')
+    #include('../../common/sm_footer_button.html')
+
+</body>
+
+</html>
