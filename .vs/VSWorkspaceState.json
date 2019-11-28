@@ -2,15 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\common",
-    "\\src\\js",
-    "\\src\\pages",
-    "\\src\\pages\\mycard",
-    "\\src\\pages\\mycenter",
-    "\\src\\pages\\mynotice",
-    "\\src\\pages\\mynoticeDetail",
-    "\\src\\pages\\myorder"
+    "\\src\\pages\\index"
   ],
-  "SelectedNode": "\\src\\pages\\mynoticeDetail\\index.html",
+  "SelectedNode": "\\src\\pages",
   "PreviewInSolutionExplorer": false
 }
