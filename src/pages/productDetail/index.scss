@@ -1,0 +1,471 @@
+@import '../../css/variables.scss';
+@import '../../css/navbar.scss';
+
+body {
+    background-color: #f7fcfc;
+}
+
+.hot_title {
+    font-family: MEllePRC-Medium;
+    font-size: 38rem/$fit;
+    color: #455272;
+    letter-spacing: 7.6px;
+    text-align: center;
+    line-height: 40rem/$fit;
+    margin: 0 0 60rem/$fit;
+}
+
+.hotthread * {
+    box-sizing: content-box;
+}
+
+.hotthread {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 200rem/$fit;
+}
+
+.hotthread .item ul li {
+    float: left;
+    margin-top: 20rem/$fit;
+    /*margin-right: 30rem/$fit;*/
+    /*width: 380rem/$fit;*/
+    height: 354rem/$fit;
+    /*background: #fff;*/
+    border-radius: 5rem/$fit;
+    overflow: hidden;
+}
+
+.hotthread .item ul .one-pro {
+    height: 364rem/$fit;
+
+}
+
+.hotthread .item ul li:last-child {
+    margin-right: 0;
+}
+
+.hotthread .item .thread {
+    position: relative;
+    line-height: 24rem/$fit;
+    transition: all 0.2s ease-in-out;
+}
+
+.hotthread .item .inner {
+    background: #fff
+}
+
+.hotthread .item .one-pro .thread .pic {
+    background-position: center top;
+    background-size: cover;
+    border-radius: 5rem/$fit;
+    height: 364rem/$fit;
+}
+
+.hotthread .item .one-pro .thread .inner {
+    background: none;
+    border: 0;
+    position: absolute;
+    right: 65rem/$fit;
+    bottom: 42rem/$fit;
+    height: auto;
+}
+
+.hotthread .item .one-pro .thread .inner .caption {
+    padding: 0;
+}
+
+.hotthread .item .one-pro .protitle {
+    font-size: 30rem/$fit;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #fff;
+}
+
+.hotthread .item .one-pro .prodesc {
+    font-size: 20rem/$fit;
+    color: #fff;
+    font-weight: normal;
+}
+
+.hotthread .item .one-pro .base_price {
+    padding-top: 36rem/$fit;
+    font-size: 16rem/$fit;
+    line-height: 1;
+    color: #F8485E;
+}
+
+.hotthread .item .one-pro .base_price .price {
+    font-size: 36rem/$fit;
+}
+
+.hotthread .item .sale .thread .inner {
+    top: 76rem/$fit;
+    right: 264rem/$fit;
+}
+
+.hotthread .item .sale .base_price {
+    text-align: right;
+    position: absolute;
+    right: 15rem/$fit;
+    bottom: 15rem/$fit;
+}
+
+.hotthread .item ul .sale .thread {
+    height: 354rem/$fit;
+    overflow: hidden;
+    border-radius: 5rem/$fit;
+}
+
+.hotthread .item .sale .timer {
+    width: 240rem/$fit;
+    height: 100%;
+    border-left: 4rem/$fit solid #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../../images/timer-bg.png) center center no-repeat;
+    background-size: cover;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+.hotthread .item .sale .timer .title {
+    color: #fff;
+    background: url(../../images/sale.png) center bottom no-repeat;
+    height: 140rem/$fit;
+    padding-top: 30rem/$fit;
+    font-size: 30rem/$fit;
+    line-height: 30rem/$fit;
+
+}
+
+.hotthread .item .sale .timer .time_tit {
+    margin-top: 58rem/$fit;
+    font-size: 14rem/$fit;
+    color: #fff;
+    line-height: 20rem/$fit;
+    height: 20rem/$fit;
+    text-align: center;
+}
+
+.hotthread .item .sale .timer .time_p {
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    font-size: 30rem/$fit;
+    color: #fff;
+    line-height: 46rem/$fit;
+    text-align: center;
+    margin-top: 20rem/$fit;
+}
+
+.hotthread .item .sale .timer .time_p span {
+    font-family: "SourceHanSans", Segoe, "Segoe UI", sans-serif;
+    background: #fff;
+    display: inline-block;
+    height: 46rem/$fit;
+    width: 46rem/$fit;
+    color: #F8485E;
+    font-size: 30rem/$fit;
+    text-align: center;
+
+}
+
+.hotthread .one-pro .base_price dfn {
+    font-size: 16rem/$fit;
+}
+
+.hotthread .item .thread .pic {
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 247rem/$fit;
+    overflow: hidden;
+    border-top-left-radius: 5rem/$fit;
+    border-top-right-radius: 5rem/$fit;
+}
+
+.hotthread .item .thread .pic img {
+    width: 100%;
+}
+
+.hotthread .pic_title {
+    position: absolute;
+    left: 0;
+    top: 12rem/$fit;
+    height: 20rem/$fit;
+    line-height: 20rem/$fit;
+    padding: 0 12rem/$fit;
+    color: #ffffff;
+    font-size: 15rem/$fit;
+}
+
+.hotthread .icon_tags {
+    position: absolute;
+    bottom: -1rem/$fit;
+    left: 0;
+}
+
+.hotthread .tags {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20rem/$fit;
+    padding: 10rem/$fit;
+}
+
+.hotthread .tags span {
+    height: 18rem/$fit;
+    line-height: 18rem/$fit;
+    color: #FDD26E;
+    padding: 0 5rem/$fit;
+    border: 1rem/$fit solid #FDD26E;
+    border-radius: 3rem/$fit;
+    display: block;
+    font-size: 12rem/$fit;
+    float: left;
+    margin-right: 10rem/$fit;
+}
+
+.hotthread .item .thread .inner {
+    border: 1rem/$fit solid #d0d7df;
+    border-top: 0;
+    padding: 0 15rem/$fit;
+    height: 106rem/$fit;
+    border-bottom-left-radius: 5rem/$fit;
+    border-bottom-right-radius: 5rem/$fit;
+}
+
+.hotthread .item .thread .inner .caption {
+    padding-top: 12rem/$fit;
+    overflow: hidden;
+    color: #343940;
+}
+
+.hotthread .item .thread .tip {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: #f8485e;
+    border-bottom-left-radius: 10rem/$fit;
+    width: 90rem/$fit;
+    height: 30rem/$fit;
+    line-height: 30rem/$fit;
+    text-align: center;
+    color: #fff;
+    font-size: 12rem/$fit;
+    font-style: normal;
+}
+
+.hotthread .base_price {
+    font-size: 12rem/$fit;
+    color: #999999
+}
+
+.hotthread .base_price dfn {
+    top: -1rem/$fit;
+    font-size: 12rem/$fit;
+    font-style: normal;
+}
+
+.hotthread .base_price .price {
+    font-size: 18rem/$fit;
+    color: #15989D;
+}
+
+.tablist {
+    overflow: hidden;
+    padding: 0 18rem/$fit;
+}
+
+.tablist_ptb_40 {
+    padding-top: 30rem/$fit;
+    padding-bottom: 30rem/$fit;
+}
+
+.tablist li {
+    float: left;
+    font-size: 18rem/$fit;
+    margin-right: 54rem/$fit;
+}
+
+.tablist li:last-child {
+    margin-right: 0;
+}
+
+.tablist li a {
+    display: inline-block;
+    height: 36rem/$fit;
+}
+
+.tablist li a:hover,
+.tablist .current a {
+    text-decoration: none;
+    color: #00969E;
+    border-bottom: 3rem/$fit solid #00969E;
+}
+
+.desc_content {
+    background-color: #ffffff;
+    padding: 60rem/$fit 30rem/$fit;
+
+    .dec_icon {
+        margin-bottom: 40rem/$fit;
+
+        .item {
+            float: left;
+            width: 70rem/$fit;
+            margin-right: 100rem/$fit;
+
+            .item-icon{
+                width: 64rem/$fit;
+                height: 64rem/$fit;
+                border: 1px solid #00969E;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 60rem/$fit;
+                img{
+                    width: 40rem/$fit;
+                }
+            }
+
+            p {
+                font-family: Helvetica;
+                font-size: 14rem/$fit;
+                color: #00969E;
+                text-align: center;
+                padding-top: 14rem/$fit;
+            }
+        }
+    }
+
+    .desc_txt {
+        font-family: Helvetica;
+        font-size: 14rem/$fit;
+        color: #343E57;
+        line-height: 30rem/$fit;
+    }
+
+    .desc_pic_big {
+        width: 100%;
+        height: 365rem/$fit;
+    }
+
+    .desc_pic {
+        width: calc(50% - 18px);
+        height: 444rem/$fit;
+        margin-right: 28px;
+    }
+
+    .desc_pic.mr0 {
+        margin-right: 0
+    }
+}
+
+.bg-image {
+    background: url(../../images/ribbon-destinations.png) center center no-repeat;
+    z-index: 6;
+    height: 12.275rem;
+    position: relative;
+    width: 100%;
+    margin-top: -5.5rem;
+    margin-bottom: -5rem;
+    pointer-events: none;
+}
+
+.product-detail {
+    padding-top: 30px;
+    width: 1200rem/$fit;
+
+    .product {
+        height: 417px;
+        background-color: #FFFFFF;
+        overflow: hidden;
+    }
+
+    .product-image {
+        float: left;
+        width: 600rem/$fit;
+        height: 417px;
+    }
+
+    .product-content {
+        margin-left: 600rem/$fit;
+        width: 600rem/$fit;
+        padding: 40px 30px 30px 40px;
+    }
+
+    .name {
+        font-size: 26px;
+        color: #343E57;
+    }
+
+    .desc {
+        font-family: Helvetica;
+        font-size: 13px;
+        color: #6D6D6D;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    .price-row {
+        margin-top: 52px;
+    }
+
+    .price-item {
+        display: inline-block;
+        margin-right: 58px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .type {
+            font-size: 14px;
+            color: #383838;
+            line-height: 30px;
+        }
+
+        .tax {
+            font-size: 12px;
+            color: #999999;
+            line-height: 5px;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 16px;
+            color: #F8485E;
+            line-height: 19px;
+
+            span {
+                font-size: 12px;
+                color: #999999;
+            }
+        }
+    }
+
+    .btnadd {
+        background: #00969E;
+        border-radius: 2rem/$fit;
+        font-size: 16rem/$fit;
+        color: #FFFFFF;
+        width: 128rem/$fit;
+        height: 50rem/$fit;
+        line-height: 48rem/$fit;
+        //padding: 15rem/$fit 48rem/$fit;
+    }
+
+    .btnfav {
+        background: #FFFFFF;
+        border: 1px solid #E3E2E5;
+        border-radius: 2rem/$fit;
+        font-size: 13/$fit;
+        color: #CDCDCD;
+        width: 50rem/$fit;
+        height: 50rem/$fit;
+        line-height: 48rem/$fit;
+        text-align: center;
+    }
+}

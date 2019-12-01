@@ -1,0 +1,351 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>主题活动</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+    <div id="main" class="fleetintro  hidden-sm">
+
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+        <div class="content">
+                <div class="filter mt10">
+                    <ul>
+                        <li class="">
+                            <div>云顶梦号<span class="icon-arrowdown2 ml10 fz14"></span></div>
+                            <div class="opener">
+                                <div class="openeritem">
+                                    <span>云顶梦号</span>
+                                </div>
+                                <div class="openeritem">
+                                    <span>云顶梦号</span>
+                                </div>
+                                <div class="openeritem">
+                                    <span>云顶梦号</span>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="">
+                            <div>出发城市<span class="icon-arrowdown2 ml10 fz14"></span></div>
+                            <div class="opener">
+                                <div class="openeritem">
+                                    <span>出发城市</span>
+                                </div>
+                                <div class="openeritem">
+                                    <span>出发城市</span>
+                                </div>
+                                <div class="openeritem">
+                                    <span>出发城市</span>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="">
+                            <div>出发日期<span class="icon-arrowdown2 ml10 fz14"></span></div>
+                            <div class="opener">
+                                <div class="openeritem">
+                                    <span>出发日期</span>
+                                </div>
+                                <div class="openeritem">
+                                    <span>出发日期</span>
+                                </div>
+                                <div class="openeritem">
+                                    <span>出发日期</span>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="">
+                            <div>商品分类<span class="icon-arrowdown2 ml10 fz14"></span></div>
+                            <div class="opener">
+                                <div class="openeritem">
+                                    <span>商品分类</span>
+                                </div>
+                                <div class="openeritem">
+                                    <span>商品分类</span>
+                                </div>
+                                <div class="openeritem">
+                                    <span>商品分类</span>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            <section class="product-section">
+                <p class="title"><span class="title-name">美食</span><a>更多&nbsp;&nbsp;&nbsp;>></a></p>
+                <div class="products clearfloat">
+                    <article class="product-big">
+                        <img src="../../images/j1.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-type mt15">
+                            <p>
+                                餐厅种类：自费<span class="fr">餐饮种类：午餐 / 晚餐</span>
+                            </p>
+                            <p>预定：需提前预定</p>
+                        </div>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                    <div class="sm-products clearfloat">
+                        <article class="product mb10">
+                            <img src="../../images/j2.jpg" alt="">
+                            <p class="product-name mt20">马克•贝斯特星厨</p>
+                            <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                            <div class="product-price">
+                                <p class="price-row">
+                                    &yen;<span class="price">1,500</span>起/人
+                                </p>
+                                <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                            </div>
+                        </article>
+                        <article class="product mb10">
+                            <img src="../../images/j2.jpg" alt="">
+                            <p class="product-name mt20">马克•贝斯特星厨</p>
+                            <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                            <div class="product-price">
+                                <p class="price-row">
+                                    &yen;<span class="price">1,500</span>起/人
+                                </p>
+                                <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="../../images/j2.jpg" alt="">
+                            <p class="product-name mt20">马克•贝斯特星厨</p>
+                            <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                            <div class="product-price">
+                                <p class="price-row">
+                                    &yen;<span class="price">1,500</span>起/人
+                                </p>
+                                <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="../../images/j2.jpg" alt="">
+                            <p class="product-name mt20">马克•贝斯特星厨</p>
+                            <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                            <div class="product-price">
+                                <p class="price-row">
+                                    &yen;<span class="price">1,500</span>起/人
+                                </p>
+                                <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="product-section">
+                <p class="title"><span class="title-name">岸上游</span><a>更多&nbsp;&nbsp;&nbsp;>></a></p>
+                <div class="products clearfloat">
+                    <article class="product-big">
+                        <img src="../../images/j1.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-type mt15">
+                            <p>
+                                餐厅种类：自费<span class="fr">餐饮种类：午餐 / 晚餐</span>
+                            </p>
+                            <p>预定：需提前预定</p>
+                        </div>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                    <div class="sm-products clearfloat">
+                        <article class="product mb10">
+                            <img src="../../images/j2.jpg" alt="">
+                            <p class="product-name mt20">马克•贝斯特星厨</p>
+                            <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                            <div class="product-price">
+                                <p class="price-row">
+                                    &yen;<span class="price">1,500</span>起/人
+                                </p>
+                                <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                            </div>
+                        </article>
+                        <article class="product mb10">
+                            <img src="../../images/j2.jpg" alt="">
+                            <p class="product-name mt20">马克•贝斯特星厨</p>
+                            <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                            <div class="product-price">
+                                <p class="price-row">
+                                    &yen;<span class="price">1,500</span>起/人
+                                </p>
+                                <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="../../images/j2.jpg" alt="">
+                            <p class="product-name mt20">马克•贝斯特星厨</p>
+                            <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                            <div class="product-price">
+                                <p class="price-row">
+                                    &yen;<span class="price">1,500</span>起/人
+                                </p>
+                                <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <img src="../../images/j2.jpg" alt="">
+                            <p class="product-name mt20">马克•贝斯特星厨</p>
+                            <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                            <div class="product-price">
+                                <p class="price-row">
+                                    &yen;<span class="price">1,500</span>起/人
+                                </p>
+                                <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="product-section">
+                <p class="title"><span class="title-name">船上服务</span><a>更多&nbsp;&nbsp;&nbsp;>></a></p>
+                <div class="products clearfloat">
+                    <article class="product-sm">
+                        <img src="../../images/j2.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                    <article class="product-sm">
+                        <img src="../../images/j2.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                    <article class="product-sm">
+                        <img src="../../images/j2.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                    <article class="product-sm">
+                        <img src="../../images/j2.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="product-section">
+                <p class="title"><span class="title-name">精品</span><a>更多&nbsp;&nbsp;&nbsp;>></a></p>
+                <div class="products clearfloat">
+                    <article class="product-sm">
+                        <img src="../../images/j2.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                    <article class="product-sm">
+                        <img src="../../images/j2.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                    <article class="product-sm">
+                        <img src="../../images/j2.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                    <article class="product-sm">
+                        <img src="../../images/j2.jpg" alt="">
+                        <p class="product-name mt20">马克•贝斯特星厨</p>
+                        <p class="product-desc mt10">马克•贝斯特星厨为宾客私人定制舌尖上的晚宴。每道佳肴均为独一无二的原创菜式。</p>
+                        <div class="product-price">
+                            <p class="price-row">
+                                &yen;<span class="price">1,500</span>起/人
+                            </p>
+                            <p class="old-price-row">参考价：<span class="old-price">¥2500/人</span></p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="hidden-sm">
+        #include('../../common/footer.html')
+    </div>
+    #include('../../common/sm_footer_button.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+
+</html>
