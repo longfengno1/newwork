@@ -1,5 +1,4 @@
 @import '../../css/variables.scss';
-@import './sm-index.scss';
 
 .row {
   margin: 0;
@@ -312,6 +311,7 @@
 
         .detail-content .row {
             margin: 16px 0;
+            font-size:14px;
         }
 
         .cruises-name {
@@ -1010,5 +1010,45 @@
         .detail-content {
             padding: 0 0 0 20px;
         }
+    }
+}
+
+@media(max-width: 767px) {
+    .list {
+        min-height: 100vh;
+        width: 100vw;
+        font-family: Helvetica;
+        position: relative;
+    }
+    .activiylist {
+        overflow-y: scroll;
+        width:100%;
+        margin-top:.6rem;
+    }
+    .activiylist .boat-card {
+        background: #FFFFFF;
+        border-bottom: 2px solid #EFFAF9;
+        /* border: 2px solid #EFFAF9; */
+        position: relative;
+         padding:0 0 0 0;
+         margin-bottom:0;
+    }
+    .list-container .boat-card .detail-content {
+        width: 100%;
+        padding: .6rem .6rem 0 .6rem;
+        font-family: MEllePRC-Medium;
+        color: #383838;
+        position: relative;
+    }
+    .list-container .boat-card .detail-content .row {
+        margin: .25rem 0;
+    }
+    .list-container .boat-card .detail-content .route-name {
+        font-size: .7rem;
+        color: #00969e;
+        letter-spacing: 1.12px;
+    }
+    .activiylist .boat-card .desc{
+        font-size:.3rem;
     }
 }

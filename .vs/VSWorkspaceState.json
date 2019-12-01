@@ -2,15 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\common",
-    "\\src\\css",
-    "\\src\\font",
     "\\src\\pages",
+    "\\src\\pages\\importantNotice",
     "\\src\\pages\\importantNoticeDetail",
-    "\\src\\pages\\index",
     "\\src\\pages\\jobs",
-    "\\src\\pages\\meirongyangsheng"
+    "\\src\\pages\\LegalNotice",
+    "\\src\\pages\\LegalNoticedetail",
+    "\\src\\pages\\yundongxiuxian"
   ],
-  "SelectedNode": "\\src\\css\\fontstyle.css",
+  "SelectedNode": "\\src\\pages\\yundongxiuxian\\index.js",
   "PreviewInSolutionExplorer": false
 }
