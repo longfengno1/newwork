@@ -1,4 +1,3 @@
-
 import "../../js/common2";
 import "./index.scss";
 
@@ -12,3 +11,4 @@ import "./index.scss";
     $(".topbanner_plane .ship .btn-icon").removeClass("artive");
   })
 })();
+

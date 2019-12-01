@@ -759,22 +759,25 @@
 
 	.sm-youlist-wraper .youlist-s {
 		position: relative;
-		height: 460rem/$fit;
+		height: 384rem/$fit;
 		overflow: scroll;
 		overflow-y: hidden;
 	}
 
 	.sm-youlist-wraper .youlist {
 		position: absolute;
-		height: 460rem/$fit;
+		/*height: 460rem/$fit;*/
 		width: 1820rem/$fit;
 	}
 
 	.sm-youlist-wraper .youlist .pic {
 		width: 100%;
+		height:auto;
 		border-radius: 6rem/$fit;
 	}
-
+	.sm-youlist-wraper .youlist .pic img{
+		width:100%;
+	}
 	.sm-youlist-wraper .youlist li {
 		width: 450rem/$fit;
 		float: left;
