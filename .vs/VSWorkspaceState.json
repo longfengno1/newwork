@@ -2,8 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\pages\\index"
+    "\\src\\common",
+    "\\src\\css",
+    "\\src\\font",
+    "\\src\\pages",
+    "\\src\\pages\\importantNoticeDetail",
+    "\\src\\pages\\index",
+    "\\src\\pages\\jobs",
+    "\\src\\pages\\meirongyangsheng"
   ],
-  "SelectedNode": "\\src\\pages",
+  "SelectedNode": "\\src\\css\\fontstyle.css",
   "PreviewInSolutionExplorer": false
 }

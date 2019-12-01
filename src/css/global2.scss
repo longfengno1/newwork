@@ -1570,7 +1570,7 @@ b {
 	background-size: 100%;
 	width: 100%;
 	position: fixed;
-	height: 120rem/$fit;
+	height: 100rem/$fit;
 	bottom: 0;
 	z-index: 100;
 	left: 0;
@@ -1594,7 +1594,7 @@ b {
 
 .mbottombar li a {
 	width: 100%;
-	height: 120rem/$fit;
+	height: 100rem/$fit;
 	min-height: auto !important;
 	display: block;
 	position: absolute;
@@ -1621,52 +1621,52 @@ b {
 
 .mbottombar .home a {
 	background: url(../images/home@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .list a {
 	background: url(../images/list@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .group a {
 	background: url(../images/group@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .shop a {
 	background: url(../images/shop@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .account a {
 	background: url(../images/account@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .home a.current {
 	background: url(../images/home_cur@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .list a.current {
 	background: url(../images/list_cur@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .group a.current {
 	background: url(../images/group_cur@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .shop a.current {
 	background: url(../images/shop_cur@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .account a.current {
 	background: url(../images/account_cur@2x.png) center 15rem/$fit no-repeat;
-	background-size: 60rem/$fit;
+	background-size: 40rem/$fit;
 }
 
 .mbottombar .phone span {
