@@ -53,7 +53,7 @@
   },
   "browserslist": [
     "defaults",
-    "not ie < 9",
+    "ie 9-10",
     "last 2 versions",
     "> 1%",
     "iOS 7",

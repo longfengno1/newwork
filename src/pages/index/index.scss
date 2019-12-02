@@ -962,12 +962,12 @@
 	/*background: #fff;*/
 	border-radius: 5rem/$fit;
 	overflow: hidden;
-	
+	width: auto;
 }
 
 .hotthread .item ul .one-pro {
 	height: 364rem/$fit;
-
+	width: 100%;
 }
 
 .hotthread .item ul li:last-child {
@@ -989,7 +989,7 @@
 	background-size: cover;
 	border-radius: 5rem/$fit;
 	height: 364rem/$fit;
-
+	width: 100%;
 }
 
 .hotthread .item .one-pro .thread .inner {
@@ -1113,6 +1113,7 @@
 	background-repeat: no-repeat;
 	position: relative;
 	width: 100%;
+	width: 380px\9;
 	height: 247rem/$fit;
 	overflow: hidden;
 	border-top-left-radius: 5rem/$fit;
@@ -2140,9 +2141,9 @@
 	display: table-cell;
 	width: 1%;
 	transition: 0.5s ease-in-out all;
-	/*
+	
 	overflow: hidden;
-	*/
+	
 	position: relative;
 	min-width: 65rem/$fit;
 	padding-top: 35%;
