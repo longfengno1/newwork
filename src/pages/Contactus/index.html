@@ -30,15 +30,15 @@
 <body>
     #include('../../common/header.html')
 
-    <div id="main" class="fleetintro hidden-sm">
+    <div id="main" class="fleetintro">
 
-        <div class="topbannerB">
+        <div class="topbannerB hidden-sm">
             <img src="../../images/tobannerB_pic.jpg" />
             <div class="intro-ribbonship"></div>
         </div>
         <div class="section mt20">
             <div class="wraper">
-                <h2 class="title">联系我们</h2>
+                <h2 class="title hidden-sm">联系我们</h2>
 
                 <div class="q1">
 
@@ -47,27 +47,37 @@
                         <b class="b1">预订热线</b>
                     </div>
                     <div class="q2">
-                        <div class="a1">
-                            <p class="s_p1">中国内地</p>
-                            <span class="s_span">
-                                +86-4008499848
-                            </span>
+                        <div class="a1" onclick="showtipsdetail('所在国家：中国 内地','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
+                            <p class="s_p1">
+                                中国内地<span class="s_span">
+                                    +86-4008499848
+                                </span>
+                            </p>
+
                         </div>
-                        <div class="a3" onmouseover="showtipsdetail('所在国家：中国 香港','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
-                            <p class="s_p1">中国香港</p>
-                            <span class="s_span">+852-2317-7711</span>
+                        <div class="a3" onclick="showtipsdetail('所在国家：中国 香港','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
+                            <p class="s_p1">
+                                中国香港
+                                <span class="s_span">+852-2317-7711</span>
+                            </p>
                         </div>
-                        <div class="a1" onmouseover="showtipsdetail('所在国家：新加坡','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
-                            <p class="s_p1">新加坡</p>
-                            <span class="s_span">+65-6808-2288</span>
+                        <div class="a1" onclick="showtipsdetail('所在国家：新加坡','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
+                            <p class="s_p1">
+                                新加坡
+                                <span class="s_span">+65-6808-2288</span>
+                            </p>
                         </div>
-                        <div class="a3" onmouseover="showtipsdetail('所在国家：马来西亚 槟城','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
-                            <p class="s_p1">槟城（马来西亚）</p>
-                            <span class="s_span">+604-2631128</span>
+                        <div class="a3" onclick="showtipsdetail('所在国家：马来西亚 槟城','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
+                            <p class="s_p1">
+                                槟城（马来西亚）
+                                <span class="s_span">+604-2631128</span>
+                            </p>
                         </div>
-                        <div class="a1" onmouseover="showtipsdetail('所在国家：马来西亚 吉隆坡','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
-                            <p class="s_p1">吉隆坡（马来西亚）</p>
-                            <span class="s_span">+603-2302-1288</span>
+                        <div class="a1" onclick="showtipsdetail('所在国家：马来西亚 吉隆坡','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
+                            <p class="s_p1">
+                                吉隆坡（马来西亚）
+                                <span class="s_span">+603-2302-1288</span>
+                            </p>
                         </div>
                     </div>
                     <div class="c1">
@@ -75,7 +85,7 @@
                         <b class="b1">通信地址</b>
                     </div>
                     <script>
-                        function showtipsdetail(t1,t2,t3) {
+                        function showtipsdetail(t1, t2, t3) {
                             document.getElementById('s1').innerText = t1;
                             document.getElementById('s2').innerText = t2;
                             document.getElementById('s3').innerText = t3;
@@ -92,51 +102,10 @@
 
     </div>
 
-    <div style="height:100px;" class="hidden-sm"></div>
-
-    <div class="show-sm sm-rooms">
-        <script>document.getElementById('title_name').textContent = '联系我们';</script>
-
-        <div class="header">
-            <span class="icon-arrowleft"></span>
-        </div>
+    <div style="height:150px;" class="hidden-sm"></div>
+    <script>document.getElementById('title_name').textContent = '联系我们';</script>
 
 
-        <!--移动端-->
-        <div class="food">
-            <div class="mt30 ml30 mb20">
-                <img class="m_mg" src="../../images/dianhua.png" alt="">
-                <b class="m_yd">预订热线</b>
-            </div>
-        </div>
-        <div class="m_ca">
-            <p class="m_p" onclick="showtipsdetail1('所在国家：中国 广州','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">中国内地：<span class="m_span">+86-4008499848</span></p>
-            <p class="m_p m_p-bg" onclick="showtipsdetail1('所在国家：中国 香港','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">
-                中国香港：&nbsp;&nbsp;<span class="m_span">+852-2317-7711</span>
-            </p>
-            <p class="m_p" onclick="showtipsdetail1('所在国家：新加坡','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">新加坡：&nbsp;&nbsp;<span class="m_span">+65-6808-2288</span></p>
-            <p class="m_p m_p-bg" onclick="showtipsdetail1('所在国家：马来西亚 槟城','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">槟城（马来西亚）：&nbsp;&nbsp;<span class="m_span">+604-2631128</span></p>
-            <p class="m_p" onclick="showtipsdetail1('所在国家：马来西亚 吉隆坡','详细地址:广州市中山六路238号越秀新都会大厦西座1908室','邮编:344908')">吉隆坡（马来西亚）：&nbsp;&nbsp;<span class="m_span">+603-2302-1288</span></p>
-        </div>
-        <div class="mt30 ml30 mb20">
-            <img class="m_mg" src="../../images/dingwei.png" alt="">
-            <b class="m_yd">通信地址</b>
-        </div>
-        <script>
-            function showtipsdetail1(t1, t2, t3) {
-                document.getElementById('m1').innerText = t1;
-                document.getElementById('m2').innerText = t2;
-                document.getElementById('m3').innerText = t3;
-            }
-        </script>
-        <div class="a2">
-            <div class="mt20 ml20 mr20 m_te" id="m1">所在国家:中国 - 广州</div>
-            <div class="mt20 ml20 mr20 m_te" id="m2">详细地址:广州市中山六路238号越秀新都会大厦西座1908室</div>
-            <div class="mt20 ml20 mr20 m_te" id="m3">邮编:344908</div>
-        </div>
-
-
-    </div>
     <div class="hidden-sm">
         #include('../../common/footer.html')
     </div>
