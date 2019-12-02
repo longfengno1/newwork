@@ -1,5 +1,4 @@
 @import '../../css/variables.scss';
-@import './sm-index.scss';
 
 .row {
   margin: 0;
@@ -1011,5 +1010,65 @@
         .detail-content {
             padding: 0 0 0 180px;
         }
+    }
+}
+
+
+@media(max-width:767px){
+
+    .list-container .boat-card .picture img
+    {
+        width:100%;
+    }
+    .list-container .boat-card .picture {
+        width: 100%;
+        height: auto;
+        background: none;
+        position: relative;
+    }
+    .activiylist {
+        background: #FFFFFF;
+        width: 100%;
+        margin-top: 0;
+        .boat-card {
+            background: #FFFFFF;
+             border-bottom: 0; 
+            /* border: 2px solid #EFFAF9; */
+            position: relative;
+             padding: 0; 
+        }
+    }
+    .main {
+        max-width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .list {
+        width: 100%;
+        /*min-height: 600px;*/
+        position: relative;
+        margin: 0 auto;
+    }
+    .title-row2 {
+        position: absolute;
+        top: 0rem;
+        /*height: 10.6rem;*/
+        line-height: 10.6rem;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 1.8rem;
+    }
+    .title-row1 {
+        position: absolute;
+        top: 0rem;
+        /*height: 10.6rem;*/
+        line-height: 10.6rem;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 1.8rem;
     }
 }

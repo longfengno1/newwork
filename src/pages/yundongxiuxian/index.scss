@@ -1,5 +1,4 @@
 @import '../../css/variables.scss';
-@import './sm-index.scss';
 
 .topbanner{
 	background:url(../../images/intro.jpg) center -110px no-repeat;
@@ -590,4 +589,148 @@
 .filter_planeB li a.active:hover{
 	text-decoration:none;
 	color:#00969E;
+}
+
+@media(max-width:767px){
+	.fleetintro {
+		width: 100%;
+		overflow: hidden;
+		background: none;
+		background-size: 100% auto;
+		background-attachment: fixed;
+	}
+	.prolist {
+		.pic {
+			height: auto;
+			overflow: hidden;
+			width: 100%;
+			margin-right:0;
+		}
+
+		.protitle {
+			font-size: .7rem;
+			line-height: 1rem;
+			text-align: center;
+		}
+
+		.desc {
+			margin: .25rem .25rem;
+			/* padding: 18px 0; */
+			font-size: .3rem;
+			line-height: 1rem;
+			border: 0px solid #B8C4CB;
+			border-width: 0px 0;
+		}
+
+		.inner {
+			background: #FBFAF9;
+			padding: 0 0 0 0;
+			margin: 0 0 .25rem 0;
+			font-size: .3rem;
+			overflow: hidden;
+			-webkit-box-shadow: 0 0px .125rem 0 rgba(0, 0, 0, 0.3);
+			box-shadow: 0 0px .125rem 0 rgba(0, 0, 0, 0.3);
+			.pic {
+    float: none;
+    margin-right: 0;
+    height: auto;
+    width: 100%;
+	}
+		}
+	}
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+		padding-left:.25rem;
+	}
+	.prowraper {
+		width: 100%;
+	}
+	.col-4 {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-left:0px;
+		padding-right:.25rem;
+	}
+	.sm-food {
+		min-height: 0;
+		width: 100vw;
+		font-family: Helvetica;
+		position: relative;
+
+		.header {
+			z-index: 2;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 84rem/$fit;
+			width: 100vw;
+			color: #ffffff;
+			background-color: #00969E;
+			font-size: 32rem/$fit;
+			color: #F0F0F0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 300;
+
+			.icon-arrowleft {
+				position: absolute;
+				left: 36rem/$fit;
+				font-size: 1rem;
+				cursor: pointer;
+			}
+		}
+
+		.scroll-bar {
+			z-index: 2;
+			background-color: #ffffff;
+			position: fixed;
+			left: 0;
+			top: 84rem/$fit;
+			height: 88rem/$fit;
+			width: 100vw;
+			box-shadow: 0 4rem/$fit 8rem/$fit 0 rgba(0, 0, 0, 0.05);
+			border-radius: 8rem/$fit 8rem/$fit 0 0;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			white-space: nowrap;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
+			.items {
+				display: flex;
+				min-width: 100%;
+			}
+
+			.scroll-item {
+				padding: 0 25rem/$fit;
+				height: 88rem/$fit;
+				line-height: 88rem/$fit;
+				font-size: 28rem/$fit;
+				color: #666666;
+				cursor: pointer;
+				/*font-weight: 300;*/
+				width: 33%;
+				text-align: center;
+			}
+
+			.icon-arrowdown {
+				font-size: 14rem/$fit;
+				margin-left: 16rem/$fit;
+			}
+
+			.active {
+				color: #00969E;
+				border-bottom: 3rem/$fit solid #00969E;
+			}
+		}
+	}
+
 }

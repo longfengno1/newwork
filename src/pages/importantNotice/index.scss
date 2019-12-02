@@ -1,5 +1,4 @@
 @import '../../css/variables.scss';
-@import './sm-index.scss';
 
 .notice-main {
     background: url('../../images/list-banner.png') no-repeat;
@@ -170,4 +169,43 @@
 .active-item {
     background-color: $theme-blue;
     color: $theme-white;
+}
+
+@media(max-width:767px){
+    .notice-main {
+        background: none;
+        background-position: top;
+        background-size: 100%;
+        padding-bottom: 0px;
+
+        .content {
+            background-color: transparent;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px 0 0px;
+            min-height: 5rem;
+
+            .notice-list {
+                margin-top: 0;
+            }
+
+            .notice-content h4 {
+                color: #00969d;
+                font-size: .7rem;
+                margin-bottom: .25rem;
+                margin-top: .25rem;
+            }
+
+            p {
+                font-size: .3rem;
+            }
+
+            .notice-content .tips {
+                color: #666;
+                font-size: .3rem;
+                line-height: 1rem;
+                margin-top: .25rem;
+            }
+        }
+    }
 }
