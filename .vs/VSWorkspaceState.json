@@ -3,13 +3,8 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\importantNotice",
-    "\\src\\pages\\importantNoticeDetail",
-    "\\src\\pages\\jobs",
-    "\\src\\pages\\LegalNotice",
-    "\\src\\pages\\LegalNoticedetail",
-    "\\src\\pages\\yundongxiuxian"
+    "\\src\\pages\\xinshoudaolan"
   ],
-  "SelectedNode": "\\src\\pages\\yundongxiuxian\\index.js",
+  "SelectedNode": "\\src\\pages\\xinshoudaolan\\index.scss",
   "PreviewInSolutionExplorer": false
 }

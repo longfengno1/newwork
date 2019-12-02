@@ -335,45 +335,7 @@
 	float:none;
 	width:100%;
 }
-.youlist-wraper{
-	width:1182px;
-}
-.youlist .pic{
-	width:576px;
-	height:324px;
-	overflow:hidden;
-	position:relative;
-}
-.youlist .pic .tags{
-	width:100%;
-	position:absolute;
-	bottom:0;
-	height:82px;
-	background:url(../../images/you_rectangle.png) repeat-x;
-	color:#fff;
-	font-size:16px;
-	padding-top:46px;
-	padding-left:20px;
-}
-.youlist .pic .tags [class^="icon-"], 
-.youlist .pic .tags [class*=" icon-"]{
-	margin-right:8px;
-}
-.youlist .inner{
-	background:#FEFAEF;
-	padding-bottom:17px;
-	margin-bottom:30px;
-}
-.youlist .protitle{
-	font-size:18px;
-	padding:0 20px;
-	margin-top:20px;
-}
-.youlist .desc{
-	font-size:12px;
-	padding:0 20px;
-	margin-top:11px;
-}
+
 .topbannerB{
 	position:relative;
 	text-align:center;
@@ -551,20 +513,24 @@
 	border-left: 1px solid #E5E5E5;
 }
 .filter_planeB li{
-	padding-left:192px;
+	/*padding-left:192px;*/
 	height:50px;
 	background: rgba(100,204,201,0.10);
 	border-bottom:1px solid #fff;
 	line-height:50px;
 	font-size:16px;
+	border-radius: 0.2rem;
 }
 .filter_planeB li label{
 	float:left;
-	margin-left:-152px;
+	/*margin-left:-152px;*/
 	font-size: 16px;
 	color: #343E57;
 	letter-spacing: 2.77px;
-	text-align: center;
+	/*text-align: center;*/
+	margin-bottom:0;
+	margin-left:30px;
+	width:70%;
 }
 .filter_planeB li a{
 	color:#343E57;
@@ -585,22 +551,29 @@
  .leftMenuSub{
 	border-left: 10px solid #00969E;
 }
+.filter_arrowright {
+	top: 16px;
+	right: 10%;
+}
 
 .filter_planeC li {
-	padding-left: 192px;
+	/*padding-left: 192px;*/
 	height: 50px;
 	background: rgba(0,150,158,0.90);
 	border-bottom: 1px solid #fff;
 	line-height: 50px;
 	font-size: 16px;
+	border-radius: 0.2rem;
 }
 .filter_planeC li label {
-	float: left;
-	margin-left: -152px;
+	/*float: left;*/
+	/*margin-left: -152px;*/
 	font-size: 16px;
 	color: #fff;
 	letter-spacing: 2.77px;
-	text-align: center;
+	/*text-align: center;*/
+	margin-left: 30px;
+	width: 70%;
 }
 .filter_planeC li a {
 	color: #343E57;
@@ -617,4 +590,16 @@
 .filter_planeC li a.active:hover {
 	text-decoration: none;
 	color: #00969E;
+}
+
+
+.help-content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.help-desc {
+	line-height: .7rem;
+	padding: 15px;
+	font-size: 14px;
+	background-color: #fafafa;
 }
