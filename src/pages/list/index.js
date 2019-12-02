@@ -3,8 +3,8 @@ import './index.scss';
 import "../../js/slick.min";
 
 (function () {
-  let expand = false;
-  let showPlace = false;
+  var expand = false;
+  var showPlace = false;
 
   function init() {
     $('#travel_calendar').hide();
@@ -15,7 +15,7 @@ import "../../js/slick.min";
 
   init();
 
-  $('#show-calendar').click(() => {
+  $('#show-calendar').click(function(){
     if (expand) {
       $('#travel_calendar').hide();
       $('#calendar-icon').addClass('icon-arrowup');
@@ -25,11 +25,11 @@ import "../../js/slick.min";
       $('#travel_calendar').show();
       $('#calendar-icon').removeClass('icon-arrowup');
       $('#calendar-icon').addClass('icon-arrowdown');
-      expand = true
+      expand = true;
     }
   })
 
-  $('#select-place').click(() => {
+  $('#select-place').click(function(){
     if (showPlace) {
       $('#select-place-row').hide();
     } else {
@@ -39,16 +39,16 @@ import "../../js/slick.min";
   })
   $('.route-line-more').click(function(e){
     var $this= $(this);
-    var $em = $this.find("em")
+    var $em = $this.find("em");
     $this.parent().toggleClass("showmore");
     if($em.text()=="更多"){
-      $em.html("隐藏")
+      $em.html("隐藏");
     }else{
-      $em.html("更多")
+      $em.html("更多");
     }
   })
   $('.route-line').each(function(i,v){
-    var $this=$(v)
+    var $this=$(v);
 
     if($this.height()>26){
       $this.removeClass('showmore');
@@ -70,7 +70,7 @@ import "../../js/slick.min";
     }
   })
   $('.date-list').each(function(i,v){
-    var $this=$(v)
+    var $this=$(v);
     if($this.height()>28){
       $this.removeClass('showmore');
     }else{
