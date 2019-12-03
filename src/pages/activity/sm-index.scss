@@ -406,7 +406,13 @@
   .activiylist .boat-card{
     padding: 32rem/$fit 24rem/$fit;
   }
+  .list-container .boat-card .detail{
+    padding: 0;
+    height: auto;
+  }
   .list-container .boat-card .picture{
+    position: relative;
+    margin: 0;
     width: 100%;
   }
   .list-container .boat-card .detail-content{

@@ -274,13 +274,19 @@
     &:last-child {
       margin-bottom: 0;
     }
-
+    .detail{
+      position: relative;
+      padding-left: 285px;
+      height: 160px;
+    }
     .picture {
       width: 285px;
       height: 160px;
       background: url(../../images/pic1.jpg);
-      position: relative;
+      position: absolute;
       overflow: hidden;
+      float: left;
+      left: 0;
       img {
         position: absolute;
         left: 0;
@@ -289,8 +295,8 @@
     }
 
     .detail-content {
-      width: calc(100% - 285px);
       padding: 19px 10px 0 10px;
+      
       font-family: MEllePRC-Medium;
       color: #383838;
       position: relative;
