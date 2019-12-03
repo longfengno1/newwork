@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\activity",
-    "\\src\\pages\\activityDiscount",
-    "\\src\\pages\\activitysubject",
+    "\\src\\pages\\Contactus",
     "\\src\\pages\\food",
+    "\\src\\pages\\importantNoticeDetail",
     "\\src\\pages\\jingcaishipin",
-    "\\src\\pages\\yundongxiuxian",
-    "\\src\\pages\\ziliaoxiazai"
+    "\\src\\pages\\mediaCenter",
+    "\\src\\pages\\TermsDetail",
+    "\\src\\pages\\xinshoudaolan"
   ],
-  "SelectedNode": "\\src\\pages\\yundongxiuxian\\index.html",
+  "SelectedNode": "\\src\\pages\\aboutus",
   "PreviewInSolutionExplorer": false
 }

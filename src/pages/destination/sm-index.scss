@@ -154,7 +154,15 @@
 		flex:auto;
 		max-width:none;
 	}
-	
+	.youlist .pic {
+		width: 576rem/$fit;
+		height: auto !important;
+		overflow: hidden;
+		position: relative;
+	}
+	.countrylist li {
+		font-size: 28rem/$fit !important;
+	}
 	.prolist .pic, .prolist .pic img{
 		width:100%;
 	}
@@ -217,18 +225,21 @@
 	}
 	.sm-youlist-wraper .youlist-s{
 		position:relative;
-		height:500rem/$fit;
+		height:420rem/$fit;
 		overflow:scroll;
 		overflow-y:hidden;
 	}
 	.sm-youlist-wraper .youlist{
 		position:absolute;
-		height:460rem/$fit;
+		height:auto;
 		width:1820rem/$fit;
 	}
 	.sm-youlist-wraper .youlist .pic{
 		width:100%;
 		border-radius:6rem/$fit;
+		img{
+			width:100%
+		}
 	}
 	.sm-youlist-wraper .youlist li{
 		width:450rem/$fit;
@@ -261,6 +272,7 @@
 	.desc-pic {
 		width: 100%;
 	}
+
 }
  
 /* 横向放置的手机及分辨率更小的设备 */
