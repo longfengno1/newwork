@@ -113,11 +113,16 @@
     }
   }
 }
-.desc_content{
-  .title{
-    font-size: 20px;
-    padding: 26px 0 20px 0;
-  }
+.desc_content {
+    .title {
+        font-size: 20px;
+        /*padding: 26px 0 20px 0;*/
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 30px;
+    }
 }
 .list-main {
   .topbannerB {
@@ -1341,7 +1346,17 @@
 }
 @media (max-width: 767px)
 {
+    .desc_content {
+        .title {
+            font-size: .7rem;
+            /*padding: .5rem 0 .5rem 0;*/
+        }
 
+        p {
+            font-size: .3rem;
+            line-height: 1rem;
+        }
+    }
         .activity-title {
             position: relative;
             text-align: center;

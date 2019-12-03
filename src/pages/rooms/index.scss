@@ -1,5 +1,4 @@
 @import '../../css/variables.scss';
-@import './sm-index.scss';
 
 .topbanner{
 	background:url(../../images/intro.jpg) center -110rem/$fit no-repeat;
@@ -496,7 +495,7 @@
 }
 .prolistD li .inner{
 	/*padding-left:466rem/$fit;*/
-	padding-right:20rem/$fit;
+	padding-right:0rem/$fit;
 	background:none;
 }
 .prolistD li .pic{
@@ -511,33 +510,37 @@
 	width:416rem/$fit;
 	height:234rem/$fit;
 }
-.prolistD .protitle{
-	font-size:18rem/$fit;
-	text-align:left;
-	margin:0;
+.prolistD .protitle {
+	font-size: 18rem/$fit;
+	text-align: left;
+	margin: 0 0 0 .25rem;
 }
-.prolistD .desc{
-	padding:0;
-	border:0;
-	margin:0;
-	margin-top:20rem/$fit;
-	font-size:14rem/$fit;
-	line-height:28rem/$fit;
+.prolistD .desc {
+	padding: 0;
+	border: 0;
+	margin: 0 0 0 .25rem;
+	margin-top: 20rem/$fit;
+	font-size: 14rem/$fit;
+	line-height: 28rem/$fit;
 	/*margin-left:20rem/$fit;*/
 }
-.prolistD .infos{
-	overflow:hidden;
-	padding:0;
-	margin-top:10rem/$fit;
+.prolistD .infos {
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 0 .25rem;
+	margin-top: 10rem/$fit;
+}
+.prolistD .arction {
+	margin: 0 0 0 .25rem;
 }
 .prolistD li:nth-child(2n) .inner{
-	padding-left:20rem/$fit;
+	padding-left:0rem/$fit;
 	/*padding-right:466rem/$fit;*/
 }
 .prolistD li:nth-child(2n) .pic{
 	float:right;
 	margin-left:0;
-	/*margin-right:-466rem/$fit;*/
+	margin-right:0rem;
 }
 .prolistD .pic .op{
 	position:absolute;
@@ -626,4 +629,169 @@
 	text-align:center;
 	display:inline-block;
 	border-left: 1rem/$fit solid #E5E5E5;
+}
+
+@media(max-width:767px) {
+	.fleetintro
+	{
+		background:none;
+	}
+	.prolistD li:nth-child(2n) .inner {
+		padding-left: 0;
+		padding-right: 0;
+		background: none;
+	}
+
+
+	.prolistD li:nth-child(2n) .pic {
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+		width: 294rem/$fit;
+		height: 165rem/$fit;
+		margin-right: .5rem;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.prolistD {
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+
+		li {
+			background: #F7FCFC;
+			padding: 0.25rem;
+			height: auto;
+			margin-bottom: 0.25rem;
+			-webkit-box-shadow: 0 0.0rem 0.0rem rgba(0, 0, 0, 0.3);
+			box-shadow: 0 0.0rem 0.0rem rgba(0, 0, 0, 0.3);
+
+			.inner {
+				padding-left: 0;
+				padding-right: 0;
+				background: none;
+			}
+
+			.pic {
+				float: left;
+				margin-left: 0;
+				width: 294rem/$fit !important;
+				height: 165rem/$fit;
+				position: relative;
+				margin-right: .5rem;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+
+		.inner {
+			background: #FBFAF9;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			font-size: 0.3rem;
+			overflow: hidden;
+			margin: 0 0;
+			padding: 0 0;
+			border-bottom: 0 solid #CCCCCC;
+			border-top: 0 solid #CCCCCC;
+		}
+
+		.protitle {
+			font-size: 28rem/$fit;
+			line-height: 40rem/$fit;
+			text-align: left;
+			margin-left: .5rem;
+		}
+
+		.infos {
+			.item {
+				font-size: .3rem;
+				line-height: 1rem;
+				width: 100%;
+			}
+		}
+
+		.desc {
+			font-size: .3rem;
+			line-height: 1rem;
+			margin-top: .25rem;
+		}
+	}
+
+	.sm-rooms {
+		/*min-height: 100vh;*/
+		width: auto;
+		font-family: Helvetica;
+		position: relative;
+		/*padding-top: 172rem/$fit;*/
+		.header {
+			z-index: 2;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 84rem/$fit;
+			width: 100vw;
+			color: #ffffff;
+			background-color: #00969E;
+			font-size: 32rem/$fit;
+			color: #F0F0F0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 300;
+
+			.icon-arrowleft {
+				position: absolute;
+				left: 36rem/$fit;
+				font-size: 1rem;
+				cursor: pointer;
+			}
+		}
+
+		.scroll-bar {
+			z-index: 2;
+			background-color: #ffffff;
+			position: fixed;
+			left: 0;
+			top: 84rem/$fit;
+			height: 88rem/$fit;
+			width: 100vw;
+			box-shadow: 0 4rem/$fit 8rem/$fit 0 rgba(0, 0, 0, 0.05);
+			border-radius: 8rem/$fit 8rem/$fit 0 0;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			white-space: nowrap;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
+			.items {
+				display: flex;
+				min-width: 100%;
+			}
+
+			.scroll-item {
+				height: 88rem/$fit;
+				line-height: 88rem/$fit;
+				font-size: 28rem/$fit;
+				color: #343E57;
+				cursor: pointer;
+				font-weight: 300;
+				width: 33.33%;
+				text-align: center;
+			}
+
+			.active {
+				color: #00969E;
+				border-bottom: 3rem/$fit solid #00969E;
+			}
+		}
+	}
 }

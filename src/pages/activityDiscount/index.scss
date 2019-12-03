@@ -742,8 +742,8 @@
 			width: 100vw;
 			box-shadow: 0 4rem/$fit 8rem/$fit 0 rgba(0, 0, 0, 0.05);
 			border-radius: 8rem/$fit 8rem/$fit 0 0;
-			overflow-x: scroll;
-			overflow-y: hidden;
+			/*overflow-x: scroll;
+        overflow-y: hidden;*/
 			white-space: nowrap;
 
 			&::-webkit-scrollbar {
@@ -762,9 +762,30 @@
 				font-size: 28rem/$fit;
 				color: #666666;
 				cursor: pointer;
-				/*font-weight: 300;*/
-				width: 33%;
+				font-weight: 300;
+				width: 33.33%;
 				text-align: center;
+				position: relative;
+
+				.opener {
+					position: absolute;
+					width: 100%;
+					background: #fff;
+					box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+					left: 0;
+					display: none;
+				}
+
+				&.active {
+					.opener {
+						display: block;
+
+						li {
+							text-align: center;
+							color: #666666;
+						}
+					}
+				}
 			}
 
 			.icon-arrowdown {
@@ -774,7 +795,6 @@
 
 			.active {
 				color: #00969E;
-				border-bottom: 3rem/$fit solid #00969E;
 			}
 		}
 	}

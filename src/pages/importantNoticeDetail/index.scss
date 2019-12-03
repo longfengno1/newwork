@@ -113,11 +113,17 @@
     }
   }
 }
-.desc_content{
-  .title{
-    font-size: 20px;
-    padding: 26px 0 20px 0;
-  }
+.desc_content {
+    .title {
+        font-size: 20px;
+        padding: 26px 0 20px 0;
+    }
+
+    p {
+        font-size:14px;
+        line-height:30px;
+        text-indent:40px;
+    }
 }
 .list-main {
   .topbannerB {
@@ -1369,6 +1375,12 @@
             width: 100%;
             margin-left: 0;
             margin-bottom: 0;
+        }
+
+        p {
+            font-size: .3rem;
+            line-height: 1rem;
+            text-indent: 1rem;
         }
     }
     .timer {

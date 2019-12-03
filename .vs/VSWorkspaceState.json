@@ -3,8 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\xinshoudaolan"
+    "\\src\\pages\\activity",
+    "\\src\\pages\\activityDiscount",
+    "\\src\\pages\\activitysubject",
+    "\\src\\pages\\food",
+    "\\src\\pages\\jingcaishipin",
+    "\\src\\pages\\yundongxiuxian",
+    "\\src\\pages\\ziliaoxiazai"
   ],
-  "SelectedNode": "\\src\\pages\\xinshoudaolan\\index.scss",
+  "SelectedNode": "\\src\\pages\\yundongxiuxian\\index.html",
   "PreviewInSolutionExplorer": false
 }
