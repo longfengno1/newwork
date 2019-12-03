@@ -636,6 +636,9 @@
 	{
 		background:none;
 	}
+	.section {
+		border-bottom: 0rem solid #F8F8F8;
+	}
 	.prolistD li:nth-child(2n) .inner {
 		padding-left: 0;
 		padding-right: 0;
@@ -679,7 +682,7 @@
 				float: left;
 				margin-left: 0;
 				width: 294rem/$fit !important;
-				height: 165rem/$fit;
+				height: 165rem/$fit !important;
 				position: relative;
 				margin-right: .5rem;
 

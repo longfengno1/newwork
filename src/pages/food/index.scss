@@ -259,6 +259,10 @@
 	overflow: hidden;
 	box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
 }
+.prolist li {
+	float: left;
+	width: 33.33%;
+}
 .prolist .pic,
 .prolist .pic img{
 	width:100%;
