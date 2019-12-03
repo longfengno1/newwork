@@ -591,3 +591,76 @@
 	text-decoration:none;
 	color:#00969E;
 }
+@media(max-width:767px) {
+	.fleetintro {
+		width: 100%;
+		overflow: hidden;
+		background: none;
+		background-size: 100% auto;
+		background-attachment: fixed;
+	}
+
+	.prolist {
+		.pic {
+			height: auto;
+			overflow: hidden;
+			width: 100%;
+			margin-right: 0;
+		}
+
+		.protitle {
+			font-size: .7rem;
+			line-height: 1rem;
+			text-align: center;
+		}
+
+		.desc {
+			margin: .25rem .25rem;
+			/* padding: 18px 0; */
+			font-size: .3rem;
+			line-height: 1rem;
+			border: 0px solid #B8C4CB;
+			border-width: 0px 0;
+		}
+
+		.inner {
+			background: #FBFAF9;
+			padding: 0 0 0 0;
+			margin: 0 0 .25rem 0;
+			font-size: .3rem;
+			overflow: hidden;
+			-webkit-box-shadow: 0 0px .125rem 0 rgba(0, 0, 0, 0.3);
+			box-shadow: 0 0px .125rem 0 rgba(0, 0, 0, 0.3);
+
+			.pic {
+				float: none;
+				margin-right: 0;
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+		padding-left: .25rem;
+	}
+
+	.prowraper {
+		width: 100%;
+	}
+
+	.col-4 {
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 50%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-left: 0px;
+		padding-right: .25rem;
+	}
+
+
+}
