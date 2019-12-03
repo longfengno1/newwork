@@ -603,3 +603,42 @@
 	font-size: 14px;
 	background-color: #fafafa;
 }
+.help-left {
+	width: 250px;
+}
+@media(max-width:767px){
+	.fleetintro
+	{
+		background:none;
+	}
+	.help-left {
+		width: 100%;
+	}
+	.filter_arrowright {
+		top: 16rem/$fit;
+		right: 20rem/$fit;
+	}
+
+	.filter_planeB {
+		li {
+			/* padding-left: 192px; */
+			height: 80rem/$fit;
+			background: rgba(100, 204, 201, 0.1);
+			border-bottom: 1rem/$fit solid #fff;
+			line-height: 80rem/$fit;
+			font-size: 28rem/$fit;
+			border-radius: 0.2rem;
+
+			label {
+				float: left;
+				font-size: 28rem/$fit;
+				color: #343E57;
+				letter-spacing: 2.77px;
+				/* text-align: center; */
+				margin-bottom: 0;
+				margin-left: 30rem/$fit;
+				width: 80%;
+			}
+		}
+	}
+}

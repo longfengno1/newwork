@@ -753,11 +753,17 @@
 }
 
 @media(max-width:767px) {
+
+	.fleetintro {
+		background: none;
+	}
+
 	.prowraper {
 		width: 100%;
 	}
 
 	.section {
+		border-bottom: 0rem solid #F8F8F8;
 		.title {
 			font-size: .7rem;
 			text-align: center;
@@ -791,7 +797,7 @@
 		}
 
 		.desc {
-			font-size: 0.4rem;
+			font-size: 24rem/$fit;
 			color: #343E57;
 			line-height: 1rem;
 			margin: .5rem .8rem .5rem .8rem;
@@ -821,13 +827,13 @@
 			position: inherit;
 			left: 0;
 			top: 0;
-			font-size: .7rem;
+			font-size: 32rem/$fit;
 			text-align: center;
 			color: #00969E;
 		}
 
 		.desc1 {
-			font-size: .4rem;
+			font-size: 24rem/$fit;
 			color: #343E57;
 			line-height: 1rem;
 			width: auto;

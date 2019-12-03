@@ -645,8 +645,8 @@
 		}
 
 		.protitle {
-			font-size: .7rem;
-			line-height: 1rem;
+			font-size: 32rem/$fit;
+			line-height: 40rem/$fit;
 			text-align: center;
 			padding: 0 0 0 0;
 		}
@@ -654,8 +654,8 @@
 		.desc {
 			margin: .25rem .25rem;
 			/* padding: 18px 0; */
-			font-size: .3rem;
-			line-height: 1rem;
+			font-size: 24rem/$fit;
+			line-height: 40rem/$fit;
 			border: 0px solid #B8C4CB;
 			border-width: 0px 0;
 		}
@@ -670,7 +670,7 @@
 			background: #FBFAF9;
 			padding: 0 0 0 0;
 			margin: 0 0 .25rem 0;
-			font-size: .3rem;
+			font-size: 24rem/$fit;
 			overflow: hidden;
 			-webkit-box-shadow: 0 0px .125rem 0 rgba(0, 0, 0, 0.3);
 			box-shadow: 0 0px .125rem 0 rgba(0, 0, 0, 0.3);

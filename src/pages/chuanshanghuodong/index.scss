@@ -786,7 +786,7 @@
 			background: #FBFAF9;
 			padding-bottom: 0;
 			margin-bottom: 0;
-			font-size: 0.3rem;
+			font-size: 24rem/$fit;
 			overflow: hidden;
 			margin: 0 0;
 			padding: 0 0;
@@ -795,7 +795,7 @@
 		}
 
 		.protitle {
-			font-size: 28rem/$fit;
+			font-size: 32rem/$fit;
 			line-height: 40rem/$fit;
 			text-align: left;
 			margin-left: .5rem;
@@ -803,14 +803,14 @@
 
 		.infos {
 			.item {
-				font-size: .3rem;
+				font-size: 24rem/$fit;
 				line-height: 1rem;
 				width: 100%;
 			}
 		}
 
 		.desc {
-			font-size: .3rem;
+			font-size: 24rem/$fit;
 			line-height: 1rem;
 			margin-top: .25rem;
 		}
