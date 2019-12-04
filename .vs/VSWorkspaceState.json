@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\Contactus",
+    "\\src\\pages\\aboutus",
+    "\\src\\pages\\activitydetail",
+    "\\src\\pages\\destination",
     "\\src\\pages\\food",
-    "\\src\\pages\\importantNoticeDetail",
-    "\\src\\pages\\jingcaishipin",
     "\\src\\pages\\mediaCenter",
-    "\\src\\pages\\TermsDetail",
+    "\\src\\pages\\roomsDetail",
     "\\src\\pages\\xinshoudaolan"
   ],
-  "SelectedNode": "\\src\\pages\\aboutus",
+  "SelectedNode": "\\src\\pages\\destination\\index.html",
   "PreviewInSolutionExplorer": false
 }

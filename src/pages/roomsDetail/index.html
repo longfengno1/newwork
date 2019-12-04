@@ -1,0 +1,140 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>皇宫套房</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+    <div id="main" class="fleetintro">
+
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+        <div class="section mt20">
+            <div class="wraper">
+                <h2 class="title hidden-sm">皇宫套房</h2>
+                <div class="filter_plane mt30 hidden-sm">
+                    <ul>
+                        <li class="tab-title ">简介</li>
+                        <li class="tab-title current">皇宫套房</li>
+                        <li class="tab-title">露台客房</li>
+                        <li class="tab-title">海景客房</li>
+                        <li class="tab-title">内侧客房</li>
+                    </ul>
+                </div>
+                <div class="show-sm" style="height:1.5rem"></div>
+                <div class="info">
+                    <p><img src="../../images/pic7.jpg"></p>
+                    <p>皇宫行政套房内的装饰精致而典雅，舒适的＂星梦睡床＂配备精选优质寝具，浴室内设有水疗级的设施和用品，包括顶级品质的浴袍。宽敞的独立客厅还专设用餐区，营造闲适的居家氛围。来到户外私人阳台，饱览海天一色的迷人风光，畅情领略非凡星梦之旅。</p>
+                    <p>
+                        面积：56 - 115平米<br />
+
+                        可容纳人数：6<br />
+
+
+                        客房设施：<br />
+
+
+                        敞阔的卧室配备一张特大双人床/双人床及精选优质寝具<br />
+
+                        专属露台<br />
+
+                        宽敞的独立客厅及用餐区<br />
+
+                        24小时尊尚礼宾管家服务<br />
+
+                        两台平板电视<br />
+
+                        配备浴缸、独立淋浴及两个卫生间的豪华浴室<br />
+
+
+                        图片仅供参考。<br />
+                    </p>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section mt50 hidden-sm">
+        <div class="wraper">
+            <p class="tc fz16">立即预订您的星梦假期</p>
+            <p class="tc mt20"><a href="###" class="btn-styleD">预订旅程</a></p>
+        </div>
+    </div>
+    
+    <div style="height:100px;" class="hidden-sm"></div>
+    <div class="show-sm sm-rooms">
+        <script>document.getElementById('title_name').textContent = '皇宫套房';</script>
+        <div class="header">
+            <span class="icon-arrowleft"></span>精致客房
+        </div>
+        <div class="scroll-bar">
+            <div class="items">
+                <div class="scroll-item active">云顶梦号</div>
+                <div class="scroll-item">世界梦号</div>
+                <div class="scroll-item">探索梦号</div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+    
+    <div class="hidden-sm">
+        <div class="left-select-ship">
+            <ul>
+                <li class="ship01">
+                    <a href="###">
+                        <span>世界梦号</span>
+                    </a>
+                </li>
+                <li class="ship02">
+                    <a href="###">
+                        <span>云顶梦号</span>
+                    </a>
+                </li>
+                <li class="ship03">
+                    <a href="###">
+                        <span>探索梦号</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        #include('../../common/footer.html')
+    </div>
+    #include('../../common/sm_footer_button.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+</html>

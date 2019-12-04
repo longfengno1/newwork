@@ -141,7 +141,6 @@
     font-size: 16px;
     line-height: 28px;
     margin: 10px 0;
-    font-family: SourceHanSans-Regular;
   }
   img{
     width: 50%;
@@ -225,7 +224,6 @@
         color: #383838;
 
         &:last-child {
-          font-family: Helvetica;
           cursor: pointer;
         }
       }
@@ -256,7 +254,6 @@
     .detail-content {
       width: calc(100% - 240px);
       padding: 19px 10px 0 10px;
-      font-family: MEllePRC-Medium;
       color: #383838;
       position: relative;
 
@@ -290,7 +287,6 @@
         width: 20px;
         height: 20px;
         border-radius: 10px;
-        font-family: Helvetica;
         font-size: 12px;
         color: #00969E;
         background: #FFFFFF;
@@ -314,7 +310,6 @@
     .date-list-item {
       display: inline-block;
       line-height: 18px;
-      font-family: Helvetica;
       font-size: 12px;
       color: #383838;
       text-align: center;
@@ -374,7 +369,6 @@
 
   .description {
     padding: 16px 22px 12px 8px;
-    font-family: MEllePRC-Medium;
     .tags{
       .hot-tag{
         font-size: 12px;
