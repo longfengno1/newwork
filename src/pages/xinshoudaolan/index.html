@@ -5,26 +5,7 @@
     <meta charset="UTF-8">
     <title>新手导览</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript">
-        (function (doc, win) {
-            var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
 
-                    var fontSize = 20 * (clientWidth / 375);
-                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
-                    docEl.style.fontSize = fontSize + 'px';
-                    var dpi = window.devicePixelRatio;
-                    docEl.setAttribute('data-dpi', dpi);
-                };
-            recalc();
-            if (!doc.addEventListener) return;
-            win.addEventListener(resizeEvt, recalc, false);
-        })(document, window);
-
-    </script>
 
 </head>
 
@@ -43,24 +24,97 @@
 
                 <div class="row no-gutters">
                     <div class="col-auto help-left">
-                        <div class="filter_planeB "><ul><li><label>启航预约</label><span class="icon-arrowright mr12 filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>已预约旅客</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB"><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB"><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB"><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB"><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
-                        <div class="filter_planeB "><ul><li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span></li></ul></div>
+                        <div class="filter_planeB" subview="views_1">
+                            <ul>
+                                <li><label>启航预约</label><span class="icon-arrowright mr12 filter_arrowright"></span></li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB " subview="views_2">
+                            <ul>
+                                <li><label>已预约旅客</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB ">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB ">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB ">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB ">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB ">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB ">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB ">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter_planeB ">
+                            <ul>
+                                <li><label>出发前须知</label><span class="icon-arrowright mr12  filter_arrowright"></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col hidden-sm">
                         <div class="help-content">
-                            <div class="filter_planeB " onclick="show_detail(this, 'desc1')"><ul><li><label>登船及离船手续</label></li></ul></div>
+                            <div class="filter_planeB " onclick="show_detail(this, 'desc1')">
+                                <ul>
+                                    <li><label>登船及离船手续</label></li>
+                                </ul>
+                            </div>
                             <div class="help-desc" id="desc1" style="display:none;">
                                 <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
                                 <p>签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
@@ -154,7 +208,11 @@
                                 <p class="redf00">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
                             </div>
 
-                            <div class="filter_planeB " onclick="show_detail(this, 'desc2')"><ul><li><label>登船及离船手续</label></li></ul></div>
+                            <div class="filter_planeB " onclick="show_detail(this, 'desc2')">
+                                <ul>
+                                    <li><label>登船及离船手续</label></li>
+                                </ul>
+                            </div>
                             <div class="help-desc" id="desc2" style="display:none;">
                                 <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
                                 <p>签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
@@ -257,71 +315,123 @@
     <div style="height:150px;" class="hidden-sm"></div>
 
     <div class="show-sm sm-food">
-        <script>document.getElementById('title_name').textContent = '新手导览';</script>
+        <script>
+            document.getElementById('title_name').textContent = '新手导览';
+        </script>
+        <div class="views" id="views_1">
+            <div class="header-bar">
+                <div class="header-bar-inner">
+                    <div class="sm-header">
+                        <span class="icon-arrowleft"></span>
+                        <span id="title_name">启航预约</span>
+                    </div>
+                </div>
+            </div>
+            <div class="viewbody">
+                <div class="scroll-bar">
 
-        <div class="scroll-bar">
+                    <div class="items" onclick="show_detail(this,'help_detail')">
+                        <div class="scroll-item active">登船及离船手续<span class="icon-arrowdown"></span></div>
+                    </div>
+                </div>
+                <div class="mt30 fz16 ml20 mr20" id="help_detail">
+                    <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
+                    <p class="mt20">签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
+                    <p class="mt20">如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
+                    <p class="mt40">探索梦号</p>
+                    <p class="mt20">由澳洲/新西兰出发之航线</p>
+                    <p><a class="green" href="###">– 出入境要求</a></p>
+                    <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
 
-            <div class="items" onclick="show_detail('help_detail')">
-                <div class="scroll-item active">登船及离船手续<span class="icon-arrowdown"></span></div>
+                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
+                    <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
+
+                    <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
+                    <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
+
+                    <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
+                    <p class="mt40">由上海/天津出发之航线</p>
+                    <p><a class="green" href="###">– 出入境要求</a></p>
+                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
+                    <p class="redf00 mt50">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
+                    <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
+                    <p class="mt20">签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
+                    <p class="mt20">如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
+                    <p class="mt40">探索梦号</p>
+                    <p class="mt20">由澳洲/新西兰出发之航线</p>
+                    <p><a class="green" href="###">– 出入境要求</a></p>
+                    <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
+                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
+                    <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
+                    <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
+                    <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
+                    <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
+
+                    <p class="mt40">由上海/天津出发之航线</p>
+                    <p><a class="green" href="###">– 出入境要求</a></p>
+                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
+
+                    <p class="redf00 mt50">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
+                </div>
+                <div style="height:5px;" class="show-sm"></div>
+                <div class="scroll-bar">
+                    <div class="items">
+                        <div class="scroll-item active">启航预约<span class="icon-arrowdown"></span></div>
+                    </div>
+                </div>
+                <div style="height:5px;" class="show-sm"></div>
+                <div class="scroll-bar">
+                    <div class="items">
+                        <div class="scroll-item active">已预约旅客<span class="icon-arrowdown"></span></div>
+                    </div>
+                </div>
+                <div style="height:5px;" class="show-sm"></div>
+                <div class="scroll-bar">
+                    <div class="items">
+                        <div class="scroll-item active">出发前须知<span class="icon-arrowdown"></span></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="mt30 fz16 ml20 mr20" id="help_detail">
-            <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
-            <p class="mt20">签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
-            <p class="mt20">如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
-            <p class="mt40">探索梦号</p>
-            <p class="mt20">由澳洲/新西兰出发之航线</p>
-            <p><a class="green" href="###">– 出入境要求</a></p>
-            <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
-
-            <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-            <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
-
-            <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
-            <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
-
-            <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
-            <p class="mt40">由上海/天津出发之航线</p>
-            <p><a class="green" href="###">– 出入境要求</a></p>
-            <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-            <p class="redf00 mt50">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
-            <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
-            <p class="mt20">签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
-            <p class="mt20">如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
-            <p class="mt40">探索梦号</p>
-            <p class="mt20">由澳洲/新西兰出发之航线</p>
-            <p><a class="green" href="###">– 出入境要求</a></p>
-            <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
-            <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-            <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
-            <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
-            <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
-            <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
-
-            <p class="mt40">由上海/天津出发之航线</p>
-            <p><a class="green" href="###">– 出入境要求</a></p>
-            <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-
-            <p class="redf00 mt50">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
-        </div>
-        <div style="height:5px;" class="show-sm"></div>
-        <div class="scroll-bar">
-            <div class="items">
-                <div class="scroll-item active">启航预约<span class="icon-arrowdown"></span></div>
+        <div class="views" id="views_2">
+                <div class="header-bar">
+                    <div class="header-bar-inner">
+                        <div class="sm-header">
+                            <span class="icon-arrowleft"></span>
+                            <span id="title_name">已预约旅客</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewbody">
+                    <div class="scroll-bar">
+    
+                        <div class="items" onclick="show_detail(this,'help_detail2')">
+                            <div class="scroll-item active">已经预定<span class="icon-arrowdown"></span></div>
+                        </div>
+                    </div>
+                    <div class="mt30 fz16 ml20 mr20" id="help_detail2">
+                        <p>正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文</p>
+                    </div>
+                    <div style="height:5px;" class="show-sm"></div>
+                    <div class="scroll-bar">
+                        <div class="items">
+                            <div class="scroll-item active">启航预约<span class="icon-arrowdown"></span></div>
+                        </div>
+                    </div>
+                    <div style="height:5px;" class="show-sm"></div>
+                    <div class="scroll-bar">
+                        <div class="items">
+                            <div class="scroll-item active">已预约旅客<span class="icon-arrowdown"></span></div>
+                        </div>
+                    </div>
+                    <div style="height:5px;" class="show-sm"></div>
+                    <div class="scroll-bar">
+                        <div class="items">
+                            <div class="scroll-item active">出发前须知<span class="icon-arrowdown"></span></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div style="height:5px;" class="show-sm"></div>
-        <div class="scroll-bar">
-            <div class="items">
-                <div class="scroll-item active">已预约旅客<span class="icon-arrowdown"></span></div>
-            </div>
-        </div>
-        <div style="height:5px;" class="show-sm"></div>
-        <div class="scroll-bar">
-            <div class="items">
-                <div class="scroll-item active">出发前须知<span class="icon-arrowdown"></span></div>
-            </div>
-        </div>
 
 
 
@@ -334,17 +444,34 @@
     </div>
     #include('../../common/sm_footer_button.html')
     <script>
-        function show_detail(s,id) {
+        function show_detail(s, id) {
             if (document.getElementById(id).style.display != 'none') {
                 document.getElementById(id).style.display = 'none';
-            }
-            else {
+            } else {
                 document.getElementById(id).style.display = '';
             }
 
-            if (s) {
-            }
+            if (s) {}
         }
+    </script>
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
     </script>
 </body>
 

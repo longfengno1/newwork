@@ -4,25 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>媒体中心</title>
-  <script type="text/javascript">
-    (function (doc, win) {
-      var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          if (!clientWidth) return;
-
-          var fontSize = 20 * (clientWidth / 375);
-          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
-          docEl.style.fontSize = fontSize + 'px';
-          var dpi = window.devicePixelRatio;
-          docEl.setAttribute('data-dpi', dpi);
-        };
-      recalc();
-      if (!doc.addEventListener) return;
-      win.addEventListener(resizeEvt, recalc, false);
-    })(document, window);
-  </script>
+  
 </head>
 
 <body>
@@ -119,7 +101,26 @@
         #include('../../common/footer.html')
     </div>
     #include('../../common/sm_footer_button.html')
-
+    <script type="text/javascript">
+        (function (doc, win) {
+        
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+    
+              var fontSize = 20 * (clientWidth / 375);
+              fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+              docEl.style.fontSize = fontSize + 'px';
+              var dpi = window.devicePixelRatio;
+              docEl.setAttribute('data-dpi', dpi);
+            };
+          recalc();
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+      </script>
 </body>
 
 </html>
