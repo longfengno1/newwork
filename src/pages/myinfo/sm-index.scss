@@ -26,7 +26,6 @@
     background-color: #F8F8F8;
     font-family: Helvetica;
     /*margin-top: 88rem/$fit;*/
-
     section {
         background-color: #ffffff;
         margin-bottom: 24rem/$fit;
@@ -83,7 +82,6 @@
                 margin-right: 24rem/$fit;
             }
         }
-
     }
 
     .my-favorite {
@@ -95,18 +93,20 @@
             height: 340rem/$fit;
             border-radius: 6rem/$fit;
             margin-bottom: 8rem/$fit;
-            background-image: url(../../images/yl5.png), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 56%, rgba(0, 0, 0, 0.60) 74%);
+            background-image: url(../../images/f1.png), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 56%, rgba(0, 0, 0, 0.60) 74%);
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column-reverse;
         }
-        .content{
+
+        .content {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             padding: 0 20rem/$fit 20rem/$fit 24rem/$fit;
         }
-        .tag{
+
+        .tag {
             position: absolute;
             top: 11rem/$fit;
             right: 0;
@@ -119,32 +119,39 @@
             background-color: #F8485E;
             border-radius: 0 6rem/$fit 0 6rem/$fit;
         }
-        .name{
+
+        .name {
             font-size: 34rem/$fit;
             color: #FFFFFF;
             margin-bottom: 16rem/$fit;
         }
-        .time{
+
+        .time {
             font-size: 24rem/$fit;
             color: #FFFFFF;
         }
-        .right{
+
+        .right {
             text-align: right;
         }
-        .price{
+
+        .price {
             font-size: 40rem/$fit;
             color: #F8485E;
-            span{
-               font-size: 22rem/$fit;
-               color: #FFFFFF;
-               line-height: 40rem/$fit;
+
+            span {
+                font-size: 22rem/$fit;
+                color: #FFFFFF;
+                line-height: 40rem/$fit;
             }
         }
+
         .every {
             font-size: 22px;
             color: #FFFFFF;
         }
-        .detail{
+
+        .detail {
             display: inline-block;
             width: 148rem/$fit;
             height: 54rem/$fit;
@@ -156,5 +163,4 @@
             margin-right: 9rem/$fit;
         }
     }
-
 }

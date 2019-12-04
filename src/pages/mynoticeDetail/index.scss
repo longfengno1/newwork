@@ -7,7 +7,7 @@ body {
 }
 
 .my-order {
-    padding: 19rem/$fit 0 200rem/$fit;
+    padding: 19rem/$fit 0 100rem/$fit;
     width: 1200rem/$fit;
     display: flex;
 
@@ -114,7 +114,7 @@ body {
     }
 
     .sign-row{
-        margin-bottom: 93px;
+        /*margin-bottom: 93px;*/
         margin-top: 23px;
         overflow: hidden;
     }
@@ -143,7 +143,7 @@ color: #00969E;
             position: absolute;
             top: 0;
             left: 0;
-            background: url(../../images/navbar-select.png) no-repeat center;
+            /*background: url(../../images/navbar-select.png) no-repeat center;*/
             background-size: contain;
             width: 116px;
             height: 111px;
