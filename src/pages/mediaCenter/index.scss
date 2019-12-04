@@ -187,341 +187,346 @@
 }
 
 .list-container {
-  width: 1120px;
-  overflow-y: overlay;
-  overflow-x: hidden;
-  clear: both;
-  min-height: 500px;
-  margin: 0 auto;
+    width: 1120px;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    clear: both;
+    min-height: 500px;
+    margin: 0 auto;
 
-  .list-mtab {
-    height: 48px;
-    margin-bottom: 4px;
+    .list-mtab {
+        height: 48px;
+        margin-bottom: 4px;
 
-    li {
-      background: #F7FCFC;
-      float: left;
-      height: 48px;
-      line-height: 48px;
-      padding: 0 32px;
+        li {
+            background: #F7FCFC;
+            float: left;
+            height: 48px;
+            line-height: 48px;
+            padding: 0 32px;
 
-      a {
-        font-size: 20px;
-        color: #999;
-      }
+            a {
+                font-size: 20px;
+                color: #999;
+            }
 
-      a:hover {
-        text-decoration: none;
-      }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+
+        .current {
+            border-bottom: 4px solid #00969E;
+
+            a {
+                color: #00969E;
+            }
+        }
     }
 
-    .current {
-      border-bottom: 4px solid #00969E;
+    .select-container {
+        background-color: transparent;
 
-      a {
-        color: #00969E;
-      }
+
+
+        .sort {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 31px;
+
+            span {
+                font-size: 12px;
+                color: #383838;
+
+                &:last-child {
+                    font-family: Helvetica;
+                    cursor: pointer;
+                }
+            }
+        }
     }
-  }
 
-  .select-container {
-    background-color: transparent;
-
-
-
-    .sort {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 31px;
-
-      span {
-        font-size: 12px;
-        color: #383838;
+    .boat-card {
+        background-color: #f7fcfc;
+        margin-bottom: 10px;
 
         &:last-child {
-          font-family: Helvetica;
-          cursor: pointer;
+            margin-bottom: 0;
         }
-      }
+
+        .picture {
+            /*width: 240px;
+      height: 160px;*/
+            /*background: url(../../images/pic1.jpg);*/
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        .detail-content {
+            width: calc(100% - 235px);
+            padding-left: 16px;
+            color: #383838;
+            position: relative;
+
+            .route-name {
+                font-size: 18px;
+                color: #383838;
+                letter-spacing: 1.12px;
+            }
+
+            .route-item {
+                margin-right: 8px;
+                font-size: 12px;
+                color: #383838;
+                letter-spacing: 0.75px;
+
+                &::after {
+                    content: '-';
+                    padding-left: 8px;
+                }
+
+                &:last-child {
+                    &::after {
+                        content: '';
+                    }
+                }
+            }
+
+            .route-item-day {
+                display: inline-block;
+                text-align: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                font-family: Helvetica;
+                font-size: 12px;
+                color: #00969E;
+                background: #FFFFFF;
+                border: 1px solid #00969E;
+                margin-right: 8px;
+            }
+        }
+
+        .cruises-from-date {
+            padding-right: 150px;
+        }
+
+        .detail-content .time {
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        .detail-content .desc {
+           font-size:14px;
+        }
+
+        .detail-content .row {
+        }
+
+        .cruises-name {
+            color: $theme-blue;
+        }
+
+        .date-list-item {
+            display: inline-block;
+            line-height: 18px;
+            font-family: Helvetica;
+            font-size: 12px;
+            color: #383838;
+            text-align: center;
+            padding: 0 8px;
+            border: 1px solid #999999;
+            border-radius: 2px;
+            margin-left: 10px;
+        }
+
+        .date-list-item-more {
+            color: #00969E;
+            border-color: #00969E;
+            cursor: pointer;
+
+            .icon-arrowdown {
+                margin-left: 10px;
+            }
+        }
+
+        .price {
+            position: absolute;
+            right: 20px;
+            bottom: 8px;
+
+            p {
+                text-align: right;
+            }
+        }
+
+        .cur-price {
+            font-size: 28px;
+            color: #F8485E;
+
+            span {
+                font-size: 12px;
+
+                &:last-child {
+                    font-size: 10px;
+                    color: #666666;
+                    letter-spacing: 0.75px;
+                }
+            }
+        }
+
+        .old-price {
+            font-size: 12px;
+            color: #999999;
+
+            span {
+                font-size: 16px;
+                color: #999;
+                line-height: 20px;
+                text-decoration: line-through;
+            }
+        }
     }
-  }
 
-  .boat-card {
-    background-color: #f7fcfc;
-    margin-bottom: 10px;
+    .description {
+        padding: 0;
 
-    &:last-child {
-      margin-bottom: 0;
+        .tags {
+            .hot-tag {
+                font-size: 12px;
+                margin-right: 10px;
+
+                [class^="icon-"],
+                [class*=" icon-"] {
+                    margin-right: 4px;
+                }
+            }
+
+            .hot-tag1 {
+                color: #4A90E2;
+            }
+
+            .hot-tag2 {
+                color: #A05EB5;
+            }
+
+            .hot-tag3 {
+                color: #6EC271;
+            }
+
+            .hot-tag4 {
+                color: #FF7245;
+            }
+
+            .hot-tag5 {
+                color: #F8485E;
+            }
+
+            .hot-tag6 {
+                color: #EE0202;
+            }
+        }
+
+        .tag {
+            font-size: 14px;
+            color: #343E57;
+            letter-spacing: 1.05px;
+            margin-right: 10px;
+        }
+
+        .tip {
+            font-size: 12px;
+            color: #999999;
+            margin-top: 8px;
+        }
+
+        .btn {
+            background: #00969E;
+            border-radius: 2px;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0.88px;
+            padding: 7px 15px;
+        }
+
+        .intro {
+            font-size: 12px;
+            color: #999999;
+            letter-spacing: 0.75px;
+            text-align: right;
+            margin-right: 12px;
+
+            img {
+                cursor: pointer;
+            }
+        }
     }
 
-    .picture {
-      width: 240px;
-      height: 160px;
-      background: url(../../images/pic1.jpg);
-      position: relative;
-      overflow: hidden;
-      img {
-        height: 100%;
-        
-        position: absolute;
-        left: 0;
-        bottom: 0;
-      }
+    .desc-left {
+        float: left;
     }
 
-    .detail-content {
-      width: calc(100% - 120px);
-      padding-left: 16px;
-      color: #383838;
-      position: relative;
+    .desc-right {
+        float: right;
+    }
 
-      .route-name {
-        font-size: 18px;
-        color: #383838;
-        letter-spacing: 1.12px;
-      }
+    .page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+    }
 
-      .route-item {
-        margin-right: 8px;
+    .page-count {
         font-size: 12px;
-        color: #383838;
-        letter-spacing: 0.75px;
-
-        &::after {
-          content: '-';
-          padding-left: 8px;
-        }
-
-        &:last-child {
-          &::after {
-            content: '';
-          }
-        }
-      }
-
-      .route-item-day {
-        display: inline-block;
-        text-align: center;
-        width: 20px;
-        height: 20px;
-        border-radius: 10px;
-        font-family: Helvetica;
-        font-size: 12px;
-        color: #00969E;
-        background: #FFFFFF;
-        border: 1px solid #00969E;
-        margin-right: 8px;
-      }
-    }
-
-    .cruises-from-date {
-      padding-right: 150px;
-    }
-    .detail-content .time {
-      margin-top: 13px;
-    }
-    .detail-content .row {
-     
-    }
-
-    .cruises-name {
-      color: $theme-blue;
-    }
-
-    .date-list-item {
-      display: inline-block;
-      line-height: 18px;
-      font-family: Helvetica;
-      font-size: 12px;
-      color: #383838;
-      text-align: center;
-      padding: 0 8px;
-      border: 1px solid #999999;
-      border-radius: 2px;
-      margin-left: 10px;
-    }
-
-    .date-list-item-more {
-      color: #00969E;
-      border-color: #00969E;
-      cursor: pointer;
-
-      .icon-arrowdown {
-        margin-left: 10px;
-      }
-    }
-
-    .price {
-      position: absolute;
-      right: 20px;
-      bottom: 8px;
-
-      p {
-        text-align: right;
-      }
-
-    }
-
-    .cur-price {
-      font-size: 28px;
-      color: #F8485E;
-
-      span {
-        font-size: 12px;
-
-        &:last-child {
-          font-size: 10px;
-          color: #666666;
-          letter-spacing: 0.75px;
-        }
-      }
-    }
-
-    .old-price {
-      font-size: 12px;
-      color: #999999;
-
-      span {
-        font-size: 16px;
-        color: #999;
+        color: #595961;
+        letter-spacing: 0;
         line-height: 20px;
-        text-decoration: line-through;
-      }
     }
-  }
 
-  .description {
-    padding: 0;
-
-    .tags {
-      .hot-tag {
-        font-size: 12px;
+    .pagination-item {
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
         margin-right: 10px;
-
-        [class^="icon-"],
-        [class*=" icon-"] {
-          margin-right: 4px;
-        }
-      }
-
-      .hot-tag1 {
-        color: #4A90E2;
-      }
-
-      .hot-tag2 {
-        color: #A05EB5;
-      }
-
-      .hot-tag3 {
-        color: #6EC271;
-      }
-
-      .hot-tag4 {
-        color: #FF7245;
-      }
-
-      .hot-tag5 {
-        color: #F8485E;
-      }
-
-      .hot-tag6 {
-        color: #EE0202;
-      }
-    }
-
-    .tag {
-      font-size: 14px;
-      color: #343E57;
-      letter-spacing: 1.05px;
-      margin-right: 10px;
-    }
-
-    .tip {
-      font-size: 12px;
-      color: #999999;
-      margin-top: 8px;
-    }
-
-    .btn {
-      background: #00969E;
-      border-radius: 2px;
-      font-size: 14px;
-      color: #FFFFFF;
-      letter-spacing: 0.88px;
-      padding: 7px 15px;
-    }
-
-    .intro {
-      font-size: 12px;
-      color: #999999;
-      letter-spacing: 0.75px;
-      text-align: right;
-      margin-right: 12px;
-
-      img {
+        text-align: center;
         cursor: pointer;
-      }
+
+        &:last-child {
+            margin-right: 0;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+        }
     }
-  }
 
-  .desc-left {
-    float: left;
-  }
-
-  .desc-right {
-    float: right;
-  }
-
-  .page {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 70px;
-  }
-
-  .page-count {
-    font-size: 12px;
-    color: #595961;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-
-  .pagination-item {
-    display: inline-block;
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    border-radius: 2px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 10px;
-    text-align: center;
-    cursor: pointer;
-
-    &:last-child {
-      margin-right: 0;
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
+    .pagination-input {
+        display: inline-block;
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        border-right: 0;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
     }
-  }
 
-  .pagination-input {
-    display: inline-block;
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    border-right: 0;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    width: 50px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-  }
-
-  .active-item {
-    background-color: $theme-blue;
-    color: $theme-white;
-  }
+    .active-item {
+        background-color: $theme-blue;
+        color: $theme-white;
+    }
 }
 
 #footer {
@@ -1038,14 +1043,18 @@
     .boat-card {
       background: #fff;
       width: 614px;
-      height: 208px;
+      /*height: 208px;*/
       box-shadow: 0 7px 15px 0 rgba(0,0,0,0.10);
       padding: 18px;
       .picture {
-        width: 120px;
+        width: 235px;
         height: 132px;
 
       }
+    }
+
+    div{
+        float:left;
     }
   }
 }
