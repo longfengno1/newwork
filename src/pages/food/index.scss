@@ -603,7 +603,9 @@
 		background-size: 100% auto;
 		background-attachment: fixed;
 	}
-
+	.section {
+		border-bottom: 0rem solid #F8F8F8;
+	}
 	.prolist {
 		.pic {
 			height: auto;
@@ -613,7 +615,7 @@
 		}
 
 		.protitle {
-			font-size: .7rem;
+			font-size: 32rem/$fit;
 			line-height: 1rem;
 			text-align: center;
 		}
@@ -621,7 +623,7 @@
 		.desc {
 			margin: .25rem .25rem;
 			/* padding: 18px 0; */
-			font-size: .3rem;
+			font-size: 24rem/$fit;
 			line-height: 1rem;
 			border: 0px solid #B8C4CB;
 			border-width: 0px 0;
@@ -631,7 +633,7 @@
 			background: #FBFAF9;
 			padding: 0 0 0 0;
 			margin: 0 0 .25rem 0;
-			font-size: .3rem;
+			font-size: 24rem/$fit;
 			overflow: hidden;
 			-webkit-box-shadow: 0 0px .125rem 0 rgba(0, 0, 0, 0.3);
 			box-shadow: 0 0px .125rem 0 rgba(0, 0, 0, 0.3);

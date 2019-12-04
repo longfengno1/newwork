@@ -469,6 +469,12 @@
 }
 
 @media(max-width:767px) {
+	.fleetintro{
+		background:none;
+	}
+	.section {
+		border-bottom: 0rem solid #F8F8F8;
+	}
 	.s_img {
 		margin-left: 0.75rem;
 		margin-bottom: 0.5rem;
@@ -489,7 +495,7 @@
 	}
 
 	.s_span {
-		font-size: .5rem;
+		font-size: 24rem/$fit;
 		color: #343E57;
 		line-height: 1rem;
 		text-align: left;
