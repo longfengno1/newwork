@@ -1,0 +1,167 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>媒体中心</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+
+    <div id="main" class="main list-main">
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+        <div class="wraper hidden-sm">
+            <h3 class="activity-title">媒体咨询</h3>
+        </div>
+        <div class="list">
+            <div class="list-container mediacenter_wraper clearfloat">
+                <div class="list-mtab mt20 hidden-sm" style="display:none;">
+                    <ul>
+                        <li><a href="###">新闻中心</a></li>
+                        <li class="current"><a href="###">媒体咨询</a></li>
+                        <li><a href="###">奖项</a></li>
+                    </ul>
+                </div>
+                <div class="row no-gutters">
+                    <div class="mediacenter_view col">
+                        <ul class="formlist">
+                            <li>
+                                <label>姓名</label>
+                                <input class="intxt intxt1" type="text" placeholder="姓" /><input class="intxt intxt1"
+                                    type="text" placeholder="名" />
+                            </li>
+                            <li>
+                                <label>称呼</label>
+                                <select class="intxt_select">
+                                    <option>先生</option>
+                                    <option>女士</option>
+                                    <option>小姐</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>媒体组织</label>
+                                <input class="intxt" type="text" />
+                            </li>
+                            <li>
+                                <label>邮箱</label>
+                                <input class="intxt" type="text" />
+                            </li>
+                            <li>
+                                <label>联系电话1</label>
+                                <input class="intxt" type="text" />
+                            </li>
+                            <li>
+                                <label>联系电话2</label>
+                                <input class="intxt" type="text" />
+                            </li>
+                            <li>
+                                <label>微信</label>
+                                <input class="intxt" type="text" />
+                            </li>
+                            <li>
+                                <label>内容</label>
+                                <textarea class="intext_area"></textarea>
+                            </li>
+                        </ul>
+                        <div class="show-sm tc">
+                                <a href="###" class="btn-styleE">提交</a>
+                            </div>
+                    </div>
+                    <div class="mediacenter_view col">
+                        <div class="box">
+                            <h4>预订热线</h4>
+                            <table class="contable">
+                                <tr>
+                                    <td>Hong Kong, China</td>
+                                    <td>+852-2317-7711</td>
+                                </tr>
+                                <tr>
+                                    <td>Singapore</td>
+                                    <td>+65-6808-2288</td>
+                                </tr>
+                                <tr>
+                                    <td>Penang (Malaysia)</td>
+                                    <td>+604-2631128</td>
+                                </tr>
+                                <tr>
+                                    <td>Kuala Lumpur (Malaysia) </td>
+                                    <td>+603-2302-1288</td>
+                                </tr>
+                                <tr>
+                                    <td>Mainland China</td>
+                                    <td>+66-4008499848</td>
+                                </tr>
+                                <tr>
+                                    <td>Philippines</td>
+                                    <td>+63-2-836-6080</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="mediacenter_viewB tc hidden-sm">
+                    <a href="###" class="btn-styleE">提交</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="section mt30 hidden-sm">
+            <div class="wraper">
+                <p class="tc fz16">立即预订您的星梦假期</p>
+                <p class="tc mt20"><a href="###" class="btn-styleD">预订旅程</a></p>
+            </div>
+        </div>
+        <div style="height: 150px;" class="hidden-sm"></div>
+    </div>
+    <div class="show-sm sm-food">
+        <div class="header">
+            <span class="icon-arrowleft"></span>媒体中心
+        </div>
+        <div class="scroll-bar" style="display:none;">
+            <div class="items">
+                <div class="scroll-item active"><span>新闻中心</span></div>
+                <div class="scroll-item"><span>媒体咨询</span></div>
+                <div class="scroll-item"><span>奖项</span></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        document.getElementById('title_name').textContent = '媒体中心';
+    </script>
+
+
+    <div class="hidden-sm">
+        #include('../../common/footer.html')
+    </div>
+
+</body>
+
+</html>
