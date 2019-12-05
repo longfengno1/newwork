@@ -65,6 +65,7 @@ import '../css/global2.scss';
         });
     })
 
+
     $(".scroll-item").click(function () {
         
         if($(this).hasClass("active")){
@@ -93,6 +94,12 @@ import '../css/global2.scss';
         $(".scroll-item-sub").removeClass("active");
         $(this).toggleClass("active");
     });
+
+    $(".more-btn").click(function () {
+        $(this).parent().find(".more-desc").toggle();
+        $(this).toggle();
+    })
+
 
     $(".tab-title").click(function () {
         $(".tab-title").removeClass("current");

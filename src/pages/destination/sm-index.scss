@@ -308,7 +308,7 @@
 
     .sm-youlist-wraper .youlist-s {
         position: relative;
-        height: 360rem/$fit;
+        height: 380rem/$fit;
         overflow: scroll;
         overflow-y: hidden;
 
@@ -381,7 +381,9 @@
                 overflow: inherit;
                 display: block;
                 width: 100%;
-                margin: 0 0.25rem .2rem 0.25rem;
+                margin: 0 0 0.25rem 0;
+                padding:0 1.6rem 0 1.6rem;
+
             }
 
             .thread {
@@ -400,7 +402,7 @@
                     border-bottom-right-radius: 0.125rem;
 
                     img {
-                        width: auto;
+                        width: 100%;
                         border-top-left-radius: 0.25rem;
                         border-top-right-radius: 0.25rem;
                         border-bottom-left-radius: 0.25rem;

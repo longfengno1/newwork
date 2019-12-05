@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\common",
+    "\\src\\css",
     "\\src\\pages",
-    "\\src\\pages\\aboutus",
-    "\\src\\pages\\activitydetail",
-    "\\src\\pages\\destination",
-    "\\src\\pages\\food",
-    "\\src\\pages\\mediaCenter",
-    "\\src\\pages\\roomsDetail",
+    "\\src\\pages\\mycard",
+    "\\src\\pages\\mynoticeDetail",
+    "\\src\\pages\\myorder",
+    "\\src\\pages\\product",
     "\\src\\pages\\xinshoudaolan"
   ],
-  "SelectedNode": "\\src\\pages\\destination\\index.html",
+  "SelectedNode": "\\src\\pages\\mycard\\index.html",
   "PreviewInSolutionExplorer": false
 }

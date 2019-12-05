@@ -46,14 +46,6 @@
   padding-top: 100px;
 }
 
-.icon-local {
-  background: url(../../images/local.png) center center no-repeat;
-  height: 26px;
-  width: 26px;
-  margin-right: 10px;
-  display: inline-block;
-}
-
 .arrow-down {
   width: 10px;
   height: 10px;

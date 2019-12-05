@@ -23,18 +23,18 @@
             width: 100% !important;
             padding: 20rem/$fit !important;
             background-color: #F7FCFC !important;
-            margin-bottom: 24rem/$fit !important;
-        }
+            margin-bottom: 0rem/$fit !important;
 
-        .title {
-            font-size: 28rem/$fit;
-        }
+            .title {
+                font-size: 28rem/$fit;
+            }
 
-        .desc {
-            font-size: 20rem/$fit;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
+            .desc {
+                font-size: 24rem/$fit;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
         }
     }
 
@@ -64,9 +64,9 @@
         cursor: pointer;
     }
 
-    .order-list-wrap{
+    .order-list-wrap {
         width: 100vw;
-        padding: 32rem/$fit;
+        padding: .25rem .5rem .25rem .5rem
         // background-color: ;
     }
     

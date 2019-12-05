@@ -637,6 +637,17 @@ b {
 	overflow: hidden;
 }
 
+
+.more-btn {
+	display: inherit;
+	color: #00969E;
+	text-align: center;
+	float: none !important;
+}
+.more-desc {
+	display: none;
+}
+
 /* header css ============================================== */
 
 .header-bar {

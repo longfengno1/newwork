@@ -82,7 +82,12 @@
 	background-size: 27rem/$fit 26rem/$fit;
 	opacity: 0.7;
 }
-
+.col-6 {
+	float: left;
+}
+.col-4 {
+	float: left;
+}
 .maintab .tabs .current {
 	opacity: 1;
 }
@@ -489,7 +494,7 @@
 	.fleetintro {
 		width: 100%;
 		overflow: hidden;
-		background: url(../../images/shipbg@2x.png) center top no-repeat;
+		background: url(../../images/shipbg-m.jpg) center top no-repeat;
 		background-size: 100% auto;
 		background-attachment: fixed;
 	}
@@ -515,10 +520,11 @@
 	}
 
 	.topbanner_plane .ship img {
+		height:auto;
 		width: 100%;
 		margin-left: -50rem/$fit;
 		display: block;
-		margin-bottom: -148rem/$fit;
+		margin-bottom: -80rem/$fit;
 	}
 
 	.topbanner_plane .ship02 {
@@ -547,12 +553,13 @@
 	.topbanner_plane .info .row {
 		display: block;
 		margin: 0;
-		margin-left: 20rem/$fit;
+		margin-left: 0rem/$fit;
 	}
 
 	.topbanner_plane .info li {
 		border: 0;
 		padding: 10rem/$fit 0 20rem/$fit 0;
+		margin:0;
 	}
 
 	.topbanner_plane .info .row .col br {
@@ -592,11 +599,12 @@
 		/*padding: 10rem/$fit 0;*/
 		border: 1rem/$fit solid #B8C4CB;
 		border-width: 1rem/$fit 0;
-		font-size: 20rem/$fit;
+		font-size: 24rem/$fit;
 	}
 
 	.section {
 		background: #fff;
+		border-bottom: 0rem solid #F8F8F8;
 	}
 
 	.prolist .inner {
@@ -616,7 +624,7 @@
 
 	.section .title {
 		height: 1.85rem;
-		font-size: .85rem;
+		font-size: .8rem;
 		line-height: 1.85rem;
 		margin: .2rem;
 		text-align: left;
@@ -704,7 +712,7 @@
 	}
 
 	.prolist .infos .item {
-		font-size: 20rem/$fit;
+		font-size: 24rem/$fit;
 		/*line-height:40rem/$fit;*/
 		color: #6D6D6D;
 		/*font-weight: 300;*/
@@ -751,7 +759,7 @@
 
 	.sm-youlist-wraper .title {
 		text-align: left;
-		font-size: 34rem/$fit;
+		font-size: 32rem/$fit;
 		color: #383838;
 		padding-left: 20rem/$fit;
 		margin-top: 20rem/$fit;
@@ -759,7 +767,7 @@
 
 	.sm-youlist-wraper .youlist-s {
 		position: relative;
-		height: 460rem/$fit;
+		height: 360rem/$fit;
 		overflow: scroll;
 		overflow-y: hidden;
 	}
@@ -773,6 +781,11 @@
 	.sm-youlist-wraper .youlist .pic {
 		width: 100%;
 		border-radius: 6rem/$fit;
+		height: auto;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	.sm-youlist-wraper .youlist li {

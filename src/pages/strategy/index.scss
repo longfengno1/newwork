@@ -1,53 +1,70 @@
 @import '../../css/variables.scss';
-@import './sm-index.scss';
 
 .row {
   margin: 0;
 }
 
 .filter {
-  height: 40px;
-  background: #f7fcfc;
-
-  li {
-    float: left;
     height: 40px;
-    line-height: 40px;
-    font-size: 16px;
-    padding: 0 18px;
-    position: relative;
-   
-  }
-  li.current{
-    background: #00969E;
-    color: #fff;
-  }
-  .timerbox{
-    display: inline-block;
-    height: 32px;
-    line-height: 32px;
-    background: #fff;
-    padding: 0 20px 0 30px;
-    span{
-      vertical-align: middle;
-    }
-    
-  }
-  .subfilter{
-    position: relative;
-    background: #fff;
-    z-index: 1;
-    width: 150px;
-    border: 1px solid #ccc;
-    margin:0 -18px ;
-    li{
-      float: none;
-      height: 40px;
-      line-height: 40px;
-    }
-  }
-}
+    background: #f7fcfc;
 
+    li {
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        padding: 0 18px;
+        position: relative;
+
+        .opener {
+            position: absolute;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+            display: none;
+            left: 0;
+        }
+    }
+
+    li.current {
+        background: #00969E;
+        color: #fff;
+
+        .opener {
+            display: block;
+            z-index: 111;
+
+            .openeritem {
+                font-size: 16px;
+                color: #333;
+                text-align: center;
+            }
+
+            li {
+                color: #666
+            }
+        }
+    }
+
+    &.current {
+        .timerbox span {
+            color: #333;
+        }
+    }
+
+    .timerbox {
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        background: #fff;
+        padding: 0 20px 0 30px;
+
+        span {
+            vertical-align: middle;
+            color: #333;
+        }
+    }
+}
 .list-main {
   .topbannerB {
     position: relative;
@@ -1025,7 +1042,7 @@
 	padding: 20px;
 	padding-left: 340px;
 	
-	height: 220px;
+	min-height: 220px;
 	margin-bottom: 10px;
   position: relative;
   
@@ -1071,8 +1088,8 @@
 .travelslist .proinfo .title {
   color: #00969E;
 	font-size: 18px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .travelslist .prominfop {
@@ -1269,3 +1286,7 @@
   background-color: $theme-blue;
   color: $theme-white;
 }
+.more-btn{
+    font-size:14px;
+}
+@import './sm-index.scss';

@@ -249,6 +249,11 @@
     .boat-card {
         background-color: #f7fcfc;
         margin-bottom: 10px;
+        float: left;
+
+        div {
+            float: left;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -324,7 +329,7 @@
         }
 
         .detail-content .desc {
-           font-size:14px;
+            font-size: 14px;
         }
 
         .detail-content .row {
@@ -454,6 +459,9 @@
             color: #FFFFFF;
             letter-spacing: 0.88px;
             padding: 7px 15px;
+            right: 0;
+            position: absolute;
+            bottom: 0;
         }
 
         .intro {
@@ -996,7 +1004,7 @@
 }
 
 .mediacenter_wraper {
-  width: 902px;
+  /*width: 902px;*/
 
   .list-mtab {
     width: 100%;
@@ -1042,7 +1050,7 @@
     padding: 20px 15px;
     .boat-card {
       background: #fff;
-      width: 614px;
+      /*width: 614px;*/
       /*height: 208px;*/
       box-shadow: 0 7px 15px 0 rgba(0,0,0,0.10);
       padding: 18px;
@@ -1053,9 +1061,7 @@
       }
     }
 
-    div{
-        float:left;
-    }
+
   }
 }
 @import './sm-index.scss';

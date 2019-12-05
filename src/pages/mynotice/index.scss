@@ -1,6 +1,5 @@
 @import '../../css/variables.scss';
 @import '../../css/navbar.scss';
-@import './sm-index.scss';
 
 body {
     background-color: #f7fcfc;
@@ -49,8 +48,9 @@ body {
         .desc{
             font-size: 12px;
             color: #343E57;
-            margin-top: 19px;
+            margin-top: 10px;
         }
     }
 
 }
+@import './sm-index.scss';
