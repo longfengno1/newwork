@@ -8,16 +8,18 @@ body {
 
 .my-order {
     padding: 19rem/$fit 0 200rem/$fit;
-    width: 1200rem/$fit;
+    width: 1170rem/$fit;
     display: flex;
 
     .left-container {
         width: 210rem/$fit;
         margin-right: 20rem/$fit;
+        float: left;
     }
 
     .right-container {
         width: 940rem/$fit;
+        float: right;
     }
 
     .bread-crumb {
@@ -47,6 +49,7 @@ body {
         margin-bottom: 10px;
 
         .tab-item {
+            display: inline-block;
             font-size: 16px;
             color: #343E57;
             text-align: center;
@@ -88,7 +91,7 @@ body {
         }
 
         tbody {
-            font-family: Helvetica;
+           
             font-size: 12px;
             color: #343E57;
 
@@ -123,17 +126,20 @@ body {
         background-color: #f3fafa;
         width: 940px;
         height: 232px;
-        display: flex;
-        align-items: center;
+        display: table;
+        
 
         .left {
             width: 192px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            
         }
-
+        .right{
+            display: table-cell;
+            vertical-align: middle;
+        }
         .price {
             font-size: 54px;
             color: #00969E;
