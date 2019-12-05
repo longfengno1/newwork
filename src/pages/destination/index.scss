@@ -239,8 +239,9 @@
 	line-height:28rem/$fit;
 	padding-right:6rem/$fit;
 }
-.section{
-	position:relative;
+.section {
+	position: relative;
+	padding: .5rem 0;
 }
 .section .title {
 	position: relative;
@@ -669,7 +670,7 @@
   margin-top: 10rem/$fit;
   /*margin-right: 30rem/$fit;*/
   /*width: 380rem/$fit;*/
-  /*height: 354rem/$fit;*/
+  height: auto;
   /*background: #fff;*/
   border-radius: 5rem/$fit;
   overflow:hidden;
