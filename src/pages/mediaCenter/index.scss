@@ -1016,12 +1016,16 @@
       text-align: center;
     }
   }
-
+  .mediacenter_box{
+    background: #F7FCFC;
+    overflow: hidden;
+  }
   .mediacenter_left {
     background: #F7FCFC;
     width: 246px;
     padding: 20px 12px;
-
+    
+    float: left;
     .timer_title {
       background: #fff;
       height: 60px;
@@ -1049,6 +1053,8 @@
   .mediacenter_right {
     background: #F7FCFC;
     padding: 20px 15px;
+    width: 656px;
+    float: right;
     .boat-card {
       background: #fff;
       width: 840px;

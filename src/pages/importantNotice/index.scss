@@ -14,7 +14,6 @@
         min-height: 600px;
 
         .title-row {
-            display: flex;
         }
 
         .title {
@@ -27,7 +26,6 @@
             color: #fff;
             font-size: 16px;
             position: relative;
-            flex-shrink: 0;
             float: left;
         }
 
@@ -42,7 +40,6 @@
         }
 
         .title-right {
-            flex: 1;
             background-color: #F8FCFD;
             margin-left: 10px;
             position: relative;
@@ -66,7 +63,6 @@
         }
 
         .notice-item {
-            display: flex;
             padding: 10px 20px 10px 20px;
             background-color: #F8FCFD;
             border: 1px solid #fff;
@@ -91,8 +87,6 @@
 
         .notice-content {
             .header {
-                display: flex;
-                justify-content: space-between;
             }
 
             h4 {
