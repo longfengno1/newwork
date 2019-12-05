@@ -592,6 +592,7 @@
 	color:#00969E;
 }
 @media(max-width:767px) {
+
 	.fleetintro {
 		width: 100%;
 		overflow: hidden;
@@ -645,6 +646,12 @@
 			float: left;
 			/* line-height: 28px; */
 			margin-bottom: .25rem;
+
+			.item {
+				width: 50%;
+				float: left;
+				line-height: 48rem/$fit;
+			}
 		}
 	}
 
