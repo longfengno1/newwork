@@ -9,20 +9,21 @@ body {
 .my-order {
     padding: 19rem/$fit 0 200rem/$fit;
     width: 1200rem/$fit;
-    display: flex;
 
     .left-container {
         width: 210rem/$fit;
         margin-right: 20rem/$fit;
+        display: inline-block;
+        vertical-align: top;
     }
 
     .right-container {
         width: 940rem/$fit;
         font-family: Helvetica;
+        display: inline-block;
 
         .bread-crumb {
-            display: flex;
-            align-items: center;
+            display: inline-block;
             font-size: 14rem/$fit;
             color: #6D6D6D;
             margin-bottom: 24rem/$fit;
@@ -62,25 +63,29 @@ body {
     }
 
     .line-recommend {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         background-color: transparent;
-        flex-wrap: wrap;
 
         .product,
         .line-product {
+            display: inline-block;
+            // float: left;
+            margin-right: 20rem/$fit;
             width: 220px;
             height: 248px;
             border: 1px solid #F0F0F0;
             position: relative;
-            .tag{
+
+            &:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            .tag {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 64rem/$fit;
                 height: 22rem/$fit;
-                line-height:22rem/$fit;
+                line-height: 22rem/$fit;
                 background-color: #F8485E;
                 border-radius: 0 0 0 4px;
                 padding-left: 8px;
@@ -109,9 +114,6 @@ body {
             }
 
             .bottom {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
                 margin-top: 7px;
             }
 
@@ -159,10 +161,8 @@ body {
     }
 
     .page {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 17px;
+        width: 100%;
+        /*margin-top: 70px;*/
     }
 
     .page-count {
@@ -170,6 +170,13 @@ body {
         color: #595961;
         letter-spacing: 0;
         line-height: 20px;
+        float: left;
+        display: inline-block;
+    }
+
+    .pagination {
+        float: right;
+        display: inline-block;
     }
 
     .pagination-item {
@@ -202,13 +209,13 @@ body {
         height: 30px;
         line-height: 30px;
         text-align: center;
-    }
 
-    .active-item {
-        background-color: $theme-blue;
-        color: $theme-white;
+        input {
+            width: 100%;
+            border: 0;
+            padding: 0 10px;
+        }
     }
-
 
 }
 
