@@ -2,9 +2,11 @@
     background-color: #ffffff;
     padding: 0 15px;
     width: 100%;
-
+    a:last-child .navbar-item{
+        box-shadow: none;
+    }
     .navbar-item {
-        display: flex;
+        line-height: 50px;
         align-items: center;
         padding-left: 15px;
         width: 100%;
@@ -34,6 +36,9 @@
             display: block;
             width: 19px;
             margin-right: 10px;
+            float: left;
+            margin-right: 10px;
+            margin-top: 15px;
         }
     }
 }
