@@ -6,49 +6,49 @@
 }
 
 .list-main {
-  .topbannerB {
-    position: relative;
-    text-align: center;
-    height: 454rem/$fit;
-    margin-bottom: -110rem/$fit;
-  }
-
-  .topbannerB .intro-ribbonship {
-    background: url(../../images/banner-cover.png) center top no-repeat;
-    height: 216rem/$fit;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-
-  .calendar-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 23px;
-  }
-
-  .calendar-row {
-    text-align: right;
-    margin-bottom: 79px;
-  }
-
-  .calendar {
-    display: inline-block;
-    text-align: center;
-    background-image: linear-gradient(16deg, #1B2A40 0%, #15989D 100%);
-    background: #FFFFFF;
-    height: 35px;
-    line-height: 35px;
-    width: 160px;
-    font-size: 16px;
-    color: #343E57;
-    cursor: pointer;
-
-    .icon {
-      margin-left: 20px;
-      font-size: 14px;
+    .topbannerB {
+        position: relative;
+        text-align: center;
+        height: 454rem/$fit;
+        margin-bottom: -110rem/$fit;
     }
-  }
+
+    .topbannerB .intro-ribbonship {
+        background: url(../../images/banner-cover.png) center top no-repeat;
+        height: 216rem/$fit;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .calendar-container {
+        width: 1200px;
+        margin: 0 auto;
+        padding-left: 23px;
+    }
+
+    .calendar-row {
+        text-align: right;
+        margin-bottom: 79px;
+    }
+
+    .calendar {
+        display: inline-block;
+        text-align: center;
+        background-image: linear-gradient(16deg, #1B2A40 0%, #15989D 100%);
+        background: #FFFFFF;
+        height: 35px;
+        line-height: 35px;
+        width: 160px;
+        font-size: 16px;
+        color: #343E57;
+        cursor: pointer;
+
+        .icon {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+    }
 }
 
 .list {
@@ -249,6 +249,11 @@
     .boat-card {
         background-color: #f7fcfc;
         margin-bottom: 10px;
+        float: left;
+
+        div {
+            float: left;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -324,7 +329,7 @@
         }
 
         .detail-content .desc {
-           font-size:14px;
+            font-size: 14px;
         }
 
         .detail-content .row {
@@ -454,6 +459,10 @@
             color: #FFFFFF;
             letter-spacing: 0.88px;
             padding: 7px 15px;
+            right: 0;
+            position: absolute;
+            /*bottom: 0;*/
+            top:100px;
         }
 
         .intro {
@@ -996,7 +1005,7 @@
 }
 
 .mediacenter_wraper {
-  width: 902px;
+  /*width: 902px;*/
 
   .list-mtab {
     width: 100%;
@@ -1042,8 +1051,7 @@
     padding: 20px 15px;
     .boat-card {
       background: #fff;
-      width: 614px;
-      overflow: hidden;
+      width: 840px;
       /*height: 208px;*/
       box-shadow: 0 7px 15px 0 rgba(0,0,0,0.10);
       padding: 18px;
@@ -1054,9 +1062,17 @@
       }
     }
 
-    div{
-        float:left;
-    }
+
   }
 }
+
+.col-auto {
+    float: left;
+}
+
+.col {
+    float: left;
+    max-width: 78%;
+}
+
 @import './sm-index.scss';
