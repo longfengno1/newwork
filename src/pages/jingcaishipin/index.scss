@@ -847,12 +847,13 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0,0,0,0.20);
+		/*background: rgba(0,0,0,0.20);*/
+		background:#000;
 		z-index: 1000;
 
 		.layer {
 			position: fixed;
-			top: 4.5rem;
+			top: 11.5rem;
 			left: 0;
 			transform: translate(0,0);
 			width: 100%;
