@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\chuanshanghuodong",
-    "\\src\\pages\\chuanshanghuodongDetail",
-    "\\src\\pages\\help",
-    "\\src\\pages\\index",
+    "\\src\\pages\\food",
     "\\src\\pages\\jingcaishipin",
+    "\\src\\pages\\rooms",
+    "\\src\\pages\\roomsDetail",
     "\\src\\pages\\xinshoudaolan",
-    "\\src\\pages\\yuleshengyan"
+    "\\src\\pages\\yuleshengyan",
+    "\\src\\pages\\yuleshengyanDetail"
   ],
-  "SelectedNode": "\\src\\pages\\chuanshanghuodong\\index.html",
+  "SelectedNode": "\\src\\pages\\rooms\\index.js",
   "PreviewInSolutionExplorer": false
 }

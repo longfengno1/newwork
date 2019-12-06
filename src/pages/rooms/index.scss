@@ -631,6 +631,10 @@
 	border-left: 1rem/$fit solid #E5E5E5;
 }
 
+.ships-slide .slick-disabled {
+	display: none !important;
+}
+
 @media(max-width:767px) {
 	.fleetintro
 	{
