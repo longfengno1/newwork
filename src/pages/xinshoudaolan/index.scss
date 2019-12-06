@@ -281,6 +281,7 @@
 
 .section {
 	position: relative;
+	border: 0;
 }
 
 .section .title {
@@ -613,7 +614,7 @@
 	/*margin-left:-152px;*/
 	font-size: 16px;
 	color: #343E57;
-	letter-spacing: 2.77px;
+	/*letter-spacing: 2.77px*/;
 	/*text-align: center;*/
 	margin-bottom: 0;
 	margin-left: 30px;
@@ -656,6 +657,9 @@
 	line-height: 50px;
 	font-size: 16px;
 	border-radius: 0.2rem;
+	span{
+		color:#fff;
+	}
 }
 
 .filter_planeC li label {
@@ -663,7 +667,7 @@
 	/*margin-left: -152px;*/
 	font-size: 16px;
 	color: #fff;
-	letter-spacing: 2.77px;
+	/*letter-spacing: 2.77px;*/
 	/*text-align: center;*/
 	margin-left: 30px;
 	width: 70%;
@@ -705,6 +709,7 @@
 	width: 250px;
 }
 
+
 @media(max-width:767px) {
 	.fleetintro {
 		background: none;
@@ -726,19 +731,25 @@
 			background: rgba(100, 204, 201, 0.1);
 			border-bottom: 1rem/$fit solid #fff;
 			line-height: 80rem/$fit;
-			font-size: 28rem/$fit;
+			font-size: 32rem/$fit;
 			border-radius: 0.2rem;
 
 			label {
 				float: left;
-				font-size: 28rem/$fit;
+				font-size: 32rem/$fit;
 				color: #343E57;
-				letter-spacing: 2.77px;
+				/*letter-spacing: 2.77px;*/
 				/* text-align: center; */
 				margin-bottom: 0;
 				margin-left: 30rem/$fit;
 				width: 80%;
 			}
+		}
+	}
+
+	.filter_planeC li {
+		span {
+			color: #000;
 		}
 	}
 
@@ -778,4 +789,5 @@
 	.showView{
 		transform: translate3d(-750px, 0px, 0px);
 	}
+
 }

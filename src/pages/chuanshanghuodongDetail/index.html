@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>增益活动</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+    <div id="main" class="fleetintro">
+
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+        <div class="section mt20">
+            <div class="wraper">
+                <h2 class="title hidden-sm">船上活动</h2>
+                <div class="filter_plane mt30 hidden-sm">
+                    <ul>
+                        <a href="chuanshanghuodong.html"><li >简介</li></a>
+                        <a href="chuanshanghuodongDetail.html">
+                            <li class="current">增益活动</li>
+                        </a>
+                        <li>乐想生活家</li>
+                        <li>海上学堂</li>
+                        <li>主题活动</li>
+                    </ul>
+                </div>
+                <div class="show-sm" style="height:1.5rem"></div>
+                <div class="info">
+
+
+                    <div id="image-slide" class="carousel slide" data-ride="carousel">
+                        <!-- 指示符 -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#image-slide" data-slide-to="0" class="active"></li>
+                            <li data-target="#image-slide" data-slide-to="1"></li>
+                            <li data-target="#image-slide" data-slide-to="2"></li>
+                        </ul>
+                        <!-- 轮播图片 -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../images/cs1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../images/cs2.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../images/cs3.jpg">
+                            </div>
+                        </div>
+
+                        <!-- 左右切换按钮 -->
+                        <a class="carousel-control-prev" href="#image-slide" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#image-slide" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+
+
+                    <p>
+                        透过于尔根•弗罗德（Juergen Freund）－澳/德籍摄影师的镜头发掘澳大利亚浩瀚野性的一面，他在年度野外生态摄影师奖中获得 9 次赞誉，是国际保育摄影师联盟中的高级资深会员。 于尔根的相片于过去二十年刊登于不同的国际自然杂志，书籍和摄影展览中。世界自然基金会广泛使用他的相片推行保育。与他和妻子斯特拉一起旅行，穿越这个世界上最大的岛屿国家，探索超过 8 成于地球上其他地方找不到的的各种类型的自然栖息地。让他们向您展示碧绿蓝色的海洋，郁葱的热带雨林，以及鲜红色内陆中不断变化的场景，色彩和生活。在东澳大利亚，中澳大利亚和西澳大利亚的三个分享会上，通过于尔根的摄影体验澳大利亚的壮丽景色，来趟大开眼界的历险！
+
+                    </p>
+
+                   <p>
+                        <ul>
+                            <li>适用于：探索梦号</li>
+                            <li>航次：2020 年 2 月 16 日</li>
+                            <li> 嘉宾：于尔根•弗罗德</li>
+                        </ul>
+                    </p>
+                    <br />
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section mt50 hidden-sm">
+        <div class="wraper">
+            <p class="tc fz16">立即预订您的星梦假期</p>
+            <p class="tc mt20"><a href="###" class="btn-styleD">预订旅程</a></p>
+        </div>
+    </div>
+
+    <div style="height:100px;" class="hidden-sm"></div>
+    <div class="show-sm sm-rooms">
+        <script>document.getElementById('title_name').textContent = '增益活动';</script>
+        <div class="header">
+            <span class="icon-arrowleft"></span>精致客房
+        </div>
+        <div class="scroll-bar">
+            <div class="items">
+                <div class="scroll-item active">云顶梦号</div>
+                <div class="scroll-item">世界梦号</div>
+                <div class="scroll-item">探索梦号</div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="hidden-sm">
+        <div class="left-select-ship">
+            <ul>
+                <li class="ship01">
+                    <a href="###">
+                        <span>世界梦号</span>
+                    </a>
+                </li>
+                <li class="ship02">
+                    <a href="###">
+                        <span>云顶梦号</span>
+                    </a>
+                </li>
+                <li class="ship03">
+                    <a href="###">
+                        <span>探索梦号</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        #include('../../common/footer.html')
+    </div>
+    #include('../../common/sm_footer_button.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+</html>

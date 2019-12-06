@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\destination",
-    "\\src\\pages\\fleetIntroduction01",
-    "\\src\\pages\\fleetIntroduction02",
-    "\\src\\pages\\fleetIntroduction03",
+    "\\src\\pages\\chuanshanghuodong",
+    "\\src\\pages\\chuanshanghuodongDetail",
+    "\\src\\pages\\help",
     "\\src\\pages\\index",
-    "\\src\\pages\\mediaCenter",
-    "\\src\\pages\\strategydetail"
+    "\\src\\pages\\jingcaishipin",
+    "\\src\\pages\\xinshoudaolan",
+    "\\src\\pages\\yuleshengyan"
   ],
-  "SelectedNode": "\\src\\pages\\fleetIntroduction01\\index.js",
+  "SelectedNode": "\\src\\pages\\chuanshanghuodong\\index.html",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,198 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>星级表演</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+    <div id="main" class="fleetintro">
+
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+        <div class="section mt20">
+            <div class="wraper">
+                <h2 class="title hidden-sm">娱乐盛宴</h2>
+                <div class="filter_plane mt20 hidden-sm">
+                    <ul>
+                        <a href="yuleshengyan.html">
+                            <li class="tab-title ">简介</li>
+                        </a>
+                        <a href="yuleshengyanDetail.html">
+                            <li class="tab-title current">星级表演</li>
+                        </a>
+                        <li class="tab-title">梦想星时代</li>
+                        <li class="tab-title">VR探索馆</li>
+                    </ul>
+                </div>
+                <div class="show-sm" style="height:1.5rem"></div>
+                <div class="info">
+
+
+                    <div id="image-slide" class="carousel slide" data-ride="carousel">
+                        <!-- 指示符 -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#image-slide" data-slide-to="0" class="active"></li>
+                            <li data-target="#image-slide" data-slide-to="1"></li>
+                            <li data-target="#image-slide" data-slide-to="2"></li>
+                        </ul>
+                        <!-- 轮播图片 -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../../images/yl1.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../images/yl2.jpg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../../images/yl3.jpg">
+                            </div>
+                        </div>
+
+                        <!-- 左右切换按钮 -->
+                        <a class="carousel-control-prev" href="#image-slide" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#image-slide" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+
+
+                    <p>那些在电影或电视屏幕上耀眼瞩目的演艺明星，如今您有机会现场欣赏他们的表演，亲身领略他们天籁之音和熠熠星光。</p>
+                    <br />
+
+                    <p>
+                        3 Divas 叶丽仪、「肥妈」玛俐亚、陈洁灵
+                    </p><p>
+
+                        亚洲三大知名巨肺歌后叶丽仪、「肥妈」玛俐亚、陈洁灵将连手在船上尽献歌喉，让宾客一次过欣赏三位重量级歌手的歌艺。叶丽仪的《上海滩》、《女黑侠木兰花》﹔肥妈的《友谊之光》、《妈妈 I LOVE YOU》﹔陈洁灵的《今晚夜》、《千个太阳》首首耳熟能详，尽是经典。
+
+                        <ul>
+                            <li> 邮轮：世界梦号</li>
+                            <li> 航次：2019 年 12 月 6 日</li>
+                            <li> 表演日期：2019 年 12 月 7 日</li>
+                            <li> 表演时间：下午 5 时 30 分至 6 时 45 分</li>
+                        </ul>
+
+                    </p>
+                    <br />
+
+
+                    <p>
+                        朱咪咪
+                    </p><p>
+
+                        香港艺人朱咪咪出名多才多艺能演擅唱。她曾参演多部影视作品，如电视剧《陀枪师姐》、《洗冤录》、《老表你好嘢》，还有电影《百变星君》、《大内密探零零发》等。
+
+                        朱咪咪将踏上星梦邮轮的舞台，发挥惹笑本色，以歌会观众，共度欢乐旅程。
+
+                        <ul>
+                            <li> 邮轮：云顶梦号</li>
+                            <li> 航次：2019 年 12 月 13 日</li>
+                            <li> 表演日期：2019 年 12 月 14 日</li>
+                            <li> 表演时间：下午 4 时 30 分至 6 时</li>
+                        </ul>
+
+                    </p>
+                    <br />
+
+                    <p>
+                        太极乐队
+                    </p><p>
+                        香港乐坛摇滚班霸太极乐队将在世界梦号聚首，以震撼的现场音乐带来经典好歌。摇滚的《红色跑车》、柔情的《留住我吧》，必定让宾客回味无穷。
+
+                        <ul>
+                            <li> 邮轮：世界梦号</li>
+                            <li> 航次：2019 年 12 月 27 日</li>
+                            <li>  表演日期：2019 年 12 月 28 日</li>
+                            <li> 表演时间：下午 3 时至 4 时</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section mt50 hidden-sm">
+        <div class="wraper">
+            <p class="tc fz16">立即预订您的星梦假期</p>
+            <p class="tc mt20"><a href="###" class="btn-styleD">预订旅程</a></p>
+        </div>
+    </div>
+
+    <div style="height:100px;" class="hidden-sm"></div>
+    <div class="show-sm sm-rooms">
+        <script>document.getElementById('title_name').textContent = '星级表演';</script>
+        <div class="header">
+            <span class="icon-arrowleft"></span>精致客房
+        </div>
+        <div class="scroll-bar">
+            <div class="items">
+                <div class="scroll-item active">云顶梦号</div>
+                <div class="scroll-item">世界梦号</div>
+                <div class="scroll-item">探索梦号</div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="hidden-sm">
+        <div class="left-select-ship">
+            <ul>
+                <li class="ship01">
+                    <a href="###">
+                        <span>世界梦号</span>
+                    </a>
+                </li>
+                <li class="ship02">
+                    <a href="###">
+                        <span>云顶梦号</span>
+                    </a>
+                </li>
+                <li class="ship03">
+                    <a href="###">
+                        <span>探索梦号</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        #include('../../common/footer.html')
+    </div>
+    #include('../../common/sm_footer_button.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+</html>

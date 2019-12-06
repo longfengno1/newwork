@@ -58,9 +58,17 @@
             line-height: 2.4rem;
             font-size: .7rem;
             cursor: pointer;
+            margin-left: 16rem/$fit;
         }
 
-
+        .icon-arrowup {
+            position: absolute;
+            right: .9rem;
+            line-height: 2.4rem;
+            font-size: .7rem;
+            cursor: pointer;
+            margin-left: 16rem/$fit;
+        }
 
         .scroll-item {
             padding: 0 25rem/$fit;
@@ -72,10 +80,7 @@
             /*font-weight: 300;*/
         }
 
-        .icon-arrowdown {
-            font-size: 14rem/$fit;
-            margin-left: 16rem/$fit;
-        }
+
 
         .active {
             color: #00969E;
@@ -147,5 +152,10 @@
             -webkit-box-orient: vertical;
             margin-top: 10rem/$fit;
         }
+    }
+
+    .section {
+        position: relative;
+        border: 0;
     }
 }

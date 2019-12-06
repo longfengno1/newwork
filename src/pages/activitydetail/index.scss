@@ -211,23 +211,6 @@
   }
   .select-container {
     background-color: transparent;
-
-
-
-    .sort {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 31px;
-
-      span {
-        font-size: 12px;
-        color: #383838;
-
-        &:last-child {
-          cursor: pointer;
-        }
-      }
-    }
   }
 
   .boat-card {
@@ -436,57 +419,6 @@
 
   .desc-right {
     float: right;
-  }
-
-  .page {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 70px;
-  }
-
-  .page-count {
-    font-size: 12px;
-    color: #595961;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-
-  .pagination-item {
-    display: inline-block;
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    border-radius: 2px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 10px;
-    text-align: center;
-    cursor: pointer;
-
-    &:last-child {
-      margin-right: 0;
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
-    }
-  }
-
-  .pagination-input {
-    display: inline-block;
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    border-right: 0;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    width: 50px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-  }
-
-  .active-item {
-    background-color: $theme-blue;
-    color: $theme-white;
   }
 }
 

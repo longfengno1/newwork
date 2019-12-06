@@ -2,29 +2,29 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>精彩视频</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript">
-    (function (doc, win) {
-      var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          if (!clientWidth) return;
+    <meta charset="UTF-8">
+    <title>精彩视频</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
 
-          var fontSize = 20 * (clientWidth / 375);
-          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
-          docEl.style.fontSize = fontSize + 'px';
-          var dpi = window.devicePixelRatio;
-          docEl.setAttribute('data-dpi', dpi);
-        };
-      recalc();
-      if (!doc.addEventListener) return;
-      win.addEventListener(resizeEvt, recalc, false);
-    })(document, window);
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
 
-  </script>
+    </script>
 </head>
 
 <body>
@@ -64,8 +64,11 @@
                     <li class="col-4">
                         <div class="inner">
                             <div class="pic">
-                                <img src="../../images/j2.png">
-                                <div class="op"><span class="icon-play"></span></div>
+                                <img src="../../images/j2.png" class="hidden-sm">
+                                <video controls="controls" style="width:100%;"  poster="./images/j2.png">
+                                    <source src="http://fb-app.dev.hk.agenda-asia.com/campaign-sandbox/DreamCruise/video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+                                </video>
+                                <div class="op hidden-sm"><span class="icon-pase"></span></div>
                                 <div class="fill hidden-sm"><span class="icon-fillsreen"></span></div>
                                 <div class="btn-prev hidden-sm"><span class="icon-arrowleft"></span></div>
                                 <div class="btn-next hidden-sm"><span class="icon-arrowright"></span></div>
@@ -194,7 +197,19 @@
             <p class="tc mt20"><a href="###" class="btn-styleD">预订旅程</a></p>
         </div>
     </div>
-    <div style="height:150px;" class="hidden-sm"></div>
+    <div class="mark layerout1 " style="display: none;">
+        <div class="layer">
+            <div class="close"><span class="icon-x"></span></div>
+            <div class="no-gutters">
+                <div class="col-auto layer-left">
+                    <video controls="controls" style="width:100%;">
+                        <source src="http://fb-app.dev.hk.agenda-asia.com/campaign-sandbox/DreamCruise/video/tB-hZcBnTbqE_1280_720_2500.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height:100px;" class="hidden-sm"></div>
     <div class="show-sm sm-food">
         <script>document.getElementById('title_name').textContent = '精彩视频';</script>
 
@@ -208,7 +223,7 @@
                 <div class="scroll-item"><span>探索梦号</span></div>
             </div>
         </div>
-        
+
     </div>
     <div class="hidden-sm">
         #include('../../common/footer.html')
@@ -220,14 +235,14 @@
 <script src="../../js/popper.min.js"></script>
 <script src="../../bootstrap/js/bootstrap.js"></script>
 <script>
-  $(".topbanner_plane .ship .btn-icon").click(function () {
-    $(".topbanner_plane .ship .btn-icon").removeClass("artive");
-    $(this).addClass("artive");
-    return false;
-  })
-  $(".topbanner_plane").click(function () {
-    $(".topbanner_plane .ship .btn-icon").removeClass("artive");
-  })
+    $(".topbanner_plane .ship .btn-icon").click(function () {
+        $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+        $(this).addClass("artive");
+        return false;
+    })
+    $(".topbanner_plane").click(function () {
+        $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+    })
 
 </script>
 
