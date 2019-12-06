@@ -5,6 +5,15 @@
     a:last-child .navbar-item{
         box-shadow: none;
     }
+    &.boxfixed{
+        position: fixed;
+        top: 0;
+        
+    }
+    &.boxbottom{
+        position: absolute;
+        bottom: 0;
+    }
     .navbar-item {
         line-height: 50px;
         align-items: center;
