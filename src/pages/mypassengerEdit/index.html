@@ -51,10 +51,7 @@
                 <span class="split">-</span>
                 <span class="item selected">编辑常用旅客</span>
             </div>
-            <div class="edit-header">
-                <h3>编辑常用乘客</h3>
-                <a>删除该旅客</a>
-            </div>
+ 
             <form class="edit-form">
                 <label for="">手机号<span>*</span></label>
                 <div class="input-row">
@@ -76,8 +73,8 @@
                 </div>
                 <label for="">性别<span>*</span></label>
                 <div class="input-row">
-                    <input class="radio" type="radio" checked><span class="mr102">男</span><input class="radio"
-                        type="radio"><span>女</span>
+                    <input class="radio" type="radio" name="radiosex"><span class="mr102">男</span>
+                    <input class="radio" type="radio" name="radiosex"><span>女</span>
                 </div>
                 <label for="">居住地</label>
                 <div class="input-row">
@@ -130,16 +127,17 @@
             <label for="">手机号码：</label><input class="input-text long" placeholder="中国大陆手机号码" type="text">
         </div>
         <div class="input-row">
-            <label for="">姓名：</label><input class="input-text short mr20" placeholder="姓" type="text"><input
-                class="input-text middle" placeholder="名" type="text">
+            <label for="">姓名：</label><input class="input-text w260 mr20" placeholder="姓" type="text"><input
+                class="input-text w260" placeholder="名" type="text">
         </div>
         <div class="input-row">
-            <label for="">姓名全拼：</label><input class="input-text short mr20" placeholder="姓拼音" type="text"><input
-                class="input-text middle" placeholder="名拼音" type="text">
+            <label for="">姓名全拼：</label><input class="input-text w260 mr20" placeholder="姓拼音" type="text"><input
+                class="input-text w260" placeholder="名拼音" type="text">
         </div>
         <div class="input-row">
-            <label for="">性别：</label><input class="radio" type="radio"><span>男</span><input class="radio"
-                type="radio"><span>女</span>
+            <label for="">性别：</label>
+            <input class="radio ml20 mr10" type="radio" name="radiosex-sm"><span class="mr30">男</span>
+            <input class="radio mr10" type="radio" name="radiosex-sm"><span>女</span>
         </div>
         <div class="input-row">
             <label for="">居住地：</label><input class="input-text w260 mr20" placeholder="省份" type="text"><input

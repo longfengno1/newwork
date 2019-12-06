@@ -6,7 +6,7 @@ body {
 }
 
 .my-order {
-    padding: 19rem/$fit 0 200rem/$fit;
+    padding: 19rem/$fit 0 100rem/$fit;
     width: 1200rem/$fit;
     display: flex;
 
@@ -23,15 +23,17 @@ body {
             width: 100%;
             padding: 10rem/$fit 20rem/$fit;
             background-color: #ffffff;
-            h5{
+
+            h5 {
                 display: none;
             }
         }
 
         h3 {
-            padding: 20rem/$fit 0;
+            padding: 10rem/$fit 0;
             font-size: 20rem/$fit;
             color: #343E57;
+            margin-left: 10rem/$fit;
         }
     }
 
@@ -90,7 +92,7 @@ body {
         }
 
         .desc {
-            font-size: 13rem/$fit;
+            font-size: 14rem/$fit;
             color: #666666;
             line-height: 24rem/$fit;
             margin-top: 10rem/$fit;
@@ -100,7 +102,7 @@ body {
             display: flex;
             align-items: center;
             flex-wrap: nowrap;
-            margin-top: 20rem/$fit;
+            margin-top: 10rem/$fit;
         }
 
         .btn-item {
@@ -137,6 +139,7 @@ body {
         article {
             width: 435rem/$fit;
             background-color: #FBFBFB;
+            border: 1px solid #F0f0f0;
         }
 
         .users {
@@ -157,7 +160,7 @@ body {
 
         .info {
             padding: 10rem/$fit 20rem/$fit;
-            background-color: rgba(0, 0, 0, 0.03);
+            background-color: #fff;
 
             p {
                 font-size: 12rem/$fit;
@@ -197,7 +200,7 @@ body {
         }
 
         .price-detail {
-            font-size: 14rem/$fit;
+            font-size: 16rem/$fit;
             color: #666666;
             margin-bottom: 20rem/$fit;
 
@@ -211,7 +214,7 @@ body {
         }
 
         .total-price {
-            font-size: 18rem/$fit;
+            font-size: 16rem/$fit;
             color: #343E57;
             margin-bottom: 15rem/$fit;
         }
@@ -244,7 +247,7 @@ body {
         }
 
         .product-detail {
-            font-size: 12rem/$fit;
+            font-size: 16rem/$fit;
             color: #343E57;
             letter-spacing: 0;
             line-height: 24rem/$fit;
@@ -254,11 +257,11 @@ body {
             flex: 1;
             display: flex;
             justify-content: space-between;
-            padding-left: 20rem/$fit;
+            padding-left: 0rem/$fit;
         }
 
         .product-price {
-            font-size: 20rem/$fit;
+            font-size: 16rem/$fit;
             color: #F8485E;
         }
 
@@ -278,9 +281,8 @@ body {
             }
 
             .fee {
-                font-size: 14rem/$fit;
+                font-size: 16rem/$fit;
                 color: #343E57;
-
             }
 
             .all-price-num {
@@ -305,7 +307,6 @@ body {
                 margin-bottom: 0;
             }
         }
-
     }
 
     .order-btns {
@@ -363,11 +364,12 @@ body {
         cursor: pointer;
     }
 
-    .my-order{
+    .my-order {
         padding: 0;
         margin-top: 88rem/$fit;
         width: 100vw;
         flex-direction: column;
+
         .right-container {
             max-width: auto;
             width: 100%;
@@ -378,14 +380,16 @@ body {
                 padding: 32rem/$fit;
                 background-color: #ffffff;
                 margin-bottom: 24rem/$fit;
-                h5{
+
+                h5 {
                     display: block;
                     font-size: 28rem/$fit;
                     color: #383838;
                     margin-bottom: 32rem/$fit;
                 }
-                h5.title{
-margin-bottom: 24rem/$fit;
+
+                h5.title {
+                    margin-bottom: 24rem/$fit;
                 }
             }
 
@@ -394,7 +398,7 @@ margin-bottom: 24rem/$fit;
             }
         }
 
-        .bread-crumb{
+        .bread-crumb {
             display: none;
         }
 
@@ -407,31 +411,36 @@ margin-bottom: 24rem/$fit;
             }
         }
 
-        .trip-info{
-            p{
-                font-size: 26rem/$fit !important;
-                color: #6D6D6D !important;
+        .trip-info {
+            p {
+                font-size: 24rem/$fit;
+                color: #6D6D6D;
                 font-weight: 300;
             }
+
             .btns {
                 justify-content: space-between;
-                margin-top: 32rem/$fit;
+                margin-top: 20rem/$fit;
             }
 
-            .router{
+            .router {
                 margin-top: 0;
+                font-size: 28rem/$fit;
             }
 
-            .time{
+            .time {
                 margin-top: 24rem/$fit;
+                font-size: 28rem/$fit;
             }
-            .desc{
+
+            .desc {
                 margin-top: 24rem/$fit;
                 line-height: 40rem/$fit;
+                font-size: 24rem/$fit;
             }
 
             .btn-item {
-                font-size: 26rem/$fit;
+                font-size: 24rem/$fit;
                 color: #06929A;
                 flex: auto;
                 flex-grow: 0;
@@ -443,16 +452,18 @@ margin-bottom: 24rem/$fit;
                 }
             }
         }
-        
-        .contact-info{
+
+        .contact-info {
             display: flex;
             flex-direction: column;
-            span{
+
+            span {
                 font-weight: 300;
                 font-size: 24rem/$fit;
                 color: #6D6D6D;
                 margin-bottom: 20rem/$fit;
-                &:last-child{
+
+                &:last-child {
                     margin-bottom: 0;
                 }
             }
@@ -460,7 +471,7 @@ margin-bottom: 24rem/$fit;
 
         .price-info {
             h4 {
-                font-size: 26rem/$fit;
+                font-size: 24rem/$fit;
                 color: #383838;
                 margin-bottom: 24rem/$fit;
             }
@@ -478,7 +489,7 @@ margin-bottom: 24rem/$fit;
             }
 
             .total-price {
-                font-size: 32rem/$fit;
+                font-size: 28rem/$fit;
                 color: #383838;
                 margin-bottom: 32rem/$fit;
                 padding-bottom: 24rem/$fit;
@@ -503,36 +514,36 @@ margin-bottom: 24rem/$fit;
 
             .product-title {
                 font-weight: 500;
-                font-size: 30rem/$fit;
+                font-size: 24rem/$fit;
                 color: #383838;
                 line-height: 34rem/$fit;
             }
 
-            .product-people{
+            .product-people {
                 margin-top: 10rem/$fit;
                 font-size: 24rem/$fit;
                 color: #6D6D6D;
                 line-height: 38rem/$fit;
             }
 
-            .product-detail-sm{
+            .product-detail-sm {
                 font-size: 24rem/$fit;
                 color: #999999;
-                padding: 18rem/$fit 74rem/$fit 9rem/$fit 10rem/$fit;
+                padding: 10rem/$fit 74rem/$fit 10rem/$fit 10rem/$fit;
                 background-color: #FBFBFB;
                 border-radius: 4rem/$fit;
-                margin-top: 20rem/$fit;
+                margin-top: 0rem/$fit;
             }
 
             .product-right {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
-                padding-left: 30rem/$fit;
+                padding-left: 0rem/$fit;
             }
 
             .product-price {
-                font-size: 38rem/$fit;
+                font-size: 24rem/$fit;
                 color: #F8485E;
             }
 
@@ -545,15 +556,15 @@ margin-bottom: 24rem/$fit;
 
                 p {
                     margin-top: 24rem/$fit;
-                    &:first-child{
+
+                    &:first-child {
                         margin-top: 0;
                     }
                 }
 
                 .fee {
-                    font-size: 26rem/$fit;
+                    font-size: 24rem/$fit;
                     color: #383838;
-
                 }
 
                 .all-price-num {
@@ -562,16 +573,17 @@ margin-bottom: 24rem/$fit;
                 }
             }
         }
+
         .invoice-info {
             margin-bottom: 0 !important;
 
             p {
-                font-size: 24rem/$fit ;
-                color: #6D6D6D ;
-                margin-bottom: 24rem/$fit ;
+                font-size: 24rem/$fit;
+                color: #6D6D6D;
+                margin-bottom: 24rem/$fit;
 
                 span {
-                    width: 100% ;
+                    width: 100%;
                     margin-bottom: 24rem/$fit;
 
                     &:last-child {
@@ -580,24 +592,23 @@ margin-bottom: 24rem/$fit;
                 }
 
                 &:last-child {
-                    margin-bottom: 0 ;
+                    margin-bottom: 0;
                 }
             }
-
         }
 
         .order-btns {
-            text-align: right;
+            text-align: center;
             margin-top: 0;
             background-color: #ffffff;
-            padding: 0 32rem/$fit 56rem/$fit 0;
-            margin-bottom: 100rem/$fit;
+            padding: 0 0rem/$fit 56rem/$fit 0;
+            margin-bottom: 0rem/$fit;
 
             a {
                 display: inline-block;
-                width: 180rem/$fit;
-                height: 54rem/$fit;
-                line-height: 54rem/$fit;
+                width: 340rem/$fit;
+                height: 70rem/$fit;
+                line-height: 70rem/$fit;
                 font-size: 24rem/$fit;
                 font-weight: 400;
             }
