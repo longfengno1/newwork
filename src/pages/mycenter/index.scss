@@ -16,7 +16,6 @@ body {
         margin-right: 20rem/$fit;
         float: left;
     }
-
     .right-container {
         width: 940rem/$fit;
         float: right;
@@ -42,7 +41,7 @@ body {
         display: flex;
         position: relative;
         overflow: hidden;
-
+        padding: 20px !important;
         &::after {
             content: '';
             display: block;
