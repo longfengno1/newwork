@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\common",
     "\\src\\pages",
-    "\\src\\pages\\aboutus",
-    "\\src\\pages\\activitylist",
-    "\\src\\pages\\mycenter",
-    "\\src\\pages\\myinfo",
-    "\\src\\pages\\myorder",
+    "\\src\\pages\\mycard",
+    "\\src\\pages\\mynoticeDetail",
+    "\\src\\pages\\mypassenger",
     "\\src\\pages\\mypassengerEdit",
+    "\\src\\pages\\mysuborder",
     "\\src\\pages\\newsdetail"
   ],
-  "SelectedNode": "\\src\\pages\\aboutus\\index.html",
+  "SelectedNode": "\\src\\pages\\activityknow",
   "PreviewInSolutionExplorer": false
 }
