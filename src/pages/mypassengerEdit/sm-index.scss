@@ -43,17 +43,18 @@
     width: 100vw;
     margin-top: 88rem/$fit;
     font-family: Helvetica;
-    padding: 28rem/$fit 0 0 13rem/$fit;
+    padding: 28rem/$fit 0 0 28rem/$fit;
+
     .input-row{
         display: flex;
         align-items: center;
         margin-bottom: 20rem/$fit;
         label{
             margin: 0;
-            width: 180rem/$fit;
+            width: 160rem/$fit;
             font-size: 24rem/$fit;
             color: #666666;
-            text-align: right;
+            text-align: left;
         }
         span{
             font-size: 24rem/$fit;

@@ -1340,3 +1340,28 @@
   background-color: $theme-blue;
   color: $theme-white;
 }
+
+@media(max-width:767px)
+{
+    .activity-title {
+        position: relative;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 0.45rem;
+    }
+
+     .timer {
+        position: relative;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .wraper, .wraper-st {
+        width: 100%;
+        padding: 0 0.8rem;
+        .desc_content
+            {
+            img{width:100%;}
+        }
+    }
+}

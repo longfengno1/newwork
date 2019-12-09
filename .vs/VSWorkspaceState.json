@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\media",
-    "\\src\\pages\\mediaCenter",
+    "\\src\\pages\\aboutus",
+    "\\src\\pages\\activitylist",
     "\\src\\pages\\mycenter",
     "\\src\\pages\\myinfo",
     "\\src\\pages\\myorder",
     "\\src\\pages\\mypassengerEdit",
     "\\src\\pages\\newsdetail"
   ],
-  "SelectedNode": "\\src\\pages\\newsdetail\\index.html",
+  "SelectedNode": "\\src\\pages\\aboutus\\index.html",
   "PreviewInSolutionExplorer": false
 }
