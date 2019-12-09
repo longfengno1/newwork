@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\food",
-    "\\src\\pages\\jingcaishipin",
-    "\\src\\pages\\rooms",
-    "\\src\\pages\\roomsDetail",
-    "\\src\\pages\\xinshoudaolan",
-    "\\src\\pages\\yuleshengyan",
-    "\\src\\pages\\yuleshengyanDetail"
+    "\\src\\pages\\media",
+    "\\src\\pages\\mediaCenter",
+    "\\src\\pages\\mycenter",
+    "\\src\\pages\\myinfo",
+    "\\src\\pages\\myorder",
+    "\\src\\pages\\mypassengerEdit",
+    "\\src\\pages\\newsdetail"
   ],
-  "SelectedNode": "\\src\\pages\\rooms\\index.js",
+  "SelectedNode": "\\src\\pages\\newsdetail\\index.html",
   "PreviewInSolutionExplorer": false
 }
