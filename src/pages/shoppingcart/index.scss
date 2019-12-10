@@ -1,0 +1,322 @@
+@import '../../css/variables.scss';
+
+$checked-color: #fff;
+$checked-bg:#00969E;
+$unchecked-color: #ccc;
+$unchecked-bg:#fff;
+$checkbox-height: 16px;
+$background-color:#fff;
+$font-color:#dcdcdc;
+$duration: .4s;
+
+
+body {
+  background: #f8fcfd;
+}
+.cb-checkbox{
+  display:none;
+}
+
+.cb-label{
+  height: $checkbox-height;
+  width: $checkbox-height;
+  background: $unchecked-bg;
+  border: 2px solid $unchecked-color;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: border-color ease $duration/2;
+  margin-bottom: 0;
+  cursor: pointer;
+  &::before,&::after{
+   
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: 2px;
+    background: $checked-color;
+    display: inline-block;
+    
+    transform-origin: left top;
+    content: '';
+    transition: opacity ease 0.5s;
+  }
+  &::before{
+    top:$checkbox-height * 0.7;
+    left: $checkbox-height * 0.31;
+    transform: rotate(-135deg);
+  }
+  &::after {
+    top: $checkbox-height * .4;
+    left: $checkbox-height * 0;
+    transform: rotate(-45deg);
+  }
+}
+input[type=checkbox]:checked + .cb-label,
+.cb-label.checked{
+
+  background: $checked-bg;
+  border-color:$checked-bg;
+  &::after{
+    border-color:$checked-color;
+    height: $checkbox-height * .35;
+    
+    animation: dothabottomcheck $duration/2 ease 0s forwards;
+  }
+
+  &::before{
+    border-color:$checked-color;
+    height: $checkbox-height * 1;
+    
+    animation: dothatopcheck $duration ease 0s forwards;
+  }
+
+}
+@-moz-keyframes dothabottomcheck{
+  0% { height: 0; }
+  100% { height: $checkbox-height *0.35; }
+}
+
+@-webkit-keyframes dothabottomcheck{
+  0% { height: 0; }
+  100% { height: $checkbox-height *0.35; }
+}
+
+@keyframes dothabottomcheck{
+  0% { height: 0; }
+  100% { height: $checkbox-height *0.35;  }
+}
+
+@keyframes dothatopcheck{
+  0% { height: 0; }
+  50% { height: 0; }
+  100% { height: $checkbox-height * 0.7; }
+}
+@-webkit-keyframes dothatopcheck{
+  0% { height: 0; }
+  50% { height: 0; }
+  100% { height: $checkbox-height * 0.7; }
+}
+@-moz-keyframes dothatopcheck{
+  0% { height: 0; }
+  50% { height: 0; }
+  100% { height: $checkbox-height * 0.7; }
+}
+
+.shoppingcart-main {
+  .title {
+    font-size: 24px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 25px;
+
+    .op {
+      float: right;
+      font-size: 14px;
+      color: #333;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+.shoppingcartlist {
+  li {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .sel {
+    height: 222px;
+    line-height: 222px;
+    width: 40px;
+    float: left;
+    position: relative;
+   
+    input[type=checkbox] {
+      border-radius: 0;
+      width: 14px;
+      height: 14px;
+
+      &:checked {
+        background: #00969E;
+      }
+    }
+  }
+
+  .pic {
+    height: 222px;
+    width: 332px;
+    overflow: hidden;
+    float: left;
+    margin-right: 30px;
+
+    img {
+      min-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .info {
+    float: left;
+    width: 755px;
+    height: 222px;
+    position: relative;
+  }
+
+  .protitle {
+    font-size: 24px;
+  }
+
+  .itmes1,
+  .itmes2 {
+    margin-top: 20px;
+    float: left;
+    font-size: 14px;
+    width: 320px;
+    height: 110px;
+    p{
+      height: 36px;
+      line-height: 36px;
+    }
+    a {
+      color: #00969E;
+    }
+  }
+
+  .itmes3 {
+    float: right;
+    text-align: right;
+
+    .base_price {
+      color: #F8485E;
+      font-size: 24px;
+
+      dfn {
+        font-family: Arial;
+        font-size: 12px;
+        font-style: normal;
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .itmes4 {
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .opbox{
+    clear: both;
+    overflow: hidden;
+    padding-left: 40px;
+  }
+  .room{
+    overflow: hidden;
+    .roomtitle{
+      font-size:14px;
+      height: 28px;
+      line-height: 28px;
+      margin-top: 8px;
+    }
+    .user{
+      float: left;
+      width: 25%;
+    }
+    .username{
+      display: inline-block;
+      height: 30px;
+      line-height: 28px;
+      border:1px solid #00969E;
+      border-radius: 2px;
+      color: #00969E;
+      font-size: 12px;
+      text-align: center;
+      width: 70px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .num-select {
+      display: inline-block;
+      border: 1px solid #64CCC9;
+      border-radius: 2px;
+      padding: 1px;
+      text-align: center;
+      height: 30px;
+      line-height: 26px;
+      overflow: hidden;
+      vertical-align:middle;
+    }
+    
+    .num {
+      display: block;
+      float: left;
+      font-size: 14px;
+      color: #343E57;
+      width: 32px;
+      height: 26px;
+      line-height: 26px;
+    }
+    
+    .minus,
+    .plus {
+      display: block;
+      float: left;
+      width: 26px;
+      height: 26px;
+      border-radius: 2px;
+      background-color: #00969E;
+      color: #fff;
+      font-size: 12px;
+      line-height: 26px;
+      cursor: pointer;
+    }
+    .disable-user{
+      .username{
+        background: #f8f8f8;
+        border-color:#e3e3e3;
+        color: #9c9c9c;
+      }
+      .num-select{
+        border-color: #f2f2f2;
+      }
+      .minus,
+      .plus{
+        color:#ccc;
+        background: #f8f8f8;
+      }
+    }
+  }
+  
+}
+.totle{
+  text-align: right;
+
+  .totletext{
+    font-size:18px;
+  }
+  .base_price{
+    margin-left: 20px;
+    color: #F8485E;
+    font-size: 24px;
+    dfn{
+      font-style: normal;
+      font-family: Arial;
+    }
+  }
+  .btn-styleI{
+    width: 230px;
+    height: 56px;
+    padding: 0;
+    line-height: 56px;
+    text-align: center;
+    font-size: 14px;
+    margin-top:40px;
+  }
+}

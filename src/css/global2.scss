@@ -1566,6 +1566,35 @@ b {
 	color: #322044;
 	background: #fff;
 }
+.btn-styleI {
+	color: #fff;
+	font-size: 12rem/$fit;
+	padding: 7rem/$fit 18rem/$fit;
+	border-radius: 3px;
+	background: #00969E;
+	display: inline-block;
+}
+
+.btn-styleI:hover {
+	text-decoration: none;
+	color: #fff;
+	background: #00b4be;
+}
+.btn-styleJ {
+	color: #333;
+	font-size: 12rem/$fit;
+	padding: 6rem/$fit 17rem/$fit;
+	border:1px solid #f2f2f2;
+	border-radius: 3px;
+	background: #fff;
+	display: inline-block;
+}
+
+.btn-styleJ:hover {
+	text-decoration: none;
+	color: #333;
+	background: #f2f2f2;
+}
 
 .show-sm {
 	display: none;
