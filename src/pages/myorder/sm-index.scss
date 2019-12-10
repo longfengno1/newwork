@@ -3,7 +3,6 @@
 @media (max-width: 767px) {
     body {
         background-color: #F8F8F8 !important;
-        font-family: Helvetica;
     }
 
     .my-order{
@@ -65,7 +64,7 @@
 
     .order-card {
         width: 100vw;
-        height: 310rem/$fit;
+        /*height: 310rem/$fit;*/
         padding: 32rem/$fit;
         background-color: #ffffff;
         margin-bottom: 24rem/$fit;
@@ -101,17 +100,19 @@
         }
 
         .num {
-            font-size: 28rem/$fit;
-            color: #00969E;
+            font-size: 24rem/$fit;
+            color: #6D6D6D;
             margin-left: 20rem/$fit;
         }
 
 
         .desc {
-            font-size: 20rem/$fit;
-            color: #6D6D6D;
-            line-height: 38rem/$fit;
+            font-size: 28rem/$fit;
+            color: #00969E;
+            line-height: 60rem/$fit;
             margin-top: 8rem/$fit;
+            background-color: #fafafa;
+            padding: .5rem;
         }
 
         .bottom {
@@ -122,12 +123,12 @@
         }
 
         .time {
-            font-size: 20rem/$fit;
+            font-size: 24rem/$fit;
             color: #999999;
         }
 
         .price {
-            font-size: 38rem/$fit;
+            font-size: 40rem/$fit;
             color: #F8485E;
         }
 
@@ -150,7 +151,7 @@
 
         .operations {
             text-align: right;
-            margin-top: 24rem/$fit;
+            margin-top: 10rem/$fit;
 
             .pay {
                 border-color: #00969E;
@@ -160,39 +161,45 @@
     }
 }
 
- #sm-modify-order-layer {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100vw;
-     height: 100vh;
-     z-index: 999;
-     background-color: rgba(0, 0, 0, 0.50);
-     display: flex;
-     flex-direction: column-reverse;
-     .mask{
-         flex: 1;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-     .alert{
+#sm-modify-order-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    flex-direction: column-reverse;
+
+    .mask {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .alert {
         width: 686rem/$fit;
         padding: 32rem/$fit 24rem/$fit 24rem/$fit;
         background-color: #ffffff;
-        .title{
+
+        .title {
             font-size: 34rem/$fit;
             color: #383838;
         }
-        .content{
+
+        .content {
             font-size: 24rem/$fit;
             color: #999999;
             line-height: 40rem/$fit;
             font-weight: 300;
         }
-        .btn{
+
+        .btn {
             text-align: center;
             width: 100%;
+
             span {
                 display: inline-block;
                 width: 148rem/$fit;
@@ -203,19 +210,22 @@
                 background-color: #00969E;
             }
         }
-     }
-    .layer{
+    }
+
+    .layer {
         background-color: #ffffff;
         padding: 32rem/$fit 32rem/$fit 0;
         border-top-left-radius: 10rem/$fit;
         border-top-right-radius: 10rem/$fit;
     }
-    .title{
+
+    .title {
         font-size: 34rem/$fit;
         color: #383838;
         font-weight: 500;
     }
-    .tip{
+
+    .tip {
         font-size: 24rem/$fit;
         color: #999999;
         line-height: 40rem/$fit;
@@ -223,17 +233,20 @@
         font-weight: 300;
         margin-bottom: 36rem/$fit;
     }
-    .modify-row{
+
+    .modify-row {
         display: flex;
         align-items: center;
         font-size: 22rem/$fit;
         color: #383838;
         margin-bottom: 32rem/$fit;
-        input{
+
+        input {
             margin-right: 24rem/$fit;
         }
     }
-    .modify-btns{
+
+    .modify-btns {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -241,7 +254,8 @@
         border-top: 1px solid #E5E5E5;
         background-color: #ffffff;
         padding: 0 32rem/$fit;
-        .ensure{
+
+        .ensure {
             display: inline-block;
             width: 100%;
             height: 88rem/$fit;
@@ -253,4 +267,9 @@
             text-align: center;
         }
     }
- }
+
+    .input-txt {
+        width: 100%;
+        height: 80px;
+    }
+}

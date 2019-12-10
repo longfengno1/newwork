@@ -1085,6 +1085,16 @@
 	padding-right: 144px;
 }
 
+.desc {
+    height: 60px;
+    overflow: hidden;
+}
+
+.desc-expand {
+    height: auto;
+}
+
+
 .travelslist .proinfo .title {
   color: #00969E;
 	font-size: 18px;

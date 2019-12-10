@@ -1,0 +1,521 @@
+@import '../../css/variables.scss';
+
+/* 大屏幕 */
+@media (min-width: 1200px) {
+}
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+    #header {
+        /*display:none;*/
+    }
+    .fleetintro {
+        background: none;
+    }
+    .topbannerB img {
+        max-width: 300%;
+    }
+    .row
+{
+    display: inherit;
+}
+    
+    .title_p {
+        position: absolute;
+        top: 280rem/$fit;
+        left: 30rem/$fit;
+        color: #fff;
+    }
+
+    .title_p .title {
+        font-size: 30rem/$fit;
+    }
+
+    .title_p .title_sub {
+        font-size: 24rem/$fit;
+    }
+
+    .topbanner_plane {
+        position: relative;
+        margin-top: 30rem/$fit;
+    }
+
+    .topbanner {
+        background: none;
+        height: auto;
+    }
+
+    .topbanner .content {
+        padding: 200rem/$fit 30rem/$fit 0 30rem/$fit;
+        color: #fff;
+    }
+
+    .topbanner_plane {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .topbanner_plane .ship {
+        text-align: center;
+    }
+
+    .topbanner_plane .ship img {
+        width: 100%;
+        margin-left: -50rem/$fit;
+        display: block;
+    }
+
+    .topbanner_plane .ship02 {
+        position: static;
+    }
+
+    .topbanner_plane .info {
+        width: 180rem/$fit;
+        color: #fff;
+        border-left: 1px solid #fff;
+    }
+
+    .topbanner_plane .text_box {
+        width: 60%;
+    }
+
+    .topbanner_plane .content p {
+        font-size: 22rem/$fit;
+        line-height: 2;
+    }
+
+    .topbanner_plane .content h1 {
+        float: left;
+        margin-top: -80rem/$fit;
+    }
+
+    .topbanner_plane .info .row {
+        display: block;
+        margin: 0;
+        margin-left: 20rem/$fit;
+    }
+
+    .topbanner_plane .info li {
+        border: 0;
+        padding: 10rem/$fit 0 20rem/$fit 0;
+    }
+
+    .topbanner_plane .info .row .col br {
+        display: none;
+    }
+
+    .topbanner_plane .ship .btn-icon,
+    .topbanner_plane .ship-intro {
+        display: inline-block;
+        margin: 0 10rem/$fit;
+        width: 60rem/$fit;
+        height: 60rem/$fit;
+        position: static;
+    }
+
+    .topbanner_plane .ship .btn-icon .inner {
+        width: 54rem/$fit;
+        height: 54rem/$fit;
+        line-height: 54rem/$fit;
+        font-size: 32rem/$fit;
+    }
+
+    .topbanner_plane .ship .ship-icon {
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .topbanner_plane .ship-intro:after {
+        display: none;
+    }
+
+    .topbanner_plane .ship-intro:before {
+        display: none;
+    }
+
+    .section {
+        background: #fff;
+        padding:0;
+    }
+    .nobottom {
+        border-bottom: 0rem solid #F8F8F8;
+    }
+    .prolist .inner {
+        background: #fff;
+        padding: 20rem/$fit 0;
+        margin: 0 20rem/$fit;
+        border-top: 1px solid #ccc;
+    }
+    .desc_content {
+        margin: .5rem;
+
+        p {
+            font-size: 24rem/$fit;
+            line-height: 40rem/$fit;
+            text-indent: 40rem/$fit;
+        }
+
+        ul li {
+            list-style-type: disc;
+            font-size: .6rem;
+            line-height: 1rem;
+            margin: .25rem 0;
+        }
+    }
+    .prolist li:first-child .inner {
+        border-top: 0;
+    }
+
+    .prolist .inner .pic {
+        float: left;
+        margin-right: 30rem/$fit;
+        height: auto;
+        width: 44%;
+    }
+
+    .section01 {
+        margin-top: 30rem/$fit;
+        border-radius: 8rem/$fit;
+        padding-top: 40rem/$fit;
+        padding-bottom: 0rem/$fit;
+        position: relative;
+    }
+
+    .section01:after {
+        content: "";
+        opacity: 0.2;
+        background: #343E57;
+        border-radius: 4rem/$fit;
+        width: 80rem/$fit;
+        height: 8rem/$fit;
+        position: absolute;
+        left: 50%;
+        margin-left: -40rem/$fit;
+        top: 15rem/$fit;
+    }
+
+    .col-4 {
+        width: 100%;
+        display: block;
+        flex: auto;
+        max-width: none;
+    }
+
+    .youlist .pic {
+        width: 576rem/$fit;
+        height: auto !important;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .countrylist li {
+        font-size: 28rem/$fit !important;
+    }
+
+    .prolist .pic, .prolist .pic img {
+        width: 100%;
+    }
+
+    .prolist .protitle {
+        text-align: left;
+        margin-top: 10rem/$fit !important;
+        font-size: 28rem/$fit;
+        margin-bottom: 10rem/$fit;
+    }
+
+    .prowraper {
+        width: 100%;
+    }
+
+    .section01 .prolist {
+        margin-top: 0 !important;
+    }
+
+    .section .title {
+        position: relative;
+        color: #333;
+        text-align: left;
+        /*letter-spacing: 0.125rem;*/
+        font-size: 0.8rem;
+        font-weight: normal;
+        padding-left: 0.5rem;
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+        height:auto;
+    }
+    .section .m_tab {
+        background-color: #F8F8F8;
+        height: 1.5rem;
+        margin-bottom: .25rem;
+
+        .citylist {
+            overflow: hidden;
+            padding: 0 1rem;
+            background-color: transparent;
+            float: left;
+            line-height: 1.5rem;
+            font-size: .6rem;
+
+            li a {
+                display: inline-block;
+                height: 1.5rem;
+            }
+
+            .current a {
+                text-decoration: none;
+                color: #00969E;
+                border-bottom: 0.075rem solid #00969E;
+            }
+        }
+    }
+    
+    .prolist .infos .item {
+        font-size: 20rem/$fit;
+        line-height: 40rem/$fit;
+        color: #6D6D6D;
+        font-weight: 300;
+    }
+
+    .mbar ul {
+        width: 100%;
+        overflow: hidden;
+        clear: both;
+    }
+
+    .mbar li {
+        width: 33%;
+        float: left;
+        text-align: center;
+        font-size: 24rem/$fit;
+    }
+
+    .mbar li a {
+        display: inline-block;
+        height: 50rem/$fit;
+    }
+
+    .mbar li .current {
+        color: #00969E;
+        border-bottom: 2px solid #00969E;
+    }
+
+    .probanner img {
+        height: 315rem/$fit;
+    }
+
+    .probanner .artion-box {
+        left: 40rem/$fit;
+        top: 25rem/$fit;
+    }
+
+    .intro-ribbon {
+        width: 100%;
+        background-size: 100% auto;
+        height: 300rem/$fit;
+        margin-top: -85rem/$fit;
+    }
+
+    .sm-youlist-wraper .title {
+        text-align: left;
+        font-size: 28rem/$fit;
+        color: #383838;
+        padding-left: 20rem/$fit;
+        margin-top: 28rem/$fit;
+        margin-top: 28rem/$fit;
+    }
+
+    .sm-youlist-wraper .youlist-s {
+        position: relative;
+        height: 380rem/$fit;
+        overflow: scroll;
+        overflow-y: hidden;
+
+        li{
+            float:left;
+        }
+    }
+
+    .sm-youlist-wraper .youlist {
+        position: absolute;
+        height: auto;
+        width: 1820rem/$fit;
+    }
+
+    .sm-youlist-wraper .youlist .pic {
+        width: 100%;
+        border-radius: 6rem/$fit;
+
+        img {
+            width: 100%
+        }
+    }
+
+    .sm-youlist-wraper .youlist li {
+        width: 450rem/$fit;
+        float: left;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-left: 32rem/$fit;
+    }
+
+    .sm-youlist-wraper .youlist .inner {
+        background: #fff;
+        margin-bottom: 0;
+    }
+
+    .sm-youlist-wraper .youlist .protitle {
+        font-size: 24rem/$fit;
+        color: #383838;
+    }
+
+    .sm-youlist-wraper .youlist .desc {
+        color: #666666;
+        font-size: 20rem/$fit;
+    }
+
+    .sm-youlist-wraper .youlist .pic .tags {
+        font-size: 22rem/$fit;
+        padding-top: 40rem/$fit;
+    }
+
+    .btn-return {
+        color: #fff;
+        position: absolute;
+        top: 30rem/$fit;
+        left: 30rem/$fit;
+        font-size: 30rem/$fit;
+    }
+
+    .desc-pic {
+        width: 100%;
+    }
+
+    .hotthread {
+        .item {
+            ul li {
+                float: left;
+                height: auto;
+                border-radius: 5rem/$fit;
+                overflow: inherit;
+                display: block;
+                width: 100%;
+                margin: 0 0 0.25rem 0;
+                padding:0 1rem 0 1rem;
+
+            }
+
+            .thread {
+
+                .pic {
+                    background-size: 100% auto;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    /*width: 100%;*/
+                    height: auto;
+                    overflow: inherit;
+                    border-top-left-radius: 0.125rem;
+                    border-top-right-radius: 0.125rem;
+                    border-bottom-left-radius: 0.125rem;
+                    border-bottom-right-radius: 0.125rem;
+
+                    img {
+                        width: 100%;
+                        border-top-left-radius: 0.25rem;
+                        border-top-right-radius: 0.25rem;
+                        border-bottom-left-radius: 0.25rem;
+                        border-bottom-right-radius: 0.25rem;
+                    }
+                }
+
+                .inner {
+                    border: 0.0rem solid #d0d7df;
+                    padding: 0.5rem;
+                    height: auto;
+                    border-top-left-radius: 0.125rem;
+                    border-top-right-radius: 0.125rem;
+                    border-bottom-left-radius: 0.125rem;
+                    border-bottom-right-radius: 0.125rem;
+                    position: absolute;
+                    width: 100%;
+                    height: auto;
+                    background: none;
+                    bottom: 0;
+
+                    .caption p {
+                        color: #fff;
+                        line-height: normal;
+                    }
+                }
+
+                .tip {
+                    position: absolute;
+                    z-index: 5;
+                    top: 0;
+                    right: 0;
+                    background-color: #f8485e;
+                    border-bottom-left-radius: 0.25rem;
+                    width: auto;
+                    height: 0.75rem;
+                    line-height: 0.75rem;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 0.3rem;
+                    font-style: normal;
+                    padding: 0 0.25rem 0 0.25rem;
+                }
+            }
+        }
+
+        .tags {
+            position: absolute;
+            bottom: 3rem;
+            left: 0;
+            height: auto;
+            padding: 0.25rem;
+        }
+
+        .tags span {
+            height: 0.8rem;
+            line-height: 0.8rem;
+            color: #FDD26E;
+            padding: 0 0.125rem;
+            border: 0.025rem solid #FDD26E;
+            border-radius: 0.075rem;
+            display: block;
+            font-size: 0.3rem;
+            float: left;
+            margin-right: 0.25rem;
+        }
+
+        .pic_title {
+            position: absolute;
+            left: 0;
+            top: 0.3rem;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            padding: 0 0.3rem;
+            color: #ffffff;
+            font-size: 0.3rem;
+        }
+    }
+    .carousel {
+        width: 100%;
+        margin: 20rem/$fit auto;
+
+        .slide {
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {
+}

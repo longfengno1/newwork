@@ -7,7 +7,7 @@ body {
 }
 
 .my-order {
-    padding: 19rem/$fit 0 200rem/$fit;
+    padding: 19rem/$fit 0 100rem/$fit;
     width: 1170rem/$fit;
     display: flex;
 
@@ -71,7 +71,7 @@ body {
         
         label {
             margin: 0;
-            margin-bottom: 14px;
+            margin-right: 10px;
             font-size: 14px;
             color: #666666;
 
@@ -86,7 +86,7 @@ body {
             margin-bottom: 20px;
 
             span {
-                font-size: 12px;
+                font-size: 14px;
                 color: #343E57;
             }
         }
@@ -97,7 +97,7 @@ body {
             background: #FFFFFF;
             border: 1px solid #D0D7DF;
             border-radius: 2px;
-            font-size: 16px;
+            font-size: 14px;
             color: #343E57;
             padding-left: 20px;
         }
@@ -141,7 +141,7 @@ body {
             width: 128px;
             height: 35px;
             display: inline-block;
-            font-size: 16px;
+            font-size: 14px;
             text-align: center;
             line-height: 35px;
             cursor: pointer;

@@ -18,21 +18,22 @@ body {
     .right-container {
         width: 940rem/$fit;
         font-family: Helvetica;
-        h3{
+
+        h3 {
             font-size: 20px;
             color: #343E57;
             margin-bottom: 10px;
         }
     }
 
-    .notice{
+    .notice {
         width: 940rem/$fit;
         padding: 20rem/$fit 30rem/$fit;
         background-color: #ffffff;
         margin-bottom: 4px;
         cursor: pointer;
 
-        .title-row{
+        .title-row {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -40,17 +41,22 @@ body {
             color: #00969E;
         }
 
-        .title{
+        .title {
             font-size: 14px;
             color: #00969E;
         }
 
-        .desc{
-            font-size: 12px;
+        .desc {
+            font-size: 14px;
             color: #343E57;
             margin-top: 10px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .desc-expand {
+            height: auto;
         }
     }
-
 }
 @import './sm-index.scss';

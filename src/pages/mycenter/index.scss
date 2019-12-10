@@ -254,9 +254,16 @@ body {
         }
     }
 }
+th{
+    background-color:#fafafa;
+}
 
 @media (max-width: 767px){
     .my-order{
         display: none !important;
     }
+    body {
+        background-color: #fafafa;
+    }
+
 }

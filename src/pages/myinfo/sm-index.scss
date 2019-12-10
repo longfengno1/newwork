@@ -74,6 +74,7 @@
             align-items: center;
             margin-right: 54rem/$fit;
             font-size: 24rem/$fit;
+
             &:last-child {
                 margin-right: 0;
             }
@@ -86,6 +87,7 @@
 
     .my-favorite {
         padding: 32rem/$fit;
+        margin-bottom: 0rem/$fit;
 
         .favorite-item {
             position: relative;
@@ -93,7 +95,7 @@
             height: 340rem/$fit;
             border-radius: 6rem/$fit;
             margin-bottom: 8rem/$fit;
-            background-image: url(../../images/f1.png), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 56%, rgba(0, 0, 0, 0.60) 74%);
+            background-image: url(../../images/1.png), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 56%, rgba(0, 0, 0, 0.60) 74%);
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column-reverse;
@@ -114,14 +116,14 @@
             height: 39rem/$fit;
             line-height: 39rem/$fit;
             text-align: center;
-            font-size: 22rem/$fit;
+            font-size: 24rem/$fit;
             color: #FFFFFF;
             background-color: #F8485E;
             border-radius: 0 6rem/$fit 0 6rem/$fit;
         }
 
         .name {
-            font-size: 34rem/$fit;
+            font-size: 32rem/$fit;
             color: #FFFFFF;
             margin-bottom: 16rem/$fit;
         }
@@ -140,7 +142,7 @@
             color: #F8485E;
 
             span {
-                font-size: 22rem/$fit;
+                font-size: 24rem/$fit;
                 color: #FFFFFF;
                 line-height: 40rem/$fit;
             }
@@ -161,6 +163,28 @@
             color: #ffffff;
             font-size: 24rem/$fit;
             margin-right: 9rem/$fit;
+        }
+    }
+
+    .modify-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80rem/$fit;
+        border-top: 0px solid #E5E5E5;
+        background-color: #ffffff;
+        padding: 0 32rem/$fit;
+
+        .ensure {
+            display: inline-block;
+            width:3rem;
+            height: 70rem/$fit;
+            line-height: 70rem/$fit;
+            background-color: #00969E;
+            color: #ffffff;
+            font-size: 24rem/$fit;
+            letter-spacing: 0rem/$fit;
+            text-align: center;
         }
     }
 }

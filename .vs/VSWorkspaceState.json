@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\js",
     "\\src\\pages",
-    "\\src\\pages\\chuanshanghuodong",
-    "\\src\\pages\\chuanshanghuodongDetail",
-    "\\src\\pages\\help",
+    "\\src\\pages\\aboutus",
     "\\src\\pages\\index",
-    "\\src\\pages\\jingcaishipin",
-    "\\src\\pages\\xinshoudaolan",
-    "\\src\\pages\\yuleshengyan"
+    "\\src\\pages\\media",
+    "\\src\\pages\\mediafaq",
+    "\\src\\pages\\mynotice",
+    "\\src\\pages\\reg"
   ],
-  "SelectedNode": "\\src\\pages\\chuanshanghuodong\\index.html",
+  "SelectedNode": "\\src\\pages\\media\\index.html",
   "PreviewInSolutionExplorer": false
 }

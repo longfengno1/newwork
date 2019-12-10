@@ -81,17 +81,19 @@
 
         .title {
             color: #00969E;
-            font-size:28rem/$fit;
+            font-size: 28rem/$fit;
         }
 
         .date {
             margin-top: 20rem/$fit;
             color: #6D6D6D;
+            font-size: 24rem/$fit;
         }
 
         .count {
             margin-top: 14rem/$fit;
             color: #999999;
+            font-size: 24rem/$fit;
         }
 
         .operation {
@@ -106,6 +108,11 @@
             text-align: center;
         }
 
+        .overtime {
+            width: 3.7rem;
+            color: #F8485E;
+            text-align: center;
+        }
     }
 
     .my-card-detail {
@@ -141,11 +148,51 @@
         }
 
         .desc {
-            font-size: 20rem/$fit;
+            font-size: 24rem/$fit;
             color: #999999;
             line-height: 38rem/$fit;
             margin-top: 14rem/$fit;
         }
     }
 
+    #my-code-container-sm {
+        width: 100%;
+        background-color: #ffffff;
+        padding: 20rem/$fit 30rem/$fit;
+
+        h5 {
+            font-size: 28rem/$fit;
+            color: #343E57;
+        }
+
+        .code-row {
+            display: flex;
+            align-items: center;
+
+            input {
+                background: #FFFFFF;
+                border: 1px solid #D0D7DF;
+                border-radius: 2px;
+                width: 14rem;
+                height: 2rem;
+                line-height: 2rem;
+                padding-left: .5rem;
+                font-size: 24rem/$fit;
+                color: #999999;
+                margin-right: 20rem/$fit;
+            }
+
+            span {
+                background-color: #00969E;
+                border: 1px solid #00969E;
+                border-radius: 2px;
+                font-size: 24rem/$fit;
+                color: #FFFFFF;
+                text-align: center;
+                width: 3rem;
+                height: 2rem;
+                line-height: 2rem;
+            }
+        }
+    }
 }

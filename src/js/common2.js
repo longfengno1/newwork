@@ -4,14 +4,14 @@ import './ui.base';
 import '../css/global2.scss';
 (function () {
     $(document).ready(function () {
-        $("#header .navbar-menu>li").hover(function(){
+        $("#header .navbar-menu>li").hover(function () {
             var $this = $(this)
             $("#header .navbar-menu>li").removeClass("current");
             $(".header-bar .sub_header_menu").hide();
             $this.find(".sub_header_menu").show();
             $this.addClass("current");
-            
-        },function(){
+
+        }, function () {
             $("#header .navbar-menu>li").removeClass("current");
             $(".header-bar .sub_header_menu").hide();
         })
@@ -21,8 +21,8 @@ import '../css/global2.scss';
         //     $(".header-bar .sub_header_menu").delay(100,"showsubmenu").hide();
         // })
         // $(".header-bar .sub_header_menu").hover(function(){
-           
-            
+
+
         // })
         $("#header .menu-box-inner").click(function () {
             $("body").addClass("show_menu");
@@ -43,39 +43,39 @@ import '../css/global2.scss';
             $this.parent().find(".icon-arrow").toggleClass("icon-arrowdown");
             return false;
         })
-        $('.show-sm .fixed_plane').bind('touchmove',function(e){
-           
+        $('.show-sm .fixed_plane').bind('touchmove', function (e) {
+
             e.preventDefault();
             var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
             var elm = $(this).offset();
             var w = $(this).find("a").width();
             var h = $(this).find("a").height()
-            var x = touch.clientX - w/2;
-            var y = touch.clientY - h/2;
-            
+            var x = touch.clientX - w / 2;
+            var y = touch.clientY - h / 2;
+
             $(this).css(
-                'left', x+'px'
+                'left', x + 'px'
             ).css(
-                'top', y+'px'
+                'top', y + 'px'
             ).css(
-                'height','2rem'
+                'height', '2rem'
             ).css(
-                'width','2rem'
+                'width', '2rem'
             );
         });
     })
 
 
     $(".scroll-item").click(function () {
-        
-        if($(this).hasClass("active")){
+
+        if ($(this).hasClass("active")) {
             $(".scroll-item").removeClass("active");
             $(this).removeClass("active");
-        }else{
+        } else {
             $(".scroll-item").removeClass("active");
             $(this).toggleClass("active");
         }
-        
+
     });
 
     $(".tab-item").click(function () {
@@ -96,8 +96,8 @@ import '../css/global2.scss';
     });
 
     $(".more-btn").click(function () {
-        $(this).parent().find(".more-desc").toggle();
-        $(this).toggle();
+        $(this).parent().find(".desc").toggleClass("desc-expand");
+        $(this).parent().find(".more-btn").toggle();
     })
 
 
@@ -105,15 +105,15 @@ import '../css/global2.scss';
         $(".tab-title").removeClass("current");
         $(this).addClass("current");
     });
-    $(".agreebox a").click(function(){
+    $(".agreebox a").click(function () {
         $(".agreebox").hide();
     });
     $(window).bind("scroll", function () {
         var st = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
-       
+
         if (st < 400) {
             $(".fixed_plane,.left-select-ship").hide()
-        }else{
+        } else {
             $(".fixed_plane,.left-select-ship").show()
         }
     })

@@ -1,5 +1,4 @@
 @import '../../css/variables.scss';
-@import './sm-index.scss';
 
 .row {
   margin: 0;
@@ -118,6 +117,11 @@
   .title{
     font-size: 16px;
     padding: 4px 0 20px 0;
+  }
+  p{
+      font-size:14px;
+      line-height:24px;
+      text-indent:40px;
   }
 }
 .list-main {
@@ -257,6 +261,7 @@
   text-align: center;
   font-size: 28px;
   margin-bottom: 18px;
+        line-height:1.7;
 }
 
 .timer {
@@ -1340,3 +1345,30 @@
   background-color: $theme-blue;
   color: $theme-white;
 }
+
+@media(max-width:767px)
+{
+    .activity-title {
+        position: relative;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 0.45rem;
+    }
+
+     .timer {
+        position: relative;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .wraper, .wraper-st {
+        width: 100%;
+        padding: 0 0.8rem;
+        .desc_content
+            {
+            img{width:100%;}
+        }
+    }
+}
+
+@import './sm-index.scss';

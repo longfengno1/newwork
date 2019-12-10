@@ -33,7 +33,11 @@
                 font-size: 24rem/$fit;
                 text-overflow: ellipsis;
                 overflow: hidden;
-                white-space: nowrap;
+                height: 1.8rem;
+            }
+
+            .desc-expand {
+                height: auto;
             }
         }
     }

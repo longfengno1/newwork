@@ -1,0 +1,226 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>媒体中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+
+    <div id="main" class="fleetintro">
+
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+
+        <div class="section">
+            <div class="wraper">
+                <h2 class="title mt30 hidden-sm">媒体中心<span class="icon-arrowright fr show-sm" style="display:none;"></span></h2>
+                
+                <div class="hotthread hotthreadB clearfloat mt30">
+                    <div class="item">
+                        <ul class="row">
+                            <li class="col">
+                                <div class="thread">
+                                    <div class="pic">
+                                        <a href="###" target="_blank">
+                                            <div class="pic bg-pic">
+                                                <img src="../../images/media-news.jpg">
+                                            </div>
+                                        </a>
+                                        
+
+                                    </div>
+                                    <div class="inner">
+
+                                        <div class="caption">
+                                            <p class="fz16 fb protitle ellipsis">新闻中心</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col">
+                                <div class="thread">
+                                    <div class="pic">
+                                        <a href="###" target="_blank">
+                                            <div class="pic bg-pic">
+                                                <img src="../../images/media-faq.jpg">
+                                            </div>
+                                        </a>
+                                        
+
+                                    </div>
+                                    <div class="inner">
+
+                                        <div class="caption">
+                                            <p class="fz16 fb protitle ellipsis">媒体咨询</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col">
+                                <div class="thread">
+                                    <div class="pic">
+                                        <a href="###" target="_blank">
+                                            <div class="pic bg-pic">
+                                                <img src="../../images/guanyu2.jpg">
+                                            </div>
+                                        </a>
+                                        
+
+                                    </div>
+                                    <div class="inner">
+
+                                        <div class="caption">
+                                            <p class="fz16 fb protitle ellipsis">奖项</p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section" style="display:none;">
+            <div class="wraper prowraper">
+                <h2 class="title hidden-sm mt30">媒体中心</h2>
+
+                <div class="aboutus-main">
+                    <div class="pic1">
+                        <img src="../../images/media-news.jpg">
+                    </div>
+                    <div class="q1">
+                        <p class="title mt20">新闻中心</p>
+                        <div class="desc">
+                            云顶邮轮集团宣布将与全球知名邮轮奢侈品零售商STARBOARD CRUISE SERVICES （下称STARBOARD）再度联手，在星梦邮轮首艘「环球级」邮轮「环球梦号」及其姊妹邮轮上率先引入全球首个海上DFS T广场，为旅客呈献由世界领先奢侈品旅游零售商DFS集团提供的一站式海上免税购物享受。
+                            作为星梦邮轮旗下最新划时代级邮轮，排水量达 208,000 吨的两艘「环球级」邮轮将分别于 2021 年及 2022 年下水。专为亚洲豪华邮轮市场量身打造的「环球级」邮轮拥有 2350 间客房，最高载客量超过 9000 人，船员人数达 2500 人，将成为全球载客量最高的邮轮。
+                            云顶香港凭借25年的丰富亚洲市场经验，孕育出旗下全新
+                            品牌—星梦邮轮。星梦邮轮致力成为区内业界典范，满足
+                            自信、独立思考、追求高尚优质享受之亚洲旅客的需求。
+                            品牌完美融合中西元素，为旅客带来独特的海上旅游享受
+                            。屡获赞誉的「云顶梦号及世界梦号」于邮轮业界权威指
+                            南《2019伯利兹邮轮年鉴》星级十优评选中获评「世界
+                            十大最佳大型邮轮」，并获2018年《TTG》中国旅游大
+                            奖之「最佳新邮轮」殊荣。除此之外，星梦邮轮亦获得
+                            许多亚洲区荣誉，例如《悦游》金榜之「大中型邮轮T
+                            op 5」及2018年《旅讯》亚洲版「读者之选」之「最
+                            佳新邮轮」。
+
+                        </div>
+                        <div class="more-btn mt10 mb10"><span class="icon-arrowdown ml10"></span></div>
+                        <div class="more-btn mt10 mb10" style="display:none;"><span class="icon-arrowup ml10"></span></div>
+                    </div>
+                    <div class="mt50 hidden-sm" style="width:100%;"></div>
+                    <div class="pic1 show-sm">
+                        <img src="../../images/media-faq.jpg">
+                    </div>
+                    <div class="q1">
+                        <p class="title mt20">媒体咨询</p>
+                        <div class="desc">
+                            云顶邮轮集团宣布将与全球知名邮轮奢侈品零售商STARBOARD CRUISE SERVICES （下称STARBOARD）再度联手，在星梦邮轮首艘「环球级」邮轮「环球梦号」及其姊妹邮轮上率先引入全球首个海上DFS T广场，为旅客呈献由世界领先奢侈品旅游零售商DFS集团提供的一站式海上免税购物享受。
+                            作为星梦邮轮旗下最新划时代级邮轮，排水量达 208,000 吨的两艘「环球级」邮轮将分别于 2021 年及 2022 年下水。专为亚洲豪华邮轮市场量身打造的「环球级」邮轮拥有 2350 间客房，最高载客量超过 9000 人，船员人数达 2500 人，将成为全球载客量最高的邮轮。
+
+                            云顶香港凭借25年的丰富亚洲市场经验，孕育出旗下全新
+                            品牌—星梦邮轮。星梦邮轮致力成为区内业界典范，满足
+                            自信、独立思考、追求高尚优质享受之亚洲旅客的需求。
+                            品牌完美融合中西元素，为旅客带来独特的海上旅游享受
+                            。屡获赞誉的「云顶梦号及世界梦号」于邮轮业界权威指
+                            南《2019伯利兹邮轮年鉴》星级十优评选中获评「世界
+                            十大最佳大型邮轮」，并获2018年《TTG》中国旅游大
+                            奖之「最佳新邮轮」殊荣。除此之外，星梦邮轮亦获得
+                            许多亚洲区荣誉，例如《悦游》金榜之「大中型邮轮T
+                            op 5」及2018年《旅讯》亚洲版「读者之选」之「最
+                            佳新邮轮」。
+
+                        </div>
+                        <div class="more-btn mt10 mb10"><span class="icon-arrowdown ml10"></span></div>
+                        <div class="more-btn mt10 mb10" style="display:none;"><span class="icon-arrowup ml10"></span></div>
+                    </div>
+                    <div class="pic1 hidden-sm">
+                        <img src="../../images/media-faq.jpg">
+                    </div>
+                    <div class="mt50 hidden-sm" style="width:100%;"></div>
+
+                    <div class="pic1">
+                        <img src="../../images/guanyu2.jpg">
+                    </div>
+                    <div class="q1">
+                        <p class="title mt20">奖项</p>
+                        <div class="desc">
+                            云顶邮轮集团宣布将与全球知名邮轮奢侈品零售商STARBOARD CRUISE SERVICES （下称STARBOARD）再度联手，在星梦邮轮首艘「环球级」邮轮「环球梦号」及其姊妹邮轮上率先引入全球首个海上DFS T广场，为旅客呈献由世界领先奢侈品旅游零售商DFS集团提供的一站式海上免税购物享受。
+                            作为星梦邮轮旗下最新划时代级邮轮，排水量达 208,000 吨的两艘「环球级」邮轮将分别于 2021 年及 2022 年下水。专为亚洲豪华邮轮市场量身打造的「环球级」邮轮拥有 2350 间客房，最高载客量超过 9000 人，船员人数达 2500 人，将成为全球载客量最高的邮轮。
+
+                            云顶香港凭借25年的丰富亚洲市场经验，孕育出旗下全新
+                            品牌—星梦邮轮。星梦邮轮致力成为区内业界典范，满足
+                            自信、独立思考、追求高尚优质享受之亚洲旅客的需求。
+                            品牌完美融合中西元素，为旅客带来独特的海上旅游享受
+                            。屡获赞誉的「云顶梦号及世界梦号」于邮轮业界权威指
+                            南《2019伯利兹邮轮年鉴》星级十优评选中获评「世界
+                            十大最佳大型邮轮」，并获2018年《TTG》中国旅游大
+                            奖之「最佳新邮轮」殊荣。除此之外，星梦邮轮亦获得
+                            许多亚洲区荣誉，例如《悦游》金榜之「大中型邮轮T
+                            op 5」及2018年《旅讯》亚洲版「读者之选」之「最
+                            佳新邮轮」。
+                        </div>
+                        <div class="more-btn mt10 mb10"><span class="icon-arrowdown ml10"></span></div>
+                        <div class="more-btn mt10 mb10" style="display:none;"><span class="icon-arrowup ml10"></span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div style="height:100px;" class="hidden-sm"></div>
+    <script>document.getElementById('title_name').textContent = '媒体中心';</script>
+
+    #include('../../common/footer.html')
+    #include('../../common/sm_footer_button.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+    $(".topbanner_plane .ship .btn-icon").click(function () {
+        $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+        $(this).addClass("artive");
+        return false;
+    })
+    $(".topbanner_plane").click(function () {
+        $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+    })
+
+</script>
+
+</html>

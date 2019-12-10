@@ -66,71 +66,74 @@
   padding: 96px 0;
   text-align: center;
 }
-
+.vcode
+{
+    width:80px;
+}
 .left-container {
-  position: absolute;
-  box-sizing: border-box;
-  width: 260px;
-  height: 466px;
-  background: #f3fafa;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  overflow: hidden;
-  margin-top: 163px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 260px;
+    height: 466px;
+    background: #f3fafa;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+    margin-top: 163px;
 
-  .select-header {
-    height: 50px;
-    background-color: $theme-blue;
-    padding: 0 10px;
+    .select-header {
+        height: 50px;
+        background-color: $theme-blue;
+        padding: 0 10px;
 
-    span {
-      font-size: 12px;
-      color: $theme-white;
-      line-height: 50px;
+        span {
+            font-size: 12px;
+            color: $theme-white;
+            line-height: 50px;
 
-      &:last-child {
-        float: right;
-        font-size: 10px;
-        color: $theme-white;
-        opacity: 0.8;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .items {
-    padding-left: 10px;
-
-    .select-item {
-      padding: 13px 10px 13px 0;
-      border-bottom: 1px solid #eff1f1;
-    }
-
-    .select-title {
-      margin-bottom: 8px;
-
-      span {
-        font-size: 12px;
-        color: #383838;
-
-        &:last-child {
-          float: right;
-          font-size: 10px;
-          color: $theme-blue;
-          cursor: pointer;
+            &:last-child {
+                float: right;
+                font-size: 10px;
+                color: $theme-white;
+                opacity: 0.8;
+                cursor: pointer;
+            }
         }
-      }
     }
 
-    .city {
-      margin-right: 14px;
-      cursor: pointer;
-    }
+    .items {
+        padding-left: 10px;
 
-    .special {
-      color: #F5A623;
+        .select-item {
+            padding: 13px 10px 13px 0;
+            border-bottom: 1px solid #eff1f1;
+        }
+
+        .select-title {
+            margin-bottom: 8px;
+
+            span {
+                font-size: 12px;
+                color: #383838;
+
+                &:last-child {
+                    float: right;
+                    font-size: 10px;
+                    color: $theme-blue;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .city {
+            margin-right: 14px;
+            cursor: pointer;
+        }
+
+        .special {
+            color: #F5A623;
+        }
     }
-  }
 }
 
 .info {
@@ -1073,7 +1076,7 @@
       }
       table{
         width: 100%;
-        font-size: 12px;
+        font-size: 14px;
         color: #00969E;
         line-height: 28px;
       }

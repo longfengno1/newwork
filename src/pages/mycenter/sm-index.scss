@@ -1,30 +1,38 @@
 @import '../../css/variables.scss';
 
-.sm-my-order{
+.sm-my-order {
     width: 100vw;
     background-color: #F8F8F8;
-    section{
+
+    section {
         background-color: #ffffff;
         margin-bottom: 24rem/$fit;
     }
-    .join-in{
+
+    .join-in {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 250rem/$fit;
-        padding: 34rem/$fit 0 32rem/$fit;
-        h3{
-            font-size: 26rem/$fit;
+        height: 290rem/$fit;
+        padding: 34rem/$fit 0rem/$fit 0rem/$fit 0rem/$fit;
+
+        h3 {
+            font-size: 28rem/$fit;
             color: #00969E;
             margin-top: 22rem/$fit;
         }
-        h4{
+
+        h4 {
             font-size: 24rem/$fit;
             color: #999999;
             margin-top: 20rem/$fit;
+            margin-right: 20rem/$fit;
+            margin-left: 20rem/$fit;
+            line-height: 40rem/$fit;
         }
     }
-    .logo{
+
+    .logo {
         background: url(../../images/navbar-select.png) no-repeat center;
         width: 93rem/$fit;
         height: 90rem/$fit;
@@ -32,51 +40,63 @@
         opacity: 0.2;
     }
 
-    .user-info{
+    .user-info {
         padding: 32rem/$fit;
-        h3{
+
+        h3 {
             font-size: 28rem/$fit;
             color: #383838;
             margin-bottom: 24rem/$fit;
         }
-        p{
+
+        p {
             font-size: 24rem/$fit;
             color: #6D6D6D;
             margin-bottom: 24rem/$fit;
-            span{
+
+            span {
                 display: inline-block;
                 width: 50%;
             }
-            .click{
+
+            .click {
                 color: #00969E;
                 cursor: pointer;
             }
         }
     }
 
-    .other-modules{
+    .other-modules {
         padding-bottom: 0rem/$fit;
-        li{
+        margin-bottom:0rem/$fit;
+
+        li {
             display: flex;
             align-items: center;
             margin: 0 32rem/$fit;
             height: 88rem/$fit;
             flex-wrap: nowrap;
-            border-bottom:1px solid #E5E5E5;
-            img{
+            border-bottom: 1px solid #E5E5E5;
+
+            img {
                 width: 36rem/$fit;
             }
-            span{
+
+            span {
                 flex: 1;
-                font-size: 26rem/$fit;
+                font-size: 28rem/$fit;
                 color: #6D6D6D;
                 margin-left: 30rem/$fit;
             }
-            i{
+
+            i {
                 color: #666666;
                 font-size: 30rem/$fit;
             }
         }
-    }
 
+        .noline {
+            border-bottom: 0px solid #E5E5E5;
+        }
+    }
 }

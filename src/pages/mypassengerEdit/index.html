@@ -51,37 +51,34 @@
                 <span class="split">-</span>
                 <span class="item selected">编辑常用旅客</span>
             </div>
-            <div class="edit-header">
-                <h3>编辑常用乘客</h3>
-                <a>删除该旅客</a>
-            </div>
+ 
             <form class="edit-form">
-                <label for="">手机号<span>*</span></label>
                 <div class="input-row">
-                    <input type="text" class="input-text long" value="138 8306 0293">
+              
                 </div>
-                <label for="">姓名<span>*</span></label>
-                <div class="input-row ">
-                    <input class="input-text short mr10" type="text " value="陈"><input
-                        class="input-text short" type="text " value="宇晨">
-                </div>
-                <label for="">姓名拼音<span>*</span></label>
-                <div class="input-row ">
-                    <input class="input-text short mr10" type="text" value="CHEN"><input type="text"
-                        class="input-text short" value="YUCHEN">
-                </div>
-                <label for="">出生日期<span>*</span></label>
-                <div class="input-row ">
-                    <input class="input-text long" type="text" value="1987/09/07">
-                </div>
-                <label for="">性别<span>*</span></label>
                 <div class="input-row">
-                    <input class="radio" type="radio" checked><span class="mr102">男</span><input class="radio"
-                        type="radio"><span>女</span>
+                <label style="margin-right:37px;">姓名<span>*</span></label>
+                    <input class="input-text short mr10" type="text"  placeholder="姓"><input
+                        class="input-text short" type="text"  placeholder="名">
                 </div>
+                <div class="input-row ">
+                    <label for="">姓名全拼<span>*</span></label>
+                    <input class="input-text short mr10" type="text" placeholder="姓拼音"><input type="text"
+                        class="input-text short" placeholder="名拼音">
+                </div>
+                <div class="input-row ">
+                    <label>出生日期<span>*</span></label>
+                    <input class="input-text sort" type="text" placeholder="请填写出生日期">  <label style="margin-left:80px;">手机号<span>*</span></label>
+                    <input type="text" class="input-text sort" placeholder="请填写手机号" style="width:200px;">
+                </div>
+                <div class="input-row">
+                <label style="margin-right:40px;">性别<span>*</span></label>
+                    <input class="radio" type="radio" name="radiosex"><span class="mr102">男</span>
+                    <input class="radio" type="radio" name="radiosex"><span>女</span>
+                </div>
+                <div class="input-row">
                 <label for="">居住地</label>
-                <div class="input-row">
-                    <select class="input-text short mr10">
+                    <select class="input-text short mr10 ml20">
                         <option value="volvo">居住省份</option>
                     </select><select class="input-text short">
                         <option value="volvo">居住城市</option>
@@ -99,21 +96,21 @@
                             <input class="checkbox" type="checkbox"><span class="mr45">台胞证</span>
                             <input class="checkbox" type="checkbox"><span class="mr45">其他</span>
                 </div>
+                <div class="input-row ">
                 <label for="">港澳通行证</label>
-                <div class="input-row ">
-                    <input class="input-text long" type="text" value="3601234378394">
+                    <input class="input-text long" type="text" placeholder="请填写证件号码">
                 </div>
+                <div class="input-row ">
                 <label for="">证件有效期</label>
-                <div class="input-row ">
-                    <input class="input-text long" type="text" value="2028/10/11">
+                    <input class="input-text sort" type="text" placeholder="请填写证件有效期">
                 </div>
-                <label for="">护照</label>
                 <div class="input-row ">
-                    <input class="input-text long" type="text" placeholder="证件号码">
+                <label style="margin-right:52px;">护照</label>
+                    <input class="input-text long" type="text" placeholder="请填写证件号码">
                 </div>
+                <div class="input-row ">
                 <label for="">证件有效期</label>
-                <div class="input-row ">
-                    <input class="input-text long" type="text">
+                    <input class="input-text sort" type="text" placeholder="请填写证件有效期">
                 </div>
                 <div class="input-row ">
                     <input class="checkbox" type="checkbox" checked><span>设为常用乘客</span>
@@ -126,24 +123,27 @@
     </div>
 
     <div class="my-order-sm show-sm">
+
         <div class="input-row">
-            <label for="">手机号码：</label><input class="input-text long" placeholder="中国大陆手机号码" type="text">
+            <label for="">姓名：</label><input class="input-text w260 mr20" placeholder="姓" type="text"><input class="input-text w260" placeholder="名" type="text">
         </div>
         <div class="input-row">
-            <label for="">姓名：</label><input class="input-text short mr20" placeholder="姓" type="text"><input
-                class="input-text middle" placeholder="名" type="text">
+            <label for="">姓名全拼：</label><input class="input-text w260 mr20" placeholder="姓拼音" type="text"><input class="input-text w260" placeholder="名拼音" type="text">
         </div>
         <div class="input-row">
-            <label for="">姓名全拼：</label><input class="input-text short mr20" placeholder="姓拼音" type="text"><input
-                class="input-text middle" placeholder="名拼音" type="text">
+            <label for="">出生日期：</label><input class="input-text long"  placeholder="请填写出生日期" type="text">
+        </div>
+
+        <div class="input-row">
+            <label for="">手机号：</label><input class="input-text long"  placeholder="请填写手机号" type="text">
         </div>
         <div class="input-row">
-            <label for="">性别：</label><input class="radio" type="radio"><span>男</span><input class="radio"
-                type="radio"><span>女</span>
+            <label for="">性别：</label>
+            <input class="radio ml20 mr10" type="radio" name="radiosex-sm"><span class="mr30">男</span>
+            <input class="radio mr10" type="radio" name="radiosex-sm"><span>女</span>
         </div>
         <div class="input-row">
-            <label for="">居住地：</label><input class="input-text w260 mr20" placeholder="省份" type="text"><input
-                class="input-text w260" placeholder="城市" type="text">
+            <label for="">居住地：</label><input class="input-text w260 mr20" placeholder="居住省份" type="text"><input class="input-text w260" placeholder="居住城市" type="text">
         </div>
         <div class="input-row">
             <label class="card-label" for="">选填证件</label>
@@ -158,16 +158,16 @@
             <div class="check-item"><input class="checkbox" type="checkbox"><span>其他</span></div>
         </div>
         <div class="input-row">
-            <label for="">港澳通行证：</label><input class="input-text long" value="3601234378394" type="text">
+            <label for="">港澳通行证：</label><input class="input-text long"  placeholder="请填写证件号码" type="text">
         </div>
         <div class="input-row">
-            <label for="">证件有效期：</label><input class="input-text long" value="2028/10/11" type="text">
+            <label for="">证件有效期：</label><input class="input-text long" placeholder="请填写证件有效期" type="text">
         </div>
         <div class="input-row">
-            <label for="">护照：</label><input class="input-text long" placeholder="证件号码" type="text">
+            <label for="">护照：</label><input class="input-text long"  placeholder="请填写证件号码" type="text">
         </div>
         <div class="input-row">
-            <label for="">证件有效期：</label><input class="input-text long" type="text">
+            <label for="">证件有效期：</label><input class="input-text long" type="text" placeholder="请填写证件有效期">
         </div>
         <div class="input-row wrap-row">
             <div class="check-item"><input class="checkbox" type="checkbox" checked><span>设为常用乘客</span></div>

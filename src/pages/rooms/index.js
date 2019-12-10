@@ -11,7 +11,7 @@ import "./index.scss";
     $(".topbanner_plane .ship .btn-icon").removeClass("artive");
   })
     $(".detail").click(function () {
-        $(".layerout1").show();
+       // $(".layerout1").show();
     });
     $(".layer").click(function () {
         return false;

@@ -1,0 +1,270 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心 - 我的订单</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+    <script>document.getElementById('title_name').textContent = '个人中心 - 我的订单';</script>
+
+    <header class="my-order-header show-sm">
+        <i class="icon icon-arrowleft"></i>
+        我的订单
+    </header>
+
+    <div class="tabs show-sm">
+        <span class="tab-item active">全部</span>
+        <span class="tab-item">未付款</span>
+        <span class="tab-item">未出行</span>
+        <span class="tab-item">已完成</span>
+    </div>
+
+    <div id="main" class="main my-order hidden-sm">
+        <div class="left-container">
+            #include('../../common/navbar.html')
+        </div>
+        <div class="right-container">
+            <div class="bread-crumb">
+                <span class="item">个人中心</span>
+                <span class="split">-</span>
+                <span class="item selected">订单中心</span>
+            </div>
+            <ul class="order-tabs">
+                <li class="tab-item active">全部订单</li>
+                <li class="tab-item">未付款订单</li>
+                <li class="tab-item">未出行订单</li>
+                <li class="tab-item">已完成订单</li>
+            </ul>
+            <table class="order-list">
+                <thead>
+                    <tr>
+                        <th>类型</th>
+                        <th>订单号</th>
+                        <th>订单内容</th>
+                        <th>预订日期</th>
+                        <th>价格</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="main-order"><td colspan="7">航线订单：<a href="orderdetail.html">新加坡-民丹岛-新加坡 新加坡-新加坡(出发日期：2019-10-11)</a></td></tr>
+                    <tr>
+                        <td>商品/服务</td>
+                        <td class="order-num">68976838072</td>
+                        <td class="order-content">
+                            <p>龙虾牛腩面</p>
+                            <p>
+                                房间1：1份
+                                房间2：2份
+                            </p>
+                        </td>
+                        <td>2019-09-26</td>
+                        <td>¥100</td>
+                        <td class="order-status paied">已支付</td>
+                        <td class="order-operation">
+                            <div class="operations">
+                                <div><a href="ordersubdetail.html">查看详情</a></div>
+         
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>商品/服务</td>
+                        <td class="order-num">68976838072</td>
+                        <td class="order-content">
+                            <p>精选岸上游</p>
+                            <p>
+                                房间1：1人
+                                房间2：2人
+                            </p>
+                        </td>
+                        <td>2019-09-26</td>
+                        <td>¥1120</td>
+                        <td class="order-status to-pay">未支付</td>
+                        <td class="order-operation">
+                            <div class="operations">
+                                <div><a>查看详情</a></div>
+                                <div><a>修改订单</a></div>
+                                <div><a class="pay">立即支付</a></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>商品/服务</td>
+                        <td class="order-num">68976838072</td>
+                        <td class="order-content">
+                            <p>龙虾牛腩面</p>
+                            <p>
+                                房间1：1份
+                                房间2：2份
+                            </p>
+                        </td>
+                        <td>2019-09-26</td>
+                        <td>¥100</td>
+                        <td class="order-status cancel">已取消</td>
+                        <td class="order-operation">
+                            <div class="operations">
+                                <div><a>查看详情</a></div>
+                                <div><a>再下一单</a></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>商品/服务</td>
+                        <td class="order-num">68976838072</td>
+                        <td class="order-content">
+                            <p>精选岸上游</p>
+                            <p>
+                                房间1：1人
+                                房间2：2人
+                            </p>
+                        </td>
+                        <td>2019-09-26</td>
+                        <td>¥1120</td>
+                        <td class="order-status">已完成</td>
+                        <td class="order-operation">
+                            <div class="operations">
+                                <div><a>查看详情</a></div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="my-order-sm show-sm">
+        <article class="order-card">
+            <p class="title">
+                <span class="line">航线订单：<a href="orderdetail.html" style="color:#00969E;" >新加坡-民丹岛-新加坡 新加坡-新加坡(出发日期：2019-10-11)</a></span>
+            </p>
+        </article>
+        <article class="order-card">
+            <p class="title">
+                <span class="line">商品/服务</span>
+                <span class="num">订单号：68976838072</span>
+                <span class="order-status paied">已支付</span>
+            </p>
+            <p class="desc">
+                精选岸上游<br>房间1：1人
+                房间2：2人
+            </p>
+            <p class="bottom">
+                <span class="time">2019-09-26</span>
+                <span class="price">¥100</span>
+            </p>
+            <ul class="operations">
+                <li class="operation"><a href="ordersubdetail.html">查看详情</a></li>
+            </ul>
+        </article>
+        <article class="order-card">
+            <p class="title">
+                <span class="line">商品/服务</span>
+                <span class="num">订单号：68976838072</span>
+                <span class="order-status to-pay">未支付</span>
+            </p>
+            <p class="desc">
+                龙虾牛腩面<br> 房间1：1份
+                房间2：2份
+            </p>
+            <p class="bottom">
+                <span class="time">2019-09-26</span>
+                <span class="price">¥100</span>
+            </p>
+            <ul class="operations">
+                <li class="operation"><a href="ordersubdetail.html">查看详情</a></li>
+                <li class="operation pay">立即支付</li>
+            </ul>
+        </article>
+        <article class="order-card">
+            <p class="title">
+                <span class="line">商品/服务</span>
+                <span class="num">订单号：68976838072</span>
+                <span class="order-status cancel">已取消</span>
+            </p>
+            <p class="desc">
+                龙虾牛腩面<br> 房间1：1份
+                房间2：2份
+            <p class="bottom">
+                <span class="time">2019-09-26</span>
+                <span class="price">¥100</span>
+            </p>
+            <ul class="operations">
+                <li class="operation">查看详情</li>
+                <li class="operation">再下一单</li>
+            </ul>
+        </article>
+        <article class="order-card">
+            <p class="title">
+                <span class="line">商品/服务</span>
+                <span class="num">订单号：68976838072</span>
+                <span class="order-status">已支付</span>
+            </p>
+            <p class="desc">
+                龙虾牛腩面<br> 房间1：1份
+                房间2：2份
+            </p>
+            <p class="bottom">
+                <span class="time">2019-09-26</span>
+                <span class="price">¥100</span>
+            </p>
+            <ul class="operations">
+                <li class="operation">查看详情</li>
+                <li class="operation">修改订单</li>
+            </ul>
+        </article>
+    </div>
+
+    <div class="show-sm" id="sm-modify-order-layer">
+        <div class="modify-btns">
+            <span class="ensure" id="sm-modify-ensure">确定</span>
+        </div>
+        <div class="layer">
+            <p class="title">更改预订</p>
+            <p class="tip">请选择您想要的修改项目。提交请求后，我们的客户服务团队将与您联系确认修改。</p>
+            <div class="modify-row"><input type="checkbox" checked><span>添加/减少客舱</span></label></div>
+            <div class="modify-row"><input type="checkbox"><span>添加/减少客人</span></div>
+            <div class="modify-row"><input type="checkbox"><span>更新乘客信息</span></div>
+            <div class="modify-row"><input type="checkbox"><span>取消订单</span></div>
+            <div class="modify-row"><input type="checkbox"><span>其他更改</span></div>
+            <div class="modify-row"><textarea class="input-txt" placeholder="请输入你所需要更改的内容(最多250字符)"></textarea></div>
+        </div>
+        <div class="mask" id="mask">
+            <div class="alert" id="alert">
+                <p class="title">提交成功</p>
+                <p class="content">提交成功，我们的客户服务团队将与您联系确认修改。</p>
+                <div class="btn" id="submit-success"><span>确定</span></div>
+            </div>
+        </div>
+    </div>
+    #include('../../common/footer.html')
+    #include('../../common/sm_footer_button.html')
+
+</body>
+
+</html>
