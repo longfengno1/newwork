@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\common",
+    "\\src\\js",
     "\\src\\pages",
-    "\\src\\pages\\mycard",
-    "\\src\\pages\\mynoticeDetail",
-    "\\src\\pages\\mypassenger",
-    "\\src\\pages\\mypassengerEdit",
-    "\\src\\pages\\mysuborder",
-    "\\src\\pages\\newsdetail"
+    "\\src\\pages\\aboutus",
+    "\\src\\pages\\index",
+    "\\src\\pages\\media",
+    "\\src\\pages\\mediafaq",
+    "\\src\\pages\\mynotice",
+    "\\src\\pages\\reg"
   ],
-  "SelectedNode": "\\src\\pages\\activityknow",
+  "SelectedNode": "\\src\\pages\\media\\index.html",
   "PreviewInSolutionExplorer": false
 }

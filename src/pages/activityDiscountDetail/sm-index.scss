@@ -138,6 +138,7 @@
 
     .section {
         background: #fff;
+        padding:0;
     }
     .nobottom {
         border-bottom: 0rem solid #F8F8F8;
@@ -148,7 +149,22 @@
         margin: 0 20rem/$fit;
         border-top: 1px solid #ccc;
     }
+    .desc_content {
+        margin: .5rem;
 
+        p {
+            font-size: 24rem/$fit;
+            line-height: 40rem/$fit;
+            text-indent: 40rem/$fit;
+        }
+
+        ul li {
+            list-style-type: disc;
+            font-size: .6rem;
+            line-height: 1rem;
+            margin: .25rem 0;
+        }
+    }
     .prolist li:first-child .inner {
         border-top: 0;
     }
@@ -220,14 +236,15 @@
 
     .section .title {
         position: relative;
-        color: #455272;
+        color: #333;
         text-align: left;
-        letter-spacing: 0.125rem;
+        /*letter-spacing: 0.125rem;*/
         font-size: 0.8rem;
         font-weight: normal;
         padding-left: 0.5rem;
         margin-top: 0.7rem;
         margin-bottom: 0.7rem;
+        height:auto;
     }
     .section .m_tab {
         background-color: #F8F8F8;
@@ -483,6 +500,18 @@
             padding: 0 0.3rem;
             color: #ffffff;
             font-size: 0.3rem;
+        }
+    }
+    .carousel {
+        width: 100%;
+        margin: 20rem/$fit auto;
+
+        .slide {
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
         }
     }
 }

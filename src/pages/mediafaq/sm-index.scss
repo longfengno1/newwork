@@ -113,119 +113,152 @@
     padding-top: 0rem/$fit;
   }
 
-  .mediacenter_wraper {
-    margin: 0;
-    width: 100%;
-    .mediacenter_view{
-      padding: 40rem/$fit;
-      background: #fff;
-      margin-bottom: 24rem/$fit;
-      &:last-child{
+    .mediacenter_wraper {
         margin: 0;
-      }
-      .formlist {
-      
-        li {
-          padding-left: 145rem/$fit;
-          font-size: 26rem/$fit;
-          margin-bottom: 16px;
-          label {
-           
-            height: 60rem/$fit;
-            line-height: 60rem/$fit;
-            margin-left: -145rem/$fit;
-            font-size: 26rem/$fit;
-            color: #666;
-            width: 125rem/$fit;
-          }
-  
-          .intxt {
-            height: 60rem/$fit;
-            line-height: 60rem/$fit;
-            width: 100%;
-            font-size: 26rem/$fit;
-            background: #FFFFFF;
-            border: 1px solid #E5E5E5;
-            border-radius: 8rem/$fit;
-          }
-          .intxt1{
-            width: 200rem/$fit;
-            margin-right:20rem/$fit;
-            &:last-child{
-              width: 200rem/$fit;
-              margin-right:0;
+        width: 100%;
+
+        .mediacenter_view {
+            padding: 40rem/$fit;
+            background: #fff;
+            margin: 0 0 24rem/$fit 0;
+
+            &:last-child {
+                margin: 0;
             }
-          }
-          .intxt_select{
-            width: 200rem/$fit;
-            height: 60rem/$fit;
-            line-height: 60rem/$fit;
-            background: #FFFFFF;
-            border: 1px solid #E5E5E5;
-            border-radius: 8rem/$fit;
-            font-size: 26rem/$fit;
-            color:#383838;
-          }
-          .intext_area{
-            border: 1px solid #E5E5E5;
-            border-radius: 8rem/$fit;
-            font-size: 26rem/$fit;
-            color:#383838;
+
+            .formlist {
+
+                li {
+                    padding-left: 145rem/$fit;
+                    font-size: 24rem/$fit;
+                    margin-bottom: 20rem/$fit;
+
+                    label {
+                        height: 60rem/$fit;
+                        line-height: 60rem/$fit;
+                        margin-left: -145rem/$fit;
+                        font-size: 24rem/$fit;
+                        color: #383838;
+                        width: 125rem/$fit;
+                        text-align: left;
+                    }
+
+                    .intxt {
+                        height: 60rem/$fit;
+                        line-height: 60rem/$fit;
+                        width: 100%;
+                        font-size: 24rem/$fit;
+                        background: #FFFFFF;
+                        border: 1px solid #E5E5E5;
+                        border-radius: 8rem/$fit;
+                        padding: .25rem;
+                    }
+
+                    .intxt1 {
+                        width: 200rem/$fit;
+                        margin-right: 20rem/$fit;
+
+                        &:last-child {
+                            width: 200rem/$fit;
+                            margin-right: 0;
+                        }
+                    }
+
+                    .intxt_select {
+                        width: 200rem/$fit;
+                        height: 60rem/$fit;
+                        line-height: 60rem/$fit;
+                        background: #FFFFFF;
+                        border: 1px solid #E5E5E5;
+                        border-radius: 8rem/$fit;
+                        font-size: 24rem/$fit;
+                        color: #383838;
+                    }
+
+                    .intext_area {
+                        border: 1px solid #E5E5E5;
+                        border-radius: 8rem/$fit;
+                        font-size: 24rem/$fit;
+                        color: #383838;
+                        width: 100%;
+                        height: 153rem/$fit;
+                        resize: none;
+                    }
+
+                    .vcode
+                        {
+                        width:3rem;
+                    }
+                }
+            }
+
+            .box {
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 28rem/$fit;
+                padding-right: 28rem/$fit;
+
+                h4 {
+                    font-size: 34rem/$fit;
+                    color: #383838;
+                    margin-bottom: 32rem/$fit;
+                }
+
+                table {
+                    width: 100%;
+                    font-size: 28rem/$fit;
+                    color: #00969E;
+                    line-height: 68rem/$fit;
+                }
+            }
+        }
+    }
+
+    .topdesc {
+        font-size: .7rem;
+        color: #333;
+        text-align: center;
+        margin: .5rem;
+
+        span
+            {
+            margin-right:.25rem;
+        }
+    }
+    .mediadetail {
+        background: none;
+        padding: 28rem/$fit 32rem/$fit;
+
+        .title {
+            display: none;
+        }
+
+        .subtitle {
+            display: none;
+        }
+
+        .tablestyle {
             width: 100%;
-            height: 153rem/$fit;
-            resize: none;
-          }
+            margin: 0;
+
+            td,
+            th {
+                height: 60rem/$fit;
+                font-size: 22rem/$fit;
+                color: #999999;
+            }
+
+            th {
+                font-size: 24rem/$fit;
+                color: #fff;
+            }
+
+            .t-subtitle {
+                font-size: 24rem/$fit;
+                color: #FFFFFF;
+            }
         }
-  
-      }
-      .box{
-        padding-top: 0;
-        padding-bottom: 0;
-        h4{
-          
-          font-size: 34rem/$fit;
-          color: #383838;
-          margin-bottom: 32rem/$fit;
-        }
-      }
     }
-    
-  }
-  
-  .mediadetail {
-    background: none;
-    padding: 28rem/$fit 32rem/$fit;
-
-    .title {
-      display: none;
-    }
-
-    .subtitle {
-      display: none;
-    }
-
-    .tablestyle {
-      width: 100%;
-      margin: 0;
-
-      td,
-      th {
-        height: 60rem/$fit;
-        font-size: 22rem/$fit;
-        color: #999999;
-      }
-
-      th {
-        font-size: 26rem/$fit;
-        color: #fff;
-      }
-
-      .t-subtitle {
-        font-size: 24rem/$fit;
-        color: #FFFFFF;
-      }
-    }
-  }
 
   .mediacenter_wraper .mediacenter_left {
     width: 100%;

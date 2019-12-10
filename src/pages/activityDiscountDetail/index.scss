@@ -246,9 +246,9 @@
 .section .title {
 	position: relative;
 	/*height: 44rem/$fit;*/
-	color: #455272;
+	color: #333;
 	text-align: center;
-	letter-spacing: 5rem/$fit;
+	letter-spacing: 0rem/$fit;
 	font-size: 28rem/$fit;
 	font-weight: normal;
 }
@@ -317,13 +317,13 @@
 	position:absolute;
 	bottom:42rem/$fit;
 }
-.intro-ribbon{
-	background:url(../../images/ribbon-destinations.png) center top no-repeat;
-	height:493rem/$fit;
-	pointer-events:none;
-	margin-top:-215rem/$fit;
-	margin-bottom:-160rem/$fit;
-	position:relative;
+.intro-ribbon {
+	background: url(../../images/ribbon-destinations.png) center top no-repeat;
+	height: 493rem/$fit;
+	pointer-events: none;
+	margin-top: -255rem/$fit;
+	margin-bottom: -200rem/$fit;
+	position: relative;
 }
 .prolistB .inner{
 	background:#EFF9F9;
@@ -650,16 +650,33 @@
 .desc_content{
 	padding:21rem/$fit 30rem/$fit;
 	background: rgba(239,250,249,0.50);
+	font-size:14px;
 	
 }
-.desc_content p{
-	line-height:1.7;
+.desc_content p {
+		line-height: 24px;
+		font-size: 14px;
+		text-indent: 40px;
 }
 .desc_content .title{
 	font-size:28rem/$fit;
 	line-height:50rem/$fit;
 	text-align:left;
-	margin:10rem/$fit 0;
+	margin:0 0 18rem/$fit 0;
+}
+.desc_content {
+	padding: 21rem/$fit 30rem/$fit;
+	background: rgba(239,250,249,0.50);
+
+	ul li {
+		list-style-type: disc;
+		font-size: 14px;
+		line-height: 28px;
+		margin: 10px 0;
+	}
+}
+.no-back {
+	background-color: transparent;
 }
 .hotthread{
 	position:relative;
@@ -899,5 +916,16 @@
 	font-size: 12px;
 }
 
+.carousel {
+	width: 800px;
+	margin: 30px auto;
 
+	.slide {
+	}
+
+	.carousel-inner img {
+		width: 100%;
+		height: auto;
+	}
+}
 @import './sm-index.scss';

@@ -727,7 +727,14 @@
 	color: #343E57;
 	line-height: 30rem/$fit;
 	margin: .25rem 1rem .5rem 1rem;
+	height: 300px;
+	overflow: hidden;
 }
+
+.desc-expand {
+	height: auto;
+}
+
 
 .xxzz2 {
 	background: rgba(153,214,234,0.10);
@@ -772,6 +779,302 @@
 	margin-left: 40px;
 }
 
+
+
+.hotthread {
+	position: relative;
+	z-index: 1;
+}
+
+.hotthread .item ul li {
+	float: left;
+	margin-top: 10rem/$fit;
+	/*margin-right: 30rem/$fit;*/
+	/*width: 380rem/$fit;*/
+	height: 354rem/$fit;
+	/*background: #fff;*/
+	border-radius: 5rem/$fit;
+	overflow: hidden;
+	width: auto;
+}
+
+.hotthread .item ul .one-pro {
+	height: 364rem/$fit;
+	width: 100%;
+}
+
+.hotthread .item ul li:last-child {
+	margin-right: 0;
+}
+
+.hotthread .item .thread {
+	position: relative;
+	line-height: 24rem/$fit;
+	transition: all 0.2s ease-in-out;
+}
+
+.hotthread .item .inner {
+	background: #fff
+}
+
+.hotthread .item .one-pro .thread .pic {
+	background-position: center top;
+	background-size: cover;
+	border-radius: 5rem/$fit;
+	height: 364rem/$fit;
+	width: 100%;
+}
+
+.hotthread .item .one-pro .thread .inner {
+	background: none;
+	border: 0;
+	position: absolute;
+	right: 65rem/$fit;
+	bottom: 42rem/$fit;
+	height: auto;
+	text-shadow: 0 0 3px #000;
+}
+
+.hotthread .item .one-pro .thread .inner .caption {
+	padding: 0;
+}
+
+.hotthread .item .one-pro .protitle {
+	font-size: 30rem/$fit;
+	line-height: 1.5;
+	font-weight: normal;
+	color: #fff;
+}
+
+.hotthread .item .one-pro .prodesc {
+	font-size: 20rem/$fit;
+	color: #fff;
+	font-weight: normal;
+}
+
+.hotthread .item .one-pro .base_price {
+	padding-top: 36rem/$fit;
+	font-size: 16rem/$fit;
+	line-height: 1;
+	color: #F8485E;
+	text-shadow: 0 0 5px #fff;
+}
+
+.hotthread .item .one-pro .base_price .price {
+	font-size: 36rem/$fit;
+}
+
+.hotthread .item .sale .thread .inner {
+	top: 76rem/$fit;
+	right: 264rem/$fit;
+}
+
+.hotthread .item .sale .base_price {
+	text-align: right;
+	position: absolute;
+	right: 15rem/$fit;
+	bottom: 15rem/$fit;
+}
+
+.hotthread .item ul .sale .thread {
+	height: 354rem/$fit;
+	overflow: hidden;
+	border-radius: 5rem/$fit;
+}
+
+.hotthread .item .sale .timer {
+	width: 240rem/$fit;
+	height: 100%;
+	border-left: 4rem/$fit solid #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../../images/timer-bg.png) center center no-repeat;
+	background-size: cover;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+.hotthread .item .sale .timer .title {
+	color: #fff;
+	background: url(../../images/sale.png) center bottom no-repeat;
+	background-size: 100rem/$fit;
+	height: 170rem/$fit;
+	padding-top: 30rem/$fit;
+	font-size: 30rem/$fit;
+	line-height: 30rem/$fit;
+	text-align: center;
+}
+
+.hotthread .item .sale .timer .time_tit {
+	margin-top: 58rem/$fit;
+	font-size: 14rem/$fit;
+	color: #fff;
+	line-height: 20rem/$fit;
+	height: 20rem/$fit;
+	text-align: center;
+}
+
+.hotthread .item .sale .timer .time_p {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 30rem/$fit;
+	color: #fff;
+	line-height: 46rem/$fit;
+	text-align: center;
+	margin-top: 20rem/$fit;
+}
+
+.hotthread .item .sale .timer .time_p span {
+	font-family: "SourceHanSans", Segoe, "Segoe UI", sans-serif;
+	background: #fff;
+	display: inline-block;
+	height: 46rem/$fit;
+	width: 46rem/$fit;
+	color: #F8485E;
+	font-size: 30rem/$fit;
+	text-align: center;
+}
+
+.hotthread .one-pro .base_price dfn {
+	font-size: 16rem/$fit;
+}
+
+.hotthread .item .thread .pic {
+	background-size: 100% auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	width: 380px\9;
+	height: auto;
+	overflow: hidden;
+	border-top-left-radius: 5rem/$fit;
+	border-top-right-radius: 5rem/$fit;
+
+	img {
+		width: 100%;
+	}
+}
+
+.hotthread .pic_title {
+	position: absolute;
+	left: 0;
+	top: 12rem/$fit;
+	height: 20rem/$fit;
+	line-height: 20rem/$fit;
+	padding: 0 12rem/$fit;
+	color: #ffffff;
+	font-size: 15rem/$fit;
+}
+
+.hotthread .tags {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 28rem/$fit;
+	padding: 0 10rem/$fit;
+}
+
+.hotthread .tags span {
+	height: 18rem/$fit;
+	line-height: 18rem/$fit;
+	color: #FDD26E;
+	padding: 0 5rem/$fit;
+	border: 1rem/$fit solid #FDD26E;
+	border-radius: 3rem/$fit;
+	display: block;
+	font-size: 12rem/$fit;
+	float: left;
+	margin-right: 10rem/$fit;
+}
+
+.hotthread .item .thread .inner {
+	border: 1rem/$fit solid #d0d7df;
+	border-top: 0;
+	padding: 0 15rem/$fit;
+	height: 106rem/$fit;
+	border-bottom-left-radius: 5rem/$fit;
+	border-bottom-right-radius: 5rem/$fit;
+}
+
+.hotthread .item .thread .inner .caption {
+	padding-top: 12rem/$fit;
+	overflow: hidden;
+	color: #343940;
+	text-align:center;
+}
+
+.hotthread .item .thread .tip {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	right: 0;
+	background-color: #f8485e;
+	border-bottom-left-radius: 10rem/$fit;
+	width: 90rem/$fit;
+	height: 30rem/$fit;
+	line-height: 30rem/$fit;
+	text-align: center;
+	color: #fff;
+	font-size: 12rem/$fit;
+	font-style: normal;
+}
+
+.hotthread .base_price {
+	font-size: 12rem/$fit;
+	color: #999999
+}
+
+.hotthread .base_price dfn {
+	top: -1rem/$fit;
+	font-size: 12rem/$fit;
+	font-style: normal;
+	font-family: arial;
+}
+
+.hotthread .base_price .price {
+	font-size: 18rem/$fit;
+	color: #15989D;
+}
+
+.hotthreadB .item .thread .inner {
+	height: 50rem/$fit;
+}
+
+.hotthreadB .item .thread {
+}
+
+.hotthreadB .item .thread .pic {
+	background: #000;
+
+	img {
+		opacity: 1;
+	}
+
+	.pic_title {
+		position: static;
+		padding: 0;
+	}
+
+	.text-desc {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		padding: 60rem/$fit 20rem/$fit 0 20rem/$fit;
+		color: #fff;
+		display: none;
+	}
+
+	&:hover .text-desc {
+		display: block;
+	}
+
+	&:hover img {
+		opacity: 0.6;
+	}
+}
+
+
 @media(max-width:767px) {
 
 	.fleetintro {
@@ -785,7 +1088,7 @@
 	.section {
 		border-bottom: 0rem solid #F8F8F8;
 		.title {
-			font-size: .7rem;
+			font-size: .8rem;
 			text-align: center;
 			color: #00969E;
 		}
@@ -824,7 +1127,7 @@
 		.desc {
 			font-size: 24rem/$fit;
 			color: #343E57;
-			line-height: 1rem;
+			line-height: 1.7;
 			margin: .5rem .8rem .5rem .8rem;
 		}
 
@@ -868,5 +1171,142 @@
 			left: 0;
 			margin: .5rem .8rem 0rem .8rem;
 		}
+	}
+
+
+	.hotthread .item .thread .pic {
+		height: 346rem/$fit;
+	}
+
+	.m_tab {
+		margin-right: 20rem/$fit;
+		width: auto;
+	}
+
+	.hotthread .item ul li {
+		display: block;
+		height: auto;
+		width: 100%;
+		margin: 0 32rem/$fit 8rem/$fit;
+	}
+
+	.hotthread .item ul li:last-child {
+		margin: 0 32rem/$fit 32rem/$fit;
+	}
+
+	.row .col {
+		margin: 0 32rem/$fit;
+		flex: auto;
+	}
+
+
+	.hotthread .item .thread .tip {
+		border-bottom-left-radius: 20rem/$fit;
+		width: 132rem/$fit;
+		height: 40rem/$fit;
+		line-height: 40rem/$fit;
+		font-size: 22rem/$fit;
+		background: #F8485E;
+		border-radius: 0 6px 0 6px;
+		margin-top: 32rem/$fit;
+	}
+
+	.m_tab .tab_item {
+		float: right;
+		position: relative;
+		margin-left: 20rem/$fit;
+		width: 180rem/$fit;
+		height: 60rem/$fit;
+		line-height: 60rem/$fit;
+		font-size: 24rem/$fit;
+		color: #383838;
+		cursor: pointer;
+		border: 1rem/$fit solid #d0d7df;
+		border-radius: 7rem/$fit;
+		background: #fff;
+	}
+
+	.m_tab .tab_item:hover,
+	.m_tab .current {
+		color: #fff;
+		background: #00969E;
+	}
+
+	.hotthread .pic_title {
+		height: 24rem/$fit;
+		line-height: 24rem/$fit;
+		padding: 0 12rem/$fit;
+		font-size: 24rem/$fit;
+		display: none;
+	}
+
+	.hotthread .item .thread {
+		line-height: 1;
+		border-radius: 10rem/$fit;
+		overflow: hidden;
+	}
+
+	.hotthread .tags {
+		height: 30rem/$fit;
+		padding: 10rem/$fit;
+		display: none;
+	}
+
+	.hotthread .tags span {
+		height: 28rem/$fit;
+		line-height: 28rem/$fit;
+		border-radius: 5rem/$fit;
+		font-size: 20rem/$fit;
+	}
+
+	.hotthread .item .thread .inner .caption {
+		padding-top: 20rem/$fit;
+		padding-bottom: 0px;
+		margin-top: 4rem;
+	}
+
+	.hotthread .item .thread .inner .caption p {
+		color: #fff;
+	}
+
+	.hotthreadB .item .thread .inner .caption p {
+		color: #fff;
+		line-height: 1.5;
+	}
+
+	.hotthread .item .thread .inner .caption .protitle {
+		font-size: 32rem/$fit;
+		line-height: 1.2;
+	}
+
+	.hotthread .base_price {
+		font-size: 24rem/$fit;
+		color: #fff;
+	}
+
+	.hotthread .base_price dfn {
+		font-size: 24rem/$fit;
+	}
+
+	.hotthread .item .one-pro .thread .inner {
+		width: auto;
+	}
+
+	.hotthread .item .thread .inner {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: none;
+		bottom: 0;
+		border: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	.hotthread .base_price .price {
+		font-size: 36rem/$fit;
+	}
+
+	.hotthread .item .sale .base_price {
+		bottom: 0;
 	}
 }
