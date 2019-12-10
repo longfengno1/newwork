@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>购物流程-支付成功</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+
+    <div id="main" class="main">
+        <p class="title">您订购的商品</p>
+        <div class="order-container">
+            <table class="product-list">
+                <thead>
+                    <tr class="head">
+                        <th class="left">商品详情</th>
+                        <th class="center">乘客信息</th>
+                        <th class="right">价格</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product">
+                            <img src="../../images/j1.jpg" alt=""><span>龙虾牛腩面</span>
+                        </td>
+                        <td class="info center">
+                            <p>房间1：2份</p>
+                            <p>房间1：2份</p>
+                            <a>修改</a>
+                        </td>
+                        <td class="price right">
+                            &yen;328
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product">
+                            <img src="../../images/j2.jpg" alt=""><span>精选航线岸上游</span>
+                        </td>
+                        <td class="info center">
+                            <p>房间1：2份</p>
+                            <p>房间1：2份</p>
+                            <a>修改</a>
+                        </td>
+                        <td class="price right">
+                            &yen;11,972
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="fr fee">
+                <p>商品总费用：&yen;12,325</p>
+                <p>优惠：&yen;0</p>
+                <p>商品总计：<span class="price">&yen;12,325</span></p>
+            </div>
+        </div>
+        <div class="btns">
+            <span class="back">
+                返回购物车
+            </span>
+            <span class="fr next">
+                下一步，去支付
+            </span>
+        </div>
+    </div>
+    #include('../../common/footer.html')
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+body{
+    background-color: #f7fcfc;
+}
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+.title {
+    font-size: 24px;
+    color: #333333;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.order-container{
+    padding: 18px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.product-list {
+    width: 100%;
+    // table-layout: fixed;
+    border-collapse: collapse;
+
+    .head {
+        font-size: 16px;
+        background-color: #f7fcfc;
+    }
+
+    tr {
+        border: 1px solid #E5E5E5;
+        th,td{
+padding: 20px;
+        }
+    }
+
+    .left {
+        width: 40%;
+    }
+
+    .center {
+        width: 30%;
+    }
+
+    .right {
+        width: 30%;
+        text-align: right;
+    }
+
+    .product{
+        img{
+            // display:;
+                width: 160px;
+                height: 120px;
+        }
+        span{
+            font-size: 16px;
+            vertical-align: top;
+            padding-left: 20px;
+        }
+    }
+
+    .info{
+        font-size: 14px;
+        p{
+            margin-bottom: 16px;
+        }
+        a{
+            cursor: pointer;
+            color: #00969E;
+        }
+    }
+
+    .price{
+        font-size: 16px;
+        color: #FF5050;
+    }
+}
+
+.fee{
+    overflow: hidden;
+    text-align: right;
+    font-size: 16px;
+    p{
+        margin-top: 18px;
+    }
+    .price{
+        font-size: 18px;
+        color: #FF5050;
+    }
+}
+
+.btns{
+    margin-top: 24px;
+    font-size: 14px;
+    .back,.next{
+            width: 200px;
+        display: inline-block;
+        border-radius: 2px;
+        text-align: center;
+        height: 44px;
+        line-height: 44px;
+        cursor: pointer;
+    }
+    .back{
+        color: #333333;
+        border: 1px solid #E5E5E5;
+    }
+    .next{
+        color: #ffffff;
+        background-color: #00969E;
+    }
+}
