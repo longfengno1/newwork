@@ -1,6 +1,9 @@
-body{
+@import './sm-index.scss';
+
+body {
     background-color: #f7fcfc;
 }
+
 .main {
     width: 1200px;
     margin: 0 auto;
@@ -20,16 +23,16 @@ body{
     margin-bottom: 18px;
 }
 
-.content{
+.content {
     color: #999;
     margin-bottom: 12px;
 }
 
-.mb18{
-margin-bottom: 18px;
+.mb18 {
+    margin-bottom: 18px;
 }
 
-.order-container{
+.order-container {
     padding: 18px;
     overflow: hidden;
     background-color: #ffffff;
@@ -55,11 +58,13 @@ margin-bottom: 18px;
     }
 }
 
-.btns{
+.btns {
     margin-top: 32px;
     font-size: 14px;
-    .back,.next{
-            width: 200px;
+
+    .back,
+    .next {
+        width: 200px;
         display: inline-block;
         border-radius: 2px;
         text-align: center;
@@ -67,12 +72,87 @@ margin-bottom: 18px;
         line-height: 44px;
         cursor: pointer;
     }
-    .back{
+
+    .back {
         color: #333333;
         border: 1px solid #E5E5E5;
     }
-    .next{
+
+    .next {
         color: #ffffff;
         background-color: #00969E;
+    }
+}
+
+.step-item {
+    display: inline-block;
+    position: relative;
+    width: 195px;
+    height: 50px;
+    background-color: #efefef;
+    margin-left: 5px;
+    text-align: center;
+    cursor: pointer;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    span {
+        line-height: 50px;
+        font-size: 15px;
+        color: #343E57;
+    }
+
+    .step-item-before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 20px solid #fff;
+    }
+
+    .step-item-after {
+        right: -20px;
+        top: 0;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 20px solid #efefef;
+        z-index: 2;
+    }
+
+}
+
+.step {
+    margin-top: 20px;
+
+    .active {
+        background-color: #00969E;
+
+        .step-item-after {
+            border-left-color: #00969E;
+        }
+
+    }
+
+    .active,
+    .selected {
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.selected {
+    background-color: #64CCC9;
+
+    .step-item-after {
+        border-left-color: #64CCC9;
     }
 }
