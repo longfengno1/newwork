@@ -2984,6 +2984,21 @@
 	box-shadow: 0 0.075rem 0.125rem 0 rgba(67,176,173,0.3);
 }
 
+.carousel {
+	height: 11.75rem;
+	overflow: hidden;
+	margin: 0 -9rem;
+
+	.slide {
+	}
+
+	.carousel-inner img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
 /* 大屏幕 */
 @media (min-width: 1200px) {}
 
@@ -3712,7 +3727,20 @@
 	.topbanner_plane .ship .btn-icon .open{
 		display: none;
 	}
-	
+
+	.carousel {
+		height: 9.8rem;
+		position: static;
+		margin-bottom: .75rem;
+
+		.slide {
+		}
+
+		.carousel-inner img {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 
 /* 横向放置的手机及分辨率更小的设备 */

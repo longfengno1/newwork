@@ -35,18 +35,35 @@
         <div class="topbanner">
             <div class="wraper">
                 <div class="icon_berlitz"></div>
+                <div id="image-slide" class="carousel slide" data-ride="carousel">
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#image-slide" data-slide-to="0" class="active"></li>
+                        <li data-target="#image-slide" data-slide-to="1"></li>
+                        <li data-target="#image-slide" data-slide-to="2"></li>
+                    </ul>
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../images/Miyakojima.jpg" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../images/pic1.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../images/banner2.jpg">
+                        </div>
+                    </div>
 
-                <div class="topbanner-slider-box">
-                    <div class="topbanner-slider">
-                        <img src="../../images/Miyakojima.jpg" width="100%">
-                    </div>
-                    <div class="topbanner-slider">
-                        <img src="../../images/Miyakojima.jpg" width="100%">
-                    </div>
-                    <div class="topbanner-slider">
-                        <img src="../../images/Miyakojima.jpg" width="100%">
-                    </div>
+                    <!-- 左右切换按钮 -->
+                    <a class="carousel-control-prev" href="#image-slide" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#image-slide" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
+
                 <div class="topbanner-tab tab-left hidden-sm">
                     <div class="tab" trigger="click">
                         <a href="###" class="tab1" rel="0">
