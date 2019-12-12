@@ -962,7 +962,7 @@
 
 			.success-text {
 				font-size: 18px;
-				color: #F8485E;
+				color: $theme-blue;
 			}
 		}
 
@@ -974,7 +974,7 @@
 			border: 1px solid $theme-blue;
 
 			.tips {
-				padding: 30px 50px;
+				padding: 10px 10px;
 
 				p {
 					font-size: 16px;
@@ -1142,12 +1142,12 @@
 			text-align: center;
 
 			.success {
-				padding: 80rem/$fit 40rem/$fit 80rem/$fit 40rem/$fit;
+				padding: 40rem/$fit 40rem/$fit 40rem/$fit 40rem/$fit;
 				text-align: center;
 
 				.success-text {
 					font-size: 32rem/$fit;
-					color: #F8485E;
+					color: $theme-blue;
 				}
 			}
 
@@ -1162,7 +1162,7 @@
 					padding: 30rem/$fit 30rem/$fit;
 
 					p {
-						font-size: 24rem/$fit;
+						font-size: 28rem/$fit;
 						color: $theme-gray;
 
 						a {
@@ -1177,7 +1177,7 @@
 			.buttons {
 				display: inline-block;
 				width: 90%;
-				padding: 20rem/$fit 0 20rem/$fit;
+				padding: 40rem/$fit 0 40rem/$fit;
 
 				.btn-signup {
 					width: 100%;

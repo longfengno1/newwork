@@ -43,9 +43,10 @@
   }
 
   button{
-     width: 148rem/$fit;
+     width: auto/*148rem/$fit*/;
      height: 54rem/$fit;
      font-size: 24rem/$fit;
+     border:0;
   }
 
   .split {

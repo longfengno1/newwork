@@ -3,14 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\activitysubjectDetail",
-    "\\src\\pages\\index",
+    "\\src\\pages\\booking6",
     "\\src\\pages\\login",
-    "\\src\\pages\\signup",
+    "\\src\\pages\\signupAutoBind",
+    "\\src\\pages\\signupBindPhone-2",
+    "\\src\\pages\\signupBindUser",
     "\\src\\pages\\signupFaild",
-    "\\src\\pages\\signupSuccess",
-    "\\src\\pages\\signupSuccess(2)"
+    "\\src\\pages\\signupSuccess"
   ],
-  "SelectedNode": "\\src\\pages\\signup\\index.scss",
+  "SelectedNode": "\\src\\pages\\booking6\\sm-index.scss",
   "PreviewInSolutionExplorer": false
 }
