@@ -252,6 +252,7 @@ input[type=checkbox]:checked + .cb-label,
       line-height: 26px;
       overflow: hidden;
       vertical-align:middle;
+      width: 88px;
     }
     
     .num {
@@ -320,3 +321,5 @@ input[type=checkbox]:checked + .cb-label,
     margin-top:40px;
   }
 }
+
+@import './sm-index.scss';

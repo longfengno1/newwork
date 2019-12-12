@@ -1,0 +1,310 @@
+@import '../../css/variables.scss';
+
+
+/* 大屏幕 */
+@media (min-width: 1200px) {}
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979rem/$fit) {}
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {
+
+    .shoppingcart-main {
+        width: 100vw;
+        margin-bottom: 88rem/$fit;
+
+        .wraper {
+            width: 100vw;
+        }
+
+        li {
+            margin: 0;
+            padding: 32rem/$fit;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 24rem/$fit;
+
+        }
+
+        .pic {
+            width: 240rem/$fit;
+            height: 160rem/$fit;
+            flex-shrink: 0;
+            margin-right: 30rem/$fit;
+        }
+
+        .sel {
+            height: 160rem/$fit;
+            width: 66rem/$fit;
+            line-height: 160rem/$fit;
+            flex-shrink: 0;
+        }
+
+        .info {
+            flex: 1;
+            height: auto;
+            width: auto;
+        }
+
+        .protitle {
+            font-size: 30rem/$fit;
+        }
+
+        .itmes1,
+        .itmes2,
+        .itmes3,
+        .itmes4 {
+            float: none;
+            width: auto;
+        }
+
+        .itmes3,
+        .itmes4 {
+            width: 50%;
+            float: left;
+            position: relative;
+            clear: none;
+            margin-top: 20rem/$fit;
+        }
+
+        .itmes1 {
+            margin-top: 10rem/$fit;
+            height: auto;
+
+            p {
+                height: 38rem/$fit;
+                line-height: 38rem/$fit;
+                font-size: 24rem/$fit;
+                color: #6c6c6c;
+
+            }
+        }
+
+        .itmes2 {
+            display: flex;
+            flex-direction: row;
+            height: 60rem/$fit;
+            width: 346rem/$fit;
+            padding: 0 16rem/$fit;
+            line-height: 60rem/$fit;
+            margin: 0;
+            background: #fbfbfb;
+            border-radius: 6rem/$fit;
+            margin-top: 20rem/$fit;
+
+            p {
+                height: 60rem/$fit;
+                line-height: 60rem/$fit;
+                color: #999;
+                font-size: 24rem/$fit;
+            }
+
+            .arrow {
+                flex: 1;
+                text-align: right;
+            }
+
+        }
+
+        .itmes3 {
+            margin-top: 36rem/$fit;
+            text-align: left;
+            height: 34rem/$fit;
+            line-height: 34rem/$fit;
+
+            .base_price {
+
+                font-size: 34rem/$fit;
+
+                dfn {
+                    font-size: 32rem/$fit;
+                }
+            }
+        }
+
+        .itmes4 {
+            text-align: right;
+
+            .btn-styleE {
+                padding: 0 26rem/$fit;
+                height: 54rem/$fit;
+                line-height: 54rem/$fit;
+                font-size: 24rem/$fit;
+            }
+        }
+    }
+
+    .totlebox {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 120rem/$fit;
+        border-top: 1px solid #e5e5e5;
+        padding: 20rem/$fit 32rem/$fit;
+        background: #fff;
+
+        .totle {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+
+        .totletbtn {
+            position: absolute;
+            right: 16rem/$fit;
+            bottom: 16rem/$fit;
+        }
+
+        p {
+            font-size: 28rem/$fit;
+            line-height: 1.2;
+        }
+
+        .base_price {
+            font-size: 28rem/$fit;
+            margin-left: 0;
+            line-height: 1.2;
+        }
+
+        .btn-styleI {
+            margin-top: 0;
+            height: 88rem/$fit;
+            width: 222rem/$fit;
+            font-size: 34rem/$fit;
+            line-height: 88rem/$fit;
+        }
+    }
+
+    .mark {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        background: rgba(0, 0, 0, .5);
+
+        .box {
+            width: 100vw;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+            border-radius: 8rem/$fit 8rem/$fit 0 0;
+        }
+
+        .title {
+            font-size: 30rem/$fit;
+            padding: 32rem/$fit;
+        }
+
+        .boxinner {
+            padding: 0 32rem/$fit;
+        }
+        .userinner{
+            background: #fbfbfb;
+            overflow: hidden;
+            padding: 32rem/$fit 32rem/$fit 0 32rem/$fit;
+            .user{
+                width: 50%;
+                float: left;
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 32rem/$fit;
+                .username{
+                    text-align: right;
+                    flex:1;
+                    padding-right: 16rem/$fit;
+                }
+            }
+        }
+        .boxbottom{
+            height: 120rem/$fit;
+            border-top:1px solid #e5e5e5;
+            padding: 16rem/$fit;
+            margin-top: 40rem/$fit;
+            
+            .btn-styleI,
+            .btn-styleJ
+            {
+                border-radius: 0;
+                height: 88rem/$fit;
+                width:350rem/$fit;
+                font-size: 30rem/$fit;
+                line-height: 88rem/$fit;
+                padding: 0;
+                text-align: center;
+                display: block;
+                float: left;
+            }
+            .btn-styleJ{
+                color:#00969E;
+                border-color:#00969E;
+                margin-right: 16rem/$fit;
+            }
+        }
+        .room {
+            height: 96rem/$fit;
+            font-size: 28rem/$fit;
+
+            .roomname {
+                padding-top: 10rem/$fit;
+                float: left;
+            }
+
+            .num-select {
+                float: right;
+            }
+
+            .num-select {
+                display: inline-block;
+                
+                border-radius: 0;
+                padding: 0;
+                text-align: center;
+                height: 44rem/$fit;
+                line-height: 44rem/$fit;
+                overflow: hidden;
+                vertical-align: middle;
+            }
+
+            .num {
+                display: block;
+                float: left;
+                font-size: 14px;
+                color: #343E57;
+                width: 80rem/$fit;
+                height: 44rem/$fit;
+                line-height: 44rem/$fit;
+            }
+
+            .minus,
+            .plus {
+                display: block;
+                float: left;
+                width: 44rem/$fit;
+                height: 44rem/$fit;
+                background-color: #00969E;
+                color: #fff;
+                font-size: 20rem/$fit;
+                line-height: 44rem/$fit;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+            &.disable-room{
+                .num-select{
+                    opacity: .5;
+                }
+            }
+            
+        }
+        .disable-user{
+            .num-select{
+                opacity: .5;
+            }
+        }
+    }
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) {}

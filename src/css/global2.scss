@@ -845,6 +845,11 @@ b {
 .menu-box {
 	position: relative;
 	margin: 0 24px 0 32px;
+	a{
+		font-size: 28rem/$fit;
+		color: #fff;
+		font-weight: normal;
+	}
 }
 
 .menu-box-inner {
@@ -2151,8 +2156,9 @@ b {
 		font-size: 40rem/$fit;
 		line-height: 40rem/$fit;
 		text-align: center;
+		
 	}
-
+	
 	.message-box .icon-info {
 		width: 40rem/$fit;
 		height: 40rem/$fit;
