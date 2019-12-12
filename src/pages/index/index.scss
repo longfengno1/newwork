@@ -1178,7 +1178,8 @@
 	top: 0;
 	right: 0;
 	background-color: #f8485e;
-	border-bottom-left-radius: 10rem/$fit;
+	border-bottom-left-radius: 5rem/$fit;
+	border-top-right-radius: 5rem/$fit;
 	width: 90rem/$fit;
 	height: 30rem/$fit;
 	line-height: 30rem/$fit;
@@ -1798,7 +1799,7 @@
 	right: 80rem/$fit;
 }
 .shipinto .topbanner_plane .ship2 {
-	right: -200rem/$fit;
+	right: 40rem/$fit;
 }
 .shipinto .topbanner_plane .ship3 {
 	right: 80rem/$fit;
@@ -1882,7 +1883,7 @@
 .topbanner_plane .ship-intro {
 	position: absolute;
 	top: -114rem/$fit;
-	right: 867rem/$fit;
+	right: 587rem/$fit;
 	height: 186rem/$fit;
 }
 
@@ -2984,8 +2985,26 @@
 	box-shadow: 0 0.075rem 0.125rem 0 rgba(67,176,173,0.3);
 }
 
+.carousel {
+	height: 11.75rem;
+	overflow: hidden;
+	margin: 0 -9rem;
+
+	.slide {
+	}
+
+	.carousel-inner img {
+		width: 100%;
+		height: auto;
+	}
+}
+.carousel-indicators
+{
+	bottom:30px;
+}
 /* 大屏幕 */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /* 平板电脑和小屏电脑之间的分辨率 */
 @media (min-width: 768px) and (max-width: 979px) {}
@@ -3071,12 +3090,12 @@
 
 
 	.hotthread .item .thread .tip {
-		border-bottom-left-radius: 20rem/$fit;
+		border-bottom-left-radius: 5rem/$fit;
+		border-top-right-radius: 5rem/$fit;
 		width: 132rem/$fit;
 		height: 40rem/$fit;
 		line-height: 40rem/$fit;
 		font-size: 22rem/$fit;
-
 		background: #F8485E;
 		border-radius: 0 6px 0 6px;
 		margin-top: 32rem/$fit;
@@ -3712,7 +3731,20 @@
 	.topbanner_plane .ship .btn-icon .open{
 		display: none;
 	}
-	
+
+	.carousel {
+		height: 9.8rem;
+		position: static;
+		margin-bottom: .75rem;
+
+		.slide {
+		}
+
+		.carousel-inner img {
+			width: 100%;
+			height: auto;
+		}
+	}
 }
 
 /* 横向放置的手机及分辨率更小的设备 */

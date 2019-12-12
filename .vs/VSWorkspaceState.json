@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\js",
     "\\src\\pages",
-    "\\src\\pages\\aboutus",
+    "\\src\\pages\\activitysubjectDetail",
     "\\src\\pages\\index",
-    "\\src\\pages\\media",
-    "\\src\\pages\\mediafaq",
-    "\\src\\pages\\mynotice",
-    "\\src\\pages\\reg"
+    "\\src\\pages\\login",
+    "\\src\\pages\\signup",
+    "\\src\\pages\\signupFaild",
+    "\\src\\pages\\signupSuccess",
+    "\\src\\pages\\signupSuccess(2)"
   ],
-  "SelectedNode": "\\src\\pages\\media\\index.html",
+  "SelectedNode": "\\src\\pages\\signup\\index.scss",
   "PreviewInSolutionExplorer": false
 }

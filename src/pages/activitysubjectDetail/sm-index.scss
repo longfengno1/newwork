@@ -541,6 +541,9 @@
             font-size: 0.3rem;
         }
     }
+
+
+
     .carousel {
         width: 100%;
         margin: 20rem/$fit auto;
@@ -551,6 +554,123 @@
         .carousel-inner img {
             width: 100%;
             height: auto;
+        }
+    }
+
+    .sm-rooms {
+
+        .probar {
+            height: 88rem/$fit;
+            overflow: hidden;
+            margin-top: 2.2rem;
+        }
+
+        .saletags {
+            height: 54rem/$fit;
+            line-height: 54rem/$fit;
+            border-top: 1rem/$fit dashed #E5E5E5;
+            position: relative;
+        }
+
+        .saletags .more {
+            position: absolute;
+            right: 0;
+            top: 20rem/$fit;
+            color: #999;
+        }
+
+        .saletags li {
+            float: left;
+            font-size: 20rem/$fit;
+            margin-right: 16rem/$fit;
+        }
+
+        .saletags li span {
+            border: 1px solid;
+            padding: 4rem/$fit 17rem/$fit;
+        }
+
+        .saletags li:nth-child(1) {
+            color: #4A90E2;
+        }
+
+        .saletags li:nth-child(2) {
+            color: #A05EB5;
+        }
+
+        .saletags li:nth-child(3) {
+            color: #6EC271;
+        }
+
+        .saletags li:nth-child(4) {
+            color: #FF7245;
+        }
+
+        .probar .bartags {
+            white-space: nowrap;
+            background: #fff;
+            overflow: scroll;
+            width: 100%;
+            clear: both;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .probar .bartags li {
+            height: 100rem/$fit;
+        }
+
+        .probar .bartags li a {
+            height: 88rem/$fit;
+            line-height: 100rem/$fit;
+            padding-top: 0;
+            padding-bottom: 0;
+            display: inline-block;
+            font-size: 28rem/$fit;
+            color: #6D6D6D
+        }
+
+        .probar .bartags li {
+            height: 88rem/$fit;
+        }
+
+        .probar .bartags li a {
+            height: 88rem/$fit;
+            line-height: 100rem/$fit;
+            padding-top: 0;
+            padding-bottom: 0;
+            display: inline-block;
+            font-size: 28rem/$fit;
+            color: #6D6D6D
+        }
+
+
+        .probar .bartags li {
+            font-size: 16rem/$fit;
+            display: inline-block;
+            margin-left: 16rem/$fit;
+            margin-right: 16rem/$fit;
+            line-height: 60rem/$fit;
+            position: relative;
+        }
+
+        .probar .bartags li a {
+            color: #383838;
+            padding: 0rem/$fit 0rem/$fit;
+            border-bottom: 3rem/$fit solid #fff;
+        }
+
+        .probar .bartags li a:hover {
+            text-decoration: none;
+            color: #00969E;
+            border-bottom: 4rem/$fit solid #00969E;
+        }
+
+        .probar .bartags li .current {
+            color: #00969E;
+            border-bottom: 4rem/$fit solid #00969E;
         }
     }
 }

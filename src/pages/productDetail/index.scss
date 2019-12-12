@@ -396,6 +396,81 @@ body {
         padding: 40px 30px 30px 40px;
     }
 
+    .select-container{
+        position: relative;
+    }
+
+    #select-layer{
+        position: absolute;
+        bottom: 20rem/$fit;
+        right: 0;
+        width: 520rem/$fit;
+        background-color: #ffffff;
+        padding:0 20rem/$fit 20rem/$fit;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+
+        .layer-title{
+            margin-top: 26rem/$fit;
+            font-size: 18rem/$fit;
+        }
+
+        .custom-btn{
+            display: inline-block;
+            line-height: 36rem/$fit;
+            height: 36rem/$fit;
+            border-radius: 3rem/$fit;
+            text-align: center;
+            border: 1px solid;
+            cursor: pointer;
+        }
+
+        .guests{
+            margin-top: 20rem/$fit;
+        }
+        .guest{
+            width: 90rem/$fit;
+            margin-right: 12rem/$fit;
+            background-color: #f7fcfc;
+            border-color: #00969E;
+            color: #00969E;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        .disable{
+            border-color: #E5E5E5;
+            color: #999999;
+            background-color: rgb(245, 245, 245);
+        }
+
+        .default{
+            border-color: #E5E5E5;
+            color: #333333;
+            background-color: #ffffff;
+        }
+
+        .btns{
+            margin-top: 30rem/$fit;
+            text-align: right;
+        }
+
+        .ensure,.cancel{
+            width: 90rem/$fit;
+        }
+
+        .cancel{
+            color: #999999;
+            border-color: #E5E5E5;
+            margin-right: 12rem/$fit;
+        }
+
+        .ensure{
+            border-color: #00969E;
+            background-color: #00969E;
+            color: #ffffff;
+        }
+    }
     .name {
         font-size: 26px;
         color: #343E57;
