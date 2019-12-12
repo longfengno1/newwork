@@ -7,6 +7,7 @@ import './index.scss';
         $('#my-card-container').show();
         $('#my-code-container').hide();
         $('#my-card').addClass('active');
+        $('#select-layer').hide();
     }
 
     $('#my-card').click(function () {
@@ -23,6 +24,17 @@ import './index.scss';
         $('#my-code-container').show();
     });
 
+    $('#add-btn').click(function(){
+        $('#select-layer').show();
+    })
+
+    $('#layer-ensure').click(function(){
+        $('#select-layer').hide();
+    })
+
+    $('#layer-cancel').click(function(){
+        $('#select-layer').hide();
+    })
 
     init();
 })();
