@@ -1,0 +1,178 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>注册成为星梦荟会员</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 375);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+
+  </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+
+    <div id="main" class="fleetintro ">
+
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/login_bg.jpg" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sign-content popup-in-content">
+                        <section class="signup">
+                            <div style="width: 100%;height:50px;margin-top:30px;text-align:center;" class="show-sm">
+                                <img src="../../images/logo_sc2.png" />
+                            </div>
+                            <div class="header hidden-sm">
+                                <span class="title">注册成为星梦荟会员</span>
+                            </div>
+                            <div class="content">
+                                <div class="success">
+                                    <span class="success-text">立即注册星梦荟，享更多预订折扣及船上服务。</span>
+                                </div>
+
+                                <div class="buttons clearfloat">
+                                    <button type="button" class="btn btn-signup">注册星梦荟</button>
+                                    <button type="button" class="btn btn-later">以后再说</button>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height:100px;" class="hidden-sm"></div>
+    <div class="mark layerout1 hidden-sm" style="display: none;">
+        <div class="layer">
+            <div class="close"><span class="icon-x"></span></div>
+            <div class="no-gutters">
+                <div class="col-auto layer-left">
+                    <div class="sign-content popup-in-content">
+                        <div class="popup-in-txt">
+
+                            <div id='signin-mobile'>
+                                <div class="form-group form-check awesome-checkbox-list">
+                                    <label class="styled-checkbox-2 gray" style="margin-bottom:0px;color:#F8485E;">立即注册星梦荟，享更多预订折扣及船上服务。</label>
+                                </div>
+                                <div class="signin-form">
+                                    <form>
+
+                                        <div class="form-group row">
+                                            <span class="vmiddle">手机号码：</span>
+                                            <input type="text" class="ipt-86" value="+86(中国)" readonly="readonly">
+                                            <input type="text" class="form-control ipt-phone" id="signin_form" placeholder="13900000000" readonly="readonly">
+                                        </div>
+                                        <div class="form-group row">
+                                            <span class="vmiddle" style="margin-left:24px;">姓名：</span>
+                                            <input type="text" class="form-control " style="width:80px;margin-right:20px;" id="signin_form" placeholder="姓">
+                                            <input type="text" class="form-control " style="width:80px;" id="signin_form" placeholder="名">
+                                        </div>
+                                        <div class="form-group row">
+                                            <span class="vmiddle">姓名全拼：</span>
+                                            <input type="text" class="form-control " style="width:80px;margin-right:20px;" id="signin_form" placeholder="姓拼音">
+                                            <input type="text" class="form-control " style="width:80px;" id="signin_form" placeholder="名拼音">
+                                        </div>
+                                        <div class="form-group row">
+                                            <span class="vmiddle" style="margin-left:24px;">邮箱：</span>
+                                            <input type="text" class="form-control ipt-code" id="signin_form" placeholder="">
+                                        </div>
+                                        <div class="form-group row">
+                                            <span class="vmiddle">出生日期：</span>
+                                            <input type="text" class="form-control ipt-code" id="signin_form" placeholder="">
+                                        </div>
+                                        <div class="form-group row">
+                                            <span class="vmiddle" style="margin-left:24px;">性别：</span>
+                                            <label class="radio-inline" style="margin:8px 20px 1px 10px;"><input class="vmiddle" type="radio" name="optradio">男</label>
+                                            <label class="radio-inline" style="margin:8px 20px 1px 10px;"><input class="vmiddle" type="radio" name="optradio">女</label>
+                                        </div>
+                                        <div class="form-group row">
+                                            <span class="vmiddle">居住地址：</span>
+                                            <select class="form-control" style="width:115px;margin-right:15px;padding-left: 15px;">
+                                                <option>请选择省份</option>
+                                            </select>
+                                            <select class="form-control" style="width:115px;margin-right:15px;padding-left: 15px;">
+                                                <option>请选择城市</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group row">
+                                            <span class="vmiddle" style="margin-left:60px;"></span>
+                                            <input type="text" class="form-control ipt-code" id="signin_form" placeholder="请输入详细地址">
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- <div class="awesome-checkbox-list"> -->
+                                <div class="form-group form-check awesome-checkbox-list" style="margin-left: 48px;">
+                                    <input type="checkbox" class="vmiddle" id="styled-checkbox-2">
+                                    <label class="vmiddle styled-checkbox-2" style="margin: 2px 0px;">
+                                        同意接收星梦邮轮消息
+                                    </label>
+                                    <input type="checkbox" class="vmiddle" id="styled-checkbox-2" style="margin-left: 10px;">
+                                    <label class="vmiddle styled-checkbox-2" style="margin: 2px 0px;">
+                                        同意<a href="###">《会员条款》</a>
+                                    </label>
+                                </div>
+
+                                <!-- </div> -->
+                                <a href="mycenter.html">
+                                    <div class="txt-center">
+                                        <button type="button" class="btn signin_btn">
+                                            登录/注册
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="signin-wx" style="display:none;">
+                                <img class="qr-code" src="../../images/qr-code.png" />
+                                <div class="tip-container">
+                                    <span class="tip">请使用微信扫描二维码登录“星梦邮轮”</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+  $(".topbanner_plane .ship .btn-icon").click(function () {
+    $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+    $(this).addClass("artive");
+    return false;
+  })
+  $(".topbanner_plane").click(function () {
+    $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+  })
+
+</script>
+
+</html>

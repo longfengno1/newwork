@@ -623,6 +623,12 @@
 		margin-bottom: 20px;
 		text-transform: uppercase;
 	}
+
+	.styled-checkbox-2 {
+		font-size: 12rem/$fit;
+		margin-bottom: 0;
+	}
+	
 }
 
 /*.signin-form  .form-control*/
@@ -811,10 +817,10 @@
 .btn.signin_btn:focus {
 	width: 200rem/$fit;
 	padding: 0;
-	height: 60rem/$fit;
+	height: 40rem/$fit;
 	background: $theme-blue;
 	color: #fff;
-	font-size: 20rem/$fit;
+	font-size: 18rem/$fit;
 	letter-spacing: 6.24px;
 	text-transform: uppercase;
 	border-radius: 8px;
@@ -962,7 +968,7 @@
 
 			.success-text {
 				font-size: 18px;
-				color: #F8485E;
+				color: $theme-blue;
 			}
 		}
 
@@ -974,7 +980,7 @@
 			border: 1px solid $theme-blue;
 
 			.tips {
-				padding: 30px 50px;
+				padding: 10px 10px;
 
 				p {
 					font-size: 16px;
@@ -1019,6 +1025,27 @@
 	}
 }
 
+.ipt-86 {
+	width: 85px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #f8f8f8;
+	border: 1px solid #b0b9c7;
+	border-right: 0px;
+	padding: 0 0 0 10px !important;
+}
+
+.ipt-phone {
+	width: 72%;
+	border-left: 0px !important;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+
+.bind-title {
+	max-width: 100%;
+	flex: auto;
+}
 
 @media(max-width:767px){
 	.container
@@ -1041,7 +1068,7 @@
 			margin-bottom: 20rem/$fit;
 
 			.signin-type-tab {
-				font-size: 24rem/$fit;
+				font-size: 32rem/$fit;
 				/* font-weight: 500; */
 				color: #999;
 				margin-bottom: 20rem/$fit;
@@ -1103,9 +1130,9 @@
 
 		.btn.signin_btn,
 		.btn.signin_btn:focus {
-			width: 100%;
+			width: 80%;
 			padding: 0;
-			height: 2.5rem;
+			height: 2rem;
 			background: #00969E;
 			color: #fff;
 			font-size: 0.8rem;
@@ -1142,12 +1169,12 @@
 			text-align: center;
 
 			.success {
-				padding: 80rem/$fit 40rem/$fit 80rem/$fit 40rem/$fit;
+				padding: 40rem/$fit 40rem/$fit 40rem/$fit 40rem/$fit;
 				text-align: center;
 
 				.success-text {
 					font-size: 32rem/$fit;
-					color: #F8485E;
+					color: $theme-blue;
 				}
 			}
 
@@ -1162,7 +1189,7 @@
 					padding: 30rem/$fit 30rem/$fit;
 
 					p {
-						font-size: 24rem/$fit;
+						font-size: 28rem/$fit;
 						color: $theme-gray;
 
 						a {
@@ -1177,7 +1204,7 @@
 			.buttons {
 				display: inline-block;
 				width: 90%;
-				padding: 20rem/$fit 0 20rem/$fit;
+				padding: 40rem/$fit 0 40rem/$fit;
 
 				.btn-signup {
 					width: 100%;

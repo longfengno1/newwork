@@ -650,6 +650,21 @@
 	-o-transition: linear .5s;
 	transition: linear .5s;
 }
+.ipt-86 {
+	width: 82px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #f8f8f8;
+	border: 1px solid #b0b9c7;
+	border-right: 0px;
+	padding: 0 0 0 10px !important;
+}
+.ipt-phone {
+	width: 72%;
+	border-left: 0px !important;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
 
 .signin-form .form-control:hover,
 .signin-form .form-control:focus {

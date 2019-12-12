@@ -623,6 +623,10 @@
 		margin-bottom: 20px;
 		text-transform: uppercase;
 	}
+
+	styled-checkbox {
+		font-size: 12px;
+	}
 }
 
 /*.signin-form  .form-control*/
@@ -645,6 +649,21 @@
 	-ms-transition: linear .5s;
 	-o-transition: linear .5s;
 	transition: linear .5s;
+}
+.ipt-86 {
+	width: 45px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #f8f8f8;
+	border: 1px solid #b0b9c7;
+	border-right: 0px;
+	padding: 0 0 0 10px !important;
+}
+.ipt-phone {
+	width: 80%;
+	border-left: 0px !important;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
 }
 
 .signin-form .form-control:hover,
@@ -698,6 +717,7 @@
 
 .form-group {
 	margin-bottom: 10px;
+	margin-left:-15px;
 }
 
 .form-group.xtra-margin-left {
@@ -724,7 +744,7 @@
 	cursor: pointer;
 	padding: 0;
 	color: #999;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 }
 
@@ -747,7 +767,10 @@
 		padding-left: 7px;
 	}
 }
-
+.styled-checkbox-2 {
+	font-size: 14px;
+	margin-bottom:0;
+}
 
 /* Box.*/
 .styled-checkbox + label:before {
@@ -793,7 +816,7 @@
 	margin-right: 0px;
 
 	.signin-type-tab {
-		font-size: 20px;
+		font-size: 18px;
 		/*font-weight: 500;*/
 		color: #999;
 		padding-bottom: 8px;
@@ -811,11 +834,11 @@
 .btn.signin_btn:focus {
 	width: 200rem/$fit;
 	padding: 0;
-	height: 60rem/$fit;
+	height: 40rem/$fit;
 	background: $theme-blue;
 	color: #fff;
-	font-size: 20rem/$fit;
-	letter-spacing: 6.24px;
+	font-size: 18rem/$fit;
+	/*letter-spacing: 6.24px;*/
 	text-transform: uppercase;
 	border-radius: 8px;
 	margin-top: 10px;
@@ -926,7 +949,7 @@
 
 	.tip-container {
 		text-align: center;
-		/*margin-top: 40px;*/
+		margin-top: 10px;
 
 		.tip {
 			font-size: 14px;
@@ -935,96 +958,17 @@
 		}
 	}
 }
-
-.signup {
-	width: 100%;
-	margin: 0 auto;
-
-	.header {
-		background-color: $theme-blue;
-		height: 100px;
-		text-align: center;
-
-		.title {
-			font-size: 24px;
-			color: $theme-white;
-			line-height: 100px;
-		}
-	}
-
-	.content {
-		background-color: $theme-white;
-		text-align: center;
-
-		.success {
-			padding: 30px 20px 20px 20px;
-			text-align: center;
-
-			.success-text {
-				font-size: 18px;
-				color: #F8485E;
-			}
-		}
-
-		.tip-container {
-			display: inline-block;
-			width: 90%;
-			height: auto;
-			background: $theme-white;
-			border: 1px solid $theme-blue;
-
-			.tips {
-				padding: 30px 50px;
-
-				p {
-					font-size: 16px;
-					color: $theme-gray;
-					margin: 10px;
-
-					a {
-						color: $theme-blue;
-						text-decoration-line: underline;
-						padding-left: 18px;
-					}
-				}
-			}
-		}
-
-		.buttons {
-			display: inline-block;
-			width: 90%;
-			padding: 20px 0 20px;
-
-			.btn-signup {
-				width: 220px;
-				height: 40px;
-				border-radius: 8px;
-				background-color: $theme-blue;
-				color: $theme-white;
-				font-size: 18px;
-				margin-left: 80px;
-			}
-
-			.btn-later {
-				width: 150px;
-				height: 40px;
-				border-radius: 8px;
-				background-color: $theme-white;
-				color: $theme-blue;
-				font-size: 18px;
-				border: 1px solid $theme-blue;
-				float: right;
-			}
-		}
-	}
+.bind-title {
+	max-width: 100%;
+	flex: auto;
 }
 
 
-@media(max-width:767px){
-	.container
-	{
-		right:0;
-		width:100%;
+
+@media(max-width:767px) {
+	.container {
+		right: 0;
+		width: 100%;
 	}
 
 	.sign-content {
@@ -1041,7 +985,7 @@
 			margin-bottom: 20rem/$fit;
 
 			.signin-type-tab {
-				font-size: 24rem/$fit;
+				font-size: 28rem/$fit;
 				/* font-weight: 500; */
 				color: #999;
 				margin-bottom: 20rem/$fit;
@@ -1076,22 +1020,18 @@
 				text-decoration: underline;
 				font-size: 0.6rem;
 				color: #00969E;
-				width: 4.5rem;
+				width: 5.5rem;
 			}
 
 			.ipt-code {
-				width: 9rem;
+				width: 8rem;
 			}
 
 			img {
-				width: 4.5rem;
+				width: 5.5rem;
 				height: 1.5rem;
 				margin-top: .25rem;
 			}
-		}
-
-		.styled-checkbox-2 {
-			font-size: 24rem/$fit;
 		}
 	}
 
@@ -1103,13 +1043,13 @@
 
 		.btn.signin_btn,
 		.btn.signin_btn:focus {
-			width: 100%;
+			width: 80%;
 			padding: 0;
 			height: 2.5rem;
 			background: #00969E;
 			color: #fff;
 			font-size: 0.8rem;
-			letter-spacing: 6.24px;
+			/*letter-spacing: 6.24px;*/
 			text-transform: uppercase;
 			border-radius: 8px;
 			margin-top: 10px;
@@ -1121,85 +1061,49 @@
 		}
 	}
 
-	.signup {
-		width: 100%;
-		margin: 0 auto;
+	.styled-checkbox {
+		position: absolute;
+		opacity: 0;
+		-webkit-transition: ease-in-out .3s;
+		-moz-transition: ease-in-out .3s;
+		-ms-transition: ease-in-out .3s;
+		-o-transition: ease-in-out .3s;
+		transition: ease-in-out .3s;
+	}
 
-		.header {
-			background-color: transparent;
-			height: 100rem/$fit;
-			text-align: center;
+	.styled-checkbox + label,
+	.awesome-checkbox-list a {
+		position: relative;
+		left: -2px;
+		cursor: pointer;
+		padding: 0;
+		color: #999;
+		font-size: 24rem/$fit;
+		font-weight: 500;
+	}
 
-			.title {
-				font-size: 32rem/$fit;
-				color: $theme-blue;
-				line-height: 100rem/$fit;
-			}
+
+	.awesome-checkbox-list {
+
+		a,
+		a:hover,
+		a:active {
+			color: $theme-blue;
 		}
 
-		.content {
-			background-color: $theme-white;
-			text-align: center;
-
-			.success {
-				padding: 80rem/$fit 40rem/$fit 80rem/$fit 40rem/$fit;
-				text-align: center;
-
-				.success-text {
-					font-size: 32rem/$fit;
-					color: #F8485E;
-				}
-			}
-
-			.tip-container {
-				display: inline-block;
-				width: 90%;
-				height: auto;
-				background: $theme-white;
-				border: 1px solid $theme-blue;
-
-				.tips {
-					padding: 30rem/$fit 30rem/$fit;
-
-					p {
-						font-size: 24rem/$fit;
-						color: $theme-gray;
-
-						a {
-							color: $theme-blue;
-							text-decoration-line: underline;
-							padding-left: 18rem/$fit;
-						}
-					}
-				}
-			}
-
-			.buttons {
-				display: inline-block;
-				width: 90%;
-				padding: 20rem/$fit 0 20rem/$fit;
-
-				.btn-signup {
-					width: 100%;
-					height: 80rem/$fit;
-					border-radius: 8px;
-					background-color: $theme-blue;
-					color: $theme-white;
-					font-size: 32rem/$fit;
-					margin-left: 0;
-				}
-
-				.btn-later {
-					width: 300rem/$fit;
-					height: 80rem/$fit;
-					border-radius: 8px;
-					background-color: $theme-white;
-					color: $theme-blue;
-					font-size: 32rem/$fit;
-					border: 1px solid $theme-blue;
-					float: right;
-				}
-			}
+		.form-check-input {
+			/*margin-top: 0.2rem;
+		margin-left: -1.0rem;
+		font-size: 18px;*/
 		}
+
+		label {
+			padding-left: 10rem/$fit;
+		}
+	}
+
+	.styled-checkbox-2 {
+		font-size: 24rem/$fit;
+		margin-bottom: 0rem;
 	}
 }
