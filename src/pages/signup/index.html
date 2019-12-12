@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 
 <head>
   <meta charset="UTF-8">
-  <title>登录</title>
+  <title>「星梦荟」会籍注册</title>
   <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
     <script type="text/javascript">
@@ -43,18 +43,19 @@
       <section class="person-info">
         <form action="" class="container">
           <h3>个人资料</h3>
-          <h5>护照中的英文或拼音姓名</h5>
-          <div class="row">
-            <div class="col-sm-6">
-              <label for='first-name'>姓氏</label>
-              <input id="first-name" type="text" class="form-control" placeholder="姓氏">
-            </div>
-            <div class="col-sm-6">
-              <label for="last-name">名字</label>
-              <input id="last-name" type="text" class="form-control" placeholder="名字">
-            </div>
-          </div>
-          <p class="section-title">中文姓名(可选项)</p>
+          <p class="section-title">
+              护照中的英文或拼音姓名</p>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <label for='first-name'>姓氏</label>
+                      <input id="first-name" type="text" class="form-control" placeholder="姓氏">
+                  </div>
+                  <div class="col-sm-6">
+                      <label for="last-name">名字</label>
+                      <input id="last-name" type="text" class="form-control" placeholder="名字">
+                  </div>
+              </div>
+<p class="section-title">中文姓名(可选项)</p>
           <div class="row">
             <div class="col-sm-6">
               <label for='first-name'>姓氏(中文)</label>
@@ -67,15 +68,14 @@
           </div>
           <div class="row last-row">
             <div class="col-sm-6">
+              <div class="row" style="margin-left:0px;">
               <label for='optradio'>性别</label>
-              <div class="row">
-                <div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio">男</label></div>
-                <div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio">女</label></div>
+                <label class="radio-inline"><input class="vmiddle" type="radio" name="optradio">男</label>
+                <label class="radio-inline"><input class="vmiddle" type="radio" name="optradio">女</label>
               </div>
             </div>
             <div class="col-sm-6">
-              <label for="last-name">出生日期<img style="width: 22px;height: 22px;margin-left: 10px;"
-                  src="../../images/tip-icon.png"></label>
+              <label for="last-name">出生日期<img style="width: 16px;height: 16px;margin-left: 10px;" class="hidden-sm" src="../../images/tip-icon.png"></label>
               <input id="last-name" type="text" class="form-control" placeholder="2019-10-21">
             </div>
           </div>
@@ -83,109 +83,123 @@
       </section>
       <!-- 联系资料 -->
       <section class="contact-info">
-        <form action="" class="container">
-          <h3>联系资料</h3>
-          <div class="row">
-            <div class="col-sm-12">
-              <label for='first-name'>手机号码<img style="width: 22px;height: 22px;margin-left: 10px;"
-                  src="../../images/tip-icon.png"></label>
+          <form action="" class="container">
+              <h3>联系资料</h3>
               <div class="row">
-                <div class="col-sm-4">
-                  <select class="form-control" id="sel1">
-                    <option>请选择</option>
-                  </select>
-                </div>
-                <div class="col-sm-2">
-                  <input id="first-name" type="text" class="form-control" placeholder="国际电话区号">
+                  <div class="col-sm-6">
+                      <label for='first-name'>
+                          手机号码<img style="width: 16px;height: 16px;margin-left: 10px;" class="hidden-sm"
+                                   src="../../images/tip-icon.png">
+                      </label>
+                      <input id="first-name" type="text" class="form-control" placeholder="手机号码">
+                      <div class="row" style="display:none;">
+                          <div class="col-sm-4">
+                              <select class="form-control" id="sel1">
+                                  <option>请选择</option>
+                              </select>
+                          </div>
+                          <div class="col-sm-2">
+                              <input id="first-name" type="text" class="form-control" placeholder="国际电话区号">
 
-                </div>
-                <div class="col-sm-6">
-                  <input id="first-name" type="text" class="form-control" placeholder="手机号码">
+                          </div>
+                          <div class="col-sm-6">
+                              <input id="first-name" type="text" class="form-control" placeholder="手机号码">
 
-                </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-6">
+                      <label for="last-name">居住地</label>
+                      <select class="mlselect form-control " id="sel1">
+                          <option>居住省份</option>
+                      </select>
+                      <select class="mlselect form-control " id="sel1">
+                          <option>居住城市</option>
+                      </select>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <label for='first-name'>电邮地址<img style="width: 22px;height: 22px;margin-left: 10px;"
-                  src="../../images/tip-icon.png"></label>
-              <input id="first-name" type="text" class="form-control" placeholder="电邮地址">
-            </div>
-            <div class="col-sm-6">
-              <label for="last-name">确认电邮地址</label>
-              <input id="last-name" type="text" class="form-control" placeholder="确认电邮地址">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <label for='first-name'>居住地</label>
-              <select class="form-control" id="sel1">
-                <option>居住地</option>
-              </select>
-            </div>
-            <div class="col-sm-4">
-              <label for="last-name">居住省份</label>
-              <select class="form-control" id="sel1">
-                <option>居住省份</option>
-              </select>
-            </div>
-            <div class="col-sm-4">
-              <label for="last-name">居住城市</label>
-              <select class="form-control" id="sel1">
-                <option>居住城市</option>
-              </select>
-            </div>
-          </div>
-        </form>
+              <div class="row  last-row">
+                  <div class="col-sm-6">
+                      <label for='first-name'>
+                          电邮地址<img style="width: 16px;height: 16px;margin-left: 10px;" class="hidden-sm"
+                                   src="../../images/tip-icon.png">
+                      </label>
+                      <input id="first-name" type="text" class="form-control" placeholder="电邮地址">
+                  </div>
+                  <div class="col-sm-6">
+                      <label for="last-name">确认电邮</label>
+                      <input id="last-name" type="text" class="form-control" placeholder="确认电邮地址">
+                  </div>
+              </div>
+
+              <div class="row" style="display:none;">
+                  <div class="col-sm-4">
+                      <label for='first-name'>居住地</label>
+                      <select class="form-control" id="sel1">
+                          <option>居住地</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-4">
+                      <label for="last-name">居住省份</label>
+                      <select class="form-control" id="sel1">
+                          <option>居住省份</option>
+                      </select>
+                  </div>
+                  <div class="col-sm-4">
+                      <label for="last-name">居住城市</label>
+                      <select class="form-control" id="sel1">
+                          <option>居住城市</option>
+                      </select>
+                  </div>
+              </div>
+          </form>
       </section>
       <section class="habor-info">
-        <form action="" class="container">
-          <h3>通讯习惯</h3>
-          <div class="row">
-            <div class="col-sm-9">
-              <label for='optradio'>通讯语言</label>
+          <form action="" class="container">
+              <h3>通讯习惯</h3>
               <div class="row">
-                <div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio">English</label>
-                </div>
-                <div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio">繁体中文</label></div>
-                <div class="col-sm-3"><label class="radio-inline"><input type="radio" name="optradio">简体中文</label></div>
+                  <div class="col-sm-9">
+                      <label for='optradio'>通讯语言</label>
+                      <div class="show-sm" style="height:1px;"></div>
+                         <label class="radio-inline"><input class="vmiddle" type="radio" name="optradio">English</label>
+                          <label class="radio-inline"><input class="vmiddle" type="radio" name="optradio">繁体中文</label>
+                          <label class="radio-inline"><input class="vmiddle" type="radio" name="optradio">简体中文</label>
+                      </div>
               </div>
-            </div>
-          </div>
-          <p class="description">
-            云顶香港有限公司及其子公司（“云顶香港集团”）希望与您保持联系，以确保您会获得来自云顶香港集团、云顶香港有限公司之联营公司（“其他云顶公司”）及联合品牌合作伙伴和业务合作伙伴的有关邮轮及邮轮相关业务、零售产品及服务*、证券买卖及财务服务、休闲、娱乐、酒店及相关服务、餐饮、健康及美容、电信、运输、旅行相关产品和服务（“有关服务”）的特别优惠、推广和其他信息。我们需要取得您的同意使用您的姓名、地址、电邮地址及/或电话（“联络资料”），以作直接促销用途。我们亦希望把您的联络资料转移至位于各地的其他云顶公司以直接促销其有关服务。我们需要取得您的书面同意方可作此转移。如果您同意此等的使用及转移，请勾选以下方格。
-          </p>
-          <div class="row check-law">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">我同意根据上述条款使用及转移我的个人资料
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input"
-                  value="">本人确认本人年满18岁或以上。在本人按下“立即注册”键后，本人声明本人已阅读、明白及同意接受<a href="###">「星梦荟」的条款及细则</a>之约束。
-              </label>
-            </div>
-          </div>
-        </form>
+                      <div class="show-sm" style="height:.5rem;"></div>
+                      <p class="description">
+                          云顶香港有限公司及其子公司（“云顶香港集团”）希望与您保持联系，以确保您会获得来自云顶香港集团、云顶香港有限公司之联营公司（“其他云顶公司”）及联合品牌合作伙伴和业务合作伙伴的有关邮轮及邮轮相关业务、零售产品及服务*、证券买卖及财务服务、休闲、娱乐、酒店及相关服务、餐饮、健康及美容、电信、运输、旅行相关产品和服务（“有关服务”）的特别优惠、推广和其他信息。我们需要取得您的同意使用您的姓名、地址、电邮地址及/或电话（“联络资料”），以作直接促销用途。我们亦希望把您的联络资料转移至位于各地的其他云顶公司以直接促销其有关服务。我们需要取得您的书面同意方可作此转移。如果您同意此等的使用及转移，请勾选以下方格。
+                      </p>
+                      <div class="show-sm" style="height:.5rem;"></div>
+              <div class="row check-law">
+                  <div class="form-check">
+                      <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input vmiddle" value=""><span>我同意根据上述条款使用及转移我的个人资料</span>
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input vmiddle"
+                                 value=""><span>本人确认本人年满18岁或以上。在本人按下“立即注册”键后，本人声明本人已阅读、明白及同意接受<a href="###">「星梦荟」的条款及细则</a>之约束。</span>
+</label>
+                  </div>
+              </div>
+          </form>
+                      <div class="show-sm" style="height:.5rem;"></div>
+                      <div class=" more">
+                          <div class="contaner">
+                              <p class="sub-description">
+                                  欲了解更多有关我们如何使用您的个人资料及您所享有的权利的信息，请查阅上载于星梦官网之“<a href="###">私隐政策表明</a>”。
+</p>
+                          </div>
+                          <div class="row"><button class="btn submit">立即注册</button></div>
+                      </div>
       </section>
-      <div class=" more">
-        <form action="" class="container">
-          <div class="contaner">
-            <p class="description">
-              如欲了解更多有关我们如何使用您的个人资料及您所享有的权利的信息，请查阅上载于<a href="###">www.dreamcruiseline.com</a>之“私隐政策表明”。
-            </p>
-            <p class="sub-description">
-              *零售业务包括在海上及陆上度假地、实体、网上和其他相关零售店铺推广销售的各类产品，如服装、包装、鞋子、美容产品、珠宝首饰、钟表、皮革制品、电子产品、装饰品、纪念品、艺术品、厨房用品、玩具、文具、药物、消耗用品（例如酒精饮料及非酒精饮料、食品、健康食品和烟草等）、汽车及汽车相关产品和高端消费品。此名单并非完整名单，且产品种类将不时变更。
-            </p>
-          </div>
-          <div class="row"><button class="btn submit">立即注册</button></div>
-        </form>
-      </div>
+      
     </div>
   </div>
+    <div class="hidden-sm" style="height:50px;"></div>
+
   #include('../../common/footer.html')
   #include('../../common/sm_footer_button.html')
 

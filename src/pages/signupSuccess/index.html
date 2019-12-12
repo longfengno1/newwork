@@ -1,96 +1,161 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 
 <head>
   <meta charset="UTF-8">
-  <title>登录</title>
+  <title>星梦荟会员注册成功</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 375);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+
+  </script>
 </head>
 
 <body>
-  <div id="header" class="header-bar">
-    <div class="wraper">
-      <a class="logo-icon inblock" href="###">星梦邮轮</a>
-      <div class="header-bar-inner">
-        <div class="search-input-box fl">
-          <label class="icon-search" for="search-input">
-            <div class="step"></div>
-          </label>
-          <div class="search-input">
-            <input type="text" class="int-txt" id="search-input" />
-          </div>
-          <div class="icon-close"></div>
-        </div>
-        <div class="message-box fl">
-          <div class="icon-info"></div>
-          <div class="up-total-cur">99</div>
-        </div>
-        <div class="tel-box fl">
-          <div class="tel-box-txt"><i class="icon_tel inblock"></i>
-            <span class="fz24">4008 499 848</span>
-          </div>
-        </div>
-        <div class="login-box fr">
-          <div class="btn-login"><i class="icon_login"></i>注册/登陆</div>
-        </div>
-      </div>
-      <div id="navbar">
-        <ul class="navbar-menu">
-          <li>
-            <a href="###">计划行程</a>
-          </li>
-          <li>
-            <a href="###">优惠及特色活动</a>
-          </li>
-          <li>
-            <a href="###">星梦船队</a>
-          </li>
-          <li>
-            <a href="###">邮轮生活</a>
-          </li>
-          <li>
-            <a href="###">游记攻略</a>
-          </li>
-          <li>
-            <a href="###">航程管理</a>
-          </li>
-          <li>
-            <a href="###">客户服务</a>
-          </li>
-          <li>
-            <a href="###">星梦荟</a>
-          </li>
-        </ul>
-      </div>
+    #include('../../common/header.html')
+
+  <div id="main" class="fleetintro ">
+
+    <div class="topbannerB hidden-sm">
+      <img src="../../images/login_bg.jpg" />
     </div>
-  </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sign-content popup-in-content">
+                        <section class="signup">
+                            <div style="width: 100%;height:50px;margin-top:30px;text-align:center;" class="show-sm">
+                                <img src="../../images/logo_sc2.png" />
+                            </div>
+                            <div class="header hidden-sm">
+                                <span class="title">星梦荟会员注册成功</span>
+                            </div>
+                            <div class="content">
+                                <div class="success">
+                                    <span class="success-text">恭喜您成功注册成为「星梦荟」会员！</span>
+                                </div>
+                                <div class="tip-container">
+                                    <div class="tips">
+                                        <p>会员号码<a class="hot-item" href="###">3000813344</a></p>
+                                        <p style="margin-top: 10px;">每一晚符合资格住宿和邮轮上符合资格消费都可累积梦积分，让您体验一系列丰厚的会员礼遇。</p>
+                                    </div>
+                                </div>
+                                <div class="buttons clearfloat">
+                                    <button type="button" class="btn btn-signup">浏览热门航线</button>
 
-  <div id="main" class="main custom-main">
-    <section class="signup">
-      <div class="container">
-        <div class="header">
-          <span class="title">注册星梦荟会员</span>
-        </div>
-        <div class="content">
-          <div class="success">
-            <span class="success-text">恭喜您注册成功，欢迎加入星梦邮轮！</span>
-          </div>
-          <div class="tip-container">
-            <div class="tips">
-              <p>浏览热门<a class="hot-item" href="###">邮轮航线</a></p>
-              <p style="margin-top: 30px;">关联星梦会员号，获取更多会员权益。</p>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="buttons clearfloat">
-            <button type="button" class="btn btn-signup">立即注册</button><button type="button" class="btn btn-later">以后再说</button>
-          </div>
         </div>
-      </div>
-    </section>
   </div>
+  
+  <div style="height:100px;" class="hidden-sm"></div>
+  <div class="show-sm sm-food hidden-sm">
+      <script>document.getElementById('title_name').textContent = '星梦荟会员注册成功';</script>
+      <div class="">
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="sign-content popup-in-content">
+                      <div class="popup-in-txt">
+                          <div style="width: 100%;text-align: center;">
+                              <img style="width:4.6rem" src="../../images/login_logo.png" />
+                          </div>
+                          <div class="row signin-type">
 
+                              <h2 class="col-sm-6">
+                                  <span id='signin-tab-mobile'
+                                        class="signin-type-tab current"></span>
+                              </h2>
 
+                          </div>
+                          <div id='signin-mobile'>
+                              <div class="signin-form">
+                                  <form>
+                                      <div class="form-group row">
+                                          <div style="position: absolute;font-size: .8rem;padding: .6rem .2rem .4rem .2rem;color: #202e42;border: 1px solid #b0b9c7;border-radius: 5px;">+86</div>
+                                          <input type="text" class="form-control" id="signin_form" style="padding: 0 0 0 2.1rem;" placeholder="请输入您的手机号">
+                                      </div>
+                                      <div class="form-group row">
+                                          <input type="text" class="form-control col-sm-8" id="signin_form"
+                                                 placeholder="请输入验证码" style="width: 60%;">
+                                          <a class="vaildate-code col-sm-4" style="width: 40%;" href="###">获取验证码</a>
+                                      </div>
+                                      <div class="form-group row">
+                                          <input type="text" class="form-control col-sm-8" id="signin_form"
+                                                 placeholder="请输入验证码" style="width: 60%;">
+                                          <img style="width: 40%;" class="col-sm-4" src="../../images/vaildate-code.png"></img>
+                                      </div>
+                                  </form>
+                              </div>
+                              <!-- <div class="awesome-checkbox-list"> -->
+                              <div class="form-group form-check awesome-checkbox-list">
+                                  <input type="checkbox" class="" id="styled-checkbox-2">
+                                  <label for="styled-checkbox-2">
+                                      同意<a href="###">《帐号服务条款》</a>和<a href="###">《隐私政策》</a>
+                                  </label>
+                              </div>
 
+                              <!-- </div> -->
+                              <div class="txt-center">
+                                  <button type="button" class="btn signin_btn">
+                                      登录/注册
+                                  </button>
+                              </div>
+                          </div>
+                          <div id="signin-wx" style="display:none;">
+                              <img class="qr-code" src="../../images/qr-code.png" />
+                              <div class="tip-container">
+                                  <span class="tip">请使用微信扫描二维码登录“星梦邮轮”</span>
+                              </div>
+                          </div>
+                          <div style="    width: 100%;
+    text-align: center;
+    padding: 2rem 0 .5rem 0;">微信登录</div>
+                          <div style="width: 100%;text-align: center;">
+                              <img style="width:1.5rem" src="../../images/login_wx.png" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
+  </div>
+  
 </body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+  $(".topbanner_plane .ship .btn-icon").click(function () {
+    $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+    $(this).addClass("artive");
+    return false;
+  })
+  $(".topbanner_plane").click(function () {
+    $(".topbanner_plane .ship .btn-icon").removeClass("artive");
+  })
+
+</script>
 
 </html>
