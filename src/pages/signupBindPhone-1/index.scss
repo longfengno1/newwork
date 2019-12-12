@@ -1026,7 +1026,7 @@
 }
 
 .ipt-86 {
-	width: 85px;
+	width: 82px;
 	border-bottom-left-radius: 5px;
 	border-top-left-radius: 5px;
 	background-color: #f8f8f8;
@@ -1036,7 +1036,7 @@
 }
 
 .ipt-phone {
-	width: 72%;
+	width: 70%;
 	border-left: 0px !important;
 	border-top-left-radius: 0px !important;
 	border-bottom-left-radius: 0px !important;
@@ -1103,11 +1103,11 @@
 				text-decoration: underline;
 				font-size: 0.6rem;
 				color: #00969E;
-				width: 4.5rem;
+				width: 5.5rem;
 			}
 
 			.ipt-code {
-				width: 9rem;
+				width: 8rem;
 			}
 
 			img {
@@ -1228,5 +1228,21 @@
 				}
 			}
 		}
+	}
+	.ipt-86 {
+		width: 164rem/$fit;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+		background-color: #f8f8f8;
+		border: 1px solid #b0b9c7;
+		border-right: 0px;
+		padding: 0 0 0 10px !important;
+	}
+
+	.ipt-phone {
+		width: 65%;
+		border-left: 0px !important;
+		border-top-left-radius: 0px !important;
+		border-bottom-left-radius: 0px !important;
 	}
 }

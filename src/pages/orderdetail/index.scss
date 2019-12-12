@@ -403,7 +403,7 @@ body {
             }
 
             h3 {
-                display: none;
+                /*display: none;*/
             }
         }
 
@@ -654,13 +654,35 @@ body {
             border-radius: 15px;
 
             .router {
-                font-size: 1rem;
+                font-size: .8rem;
                 font-weight: 500;
                 color: #06929A;
             }
 
             .time {
                 font-weight: 500;
+                font-size: .7rem;
+            }
+        }
+
+        .order-info {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+            h3 {
+                padding: 10rem/$fit 0;
+                font-size: 32rem/$fit;
+                color: #06929A;
+                margin-left: 10rem/$fit;
+                font-weight: 500;
+            }
+
+            .item {
+                width: 100%;
+                font-size: 28rem/$fit;
+                color: #6D6D6D;
+                margin-bottom: 20rem/$fit;
+                margin-left: 10rem/$fit;
             }
         }
     }

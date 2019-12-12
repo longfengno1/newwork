@@ -428,7 +428,7 @@
     }
 
     .ipt-86 {
-        width: 3.2rem;
+        width: 164rem/$fit;
         height: 1.5rem;
         border-bottom-left-radius: 5px;
         border-top-left-radius: 5px;
@@ -436,10 +436,11 @@
         border: 1px solid #b0b9c7;
         border-right: 0px;
         padding: 0 0 0 10px !important;
+        font-size:24rem/$fit;
     }
 
     .ipt-phone {
-        width: 45% !important;
+        width: 40% !important;
         border-left: 0px !important;
         border-top-left-radius: 0px !important;
         border-bottom-left-radius: 0px !important;

@@ -660,7 +660,7 @@
 	padding: 0 0 0 10px !important;
 }
 .ipt-phone {
-	width: 72%;
+	width: 70%;
 	border-left: 0px !important;
 	border-top-left-radius: 0px !important;
 	border-bottom-left-radius: 0px !important;
@@ -1104,5 +1104,22 @@
 	.styled-checkbox-2 {
 		font-size: 24rem/$fit;
 		margin-bottom: 0rem;
+	}
+
+	.ipt-86 {
+		width: 164rem/$fit;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+		background-color: #f8f8f8;
+		border: 1px solid #b0b9c7;
+		border-right: 0px;
+		padding: 0 0 0 10px !important;
+	}
+
+	.ipt-phone {
+		width: 65%;
+		border-left: 0px !important;
+		border-top-left-radius: 0px !important;
+		border-bottom-left-radius: 0px !important;
 	}
 }

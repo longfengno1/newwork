@@ -7,7 +7,98 @@
     }
 
     .my-order {
-        display: none !important;
+        padding: 0 0 0 0;
+        width: 100vw;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 88rem/$fit;
+
+        .right-container {
+            width: 100%;
+        }
+
+        .left-container {
+            width: 0;
+            margin-right: 0;
+        }
+
+        .order-list-wrap {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 20rem/$fit 40rem/$fit;
+        }
+
+        .order-list-wrap .title {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #00969E;
+        }
+
+        .order-list-wrap .content {
+            font-size: 0.5rem;
+            color: #6D6D6D;
+            line-height: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .sign {
+            float: right;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: auto;
+            height: auto;
+
+            .name,
+            .time {
+                font-size: 20rem/$fit;
+                color: #00969E;
+                line-height: 40rem/$fit;
+                margin-top: 0;
+            }
+
+
+            &::after {
+                content: ' ';
+                position: absolute;
+                top: 0;
+                left: 0;
+                /*background: url(../../images/navbar-select.png) no-repeat center;*/
+                background-size: contain;
+                width: 93rem/$fit;
+                height: 91rem/$fit;
+                opacity: 0.2;
+            }
+        }
+
+        .desc {
+            font-size: 20rem/$fit;
+            color: #999999;
+            text-align: right;
+            margin-top: 10rem/$fit;
+            border-bottom: 1px solid #00969E;
+            padding-bottom: 6rem/$fit;
+            margin-bottom: 13rem/$fit;
+
+            .icon-view {
+                margin-right: 20rem/$fit;
+            }
+        }
+
+        .sign-row {
+            margin-bottom: 93em/$fit;
+            margin-top: 50rem/$fit;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            margin-bottom: 14rem/$fit;
+        }
     }
 
     .my-order-header {
@@ -33,77 +124,3 @@
     }
 }
 
-.my-order-sm {
-    width: 100vw;
-    margin-top: 88rem/$fit;
-    padding: 26rem/$fit 32rem/$fit;
-    .title{
-        text-align: center;
-        font-size: 28rem/$fit;
-        color: #00969E;
-    }
-    .desc{
-        font-size: 20rem/$fit;
-        color: #999999;
-        text-align: right;
-        margin-top: 10rem/$fit;
-        border-bottom: 1px solid #00969E;
-        padding-bottom: 6rem/$fit;
-        margin-bottom: 13rem/$fit;
-        .icon-view{
-            margin-right: 20rem/$fit;
-        }
-    }
-    .content{
-        font-size: 20rem/$fit;
-        color: #6D6D6D;
-        line-height: 40rem/$fit;
-        margin-bottom:20rem/$fit;
-    }
-    img{
-        width: 100%;
-        margin-bottom: 14rem/$fit;
-    }
-    .content-bottom{
-        font-size: 20rem/$fit;
-        color: #6D6D6D;
-        line-height: 40prem/$fit;
-    }
-
-    .sign-row {
-        margin-bottom: 93em/$fit;
-        margin-top: 50rem/$fit;
-        overflow: hidden;
-    }
-
-    .sign {
-        float: right;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
-        .name,
-        .time {
-            font-size: 20rem/$fit;
-            color: #00969E;
-            line-height: 40rem/$fit;
-            font-weight: 300;
-        }
-
-
-        &::after {
-            content: ' ';
-            position: absolute;
-            top: 0;
-            left: 0;
-            /*background: url(../../images/navbar-select.png) no-repeat center;*/
-            background-size: contain;
-            width: 93rem/$fit;
-            height: 91rem/$fit;
-            opacity: 0.2;
-        }
-
-    }
-}
