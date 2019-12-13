@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\common",
+    "\\src\\css",
+    "\\src\\js",
     "\\src\\pages",
-    "\\src\\pages\\booking2",
-    "\\src\\pages\\booking3",
     "\\src\\pages\\booking4",
     "\\src\\pages\\booking5",
-    "\\src\\pages\\booking6"
+    "\\src\\pages\\booking6",
+    "\\src\\pages\\signup"
   ],
-  "SelectedNode": "\\src\\pages\\mynoticeDetail",
+  "SelectedNode": "\\src\\pages\\booking2\\index.js",
   "PreviewInSolutionExplorer": false
 }
