@@ -2,15 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\common",
     "\\src\\pages",
-    "\\src\\pages\\booking6",
-    "\\src\\pages\\login",
-    "\\src\\pages\\signupAutoBind",
-    "\\src\\pages\\signupBindPhone-2",
-    "\\src\\pages\\signupBindUser",
-    "\\src\\pages\\signupFaild",
-    "\\src\\pages\\signupSuccess"
+    "\\src\\pages\\booking2",
+    "\\src\\pages\\booking3",
+    "\\src\\pages\\booking4",
+    "\\src\\pages\\booking5",
+    "\\src\\pages\\booking6"
   ],
-  "SelectedNode": "\\src\\pages\\booking6\\sm-index.scss",
+  "SelectedNode": "\\src\\pages\\mynoticeDetail",
   "PreviewInSolutionExplorer": false
 }

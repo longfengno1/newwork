@@ -1,6 +1,5 @@
 @import '../../css/variables.scss';
 @import '../../css/navbar.scss';
-@import './sm-index.scss';
 
 body {
     background-color: #f7fcfc;
@@ -162,3 +161,4 @@ body {
     }
 
 }
+@import './sm-index.scss';

@@ -1,6 +1,5 @@
 @import '../../css/variables.scss';
 @import './checkInfo.scss';
-@import './sm-index.scss';
 
 .order-main {
   min-height: 100vh;
@@ -167,3 +166,5 @@
     box-sizing: content-box;
   }
 }
+
+@import './sm-index.scss';

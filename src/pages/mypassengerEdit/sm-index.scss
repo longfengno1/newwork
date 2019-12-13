@@ -6,8 +6,124 @@
         font-family: Helvetica;
     }
 
-    .my-order{
+    .my-order {
         display: none !important;
+        width: 100vw;
+        margin-top: 88rem/$fit;
+
+        .right-container {
+            width: 100%;
+        }
+
+        .left-container {
+            width: 0;
+            margin-right: 0;
+        }
+
+        .edit-form {
+            width: 100%;
+            background-color: #ffffff;
+            padding: 32rem/$fit 32rem/$fit;
+
+            label {
+                margin: 0;
+                margin-right: 10rem/$fit;
+                font-size: 24rem/$fit;
+                color: #666666;
+
+                span {
+                    color: red;
+                }
+            }
+
+            .input-row {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20rem/$fit;
+
+                span {
+                    font-size: 24rem/$fit;
+                    color: #343E57;
+                }
+
+                label {
+                    margin: 0;
+                    width: 4rem;
+                    font-size: 0.6rem;
+                    color: #666666;
+                    text-align: left;
+                }
+            }
+
+            .input-text {
+                height: 60rem/$fit;
+                line-height: 60rem/$fit;
+                background: #FFFFFF;
+                border: 1px solid #D0D7DF;
+                border-radius: 5em/$fit;
+                font-size: 24rem/$fit;
+                color: #343E57;
+                padding-left: 20rem/$fit;
+            }
+
+            .long {
+                width: 530rem/$fit;
+            }
+
+            .short {
+                width: 260rem/$fit;
+            }
+
+            .radio {
+                margin-right: 8rem/$fit;
+            }
+
+            .mr10 {
+                margin-right: 10rem/$fit;
+            }
+
+            .mr102 {
+                margin-right: 102rem/$fit;
+            }
+
+            .mr45 {
+                margin-right: 45rem/$fit;
+            }
+
+            .checkbox {
+                margin-right: 12rem/$fit;
+            }
+
+            .btns {
+                text-align: right;
+                margin-top: 18rem/$fit;
+                margin-bottom: 16rem/$fit;
+            }
+
+            .cancel,
+            .save {
+                width: 128rem/$fit;
+                height: 60rem/$fit;
+                display: inline-block;
+                font-size: 24rem/$fit;
+                text-align: center;
+                line-height: 35rem/$fit;
+                cursor: pointer;
+            }
+
+            .cancel {
+                color: #343E57;
+                border: 1px solid #D0D7DF;
+                background-color: #ffffff;
+                margin-right: 20rem/$fit;
+            }
+
+            .save {
+                color: #ffffff;
+                border: 1px solid #00969E;
+                background-color: #00969E;
+            }
+        }
     }
 
     .my-order-header {

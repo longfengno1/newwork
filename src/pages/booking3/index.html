@@ -240,7 +240,7 @@
               <div class="room-info">
                 <p>房间2:海景客房</p>
                 <p><span>乘客1</span><span >¥3999</span></p>
-                <p><span>乘客2</span><span >—</span></p>
+                <p><span>乘客2</span><span >-</span></p>
                 <p><span>港务费</span><span>¥300×2</span></p>
               </div>
               <div class="room-count">
@@ -334,28 +334,28 @@
               <div class="order-from-items">
                 <div class="order-item"><span class="name">周凯琪</span>
                   <div class="num-select">
-                    <span class="minus">—</span>
+                    <span class="minus">-</span>
                     <span class="num">1</span>
                     <span class="plus">+</span>
                   </div>
                 </div>
                 <div class="order-item"><span class="name">周凯琪</span>
                   <div class="num-select">
-                    <span class="minus">—</span>
+                    <span class="minus">-</span>
                     <span class="num">1</span>
                     <span class="plus">+</span>
                   </div>
                 </div>
                 <div class="order-item"><span class="name">周凯琪</span>
                   <div class="num-select">
-                    <span class="minus">—</span>
+                    <span class="minus">-</span>
                     <span class="num">1</span>
                     <span class="plus">+</span>
                   </div>
                 </div>
                 <div class="order-item"><span class="name">周凯琪</span>
                   <div class="num-select">
-                    <span class="minus">—</span>
+                    <span class="minus">-</span>
                     <span class="num">1</span>
                     <span class="plus">+</span>
                   </div>
@@ -365,28 +365,28 @@
               <div class="order-from-items">
                 <div class="order-item"><span class="name">周凯琪</span>
                   <div class="num-select">
-                    <span class="minus">—</span>
+                    <span class="minus">-</span>
                     <span class="num">1</span>
                     <span class="plus">+</span>
                   </div>
                 </div>
                 <div class="order-item"><span class="name">周凯琪</span>
                   <div class="num-select">
-                    <span class="minus">—</span>
+                    <span class="minus">-</span>
                     <span class="num">1</span>
                     <span class="plus">+</span>
                   </div>
                 </div>
                 <div class="order-item"><span class="name">周凯琪</span>
                   <div class="num-select">
-                    <span class="minus">—</span>
+                    <span class="minus">-</span>
                     <span class="num">1</span>
                     <span class="plus">+</span>
                   </div>
                 </div>
                 <div class="order-item"><span class="name">周凯琪</span>
                   <div class="num-select">
-                    <span class="minus">—</span>
+                    <span class="minus">-</span>
                     <span class="num">1</span>
                     <span class="plus">+</span>
                   </div>
@@ -409,7 +409,7 @@
                 </div>
               </div>
             </div>
-            <span class="tip">*特惠套餐三选二，请至少选择两项服务</span>
+            <span class="tip hidden-sm show-sm">*特惠套餐三选二，请至少选择两项服务</span>
           </div>
         </div>
          <h3>特惠套餐及增值服务</h3>
@@ -563,8 +563,8 @@
           </div>
           <div class="fill-row">
               <label for="">性别：</label>
-              <div class="radio"><input type="radio" class="sex">男</div>
-              <div class="radio"><input type="radio" class="sex">女</div>
+              <div class="radio"><input type="radio" class="sex" name="sex">男</div>
+              <div class="radio"><input type="radio" class="sex" name="sex">女</div>
           </div>
           <div class="fill-row">
               <label for="">手机号码：</label><input type="text" class="country" placeholder="中国大陆手机号码">
@@ -614,7 +614,9 @@
               <label for="">证件有效期：</label><input type="text" class="country">
           </div>
           <div class="check-row">
-              <input type="checkbox">设为常用乘客
+              <label class="vmiddle">
+                  <input type="checkbox" class="vmiddle"><span class="vmiddle">设为常用乘客</span>
+              </label>
           </div>
           <div class="btns">
               <button type="button" class="submit">提交</button><button type="button" class="cancel">取消</button>
@@ -630,7 +632,7 @@
       <div class="split"></div>
       <div class="quan">
           <h3>选择优惠券</h3>
-          <h5>现金抵用券</h5>
+          <h5><span class="icon-free mr10"></span>现金抵用券</h5>
           <div class="check-row">
               <input type="checkbox">800元抵用券
           </div>
@@ -641,7 +643,7 @@
               <input type="checkbox">500元抵用券
           </div>
           <p class="desc">适用出发日期为9月1日至12月29日。优惠房间数量有限，先到先得，订完即止。港务费、小费、岸上观光等个人费用不免费、不打折。</p>
-          <h5 class="coupon">优惠券</h5>
+          <h5 class="coupon"><span class="icon-price mr10"></span>优惠券</h5>
           <div class="check-row">
               <input type="checkbox">幸运大抽奖-300元电子优惠券
           </div>
@@ -713,7 +715,7 @@
                       <button type="button" class="order-btn">立即预订</button>
                   </div>
               </div>
-              <div class="tip">
+              <div class="tip  hidden-sm show-sm">
                   *特惠套餐三选二，请至少选择两项服务
               </div>
           </div>

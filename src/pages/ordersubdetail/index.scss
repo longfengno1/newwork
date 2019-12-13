@@ -392,9 +392,14 @@ body {
 
                 h5 {
                     display: block;
-                    font-size: 28rem/$fit;
                     color: #383838;
                     margin-bottom: 32rem/$fit;
+                    padding: 10rem/$fit 0;
+                    font-size: 40rem/$fit;
+                    color: #06929A;
+                    margin-left: 10rem/$fit;
+                    margin-bottom: 10rem/$fit;
+                    font-weight: 600;
                 }
 
                 h5.title {
@@ -523,7 +528,7 @@ body {
 
             .product-title {
                 font-weight: 500;
-                font-size: 24rem/$fit;
+                font-size: 28rem/$fit;
                 color: #383838;
                 line-height: 34rem/$fit;
             }
@@ -552,7 +557,7 @@ body {
             }
 
             .product-price {
-                font-size: 24rem/$fit;
+                font-size: 28rem/$fit;
                 color: #F8485E;
             }
 
@@ -577,7 +582,7 @@ body {
                 }
 
                 .all-price-num {
-                    font-size: 34rem/$fit;
+                    font-size: 32rem/$fit;
                     color: #343E57;
                 }
             }
@@ -636,5 +641,66 @@ body {
             }
         }
     }
-    
+    .sm-top-panel {
+        background: url(../../images/orderbg-m.jpg) center top no-repeat;
+
+        .status {
+            padding: .5rem 1rem .5rem 1rem;
+            font-size: 1.5rem;
+            color: #fff;
+
+            p {
+                font-size: 28rem/$fit;
+            }
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .trip-info {
+            margin: .5rem .5rem .5rem .5rem;
+            width: 95% !important;
+            border-radius: 15px;
+
+            .router {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #06929A;
+            }
+
+            .time {
+                font-weight: 500;
+                font-size: .7rem;
+            }
+        }
+
+        .order-info {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+
+            h3 {
+                padding: 10rem/$fit 0;
+                font-size: 40rem/$fit;
+                color: #06929A;
+                margin-left: 10rem/$fit;
+                margin-bottom: 10rem/$fit;
+                font-weight: 600;
+            }
+
+            .item {
+                width: 100%;
+                font-size: 28rem/$fit;
+                color: #6D6D6D;
+                margin-bottom: 20rem/$fit;
+                margin-left: 10rem/$fit;
+            }
+
+            .infos {
+                width: 100%;
+                background-color: #f8f8f8;
+                padding: 0.5rem;
+            }
+        }
+    }
 }

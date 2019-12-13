@@ -1,6 +1,5 @@
 @import '../../css/variables.scss';
 @import './payType.scss';
-@import './sm-index.scss';
 
 
 .order-main {
@@ -168,3 +167,5 @@
     box-sizing: content-box;
   }
 }
+
+@import './sm-index.scss';

@@ -6,8 +6,196 @@
         font-family: Helvetica;
     }
 
-    .my-order{
-        display: none !important;
+    .my-order {
+        width: 100vw;
+        margin-top: 88rem/$fit;
+
+        .right-container {
+            width: 100%;
+        }
+
+        .left-container {
+            width: 0;
+            margin-right: 0;
+        }
+
+        .order-list {
+            width: 100%;
+            background-color: #ffffff;
+            table-layout: fixed;
+
+            thead {
+                background-color: #00969E;
+                color: #ffffff;
+                height: 40rem/$fit;
+                line-height: 40rem/$fit;
+                font-size: 24rem/$fit;
+            }
+
+            tr {
+
+                th,
+                td {
+                    /*width: 1px;
+                    white-space: nowrap;
+                    word-break: keep-all;*/
+                    margin-top:.25rem;
+                    display: block;
+                    padding-left: 40rem/$fit;
+
+                    span {
+                        display: inline-flex;
+                    }
+                }
+            }
+
+            .operation {
+                text-align: center;
+                width: 230rem/$fit;
+            }
+
+            tbody {
+                font-size: 24rem/$fit;
+                color: #343E57;
+
+                tr {
+                    border-top: 4px solid #f7fcfc;
+                    height: 96rem/$fit;
+                }
+            }
+
+            .order-num {
+                color: #00969E;
+            }
+
+            .order-content p {
+                margin-bottom: 24rem/$fit;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .paied {
+                color: #b27ec3;
+            }
+
+            .to-pay {
+                color: #F8485E;
+            }
+
+            .cancel {
+                color: #788995;
+            }
+
+            .order-operation {
+                text-align: right;
+
+                .operations {
+                    display: inline-flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding-right: 30rem/$fit;
+                }
+
+                a {
+                    margin-right: 23rem/$fit;
+                    color: #00969E;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                .common {
+                    color: #A05EB5;
+                }
+
+                .pay {
+                    padding: 3px 6px;
+                    background-color: #00969E;
+                    border-radius: 2px;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .order-card {
+            width: 100vw;
+            height: 310rem/$fit;
+            padding: 32rem/$fit;
+            background-color: #ffffff;
+            margin-bottom: 24rem/$fit;
+
+            .title {
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                margin-bottom: 8rem/$fit;
+            }
+
+            .line {
+                font-size: 30rem/$fit;
+                color: #383838;
+            }
+
+            .num {
+                font-size: 24rem/$fit;
+                color: #00969E;
+                margin-left: 20rem/$fit;
+            }
+
+
+            .desc {
+                font-size: 24rem/$fit;
+                color: #6D6D6D;
+                line-height: 40rem/$fit;
+            }
+
+
+            .operation {
+                display: inline-block;
+                height: 54rem/$fit;
+                line-height: 54rem/$fit;
+                width: 148rem/$fit;
+                border-radius: 27rem/$fit;
+                border: 1px solid #E0E0E0;
+                font-size: 24rem/$fit;
+                color: #6D6D6D;
+                text-align: center;
+                margin-right: 24rem/$fit;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .operations {
+                text-align: right;
+                margin-top: 24rem/$fit;
+
+                .pay {
+                    border-color: #00969E;
+                    color: #00969E;
+                }
+            }
+
+            .common {
+                width: 200rem/$fit;
+                border: 1px solid #00969E;
+                color: #00969E;
+                float: left;
+            }
+
+            .selected {
+                float: left;
+                color: #A05EB5;
+                border: none;
+                text-align: left;
+            }
+        }
     }
 
     .my-order-header {
@@ -39,78 +227,5 @@
     }
 }
 
-.my-order-sm {
-    width: 100vw;
-    margin-top: 88rem/$fit;
-   .order-card{
-       width: 100vw;
-       height: 310rem/$fit;
-       padding: 32rem/$fit;
-       background-color: #ffffff;
-       margin-bottom: 24rem/$fit;
-       .title{
-           display: flex;
-           align-items: center;
-           flex-wrap: nowrap;
-            margin-bottom: 8rem/$fit;
-       }
-       .line{
-           font-size: 30rem/$fit;
-           color: #383838;
-       }
-       .num{
-           font-size: 24rem/$fit;
-           color: #00969E;
-           margin-left: 20rem/$fit;
-       }
-       
 
-       .desc{
-           font-size: 24rem/$fit;
-           color: #6D6D6D;
-           line-height: 40rem/$fit;
-       }
-       
-
-       .operation{
-           display: inline-block;
-           height: 54rem/$fit;
-           line-height: 54rem/$fit;
-           width: 148rem/$fit;
-           border-radius: 27rem/$fit;
-           border: 1px solid #E0E0E0;
-           font-size: 24rem/$fit;
-           color: #6D6D6D;
-           text-align: center;
-           margin-right: 24rem/$fit;
-           &:last-child{
-               margin-right:0;
-           }
-       }
-
-       .operations {
-           text-align: right;
-            margin-top: 24rem/$fit;
-           .pay {
-               border-color: #00969E;
-               color: #00969E;
-           }
-       }
-
-       .common{
-           width: 200rem/$fit;
-           border: 1px solid #00969E;
-           color: #00969E;
-           float: left;
-       }
-
-       .selected{
-           float: left;
-           color: #A05EB5;
-           border: none;
-           text-align: left;
-       }
-   }
-  
-}
 

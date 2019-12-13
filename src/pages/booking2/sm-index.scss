@@ -117,6 +117,7 @@
     display: flex;
     padding: 0 32rem/$fit;
     justify-content: space-between;
+    position:inherit;
   }
 
   .m_tab .tab_item {
