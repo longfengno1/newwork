@@ -77,7 +77,9 @@ import './index.scss';
         }
 
     });
-    $(".next").click(function () { $(".login").show(); });
+    $(".next").click(function () {
+        $(".login").show();
+    });
 
     $(".detail").click(function () {
         $(".layerout1").show();

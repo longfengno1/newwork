@@ -40,4 +40,14 @@ import './index.scss';
 
   init();
 
+    $(".detail").click(function () {
+        $(".layerout1").show();
+    });
+    $(".layer .close").click(function () {
+        $(".mark").hide();
+    });
+    $(".more-btn").click(function () {
+        $(this).parent().find(".passport-info").toggle();
+    })
+
 })();
