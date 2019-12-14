@@ -24,8 +24,9 @@
 
         .right-container {
             width: 300px;
-
+            position: relative;
             .main {
+                width: 300px;
                 padding: 0 4px;
                 background-color: #fff;
             }
