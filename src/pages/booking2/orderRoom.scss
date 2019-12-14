@@ -18,13 +18,18 @@ dfn{
     letter-spacing: 1px;
     float: right;
 
-    a {
-      font-size: 14px;
-      color: #00969E;
-      letter-spacing: 1px;
-      text-decoration: underline;
+    .tip {
+        font-size: 14px;
+        color: #626262;
+        letter-spacing: 1px;
+
+        a {
+            font-size: 14px;
+            color: #00969E;
+            letter-spacing: 1px;
+            text-decoration: underline;
+        }
     }
-  }
 
   .main-content {
     overflow: hidden;
@@ -45,10 +50,6 @@ dfn{
       .main {
         padding: 0 4px;
         background-color: #fff;
-        width: 300px;
-      }
-    }
-  }
 
   .select-container {
     display: block;
@@ -61,23 +62,145 @@ dfn{
       float: left;
     }
 
-    .right {
-      display: inline-block;
-      width: 770px;
+    .select-container2 {
+        background-color: #fff;
+
+        h4 {
+            padding: 10px 20px 15px 20px;
+            font-size: 18px;
+            color: #343E57;
+        }
+
+        .people-row {
+            height: 90px;
+
+            .people-row-item {
+                height: 90px;
+                border: 1px solid #fff;
+                position: relative;
+                padding: 10px 45px 12px 10px;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.60);
+                    z-index: 1;
+                }
+
+                span {
+                    color: #fff;
+                    font-size: 20px;
+                    z-index: 1;
+                    display: block;
+                    line-height: 70px;
+                    width: 100%;
+                    text-align: center;
+                    padding-left: 35px;
+                }
+
+                em {
+                    position: absolute;
+                    color: #fff;
+                    bottom: 0;
+                    right: 1px;
+                    width: 18px;
+                    font-size: 14px;
+                    z-index: 3;
+                    text-align: center;
+                    font-style: normal;
+                }
+
+                &.active {
+                    &::before {
+                        background: rgba(0, 150, 158, 0.60);
+                        background-image: url(../../images/wlogo@2x.png);
+                        background-repeat: no-repeat;
+                        background-size: 26px;
+                        background-position: right 14px top 4px;
+                        z-index: 1;
+                    }
+
+                    span {
+                        border: 2px solid rgba(255, 255, 255, 0.5);
+                        border-radius: 2px 0 0 2px;
+                        border-right: 0;
+                        padding-left: 33px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 47px;
+                            width: 35px;
+                            border: 2px solid rgba(255, 255, 255, 0.5);
+                            border-width: 0 2px 2px 0;
+                            border-radius: 0 0 2px 0;
+                            bottom: 8px;
+                            right: 10px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    &::before {
+                        background: none;
+                        background-image: url(../../images/wlogo@2x.png);
+                        background-repeat: no-repeat;
+                        background-size: 26px;
+                        background-position: right 14px top 4px;
+                        z-index: 1;
+                    }
+
+                    span {
+                        border: 2px solid rgba(255, 255, 255, 0.5);
+                        border-radius: 2px 0 0 2px;
+                        border-right: 0;
+                        padding-left: 33px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 47px;
+                            width: 35px;
+                            border: 2px solid rgba(255, 255, 255, 0.5);
+                            border-width: 0 2px 2px 0;
+                            border-radius: 0 0 2px 0;
+                            bottom: 8px;
+                            right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .hasnum:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-right: 20px solid #F8485E;
+                border-left: 20px solid transparent;
+                border-bottom: 15px solid #F8485E;
+                border-top: 15px solid transparent;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+            }
+        }
     }
-  }
 
-  .select-container2 {
-    background-color: #fff;
-
-    h4 {
-      padding: 10px 20px 15px 20px;
-      font-size: 18px;
-      color: #343E57;
-    }
-
-    .people-row {
-      height: 90px;
+    .select-container3 {
+        background-color: #fff;
 
       .people-row-item {
         height: 90px;
@@ -181,58 +304,51 @@ dfn{
               bottom: -2px;
               right: -35px;
             }
-          }
+        }
+    }
+
+    .select-people {
+        height: 46px;
+        text-align: center;
+        font-size: 14px;
+        color: #383838;
+        line-height: 23px;
+        box-shadow: 0 1px 0 0 rgba(229, 229, 229, 0.50);
+    }
+
+    .select-room {
+        height: 86px;
+        font-size: 14px;
+        color: #383838;
+        text-align: center;
+        line-height: 86px;
+    }
+
+    .people-row-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        font-size: 16px;
+        color: #00969E;
+        background-color: #EFFAF9;
+        cursor: pointer;
+        border-right: 1px solid #fff;
+
+        &:first-child {
+            border-left: 1px solid #fff;
         }
 
-
-      }
-
-      .hasnum:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-right: 20px solid #F8485E;
-        border-left: 20px solid transparent;
-        border-bottom: 15px solid #F8485E;
-        border-top: 15px solid transparent;
-        bottom: 0;
-        right: 0;
-        z-index: 2;
-      }
+        span {
+            font-size: 12px;
+            color: #F8485E;
+        }
     }
 
-  }
-  .select-container3{
-    h4 {
-      padding: 10px 20px 15px 20px;
-      font-size: 18px;
-      color: #343E57;
-    }
-    .room-row{
-      background: #fff;
-      border: 0;
-      .room-row-item{
-        flex: 1;
-      }
-    }
-  }
-  .select-people {
-    height: 46px;
-    text-align: center;
-    font-size: 14px;
-    color: #383838;
-    line-height: 23px;
-    box-shadow: 0 1px 0 0 rgba(229, 229, 229, 0.50);
-  }
-
-  .select-room {
-    height: 86px;
-    font-size: 14px;
-    color: #383838;
-    text-align: center;
-    line-height: 86px;
-  }
+    .people-row {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 46px;
 
   .people-row-item {
     width: 25%;
@@ -247,28 +363,31 @@ dfn{
     cursor: pointer;
     border-right: 1px solid #fff;
 
-    &:first-child {
-      border-left: 1px solid #fff;
+            span {
+                color: #fff;
+            }
+        }
     }
 
-    span {
-      font-size: 12px;
-      color: #F8485E;
+    .room-row {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 6px;
     }
   }
 
   .people-row {
     height: 46px;
 
-    .active {
-      background-color: #00969E;
-      color:#fff;
-      border-bottom: 0;
-      span{
-        color: #fff;
-      }
+    .room-row-left,
+    .room-row-right {
+        width: 26px;
+        height: 80px;
+        cursor: pointer;
+        line-height: 80px;
+        font-size: 26px;
+        color: #00969E;
     }
-  }
 
   .room-row {
     display: table;
@@ -287,6 +406,9 @@ dfn{
     display:table-cell;
   }
 
+        &:last-child {
+            border-right: 0;
+        }
 
   .room-row-item {
     display: table-cell;
@@ -299,57 +421,46 @@ dfn{
     padding: 0 24px;
     border-right: 1px solid #f3f3f3;
 
-    &:last-child {
-      border-right: 0;
+        .price {
+            font-size: 13px;
+            margin-top: 8px;
+        }
     }
 
-    .tag {
-      position: absolute;
-      top: 0;
-      right: 0;
-      border-radius: 0 0 0 4px;
-      font-size: 12px;
-      color: #FFFFFF;
-      text-align: center;
-      height: 16px;
-      padding: 0 3px;
+    .item-name .active {
+        border-bottom: 3px solid #00969E;
     }
 
-    .price {
-      font-size: 13px;
-      margin-top: 8px;
+    .active {
+        color: #00969E;
     }
-  }
 
-  .item-name .active {
-    border-bottom: 3px solid #00969E;
-  }
+    .disable {
+        color: #999;
+    }
 
-  .active {
-    color: #00969E;
+    .sold-out {
+        background-color: #999;
+    }
 
-  }
+    .prime {
+        background-color: #FDD26E;
+    }
 
-  .disable {
-    color: #999;
-  }
+    .room-name {
+        font-size: 18px;
+        font-weight: 500;
+    }
 
-  .sold-out {
-    background-color: #999;
-  }
+    .rooms {
+        margin-top: 4px;
+    }
 
-  .prime {
-    background-color: #FDD26E;
-  }
-
-  .room-name {
-    font-size: 18px;
-    font-weight: 500;
-  }
-
-  .rooms {
-    margin-top: 10px;
-  }
+    .room-item {
+        display: flex;
+        padding: 15px 30px 15px 15px;
+        background-color: #fff;
+        margin-top: 4px;
 
   .room-item {
     display: block;
@@ -375,50 +486,62 @@ dfn{
       margin-left: 50px;
     }
 
-    .facility {
-      margin-top: 15px;
-      font-size: 14px;
-      color: #343E57;
+        .current {
+            font-size: 14px;
+            color: #F8485E;
+
+            span {
+                font-size: 30px;
+                color: #F8485E;
+            }
+        }
+
+        .old {
+            font-size: 14px;
+            color: #999999;
+            margin-left: 10px;
+
+            span {
+                text-decoration: line-through;
+            }
+        }
     }
 
-    .current {
-      font-size: 14px;
-      color: #F8485E;
+    .content-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
 
-      span {
-        font-size: 30px;
-        color: #F8485E;
-      }
+        .room-name {
+            font-size: 18px;
+            color: #343E57;
+        }
+
+        .detail {
+            font-size: 14px;
+            color: #00969E;
+            letter-spacing: 0.88px;
+            cursor: pointer;
+        }
     }
-
-    .old {
-      font-size: 14px;
-      color: #999999;
-      margin-left: 10px;
-
-      span {
-        text-decoration: line-through;
-      }
-    }
-  }
 
   .content-left {
     float: left;
     height: 100%;
     width: 400px;
 
-    .room-name {
-      font-size: 18px;
-      color: #343E57;
-    }
+        .order-num {
+            font-size: 14px;
+            color: #00969E;
+            letter-spacing: 0;
+            line-height: 28px;
 
-    .detail {
-      font-size: 14px;
-      color: #00969E;
-      letter-spacing: 0.88px;
-      cursor: pointer;
-    }
-  }
+            span {
+                color: #F8485E;
+            }
+        }
 
   .content-right {
     float: right;
@@ -430,50 +553,64 @@ dfn{
       letter-spacing: 0;
       line-height: 28px;
 
-      span {
-        color: #F8485E;
-      }
+        .minus,
+        .plus {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border-radius: 100%;
+            background-color: #fff;
+            color: #00969E;
+            font-size: 20px;
+            line-height: 20px;
+            cursor: pointer;
+            border: 1px solid #00969E;
+        }
     }
 
-    .num-select {
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between;
-      border: 1px solid #64CCC9;
-      border-radius: 2px;
-      padding: 1px;
-      width: 100px;
-      text-align: center;
+    .main {
+
+        div {
+            margin-bottom: 4px;
+        }
+
+        h3 {
+            height: 47px;
+            text-align: center;
+            font-size: 18px;
+            color: #343E57;
+            letter-spacing: 1.12px;
+        }
     }
 
-    .num {
-      display: inline-block;
-      font-size: 14px;
-      color: #343E57;
-      width: 32px;
-      height: 28px;
-      line-height: 28px;
+    .order-info {
+        p {
+            span {
+                margin-right: 10px;
+            }
+        }
+
+        .name {
+            color: #00969E;
+        }
     }
 
-    .minus,
-    .plus {
-      display: inline-block;
-      width: 28px;
-      height: 28px;
-      border-radius: 2px;
-      background-color: #00969E;
-      color: #fff;
-      font-size: 20px;
-      line-height: 28px;
-      cursor: pointer;
-    }
+    .room-info,
+    .order-info,
+    .room-count {
+        padding: 10px 16px;
+        background-color: #FBFBFB;
 
-  }
+        p {
+            font-size: 14px;
+            color: #383838;
+            letter-spacing: 0.88px;
+            margin-top: 10px;
 
-  .main {
-
-    div {
-      margin-bottom: 4px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
     }
 
     h3 {
@@ -487,36 +624,41 @@ dfn{
     }
   }
 
-  .order-info {
-    p {
-      span {
-        margin-right: 10px;
-      }
+        .detail,
+        .delete {
+            font-size: 12px;
+            color: #00969E;
+            letter-spacing: 0.75px;
+            cursor: pointer;
+        }
     }
 
-    .name {
-      color: #00969E;
-    }
-  }
-
-  .room-info,
-  .order-info,
-  .room-count {
-    padding: 10px 16px;
-    background-color: #FBFBFB;
-
-    p {
-      font-size: 14px;
-      color: #383838;
-      letter-spacing: 0.88px;
-      margin-top: 10px;
-
-      &:first-child {
-        margin-top: 0;
-      }
+    .room-count {
+        background-color: #EFFAF9;
     }
 
-  }
+    .btns {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .pre,
+        .next {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pre {
+            flex-shrink: 0;
+            font-size: 16px;
+            background: #FFFFFF;
+            color: #00969E;
+            border: 1px solid #D0D7DF;
+            border-radius: 4px;
+            width: 92px;
+            height: 54px;
+            margin-right: 4px;
+        }
 
   .room-info,
   .room-count {
@@ -526,18 +668,14 @@ dfn{
       justify-content: space-between;
     }
 
-    .detail,
-    .delete {
-      font-size: 12px;
-      color: #00969E;
-      letter-spacing: 0.75px;
-      cursor: pointer;
+    .price-desc {
+        padding: 10px 20px;
     }
-  }
 
-  .room-count {
-    background-color: #EFFAF9;
-  }
+    .iconblue {
+        font-size: 16px;
+        color: #00969E;
+    }
 
   .btns {
     display: table;
@@ -572,7 +710,6 @@ dfn{
       border-radius: 4px;
       color: #fff;
     }
-  }
 }
 .mark{
   position: fixed;
