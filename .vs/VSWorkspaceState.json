@@ -5,9 +5,11 @@
     "\\src\\pages",
     "\\src\\pages\\booking2",
     "\\src\\pages\\booking3",
+    "\\src\\pages\\booking5",
+    "\\src\\pages\\booking6",
     "\\src\\pages\\signup",
     "\\src\\pages\\signupBindUser"
   ],
-  "SelectedNode": "\\src\\pages\\booking2\\orderRoom.scss",
+  "SelectedNode": "\\src\\pages\\booking6\\index.html",
   "PreviewInSolutionExplorer": false
 }

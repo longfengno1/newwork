@@ -140,11 +140,12 @@
     .step {
         padding: 0 32rem/$fit;
         margin-top: 24rem/$fit;
+        margin-bottom: 24rem/$fit;
         display: flex;
         justify-content: space-between;
 
         .step-item {
-            width: 188rem/$fit;
+            width: 260rem/$fit;
             height: 50rem/$fit;
             margin-left: 5rem/$fit;
             text-align: center;
