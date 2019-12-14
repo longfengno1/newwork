@@ -508,6 +508,7 @@
                 padding-left: 25px;
                 display: flex;
                 flex-direction: column;
+                min-width: 578px;
 
                 .right-title {
                     font-size: 16px;
@@ -524,7 +525,7 @@
                         flex: 1;
                         font-size: 14px;
                         color: #666666;
-                        padding-right: 105px;
+                        padding-right: 10px;
                     }
 
                     .price-row {
@@ -570,6 +571,19 @@
                             text-decoration-line: line-through;
                         }
                     }
+
+                    .wifi-example {
+                        font-size: 12px;
+                        color: #999999;
+                        margin-top: 4px;
+                        margin-bottom: 4px;
+
+                        span {
+                            font-size: 12px;
+                            color: #999999;
+                            text-decoration-line: line-through;
+                        }
+                    }
                 }
             }
         }
@@ -601,16 +615,17 @@
 
         .card-image {
             width: 200px;
-            height: 130px;
-            border-radius:5px;
+            /*height: 130px;*/
+            border-radius: 5px;
         }
 
         .card-image-bg {
             flex-shrink: 0;
             position: relative;
             width: 200px;
-            height: 130px;
-            background: url(../../images/overlay-img1.png) no-repeat center;
+            /*height: 130px;*/
+            background: url(../../images/17.png) no-repeat center;
+            border-radius: 5px;           
 
             .icon-fillsreen {
                 font-size: 20px;
@@ -620,11 +635,18 @@
                 color: #fff;
             }
         }
+
+        .wifi-image {
+            width: 200px;
+            height: 60px;
+            border-radius: 5px;
+            margin-top: 12px;
+        }
     }
 
     .order-form {
         padding: 15px;
-        background-color:#fbfbfb;
+        background-color: #fbfbfb;
 
         .order-from-items {
             display: flex;
@@ -652,9 +674,9 @@
 
         .name {
             display: inline-block;
-            border: 1px solid #00969E;
+            border: 0px solid #00969E;
             border-radius: 2px;
-            background-color: #F7FCFC;
+            /*background-color: #F7FCFC;*/
             width: 70px;
             height: 30px;
             line-height: 30px;
@@ -669,7 +691,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #64CCC9;
+  border: 0px solid #64CCC9;
   border-radius: 2px;
   padding: 1px;
   width: 100px;
@@ -687,13 +709,14 @@
 
 .minus,
 .plus {
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  border-radius: 2px;
-  background-color: #00969E;
-  color: #fff;
-  font-size: 20px;
-  line-height: 28px;
-  cursor: pointer;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    border:1px solid #00969E;
+    background-color: #fff;
+    color: #00969E;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
 }
