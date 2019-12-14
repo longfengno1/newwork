@@ -38,7 +38,32 @@ import './index.scss';
     }
   }
 
-  init();
+    init();
+
+    var TabBarBox2 = $(".right-container .main");
+    var TBBWrap2 = $(".right-container ");
+
+    $(window).bind("scroll", function () {
+        var st = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop;
+        //alert(st);
+        if (!TBBWrap2.offset()) return;
+        if (st > TBBWrap2.offset().top
+            && st < $(".right-container").offset().top + $(".right-container").height() - TabBarBox2.height()) {
+            TabBarBox2.addClass("boxfixed");
+            TabBarBox2.removeClass("boxbottom");
+        } else if (st < TBBWrap2.offset().top) {
+            TabBarBox2.removeClass("boxfixed");
+            TabBarBox2.removeClass("boxbottom");
+        } else {
+            TabBarBox2.removeClass("boxfixed");
+            TabBarBox2.addClass("boxbottom");
+
+        }
+    });
+
+
+
+
 
     $(".detail").click(function () {
         $(".layerout1").show();
@@ -50,4 +75,27 @@ import './index.scss';
         $(this).parent().find(".passport-info").toggle();
     })
 
+    $(".tab_ivp").click(function () {
+        $(".tab_ivp").removeClass("active");
+        $(this).addClass("active");
+
+        $(this).parent().parent().find(".content").hide();
+        var id = $(this).attr("target");
+        $("#" + id).show();
+    });
+
+    $(".tab_service").click(function () {
+        $(".tab_service").removeClass("active");
+        $(this).addClass("active");
+
+        $(this).parent().parent().find(".content").hide();
+        var id = $(this).attr("target");
+        $("#" + id).show();
+    });
+
+    $(".order-btn").click(function () {
+
+        var id = $(this).attr("target");
+        $("#" + id).toggle();
+    });
 })();

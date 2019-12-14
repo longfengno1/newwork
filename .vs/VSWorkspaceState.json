@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\common",
     "\\src\\css",
     "\\src\\js",
     "\\src\\pages",
-    "\\src\\pages\\booking4",
-    "\\src\\pages\\booking5",
-    "\\src\\pages\\booking6",
-    "\\src\\pages\\signup"
+    "\\src\\pages\\aboutus",
+    "\\src\\pages\\booking2",
+    "\\src\\pages\\booking3",
+    "\\src\\pages\\signup",
+    "\\src\\pages\\signupBindUser"
   ],
-  "SelectedNode": "\\src\\pages\\booking2\\index.js",
+  "SelectedNode": "\\src\\pages\\booking3\\index.html",
   "PreviewInSolutionExplorer": false
 }
