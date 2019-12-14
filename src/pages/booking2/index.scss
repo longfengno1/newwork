@@ -14,8 +14,9 @@
   top: auto;
 }
 .order-main {
-  min-height: 100vh;
-  background-color: #f7fcfc;
+    min-height: 100vh;
+    /*background-color: #f7fcfc;*/
+    background-color: #f8f8f8;
 }
 
 .order {
@@ -23,6 +24,11 @@
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 160px;
+}
+
+.top-order-info {
+    background-color: #fff;
+    padding: 20px;
 }
 
 .product-name {
@@ -36,7 +42,7 @@
   margin-top: 8px;
 
   span {
-    margin-right: 20px;
+    margin-right: 50px;
 
     &:last-child {
       margin-right: 0;
@@ -98,7 +104,7 @@
   width: 195px;
   height: 50px;
   background-color: #efefef;
-  margin-left: 5px;
+  margin-left: 6px;
   text-align: center;
   cursor: pointer;
 
@@ -108,7 +114,7 @@
 
   span {
     line-height: 50px;
-    font-size: 15px;
+    font-size: 14px;
     color: #343E57;
   }
 
