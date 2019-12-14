@@ -5,9 +5,7 @@ dfn{
 #selectRoom {
   
   h3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     font-size: 20px;
     color: #343E57;
     font-weight: 400;
@@ -18,6 +16,7 @@ dfn{
     font-size: 14px;
     color: #626262;
     letter-spacing: 1px;
+    float: right;
 
     a {
       font-size: 14px;
@@ -28,18 +27,21 @@ dfn{
   }
 
   .main-content {
-    display: flex;
-    flex-wrap: nowrap;
-
+    overflow: hidden;
+    position: relative;
     .left-container {
+      float: left;
       width: 890px;
       margin-right: 10px;
       position: relative;
     }
 
     .right-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
       width: 300px;
-      position: relative;
       .main {
         padding: 0 4px;
         background-color: #fff;
@@ -49,13 +51,14 @@ dfn{
   }
 
   .select-container {
-    display: flex;
+    display: block;
     padding-top: 6px;
     background-color: #fff;
 
     .left {
       display: inline-block;
       width: 120px;
+      float: left;
     }
 
     .right {
@@ -81,6 +84,8 @@ dfn{
         border: 1px solid #fff;
         position: relative;
         padding: 10px 45px 12px 10px;
+        width: 25%;
+        float: left;
         img{
           position: absolute;
           left: 0;
@@ -108,9 +113,11 @@ dfn{
           width: 100%;
           text-align: center;
           padding-left: 35px;
+          position: relative;
         }
 
         em {
+          line-height: 20px;
           position: absolute;
           color: #fff;
           bottom: 0;
@@ -144,8 +151,8 @@ dfn{
               border: 2px solid rgba(255, 255, 255, 0.5);
               border-width: 0 2px 2px 0;
               border-radius: 0 0 2px 0;
-              bottom: 8px;
-              right: 10px;
+              bottom: -2px;
+              right: -35px;
             }
           }
         }
@@ -171,8 +178,8 @@ dfn{
               border: 2px solid rgba(255, 255, 255, 0.5);
               border-width: 0 2px 2px 0;
               border-radius: 0 0 2px 0;
-              bottom: 8px;
-              right: 10px;
+              bottom: -2px;
+              right: -35px;
             }
           }
         }
@@ -228,11 +235,12 @@ dfn{
   }
 
   .people-row-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+    width: 25%;
     font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    float: left;
+    text-align: center;
     color: #00969E;
     background-color: #EFFAF9;
     
@@ -250,8 +258,6 @@ dfn{
   }
 
   .people-row {
-    display: flex;
-    flex-wrap: nowrap;
     height: 46px;
 
     .active {
@@ -265,8 +271,8 @@ dfn{
   }
 
   .room-row {
-    display: flex;
-    flex-wrap: nowrap;
+    display: table;
+    width: 100%;
     padding: 6px;
   }
 
@@ -278,14 +284,14 @@ dfn{
     line-height: 80px;
     font-size: 26px;
     color: #00969E;
+    display:table-cell;
   }
 
 
   .room-row-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
     position: relative;
     cursor: pointer;
     width: 142px;
@@ -346,11 +352,11 @@ dfn{
   }
 
   .room-item {
-    display: flex;
+    display: block;
     padding: 15px 30px 15px 15px;
     background-color: #fff;
     margin-top: 4px;
-
+    overflow: hidden;
     &:first-child {
       margin-top: 0;
     }
@@ -359,15 +365,11 @@ dfn{
       width: 240px;
       height: 135px;
       margin-right: 35px;
+      float: left;
     }
   }
 
   .room-content {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     .detail {
       cursor: pointer;
       margin-left: 50px;
@@ -401,11 +403,9 @@ dfn{
   }
 
   .content-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    float: left;
     height: 100%;
+    width: 400px;
 
     .room-name {
       font-size: 18px;
@@ -421,8 +421,9 @@ dfn{
   }
 
   .content-right {
+    float: right;
     text-align: right;
-
+    padding-top: 30px;
     .order-num {
       font-size: 14px;
       color: #00969E;
@@ -481,6 +482,8 @@ dfn{
       font-size: 18px;
       color: #343E57;
       letter-spacing: 1.12px;
+      padding: 0;
+      line-height: 47px;
     }
   }
 
@@ -518,7 +521,7 @@ dfn{
   .room-info,
   .room-count {
     p {
-      display: flex;
+      display: block;
       align-items: center;
       justify-content: space-between;
     }
@@ -537,15 +540,18 @@ dfn{
   }
 
   .btns {
-    display: flex;
-    flex-wrap: nowrap;
-
+    display: table;
+    table-layout: fixed;
+    border-spacing:4px;
+    width: 100%;
     .pre,
     .next {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: table-cell;
+      height: 54px;
+      line-height: 54px;
+      text-align: center;
     }
+
 
     .pre {
       flex-shrink: 0;
@@ -560,7 +566,6 @@ dfn{
     }
 
     .next {
-      flex: 1;
       height: 54px;
       background: #00969E;
       font-size: 16px;
