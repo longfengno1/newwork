@@ -45,16 +45,28 @@
             color: #ffffff;
             font-size: 14px;
             width: 128px;
-            height: 50px;
+            height: 40px;
             background-color: #00969E;
             margin-left: 72px;
             cursor: pointer;
             border: 1px solid #00969E;
+            border-radius: 5px;
+        }
+
+        .back {
+            border: 1px solid #D0D7DF;
+            border-radius: 5px;
+            color: #343E57;
+            background-color: #fff;
+            width: 128px;
+            height: 40px;
         }
     }
 
     .recommend {
-        padding-top: 30px;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #fff;
 
         .title {
             display: flex;
@@ -83,20 +95,30 @@
             display: flex;
             justify-content: space-between;
             font-size: 20px;
-            color: #343E57;
-            padding: 10px 20px 20px 30px;
+            color: #00969E;
+            padding: 10px 20px 10px 20px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+
+            span {
+                height: 28px;
+                line-height: 28px
+            }
 
             .more {
-                font-size: 12px;
+                font-size: 14px;
                 color: #00969E;
                 cursor: pointer;
+                height: 28px;
+                line-height: 28px
             }
         }
 
         .products {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
 
             .product-item {
                 width: 285px;
@@ -163,7 +185,7 @@
 
             .product-item-big {
                 width: 480px;
-                height: 650px;
+                height: 670px;
                 background: #FFFFFF;
                 box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
                 padding: 10px;
@@ -248,17 +270,18 @@
             }
 
             .product-item {
-                width: 340px;
-                height: 320px;
+                width: 320px;
+                height: 330px;
                 background: #FFFFFF;
                 box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
                 padding: 10px;
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 10px;
 
                 .product-image {
-                    width: 320px;
-                    height: 160px;
+                    width: 300px;
+                    height: 168px;
                 }
 
                 .product-title {
