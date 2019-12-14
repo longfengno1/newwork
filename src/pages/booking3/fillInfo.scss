@@ -6,7 +6,7 @@
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 22px;
         color: #343E57;
         font-weight: 400;
         height: 48px;
@@ -370,54 +370,62 @@
 }
 
 .sub-left-container {
-  background-color: #fff;
-  width: 890px;
-  margin-right: 10px;
-  padding: 10px 20px 10px 20px;
+    background-color: #fff;
+    width: 890px;
+    margin-right: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
 
-  .cash-quan {
-    font-size: 12px;
-    color: #999999;
-    margin-bottom: 10px;
-  }
-
-  .check-row {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #343E57;
-
-    span {
-      margin-left: 12px;
+    .cash-quan {
+        font-size: 16px;
+        color: #00969E;
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 600;
     }
-  }
 
-  .quan-desc {
-    font-size: 12px;
-    color: #999999;
-    margin-top: 4px;
-    margin-bottom: 10px;
-  }
+    .check-row {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: #343E57;
+        margin-top: 4px;
+        padding: 0 10px;
+
+        span {
+            margin-left: 12px;
+        }
+    }
+
+    .quan-desc {
+        font-size: 12px;
+        color: #999999;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding: 0 10px;
+    }
 }
 
 .invite-code {
     width: 890px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 
     .invite-code-row {
-        width: 820px;
-        height: 48px;
+        width: 100%;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: #00969E;
 
         span {
-            font-size: 14px;
-            color: #343E57;
+            font-size: 16px;
+            color: #fff;
             margin-right: 10px;
+            font-weight: 600;
         }
 
         .input {
@@ -429,12 +437,13 @@
         }
 
         .ensure {
-            background-color: #00969E;
+            background-color: #fff;
             width: 78px;
             height: 30px;
-            color: #fff;
+            color: #00969E;
             font-size: 14px;
             border: 1px solid #00969E;
+            border-radius: 5px;
         }
     }
 }
@@ -442,12 +451,13 @@
 .special-bag {
     background-color: #fff;
     width: 890px;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
 
     .tab-row {
         display: flex;
         height: 48px;
-        background-color: #F7FCFC;
-
+        /*background-color: #F7FCFC;*/
         .tab {
             width: 210px;
             display: flex;
@@ -484,10 +494,11 @@
         }
 
         .content-card {
-            background-color: #F7FCFC;
+            /*background-color: #F7FCFC;*/
             display: flex;
             padding: 15px;
-            margin-bottom: 4px;
+            /*margin-bottom: 4px;*/
+            border-bottom: 2px solid #fbfbfb;
 
             &:last-child {
                 margin-bottom: 0;
@@ -582,6 +593,7 @@
                 color: #fff;
                 border-radius: 2px;
                 border: 1px solid #00969E;
+                border-radius: 5px;
             }
         }
 
@@ -590,6 +602,7 @@
         .card-image {
             width: 200px;
             height: 130px;
+            border-radius:5px;
         }
 
         .card-image-bg {
@@ -610,6 +623,9 @@
     }
 
     .order-form {
+        padding: 15px;
+        background-color:#fbfbfb;
+
         .order-from-items {
             display: flex;
             flex-wrap: nowrap;
