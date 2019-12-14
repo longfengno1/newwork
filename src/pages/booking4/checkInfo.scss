@@ -13,18 +13,23 @@
     }
 
     .main-content {
-        display: flex;
-        flex-wrap: nowrap;
+        position: relative;
+        overflow: hidden;
 
         .left-container {
             background-color: #f7fcfc;
             width: 890px;
             margin-right: 20px;
+            float: left;
         }
 
         .right-container {
             width: 300px;
-            margin-top: 81px;
+            margin-top: 67px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
 
             .main {
                 padding: 0 4px;
@@ -41,15 +46,14 @@
             padding: 20px 30px 24px;
 
             .info-row {
-                display: flex;
-                align-items: center;
+                display: table;
+                table-layout: fixed;
+                overflow: hidden;
+                width: 100%;
             }
 
             .info-item {
-                display: flex;
-                align-items: center;
-                flex: 1;
-
+                display: table-cell;
                 label {
                     margin: 0;
                     margin-right: 10px;
@@ -129,8 +133,7 @@
         }
 
         .user-row {
-            display: flex;
-            align-items: center;
+            display: table;
         }
 
         .room {
@@ -149,8 +152,7 @@
         }
 
         .check-btns {
-            display: flex;
-            align-items: center;
+            display: table;
             margin-top: 16px;
 
             label {
@@ -265,9 +267,7 @@
     .room-info,
     .room-count {
         p {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            
         }
 
         .detail,
@@ -283,15 +283,14 @@
         padding: 0 16px 10px;
 
         .total-price {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            
 
             span {
                 font-size: 16px;
                 color: #343E57;
 
                 &:last-child {
+                    float: right;
                     font-size: 16px;
                     color: #FF5050;
                 }
@@ -306,8 +305,7 @@
     }
 
     .btns {
-        display: flex;
-        flex-wrap: nowrap;
+        display: table;
 
         .pre {
             font-size: 16px;
@@ -318,10 +316,12 @@
             width: 92px;
             height: 54px;
             margin-right: 4px;
+            display: table-cell;
         }
 
         .next {
-            flex: 1;
+            display: table-cell;
+            width: 195px;
             height: 54px;
             background: #00969E;
             font-size: 16px;
