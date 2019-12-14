@@ -8,15 +8,17 @@
     }
 
     .main {
-        display: flex;
+        display: table;
+        width: 100%;
         align-items: center;
         justify-content: center;
         height: 138px;
         background-color: #ffffff;
 
         .center {
-            display: flex;
-            align-items: center;
+            display: table-cell;
+            text-align: center;
+            vertical-align:middle;
         }
 
         .price-count {
@@ -44,11 +46,9 @@
 
     .pay-types {
         height: 150px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         background-color: #ffffff;
         padding: 0 30px;
+        line-height: 150px;
 
         .pay-item {
             width: 262px;
@@ -58,9 +58,7 @@
     }
 
     .btns {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        
         /*margin-top: 40px;*/
         background-color: #fff;
         padding: 0px 20px 20px 20px;
@@ -80,6 +78,7 @@
             }
 
         .pay {
+            float: right;
             color: #ffffff;
             background-color: #00969E;
             border-radius: 5px;

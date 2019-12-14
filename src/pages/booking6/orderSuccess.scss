@@ -4,13 +4,13 @@
 
     .order-success {
         height: 260px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        display: table-cell;
+        vertical-align: middle;
         background-color: #ffffff;
+        width: 1200px;
 
         p {
+            text-align: center;
             font-size: 14px;
             color: #343E57;
             margin-top: 20px;
@@ -18,8 +18,7 @@
     }
 
     .success {
-        display: flex;
-        align-items: center;
+        text-align: center;
 
         img {
             width: 80px;
@@ -35,7 +34,7 @@
 
     .btns {
         margin-top: 30px;
-
+        text-align: center;
         a {
             font-size: 16px;
             color: #00969E;
@@ -69,17 +68,18 @@
         background-color: #fff;
 
         .title {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            
+            
 
             h3 {
                 font-size: 28px;
                 color: #343E57;
                 line-height: 40px;
+                text-align: center;
             }
 
             h5 {
+                text-align: center;
                 font-size: 14px;
                 color: #343E57;
                 margin-top: 10px;
@@ -92,8 +92,7 @@
         }
 
         .sub-title {
-            display: flex;
-            justify-content: space-between;
+            
             font-size: 20px;
             color: #00969E;
             padding: 10px 20px 10px 20px;
@@ -106,6 +105,7 @@
             }
 
             .more {
+                float: right;
                 font-size: 14px;
                 color: #00969E;
                 cursor: pointer;
@@ -115,19 +115,21 @@
         }
 
         .products {
-            display: flex;
-            justify-content: space-between;
+            
             margin-bottom: 20px;
             margin-top: 10px;
-
+           
             .product-item {
                 width: 285px;
                 height: 320px;
                 background: #FFFFFF;
                 box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
                 padding: 10px;
-                display: flex;
-                flex-direction: column;
+                float: left;
+                margin-right: 6px;
+                &:nth-child(4n){
+                    margin-right: 0;
+                }
             }
 
             .product-image {
@@ -151,9 +153,8 @@
             }
 
             .product-price {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
+                text-align: right;
+                
             }
 
             .price {
@@ -170,6 +171,7 @@
                 font-size: 12px;
                 color: #999999;
                 margin-top: 10px;
+                display: block;
 
                 span {
                     font-size: 12px;
@@ -180,17 +182,17 @@
         }
 
         .products-b {
-            display: flex;
+            
             margin-bottom: 30px;
-
+            margin-top: 10px;
             .product-item-big {
                 width: 480px;
                 height: 670px;
                 background: #FFFFFF;
                 box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
                 padding: 10px;
-                display: flex;
-                flex-direction: column;
+                float: left;
+                margin-right: 20px;
 
                 .product-image {
                     width: 460px;
@@ -214,29 +216,27 @@
                 }
 
                 .product-tags {
-                    display: flex;
-                    justify-content: space-between;
+                    display: block;
                     font-size: 16px;
                     color: #666666;
                     letter-spacing: 0;
                     line-height: 28px;
                     margin-top: 20px;
                     font-weight: 300;
-
+                    overflow: hidden;
                     .left {
-                        display: flex;
-                        flex-direction: column;
-
+                        float: left;
                         span {
                             margin-bottom: 8px;
                         }
                     }
+                    .right{
+                        float: right;
+                    }
                 }
 
                 .product-price {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
+                    text-align: right;
                 }
 
                 .price {
@@ -250,6 +250,7 @@
                 }
 
                 .example {
+                    display: block;
                     font-size: 14px;
                     color: #999999;
                     margin-top: 10px;
@@ -263,9 +264,7 @@
             }
 
             .product-column {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                
                 margin-left: 20px;
             }
 
@@ -275,10 +274,12 @@
                 background: #FFFFFF;
                 box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
                 padding: 10px;
-                display: flex;
-                flex-direction: column;
+                margin-right: 20px;
+                float: left;
                 margin-bottom: 10px;
-
+                &:nth-child(2n){
+                    margin-right: 0;
+                }
                 .product-image {
                     width: 300px;
                     height: 168px;
@@ -300,9 +301,7 @@
                 }
 
                 .product-price {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
+                    text-align: right;
                 }
 
                 .price {
@@ -316,6 +315,7 @@
                 }
 
                 .example {
+                    display: block;
                     font-size: 12px;
                     color: #999999;
                     margin-top: 10px;
