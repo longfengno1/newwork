@@ -2,15 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\css",
-    "\\src\\js",
     "\\src\\pages",
-    "\\src\\pages\\aboutus",
     "\\src\\pages\\booking2",
     "\\src\\pages\\booking3",
     "\\src\\pages\\signup",
     "\\src\\pages\\signupBindUser"
   ],
-  "SelectedNode": "\\src\\pages\\booking3\\index.html",
+  "SelectedNode": "\\src\\pages\\booking2\\orderRoom.scss",
   "PreviewInSolutionExplorer": false
 }

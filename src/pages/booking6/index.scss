@@ -2,8 +2,9 @@
 @import './orderSuccess.scss';
 
 .order-main {
-  min-height: 100vh;
-  background-color: #f7fcfc;
+    min-height: 100vh;
+    /*background-color: #f7fcfc;*/
+    background-color: #f8f8f8;
 }
 
 .order {
@@ -12,7 +13,10 @@
   padding-top: 20px;
   padding-bottom: 300px;
 }
-
+.top-order-info {
+    background-color: #fff;
+    padding: 20px;
+}
 .product-name {
   font-size: 20px;
   color: #343E57;
@@ -21,7 +25,7 @@
 .product-info {
   font-size: 16px;
   color: #666666;
-  margin-top: 15px;
+  margin-top: 8px;
 
   span {
     margin-right: 50px;
@@ -33,7 +37,7 @@
 }
 
 .product-tags {
-  margin-top: 13px;
+  margin-top: 8px;
 
   .tag {
     line-height: 20px;
@@ -86,7 +90,7 @@
   width: 195px;
   height: 50px;
   background-color: #efefef;
-  margin-left: 5px;
+  margin-left: 6px;
   text-align: center;
   cursor: pointer;
 
@@ -126,7 +130,7 @@
 }
 
 .step {
-  margin-top: 20px;
+  margin-top: 10px;
 
   .active {
     background-color: #00969E;
