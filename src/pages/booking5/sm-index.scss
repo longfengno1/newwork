@@ -38,8 +38,13 @@
     }
 
     h3 {
-        font-size:32rem/$fit;
+        font-size: 32rem/$fit;
         color: #383838;
+    }
+
+    .price-count {
+        width: 60rem/$fit;
+        margin-right: 20rem/$fit;
     }
 
     button {
@@ -148,12 +153,13 @@
 
     .step {
         padding: 0 32rem/$fit;
-        margin-top: 24rem/$fit;
+        margin-top: 20rem/$fit;
+        margin-bottom: 20rem/$fit;
         display: flex;
         justify-content: space-between;
 
         .step-item {
-            width: 188rem/$fit;
+            width: 228rem/$fit;
             height: 50rem/$fit;
             margin-left: 5rem/$fit;
             text-align: center;
@@ -209,7 +215,7 @@
                 .price {
                     margin-left: 20rem/$fit;
                     color: #FF5050;
-                    font-size: 40rem/$fit;
+                    font-size: 60rem/$fit;
 
                     span {
                         font-size: 40rem/$fit;
@@ -261,7 +267,7 @@
     }
 
     .price {
-      font-size: 30rem/$fit;
+      font-size: 40rem/$fit;
       color: #F8485E;
     }
 
