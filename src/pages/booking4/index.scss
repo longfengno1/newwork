@@ -1,9 +1,22 @@
 @import '../../css/variables.scss';
 @import './checkInfo.scss';
+.boxfixed {
+    position: fixed;
+    display: block !important;
+    z-index: 100;
+    top: 0
+}
 
+.boxbottom {
+    position: absolute;
+    display: block !important;
+    bottom: 0;
+    top: auto;
+}
 .order-main {
-  min-height: 100vh;
-  background-color: #f7fcfc;
+    min-height: 100vh;
+    /*background-color: #f7fcfc;*/
+    background-color: #f8f8f8;
 }
 
 .order {
@@ -12,7 +25,10 @@
   padding-top: 20px;
   padding-bottom: 160px;
 }
-
+.top-order-info {
+    background-color: #fff;
+    padding: 20px;
+}
 .product-name {
   font-size: 20px;
   color: #343E57;
@@ -86,7 +102,7 @@
   width: 195px;
   height: 50px;
   background-color: #efefef;
-  margin-left: 5px;
+  margin-left: 6px;
   text-align: center;
   cursor: pointer;
 

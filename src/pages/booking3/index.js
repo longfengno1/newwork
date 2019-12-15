@@ -75,8 +75,8 @@ import './index.scss';
         $(this).parent().find(".passport-info").toggle();
     })
 
-    $(".tab_ivp").click(function () {
-        $(".tab_ivp").removeClass("active");
+    $(".tab_vip").click(function () {
+        $(".tab_vip").removeClass("active");
         $(this).addClass("active");
 
         $(this).parent().parent().find(".content").hide();
@@ -92,6 +92,26 @@ import './index.scss';
         var id = $(this).attr("target");
         $("#" + id).show();
     });
+
+
+    $(".tab_vip").click(function () {
+        $(".tab_vip").removeClass("active");
+        $(this).addClass("active");
+
+        $(this).parent().parent().find(".mcontent").hide();
+        var id = $(this).attr("target");
+        $("#" + id).show();
+    });
+
+    $(".tab_service").click(function () {
+        $(".tab_service").removeClass("active");
+        $(this).addClass("active");
+
+        $(this).parent().parent().find(".mcontent").hide();
+        var id = $(this).attr("target");
+        $("#" + id).show();
+    });
+
 
     $(".order-btn").click(function () {
 

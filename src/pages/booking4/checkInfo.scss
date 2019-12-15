@@ -1,11 +1,11 @@
 #checkInfo {
-    background-color: #f7fcfc;
-
+    /*background-color: #f7fcfc;*/
     h3 {
-        font-size: 20px;
+        font-size: 22px;
         color: #343E57;
         font-weight: 400;
-        padding: 16px 0 16px 16px;
+        height: 48px;
+        line-height: 48px;
     }
 
     .mb20 {
@@ -17,21 +17,22 @@
         overflow: hidden;
 
         .left-container {
-            background-color: #f7fcfc;
+            /*background-color: #f7fcfc;*/
             width: 890px;
-            margin-right: 20px;
+            margin-right: 10px;
             float: left;
         }
 
         .right-container {
             width: 300px;
-            margin-top: 67px;
+            margin-top: 0px;
             position: absolute;
             right: 0;
             top: 0;
             bottom: 0;
 
             .main {
+                width: 300px;
                 padding: 0 4px;
                 background-color: #fff;
             }
@@ -39,11 +40,20 @@
     }
 
     .left-container {
-        padding: 10px 0 0 20px;
 
         .white-container {
             background-color: #fff;
-            padding: 20px 30px 24px;
+            padding: 10px 20px 10px 20px;
+
+            .room-item {
+                font-size: 16px;
+                color: #00969E;
+                background-color: #f8f8f8;
+                padding: 10px;
+                border-radius: 5px;
+                font-weight: 600;
+            }
+
 
             .info-row {
                 display: table;
@@ -54,6 +64,7 @@
 
             .info-item {
                 display: table-cell;
+
                 label {
                     margin: 0;
                     margin-right: 10px;
@@ -68,14 +79,15 @@
             h5 {
                 font-size: 16px;
                 color: #343E57;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
 
             p {
-                font-family: SourceHanSans-Regular;
+                /*font-family: SourceHanSans-Regular;*/
                 font-size: 14px;
                 color: #666666;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                margin-left: 10px;
             }
 
             p.fz12 {
@@ -86,7 +98,7 @@
 
             p.cred {
                 color: #FF5050;
-                margin-top: 25px;
+                margin-top: 10px;
             }
 
             p.mb8 {
@@ -102,26 +114,39 @@
             }
 
             .guest-info {
-                background: rgba(0, 0, 0, 0.03);
+                /*background: rgba(0, 0, 0, 0.03);*/
                 float: left;
                 width: calc(50% - 20px);
-                margin-right: 20px;
-                margin-bottom: 20px;
-                padding-bottom: 20px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                padding-bottom: 0px;
+                margin-top: 4px;
 
                 h5 {
-                    background: #FBFBFB;
-                    height: 54px;
-                    line-height: 52px;
+                    /*background: #FBFBFB;*/
+                    height: 35px;
+                    line-height: 35px;
                     padding-left: 20px;
+                    margin-bottom: 0px;
                 }
 
                 p {
-                    font-family: Helvetica;
-                    font-size: 12px;
+                    /*font-family: Helvetica;*/
+                    font-size: 14px;
                     color: #343E57;
                     margin: 5px 0;
                     padding: 0 20px;
+
+                    span {
+                        border-bottom: 1px solid #D0D7DF;
+                        font-weight: 600;
+                        padding: 0 10px 0 10px;
+                    }
+
+                    label {
+                        width: 100px;
+                        margin: 0;
+                    }
                 }
             }
         }
@@ -168,10 +193,21 @@
             padding-left: 20px;
             margin-right: 5px;
             border: none;
-            border: 1px solid #D0D7DF;
+            border-top: 0px solid #D0D7DF;
+            border-bottom: 1px solid #D0D7DF;
+            border-right: 0px solid #D0D7DF;
+            border-left: 0px solid #D0D7DF;
             border-radius: 2px;
             font-size: 14px;
             color: #343E57;
+        }
+
+        .sort-input {
+            width: 160px;
+        }
+
+        .long-input {
+            width: 400px;
         }
 
         .form-group {
@@ -267,7 +303,6 @@
     .room-info,
     .room-count {
         p {
-            
         }
 
         .detail,
@@ -283,7 +318,7 @@
         padding: 0 16px 10px;
 
         .total-price {
-            
+
 
             span {
                 font-size: 16px;

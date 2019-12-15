@@ -3,7 +3,7 @@
 .sm-main {
     min-height: 100vh;
     width: 100vw;
-    font-family: Helvetica;
+    /*font-family: Helvetica;*/
     padding-bottom: 120rem/$fit;
 
     input {
@@ -17,7 +17,7 @@
 
     label {
         font-size: 28rem/$fit;
-        color: #666666;
+        /*color: #666666;*/
         margin-bottom: 0;
     }
 
@@ -149,12 +149,13 @@
 
     .step {
         padding: 0 32rem/$fit;
-        margin-top: 24rem/$fit;
+        margin-top: 20rem/$fit;
+        margin-bottom: 20rem/$fit;
         display: flex;
         justify-content: space-between;
 
         .step-item {
-            width: 188rem/$fit;
+            width: 228rem/$fit;
             height: 50rem/$fit;
             margin-left: 5rem/$fit;
             text-align: center;
@@ -263,44 +264,71 @@
     .check-info {
         .room {
             h5 {
-                font-size: 28rem/$fit;
-                color: #383838;
+                font-size: .7rem;
+                color: #00969E;
+                background-color: #f8f8f8;
+                padding: .5rem;
+                border-radius: 5px;
+                font-weight: 600;
             }
         }
 
         .name {
-            background-color: #FBFBFB;
+            /*background-color: #FBFBFB;*/
             padding-left: 32rem/$fit;
             display: flex;
             align-items: center;
-            width: 686rem/$fit;
-            height: 80rem/$fit;
-            font-size:24rem/$fit;
+            /*width: 686rem/$fit;
+            height: 80rem/$fit;*/
+            font-size: 28rem/$fit;
 
             .name-t {
-                font-size: 24rem/$fit;
+                font-size: 28rem/$fit;
                 color: #6D6D6D;
+                font-weight: 600;
             }
 
             .name-v {
-                font-size: 24rem/$fit;
+                font-size: 28rem/$fit;
                 color: #383838;
                 margin-left: 32rem/$fit;
+                font-weight: 600;
             }
         }
 
         .content {
-            padding: 25rem/$fit 32rem/$fit;
+            padding: 20rem/$fit 32rem/$fit;
 
             p {
                 font-size: 24rem/$fit;
                 color: #666666;
-                margin-bottom: 20rem/$fit;
+                margin-bottom: 10rem/$fit;
+                padding-left: 5rem/$fit;
 
                 .value {
-                    color: #383838;
+                    border-bottom: 1px solid #D0D7DF;
+                    font-weight: 600;
+                    padding: 0 20rem/$fit 0 10px;
+                }
+
+                label {
+                    width: 5rem;
+                    margin: 0;
+                    font-size:24rem/$fit;
                 }
             }
+
+            .content-region {
+                background-color: #f8f8f8;
+                padding: 10rem/$fit;
+                margin-bottom: 10rem/$fit;
+                border-radius: 5px;
+            }
+
+            .bggreen {
+                background-color: #f7fcfc;
+            }
+
 
             .sub-title {
                 color: #00969E;
