@@ -1,6 +1,18 @@
 @import '../../css/variables.scss';
 @import './checkInfo.scss';
+.boxfixed {
+    position: fixed;
+    display: block !important;
+    z-index: 100;
+    top: 0
+}
 
+.boxbottom {
+    position: absolute;
+    display: block !important;
+    bottom: 0;
+    top: auto;
+}
 .order-main {
     min-height: 100vh;
     /*background-color: #f7fcfc;*/
