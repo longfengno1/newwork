@@ -69,7 +69,7 @@ import './index.scss';
         $(".layerout1").show();
     });
     $(".layer .close").click(function () {
-        $(".mark").hide();
+        $(".layerout1").hide();
     });
     $(".more-btn").click(function () {
         $(this).parent().find(".passport-info").toggle();
@@ -118,4 +118,14 @@ import './index.scss';
         var id = $(this).attr("target");
         $("#" + id).toggle();
     });
+
+    $(".order-btn-sm").click(function () {
+
+        $(".setcart").show();
+    });
+
+    $(".setcart-btn").click(function () {
+        $(".setcart").hide();
+    });
+    
 })();

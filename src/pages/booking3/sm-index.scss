@@ -186,7 +186,7 @@
             align-items: baseline;
             font-size: 24rem/$fit;
             color: #666666;
-            padding-left: 36rem/$fit;
+            padding-left: 156rem/$fit;
             margin-top: 21rem/$fit;
             margin-bottom: 33rem/$fit;
 
@@ -263,7 +263,7 @@
             label {
                 width: 171rem/$fit;
                 margin-bottom: 0;
-                text-align: right;
+                text-align: left;
             }
 
             .name1 {
@@ -428,11 +428,15 @@
                 justify-content: center;
                 align-items: center;
                 flex: 1;
-                border-left: 1px solid #D0D7DF;
+                /*border-left: 1px solid #D0D7DF;*/
                 border-right: 1px solid #D0D7DF;
                 border-bottom: 1px solid #D0D7DF;
                 font-size: 28rem/$fit;
                 color: #383838;
+            }
+
+            .last-r {
+                border-right: 0px solid #D0D7DF;
             }
 
             .active {
@@ -453,6 +457,10 @@
                 height: 130rem/$fit;
                 flex-shrink: 0;
             }
+        }
+
+        .last-b {
+            border-bottom: 0px solid #D0D7DF;
         }
 
         .package-row {
@@ -498,10 +506,11 @@
                 color: #F8485E;
             }
 
-            .order-btn {
+            .order-btn-sm {
                 background-color: #00969E;
                 color: #fff;
                 border: 0;
+                border-radius:5px;
             }
         }
 
@@ -576,4 +585,143 @@
       font-weight: 300;
     }
   }
+}
+.mark {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background: rgba(0, 0, 0, .5);
+
+    .box {
+        width: 99vw;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        background: #fff;
+        border-radius: 8rem/$fit 8rem/$fit 0 0;
+    }
+
+    .title {
+        font-size: 32rem/$fit;
+        padding: 20rem/$fit 32rem/$fit;
+        font-weight: 600;
+    }
+
+    .sub-title {
+        font-size: 32rem/$fit;
+        padding: 20rem/$fit 32rem/$fit;
+        background-color:#fbfbfb;
+    }
+
+    .boxinner {
+        padding: 0 32rem/$fit;
+    }
+
+    .userinner {
+        /*background: #fbfbfb;*/
+        overflow: hidden;
+        padding: 32rem/$fit 32rem/$fit 0 32rem/$fit;
+
+        .user {
+            width: 50%;
+            float: left;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 32rem/$fit;
+
+            .username {
+                text-align: right;
+                flex: 1;
+                padding-right: 16rem/$fit;
+            }
+        }
+    }
+
+    .btns-bottom {
+        height: 120rem/$fit;
+        border-top: 1px solid #e5e5e5;
+        padding: 16rem/$fit;
+        /*margin-top: 40rem/$fit;*/
+
+        .btn-styleI,
+        .btn-styleJ {
+            border-radius: 5px;
+            height: 80rem/$fit;
+            width: 346rem/$fit;
+            font-size: 28rem/$fit;
+            line-height: 80rem/$fit;
+            padding: 0;
+            text-align: center;
+            display: block;
+            float: left;
+        }
+
+        .btn-styleJ {
+            color: #00969E;
+            border-color: #00969E;
+            margin-right: 16rem/$fit;
+        }
+    }
+
+    .room {
+        height: 96rem/$fit;
+        font-size: 28rem/$fit;
+
+        .roomname {
+            padding-top: 10rem/$fit;
+            float: left;
+        }
+
+        .num-select {
+            float: right;
+        }
+
+        .num-select {
+            display: inline-block;
+            border-radius: 0;
+            padding: 0;
+            text-align: center;
+            height: 44rem/$fit;
+            line-height: 44rem/$fit;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+
+        .num {
+            display: block;
+            float: left;
+            font-size: 14px;
+            color: #343E57;
+            width: 80rem/$fit;
+            height: 44rem/$fit;
+            line-height: 44rem/$fit;
+        }
+
+        .minus,
+        .plus {
+            display: block;
+            float: left;
+            width: 44rem/$fit;
+            height: 44rem/$fit;
+            background-color: #00969E;
+            color: #fff;
+            font-size: 20rem/$fit;
+            line-height: 44rem/$fit;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        &.disable-room {
+            .num-select {
+                opacity: .5;
+            }
+        }
+    }
+
+    .disable-user {
+        .num-select {
+            opacity: .5;
+        }
+    }
 }

@@ -352,6 +352,14 @@ body {
     body {
         background-color: #F8F8F8;
     }
+    .fleetintro {
+        width: 100%;
+        overflow: hidden;
+        background-size: 100% auto;
+        background-attachment: fixed;
+        background-image: none;
+    }
+
     .my-order-header {
         display: flex;
         align-items: center;
@@ -661,7 +669,7 @@ body {
         .trip-info {
             margin: .5rem .5rem .5rem .5rem;
             width: 95% !important;
-            border-radius: 15px;
+            border-radius: 5px;
 
             .router {
                 font-size: 1rem;
@@ -676,8 +684,8 @@ body {
         }
 
         .order-info {
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
+            border-top-left-radius:5px;
+            border-top-right-radius: 5px;
 
             h3 {
                 padding: 10rem/$fit 0;

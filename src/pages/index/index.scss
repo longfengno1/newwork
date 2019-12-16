@@ -990,6 +990,7 @@
 	border-radius: 5rem/$fit;
 	height: 364rem/$fit;
 	width: 100%;
+	/*background: rgba(0, 0, 0, 0.4);*/
 }
 
 .hotthread .item .one-pro .thread .inner {
@@ -1020,7 +1021,7 @@
 }
 
 .hotthread .item .one-pro .base_price {
-	padding-top: 36rem/$fit;
+	padding-top: 40rem/$fit;
 	font-size: 16rem/$fit;
 	line-height: 1;
 	color: #F8485E;
@@ -2850,7 +2851,7 @@
 
 .slick-dots {
 	position: relative;
-	bottom: 0;
+	bottom: 0.25rem;
 }
 
 .slick-dots li button:before {
@@ -3098,7 +3099,7 @@
 		font-size: 22rem/$fit;
 		background: #F8485E;
 		border-radius: 0 6px 0 6px;
-		margin-top: 32rem/$fit;
+		/*margin-top: 32rem/$fit;*/
 	}
 
 	.m_tab .tab_item {
@@ -3186,7 +3187,7 @@
 	}
 
 	.hotthread .base_price .price {
-		font-size: 36rem/$fit;
+		font-size: 40rem/$fit;
 	}
 
 	.hotthread .item .sale .base_price {
@@ -3257,7 +3258,7 @@
 		font-size: 20rem/$fit;
 		line-height: 1.5;
 		width: auto;
-		margin: 150rem/$fit 0 40rem/$fit 0;
+		margin: 75rem/$fit 0 40rem/$fit 0;
 	}
 	.spactivity-context .m{
 		text-align: center;
@@ -3418,7 +3419,7 @@
 	}
 	.topbanner_plane .ship .img2 {
 		position: relative;
-		left: -130rem/$fit;
+		left: 70rem/$fit;
 	}
 	.topbanner_plane .ship .img3 {
 		position: relative;
@@ -3704,7 +3705,7 @@
 		overflow: hidden;
 		position: relative;
 		img{
-			width: 686rem/$fit;
+			/*width: 686rem/$fit;*/
 		}
 	}
 	.mdestination .li2{
@@ -3718,7 +3719,7 @@
 		position: absolute;
 		width: 100%;
 		height: 144rem/$fit;
-		background: rgba(255,255,255,0.40);
+		background: rgba(0,0,0,0.40);
 		bottom: 0;
 		color: #fff;
 		font-size: 26rem/$fit;

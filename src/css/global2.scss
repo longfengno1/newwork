@@ -2121,7 +2121,7 @@ b {
 		}
 
 		.ships-slide .slick-dots {
-			top: 580rem/$fit;
+			top: 688rem/$fit;
 			bottom: auto;
 			display: block !important;
 		}
@@ -2280,11 +2280,11 @@ b {
 		li {
 			float: left;
 			background: #ccc;
-			width: 22rem/$fit !important;
-			height: 22rem/$fit;
+			width: 14rem/$fit !important;
+			height: 14rem/$fit;
 			border-radius: 50%;
 			margin-right: 20rem/$fit;
-			border: 1px solid #fff;
+			/*border: 1px solid #fff;*/
 
 			&.slick-active {
 				background: #00969E;
