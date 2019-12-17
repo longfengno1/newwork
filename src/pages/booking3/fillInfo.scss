@@ -16,6 +16,7 @@
     .main-content {
         position: relative;
         overflow: hidden;
+
         .left-container {
             width: 890px;
             margin-right: 10px;
@@ -28,6 +29,7 @@
             right: 0;
             top: 0;
             bottom: 0;
+
             .main {
                 width: 300px;
                 padding: 0 4px;
@@ -307,7 +309,6 @@
     .room-info,
     .room-count {
         p {
-           
         }
 
         .detail,
@@ -327,10 +328,12 @@
             span {
                 font-size: 16px;
                 color: #343E57;
+                height: 40px;
+               line-height: 40px;
 
                 &:last-child {
                     float: right;
-                    font-size: 16px;
+                    font-size: 24px;
                     color: #FF5050;
                 }
             }
@@ -349,7 +352,7 @@
         margin: 0 -4px;
         border-spacing: 4px;
         table-layout: fixed;
-        
+
         .pre {
             display: table-cell;
             font-size: 16px;
@@ -365,7 +368,7 @@
         }
 
         .next {
-            display:table-cell;
+            display: table-cell;
             text-align: center;
             vertical-align: middle;
             height: 54px;
@@ -373,7 +376,7 @@
             font-size: 16px;
             border-radius: 4px;
             color: #fff;
-            width:194px;
+            width: 194px;
         }
     }
 }

@@ -9,7 +9,7 @@ import './index.scss';
         for (let i = 1; i <= 6; i++) {
 
             $(`#step${i}`).click(function () {
-                selectCurrent(i);
+                //selectCurrent(i);
             })
         }
         setStepStatus();

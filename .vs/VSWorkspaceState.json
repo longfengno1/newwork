@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\common",
     "\\src\\css",
     "\\src\\pages",
-    "\\src\\pages\\baodao",
-    "\\src\\pages\\chufaqianxuzhi",
-    "\\src\\pages\\index",
-    "\\src\\pages\\shoppingcart",
-    "\\src\\pages\\xinshoudaolan"
+    "\\src\\pages\\booking2",
+    "\\src\\pages\\booking3",
+    "\\src\\pages\\booking4",
+    "\\src\\pages\\booking5",
+    "\\src\\pages\\booking6",
+    "\\src\\pages\\orderdetail"
   ],
-  "SelectedNode": "\\src\\pages\\chufaqianxuzhi\\sm-index.scss",
+  "SelectedNode": "\\src\\css\\global2.scss",
   "PreviewInSolutionExplorer": false
 }
