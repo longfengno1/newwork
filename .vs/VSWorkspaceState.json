@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\css",
     "\\src\\pages",
-    "\\src\\pages\\activitydetail",
-    "\\src\\pages\\booking2",
-    "\\src\\pages\\booking3",
-    "\\src\\pages\\booking4",
-    "\\src\\pages\\booking5",
-    "\\src\\pages\\destination"
+    "\\src\\pages\\login",
+    "\\src\\pages\\mypassengerEdit",
+    "\\src\\pages\\signupAutoBind",
+    "\\src\\pages\\signupBindPhone-1",
+    "\\src\\pages\\signupBindUser",
+    "\\src\\pages\\signupFaild",
+    "\\src\\pages\\signupSuccess"
   ],
-  "SelectedNode": "\\src\\pages\\booking4\\index.html",
+  "SelectedNode": "\\src\\pages\\booking4\\sm-index.scss",
   "PreviewInSolutionExplorer": false
 }

@@ -710,84 +710,176 @@
 }
 
 
-@media(max-width:767px) {
-	.fleetintro {
-		background: none;
+.sm-food {
+	width: 890px;
+	margin: 0 20px;
+
+	.header-bar {
+		background: url(../../images/header-bg.png) center center no-repeat;
+		background-size: 100% 100%;
+		max-width: 48rem;
+		height: 50px;
+		margin: 0 auto;
 	}
 
-	.help-left {
-		width: 100%;
-	}
+	.scroll-bar {
+		z-index: 2;
+		background-color: #ffffff;
+		/* position: fixed; */
+		left: 0;
+		/* top: 2.1rem; */
+		height: 50px;
+		width: 890px;
+		-webkit-box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
+		border-radius: 0.2rem 0.2rem 0 0;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		background: rgba(100, 204, 201, 0.1);
+		margin-bottom: 5px;
 
-	.filter_arrowright {
-		top: 16rem/$fit;
-		right: 20rem/$fit;
-	}
+		.icon-arrowup {
+			position: inherit;
+			right: 20px;
+			line-height: 50px;
+			font-size: 16px;
+			cursor: pointer;
+			margin-left: 10px;
+		}
 
-	.filter_planeB {
-		li {
-			/* padding-left: 192px; */
-			height: 80rem/$fit;
-			background: rgba(100, 204, 201, 0.1);
-			border-bottom: 1rem/$fit solid #fff;
-			line-height: 80rem/$fit;
-			font-size: 32rem/$fit;
-			border-radius: 0.2rem;
+		.icon-arrowdown {
+			position: inherit;
+			right: 20px;
+			line-height: 50px;
+			font-size: 16px;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+
+		.items {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			min-width: 100%;
+		}
+
+		.scroll-item {
+			padding: 0 0.625rem;
+			height: 50px;
+			line-height: 50px;
+			font-size: 16px;
+			color: #666666;
+			cursor: pointer;
+			/* font-weight: 300; */
+			width: 890px;
 
 			label {
-				float: left;
-				font-size: 32rem/$fit;
-				color: #343E57;
-				/*letter-spacing: 2.77px;*/
-				/* text-align: center; */
-				margin-bottom: 0;
-				margin-left: 30rem/$fit;
-				width: 80%;
+				width: 95%;
 			}
 		}
 	}
 
-	.filter_planeC li {
-		span {
-			color: #000;
-		}
+	.detail {
+		padding: 10px 20px;
+		background-color: rgb(251, 251, 251);
+		display: none;
 	}
-
-	.hiddenView {
-		overflow: hidden;
-	}
-
-	.views {
-		z-index: 103;
-		left: 750px;
-		transition: all 500ms ease 0s;
-		top: 0;
-		width: 100%;
-		position: fixed;
-		background-color: #fff;
-		bottom: 0px;
-		
-		overflow: hidden;
-		.header-bar-inner{
-			padding: 0;
-		}
-		.sm-header{
-			position:static;
-			padding: 0 88rem/$fit;
-		}
-		.viewbody{
-			position: absolute;
-			left: 0;
-			top: 88rem/$fit;
-			bottom: 0;
-			z-index: 2;
-			width: 100%;
-			overflow-x: hidden;
-			overflow-y: auto;
-		}
-	}
-	.showView{
-		transform: translate3d(-750px, 0px, 0px);
-	}
-
 }
+
+
+	@media(max-width:767px) {
+		.fleetintro {
+			background: none;
+		}
+
+		.help-left {
+			width: 100%;
+		}
+
+		.filter_arrowright {
+			top: 16rem/$fit;
+			right: 20rem/$fit;
+		}
+
+		.filter_planeB {
+			li {
+				/* padding-left: 192px; */
+				height: 80rem/$fit;
+				background: rgba(100, 204, 201, 0.1);
+				border-bottom: 1rem/$fit solid #fff;
+				line-height: 80rem/$fit;
+				font-size: 32rem/$fit;
+				border-radius: 0.2rem;
+
+				label {
+					float: left;
+					font-size: 32rem/$fit;
+					color: #343E57;
+					/*letter-spacing: 2.77px;*/
+					/* text-align: center; */
+					margin-bottom: 0;
+					margin-left: 30rem/$fit;
+					width: 80%;
+				}
+			}
+		}
+
+		.filter_planeC li {
+			span {
+				color: #000;
+			}
+		}
+
+		.hiddenView {
+			overflow: hidden;
+		}
+
+		.views {
+			z-index: 103;
+			left: 750px;
+			transition: all 500ms ease 0s;
+			top: 0;
+			width: 100%;
+			position: fixed;
+			background-color: #fff;
+			bottom: 0px;
+			overflow: hidden;
+
+			.header-bar-inner {
+				padding: 0;
+			}
+
+			.sm-header {
+				position: static;
+				padding: 0 88rem/$fit;
+				height: 2.2rem;
+				line-height: 2.2rem;
+
+				.icon-arrowleft {
+					position: absolute;
+					left: .9rem;
+					font-size: 1rem;
+					cursor: pointer;
+					height: 2.2rem;
+					line-height: 2.2rem;
+				}
+			}
+
+			.viewbody {
+				position: absolute;
+				left: 0;
+				top: 88rem/$fit;
+				bottom: 0;
+				z-index: 2;
+				width: 100%;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+		}
+
+		.showView {
+			transform: translate3d(-750px, 0px, 0px);
+		}
+	}

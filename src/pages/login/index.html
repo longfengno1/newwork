@@ -30,86 +30,88 @@
 <body>
     #include('../../common/header.html')
 
-  <div id="main" class="fleetintro ">
+    <div id="main" class="fleetintro ">
 
-    <div class="topbannerB hidden-sm" style="z-index:-1;">
-      <img src="../../images/login_bg.jpg" />
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="sign-content popup-in-content">
-                    <div class="popup-in-txt">
-                        <div style="width: 100%;height:80px;margin-top:30px;text-align:center;" class="show-sm">
-                            <img  src="../../images/logo_sc2.png" />
-                        </div>
-                        <div class="row signin-type">
-                            <h2 class="col-sm-6">
-                                <span id='signin-tab-wx' class="signin-type-tab"><img src="../../images/wxlogo.png" class="loginlogo img-gray" style="width:1rem;margin-right:.25rem"/>微信登录</span>
-                            </h2>
-                            <h2 class="col-sm-6">
-                                <span id='signin-tab-mobile' class="signin-type-tab current"><img src="../../images/logophone.png" class="loginlogo" style="width:1rem;margin-right:.25rem" />手机登录/注册</span>
-                            </h2>
-                        </div>
+        <div class="topbannerB hidden-sm" style="z-index:-1;">
+            <img src="../../images/login_bg.jpg" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="sign-content popup-in-content">
+                        <div class="popup-in-txt">
+                            <div style="width: 100%;height:80px;margin-top:30px;text-align:center;" class="show-sm">
+                                <img src="../../images/logo_sc2.png" />
+                            </div>
+                            <div class="row signin-type">
+                                <h2 class="col-sm-6">
+                                    <span id='signin-tab-wx' class="signin-type-tab"><img src="../../images/wxlogo.png" class="loginlogo img-gray" style="width:1rem;margin-right:.25rem" />微信登录</span>
+                                </h2>
+                                <h2 class="col-sm-6">
+                                    <span id='signin-tab-mobile' class="signin-type-tab current"><img src="../../images/logophone.png" class="loginlogo" style="width:1rem;margin-right:.25rem" />手机登录/注册</span>
+                                </h2>
+                            </div>
 
-                        <div id='signin-mobile'>
-                            <div class="signin-form">
-                                <form>
-                                    <div class="form-group row">
-                                        <input type="text" class="ipt-86" value="+86(中国)" readonly="readonly">
-                                        <input type="text" class="form-control ipt-phone"  id="signin_form" placeholder="请输入您的手机号">
-                                    </div>
-                                    <div class="form-group row">
-                                        <input type="text" class="form-control col-sm-8 ipt-code" id="signin_form"
-                                               placeholder="请输入手机验证码">
-                                        <a class="vaildate-code col-sm-4" href="###">获取验证码</a>
-                                    </div>
-                                    <div class="form-group row">
-                                        <input type="text" class="form-control col-sm-8 ipt-code" id="signin_form"
-                                               placeholder="请输入图形验证码">
-                                        <img class="col-sm-4" src="../../images/vaildate-code.png">
-                                    </div>
-                                </form>
-                            </div>
-                            <!-- <div class="awesome-checkbox-list"> -->
-                            <div class="form-group form-check awesome-checkbox-list">
-                                <input type="checkbox" class="vmiddle" id="styled-checkbox-2">
-                                <label class="vmiddle styled-checkbox-2">
-                                    同意<a href="###">《帐号服务条款》</a>和<a href="###">《隐私政策》</a>
-                                </label>
-                            </div>
-                            <div  class="form-group form-check awesome-checkbox-list">
-                                <label class="styled-checkbox-2 gray">如之前未用该手机注册过，则会自动为您创建新用户账号，方便您之后直接登录。</label>
-                            </div>
-                            <!-- </div> -->
-                            <a href="mycenter.html">
-                                <div class="txt-center">
-                                    <button type="button" class="btn signin_btn">
-                                        登录/注册
-                                    </button>
+                            <div id='signin-mobile'>
+                                <div class="signin-form">
+                                    <form>
+                                        <div class="form-group row">
+                                            <input type="text" class="ipt-86" value="+86(中国)" readonly="readonly">
+                                            <input type="text" class="form-control ipt-phone" id="signin_form" placeholder="请输入您的手机号">
+                                        </div>
+                                        <div class="form-group row">
+                                            <input type="text" class="form-control col-sm-8 ipt-code" id="signin_form"
+                                                   placeholder="请输入手机验证码">
+                                            <a class="vaildate-code col-sm-4" href="###">获取验证码</a>
+                                        </div>
+                                        <div class="form-group row">
+                                            <input type="text" class="form-control col-sm-8 ipt-code" id="signin_form"
+                                                   placeholder="请输入图形验证码">
+                                            <img class="col-sm-4" src="../../images/vaildate-code.png">
+                                        </div>
+                                    </form>
                                 </div>
-                            </a>
-                        </div>
-                        <div id="signin-wx" style="display:none;">
-                            <img class="qr-code" src="../../images/qr-code.png" />
-                            <div class="tip-container">
-                                <span class="tip">请使用微信扫描二维码登录“星梦邮轮”</span>
+                                <!-- <div class="awesome-checkbox-list"> -->
+                                <div class="form-group form-check awesome-checkbox-list">
+                                    <input type="checkbox" class="vmiddle" id="styled-checkbox-2">
+                                    <label class="vmiddle styled-checkbox-2">
+                                        同意<a href="###">《帐号服务条款》</a>和<a href="###">《隐私政策》</a>
+                                    </label>
+                                </div>
+                                <div class="form-group form-check awesome-checkbox-list">
+                                    <label class="styled-checkbox-2 gray">如之前未用该手机注册过，则会自动为您创建新用户账号，方便您之后直接登录。</label>
+                                </div>
+                                <!-- </div> -->
+                                <a href="mycenter.html">
+                                    <div class="txt-center">
+                                        <button type="button" class="btn signin_btn">
+                                            登录/注册
+                                        </button>
+                                    </div>
+                                </a>
                             </div>
-                        </div>
+                            <div id="signin-wx" style="display:none;">
+                                <img class="qr-code" src="../../images/qr-code.png" />
+                                <div class="tip-container">
+                                    <span class="tip">请使用微信扫描二维码登录“星梦邮轮”</span>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
-  </div>
-  
-  <div style="height:700px;" class="hidden-sm"></div>
-  
-      <div class="hidden-sm">
+    <div style="height:700px;" class="hidden-sm"></div>
+
+    <div class="hidden-sm">
         #include('../../common/footer.html')
     </div>
+    <script>document.getElementById('title_name').textContent = '登录';</script>
+
 </body>
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/popper.min.js"></script>

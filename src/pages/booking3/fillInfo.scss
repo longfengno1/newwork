@@ -16,6 +16,7 @@
     .main-content {
         position: relative;
         overflow: hidden;
+
         .left-container {
             width: 890px;
             margin-right: 10px;
@@ -28,6 +29,7 @@
             right: 0;
             top: 0;
             bottom: 0;
+
             .main {
                 width: 300px;
                 padding: 0 4px;
@@ -307,7 +309,6 @@
     .room-info,
     .room-count {
         p {
-           
         }
 
         .detail,
@@ -327,10 +328,12 @@
             span {
                 font-size: 16px;
                 color: #343E57;
+                height: 40px;
+               line-height: 40px;
 
                 &:last-child {
                     float: right;
-                    font-size: 16px;
+                    font-size: 24px;
                     color: #FF5050;
                 }
             }
@@ -349,7 +352,7 @@
         margin: 0 -4px;
         border-spacing: 4px;
         table-layout: fixed;
-        
+
         .pre {
             display: table-cell;
             font-size: 16px;
@@ -365,7 +368,7 @@
         }
 
         .next {
-            display:table-cell;
+            display: table-cell;
             text-align: center;
             vertical-align: middle;
             height: 54px;
@@ -373,7 +376,7 @@
             font-size: 16px;
             border-radius: 4px;
             color: #fff;
-            width:194px;
+            width: 194px;
         }
     }
 }
@@ -468,8 +471,8 @@
             display: inline-block;
             text-align: center;
             line-height: 48px;
-            height:48px;
-            margin-right:-1px;
+            height: 48px;
+            margin-right: -1px;
             border: 1px solid #D0D7DF;
             font-size: 16px;
             color: #383838;
@@ -518,6 +521,7 @@
             .right {
                 padding-left: 25px;
                 min-width: 578px;
+                margin-left: 200px;
 
                 .right-title {
                     font-size: 16px;
@@ -528,8 +532,8 @@
                 .right-desc {
                     padding-right: 100px;
                     position: relative;
+
                     p {
-                        
                         font-size: 14px;
                         color: #666666;
                         padding-right: 10px;
@@ -543,10 +547,11 @@
                     }
 
                     .price {
-                        font-size: 14px;
+                        font-size: 18px;
                         color: #F8485E;
                         text-align: center;
                         display: block;
+
                         span {
                             color: #F8485E;
                             font-size: 12px;
@@ -598,6 +603,7 @@
 
         .right-bottom {
             line-height: 30px;
+            margin-top:5px;
 
             a {
                 font-size: 14px;
@@ -632,7 +638,7 @@
             width: 200px;
             /*height: 130px;*/
             background: url(../../images/17.png) no-repeat center;
-            border-radius: 5px;           
+            border-radius: 5px;
 
             .icon-fillsreen {
                 font-size: 20px;
@@ -671,7 +677,7 @@
         }
 
         .order-item {
-            float:left;
+            float: left;
         }
 
         .name {

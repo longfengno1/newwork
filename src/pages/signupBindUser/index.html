@@ -32,7 +32,7 @@
 
     <div id="main" class="fleetintro ">
 
-        <div class="topbannerB hidden-sm">
+        <div class="topbannerB hidden-sm" style="z-index:-1;">
             <img src="../../images/login_bg.jpg" />
         </div>
         <div class="container">
@@ -64,7 +64,13 @@
         </div>
     </div>
 
-    <div style="height:100px;" class="hidden-sm"></div>
+    <div style="height:700px;" class="hidden-sm"></div>
+
+    <div class="hidden-sm">
+        #include('../../common/footer.html')
+    </div>
+    <script>document.getElementById('title_name').textContent = '注册成为星梦荟会员';</script>
+
     <div class="mark layerout1 " style="display: none;">
         <div class="layer">
             <div class="close"><span class="icon-x"></span></div>
@@ -130,7 +136,7 @@
                                         同意接收星梦邮轮消息
                                     </label>
                                     <label class="show-sm" style="margin-bottom:0;"></label>
-                                    <input type="checkbox" class="vmiddle" id="styled-checkbox-2" >
+                                    <input type="checkbox" class="vmiddle" id="styled-checkbox-2">
                                     <label class="vmiddle styled-checkbox-2" style="margin: 2px 0px;">
                                         同意<a href="###">《会员条款》</a>
                                     </label>
@@ -158,7 +164,7 @@
             </div>
         </div>
     </div>
-    
+
 
 </body>
 <script src="../../js/jquery.min.js"></script>

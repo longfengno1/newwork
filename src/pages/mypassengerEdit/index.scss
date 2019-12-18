@@ -49,6 +49,7 @@ body {
         width: 940px;
         margin-bottom: 30px;
         overflow: hidden;
+
         h3 {
             font-size: 20px;
             color: #343E57;
@@ -67,12 +68,13 @@ body {
         width: 940px;
         background-color: #ffffff;
         padding: 30px 32px;
-        
+
         label {
             margin: 0;
             margin-right: 10px;
             font-size: 14px;
             color: #666666;
+            width: 70px;
 
             span {
                 color: red;
@@ -159,6 +161,5 @@ body {
             background-color: #00969E;
         }
     }
-
 }
 @import './sm-index.scss';

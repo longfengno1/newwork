@@ -92,9 +92,9 @@
                             </p>
                             <p class="cred">请仔细阅读并同意以下细则才能继续</p>
                             <div class="row ml10">
-                                <a href="###" class="col-4 cgreen">[航行合约]</a>
-                                <a href="###" class="col-4 cgreen tcenter">[重要提示]</a>
-                                <a href="###" class="col-4 cgreen tright">[预订条款]</a>
+                                <a href="###" class="cgreen mr20">[航行合约]</a>
+                                <a href="###" class="cgreen mr20 tcenter">[重要提示]</a>
+                                <a href="###" class="cgreen mr20 tright">[预订条款]</a>
                             </div>
                             <div class="check-btns ml10">
                                 <input type="checkbox" id="styled-checkbox-2" class="vmiddle">
@@ -107,19 +107,17 @@
                             <h3>联系人信息(重要)</h3>
                             <div class="info-row">
                                 <div class="info-item">
-                                    <label for="user">姓名：</label>
+                                    <label for="user">姓名：<span>*</span></label>
+                                    
                                     <input id="user" type="text" class="sort-input" value="邹泉">
-                                    <span>*</span>
                                 </div>
                                 <div class="info-item">
-                                    <label for="tel">联系电话：</label>
+                                    <label for="tel">联系电话：<span>*</span></label>
                                     <input id="tel" type="text" class="sort-input" value="178 8930 0028">
-                                    <span>*</span>
                                 </div>
                                 <div class="info-item">
-                                    <label for="email">Email：</label>
+                                    <label for="email">Email：<span>*</span></label>
                                     <input id="email" type="text" class="sort-input" value="zhouquan@163.com">
-                                    <span>*</span>
                                 </div>
                             </div>
                         </div>
@@ -281,7 +279,7 @@
         <div class="order-info">
             <h3>世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</h3>
             <p><span>出发港口：广州</span><span class="ml32">行程天数：6天5晚</span></p>
-            <p><span>出发日期：2019-09-29</span><span class="ml32 green">修改日期</span></p>
+            <p><span>出发日期：2019-09-29</span><span class="ml32 green" style="display:none;">修改日期</span></p>
         </div>
 
         <div class="step">
@@ -308,7 +306,7 @@
             <h3>您的行程</h3>
             <p>广州-海上巡游-那霸-宫古岛-海上巡游-广州</p>
             <p>出发日期：2019-9-8 周日 广州出发 6天5晚</p>
-            <p>
+            <p class="infos">
                 星梦邮轮将向星梦套房以下房型每人每晚征收小费港币120元，星梦套房以上含星梦套房每人每晚征收小费港币150元;
                 两周岁以下（不含两周岁）婴孩免小费。邮轮小费将直接记录于个人舱房卡及帐单中，乘客需在离船当天或之前，前往中央大堂前台 / 接待处缴此小费及其他船上消费。星梦邮轮保留随时调整的权利。
             </p>
@@ -318,7 +316,7 @@
                 <a href="">[重要提示]</a>
                 <a href="">[预订条款]</a>
             </div>
-            <div class="check-row">
+            <div class="check-row vmiddle">
                 <label>
                     <input type="checkbox" class="vmiddle"><span class="vmiddle">同意以上内容</span>
 
@@ -386,52 +384,46 @@
                 </div>
             </div>
             <div class="room">
-                <h5>房间2：海景客房</h5>
+                <h5>房间2：海景三人客房</h5>
                 <div class="user">
                     <div class="name">
-                        <span class="name-t">乘客1</span><span class="name-v">邹泉</span>
+                        <span class="icon-user mr20 green"></span><span class="name-t">乘客1</span><span class="name-v">邹泉</span>
                     </div>
                     <div class="content">
-                        <p>姓名全拼：<span class="value">LI MEI</span></p>
-                        <p>国籍：<span class="value">中国</span></p>
-                        <p>性别：<span class="value">女</span></p>
-                        <p>联系电话：<span class="value">18900000007</span></p>
-                        <p class="sub-title">证件1</p>
-                        <p>证件类型：<span class="value">居民身份证</span></p>
-                        <p>证件号码：<span class="value">360008199002028394</span></p>
-                        <p>证件有效期：<span class="value">2020/09/23</span></p>
-                        <p class="sub-title">证件2</p>
-                        <p>证件类型：<span class="value">居民身份证</span></p>
-                        <p>证件号码：<span class="value">360008199002028394</span></p>
-                        <p>证件有效期：<span class="value">2020/09/23</span></p>
-                        <p class="sub-title">证件3</p>
-                        <p>证件类型：<span class="value">居民身份证</span></p>
-                        <p>证件号码：<span class="value">360008199002028394</span></p>
-                        <p>证件有效期：<span class="value">2020/09/23</span></p>
+                        <p><label>姓名全拼：</label><span class="value">LI MEI</span></p>
+                        <p><label>国籍：</label><span class="value">中国</span></p>
+                        <p><label>性别：</label><span class="value">女</span></p>
+                        <p><label>联系电话：</label><span class="value">18900000007</span></p>
+                        <p><label class="green"><span class="icon-fav mr10 "></span>证件1：</label><span class="value">居民身份证</span></p>
+                        <p><label>证件号码：</label><span class="value">360008199002028394</span></p>
+                        <p><label>证件有效期：</label><span class="value">2020/09/23</span></p>
+                        <p><label class="green"><span class="icon-fav mr10 "></span>证件2：</label><span class="value">护照</span></p>
+                        <p><label>证件号码：</label><span class="value">360008199002028394</span></p>
+                        <p><label>证件有效期：</label><span class="value">2020/09/23</span></p>
+                        <p><label class="green"><span class="icon-fav mr10 "></span>证件3：</label><span class="value">港澳通行证</span></p>
+                        <p><label>证件号码：</label><span class="value">360008199002028394</span></p>
+                        <p><label>证件有效期：</label><span class="value">2020/09/23</span></p>
                     </div>
                 </div>
                 <div class="split"></div>
-                <div class="user">
+                <div class="user mt20">
                     <div class="name">
-                        <span class="name-t">乘客2</span><span class="name-v">邹泉</span>
+                        <span class="icon-user mr20 green"></span><span class="name-t">乘客2</span><span class="name-v">邹泉</span>
                     </div>
                     <div class="content">
-                        <p>姓名全拼：<span class="value">LI MEI</span></p>
-                        <p>国籍：<span class="value">中国</span></p>
-                        <p>性别：<span class="value">女</span></p>
-                        <p>联系电话：<span class="value">18900000007</span></p>
-                        <p class="sub-title">证件1</p>
-                        <p>证件类型：<span class="value">居民身份证</span></p>
-                        <p>证件号码：<span class="value">360008199002028394</span></p>
-                        <p>证件有效期：<span class="value">2020/09/23</span></p>
-                        <p class="sub-title">证件2</p>
-                        <p>证件类型：<span class="value">居民身份证</span></p>
-                        <p>证件号码：<span class="value">360008199002028394</span></p>
-                        <p>证件有效期：<span class="value">2020/09/23</span></p>
-                        <p class="sub-title">证件3</p>
-                        <p>证件类型：<span class="value">居民身份证</span></p>
-                        <p>证件号码：<span class="value">360008199002028394</span></p>
-                        <p>证件有效期：<span class="value">2020/09/23</span></p>
+                        <p><label>姓名全拼：</label><span class="value">LI MEI</span></p>
+                        <p><label>国籍：</label><span class="value">中国</span></p>
+                        <p><label>性别：</label><span class="value">女</span></p>
+                        <p><label>联系电话：</label><span class="value">18900000007</span></p>
+                        <p><label class="green"><span class="icon-fav mr10 "></span>证件1：</label><span class="value">居民身份证</span></p>
+                        <p><label>证件号码：</label><span class="value">360008199002028394</span></p>
+                        <p><label>证件有效期：</label><span class="value">2020/09/23</span></p>
+                        <p><label class="green"><span class="icon-fav mr10 "></span>证件2：</label><span class="value">护照</span></p>
+                        <p><label>证件号码：</label><span class="value">360008199002028394</span></p>
+                        <p><label>证件有效期：</label><span class="value">2020/09/23</span></p>
+                        <p><label class="green"><span class="icon-fav mr10 "></span>证件3：</label><span class="value">港澳通行证</span></p>
+                        <p><label>证件号码：</label><span class="value">360008199002028394</span></p>
+                        <p><label>证件有效期：</label><span class="value">2020/09/23</span></p>
                     </div>
                 </div>
             </div>

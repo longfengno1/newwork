@@ -24,12 +24,12 @@
 
                 <div class="row no-gutters">
                     <div class="col-auto help-left" style="float: left;">
-                        <div class="filter_planeB filter_planeC" subview="views_1" onclick="show_sub(this,'pc-views_1')">
+                        <div class="filter_planeB filter_planeC" subview="views_1" onclick="show_sub(this,'views_1')">
                             <ul>
                                 <li><label>预订须知</label><span class="icon-arrowright mr12 filter_arrowright"></span></li>
                             </ul>
                         </div>
-                        <div class="filter_planeB " subview="views_2" onclick="show_sub(this,'pc-views_2')">
+                        <div class="filter_planeB " subview="views_2" onclick="show_sub(this,'views_2')">
                             <ul>
                                 <li>
                                     <label>出发前</label><span class="icon-arrowright mr12  filter_arrowright"></span>
@@ -87,227 +87,130 @@
                         </div>
 
                     </div>
-                    <div class="col hidden-sm" style="float: left;max-width: 78%;">
-                        <div class="help-content" name="sub-list" id="pc-views_1">
-                            <div class="filter_planeB filter_planeC " onclick="show_detail(this, 'pc-views_1-desc1')">
-                                <ul>
-                                    <li><label>登船码头港口资讯</label></li>
-                                </ul>
+                    
+                    <div class=" sm-food">
+                        <script>
+                            document.getElementById('title_name').textContent = '常见问题';
+                        </script>
+                        <div class="views" name="sub-list" id="views_1">
+                            <div class="header-bar show-sm">
+                                <div class="header-bar-inner">
+                                    <div class="sm-header show-sm">
+                                        <span class="icon-arrowleft"></span>
+                                        <span id="title_name">启航预约</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="help-desc" id="pc-views_1-desc1" style="display:;">
-                                <p>办理登船手续及登船时间以船票为准。如有特殊情况，请以客户服务代表通知的时间为准。</p>
-                                <p>乘客需凭船票于柜台办理登船手续并领取房卡。</p>
-                                <p>办理入住时，乘客可选择提供或不提供信用卡、借记卡或现金押金以做开设客房账户之用。但如乘客欲于离船日快速结账并办理离船手续，可进行信用卡预授权；或于离船日亲临接待处统一结算。</p>
-                                <p>乘客可于完成“客房消费帐单”结算后领取护照并离船。</p>
-                                <p>入住皇宫/套房的乘客可优先办理登船及离船手续。</p>
-                                <p> 当地政府颁发船舶清关通知后旅客方可离船。</p>
-                            </div>
-                            <div class="filter_planeB " onclick="show_detail(this, 'pc-views_1-desc2')">
-                                <ul>
-                                    <li><label>可以携带生的食物登船吗？</label></li>
-                                </ul>
-                            </div>
-                            <div class="help-desc" id="pc-views_1-desc2" style="display:none;">
-                                <p>请为保证食品安全，不可携带生食上船。</p>
+                            <div class="viewbody">
+                                <div class="scroll-bar">
 
-                            </div>
-                        </div>
-                        <div class="help-content" name="sub-list" id="pc-views_2" style="display:none;">
-                            <div class="filter_planeB filter_planeC " onclick="show_detail(this, 'pc-views_2-desc1')">
-                                <ul>
-                                    <li><label>登船及离船手续</label></li>
-                                </ul>
-                            </div>
-                            <div class="help-desc" id="pc-views_2-desc1" style="display:;">
-                                <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
-                                <p>签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
-                                <p>如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
-                                <p>探索梦号</p>
-                                <p>由澳洲/新西兰出发之航线</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 出入境要求</a></p>
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
-                                        <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
-                                    </div>
-
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
-
+                                    <div class="items" onclick="show_detail(this,'help_detail')">
+                                        <div class="scroll-item active"><label>登船及离船手续</label><span class="icon-arrowup"></span></div>
                                     </div>
                                 </div>
-                                <p>由上海/天津出发之航线</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 出入境要求</a></p>
+                                <div class="mt30 fz14 ml20 mr20" id="help_detail">
+                                    <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
+                                    <p class="mt20">签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
+                                    <p class="mt20">如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
+                                    <p class="mt40">探索梦号</p>
+                                    <p class="mt20">由澳洲/新西兰出发之航线</p>
+                                    <p><a class="green" href="###">– 出入境要求</a></p>
+                                    <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
 
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
+                                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
+                                    <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
 
-                                    </div>
-                                    <div class="col">
+                                    <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
+                                    <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
 
-                                    </div>
-                                    <div class="col">
+                                    <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
+                                    <p class="mt40">由上海/天津出发之航线</p>
+                                    <p><a class="green" href="###">– 出入境要求</a></p>
+                                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
+                                    <p class="redf00 mt50">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
+                                    <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
+                                    <p class="mt20">签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
+                                    <p class="mt20">如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
+                                    <p class="mt40">探索梦号</p>
+                                    <p class="mt20">由澳洲/新西兰出发之航线</p>
+                                    <p><a class="green" href="###">– 出入境要求</a></p>
+                                    <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
+                                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
+                                    <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
+                                    <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
+                                    <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
+                                    <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
 
-                                    </div>
-                                    <div class="col">
+                                    <p class="mt40">由上海/天津出发之航线</p>
+                                    <p><a class="green" href="###">– 出入境要求</a></p>
+                                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
 
+                                    <p class="redf00 mt50">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
+                                </div>
+                                <div style="height:5px;" class="show-sm"></div>
+                                <div class="scroll-bar">
+                                    <div class="items">
+                                        <div class="scroll-item "><label>启航预约</label><span class="icon-arrowdown"></span></div>
                                     </div>
                                 </div>
-                                <p class="redf00">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
-                                <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
-                                <p>签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
-                                <p>如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
-                                <p>探索梦号</p>
-                                <p>由澳洲/新西兰出发之航线</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 出入境要求</a></p>
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
-                                        <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
-                                    </div>
-
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
-
+                                <div style="height:5px;" class="show-sm"></div>
+                                <div class="scroll-bar">
+                                    <div class="items">
+                                        <div class="scroll-item "><label>已预约旅客</label><span class="icon-arrowdown"></span></div>
                                     </div>
                                 </div>
-                                <p>由上海/天津出发之航线</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 出入境要求</a></p>
-
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-
+                                <div style="height:5px;" class="show-sm"></div>
+                                <div class="scroll-bar">
+                                    <div class="items">
+                                        <div class="scroll-item "><label>出发前须知</label><span class="icon-arrowdown"></span></div>
                                     </div>
                                 </div>
-                                <p class="redf00">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
-                            </div>
-                            <div class="filter_planeB " onclick="show_detail(this, 'pc-views_2-desc2')">
-                                <ul>
-                                    <li><label>登船及离船手续</label></li>
-                                </ul>
-                            </div>
-                            <div class="help-desc" id="pc-views_2-desc2" style="display:none;">
-                                <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
-                                <p>签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
-                                <p>如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
-                                <p>探索梦号</p>
-                                <p>由澳洲/新西兰出发之航线</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 出入境要求</a></p>
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
-                                        <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
-                                    </div>
-
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
-
-                                    </div>
-                                </div>
-                                <p>由上海/天津出发之航线</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 出入境要求</a></p>
-
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                </div>
-                                <p class="redf00">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
-                                <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
-                                <p>签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
-                                <p>如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
-                                <p>探索梦号</p>
-                                <p>由澳洲/新西兰出发之航线</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 出入境要求</a></p>
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
-                                        <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
-                                    </div>
-
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
-
-                                    </div>
-                                </div>
-                                <p>由上海/天津出发之航线</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 出入境要求</a></p>
-
-                                    </div>
-                                    <div class="col">
-                                        <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                </div>
-                                <p class="redf00">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
                             </div>
                         </div>
+                        <div class="views" name="sub-list" id="views_2">
+                            <div class="header-bar show-sm">
+                                <div class="header-bar-inner">
+                                    <div class="sm-header show-sm">
+                                        <span class="icon-arrowleft"></span>
+                                        <span id="title_name"><label>已预约旅客</label></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="viewbody">
+                                <div class="scroll-bar">
+
+                                    <div class="items" onclick="show_detail(this,'help_detail2')">
+                                        <div class="scroll-item active"><label>已经预定</label><span class="icon-arrowup"></span></div>
+                                    </div>
+                                </div>
+                                <div class="mt30 fz14 ml20 mr20" id="help_detail2">
+                                    <p>
+                                        为了旅客的舒适起见，建议携带轻便的行李。每人可携带最多两件行李上船。
+                                    </p><p>
+                                        旅客可在指定柜台办理行李托运，但不建议托运贵重物品丶打开的袋子丶塑料袋或其他易碎物品。由于行李运送需时，未免对您造成不便，所有重要药物或重要文件不得放在托运行李中。 若搭乘飞机，建议与相关航空公司查询行李托运规定。
+                                    </p>
+                                </div>
+                                <div style="height:5px;" class="show-sm"></div>
+                                <div class="scroll-bar">
+                                    <div class="items">
+                                        <div class="scroll-item "><label>启航预约</label><span class="icon-arrowdown"></span></div>
+                                    </div>
+                                </div>
+                                <div style="height:5px;" class="show-sm"></div>
+                                <div class="scroll-bar">
+                                    <div class="items">
+                                        <div class="scroll-item "><label>已预约旅客</label><span class="icon-arrowdown"></span></div>
+                                    </div>
+                                </div>
+                                <div style="height:5px;" class="show-sm"></div>
+                                <div class="scroll-bar">
+                                    <div class="items">
+                                        <div class="scroll-item "><label>出发前须知</label><span class="icon-arrowdown"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -315,133 +218,6 @@
     </div>
 
     <div style="height:150px;" class="hidden-sm"></div>
-
-    <div class="show-sm sm-food">
-        <script>
-            document.getElementById('title_name').textContent = '常见问题';
-        </script>
-        <div class="views" id="views_1">
-            <div class="header-bar">
-                <div class="header-bar-inner">
-                    <div class="sm-header">
-                        <span class="icon-arrowleft"></span>
-                        <span id="title_name">启航预约</span>
-                    </div>
-                </div>
-            </div>
-            <div class="viewbody">
-                <div class="scroll-bar">
-
-                    <div class="items" onclick="show_detail(this,'help_detail')">
-                        <div class="scroll-item active">登船及离船手续<span class="icon-arrowup"></span></div>
-                    </div>
-                </div>
-                <div class="mt30 fz14 ml20 mr20" id="help_detail">
-                    <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
-                    <p class="mt20">签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
-                    <p class="mt20">如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
-                    <p class="mt40">探索梦号</p>
-                    <p class="mt20">由澳洲/新西兰出发之航线</p>
-                    <p><a class="green" href="###">– 出入境要求</a></p>
-                    <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
-
-                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-                    <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
-
-                    <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
-                    <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
-
-                    <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
-                    <p class="mt40">由上海/天津出发之航线</p>
-                    <p><a class="green" href="###">– 出入境要求</a></p>
-                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-                    <p class="redf00 mt50">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
-                    <p>请确保您的旅游证件及护照（由旅程结束日起计）有6个月或以上的有效期。</p>
-                    <p class="mt20">签证资讯可以在以下连结下载。文件中所包含的信息仅供参考，旅游证件及签证须知在实际操作中或有变动，恕不另行通知。旅客需自行备齐有效旅行证件及相应签证。</p>
-                    <p class="mt20">如旅客未能在登船时出示上述文件，可能会被拒绝登船，并不作退款或补偿。</p>
-                    <p class="mt40">探索梦号</p>
-                    <p class="mt20">由澳洲/新西兰出发之航线</p>
-                    <p><a class="green" href="###">– 出入境要求</a></p>
-                    <p><a class="green" href="###">– 7晚新西兰游历之旅V</a></p>
-                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-                    <p><a class="green" href="###">– 7晚新西兰游历之旅VI</a></p>
-                    <p><a class="green" href="###">– 7晚澳洲发现之旅II</a></p>
-                    <p><a class="green" href="###">– 7晚塔斯曼尼亚探索之旅I</a></p>
-                    <p><a class="green" href="###">– 7晚新西兰游历之旅IV</a></p>
-
-                    <p class="mt40">由上海/天津出发之航线</p>
-                    <p><a class="green" href="###">– 出入境要求</a></p>
-                    <p><a class="green" href="###">– 7晚澳洲发现之旅I</a></p>
-
-                    <p class="redf00 mt50">*如要停靠日本港口，旅客必须带备A4大小的护照复印本（印有照片及个人资料的页面）。</p>
-                </div>
-                <div style="height:5px;" class="show-sm"></div>
-                <div class="scroll-bar">
-                    <div class="items">
-                        <div class="scroll-item ">启航预约<span class="icon-arrowdown"></span></div>
-                    </div>
-                </div>
-                <div style="height:5px;" class="show-sm"></div>
-                <div class="scroll-bar">
-                    <div class="items">
-                        <div class="scroll-item ">已预约旅客<span class="icon-arrowdown"></span></div>
-                    </div>
-                </div>
-                <div style="height:5px;" class="show-sm"></div>
-                <div class="scroll-bar">
-                    <div class="items">
-                        <div class="scroll-item ">出发前须知<span class="icon-arrowdown"></span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="views" id="views_2">
-            <div class="header-bar">
-                <div class="header-bar-inner">
-                    <div class="sm-header">
-                        <span class="icon-arrowleft"></span>
-                        <span id="title_name">已预约旅客</span>
-                    </div>
-                </div>
-            </div>
-            <div class="viewbody">
-                <div class="scroll-bar">
-
-                    <div class="items" onclick="show_detail(this,'help_detail2')">
-                        <div class="scroll-item active">已经预定<span class="icon-arrowup"></span></div>
-                    </div>
-                </div>
-                <div class="mt30 fz14 ml20 mr20" id="help_detail2">
-                    <p>
-                        为了旅客的舒适起见，建议携带轻便的行李。每人可携带最多两件行李上船。
-                    </p><p>
-                        旅客可在指定柜台办理行李托运，但不建议托运贵重物品丶打开的袋子丶塑料袋或其他易碎物品。由于行李运送需时，未免对您造成不便，所有重要药物或重要文件不得放在托运行李中。 若搭乘飞机，建议与相关航空公司查询行李托运规定。
-                    </p>
-                </div>
-                <div style="height:5px;" class="show-sm"></div>
-                <div class="scroll-bar">
-                    <div class="items">
-                        <div class="scroll-item ">启航预约<span class="icon-arrowdown"></span></div>
-                    </div>
-                </div>
-                <div style="height:5px;" class="show-sm"></div>
-                <div class="scroll-bar">
-                    <div class="items">
-                        <div class="scroll-item ">已预约旅客<span class="icon-arrowdown"></span></div>
-                    </div>
-                </div>
-                <div style="height:5px;" class="show-sm"></div>
-                <div class="scroll-bar">
-                    <div class="items">
-                        <div class="scroll-item ">出发前须知<span class="icon-arrowdown"></span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
 
     <div class="hidden-sm">
         #include('../../common/footer.html')

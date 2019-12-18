@@ -50,7 +50,7 @@
 
     .split {
         height: 24rem/$fit;
-        background-color: #FBFBFB;
+        background-color: #f8f8f8;
     }
 
     .arrow-down {
@@ -198,6 +198,9 @@
             margin-bottom: 24rem/$fit;
         }
 
+        .infos{
+            font-size:24rem/$fit;
+        }
         .notice {
             font-size: 24rem/$fit;
             color: #FF5050;

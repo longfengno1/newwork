@@ -31,11 +31,14 @@ import '../css/global2.scss';
             }, 100);
         })
         $(".m_menu").click(function () {
+            
+
             $("body").removeClass("show_menu");
             setTimeout(function () {
                 $(".m_menu .navbar-menu").removeClass("w80r")
             }, 100);
-            return false;
+            return;
+            //return false;
         })
         $(".m_menu ul>li>a").click(function () {
             var $this = $(this)
