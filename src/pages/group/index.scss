@@ -736,7 +736,7 @@
 
 	.rewordsitem {
 		width: 590px;
-		height: 160px;
+		height: auto;
 		padding: 30px;
 		float: left;
 
@@ -1067,11 +1067,18 @@
 .input-box{
 	margin: 0 auto;
 	width: 530px;
+	
 }
 .input-row{
 	clear: both;
+	padding-left: 10px;
+	padding-top:18px;
 	.w50{
 		width: 50%;
+		padding-left: 10px;
+		&:first-child{
+			padding-left: 0;
+		}
 	}
 	.label{
 		display: block;
@@ -1081,6 +1088,33 @@
 		font-size:14px;
 		color:#646464;
 	}
+	.input-txt{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		border:1px solid #d3d7da;
+		background: #fff;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.input-select{
+		width: 100%;
+		height: 50px;
+		line-height: 50px;
+		border:1px solid #d3d7da;
+		border-radius: 0;
+		background: #fff;
+		
+	}
+}
+.bg-our-destinations {
+    background: url(../../images/ribbon-destinations.png) center center no-repeat;
+    height: 491rem/$fit;
+    position: relative;
+    width: 100%;
+    margin-top: -180rem/$fit;
+    margin-bottom: -240rem/$fit;
+    pointer-events: none;
 }
 
 
