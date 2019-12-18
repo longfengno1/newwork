@@ -5,6 +5,7 @@
     width: 100vw;
     /*font-family: Helvetica;*/
     padding-bottom: 120rem/$fit;
+    background-color: #f8f8f8;
 
     input {
         border: 1px solid #E5E5E5;
@@ -74,22 +75,23 @@
     }
 
     .order-info {
-        margin: 24rem/$fit;
-        border-bottom: 1px dotted #e5e5e5;
-        padding-left: 8rem/$fit;
+        padding: 24rem/$fit;
+        /*border-bottom: 1px dotted #e5e5e5;*/
+        /*padding-left: 8rem/$fit;*/
+        background-color: #fff;
 
         h3 {
             font-size: 40rem/$fit;
             color: #383838;
             line-height: 55rem/$fit;
-            margin-bottom: 24rem/$fit;
+            /*margin-bottom: 24rem/$fit;*/
         }
 
         p {
             font-size: 28rem/$fit;
             color: #666666;
             line-height: 1;
-            margin-bottom: 24rem/$fit;
+            margin-top: 24rem/$fit;
         }
 
         .ml32 {
@@ -148,11 +150,12 @@
 
 
     .step {
-        padding: 0 32rem/$fit;
-        margin-top: 20rem/$fit;
+        padding: 0 32rem/$fit 20rem/$fit 32rem/$fit;
+        margin-top: 0rem/$fit;
         margin-bottom: 20rem/$fit;
         display: flex;
         justify-content: space-between;
+        background-color: #fff;
 
         .step-item {
             width: 228rem/$fit;
@@ -185,9 +188,14 @@
     .check-info,
     .fa-piao {
         padding: 24rem/$fit 32rem/$fit;
+        margin: 0 .8rem;
+        border-radius: 5px;
+        background-color: #fff;
 
         h3 {
-            margin-bottom: 32rem/$fit;
+            margin-bottom: 16rem/$fit;
+            padding-bottom: 16rem/$fit;
+            border-bottom:1px solid #999;
         }
     }
 
@@ -198,9 +206,10 @@
             margin-bottom: 24rem/$fit;
         }
 
-        .infos{
-            font-size:24rem/$fit;
+        .infos {
+            font-size: 24rem/$fit;
         }
+
         .notice {
             font-size: 24rem/$fit;
             color: #FF5050;
@@ -317,7 +326,7 @@
                 label {
                     width: 5rem;
                     margin: 0;
-                    font-size:24rem/$fit;
+                    font-size: 24rem/$fit;
                 }
             }
 
