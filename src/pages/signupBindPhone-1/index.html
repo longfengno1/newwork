@@ -30,11 +30,11 @@
 <body>
     #include('../../common/header.html')
 
-  <div id="main" class="fleetintro ">
+    <div id="main" class="fleetintro ">
 
-    <div class="topbannerB hidden-sm">
-      <img src="../../images/login_bg.jpg" />
-    </div>
+        <div class="topbannerB hidden-sm" style="z-index:-1;">
+            <img src="../../images/login_bg.jpg" />
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -55,7 +55,7 @@
                                 </div>
                             </div>
                         </section>
-                        <div class="popup-in-txt"  style="display:none;">
+                        <div class="popup-in-txt" style="display:none;">
                             <div style="width: 100%;height:80px;margin-top:30px;text-align:center;" class="show-sm">
                                 <img src="../../images/logo_sc2.png" />
                             </div>
@@ -103,17 +103,21 @@
                                     </div>
                                 </a>
                             </div>
-                            
+
 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-  </div>
-  
-  <div style="height:100px;" class="hidden-sm"></div>
-      <script>document.getElementById('title_name').textContent = '绑定手机号';</script>
+    </div>
+
+    <div style="height:700px;" class="hidden-sm"></div>
+
+    <div class="hidden-sm">
+        #include('../../common/footer.html')
+    </div>
+    <script>document.getElementById('title_name').textContent = '绑定手机号';</script>
 </body>
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/popper.min.js"></script>

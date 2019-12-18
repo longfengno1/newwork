@@ -471,8 +471,8 @@
             display: inline-block;
             text-align: center;
             line-height: 48px;
-            height:48px;
-            margin-right:-1px;
+            height: 48px;
+            margin-right: -1px;
             border: 1px solid #D0D7DF;
             font-size: 16px;
             color: #383838;
@@ -521,6 +521,7 @@
             .right {
                 padding-left: 25px;
                 min-width: 578px;
+                margin-left: 200px;
 
                 .right-title {
                     font-size: 16px;
@@ -531,8 +532,8 @@
                 .right-desc {
                     padding-right: 100px;
                     position: relative;
+
                     p {
-                        
                         font-size: 14px;
                         color: #666666;
                         padding-right: 10px;
@@ -546,10 +547,11 @@
                     }
 
                     .price {
-                        font-size: 14px;
+                        font-size: 18px;
                         color: #F8485E;
                         text-align: center;
                         display: block;
+
                         span {
                             color: #F8485E;
                             font-size: 12px;
@@ -601,6 +603,7 @@
 
         .right-bottom {
             line-height: 30px;
+            margin-top:5px;
 
             a {
                 font-size: 14px;
@@ -635,7 +638,7 @@
             width: 200px;
             /*height: 130px;*/
             background: url(../../images/17.png) no-repeat center;
-            border-radius: 5px;           
+            border-radius: 5px;
 
             .icon-fillsreen {
                 font-size: 20px;
@@ -674,7 +677,7 @@
         }
 
         .order-item {
-            float:left;
+            float: left;
         }
 
         .name {

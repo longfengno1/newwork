@@ -1452,6 +1452,7 @@
 
 .spactivity-wrapper .bg-img {
     height: 700rem/$fit;
+    width: auto ;
 }
 
 .spactivity-wrapper-inner {
@@ -2938,7 +2939,7 @@
 .m-main-btnbox .btn-icon {
     display: inline-block;
     height: 90rem/$fit;
-    line-height: 90rem/$fit;
+    line-height: 100rem/$fit;
     width: 90rem/$fit;
     font-size: 44rem/$fit;
     /*background-image: linear-gradient(143deg, #FFFFFF 0%, #00969E 100%);*/
@@ -3004,6 +3005,34 @@
 .carousel-indicators {
     bottom: 30px;
 }
+
+
+.spactivity-carousel {
+    height: 700rem/$fit;
+    overflow: hidden;
+    margin: 0 -9rem;
+
+    .slide {
+    }
+
+    .spactivity-carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 700rem/$fit;
+
+        img {
+            width: 100%;
+            height: 700rem/$fit;
+        }
+    }
+
+    .carousel-indicators {
+        bottom: 180px;
+    }
+}
+
+
 /* 大屏幕 */
 @media (min-width: 1200px) {
 }
@@ -3202,7 +3231,7 @@
     .hotthread .base_price {
         font-size: 24rem/$fit;
         color: #fff;
-        margin-top: 72rem/$fit;
+        margin-top: 32rem/$fit;
     }
 
     .hotthread .base_price dfn {
@@ -3276,7 +3305,7 @@
 
     .spactivity-bg {
         background-color: #fff;
-        height: 560rem/$fit;
+        height: 620rem/$fit;
         background-size: 1200rem/$fit;
     }
 
@@ -3875,6 +3904,32 @@
             height: auto;
         }
     }
+
+    .spactivity-carousel {
+        height: auto;
+        overflow: hidden;
+        margin: 0 0rem;
+
+        .slide {
+        }
+
+        .spactivity-carousel-inner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            height: 700rem/$fit;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .carousel-indicators {
+            bottom: 0px;
+        }
+    }
+
 }
 
 /* 横向放置的手机及分辨率更小的设备 */
