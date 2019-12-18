@@ -1023,7 +1023,7 @@
     font-size: 16rem/$fit;
     line-height: 1;
     color: #F8485E;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
     margin-top:5rem/$fit;
 }
 
@@ -1208,7 +1208,7 @@
     font-size: 16rem/$fit;
     line-height: 1;
     color: #F8485E;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
     text-align:right;
 }
 
@@ -3249,7 +3249,9 @@
     .hotthread .item .one-pro .thread .inner {
         width: auto;
     }
-
+    .hotthread .item .one-pro .base_price {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    }
     .hotthread .item .thread .inner {
         position: absolute;
         width: 45%;
@@ -3912,6 +3914,10 @@
         .carousel-inner img {
             width: 100%;
             height: auto;
+        }
+
+        .carousel-indicators {
+            bottom: 0px;
         }
     }
 

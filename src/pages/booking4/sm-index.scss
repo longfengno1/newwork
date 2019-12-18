@@ -191,11 +191,12 @@
         margin: 0 .8rem;
         border-radius: 5px;
         background-color: #fff;
+        box-shadow: 0 0px 5px 0 rgba(0,0,0,0.3);
 
         h3 {
             margin-bottom: 16rem/$fit;
             padding-bottom: 16rem/$fit;
-            border-bottom:1px solid #999;
+            border-bottom: 1px solid #999;
         }
     }
 
@@ -208,6 +209,7 @@
 
         .infos {
             font-size: 24rem/$fit;
+            text-align: justify;
         }
 
         .notice {
@@ -254,7 +256,11 @@
             }
 
             .input {
-                width: 540rem/$fit;
+                width: 480rem/$fit;
+                border-top: 0px solid #D0D7DF;
+                border-left: 0px solid #D0D7DF;
+                border-right: 0px solid #D0D7DF;
+                border-bottom: 1px solid #D0D7DF;
             }
 
             .radio {
