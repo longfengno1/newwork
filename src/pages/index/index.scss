@@ -1024,6 +1024,7 @@
     line-height: 1;
     color: #F8485E;
     text-shadow: 0 0 5px #000;
+    margin-top:5rem/$fit;
 }
 
 .hotthread .item .one-pro .base_price .price {
@@ -3022,7 +3023,7 @@
         height: 700rem/$fit;
 
         img {
-            width: 100%;
+            width: auto;
             height: 700rem/$fit;
         }
     }
@@ -3078,7 +3079,7 @@
         height: 50rem/$fit;
         font-size: 48rem/$fit;
         line-height: 50rem/$fit;
-        margin: 48rem/$fit 32rem/$fit 10rem/$fit 32rem/$fit;
+        margin: 48rem/$fit 32rem/$fit 20rem/$fit 32rem/$fit;
         text-align: center;
         color: #383838;
         font-weight: 600;
@@ -3088,6 +3089,7 @@
         text-align: center;
         font-size: 24rem/$fit;
         margin-bottom: 32rem/$fit;
+        display:none;
     }
 
     .topbanner-slider {
@@ -3226,12 +3228,18 @@
         line-height: 1.5;
         overflow: auto;
         white-space: normal;
+        max-height: 2.5rem;
+        overflow-y: hidden;
     }
 
     .hotthread .base_price {
         font-size: 24rem/$fit;
         color: #fff;
-        margin-top: 32rem/$fit;
+        margin-top: 72rem/$fit;
+        text-align:right;
+    }
+    .hotthread .detailbtn{
+        text-align:right;
     }
 
     .hotthread .base_price dfn {
@@ -3369,15 +3377,17 @@
     }
 
     .btn-stye1 {
-        height: 40rem/$fit;
+        height: auto;
         font-size: 24rem/$fit;
-        line-height: 40rem/$fit;
+        line-height: 1;
         padding-right: 50rem/$fit;
         width: auto;
+        border-radius: 0.125rem;
+        padding: 0.425rem 1rem 0.425rem 0.6rem;
     }
 
     .btn-stye1 .arrow-right {
-        top: 18rem/$fit;
+        top: 26rem/$fit;
     }
 
     .shipexperience * {
