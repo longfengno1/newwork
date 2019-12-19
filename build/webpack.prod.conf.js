@@ -9,7 +9,7 @@ const FirendlyErrorePlugin = require('friendly-errors-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpackConfigBase = require('./webpack.base.conf');
 const webpackConfigProd = {
-    mode: 'production',
+    mode: 'none',
     output: {
         path: path.resolve(__dirname, '../dist'),
         filename: './js/[name].js',
