@@ -58,7 +58,7 @@
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
-  border: 1px solid #999;
+  border: 1px solid #666;
   border-width: 0 1px 1px 0;
   display: block;
 }
@@ -67,7 +67,7 @@
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
-  border: 1px solid #999;
+  border: 1px solid #666;
   border-width: 1px 0 0 1px;
   display: block;
 }
@@ -83,7 +83,7 @@
 
 .main-search-box .box1,
 .main-search-box .box2 {
-  color: #343e57;
+  color: #666;
   font-size: 18px;
   width: 200px;
   padding: 25px 15px 0 26px;
@@ -216,7 +216,7 @@
 
 .topbanner-tab .input-txt {
   font-size: 14px;
-  color: #999;
+  color: #666;
 }
 
 .topbanner-tab .input-box {
@@ -627,7 +627,7 @@
     display: block;
     position: relative;
     height: 18px;
-    color: #343E57;
+    color: #666;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -655,7 +655,7 @@
 	position:absolute;
 	top:1px;
 	right:2px;
-    border:1px solid #999;
+    border:1px solid #666;
 	 border-width:0 1px 1px 0 ;
     -webkit-transition: all ease-in .2s;
     -ms-transition: all ease-in .2s;
@@ -670,7 +670,7 @@
     left: 10px;
     bottom: 8px;
 	font-size:12px;
-    color: #999999
+    color: #666
 }
 .t2_td .base_price dfn {
     top: -1px;
@@ -806,10 +806,10 @@
 	overflow:hidden;
 }
 .t2_td_schedule_more p a{
-	color:#343E57;
+	color:#666;
 }
 .t2_td_schedule_more p{
-	color:#343E57;
+	color:#666;
 	font-size:16px;
 	margin:5px 0;
   z-index: 3;
@@ -974,7 +974,7 @@
 
 .hotthread .base_price {
 	font-size:12px;
-    color: #999999
+    color: #666
 }
 .hotthread .base_price dfn {
     top: -1px;

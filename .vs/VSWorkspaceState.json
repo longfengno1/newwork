@@ -1,13 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\DreamCruise",
+    "\\DreamCruise\\include",
+    "\\DreamCruise\\include\\css",
     "\\src",
-    "\\src\\common",
-    "\\src\\css",
     "\\src\\pages",
-    "\\src\\pages\\booking4",
-    "\\src\\pages\\index"
+    "\\src\\pages\\activitysubject",
+    "\\src\\themes",
+    "\\src\\themes\\default",
+    "\\src\\themes\\default\\css"
   ],
-  "SelectedNode": "\\src\\pages\\index\\index.scss",
+  "SelectedNode": "\\src\\pages\\booking5\\index.scss",
   "PreviewInSolutionExplorer": false
 }

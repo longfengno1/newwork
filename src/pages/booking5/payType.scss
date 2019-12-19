@@ -3,7 +3,7 @@
 
     h3 {
         font-size: 20px;
-        color: #343E57;
+        color: #666;
         padding: 20px 0 20px 10px;
     }
 
@@ -27,7 +27,7 @@
         }
 
         .price-num {
-            font-size: 20px;
+            font-size: 16px;
             color: #383838;
         }
 
@@ -49,6 +49,7 @@
         background-color: #ffffff;
         padding: 0 30px;
         line-height: 150px;
+        text-align:center;
 
         .pay-item {
             width: 262px;
@@ -73,7 +74,7 @@
         .back {
             border: 1px solid #D0D7DF;
             border-radius: 5px;
-            color: #343E57;
+            color: #666;
             background-color:#fff;
             }
 
@@ -93,7 +94,7 @@
 
         h3 {
             font-size: 20px;
-            color: #343E57;
+            color: #666;
             font-weight: 400;
             height: 48px;
             line-height: 48px;

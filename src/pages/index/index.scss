@@ -68,7 +68,7 @@
     width: 10rem/$fit;
     height: 10rem/$fit;
     transform: rotate(45deg);
-    border: 1rem/$fit solid #999;
+    border: 1rem/$fit solid #666;
     border-width: 0 1rem/$fit 1rem/$fit 0;
     display: block;
 }
@@ -77,7 +77,7 @@
     width: 10rem/$fit;
     height: 10rem/$fit;
     transform: rotate(45deg);
-    border: 1rem/$fit solid #999;
+    border: 1rem/$fit solid #666;
     border-width: 1rem/$fit 0 0 1rem/$fit;
     display: block;
 }
@@ -95,7 +95,7 @@
 
 .main-search-box .box1,
 .main-search-box .box2 {
-    color: #343e57;
+    color: #666;
     font-size: 16rem/$fit;
     width: 180rem/$fit;
     padding: 20rem/$fit 15rem/$fit 0 20rem/$fit;
@@ -231,7 +231,7 @@
 
 .topbanner-tab .input-txt {
     font-size: 14rem/$fit;
-    color: #999;
+    color: #666;
     border: 0;
     padding: 0;
     margin: 0;
@@ -240,7 +240,7 @@
 }
 
 .topbanner-tab .input-txt::placeholder {
-    color: #999;
+    color: #666;
 }
 
 .topbanner-tab .input-box {
@@ -673,7 +673,7 @@
     display: block;
     position: relative;
     height: 18rem/$fit;
-    color: #343E57;
+    color: #666;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -700,7 +700,7 @@
     position: absolute;
     top: 1rem/$fit;
     right: 2rem/$fit;
-    border: 1rem/$fit solid #999;
+    border: 1rem/$fit solid #666;
     border-width: 0 1rem/$fit 1rem/$fit 0;
     -webkit-transition: all ease-in .2s;
     -ms-transition: all ease-in .2s;
@@ -716,7 +716,7 @@
     left: 10rem/$fit;
     bottom: 8rem/$fit;
     font-size: 12rem/$fit;
-    color: #999999
+    color: #666
 }
 
 .t2_td .base_price dfn {
@@ -870,11 +870,11 @@
 }
 
 .t2_td_schedule_more p a {
-    color: #343E57;
+    color: #666;
 }
 
 .t2_td_schedule_more p {
-    color: #343E57;
+    color: #666;
     font-size: 16rem/$fit;
     margin: 5rem/$fit 0;
     z-index: 3;
@@ -996,7 +996,7 @@
     border: 0;
     position: absolute;
     right: 65rem/$fit;
-    bottom: 42rem/$fit;
+    top: 100rem/$fit;
     height: auto;
     text-shadow: 0 0 3px #000;
 }
@@ -1888,12 +1888,12 @@
 }
 
 .topbanner_plane .ship .ship-icon .inner {
-    background: #343E57;
+    background: #666;
     background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 
 .topbanner_plane .ship .ship-icon:hover .inner {
-    background: #343E57;
+    background: #666;
     background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 
@@ -1909,7 +1909,7 @@
     position: absolute;
     height: 140rem/$fit;
     width: 2rem/$fit;
-    background: #343E57;
+    background: #666;
     top: 45rem/$fit;
     left: 23rem/$fit;
 }
@@ -1922,7 +1922,7 @@
     width: 9rem/$fit;
     height: 9rem/$fit;
     border-radius: 50%;
-    background: #343E57;
+    background: #666;
 }
 
 .topbanner_plane .ship .btn-icon .open {
@@ -3747,7 +3747,7 @@
     .section01:after {
         content: "";
         opacity: 0.2;
-        background: #343E57;
+        background: #666;
         border-radius: 4rem/$fit;
         width: 80rem/$fit;
         height: 8rem/$fit;

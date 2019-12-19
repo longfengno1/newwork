@@ -32,7 +32,7 @@ body {
         h3 {
             padding: 10rem/$fit 0;
             font-size: 20rem/$fit;
-            color: #343E57;
+            color: #666;
             margin-left: 10rem/$fit;
             width:100%;
         }
@@ -51,7 +51,7 @@ body {
 
         .selected {
             cursor: default;
-            color: #343E57;
+            color: #666;
         }
 
         .split {
@@ -66,7 +66,7 @@ body {
         .item {
             width: 50%;
             font-size: 14rem/$fit;
-            color: #343E57;
+            color: #666;
             margin-bottom: 10rem/$fit;
 
             &:last-child {
@@ -82,13 +82,13 @@ body {
     .trip-info {
         .title {
             font-size: 18rem/$fit;
-            color: #343E57;
+            color: #666;
         }
 
         .router,
         .time {
             font-size: 14rem/$fit;
-            color: #343E57;
+            color: #666;
             margin-top: 10rem/$fit;
         }
 
@@ -125,7 +125,7 @@ body {
 
         span {
             font-size: 14rem/$fit;
-            color: #343E57;
+            color: #666;
             margin-right: 87rem/$fit;
         }
     }
@@ -133,7 +133,7 @@ body {
     .user-info {
         h4 {
             font-size: 18rem/$fit;
-            color: #343E57;
+            color: #666;
             margin-bottom: 10rem/$fit;
         }
 
@@ -155,7 +155,7 @@ body {
 
         .user-name {
             font-size: 14rem/$fit;
-            color: #343E57;
+            color: #666;
             padding: 7rem/$fit 0 7rem/$fit 20rem/$fit;
         }
 
@@ -165,7 +165,7 @@ body {
 
             p {
                 font-size: 12rem/$fit;
-                color: #343E57;
+                color: #666;
                 margin-bottom: 10rem/$fit;
 
                 &:last-child {
@@ -196,7 +196,7 @@ body {
     .price-info {
         h4 {
             font-size: 16rem/$fit;
-            color: #343E57;
+            color: #666;
             margin-bottom: 15rem/$fit;
         }
 
@@ -216,7 +216,7 @@ body {
 
         .total-price {
             font-size: 16rem/$fit;
-            color: #343E57;
+            color: #666;
             margin-bottom: 15rem/$fit;
         }
 
@@ -244,12 +244,12 @@ body {
         .product-title {
             font-weight: 500;
             font-size: 16rem/$fit;
-            color: #343E57;
+            color: #666;
         }
 
         .product-detail {
             font-size: 16rem/$fit;
-            color: #343E57;
+            color: #666;
             letter-spacing: 0;
             line-height: 24rem/$fit;
         }
@@ -283,12 +283,12 @@ body {
 
             .fee {
                 font-size: 16rem/$fit;
-                color: #343E57;
+                color: #666;
             }
 
             .all-price-num {
                 font-size: 18rem/$fit;
-                color: #343E57;
+                color: #666;
             }
         }
     }
@@ -296,7 +296,7 @@ body {
     .invoice-info {
         p {
             font-size: 14rem/$fit;
-            color: #343E57;
+            color: #666;
             margin-bottom: 10rem/$fit;
 
             span {
@@ -328,7 +328,7 @@ body {
         .back {
             background-color: #ffffff;
             border: 1px solid #D0D7DF;
-            color: #343E57;
+            color: #666;
         }
 
         .buy {
@@ -545,7 +545,7 @@ body {
 
             .product-detail-sm {
                 font-size: 24rem/$fit;
-                color: #999999;
+                color: #666;
                 padding: 10rem/$fit 74rem/$fit 10rem/$fit 10rem/$fit;
                 background-color: #FBFBFB;
                 border-radius: 4rem/$fit;
@@ -586,7 +586,7 @@ body {
 
                 .all-price-num {
                     font-size: 34rem/$fit;
-                    color: #343E57;
+                    color: #666;
                 }
             }
         }

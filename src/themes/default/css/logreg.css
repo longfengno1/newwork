@@ -201,7 +201,7 @@ body{
 	width:99px;
 }
 .btn_grayB{
-	color:#999;
+	color:#666;
 	background-position:0 -62px;
 	font-size:14px;
 	height:30px;
@@ -222,7 +222,7 @@ body{
 }
 
 .btn_grayB_disable{
-	color:#999 !important;
+	color:#666 !important;
 	background-position:0 -62px;
 	font-size:12px!important;
 	height:30px!important;
@@ -234,10 +234,10 @@ body{
 	height:30px!important;
 	line-height:30px!important;
 	cursor:default!important;
-	color:#999 !important;
+	color:#666 !important;
 }
 .btn_grayB_disable:hover{
-	color:#999 !important;
+	color:#666 !important;
 	background-position:0 -62px !important;
 	cursor:default;
 }

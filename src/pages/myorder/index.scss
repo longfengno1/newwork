@@ -35,7 +35,7 @@ body {
 
         .selected {
             cursor: default;
-            color: #343E57;
+            color: #666;
         }
 
         .split {
@@ -51,7 +51,7 @@ body {
         .tab-item {
             display: inline-block;
             font-size: 16px;
-            color: #343E57;
+            color: #666;
             text-align: center;
             margin-right: 41px;
             border-bottom: 3px solid transparent;
@@ -89,7 +89,7 @@ body {
 
         tbody {
             font-size: 14px;
-            color: #343E57;
+            color: #666;
 
             tr {
                 border-top: 4px solid #f7fcfc;
@@ -173,7 +173,7 @@ body {
 
             .title {
                 font-size: 14px;
-                color: #343E57;
+                color: #666;
                 margin-bottom: 10px;
             }
 
@@ -194,7 +194,7 @@ body {
 
                 span {
                     font-size: 12px;
-                    color: #343E57;
+                    color: #666;
                 }
 
                 &:last-child {

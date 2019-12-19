@@ -867,7 +867,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	color:#c40000;
 }
 .primexp .intro{
-	color:#999;
+	color:#666;
 	height:42px;
 	font-size:13px;
 	overflow:hidden;
@@ -907,7 +907,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	color:#c40000;
 }
 .xpslider .mover .intro{
-	color:#999;
+	color:#666;
 	height:36px;
 	overflow:hidden;
 	margin:2px 15px 10px 0;
@@ -993,7 +993,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	color:#c40000;
 }
 .commentsList .text{
-	color:#999;
+	color:#666;
 	height:36px;
 	overflow:hidden;
 	margin-bottom:8px;

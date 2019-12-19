@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    color: #343E57;
+    color: #666;
     font-weight: 400;
     padding: 20px 0 20px 20px;
   }
@@ -171,11 +171,11 @@
   }
 
   .disable {
-    color: #999;
+    color: #666;
   }
 
   .sold-out {
-    background-color: #999;
+    background-color: #666;
   }
 
   .prime {
@@ -220,7 +220,7 @@
     .facility {
       margin-top: 15px;
       font-size: 14px;
-      color: #343E57;
+      color: #666;
     }
 
     .current {
@@ -235,7 +235,7 @@
 
     .old {
       font-size: 14px;
-      color: #999999;
+      color: #666;
       margin-left: 10px;
 
       span {
@@ -253,7 +253,7 @@
 
     .room-name {
       font-size: 18px;
-      color: #343E57;
+      color: #666;
     }
 
     .detail {
@@ -288,7 +288,7 @@
     .num {
       display: inline-block;
       font-size: 14px;
-      color: #343E57;
+      color: #666;
       width: 32px;
       height: 28px;
       line-height: 28px;
@@ -319,7 +319,7 @@
       height: 47px;
       text-align: center;
       font-size: 18px;
-      color: #343E57;
+      color: #666;
       letter-spacing: 1.12px;
     }
   }

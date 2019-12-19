@@ -755,7 +755,7 @@
 .dc-tab-nav a,
 .dc-nav-txt{
 	padding: 10px 40px;
-	color: #343E57;
+	color: #666;
 	text-decoration: none;
 	position: relative;
 	margin-bottom: 1px;
@@ -773,7 +773,7 @@
 }
 .dc-tab-nav a.active,
 .dc-tab-nav .dc-nav-txt.active{
-    background-color: #343E57;
+    background-color: #666;
 	color: #FFFFFF;
 }
 .mCSB_horizontal.mCSB_inside>.mCSB_container{
@@ -1621,7 +1621,7 @@ text-decoration: none;
 }
 .select-banner li a.active{
 	/* color: #15989d; */
-	background-color: #343E57;
+	background-color: #666;
 	color: #FFFFFF;
 }
 .txt-price span.sm-txt{
@@ -1753,11 +1753,11 @@ text-decoration: none;
 .lightheme .dc-tab-nav a.active, 
 .lightheme .dc-tab-nav .dc-nav-txt.active{
 	background: none;
-	color:#343E57;
+	color:#666;
 }
 .lightheme .dc-tab-nav a.active:after, 
 .lightheme .dc-tab-nav .dc-nav-txt.active:after{
-	background-color: #343E57;
+	background-color: #666;
 	height: 3px;
 }
 /* Scroll */

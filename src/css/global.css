@@ -136,7 +136,7 @@ blockquote {
 	color: #777;
 }
 .gray9 {
-	color: #999;
+	color: #666;
 }
 
 .green {
@@ -1304,7 +1304,7 @@ b {
 	background:#fff;
 	/*border: 1px solid #D0D7DF;*/
 	font-size: 18px;
-	color: #343E57;
+	color: #666;
 	letter-spacing: 3.2px;
 	text-align: center;
 	padding:13px 16px;
@@ -1313,7 +1313,7 @@ b {
 }
 .btn-styleC:hover{
 	text-decoration:none;
-	color:#343E57;
+	color:#666;
 	background:#f4f4f4;
 }
 .btn-styleC:after {
@@ -1330,7 +1330,7 @@ b {
 	  -moz-osx-font-smoothing: grayscale;
 	  content: "\e911";
 	  margin-left:20px;
-	  color:#999;
+	  color:#666;
 }
 .btn-styleD{
 	color:#fff;

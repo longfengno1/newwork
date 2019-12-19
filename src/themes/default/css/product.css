@@ -56,7 +56,7 @@ body.ie6 {
 }*/
 .price_gray{
 	background:url(../Nest/img/price_g.png) no-repeat;
-	color:#999;
+	color:#666;
 	padding-left:11px;
 	background-position:2px -226px;
 	font-family:Tahoma;
@@ -1907,7 +1907,7 @@ body.ie6 {
 }
 .cmtlist .gray,
 .cmtlist .reply .gray{
-	color:#999;
+	color:#666;
 }
 .cmtlist .reply label,
 .cmtlist .reply p{
@@ -2841,7 +2841,7 @@ body.ie6 {
 }
 .proshareB_group{
 	padding:0;
-	color:#999;
+	color:#666;
 	padding-bottom:10px;
 }
 .failedzhang{
@@ -2869,7 +2869,7 @@ body.ie6 {
     padding-left: 20px;
 	font-size:12px;
 	vertical-align:middle;
-	color:#999;
+	color:#666;
 }
 .othergroup {
 	padding:5px;
@@ -3429,7 +3429,7 @@ body.ie6 {
 	padding:4px;
 	background-color:#fff;
 	border:1px solid #dbdbdb;
-	color:#999;
+	color:#666;
 	overflow-y:auto;
 	resize:none;
 }
@@ -3564,7 +3564,7 @@ body.ie6 {
 	overflow:hidden;
 	margin-top:0;
 	clear:none;
-	color:#999;
+	color:#666;
 }
 .presentArea ins, .attach ins {
 	color:#628100;

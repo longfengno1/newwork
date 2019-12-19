@@ -150,7 +150,7 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbe1e2', endC
 #cruise-fare .part-1 > ul { width:100%; margin:2.3rem 0; padding:0; position:relative; list-style-type:none; text-align:center; }
 #cruise-fare .part-1 > ul > li { display:inline-block; width:22%; vertical-align:top; }
 #cruise-fare .part-1 > ul > li img { display:block; width:100%; max-width:115px; margin:auto; }
-#cruise-fare .part-1 > ul > li p { width:100%; margin-top:1.5rem; line-height:1.3em; color:#343e57; font-size:1.3em; text-align:center; }
+#cruise-fare .part-1 > ul > li p { width:100%; margin-top:1.5rem; line-height:1.3em; color:#666; font-size:1.3em; text-align:center; }
 
 #cruise-fare .part-2 p { color:#777777; }
 #cruise-fare .part-2 table { display:block; width:100%; margin-bottom:1rem; }

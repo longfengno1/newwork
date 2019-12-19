@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 26rem/$fit;
-    color: #999999;
+    color: #666;
     margin-right: 20rem/$fit;
     cursor: pointer;
   }
@@ -58,7 +58,7 @@
     height: 0.25rem;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    border: 0.025rem solid #999;
+    border: 0.025rem solid #666;
     border-width: 0 0.025rem 0.025rem 0;
     display: block;
   }
@@ -68,7 +68,7 @@
     height: 0.25rem;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    border: 0.025rem solid #999;
+    border: 0.025rem solid #666;
     border-width: 0.025rem 0 0 0.025rem;
     display: block;
   }
@@ -157,7 +157,7 @@
       p {
         margin-top: 24rem/$fit;
         font-size: 22rem/$fit;
-        color: #999999;
+        color: #666;
         letter-spacing: 0;
         line-height: 34rem/$fit;
 
@@ -223,7 +223,7 @@
 
     .count {
       font-size: 26rem/$fit;
-      color: #999999;
+      color: #666;
       // margin-top: 10rem/$fit;
     }
   }

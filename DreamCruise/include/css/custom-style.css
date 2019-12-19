@@ -1470,7 +1470,7 @@ section .container{
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
-  border: 1px solid #999;
+  border: 1px solid #666;
   border-width: 0 1px 1px 0;
   display: block;
 }
@@ -1479,7 +1479,7 @@ section .container{
   width: 10px;
   height: 10px;
   transform: rotate(45deg);
-  border: 1px solid #999;
+  border: 1px solid #666;
   border-width: 1px 0 0 1px;
   display: block;
 }
@@ -1565,7 +1565,7 @@ section .container{
 
 .topbanner-tab .input-txt {
   font-size: 14px;
-  color: #999;
+  color: #666;
 }
 
 .topbanner-tab .input-box {

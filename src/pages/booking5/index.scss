@@ -21,7 +21,7 @@
 
 .product-name {
   font-size: 20px;
-  color: #343E57;
+  color: #666;
 }
 
 .product-info {
@@ -40,6 +40,7 @@
 
 .product-tags {
   margin-top: 8px;
+  font-size:14px;
 
   .tag {
     line-height: 20px;
@@ -89,7 +90,7 @@
 .step-item {
   display: inline-block;
   position: relative;
-  width: 195px;
+  width: 192px;
   height: 50px;
   background-color: #efefef;
   margin-left: 6px;
@@ -103,7 +104,7 @@
   span {
     line-height: 50px;
     font-size: 14px;
-    color: #343E57;
+    color: #666;
   }
 
   .step-item-before {

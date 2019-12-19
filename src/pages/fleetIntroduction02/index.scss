@@ -5,7 +5,7 @@
 	background: url(../../images/intro.jpg) center -110rem/$fit no-repeat;
 	height: 636rem/$fit;
 	position: relative;
-	color: #343E57;
+	color: #666;
 }
 
 .topbanner .content {
@@ -218,12 +218,12 @@
 }
 
 .topbanner_plane .ship .ship-icon .inner {
-	background: #343E57;
+	background: #666;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 
 .topbanner_plane .ship .ship-icon:hover .inner {
-	background: #343E57;
+	background: #666;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 
@@ -239,7 +239,7 @@
 	position: absolute;
 	height: 152rem/$fit;
 	width: 2rem/$fit;
-	background: #343E57;
+	background: #666;
 	top: 45rem/$fit;
 	left: 23rem/$fit;
 }
@@ -252,7 +252,7 @@
 	width: 9rem/$fit;
 	height: 9rem/$fit;
 	border-radius: 50%;
-	background: #343E57;
+	background: #666;
 }
 
 .topbanner_plane .ship .btn-icon .open {
@@ -665,7 +665,7 @@
 	.section01:after {
 		content: "";
 		opacity: 0.2;
-		background: #343E57;
+		background: #666;
 		border-radius: 4rem/$fit;
 		width: 80rem/$fit;
 		height: 8rem/$fit;

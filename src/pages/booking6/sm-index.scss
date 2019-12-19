@@ -33,7 +33,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: 28rem/$fit;
-        color: #999999;
+        color: #666;
         margin-right: 20rem/$fit;
         cursor: pointer;
     }
@@ -61,7 +61,7 @@
         height: 0.25rem;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        border: 0.025rem solid #999;
+        border: 0.025rem solid #666;
         border-width: 0 0.025rem 0.025rem 0;
         display: block;
     }
@@ -71,7 +71,7 @@
         height: 0.25rem;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        border: 0.025rem solid #999;
+        border: 0.025rem solid #666;
         border-width: 0.025rem 0 0 0.025rem;
         display: block;
     }
@@ -169,10 +169,12 @@
             height: 60rem/$fit;
             margin-left: 5rem/$fit;
             text-align: center;
+            vertical-align: middle;
 
             span {
                 line-height: 60rem/$fit;
                 font-size: 28rem/$fit;
+                height: 60rem/$fit;
             }
 
             .step-item-before {
@@ -211,7 +213,7 @@
 
         p {
             font-size: 28rem/$fit;
-            color: #999999;
+            color: #666;
             letter-spacing: 0;
             text-align: center;
             line-height: 40rem/$fit;
@@ -232,7 +234,7 @@
             button {
                 background-color: #00969E;
                 color: #fff;
-                margin-left: 56rem/$fit;
+                margin-left: 80rem/$fit;
                 cursor: pointer;
                 border-radius: 5px;
                 width: 5rem;
@@ -241,7 +243,7 @@
             .back {
                 border: 1px solid #D0D7DF;
                 border-radius: 5px;
-                color: #343E57;
+                color: #666;
                 background-color: #fff;
                 /*width: 128px;
                 height: 40px;*/
@@ -266,7 +268,7 @@
 
             h5 {
                 font-size: 28rem/$fit;
-                color: #999999;
+                color: #666;
                 letter-spacing: 0;
                 text-align: center;
                 line-height: 32rem/$fit;
@@ -352,12 +354,12 @@
 
         .example {
             font-size: 24rem/$fit;
-            color: #999999;
+            color: #666;
             margin-top: 0rem/$fit;
 
             span {
                 font-size: 24rem/$fit;
-                color: #999999;
+                color: #666;
                 text-decoration-line: line-through;
             }
         }
@@ -396,13 +398,14 @@
         box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
         margin: .25rem .25rem 0 .25rem;
         padding-bottom: .25rem;
-        padding: 0 0 .5rem 0;
+        padding: 0 0 .25rem 0;
     }
 
     .prolist .inner {
+        border-top: 0px;
+
         .protitle {
             font-size: .7rem;
-            border-bottom: 0px;
         }
 
         .pic {
@@ -418,6 +421,8 @@
             line-height: .8rem;
             overflow: hidden;
             margin-bottom: 1.5rem;
+            text-align: justify;
+            margin-right: .32rem;
         }
 
         .product-price {
@@ -431,12 +436,43 @@
             font-size: 24rem/$fit;
             color: #F8485E;
             position: absolute;
-            right: 0.75rem;
-            bottom: 1.25rem;
+            left: 53%;
+            bottom: .25rem;
 
             span {
-                font-size: 28rem/$fit;
-                color: #F8485E;
+                font-size: 32rem/$fit;
+                /*color: #F8485E;*/
+            }
+
+            .plus {
+                display: block;
+                float: right;
+                width: 1rem;
+                height: 1rem;
+                background-color: #00969E;
+                color: #fff !important;
+                /* font-size: 0.3rem; */
+                /*line-height: 1rem;*/
+                cursor: pointer;
+                border-radius: 100%;
+                text-align: center;
+                /* right: 3rem; */
+                margin-left: 2.5rem;
+            }
+
+
+            .example {
+                font-size: 24rem/$fit;
+                color: #666;
+                margin-top: 0rem/$fit;
+                text-decoration: line-through;
+                margin-left: 0.5rem;
+
+                span {
+                    font-size: 24rem/$fit;
+                    color: #666;
+                    text-decoration-line: line-through;
+                }
             }
         }
     }
@@ -445,17 +481,42 @@
         position: absolute;
         bottom: -.25rem;
         width: 100%;
-        left: 50%;
 
-        .item-down {
+        .item-down-l {
             width: 20%;
             float: left;
             line-height: 0.9rem;
+            /*margin-left:.75rem;*/
+            margin-left: 51%;
+        }
+
+        .item-down-r {
+            width: 20%;
+            float: left;
+            line-height: 0.9rem;
+            margin-left: .6rem;
         }
     }
 
     .prolist .pic, .prolist .pic img {
         width: 100%;
+    }
+
+    .btn-styleG-s {
+        color: #00969E;
+        font-size: 0.6rem;
+        padding: 0.025rem 0rem;
+        display: inline-block;
+        /*margin-left:.35rem;*/
+    }
+
+    .btn-styleE-s {
+        color: #fff;
+        font-size: 0.6rem;
+        padding: 0.025rem 0.4rem;
+        background: #00969E;
+        display: inline-block;
+        border-radius: 5px;
     }
 }
 
@@ -492,7 +553,7 @@
 
     .count {
       font-size: 28rem/$fit;
-      color: #999999;
+      color: #666;
       // margin-top: 10rem/$fit;
     }
   }

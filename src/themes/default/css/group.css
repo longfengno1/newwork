@@ -716,7 +716,7 @@ body.ie6 {
 	margin-bottom:15px;
 }
 .probox .title .subtitle a{
-	color:#999;
+	color:#666;
 }
 .probox .title a{
 	color:#555;	
@@ -743,7 +743,7 @@ body.ie6 {
 }
 .probox .joinnum{
 	font-family:"microsoft yahei",Arial;
-	color:#999;
+	color:#666;
 	width:70px;
 	font-size:12px;
 }
@@ -760,14 +760,14 @@ body.ie6 {
 	color:#e12140;
 }
 .probox .pricearea{
-	color:#999;	
+	color:#666;	
 }
 .probox .pricearea .price_old,
 .probox .pricearea .price_gray{
 	font-size:14px;
 	margin-right:15px;
 	background:url(../Nest/img/price_g_999.png) no-repeat;
-	color:#999;
+	color:#666;
 	padding-left:12px;
 	background-position:2px -59px;
 	*background-position:2px -59px;

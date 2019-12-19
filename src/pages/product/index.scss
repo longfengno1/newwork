@@ -10,7 +10,7 @@
 .prodetailtitle {
 	font-family: SourceHanSans-Regular;
 	font-size: 20rem/$fit;
-	color: #343E57;
+	color: #666;
 	font-weight: normal;
 	line-height: 24rem/$fit;
 	margin-top: 16rem/$fit;
@@ -62,7 +62,7 @@
 
 .proinfo .prominfop {
 	padding: 12rem/$fit 30rem/$fit;
-	color: #999999;
+	color: #666;
 	background: #FBFBFB;
 }
 
@@ -190,7 +190,7 @@
 
 .proinfo .action .dof-date .d_back {
 	font-size: 12rem/$fit;
-	color: #999999;
+	color: #666;
 	text-align: center;
 	line-height: 12rem/$fit;
 	margin-top: 10rem/$fit;
@@ -442,7 +442,7 @@
 }
 
 .date_plane_box .date_table td.gray {
-	color: #999;
+	color: #666;
 }
 
 .date_plane_box .date_table td.has {
@@ -538,7 +538,7 @@
 			line-height: 40px;
 			border-bottom:1px solid #7fcace;
 			font-size: 16px;
-			color: #343e57;
+			color: #666;
 			&:last-child{
 				border:0;
 			}
@@ -552,7 +552,7 @@
 	float: left;
 	line-height: 36rem/$fit;
 	font-size: 16rem/$fit;
-	color: #343E57;
+	color: #666;
 	padding-left: 48rem/$fit;
 	background: url(../../images/pro_icon_cal.png) 16rem/$fit center no-repeat #fff;
 	position: relative;
@@ -638,7 +638,7 @@
 	height: 40rem/$fit;
 	line-height: 40rem/$fit;
 	font-size: 14rem/$fit;
-	color: #999999;
+	color: #666;
 	letter-spacing: 1.2rem/$fit;
 	border-bottom: 1rem/$fit solid #F0F0F0;
 	padding-left: 40rem/$fit;
@@ -676,7 +676,7 @@
 
 .table_style1 td {
 	font-size: 14rem/$fit;
-	color: #343E57;
+	color: #666;
 	text-align: center;
 	height: 40rem/$fit;
 }
@@ -934,7 +934,7 @@
 	font-size: 12rem/$fit;
 	padding-left: 28rem/$fit;
 	background: url(../../images/icon_fav.png) left center no-repeat;
-	color: #999;
+	color: #666;
 	display: inline-block;
 	margin-right: 15rem/$fit;
 }
@@ -945,7 +945,7 @@
 	font-size: 12rem/$fit;
 	padding-left: 28rem/$fit;
 	background: url(../../images/icon_view.png) left center no-repeat;
-	color: #999;
+	color: #666;
 	display: inline-block;
 	margin-right: 15rem/$fit;
 }
@@ -956,7 +956,7 @@
 	font-size: 12rem/$fit;
 	padding-left: 28rem/$fit;
 	background: url(../../images/icon_good.png) left center no-repeat;
-	color: #999;
+	color: #666;
 	display: inline-block;
 	margin-right: 15rem/$fit;
 }
@@ -967,7 +967,7 @@
 	font-size: 12rem/$fit;
 	padding-left: 28rem/$fit;
 	background: url(../../images/icon_msg.png) left center no-repeat;
-	color: #999;
+	color: #666;
 	display: inline-block;
 	margin-right: 15rem/$fit;
 }
@@ -976,7 +976,7 @@
 	height: 20rem/$fit;
 	line-height: 20rem/$fit;
 	font-size: 12rem/$fit;
-	color: #999;
+	color: #666;
 	display: inline-block;
 }
 
@@ -1224,7 +1224,7 @@
 
 .hotthread .base_price {
 	font-size: 12rem/$fit;
-	color: #999999
+	color: #666
 }
 
 .hotthread .base_price dfn {
@@ -1328,7 +1328,7 @@
 		width: 78rem/$fit;
 		height: 6rem/$fit;
 		opacity: 0.2;
-		background: #343E57;
+		background: #666;
 		border-radius: 3rem/$fit;
 		position: absolute;
 		left: 50%;
@@ -1403,7 +1403,7 @@
 		position: absolute;
 		right: 0;
 		top: 20rem/$fit;
-		color: #999;
+		color: #666;
 	}
 
 	.saletags li {
@@ -1815,7 +1815,7 @@
 		text-align: left;
 		font-family: MEllePRC-Medium;
 		font-size: 24rem/$fit;
-		color: #999999;
+		color: #666;
 		margin-top: 40rem/$fit;
 	}
 	.prointo .visitlist li .pricebtn .base_price dfn,

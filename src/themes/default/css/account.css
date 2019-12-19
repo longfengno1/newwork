@@ -55,7 +55,7 @@ body{
 	height:33px;
 	line-height:33px;
 	margin-bottom:10px;	
-	color:#999;
+	color:#666;
 }
 .crumb strong{
 	font-weight:normal;
@@ -164,7 +164,7 @@ body{
 	color:#222;
 }
 .gray {
-	color:#999;
+	color:#666;
 }
 .green .price{}
 .green .price14{
@@ -436,7 +436,7 @@ body{
 	left:50%;	
 }
 .table .openr .gray, .viewdetail .gray {
-	color:#999;
+	color:#666;
 }
 .table .tl {
 	text-align:left;
@@ -831,7 +831,7 @@ body{
 	border-top:1px dotted #d1d1d1;
 }
 .cmtlist .gray, .cmtlist .reply .gray {
-	color:#999;
+	color:#666;
 }
 .cmtlist .reply p {
 	color:#626164;
@@ -906,7 +906,7 @@ body{
 	padding:4px;
 	background-color:#f3f3f3;
 	border:1px solid #dbdbdb;
-	color:#999;
+	color:#666;
 	overflow-y:auto;
 }
 .publish_comnt .comnt_cont .red {
@@ -2696,7 +2696,7 @@ _height:expression( this.scrollHeight > 269? "270px" : "auto" );
 .product-list .flagship .icon{text-align:left;	padding:5px 0 5px 35px;	font-size:14px;			background:url(../Nest/img/shopping_cart_script.png) no-repeat 2px -64px;	height:22px;	line-height:22px;	font-weight:normal;	color:#da0523;	}
 .product-list .flagship .seller_B label{padding-left:7px;	height:24px;	font-size:14px;			line-height:24px;	color:#da0523;	}
 .product-list td div{margin-left:25px; }
-.product-list .gift{ color:#999;}
+.product-list .gift{ color:#666;}
 .product-list .gift span£¬.product-list .gift label{ color:#c48176;}
 .product-list .priceA_gray {color:#666; background-position:2px -225px\9;}
 .orderProList .priceA_gray { background:none;}
@@ -3742,7 +3742,7 @@ background-color: #9C9C9C;
 	color:#666;
 }
 .memberTable .label{
-	color:#999;
+	color:#666;
 	width:80px;
 	padding-left:65px;
 	display:inline-block;

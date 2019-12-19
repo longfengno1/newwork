@@ -260,7 +260,7 @@ body {
 
 .hotthread .base_price {
     font-size: 12rem/$fit;
-    color: #999999
+    color: #666
 }
 
 .hotthread .base_price dfn {
@@ -343,7 +343,7 @@ body {
     .desc_txt {
         font-family: Helvetica;
         font-size: 14rem/$fit;
-        color: #343E57;
+        color: #666;
         line-height: 30rem/$fit;
     }
 
@@ -440,7 +440,7 @@ body {
 
         .disable{
             border-color: #E5E5E5;
-            color: #999999;
+            color: #666;
             background-color: rgb(245, 245, 245);
         }
 
@@ -460,7 +460,7 @@ body {
         }
 
         .cancel{
-            color: #999999;
+            color: #666;
             border-color: #E5E5E5;
             margin-right: 12rem/$fit;
         }
@@ -473,7 +473,7 @@ body {
     }
     .name {
         font-size: 26px;
-        color: #343E57;
+        color: #666;
     }
 
     .desc {
@@ -504,7 +504,7 @@ body {
 
         .tax {
             font-size: 12px;
-            color: #999999;
+            color: #666;
             line-height: 5px;
             margin-bottom: 20px;
         }
@@ -516,7 +516,7 @@ body {
 
             span {
                 font-size: 12px;
-                color: #999999;
+                color: #666;
             }
         }
     }

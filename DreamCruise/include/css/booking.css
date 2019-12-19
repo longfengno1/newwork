@@ -19,7 +19,7 @@
 }
 #booking-login .nav-item.active{
 	color: #FFFFFF;
-	background-color: #343E57;
+	background-color: #666;
 }
 #booking-login .tab-pane{
 	padding: 2em;
@@ -56,7 +56,7 @@
 }
 #booking-login .form-btn{
 	color: #FFFFFF;
-	background-color: #343E57;
+	background-color: #666;
 	border: 0;
 	padding: 5px 20px;
 	height: 33px;

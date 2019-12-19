@@ -85,7 +85,7 @@
                 </div>
                 <div class="main">
                     <div class="center">
-                        <span class="price-num">您需要支付<span class="price"><span>&yen;</span>9,154</span></span>
+                        <span class="price-num">支付金额<span class="price"><span>&yen;</span>9,154</span></span>
                     </div>
                 </div>
                 <div class="sub-title">
@@ -137,17 +137,22 @@
         <div class="ensure-price">
             <h3><img class="price-count" src="../../images/price-count.png" alt="" />订单总金额</h3>
             <div class="content">
-                <p>您需要支付<span class="price"><span>&yen;</span>9154</span></p>
+                <p>支付金额<span class="price"><span>&yen;</span>9154</span></p>
             </div>
         </div>
         <div class="split"></div>
         <div class="pay-type">
             <h3> <img class="price-count" src="../../images/icon-user-center4.png" alt="" />选择支付方式</h3>
             <div class="type-row">
-                <img src="../../images/ali-pay.png" alt=""><img src="../../images/wechat-pay.png" alt="">
+                <div class="pay active"><img src="../../images/pay-ali.jpg" alt="">支付宝支付</div>
+                <div class="pay">
+                    <img src="../../images/pay-wechat.jpg" alt="">微信支付
+                </div>
             </div>
             <div class="type-row">
-                <img src="../../images/yinlian-pay.png" alt=""><img src="../../images/other-pay.png" alt="">
+                <div class="pay"><img src="../../images/pay-yinlian.jpg" alt="">银联支付</div>
+                <div class="pay"><img src="../../images/payother.jpg" alt="">他人代付</div>
+                
             </div>
         </div>
     </div>
@@ -160,6 +165,11 @@
         </div>
     </div>
     #include('../../common/footer.html')
+
+    <script>
+        var currnetStep = 5;
+    </script>
+
 
 </body>
 

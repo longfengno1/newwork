@@ -3,7 +3,7 @@
     padding-top: 10px;
 
     .order-success {
-        height: 260px;
+        height: 360px;
         display: table-cell;
         vertical-align: middle;
         background-color: #ffffff;
@@ -12,8 +12,14 @@
         p {
             text-align: center;
             font-size: 14px;
-            color: #343E57;
+            color: #666;
             margin-top: 20px;
+
+            span {
+                font-size: 20px;
+                color: #00969E;
+                /*margin-left: 80px;*/
+            }
         }
     }
 
@@ -23,12 +29,6 @@
         img {
             width: 80px;
             height: 80px;
-        }
-
-        span {
-            font-size: 20px;
-            color: #00969E;
-            margin-left: 80px;
         }
     }
 
@@ -56,10 +56,11 @@
         .back {
             border: 1px solid #D0D7DF;
             border-radius: 5px;
-            color: #343E57;
+            color: #666;
             background-color: #fff;
             width: 128px;
             height: 40px;
+            font-size: 14px;
         }
     }
 
@@ -74,7 +75,7 @@
 
             h3 {
                 font-size: 28px;
-                color: #343E57;
+                color: #666;
                 line-height: 40px;
                 text-align: center;
             }
@@ -82,7 +83,7 @@
             h5 {
                 text-align: center;
                 font-size: 14px;
-                color: #343E57;
+                color: #666;
                 margin-top: 10px;
 
                 span {
@@ -120,7 +121,7 @@
 
             .product-item {
                 width: 285px;
-                height: 320px;
+                height: 310px;
                 background: #FFFFFF;
                 box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
                 padding: 10px;
@@ -139,19 +140,22 @@
 
             .product-title {
                 font-size: 16px;
-                color: #343E57;
+                color: #666;
                 letter-spacing: 0;
                 margin-top: 10px;
                 margin-left: 5px;
             }
 
             .product-desc {
-                font-size: 12px;
+                font-size: 14px;
                 color: #666666;
                 letter-spacing: 0;
                 line-height: 20px;
                 margin-top: 0px;
                 margin-left: 5px;
+                max-height: 40px;
+                overflow: hidden;
+                text-align: justify;
             }
 
             .product-price {
@@ -172,13 +176,14 @@
 
             .example {
                 font-size: 12px;
-                color: #999999;
+                color: #666;
                 /*margin-top: 10px;*/
                 display: block;
+                text-decoration-line: line-through;
 
                 span {
                     font-size: 12px;
-                    color: #999999;
+                    color: #666;
                     text-decoration-line: line-through;
                 }
 
@@ -203,6 +208,7 @@
                     border-radius: 2px;
                     border: 1px solid #00969E;
                     border-radius: 5px;
+                    font-size: 14px;
                 }
             }
         }
@@ -225,7 +231,7 @@
                 }
 
                 .product-title {
-                    color: #343E57;
+                    color: #666;
                     letter-spacing: 0;
                     margin-top: 10px;
                     text-align: center;
@@ -284,13 +290,14 @@
 
                 .example {
                     font-size: 12px;
-                    color: #999999;
+                    color: #666;
                     /*margin-top: 10px;*/
                     display: block;
+                    text-decoration-line: line-through;
 
                     span {
                         font-size: 12px;
-                        color: #999999;
+                        color: #666;
                         text-decoration-line: line-through;
                     }
 
@@ -344,7 +351,7 @@
 
                 .product-title {
                     font-size: 16px;
-                    color: #343E57;
+                    color: #666;
                     letter-spacing: 0;
                     margin-top: 10px;
                     margin-left: 5px;
@@ -377,13 +384,13 @@
 
                 .example {
                     font-size: 12px;
-                    color: #999999;
+                    color: #666;
                     /*margin-top: 10px;*/
                     display: block;
 
                     span {
                         font-size: 12px;
-                        color: #999999;
+                        color: #666;
                         text-decoration-line: line-through;
                     }
 

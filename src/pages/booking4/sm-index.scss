@@ -33,7 +33,7 @@
         align-items: center;
         justify-content: space-between;
         font-size: 28rem/$fit;
-        color: #999999;
+        color: #666;
         margin-right: 20rem/$fit;
         cursor: pointer;
     }
@@ -60,7 +60,7 @@
         height: 0.25rem;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        border: 0.025rem solid #999;
+        border: 0.025rem solid #666;
         border-width: 0 0.025rem 0.025rem 0;
         display: block;
     }
@@ -70,7 +70,7 @@
         height: 0.25rem;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        border: 0.025rem solid #999;
+        border: 0.025rem solid #666;
         border-width: 0.025rem 0 0 0.025rem;
         display: block;
     }
@@ -198,7 +198,7 @@
         h3 {
             margin-bottom: 16rem/$fit;
             padding-bottom: 16rem/$fit;
-            border-bottom: 1px solid #999;
+            border-bottom: 1px solid #666;
         }
     }
 
@@ -362,7 +362,7 @@
         width: .25rem;
         height: .25rem;
         margin-bottom: .125rem;
-        background-color: #999;
+        background-color: #666;
     }
 }
 
@@ -399,7 +399,7 @@
 
     .count {
       font-size: 28rem/$fit;
-      color: #999999;
+      color: #666;
       // margin-top: 10rem/$fit;
     }
   }

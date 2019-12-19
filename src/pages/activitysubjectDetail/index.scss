@@ -4,7 +4,7 @@
 	background:url(../../images/intro.jpg) center -110rem/$fit no-repeat;
 	height:676rem/$fit;
 	position:relative;
-	color:#343E57;
+	color:#666;
 }
 .topbanner .content{
 	padding:0 77rem/$fit;
@@ -175,11 +175,11 @@
 	background: none;
 }
 .topbanner_plane .ship .ship-icon .inner{
-	background: #343E57;
+	background: #666;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 .topbanner_plane .ship .ship-icon:hover .inner{
-	background: #343E57;
+	background: #666;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 .topbanner_plane .ship-intro{
@@ -193,7 +193,7 @@
 	position:absolute;
 	height:152rem/$fit;
 	width:2rem/$fit;
-	background: #343E57;
+	background: #666;
 	top:45rem/$fit;
 	left:23rem/$fit;
 }
@@ -205,7 +205,7 @@
 	width:9rem/$fit;
 	height:9rem/$fit;
 	border-radius:50%;
-	background: #343E57;
+	background: #666;
 }
 .topbanner_plane .ship .btn-icon .open{
 	background:url(../../images/icon_open@2x.png) center center no-repeat;
@@ -576,12 +576,12 @@
 	float:left;
 	margin-left:-152rem/$fit;
 	font-size: 26rem/$fit;
-	color: #343E57;
+	color: #666;
 	letter-spacing: 2.77rem/$fit;
 	text-align: center;
 }
 .filter_planeB li a{
-	color:#343E57;
+	color:#666;
 	margin-right:28rem/$fit;
 	display:inline-block;
 	line-height:30rem/$fit;
@@ -893,7 +893,7 @@
 
 .hotthread .base_price {
 	font-size:12rem/$fit;
-    color: #999999
+    color: #666
 }
 .hotthread .base_price dfn {
     top: -1rem/$fit;

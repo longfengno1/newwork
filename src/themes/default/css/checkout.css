@@ -442,7 +442,7 @@ a.grayB:hover{
 	border-top:1px solid #e7e7e7;
 }
 .table .gray {
-	color:#999;
+	color:#666;
 }
 .table a.gray:hover {
 	color:#DA0523;
@@ -723,7 +723,7 @@ a.grayB:hover{
 	color:#666;
 }
 .prolistbox .prolist .prom{
-	color:#999;
+	color:#666;
 	height:18px;
 	overflow:hidden;
 }
@@ -780,7 +780,7 @@ a.grayB:hover{
 .checkorder{padding:30px 0 0;border:0 none #ddd;}
 .checkorder h2{padding-bottom:15px;font-size:18px;line-height:18px;font-weight:normal;color:#333; font-family:"microsoft yahei",arial;}
 .selectads{padding:10px 19px 17px;background-color:#fff;border:1px solid #fff;color:#666;border-top:2px solid #fff;}
-.selectads .sep{color:#999;}
+.selectads .sep{color:#666;}
 .myaddrlist li{padding:4px 0; height:20px; position:relative;}
 .myaddrlist li .sep{position:relative;top:1px;}
 .myaddrlist .curr{font-weight:normal;color:#222;}
@@ -847,7 +847,7 @@ a.grayB:hover{
 .selectsend table .price{padding-left:9px;background:url(../Nest/img/price_g.png) 0 -226px no-repeat;color:#666;}
 :root selectsend table .price{ background-position:0 -227px\0;}
 .selectsend table .tip{padding:0;border-top:0 none;}
-.selectsend table .tip td{padding-top:0;color:#999;}
+.selectsend table .tip td{padding-top:0;color:#666;}
 .selectsend table .shipIntruction td{ color:#777; padding: 2px 16px; line-height:2;}
 .selectsend table .shipIntruction .shipFee{ font-weight:bold;}
 .selectsend table .shipIntruction .shipFee .price16{ font-size:16px; padding-left:12px; color:#de0027;background:url(../Nest/img/price.png) 0 -295px no-repeat; background-position:0 -297px\9;}
@@ -1028,7 +1028,7 @@ a.grayB:hover{
 .remarkinfo .btnA{background-position:-100px -119px;}
 .remarkinfo .btnB{background-position:-100px -59px;}
 .remarkinfo .btnC{width:79px;background-position:-101px -29px;}
-.remarkinfo .int{padding:5px 10px 5px 40px;color:#999;}
+.remarkinfo .int{padding:5px 10px 5px 40px;color:#666;}
 .remarkinfo .priceA_gray{ background-position:2px -226px;}
 :root .remarkinfo .priceA_gray{ background-position:2px -227px\0;}
 .remarkinfo a{ color:#848484;}

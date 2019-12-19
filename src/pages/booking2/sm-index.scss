@@ -11,7 +11,7 @@
         height: 0.25rem;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        border: 0.025rem solid #999;
+        border: 0.025rem solid #666;
         border-width: 0 0.025rem 0.025rem 0;
         display: block;
     }
@@ -21,7 +21,7 @@
         height: 0.25rem;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        border: 0.025rem solid #999;
+        border: 0.025rem solid #666;
         border-width: 0.025rem 0 0 0.025rem;
         display: block;
     }
@@ -195,8 +195,8 @@
 
         .product-img {
             background: url(../../images/prodetail_pic.jpg) no-repeat center;
-            width: 202rem/$fit;
-            height: 114rem/$fit;
+            width: 50%;
+            height: auto;
         }
 
         .product-detail {
@@ -211,7 +211,7 @@
 
         .desc {
             font-size: 26rem/$fit;
-            color: #999999;
+            color: #666;
             font-weight: 300;
             line-height: 34rem/$fit;
         }
@@ -221,8 +221,8 @@
             line-height: 31rem/$fit;
             position: absolute;
             width: 170rem/$fit;
-            right: 0;
-            bottom: 80rem/$fit;
+            right: 160rem/$fit;
+            bottom: 18rem/$fit;
             text-align: center;
             color: #666666;
 
@@ -241,6 +241,9 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 15rem/$fit;
+            position: absolute;
+            right: 0;
+            bottom: 0;
 
             .room-count {
                 font-size: 26rem/$fit;
@@ -257,8 +260,8 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 46rem/$fit;
-                    height: 46rem/$fit;
+                    width: 40rem/$fit;
+                    height: 40rem/$fit;
                     border-radius: 50%;
                 }
 
@@ -268,8 +271,8 @@
                 }
 
                 .plus {
-                    background-color: #00969E;
-                    color: #fff;
+                    border: 1px solid #00969E;
+                    color: #00969E;
                 }
 
                 .num {
@@ -361,7 +364,7 @@
 
     .count {
       font-size: 26rem/$fit;
-      color: #999999;
+      color: #666;
       // margin-top: 10rem/$fit;
     }
   }

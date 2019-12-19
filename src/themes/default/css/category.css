@@ -50,7 +50,7 @@
 }*/
 .catepro .price_gray{
 	background:url(../Nest/img/price_g.png) no-repeat;
-	color:#999;
+	color:#666;
 	padding-left:10px;
 	background-position:2px -351px;
 	*background-position:2px -352px;
@@ -769,7 +769,7 @@
 	height:296px;
 	*height:302px;
 	padding:20px;
-	color:#999;
+	color:#666;
 }
 .catepro .prolist .tit a{
 	color:#333;
@@ -1125,7 +1125,7 @@
 	line-height: 25px;
 }
 .allList dd a {
-	color:#999;
+	color:#666;
 }
 .allList dd a:hover {
 	color:#C40000;

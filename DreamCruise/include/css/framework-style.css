@@ -98,7 +98,7 @@ nav .dropdown-menu a:hover,
 nav .dropdown-menu a:focus,
 nav .dropdown-menu a:active{
 	color: #FFFFFF;
-	background: #343e57;
+	background: #666;
 }
 nav .dropdown-submenu{
 	position: relative;
@@ -583,7 +583,7 @@ footer :-moz-placeholder { /* Firefox 18- */
   }
   #nav-menu li{
 		display: block;
-		border-bottom: solid 1px #999999;
+		border-bottom: solid 1px #666;
   }
   #nav-menu li:last-child{
   		border-bottom:0;
@@ -672,7 +672,7 @@ footer :-moz-placeholder { /* Firefox 18- */
 	#nav-menu{
 		order:1;
 		width: 100%;
-    		background: #343e57;
+    		background: #666;
 		padding: 0.5em;
 		text-align: right;
 		height: 0;
@@ -691,7 +691,7 @@ footer :-moz-placeholder { /* Firefox 18- */
 		position: absolute;
 		top: 76px;
 		left: 0.5em;
-		border: solid 1px #999999;
+		border: solid 1px #666;
 		padding: 10px;
 		border-radius: 5px;
 		width: calc(100% - 20px);
@@ -706,7 +706,7 @@ footer :-moz-placeholder { /* Firefox 18- */
 	#nav-search input{
 		border-bottom: none;
 		height: 37px;
-		color: #343e57;
+		color: #666;
 		font-size: 1.3em;
 		line-height: normal;
 		width: 85%;
@@ -759,16 +759,16 @@ footer :-moz-placeholder { /* Firefox 18- */
 		overflow: hidden;
 	}	
 	nav ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		color: #343e57;
+		color: #666;
 	}
 	nav ::-moz-placeholder { /* Firefox 19+ */
-		color: #343e57;
+		color: #666;
 	}
 	nav :-ms-input-placeholder { /* IE 10+ */
-		color: #343e57;
+		color: #666;
 	}
 	nav :-moz-placeholder { /* Firefox 18- */
-		color: #343e57;
+		color: #666;
 	}
 }
 @media (max-width: 768px) {

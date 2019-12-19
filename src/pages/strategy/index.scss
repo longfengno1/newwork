@@ -101,7 +101,7 @@
     line-height: 35px;
     width: 160px;
     font-size: 16px;
-    color: #343E57;
+    color: #666;
     cursor: pointer;
 
     .icon {
@@ -231,7 +231,7 @@
 
       a {
         font-size: 20px;
-        color: #999;
+        color: #666;
       }
 
       a:hover {
@@ -357,7 +357,7 @@
       color: #383838;
       text-align: center;
       padding: 0 8px;
-      border: 1px solid #999999;
+      border: 1px solid #666;
       border-radius: 2px;
       margin-left: 10px;
     }
@@ -400,11 +400,11 @@
 
     .old-price {
       font-size: 12px;
-      color: #999999;
+      color: #666;
 
       span {
         font-size: 16px;
-        color: #999;
+        color: #666;
         line-height: 20px;
         text-decoration: line-through;
       }
@@ -453,14 +453,14 @@
 
     .tag {
       font-size: 14px;
-      color: #343E57;
+      color: #666;
       letter-spacing: 1.05px;
       margin-right: 10px;
     }
 
     .tip {
       font-size: 12px;
-      color: #999999;
+      color: #666;
       margin-top: 8px;
     }
 
@@ -475,7 +475,7 @@
 
     .intro {
       font-size: 12px;
-      color: #999999;
+      color: #666;
       letter-spacing: 0.75px;
       text-align: right;
       margin-right: 12px;
@@ -790,7 +790,7 @@
   display: block;
   position: relative;
   height: 18px;
-  color: #343E57;
+  color: #666;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -818,7 +818,7 @@
   position: absolute;
   top: 1px;
   right: 2px;
-  border: 1px solid #999;
+  border: 1px solid #666;
   border-width: 0 1px 1px 0;
   -webkit-transition: all ease-in .2s;
   -ms-transition: all ease-in .2s;
@@ -834,7 +834,7 @@
   left: 10px;
   bottom: 8px;
   font-size: 12px;
-  color: #999999
+  color: #666
 }
 
 .t2_td .base_price dfn {
@@ -988,11 +988,11 @@
 }
 
 .t2_td_schedule_more p a {
-  color: #343E57;
+  color: #666;
 }
 
 .t2_td_schedule_more p {
-  color: #343E57;
+  color: #666;
   font-size: 16px;
   margin: 5px 0;
   z-index: 3;
@@ -1183,7 +1183,7 @@
 	font-size: 12px;
 	padding-left: 28px;
 	background: url(../../images/icon_fav.png) left center no-repeat;
-	color: #999;
+	color: #666;
 	display: inline-block;
 	margin-right: 15px;
 }
@@ -1194,7 +1194,7 @@
 	font-size: 12px;
 	padding-left: 28px;
 	background: url(../../images/icon_view.png) left center no-repeat;
-	color: #999;
+	color: #666;
 	display: inline-block;
 	margin-right: 15px;
 }
@@ -1205,7 +1205,7 @@
 	font-size: 12px;
 	padding-left: 28px;
 	background: url(../../images/icon_good.png) left center no-repeat;
-	color: #999;
+	color: #666;
 	display: inline-block;
 	margin-right: 15px;
 }
@@ -1216,7 +1216,7 @@
 	font-size: 12px;
 	padding-left: 28px;
 	background: url(../../images/icon_msg.png) left center no-repeat;
-	color: #999;
+	color: #666;
 	display: inline-block;
 	margin-right: 15px;
 }
@@ -1225,7 +1225,7 @@
 	height: 20px;
 	line-height: 20px;
 	font-size: 12px;
-	color: #999;
+	color: #666;
 	display: inline-block;
 }
 .btn-style1 {

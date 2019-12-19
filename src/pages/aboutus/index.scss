@@ -4,7 +4,7 @@
 	background: url(../../images/intro.jpg) center -110px no-repeat;
 	height: 676px;
 	position: relative;
-	color: #343E57;
+	color: #666;
 }
 
 .topbanner .content {
@@ -204,12 +204,12 @@
 }
 
 .topbanner_plane .ship .ship-icon .inner {
-	background: #343E57;
+	background: #666;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 
 .topbanner_plane .ship .ship-icon:hover .inner {
-	background: #343E57;
+	background: #666;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 
@@ -225,7 +225,7 @@
 	position: absolute;
 	height: 152px;
 	width: 2px;
-	background: #343E57;
+	background: #666;
 	top: 45px;
 	left: 23px;
 }
@@ -238,7 +238,7 @@
 	width: 9px;
 	height: 9px;
 	border-radius: 50%;
-	background: #343E57;
+	background: #666;
 }
 
 .topbanner_plane .ship .btn-icon .open {
@@ -651,13 +651,13 @@
 	float: left;
 	margin-left: -152px;
 	font-size: 16px;
-	color: #343E57;
+	color: #666;
 	letter-spacing: 2.77px;
 	text-align: center;
 }
 
 .filter_planeB li a {
-	color: #343E57;
+	color: #666;
 	margin-right: 28px;
 	display: inline-block;
 	line-height: 20px;
@@ -724,7 +724,7 @@
 
 .desc {
 	font-size: 16rem/$fit;
-	color: #343E57;
+	color: #666;
 	line-height: 30rem/$fit;
 	margin: .25rem 1rem .5rem 1rem;
 	height:300px;
@@ -767,7 +767,7 @@
 
 .desc1 {
 	font-size: 16px;
-	color: #343E57;
+	color: #666;
 	line-height: 28px;
 	/*width: 519px;*/
 	/*height: 364px;
@@ -829,7 +829,7 @@
 
 		.desc {
 			font-size: 24rem/$fit;
-			color: #343E57;
+			color: #666;
 			line-height: 1rem;
 			margin: .5rem .8rem .5rem .8rem;
 		}
@@ -865,7 +865,7 @@
 
 		.desc1 {
 			font-size: 24rem/$fit;
-			color: #343E57;
+			color: #666;
 			line-height: 1rem;
 			width: auto;
 			height: auto;

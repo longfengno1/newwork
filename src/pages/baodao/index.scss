@@ -5,7 +5,7 @@
 	background: url(../../images/intro.jpg) center -110px no-repeat;
 	height: 676px;
 	position: relative;
-	color: #343E57;
+	color: #666;
 }
 
 .topbanner .content {
@@ -205,12 +205,12 @@
 }
 
 .topbanner_plane .ship .ship-icon .inner {
-	background: #343E57;
+	background: #666;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 
 .topbanner_plane .ship .ship-icon:hover .inner {
-	background: #343E57;
+	background: #666;
 	background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
 }
 
@@ -226,7 +226,7 @@
 	position: absolute;
 	height: 152px;
 	width: 2px;
-	background: #343E57;
+	background: #666;
 	top: 45px;
 	left: 23px;
 }
@@ -239,7 +239,7 @@
 	width: 9px;
 	height: 9px;
 	border-radius: 50%;
-	background: #343E57;
+	background: #666;
 }
 
 .topbanner_plane .ship .btn-icon .open {
@@ -613,7 +613,7 @@
 	float: left;
 	/*margin-left:-152px;*/
 	font-size: 16px;
-	color: #343E57;
+	color: #666;
 	/*letter-spacing: 2.77px*/;
 	/*text-align: center;*/
 	margin-bottom: 0;
@@ -622,7 +622,7 @@
 }
 
 .filter_planeB li a {
-	color: #343E57;
+	color: #666;
 	margin-right: 28px;
 	display: inline-block;
 	line-height: 20px;
@@ -674,7 +674,7 @@
 }
 
 .filter_planeC li a {
-	color: #343E57;
+	color: #666;
 	margin-right: 28px;
 	display: inline-block;
 	line-height: 20px;
@@ -816,7 +816,7 @@
 				label {
 					float: left;
 					font-size: 32rem/$fit;
-					color: #343E57;
+					color: #666;
 					/*letter-spacing: 2.77px;*/
 					/* text-align: center; */
 					margin-bottom: 0;

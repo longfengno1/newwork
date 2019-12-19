@@ -384,7 +384,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	vertical-align:middle;
 }
 .gift_login .formsub .intxtfocus {
-	border-color:#999!important;
+	border-color:#666!important;
 }
 .gift_login .btn_login{
 	width:121px;
@@ -402,7 +402,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	_background-position:0 center;
 }
 .gift_login .refresh_validCode {
-	color:#999;
+	color:#666;
 	font-family:"microsoft yahei",SimHei,Arial;
 }
 .gift_login .refresh_validCode:hover {
@@ -471,13 +471,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	vertical-align:middle;
 }
 .exchangeForm .formsub .intxtfocus {
-	border-color:#999!important;
+	border-color:#666!important;
 }
 .exchangeForm .formsub .required {
 	color:#f42f00;
 }
 .exchangeForm .formsub .tips{
-	color:#999;
+	color:#666;
 }
 .exchangeForm .btnline .Validform_checktip{
 	vertical-align:middle;
@@ -544,7 +544,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	vertical-align:middle;
 }
 .checkphone .formsub .intxtfocus {
-	border-color:#999!important;
+	border-color:#666!important;
 }
 .checkphone .btn_check{
 	width:130px;
@@ -562,7 +562,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	_background-position:0 center;
 }
 .checkphone .refresh_validCode {
-	color:#999;
+	color:#666;
 	font-family:"microsoft yahei",SimHei,Arial;
 }
 .checkphone .refresh_validCode:hover {
@@ -622,7 +622,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	vertical-align:middle;
 }
 .checkemail .formsub .intxtfocus {
-	border-color:#999!important;
+	border-color:#666!important;
 }
 .checkemail .btn_checkemail {
 	width:130px;
@@ -640,7 +640,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e42143', end
 	_background-position:0 center;
 }
 .checkemail .refresh_validCode {
-	color:#999;
+	color:#666;
 	font-family:"microsoft yahei",SimHei,Arial;
 }
 .checkemail .refresh_validCode:hover {

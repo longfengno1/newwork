@@ -33,7 +33,7 @@ body {
 
             .selected {
                 cursor: default;
-                color: #343E57;
+                color: #666;
             }
 
             .split {
@@ -53,7 +53,7 @@ body {
         h3 {
             padding: 20rem/$fit 0;
             font-size: 20rem/$fit;
-            color: #343E57;
+            color: #666;
         }
     }
 
@@ -78,7 +78,7 @@ body {
                 text-align: right;
                 margin-right: 10px;
                 font-size: 12px;
-                color: #343E57;
+                color: #666;
             }
 
             .input-text {
@@ -89,7 +89,7 @@ body {
                 border-radius: 2px;
                 padding-left: 10px;
                 font-size: 12px;
-                color: #343E57;
+                color: #666;
                 height: 30px;
                 line-height: 30px;
             }
@@ -99,7 +99,7 @@ body {
                 align-items: center;
                 width: 93px;
                 font-size: 12px;
-                color: #343E57;
+                color: #666;
 
                 input {
                     margin-right: 8px;
@@ -172,7 +172,7 @@ body {
 
             .every {
                 text-decoration-line: none;
-                color: #999999;
+                color: #666;
             }
 
             .buy {

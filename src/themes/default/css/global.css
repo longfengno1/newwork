@@ -21,7 +21,7 @@ blockquote{ margin:0; padding:0; display:block;}
 .red{color:#c40000!important;}
 .redB{color:#da0523;}
 .gray,.hasDefaultText{color:#c2c2c2;}
-.grayB{color:#999;}
+.grayB{color:#666;}
 .orange{color:#f52800;}
 .orangeB{color:#ff3600;}
 .green{color:#008902;}
@@ -147,11 +147,11 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 }
 .prolist .tit a .prom{
 	margin-left:5px;
-	color:#999;
+	color:#666;
 }
 .prolist .promtxt {
 	height:18px;
-	color:#999;
+	color:#666;
 	margin-bottom:3px;
 	overflow:hidden;
 }
@@ -202,7 +202,7 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 	height:27px;
 	line-height:27px;
 	font-family:"microsoft yahei";
-	color:#999;
+	color:#666;
 	background:#f2f2f2 url(../Nest/img/sprite.png) 0 -1800px repeat-x;
 	position:relative;
 	z-index:100;
@@ -223,7 +223,7 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 	background-position:0 -1895px;
 }
 #topbar a{
-	color:#999;
+	color:#666;
 }
 #topbar a:hover{
 	color:#c40000;
@@ -238,7 +238,7 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 	float:left;
 	height:27px;
 }
-.topnav li a{ display:inline-block;color:#999;}
+.topnav li a{ display:inline-block;color:#666;}
 .topnav dl dt a{
 	*margin-top:2px;
 	_margin-top:0;
@@ -310,7 +310,7 @@ b{font-weight:normal; display:inline-block; margin:0 8px;}
 	background-color:#f5f5f5;
 	font-weight:normal;
 	text-decoration:none;
-	color:#999;
+	color:#666;
 }
 .topnav dt .icon {
 	display:inline-block;
@@ -494,13 +494,13 @@ body.ie6 {
 	overflow:hidden;
   	width:500px;
 	zoom:1;
-	color:#999;
+	color:#666;
 }
 .searchbar .hot a{
 	float:left;
 	white-space:nowrap;	
 	margin-left:8px;
-	color:#999;
+	color:#666;
 }
 .searchbar .hot a:hover{
 	color:#c40000;
@@ -843,7 +843,7 @@ body.ie6 {
 	/*border-top:none;*/
 }
 .menulist th a{display:inline-block; padding:0 2px;color:#666; white-space:normal;}
-.menulist td a{white-space:nowrap; color:#999;}
+.menulist td a{white-space:nowrap; color:#666;}
 .menulist td{ width:383px; padding-right:0;}
 .menulist td b{margin:0 2px;}
 .menulist .catebrand td {
@@ -1110,7 +1110,7 @@ body.ie6 {
 }
 .mycart .prolist .qty,
 .mywish .prolist .qty {
-	color:#999;
+	color:#666;
 	font-family:"microsoft yahei", Arial;
 	font-weight: bold;
 	margin-left: 5px;
@@ -1272,7 +1272,7 @@ body.ie6 {
 .mycart .infonull,
 .mycart .unlogin,
 .mywish .infonull,
-.mywish .unlogin{background-color:#fff; color:#999;  text-align:center; padding:30px;}
+.mywish .unlogin{background-color:#fff; color:#666;  text-align:center; padding:30px;}
 .mycart .icon_urge,
 .mycart .icon_forbidden,
 .mywish .icon_urge,
@@ -1326,7 +1326,7 @@ body.ie6 {
 	overflow:visible;	
 }
 .crumb a{
-	color:#999;
+	color:#666;
 }
 .crumb a:hover{
 	color:#c40000;
@@ -1367,7 +1367,7 @@ body.ie6 {
 #footer .aside{
 	padding-top:20px;
 	border-top:1px solid #ebebeb;
-	color:#999;
+	color:#666;
 }
 #footer .aside p{
 	margin-bottom:3px;
@@ -1390,7 +1390,7 @@ body.ie6 {
 }
 .footer{
 	background:#fff;
-	color:#999;
+	color:#666;
 	border-top:1px solid #ebebeb;
 }
 .footerLogo{
@@ -1428,7 +1428,7 @@ body.ie6 {
 	margin-left:51px;
 }
 .footer dd a{
-	color:#999;
+	color:#666;
 	font-size:12px;
 	display:inline-block;
 	padding-left:0;
@@ -1441,7 +1441,7 @@ body.ie6 {
 	height:30px;
 	line-height:30px;
 	font-size:16px;
-	color:#999;
+	color:#666;
 	padding-left:0;
 	text-align:left;
 	margin-left:51px;
@@ -1493,7 +1493,7 @@ body.ie6 {
 	line-height:20px;
 	height:20px;
 	overflow:hidden;
-	color:#999;
+	color:#666;
 	font-size:12px;
 	display:inline-block;
 }
@@ -1628,7 +1628,7 @@ body.ie6 {
 }
 .disabled dt *{
 	cursor:default;
-	color:#999!important;
+	color:#666!important;
 }
 
 /* form submit*/
@@ -1980,7 +1980,7 @@ body.ie6 {
 }
 
 .btn_grayC{
-	color:#999;
+	color:#666;
 	background-position:0 -62px;
 	font-size:14px;
 	height:30px;
@@ -2001,7 +2001,7 @@ body.ie6 {
 }
 
 .btn_grayC_disable{
-	color:#999 !important;
+	color:#666 !important;
 	background-position:0 -62px;
 	font-size:12px;
 	height:30px;
@@ -2013,10 +2013,10 @@ body.ie6 {
 	height:30px;
 	line-height:30px;
 	cursor:default;
-	color:#999 !important;
+	color:#666 !important;
 }
 .btn_grayC_disable:hover{
-	color:#999 !important;
+	color:#666 !important;
 	background-position:0 -62px;
 	cursor:default;
 }
@@ -2042,13 +2042,13 @@ body.ie6 {
 
 .btn_grayD_disable,
 .btn_grayD_disable:hover{
-	color:#999;
+	color:#666;
 	background-position:0 -31px;
 	cursor:default;
 }
 .btn_grayD_disable span,
 .btn_grayD_disable:hover span{
-	color:#999;
+	color:#666;
 	background-position:right -31px;
 	cursor:default;
 }
@@ -2376,7 +2376,7 @@ body.ie6 {
 
 .price16_gray{
 	background:url(../Nest/img/price_g_999.png) no-repeat;
-	color:#999;
+	color:#666;
 	padding-left:11px;
 	background-position:left -97px;
 	font-size:16px;

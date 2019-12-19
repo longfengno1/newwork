@@ -31,10 +31,10 @@
 	color:#c82f67;
 }
 .crumb a{
-	color:#999;
+	color:#666;
 }
 .crumb .searchtitle{
-	color:#999;
+	color:#666;
 	font-style:normal;
 }
 .crumb a:hover,
@@ -236,7 +236,7 @@
 .store_name .ele_intro .bdr_a{height:55px;border:1px solid #f1f1f1;border-bottom:none; margin-right:-7px; background:#fff; position:relative; margin-bottom:-1px; _z-index:2;}
 .store_name .introlist{ _position:relative;margin-left:-56px;border:1px solid #f1f1f1;*zoom:1; padding:10px 0; background:#fff;width:254px;}
 .store_name .introlist li{ padding:4px 20px; color:#333;}
-.store_name .introlist label{color:#999;}
+.store_name .introlist label{color:#666;}
 
 /* singe sprite class name */
 .store_ele_sprite{background-image:url(../Nest/img/store/store_sprites.png);}
@@ -285,7 +285,7 @@
 .store_ele_cate .cate_2 a:hover{color:#c73b71;text-decoration:none;}
 .store_ele_cate .cate_3{ padding:0 15px 10px; margin-top:-5px;  zoom:1;}
 .store_ele_cate .cate_3 li{ float:left; width:90px; overflow:hidden;}
-.store_ele_cate .cate_3 li a{color:#999;}
+.store_ele_cate .cate_3 li a{color:#666;}
 .store_ele_cate .cate_3 li .curr,
 .store_ele_cate .cate_3 li a:hover{ text-decoration:none;color:#c73b71;}
 
@@ -400,7 +400,7 @@
 .store_layout_main .newslist li{float:none;width:auto; height:21px;padding-right:10px; padding-top:9px; margin-bottom:3px;max-heiht:21px;_zoom:1;}
 .store_layout_main .newslist li a{font-size:13px; color:#333;}
 .store_layout_main .newslist li a:hover{color:#C82F67;}
-.store_layout_main .newslist .date{ color:#999;}
+.store_layout_main .newslist .date{ color:#666;}
 .store_layout_main .newslist .item_show{ height:auto;max-height:68px; margin-bottom:0; padding-bottom:7px; border-bottom:1px dotted #e3e3e3;}
 .store_layout_main .newslist .item_show .date{ display:none;}
 .store_layout_main .newslist .item_show a{font-weight:bold;color:#C82F67;}
@@ -778,7 +778,7 @@
 }
 .filtertable .inner label em{
 	font-style:normal;
-	color:#999;
+	color:#666;
 }
 .filtertable .inner .selected a,
 .filtertable .inner .selected a em{
