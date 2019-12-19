@@ -5,6 +5,7 @@
     width: 100vw;
     font-family: Helvetica;
     padding-bottom: 120rem/$fit;
+    background-color: #f8f8f8;
 
     input {
         border: 1px solid #E5E5E5;
@@ -40,6 +41,7 @@
     h3 {
         font-size: 32rem/$fit;
         color: #383838;
+        font-weight: 600;
     }
 
     .price-count {
@@ -55,7 +57,7 @@
 
     .split {
         height: 24rem/$fit;
-        background-color: #FBFBFB;
+        /*background-color: #FBFBFB;*/
     }
 
     .arrow-down {
@@ -79,22 +81,23 @@
     }
 
     .order-info {
-        margin: 24rem/$fit;
-        border-bottom: 1px dotted #e5e5e5;
-        padding-left: 8rem/$fit;
+        padding: 24rem/$fit;
+        /*border-bottom: 1px dotted #e5e5e5;
+        padding-left: 8rem/$fit;*/
+        background-color: #fff;
 
         h3 {
             font-size: 40rem/$fit;
             color: #383838;
             line-height: 55rem/$fit;
-            margin-bottom: 24rem/$fit;
+            /*margin-top: 24rem/$fit;*/
         }
 
         p {
             font-size: 28rem/$fit;
             color: #666666;
             line-height: 1;
-            margin-bottom: 24rem/$fit;
+            margin-top: 24rem/$fit;
         }
 
         .ml32 {
@@ -152,33 +155,40 @@
     }
 
     .step {
-        padding: 0 32rem/$fit;
-        margin-top: 20rem/$fit;
-        margin-bottom: 20rem/$fit;
+        padding: 0 0.8rem 0.5rem 0.8rem;
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        background-color: #fff;
 
         .step-item {
             width: 228rem/$fit;
-            height: 50rem/$fit;
+            height: 60rem/$fit;
             margin-left: 5rem/$fit;
             text-align: center;
 
             span {
-                line-height: 50rem/$fit;
-                font-size: 24rem/$fit;
+                line-height: 60rem/$fit;
+                font-size: 28rem/$fit;
             }
 
             .step-item-before {
-                border-top-width: 25rem/$fit;
-                border-bottom-width: 25rem/$fit;
+                border-top-width: 30rem/$fit;
+                border-bottom-width: 30rem/$fit;
                 border-left-width: 12rem/$fit;
             }
 
             .step-item-after {
                 right: -12rem/$fit;
-                border-top-width: 25rem/$fit;
-                border-bottom-width: 25rem/$fit;
+                border-top-width: 30rem/$fit;
+                border-bottom-width: 30rem/$fit;
                 border-left-width: 12rem/$fit;
             }
         }
@@ -186,7 +196,12 @@
 
     .ensure-price,
     .pay-type {
-        padding: 24rem/$fit 32rem/$fit;
+        padding: 0.6rem 0.8rem;
+        margin: 0 .8rem;
+        border-radius: 5px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
 
         h3 {
             margin-top: 32rem/$fit;
@@ -207,7 +222,7 @@
             p {
                 margin-top: 60rem/$fit;
                 margin-bottom: 60rem/$fit;
-                font-size: 32rem/$fit;
+                font-size: 28rem/$fit;
                 color: #999999;
                 letter-spacing: 0;
                 line-height: 34rem/$fit;
@@ -233,7 +248,7 @@
             margin-bottom: 32rem/$fit;
 
             img {
-                width: 302rem/$fit;
+                width: 312rem/$fit;
                 cursor: pointer;
             }
         }
@@ -241,62 +256,63 @@
 }
 
 .price-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 120rem/$fit;
-  display: flex;
-  background-color: #fff;
-
-  .left,
-  .right {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 120rem/$fit;
     display: flex;
-    flex-direction: column;
-  }
+    background-color: #fff;
 
-  .left {
-    flex: 1;
-    justify-content: space-around;
-    // align-items: ;
-    padding: 17rem/$fit 0 0 24rem/$fit;
-
-    .total {
-      font-size: 32rem/$fit;
-      color: #383838;
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
     }
 
-    .price {
-      font-size: 40rem/$fit;
-      color: #F8485E;
+    .left {
+        flex: 1;
+        justify-content: space-around;
+        // align-items: ;
+        padding: 17rem/$fit 0 0 24rem/$fit;
+
+        .total {
+            font-size: 32rem/$fit;
+            color: #383838;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 40rem/$fit;
+            color: #F8485E;
+        }
+
+        .count {
+            font-size: 28rem/$fit;
+            color: #999999;
+            // margin-top: 10rem/$fit;
+        }
     }
 
-    .count {
-      font-size: 28rem/$fit;
-      color: #999999;
-      // margin-top: 10rem/$fit;
-    }
-  }
+    .right {
+        width: 354rem/$fit;
+        flex-shrink: 0;
+        background-color: #00969E;
+        align-items: center;
+        justify-content: center;
 
-  .right {
-    width: 354rem/$fit;
-    flex-shrink: 0;
-    background-color: #00969E;
-    align-items: center;
-    justify-content: center;
+        .main {
+            font-size: 32rem/$fit;
+            color: #FFFFFF;
+            letter-spacing: 0.52rem/$fit;
+            font-weight: 500;
+        }
 
-    .main {
-      font-size: 32rem/$fit;
-      color: #FFFFFF;
-      letter-spacing: 0.52rem/$fit;
-      font-weight: 500;
+        .sub {
+            font-size: 28rem/$fit;
+            color: #FFFFFF;
+            letter-spacing: 0.52rem/$fit;
+            font-weight: 300;
+        }
     }
-
-    .sub {
-      font-size: 28rem/$fit;
-      color: #FFFFFF;
-      letter-spacing: 0.52rem/$fit;
-      font-weight: 300;
-    }
-  }
 }

@@ -1525,12 +1525,14 @@ b {
 	padding: 0rem/$fit 16rem/$fit;
 	background: #00969E;
 	display: inline-block;
+	border-radius:5px;
 }
 
 .btn-styleE-s:hover {
 	text-decoration: none;
 	color: #fff;
 	background: #00b4be;
+	border-radius:5px;
 }
 
 .btn-styleF {
@@ -2142,7 +2144,7 @@ b {
 		}
 
 		.ships-slide .slick-dots {
-			top: 640rem/$fit;
+			top: 648rem/$fit;
 			bottom: auto;
 			display: block !important;
 		}

@@ -2,15 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\common",
+    "\\src\\css",
     "\\src\\pages",
-    "\\src\\pages\\login",
-    "\\src\\pages\\mypassengerEdit",
-    "\\src\\pages\\signupAutoBind",
-    "\\src\\pages\\signupBindPhone-1",
-    "\\src\\pages\\signupBindUser",
-    "\\src\\pages\\signupFaild",
-    "\\src\\pages\\signupSuccess"
+    "\\src\\pages\\booking4",
+    "\\src\\pages\\index"
   ],
-  "SelectedNode": "\\src\\pages\\booking4\\sm-index.scss",
+  "SelectedNode": "\\src\\pages\\index\\index.scss",
   "PreviewInSolutionExplorer": false
 }

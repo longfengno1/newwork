@@ -12,12 +12,12 @@
         border-radius: 8rem/$fit;
         height: 60rem/$fit;
         padding-left: 16rem/$fit;
-        font-size: 28rem/$fit;
+        font-size: 24rem/$fit;
         color: #666666;
     }
 
     label {
-        font-size: 28rem/$fit;
+        font-size: 24rem/$fit;
         /*color: #666666;*/
         margin-bottom: 0;
     }
@@ -39,8 +39,9 @@
     }
 
     h3 {
-        font-size: 32rem/$fit;
+        font-size: 28rem/$fit;
         color: #383838;
+        font-weight: 600;
     }
 
     button {
@@ -84,6 +85,7 @@
             font-size: 40rem/$fit;
             color: #383838;
             line-height: 55rem/$fit;
+            font-weight:600;
             /*margin-bottom: 24rem/$fit;*/
         }
 
@@ -159,25 +161,25 @@
 
         .step-item {
             width: 228rem/$fit;
-            height: 50rem/$fit;
+            height: 60rem/$fit;
             margin-left: 5rem/$fit;
             text-align: center;
 
             span {
-                line-height: 50rem/$fit;
-                font-size: 24rem/$fit;
+                line-height: 60rem/$fit;
+                font-size: 28rem/$fit;
             }
 
             .step-item-before {
-                border-top-width: 25rem/$fit;
-                border-bottom-width: 25rem/$fit;
+                border-top-width: 30rem/$fit;
+                border-bottom-width: 30rem/$fit;
                 border-left-width: 12rem/$fit;
             }
 
             .step-item-after {
                 right: -12rem/$fit;
-                border-top-width: 25rem/$fit;
-                border-bottom-width: 25rem/$fit;
+                border-top-width: 30rem/$fit;
+                border-bottom-width: 30rem/$fit;
                 border-left-width: 12rem/$fit;
             }
         }
@@ -202,9 +204,9 @@
 
     .trip {
         p {
-            font-size: 28rem/$fit;
+            font-size: 24rem/$fit;
             color: #6D6D6D;
-            margin-bottom: 24rem/$fit;
+            margin-bottom: 10rem/$fit;
         }
 
         .infos {
@@ -220,12 +222,13 @@
         .data {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            margin-bottom: 36rem/$fit;
+            /*justify-content: space-between;*/
+            margin-bottom: 10rem/$fit;
 
             a {
-                font-size: 28rem/$fit;
+                font-size: 24rem/$fit;
                 color: #06929A;
+                margin-right:.5rem;
             }
         }
 
@@ -352,6 +355,14 @@
                 color: #00969E;
             }
         }
+    }
+
+    .redcircle {
+        border-radius: 100%;
+        width: .25rem;
+        height: .25rem;
+        margin-bottom: .125rem;
+        background-color: #999;
     }
 }
 

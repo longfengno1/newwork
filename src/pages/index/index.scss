@@ -909,7 +909,7 @@
 .section .title {
     position: relative;
     height: 44rem/$fit;
-    color: #455272;
+    color: #383838;
     text-align: center;
     letter-spacing: 5rem/$fit;
     font-size: 28rem/$fit;
@@ -1013,7 +1013,7 @@
 }
 
 .hotthread .item .one-pro .prodesc {
-    font-size: 20rem/$fit;
+    font-size: 14rem/$fit;
     color: #fff;
     font-weight: normal;
 }
@@ -1610,11 +1610,15 @@
 .shipexperience .exp_item .exp_box1 img {
     height: 310rem/$fit;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .shipexperience .exp_item .exp_box2 img {
     height: 150rem/$fit;
     width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .shipexperience .exp_item:first-child,
@@ -1654,7 +1658,7 @@
     background: url(../../images/bg-sea2.jpg) center top no-repeat;
     height: 800rem/$fit;
     position: relative;
-    color: #343E57;
+    color: #383838;
     margin-top: -80rem/$fit;
 }
 
@@ -2941,7 +2945,7 @@
 .m-main-btnbox .btn-icon {
     display: inline-block;
     height: 90rem/$fit;
-    line-height: 100rem/$fit;
+    line-height: 104rem/$fit;
     width: 90rem/$fit;
     font-size: 44rem/$fit;
     /*background-image: linear-gradient(143deg, #FFFFFF 0%, #00969E 100%);*/
@@ -3045,6 +3049,18 @@
 
 /* 横向放置的手机和竖向放置的平板之间的分辨率 */
 @media (max-width: 767px) {
+    .m-main-btnbox {
+        padding-top: .8rem;
+
+        .menu-hot {
+            width: 1.5rem;
+            position: absolute;
+            top: -.55rem;
+            right: .75rem;
+        }
+    }
+
+
     .shipexperience .exp_item .exp_box1 img {
         height: 600rem/$fit;
         width: 100%;
@@ -3077,13 +3093,44 @@
         border-bottom: 0rem/$fit solid #F8F8F8;
     }
     .section .title {
-        height: 50rem/$fit;
+        /*height: 50rem/$fit;
         font-size: 48rem/$fit;
         line-height: 50rem/$fit;
         margin: 48rem/$fit 32rem/$fit 20rem/$fit 32rem/$fit;
         text-align: center;
         color: #383838;
+        font-weight: 600;*/
+        height: 1.25rem;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin: .8rem 0.8rem 0.5rem 0rem;
+        text-align: center;
+        color: #383838;
         font-weight: 600;
+        /*border-left: 30px solid #FF9500;*/
+        text-align: left;
+        padding-left: .25rem;
+            }
+    .section .border-color1 {
+        border-left: 10px solid #FF9500;
+    }
+
+    .section .border-color2 {
+        border-left: 10px solid #F8485E;
+    }
+    .section .border-color3 {
+        border-left: 10px solid #0F767C;
+    }
+
+    .section .border-color4 {
+        border-left: 10px solid #F8BA2A;
+    }
+    .section .border-color5 {
+        border-left: 10px solid #7B3B8F;
+    }
+
+    .section .border-color6 {
+        border-left: 10px solid #1E6DDE;
     }
 
     .section .title-desc {
@@ -3134,7 +3181,7 @@
     }
 
     .hotthread .item ul li:last-child {
-        margin: 0 32rem/$fit 32rem/$fit;
+        margin: 0 32rem/$fit 0rem/$fit;
     }
 
     .row .col {
@@ -3149,7 +3196,7 @@
         width: 180rem/$fit;
         height: 50rem/$fit;
         line-height: 50rem/$fit;
-        font-size: 20rem/$fit;
+        font-size: 24rem/$fit;
         background: #F8485E;
         /*border-radius: 0 6px 0 6px;*/
         /*margin-top: 32rem/$fit;*/
@@ -3210,13 +3257,18 @@
 
     .hotthread .item .thread .inner .caption {
         padding-top: 20rem/$fit;
-        padding-left: 20rem/$fit;
+        /*padding-left: 20rem/$fit;*/
     }
 
     .hotthread .item .thread .inner .caption p {
         color: #fff;
+        line-height:.8rem;
     }
-
+    .hotthread .item .one-pro .prodesc {
+        font-size: 0.6rem;
+        color: #fff;
+        font-weight: normal;
+    }
     .hotthread .item .thread .inner .caption timer {
     }
 
@@ -3230,15 +3282,19 @@
         line-height: 1.5;
         overflow: auto;
         white-space: normal;
-        max-height: 2.5rem;
+        max-height: 3.5rem;
         overflow-y: hidden;
+        text-align:justify; 
     }
 
     .hotthread .base_price {
         font-size: 24rem/$fit;
         color: #fff;
-        margin-top: 72rem/$fit;
-        text-align:right;
+        /*margin-top: 48rem/$fit;*/
+        /*text-align: right;*/
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.25rem;
     }
     .hotthread .detailbtn{
         text-align:right;
@@ -3253,10 +3309,11 @@
     }
     .hotthread .item .one-pro .base_price {
         text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+        font-size:.6rem;
     }
     .hotthread .item .thread .inner {
         position: absolute;
-        width: 45%;
+        width: 35%;
         height: 100%;
         background: none;
         bottom: 0;
@@ -3326,25 +3383,30 @@
     }
 
     .spactivity-context-inner {
-        padding: 1px 80rem/$fit 0 120rem/$fit;
+        padding: 1px 40rem/$fit 0 40rem/$fit;
     }
 
     .spactivity-context .desc-title {
-        font-size: 36rem/$fit;
-        margin-top: 30rem/$fit;
-        color: #49798A;
-        text-align: center;
+        font-size: 32rem/$fit;
+        margin-top: 70rem/$fit;
+        /*color: #49798A;*/
+        /*text-align: center;*/
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
     }
 
     .spactivity-context .dec {
-        font-size: 20rem/$fit;
+        font-size: 24rem/$fit;
         line-height: 1.5;
         width: auto;
-        margin: 75rem/$fit 0 40rem/$fit 0;
+        margin: 30rem/$fit 0 30rem/$fit 0;
+        text-shadow: 0 0 .25rem rgba(0, 0, 0, 0.3)
     }
 
     .spactivity-context .m {
-        text-align: center;
+        /*text-align: center;*/
+        position:absolute;
+        bottom:-6rem;
+        left:40%;
     }
 
 
@@ -3454,6 +3516,7 @@
         bottom: 24rem/$fit;
         left: 24rem/$fit;
         background: none;
+        text-shadow: 0 0 0.25rem rgba(0,0,0,1);
     }
 
     .exp_box1 .exp_text_wrap span {
@@ -3620,7 +3683,7 @@
         padding-top: 59rem/$fit;
         padding-bottom: 50rem/$fit;
         text-align: center;
-        font-size: 48rem/$fit;
+        font-size: 40rem/$fit;
         font-weight: normal;
         line-height: 60rem/$fit;
     }
@@ -3866,12 +3929,12 @@
     }
 
     .mdestination li .box {
-        border-radius: 5rem/$fit;
         overflow: hidden;
         position: relative;
 
         img {
             /*width: 686rem/$fit;*/
+            border-radius: 5px;
         }
     }
 
@@ -3886,7 +3949,7 @@
     .mdestination .txt_box {
         position: absolute;
         width: 100%;
-        height: 400rem/$fit;
+        height: 280rem/$fit;
         background: rgba(0,0,0,0.40);
         bottom: 0;
         color: #fff;
@@ -3908,7 +3971,7 @@
     .carousel {
         height: 9.8rem;
         position: static;
-        margin-bottom: .75rem;
+        /*margin-bottom: .75rem;*/
 
         .slide {
         }
