@@ -127,5 +127,36 @@ import './index.scss';
     $(".setcart-btn").click(function () {
         $(".setcart").hide();
     });
+
+
+
+    $(".order-btn-room-sm").click(function () {
+
+        $(".setcart-room").show();
+    });
+
+    $(".setcart-room-btn").click(function () {
+        $(".setcart-room").hide();
+    });
+
+
+    $(".product-name").click(function () {
+        $(".layerout1").show();
+    });
+
+    $(".ensure").click(function () {
+        $(this).parent().parent().find(".message").toggle();
+
+    });
+
+    $(".showorderdetail").click(function () {
+
+        $(".orderdetail").show();
+    });
+
+    $(".orderdetail-btn").click(function () {
+        $(".orderdetail").hide();
+    });
     
+
 })();

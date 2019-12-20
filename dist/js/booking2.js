@@ -289,7 +289,7 @@ __webpack_require__.r(__webpack_exports__);
   });
   $(".price-desc").click(function () {
     var $this = $(this);
-    $this.parents(".title").parents(".sm-main").find(".opener").toggle();
+    $this.parent().parent().find(".opener").toggle();
   });
   $(".opener .opener-close").click(function () {
     $(".opener").hide();

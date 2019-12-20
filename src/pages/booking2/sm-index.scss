@@ -28,7 +28,7 @@
 
     .order-info {
         margin: 24rem/$fit;
-        border-bottom: 1px dotted #e5e5e5;
+        /*border-bottom: 1px dotted #e5e5e5;*/
         padding-left: 8rem/$fit;
 
         h3 {
@@ -52,14 +52,14 @@
 
     .product-tags {
         border-bottom: 1px solid #E5E5E5;
-        padding: 0 36rem/$fit 20rem/$fit;
+        padding: 0 32rem/$fit 10rem/$fit;
 
 
         .tag {
-            font-size: 24rem/$fit;
+            font-size: 28rem/$fit;
             border: 0;
             padding: 0;
-            margin-right: 50rem/$fit;
+            margin-right: 32rem/$fit;
         }
     }
 
@@ -127,10 +127,10 @@
     }
 
     .m_tab .tab_item {
-        height: 60rem/$fit;
+        height: 80rem/$fit;
         width: 320rem/$fit;
-        line-height: 60rem/$fit;
-        font-size: 24rem/$fit;
+        line-height: 80rem/$fit;
+        font-size: 32rem/$fit;
         color: #00969e;
         cursor: pointer;
         border: 0px solid #D0D7DF;
@@ -142,7 +142,7 @@
     .m_tab .current {
         color: #00969E;
         text-decoration: none;
-        background: #F7FCFC;
+        background: #f0f0f0;
     }
 
     .room-all {
@@ -543,7 +543,7 @@
         }
 
         .room-row {
-            background: #F7FCFC;
+            background: #f0f0f0;
             border: 0;
 
             .room-row-item {
@@ -583,7 +583,7 @@
         position: relative;
         cursor: pointer;
         width: 142rem/$fit;
-        height: 80rem/$fit;
+        height: 120rem/$fit;
         padding: 0 .25rem;
         border-right: 1px solid #f3f3f3;
 
@@ -630,7 +630,7 @@
     }
 
     .room-name {
-        font-size: .6rem;
+        font-size: .7rem;
         font-weight: 300;
     }
 
@@ -717,7 +717,7 @@
     flex: 1;
     justify-content: space-around;
     // align-items: ;
-    padding: 17rem/$fit 0 0 24rem/$fit;
+    padding: 0rem/$fit 0 0 24rem/$fit;
 
     .total {
       font-size: 32rem/$fit;
@@ -1005,4 +1005,166 @@
             width:16rem;
         }
     }
+
+    .sign-content {
+        h2 {
+            color: #202e42;
+            font-size: 28rem/$fit;
+            text-align: center;
+            margin-bottom: 20rem/$fit;
+            text-transform: uppercase;
+            width: 50%;
+        }
+
+        .signin-type {
+            margin-bottom: 20rem/$fit;
+
+            .signin-type-tab {
+                font-size: 28rem/$fit;
+                /* font-weight: 500; */
+                color: #666;
+                margin-bottom: 20rem/$fit;
+                cursor: pointer;
+            }
+
+            .current {
+                color: #00969E;
+                border-bottom: 8rem/$fit solid #00969E;
+            }
+        }
+
+        .signin-form {
+            .form-control {
+                background: transparent;
+                border: transparent;
+                border: 1px solid #b0b9c7;
+                border-radius: 5px;
+                outline: 0 !important;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                padding: 0 16rem/$fit;
+                height: 80rem/$fit;
+                -webkit-transition: linear .5s;
+                transition: linear .5s;
+                font-size: 24rem/$fit;
+            }
+
+            .vaildate-code {
+                text-align: center;
+                line-height: 2rem;
+                text-decoration: underline;
+                font-size: 0.6rem;
+                color: #00969E;
+                width: 5.5rem;
+            }
+
+            .ipt-code {
+                width: 8rem;
+            }
+
+            img {
+                width: 5.5rem;
+                height: 1.5rem;
+                margin-top: .25rem;
+            }
+        }
+    }
+
+    .sign-content.popup-in-content {
+        background: #fff;
+        border-radius: 5rem/$fit;
+        padding: 60rem/$fit 0;
+        margin-top: 0rem;
+
+        .btn.signin_btn,
+        .btn.signin_btn:focus {
+            width: 80%;
+            padding: 0;
+            height: 2.5rem;
+            background: #00969E;
+            color: #fff;
+            font-size: 0.8rem;
+            /*letter-spacing: 6.24px;*/
+            text-transform: uppercase;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .centered {
+            width: auto;
+            margin: auto;
+        }
+    }
+
+    .styled-checkbox {
+        position: absolute;
+        opacity: 0;
+        -webkit-transition: ease-in-out .3s;
+        -moz-transition: ease-in-out .3s;
+        -ms-transition: ease-in-out .3s;
+        -o-transition: ease-in-out .3s;
+        transition: ease-in-out .3s;
+    }
+
+    .styled-checkbox + label,
+    .awesome-checkbox-list a {
+        position: relative;
+        left: -2px;
+        cursor: pointer;
+        padding: 0;
+        color: #666;
+        font-size: 24rem/$fit;
+        font-weight: 500;
+    }
+
+
+    .awesome-checkbox-list {
+
+        a,
+        a:hover,
+        a:active {
+            color: $theme-blue;
+        }
+
+        .form-check-input {
+            /*margin-top: 0.2rem;
+		margin-left: -1.0rem;
+		font-size: 18px;*/
+        }
+
+        label {
+            padding-left: 10rem/$fit;
+        }
+    }
+
+    .styled-checkbox-2 {
+        font-size: 24rem/$fit;
+        margin-bottom: 0rem;
+    }
+
+    .ipt-86 {
+        width: 164rem/$fit;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #f8f8f8;
+        border: 1px solid #b0b9c7;
+        border-right: 0px;
+        padding: 0 0 0 10px !important;
+    }
+
+    .ipt-phone {
+        width: 65%;
+        border-left: 0px !important;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    .popup-in-txt {
+        width: 18rem;
+        margin: 0 auto;
+    }
+
 }
+
+
+

@@ -124,7 +124,7 @@ import './index.scss';
     });
     $(".price-desc").click(function () {
         var $this = $(this);
-        $this.parents(".title").parents(".sm-main").find(".opener").toggle();
+        $this.parent().parent().find(".opener").toggle();
 
     });
 
