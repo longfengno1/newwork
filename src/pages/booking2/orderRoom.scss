@@ -18,9 +18,9 @@ dfn{
 
         a {
             font-size: 14px;
-            color: #00969E;
+            /*color: #00969E;
             letter-spacing: 1px;
-            text-decoration: underline;
+            text-decoration: underline;*/
         }
     }
 
@@ -416,7 +416,7 @@ dfn{
         width: 400px;
 
         .room-name {
-            font-size: 18px;
+            font-size: 16px;
             color: #666;
         }
 
@@ -476,6 +476,7 @@ dfn{
             line-height: 20px;
             cursor: pointer;
             border: 1px solid #00969E;
+            font-size:14px;
         }
     }
 
@@ -488,7 +489,7 @@ dfn{
         h3 {
             height: 47px;
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             color: #666;
             letter-spacing: 1.12px;
             padding: 0;
@@ -586,6 +587,43 @@ dfn{
 
     .price-desc {
         padding: 10px 20px;
+
+
+        .opener {
+            position: absolute;
+            right: 15%;
+            top: 100px;
+            background: #fff;
+            width: 430px;
+            height: 200px;
+            z-index: 1;
+            padding: 20px;
+            box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.10);
+            border-radius: 2px;
+            /*display: none;*/
+
+            .title {
+                margin-bottom: 10px;
+                font-size: 16px;
+                color: #00969E;
+            }
+
+            .opener-close {
+                cursor: pointer;
+            }
+
+            .inner {
+                height: 130px;
+                text-align: left;
+                overflow-y: auto;
+
+                p {
+                    text-align: left;
+                    font-size:14px;
+                    line-height:28px;
+                }
+            }
+        }
     }
 
     .iconblue {

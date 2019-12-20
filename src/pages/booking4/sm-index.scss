@@ -4,7 +4,7 @@
     min-height: 100vh;
     width: 100vw;
     /*font-family: Helvetica;*/
-    padding-bottom: 120rem/$fit;
+    padding-bottom: 160rem/$fit;
     background-color: #f8f8f8;
 
     input {
@@ -80,12 +80,13 @@
         /*border-bottom: 1px dotted #e5e5e5;*/
         /*padding-left: 8rem/$fit;*/
         background-color: #fff;
+        margin-bottom: 20rem/$fit;
 
         h3 {
             font-size: 40rem/$fit;
             color: #383838;
             line-height: 55rem/$fit;
-            font-weight:600;
+            font-weight: 600;
             /*margin-bottom: 24rem/$fit;*/
         }
 
@@ -228,7 +229,7 @@
             a {
                 font-size: 24rem/$fit;
                 color: #06929A;
-                margin-right:.5rem;
+                margin-right: .5rem;
             }
         }
 
@@ -250,8 +251,7 @@
         .fill-row {
             display: -webkit-inline-box;
             align-items: center;
-            margin-bottom: 20rem/$fit;
-
+            /*margin-bottom: 20rem/$fit;*/
             label {
                 width: 140rem/$fit;
                 margin-bottom: 0;
@@ -268,15 +268,15 @@
 
             .radio {
                 display: flex;
-                align-items: baseline;
-                margin-right: 54rem/$fit;
+                align-items: center;
+                margin-right: 32rem/$fit;
 
                 input {
                     margin-right: 24rem/$fit;
                     height: auto;
                 }
 
-                font-size: 28rem/$fit;
+                font-size: 24rem/$fit;
                 color: #383838;
             }
         }
@@ -291,6 +291,7 @@
                 padding: .5rem;
                 border-radius: 5px;
                 font-weight: 600;
+                margin-bottom: 0;
             }
         }
 
@@ -318,7 +319,9 @@
         }
 
         .content {
-            padding: 20rem/$fit 32rem/$fit;
+            padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+            background-color: #f8f8f8;
+            /*margin-bottom: .5rem;*/
 
             p {
                 font-size: 24rem/$fit;
@@ -327,8 +330,8 @@
                 padding-left: 5rem/$fit;
 
                 .value {
-                    border-bottom: 1px solid #D0D7DF;
-                    font-weight: 600;
+                    border-bottom: 0px solid #D0D7DF;
+                    /*font-weight: 600;*/
                     padding: 0 20rem/$fit 0 10px;
                 }
 
@@ -364,6 +367,32 @@
         margin-bottom: .125rem;
         background-color: #666;
     }
+
+    .user {
+        .user-title {
+            padding: 0.5rem 0.5rem 0rem .5rem;
+            border-bottom: 1px solid #f8f8f8;
+
+            .user-name {
+                font-size: .6rem;
+                font-weight: 600;
+                /*margin-left: 1rem;*/
+                margin-bottom: .25rem;
+            }
+
+            .user-infos {
+                font-size: .6rem;
+                /*font-weight: 600;*/
+                /*margin-left: 1rem;*/
+                margin-bottom: .25rem;
+            }
+        }
+
+        .nobottom {
+            padding-bottom: 0;
+            border-bottom: 0px solid #f8f8f8;
+        }
+    }
 }
 
 .price-bar {
@@ -385,15 +414,16 @@
     flex: 1;
     justify-content: space-around;
     // align-items: ;
-    padding: 17rem/$fit 0 0 24rem/$fit;
+    padding: 0rem/$fit 0 0 24rem/$fit;
 
     .total {
       font-size: 32rem/$fit;
       color: #383838;
+      text-align:center;
     }
 
     .price {
-      font-size: 30rem/$fit;
+      font-size: 40rem/$fit;
       color: #F8485E;
     }
 

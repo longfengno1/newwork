@@ -80,11 +80,16 @@ import './index.scss';
     $(".next").click(function () {
         $(".login").show();
     });
-
+    $(".product-name").click(function () {
+        $(".layerout1").show();
+    });
     $(".detail").click(function () {
         $(".layerout1").show();
     });
     $("#modfiy-date").click(function () {
+        $(".layerout2").show();
+    });
+    $("#modfiy-date-sm").click(function () {
         $(".layerout2").show();
     });
     $(".mark").click(function () {
@@ -112,4 +117,34 @@ import './index.scss';
         $(".tab_item").removeClass("current");
         $(this).addClass("current");
     });
+    $(".intro").click(function () {
+        var $this = $(this);
+        $this.parents(".tip").parents(".content").find(".opener").toggle();
+
+    });
+    $(".price-desc").click(function () {
+        var $this = $(this);
+        $this.parents(".title").parents(".sm-main").find(".opener").toggle();
+
+    });
+
+    $(".opener .opener-close").click(function () {
+        $(".opener").hide();
+    });
+
+    $(".signin-type-tab").click(function () {
+        if (!$(this).hasClass("current")) {
+            $(".signin-type-tab").removeClass("current");
+            $(".signin-type-tab").find(".loginlogo").addClass("img-gray");
+
+            $(this).addClass("current");
+            $(this).find(".loginlogo").removeClass("img-gray");
+
+            $("#signin-mobile").toggle();
+            $("#signin-wx").toggle();
+        }
+
+        //$(this).parent().find(".signin-type-tab").toggleClass("current");
+        //$(this).parent().find(".signin-type-tab").toggle();
+    })
 })();

@@ -32,27 +32,28 @@
         padding-left: 8rem/$fit;
 
         h3 {
-            font-size: 34rem/$fit;
+            font-size: 40rem/$fit;
             color: #383838;
             line-height: 55rem/$fit;
             margin-bottom: 24rem/$fit;
         }
 
         p {
-            font-size: 26rem/$fit;
+            font-size: 28rem/$fit;
             color: #666666;
             line-height: 1;
             margin-bottom: 24rem/$fit;
         }
 
         .ml32 {
-            margin-left: 32rem/$fit;
+            margin-left: 28rem/$fit;
         }
     }
 
     .product-tags {
         border-bottom: 1px solid #E5E5E5;
         padding: 0 36rem/$fit 20rem/$fit;
+
 
         .tag {
             font-size: 24rem/$fit;
@@ -70,13 +71,13 @@
 
         .step-item {
             width: 228rem/$fit;
-            height: 50rem/$fit;
+            height: 60rem/$fit;
             margin-left: 5rem/$fit;
             text-align: center;
 
             span {
-                line-height: 50rem/$fit;
-                font-size: 22rem/$fit;
+                line-height: 60rem/$fit;
+                font-size: 28rem/$fit;
             }
 
             .step-item-before {
@@ -87,8 +88,8 @@
 
             .step-item-after {
                 right: -12rem/$fit;
-                border-top-width: 25rem/$fit;
-                border-bottom-width: 25rem/$fit;
+                border-top-width: 30rem/$fit;
+                border-bottom-width: 30rem/$fit;
                 border-left-width: 12rem/$fit;
             }
         }
@@ -101,7 +102,7 @@
     h4.title {
         font-size: 24rem/$fit;
         color: #383838;
-        padding: 30rem/$fit 32rem/$fit 24rem/$fit;
+        padding: 0.5rem 0.8rem 0rem;
     }
 
     .price-desc {
@@ -120,38 +121,48 @@
         overflow: hidden;
         display: flex;
         padding: 0 32rem/$fit;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         position: inherit;
+        margin-bottom: 0;
     }
 
     .m_tab .tab_item {
         height: 60rem/$fit;
-        width: 156rem/$fit;
+        width: 320rem/$fit;
         line-height: 60rem/$fit;
         font-size: 24rem/$fit;
         color: #00969e;
         cursor: pointer;
-        border: 1px solid #06929a;
+        border: 0px solid #D0D7DF;
         border-radius: 4rem/$fit;
+        margin-left: -1px;
     }
 
     .m_tab .tab_item:hover,
     .m_tab .current {
-        color: #fff;
+        color: #00969E;
         text-decoration: none;
-        background: #00969E;
+        background: #F7FCFC;
     }
 
     .room-all {
         background: #F1F7F7;
-        margin: 0 32rem/$fit;
-        padding: 0 32rem/$fit;
-        height: 88rem/$fit;
-        line-height: 88rem/$fit;
+        margin: 0 0.8rem 0 .725rem;
+        padding: 0 0.8rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
         position: relative;
-
+        border: 1px solid #D0D7DF;
+        margin-top: -1px;
+        /*margin-left: 1px;*/
         .green {
             font-size: 26rem/$fit;
             font-weight: 700;
@@ -195,8 +206,8 @@
 
         .product-img {
             background: url(../../images/prodetail_pic.jpg) no-repeat center;
-            width: 50%;
-            height: auto;
+            width: 8rem;
+            height: 4.5rem;
         }
 
         .product-detail {
@@ -204,24 +215,24 @@
         }
 
         .product-name {
-            font-size: 30rem/$fit;
+            font-size: 28rem/$fit;
             color: #383838;
             margin-bottom: 8rem/$fit;
         }
 
         .desc {
-            font-size: 26rem/$fit;
+            font-size: 24rem/$fit;
             color: #666;
             font-weight: 300;
             line-height: 34rem/$fit;
         }
 
         .price-row {
-            font-size: 22rem/$fit;
+            font-size: 24rem/$fit;
             line-height: 31rem/$fit;
             position: absolute;
             width: 170rem/$fit;
-            right: 160rem/$fit;
+            /*right: 160rem/$fit;*/
             bottom: 18rem/$fit;
             text-align: center;
             color: #666666;
@@ -329,7 +340,363 @@
             }
         }
     }
+
+    .opener {
+        position: absolute;
+        right: 1rem;
+        top: 5rem;
+        background: #fff;
+        width: 90%;
+        height: 12rem;
+        z-index: 1;
+        padding: 1rem;
+        -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        /* display: none;*/
+        .title {
+            margin-bottom: .5rem;
+            font-size: .8rem;
+            color: #00969E;
+        }
+
+        .opener-close {
+            cursor: pointer;
+        }
+
+        .inner {
+            height: 8rem;
+            text-align: left;
+            overflow-y: auto;
+
+            p {
+                text-align: left;
+                font-size: .6rem;
+                line-height: 1.2rem;
+            }
+        }
+    }
+
+    .select-container {
+        display: block;
+        padding-top: 6px;
+        background-color: #fff;
+
+        .left {
+            display: inline-block;
+            width: 120px;
+            float: left;
+        }
+
+        .right {
+            display: inline-block;
+            width: 770px;
+        }
+    }
+
+    .select-container2 {
+        background-color: #fff;
+
+        h4 {
+            padding: 10px 20px 15px 20px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .people-row {
+            height: 90px;
+
+            .people-row-item {
+                height: 90px;
+                border: 1px solid #fff;
+                position: relative;
+                padding: 10px 45px 12px 10px;
+                width: 25%;
+                float: left;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.60);
+                    z-index: 1;
+                }
+
+                span {
+                    color: #fff;
+                    font-size: 20px;
+                    z-index: 1;
+                    display: block;
+                    line-height: 70px;
+                    width: 100%;
+                    text-align: center;
+                    padding-left: 35px;
+                    position: relative;
+                }
+
+                em {
+                    line-height: 20px;
+                    position: absolute;
+                    color: #fff;
+                    bottom: 0;
+                    right: 1px;
+                    width: 18px;
+                    font-size: 14px;
+                    z-index: 3;
+                    text-align: center;
+                    font-style: normal;
+                }
+
+                &.active {
+                    &::before {
+                        background: rgba(0, 150, 158, 0.60);
+                        background-image: url(../../images/wlogo@2x.png);
+                        background-repeat: no-repeat;
+                        background-size: 26px;
+                        background-position: right 14px top 4px;
+                        z-index: 1;
+                    }
+
+                    span {
+                        border: 2px solid rgba(255, 255, 255, 0.5);
+                        border-radius: 2px 0 0 2px;
+                        border-right: 0;
+                        padding-left: 33px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 47px;
+                            width: 35px;
+                            border: 2px solid rgba(255, 255, 255, 0.5);
+                            border-width: 0 2px 2px 0;
+                            border-radius: 0 0 2px 0;
+                            bottom: -2px;
+                            right: -35px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    &::before {
+                        background: none;
+                        background-image: url(../../images/wlogo@2x.png);
+                        background-repeat: no-repeat;
+                        background-size: 26px;
+                        background-position: right 14px top 4px;
+                        z-index: 1;
+                    }
+
+                    span {
+                        border: 2px solid rgba(255, 255, 255, 0.5);
+                        border-radius: 2px 0 0 2px;
+                        border-right: 0;
+                        padding-left: 33px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 47px;
+                            width: 35px;
+                            border: 2px solid rgba(255, 255, 255, 0.5);
+                            border-width: 0 2px 2px 0;
+                            border-radius: 0 0 2px 0;
+                            bottom: -2px;
+                            right: -35px;
+                        }
+                    }
+                }
+            }
+
+            .hasnum:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-right: 20px solid #F8485E;
+                border-left: 20px solid transparent;
+                border-bottom: 15px solid #F8485E;
+                border-top: 15px solid transparent;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+            }
+        }
+    }
+
+    .select-container3 {
+        h4 {
+            padding: 10px 20px 15px 20px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .room-row {
+            background: #F7FCFC;
+            border: 0;
+
+            .room-row-item {
+                flex: 1;
+            }
+        }
+
+        .sub-title-room {
+            background-color: #fff;
+            border: 2px solid #f8f8f8;
+        }
+    }
+
+    .room-row {
+        display: table;
+        width: 100%;
+        padding: 6px;
+    }
+
+    .room-row-left,
+    .room-row-right {
+        width: 26px;
+        height: 80px;
+        cursor: pointer;
+        line-height: 80px;
+        font-size: 26px;
+        color: #00969E;
+        display: table-cell;
+        display: none;
+    }
+
+
+    .room-row-item {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        width: 142rem/$fit;
+        height: 80rem/$fit;
+        padding: 0 .25rem;
+        border-right: 1px solid #f3f3f3;
+
+        &:last-child {
+            border-right: 0;
+        }
+
+        .tag {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 0 0 0 4px;
+            font-size: 12px;
+            color: #FFFFFF;
+            text-align: center;
+            height: 16px;
+            padding: 0 3px;
+        }
+
+        .price {
+            font-size: .6rem;
+            margin-top: .25rem;
+        }
+    }
+
+    .item-name .active {
+        border-bottom: 3px solid #00969E;
+    }
+
+    .active {
+        color: #00969E;
+    }
+
+    .disable {
+        color: #666;
+    }
+
+    .sold-out {
+        background-color: #666;
+    }
+
+    .prime {
+        background-color: #FDD26E;
+    }
+
+    .room-name {
+        font-size: .6rem;
+        font-weight: 300;
+    }
+
+    .rooms {
+        margin-top: 4px;
+    }
+
+    .room-item {
+        display: block;
+        padding: 15px 30px 15px 15px;
+        background-color: #fff;
+        margin-top: 4px;
+        overflow: hidden;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        img {
+            width: 240px;
+            height: 135px;
+            margin-right: 35px;
+            float: left;
+        }
+    }
+
+    .room-content {
+        .detail {
+            cursor: pointer;
+            margin-left: 50px;
+        }
+
+        .facility {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .current {
+            font-size: 14px;
+            color: #F8485E;
+
+            span {
+                font-size: 30px;
+                color: #F8485E;
+            }
+        }
+
+        .old {
+            font-size: 14px;
+            color: #666;
+            margin-left: 10px;
+
+            span {
+                text-decoration: line-through;
+            }
+        }
+    }
+
+    .icon-img {
+        width: .8rem;
+        height: .8rem;
+    }
 }
+
+
 
 .price-bar {
   position: fixed;
@@ -355,6 +722,7 @@
     .total {
       font-size: 32rem/$fit;
       color: #383838;
+      text-align:center;
     }
 
     .price {
@@ -390,4 +758,251 @@
       font-weight: 300;
     }
   }
+}
+
+@media(max-width:767px)
+{
+    .calendar-container {
+        .travel_calendar {
+            width: 18rem;
+        }
+
+        .travel_calendar_switch {
+            height: auto;
+        }
+
+        .travel_calendar_switch .travel_cs_col .switch_month {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 0;
+        }
+
+        .travel_calendar_switch .sm_prev {
+            border: 1px solid #fff;
+            width: .8rem;
+            height: .8rem;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .travel_calendar_switch .sm_next {
+            border: 1px solid #fff;
+            width: .8rem;
+            height: .8rem;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .travel_calendar_switch .travel_cs_col .txt {
+            color: #fff;
+            font-size: .6rem;
+            /*line-height: 42px;*/
+        }
+
+        .travel_calendar_switch .sm_prev .i_caret, .travel_calendar_switch .sm_next .i_caret {
+            border: 1px solid #fff;
+            width: .35rem;
+            height: .35rem;
+            display: inline-block;
+            border-width: 1px 1px 0 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: relative;
+            top: -.55rem;
+            right: 0.05rem;
+        }
+
+        .travel_calendar_switch .sm_prev .i_caret {
+            border-width: 0 0 1px 1px;
+            left: 0.05rem;
+        }
+
+        .t2_thead {
+            position: relative;
+            z-index: 5;
+            height: auto;
+            line-height: normal;
+            color: #fff;
+            font-size: .6rem;
+            background: #009096;
+            overflow: hidden;
+            text-align: center;
+            *zoom: 1;
+        }
+
+        .t2_th {
+            width: 2.56rem;
+            font-size: .6rem;
+        }
+
+        .t2_td, .t2_td_colspan {
+            width: 2.62rem;
+            height: 3.5rem;
+            border: 1px solid #f8f8f8;
+        }
+
+        .t2_td .a_available, .t2_td .a_unavailable {
+            height: auto;
+            position: inherit;
+        }
+
+        .t2_td_port {
+            display: none;
+        }
+
+        .a_unavailable .t2_td_day, .a_unavailable .t2_td_today {
+            color: #F17571;
+            font-size: .6rem;
+        }
+
+        .t2_td_day {
+            color: #F17571;
+            font-size: .6rem;
+        }
+
+        .t2_tbody {
+            border-bottom: 1px solid #f8f8f8;
+        }
+
+        .t2_td .base_price .price {
+            font-size: .6rem;
+            color: #15989D;
+        }
+
+        .t2_td_tit {
+            position: relative;
+            z-index: 1;
+            height: 1rem;
+            line-height: 1rem;
+            background: #D1F0F1;
+            overflow: hidden;
+            padding: 0 10px;
+            zoom: 1;
+            text-align: center;
+        }
+
+        .t2_td .base_price {
+            /*position: initial;*/
+            z-index: 1;
+            left: .25rem;
+            bottom: 0;
+            font-size: .6rem;
+            color: #666;
+            padding: .05rem;
+            top: .8rem;
+        }
+
+        .t2_td .base_price dfn {
+            top: -1px;
+            font-size: .6rem;
+            font-style: normal;
+            font-family: Arial;
+        }
+    }
+
+
+    .mark {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.20);
+        z-index: 1000;
+
+        .layer {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: .5rem;
+            background: #FFFFFF;
+            box-shadow: 0 3px 15px 0 rgba(0,0,0,0.15);
+
+            .close {
+                width: 1rem;
+                height: 1rem;
+                color: #fff !important;
+                font-size: .6rem;
+                line-height: 1rem;
+                text-align: center;
+                position: absolute;
+                right: .25rem;
+                top: .25rem;
+                background: #00969E;
+                border-radius: 50%;
+                opacity: 1;
+                z-index: 1;
+            }
+
+            .room-title {
+                margin-top: 10rem/$fit;
+                font-size: .8rem;
+                margin-bottom: 10rem/$fit;
+                text-align: center;
+            }
+
+            .layer-left {
+                .price {
+                    color: #F8485E;
+                    font-size: .6rem;
+                    margin-right: 5rem/$fit;
+
+                    span {
+                        font-size: 32rem/$fit;
+                    }
+                }
+
+                .pic {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .old {
+                    color: #bbb;
+                    text-decoration: line-through;
+                }
+
+                .price-desc {
+                    margin-left: 16rem/$fit;
+                }
+            }
+
+            .price-line {
+                text-align: center;
+            }
+
+            .layer-right {
+                padding-left: .5rem;
+                padding-right: .5rem;
+                font-size: 24rem/$fit;
+                overflow-y: auto;
+                margin: 0;
+
+                .list,
+                .list2 {
+                    li {
+                        height: 40rem/$fit;
+                        line-height: 40rem/$fit;
+                    }
+                }
+
+                .list2 {
+                    display: none;
+                }
+            }
+        }
+
+        .layer-sm
+            {
+            width:16rem;
+        }
+    }
 }

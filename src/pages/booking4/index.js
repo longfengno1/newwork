@@ -59,4 +59,32 @@ import './index.scss';
 
         }
     });
+    $(".user-title").click(function(){
+        //var id = $(this).attr("target");
+        //$("#" + id).toggle();
+        $(this).parent().find(".content").toggle();
+    })
+
+    $(".sex").click(function () {
+
+        var type = $(this).attr("rtype");
+        if ($(this).is(":checked") && type == "yes") {
+            $("#fa-piao-contnet").show();
+        }
+        else {
+            $("#fa-piao-contnet").hide();
+        }
+    });
+
+    $(".fp-radio").click(function () {
+
+        var type = $(this).attr("rtype");
+        if ($(this).is(":checked") && type == "yes") {
+            $("#fp-contnet").show();
+        }
+        else {
+            $("#fp-contnet").hide();
+        }
+    });
+
 })();

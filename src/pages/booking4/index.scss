@@ -1,5 +1,4 @@
 @import '../../css/variables.scss';
-@import './checkInfo.scss';
 .boxfixed {
     position: fixed;
     display: block !important;
@@ -50,6 +49,7 @@
 
 .product-tags {
   margin-top: 8px;
+  font-size:14px;
 
   .tag {
     line-height: 20px;
@@ -182,5 +182,5 @@
     box-sizing: content-box;
   }
 }
-
+@import './checkInfo.scss';
 @import './sm-index.scss';
