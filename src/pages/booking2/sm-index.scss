@@ -53,7 +53,7 @@
     .product-tags {
         border-bottom: 1px solid #E5E5E5;
         padding: 0 32rem/$fit 10rem/$fit;
-
+        border-bottom: .5rem solid #f8f8f8;
 
         .tag {
             font-size: 28rem/$fit;
@@ -120,29 +120,31 @@
         text-align: center;
         overflow: hidden;
         display: flex;
-        padding: 0 32rem/$fit;
+        padding: 0 0rem/$fit;
         /*justify-content: space-between;*/
         position: inherit;
         margin-bottom: 0;
+        margin: 0;
     }
 
     .m_tab .tab_item {
-        height: 80rem/$fit;
-        width: 320rem/$fit;
-        line-height: 80rem/$fit;
+        height: 100rem/$fit;
+        width: 25%;
+        line-height: 100rem/$fit;
         font-size: 32rem/$fit;
-        color: #00969e;
+        color: #fff;
         cursor: pointer;
         border: 0px solid #D0D7DF;
-        border-radius: 4rem/$fit;
-        margin-left: -1px;
+        border-radius: 0rem/$fit;
+        margin-left: 0px;
+        background-color: #00969e;
     }
 
     .m_tab .tab_item:hover,
     .m_tab .current {
         color: #00969E;
         text-decoration: none;
-        background: #f0f0f0;
+        background: #fff;
     }
 
     .room-all {
@@ -543,8 +545,8 @@
         }
 
         .room-row {
-            background: #f0f0f0;
-            border: 0;
+            background: #fff;
+            border: 1px solid #f8f8f8;
 
             .room-row-item {
                 flex: 1;
@@ -575,6 +577,9 @@
         display: none;
     }
 
+    .noborderright {
+        border-right: 0px solid #f3f3f3 !important;
+    }
 
     .room-row-item {
         display: table-cell;
@@ -609,12 +614,21 @@
         }
     }
 
-    .item-name .active {
-        border-bottom: 3px solid #00969E;
+
+    .item-name {
+
+        p {
+            text-align: center;
+        }
+
+        .active {
+            border-bottom: 3px solid #00969E;
+        }
     }
 
     .active {
-        color: #00969E;
+        /*color: #00969E;*/
+        border-bottom: 3px solid #00969E;
     }
 
     .disable {
@@ -673,6 +687,7 @@
             font-size: 14px;
             color: #F8485E;
 
+
             span {
                 font-size: 30px;
                 color: #F8485E;
@@ -699,69 +714,68 @@
 
 
 .price-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 120rem/$fit;
-  display: flex;
-  background-color: #fff;
-
-  .left,
-  .right {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 120rem/$fit;
     display: flex;
-    flex-direction: column;
-  }
+    background-color: #fff;
 
-  .left {
-    flex: 1;
-    justify-content: space-around;
-    // align-items: ;
-    padding: 0rem/$fit 0 0 24rem/$fit;
-
-    .total {
-      font-size: 32rem/$fit;
-      color: #383838;
-      text-align:center;
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
     }
 
-    .price {
-      font-size: 40rem/$fit;
-      color: #F8485E;
+    .left {
+        flex: 1;
+        justify-content: space-around;
+        // align-items: ;
+        padding: 0rem/$fit 0 0 24rem/$fit;
+
+        .total {
+            font-size: 32rem/$fit;
+            color: #383838;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 40rem/$fit;
+            color: #F8485E;
+        }
+
+        .count {
+            font-size: 26rem/$fit;
+            color: #666;
+            // margin-top: 10rem/$fit;
+        }
     }
 
-    .count {
-      font-size: 26rem/$fit;
-      color: #666;
-      // margin-top: 10rem/$fit;
-    }
-  }
+    .right {
+        width: 354rem/$fit;
+        flex-shrink: 0;
+        background-color: #00969E;
+        align-items: center;
+        justify-content: center;
 
-  .right {
-    width: 354rem/$fit;
-    flex-shrink: 0;
-    background-color: #00969E;
-    align-items: center;
-    justify-content: center;
+        .main {
+            font-size: 32rem/$fit;
+            color: #FFFFFF;
+            letter-spacing: 0.52rem/$fit;
+            font-weight: 500;
+        }
 
-    .main {
-      font-size: 32rem/$fit;
-      color: #FFFFFF;
-      letter-spacing: 0.52rem/$fit;
-      font-weight: 500;
+        .sub {
+            font-size: 28rem/$fit;
+            color: #FFFFFF;
+            letter-spacing: 0.52rem/$fit;
+            font-weight: 300;
+        }
     }
-
-    .sub {
-      font-size: 28rem/$fit;
-      color: #FFFFFF;
-      letter-spacing: 0.52rem/$fit;
-      font-weight: 300;
-    }
-  }
 }
 
-@media(max-width:767px)
-{
+@media(max-width:767px) {
     .calendar-container {
         .travel_calendar {
             width: 18rem;
@@ -1000,9 +1014,8 @@
             }
         }
 
-        .layer-sm
-            {
-            width:16rem;
+        .layer-sm {
+            width: 16rem;
         }
     }
 
@@ -1163,8 +1176,4 @@
         width: 18rem;
         margin: 0 auto;
     }
-
 }
-
-
-
