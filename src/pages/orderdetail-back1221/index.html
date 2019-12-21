@@ -1,0 +1,287 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+
+    </script>
+</head>
+
+<body>
+    <div class="hidden-sm">
+        #include('../../common/header.html')
+    </div>
+
+    <header class="my-order-header show-sm">
+        <i class="icon icon-arrowleft"></i>
+        订单详情
+    </header>
+
+    <div id="main" class="main my-order fleetintro">
+        <div class="left-container">
+            #include('../../common/navbar.html')
+        </div>
+        <div class="right-container">
+            <div class="bread-crumb">
+                <span class="item">个人中心</span>
+                <span class="split">-</span>
+                <span class="item">订单中心</span>
+                <span class="split">-</span>
+                <span class="item selected">订单详情</span>
+            </div>
+            <div class="sm-top-panel">
+                <div class="status show-sm">
+                    已支付
+                    <p>您已完成预定，请留意出发时间及出发港口。</p>
+                </div>
+                <section class="trip-info show-sm">
+                    <p class="router">广州-海上巡游-那霸-宫古岛-海上巡游-广州</p>
+                    <p class="time">出行日期：2019-11-01 至 2019-11-03</p>
+                    <p class="time">出发港口：广州</p>
+                    <p class="time">出发地址：广州市南沙区龙穴大道南</p>
+                    <p class="time">出发人数：4人</p>
+                </section>
+                <section class="order-info">
+                    <h3 class="show-sm">总金额：¥9,154</h3>
+                        <p class="item">订单编号：63749662973</p>
+                            <p class="item">预订时间：2019/09/11 19:00</p>
+                            <p class="item">订单状态：<span class="order-status">已支付</span></p>
+                            <p class="item">支付时间：2019/09/11 20:08</p>
+                            <p class="item">出发时间：2019/10/11</p>
+                </section>
+            </div>
+
+            <h3 class="hidden-sm">您的行程</h3>
+            <section class="trip-info">
+                <h5>您的行程</h5>
+                <p class="title hidden-sm">世界梦号 【限时优惠】广州-那霸-宫古岛-广州</p>
+                <p class="router">广州-海上巡游-那霸-宫古岛-海上巡游-广州</p>
+                <p class="time">出发日期：2019-9-8 周日 广州出发 6天5晚</p>
+                <p class="desc">星梦邮轮将向星梦套房以下房型每人每晚征收小费港币120元，星梦套房以上含星梦套房每人每晚征收小费港币150元;
+                    两周岁以下（不含两周岁）婴孩免小费。邮轮小费将直接记录于个人舱房卡及帐单中，乘客需在离船当天或之前，前往中央大堂前台 / 接待处缴此小费及其他船上消费。星梦邮轮保留随时调整的权利。</p>
+                <div class="btns">
+                    <a class="btn-item">[航行合约]</a>
+                    <a class="btn-item">[重要提示]</a>
+                    <a class="btn-item">[预订条款]</a>
+                </div>
+            </section>
+            <h3 class="hidden-sm">联系人信息（重要）</h3>
+            <section class="contact-info">
+                <h5 class="title">联系人信息(重要,必填)</h5>
+                <span>姓名：邹泉</span>
+                <span>联系电话：+86 178 8930 0028</span>
+                <span>Email：zhouquan@163.com</span>
+            </section>
+            <h3 class="hidden-sm">乘客信息</h3>
+            <section class="user-info hidden-sm">
+                <h4>房间1：海景客房</h4>
+                <div class="users">
+                    <article class="user">
+                        <p class="user-name">乘客1：邹泉</p>
+                        <div class="info">
+                            <p>姓名拼音：ZHOU QUAN</p>
+                            <p>国籍：中国</p>
+                            <p>性别：男</p>
+                            <p>联系电话：178 8930 0028</p>
+                            <p class="sub-title">证件1</p>
+                            <p class="sub-info">
+                                <span>证件类型：居民身份证</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                            <p class="sub-title">证件2</p>
+                            <p class="sub-info">
+                                <span>证件类型：护照</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                            <p class="sub-title">证件3</p>
+                            <p class="sub-info">
+                                <span>证件类型：港澳通行证</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="user">
+                        <p class="user-name">乘客2：陈宇</p>
+                        <div class="info">
+                            <p>姓名拼音：ZHOU QUAN</p>
+                            <p>国籍：中国</p>
+                            <p>性别：男</p>
+                            <p>联系电话：178 8930 0028</p>
+                            <p class="sub-title">证件1</p>
+                            <p class="sub-info">
+                                <span>证件类型：居民身份证</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                            <p class="sub-title">证件2</p>
+                            <p class="sub-info">
+                                <span>证件类型：护照</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                            <p class="sub-title">证件3</p>
+                            <p class="sub-info">
+                                <span>证件类型：港澳通行证</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <h4>房间2：海景客房</h4>
+                <div class="users">
+                    <article class="user">
+                        <p class="user-name">乘客1：邹泉</p>
+                        <div class="info">
+                            <p>姓名拼音：ZHOU QUAN</p>
+                            <p>国籍：中国</p>
+                            <p>性别：男</p>
+                            <p>联系电话：178 8930 0028</p>
+                            <p class="sub-title">证件1</p>
+                            <p class="sub-info">
+                                <span>证件类型：居民身份证</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                            <p class="sub-title">证件2</p>
+                            <p class="sub-info">
+                                <span>证件类型：护照</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                            <p class="sub-title">证件3</p>
+                            <p class="sub-info">
+                                <span>证件类型：港澳通行证</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="user">
+                        <p class="user-name">乘客2：陈宇</p>
+                        <div class="info">
+                            <p>姓名拼音：ZHOU QUAN</p>
+                            <p>国籍：中国</p>
+                            <p>性别：男</p>
+                            <p>联系电话：178 8930 0028</p>
+                            <p class="sub-title">证件1</p>
+                            <p class="sub-info">
+                                <span>证件类型：居民身份证</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                            <p class="sub-title">证件2</p>
+                            <p class="sub-info">
+                                <span>证件类型：护照</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                            <p class="sub-title">证件3</p>
+                            <p class="sub-info">
+                                <span>证件类型：港澳通行证</span>
+                                <span>证件号码：360008199002028394</span>
+                                <span>证件有效期：2020/09/23</span>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <h3 class="hidden-sm">费用详情</h3>
+            <section class="price-info">
+                <h5 class="title">费用详情</h5>
+                <h4>房间一：<span class="price">¥3230</span></h4>
+                <div class="price-detail">
+                    <span>第一位乘客：¥1230</span><span>第二位乘客：¥2000</span>
+                </div>
+                <h4>房间二：<span class="price">¥3230</span></h4>
+                <div class="price-detail">
+                    <span>第一位乘客：¥1230</span><span>第二位乘客：¥2000</span>
+                </div>
+                <p class="total-price">
+                    总房费：<span class="price">¥6800</span>
+                </p>
+                <div class="split hidden-sm"></div>
+                <div class="product border-bm">
+                    <div class="product-right">
+                        <p class="product-title">龙虾牛腩面</p>
+                        <p class="product-detail hidden-sm">
+                            房间1：1份
+                            房间2：2份
+                        </p>
+                        <p class="product-detail-sm show-sm">
+                            房间1: 1份；房间2: 2份
+                        </p>
+                        <p class="product-price">
+                            &yen; 328
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-right">
+                        <p class="product-title">精选岸上游</p>
+                        <p class="product-detail hidden-sm">
+                            房间1：1份
+                            房间2：2份
+                        </p>
+                        <p class="product-detail-sm show-sm">
+                            房间1: 1份；房间2: 2份
+                        </p>
+                        <p class="product-price">
+                            &yen; 328
+                        </p>
+                    </div>
+                </div>
+                <p class="total-price mt10">
+                    商品总费用：<span class="price">¥6800</span>
+                </p>
+                <div class="split hidden-sm"></div>
+                <div class="all-price">
+                    <p class="fee">总港务费：¥328</p>
+                    <p class="fee">优惠：-¥299</p>
+                    <p class="all-price-num">合计总金额：<span class="price">¥9,154</span></p>
+                </div>
+            </section>
+            <h3 class="hidden-sm">发票信息</h3class="hidden-sm">
+            <section class="invoice-info">
+                <h5 class="title">发票信息</h5>
+                <p>发票信息：企业</p>
+                <p>税务登记证号：企业增值税普通发票</p>
+                <p>发票抬头：上海飞腾信息技术有限公司</p>
+                <p>税号：N1213434454545</p>
+                
+            </section>
+            <div class="order-btns">
+                <a href="###" class="back">返回</a><a href="###" class="buy">购买增值服务</a>
+            </div>
+        </div>
+    </div>
+
+    #include('../../common/footer.html')
+
+</body>
+
+</html>

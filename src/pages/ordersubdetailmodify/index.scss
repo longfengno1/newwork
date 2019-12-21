@@ -827,9 +827,6 @@ body {
 
             p {
                 font-size: 28rem/$fit;
-                a{
-                    color:#fff;
-                }
             }
         }
 
@@ -881,7 +878,7 @@ body {
 
 
     .sm-main {
-        min-height: 100vh;
+        min-height: 30vh;
         width: 100vw;
         /*font-family: Helvetica;*/
         padding-bottom: 20rem/$fit;
