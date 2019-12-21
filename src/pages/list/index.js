@@ -8,8 +8,8 @@ import "../../js/slick.min";
 
   function init() {
     $('#travel_calendar').hide();
-    $('#calendar-icon').addClass('icon-arrowup');
-    $('#calendar-icon').removeClass('icon-arrowdown');
+      $('#calendar-icon').addClass('icon-arrowdown');
+      $('#calendar-icon').removeClass('icon-arrowup');
     $('#select-place-row').hide();
   }
 
@@ -18,16 +18,36 @@ import "../../js/slick.min";
   $('#show-calendar').click(function(){
     if (expand) {
       $('#travel_calendar').hide();
-      $('#calendar-icon').addClass('icon-arrowup');
-      $('#calendar-icon').removeClass('icon-arrowdown');
+        $('#calendar-icon').addClass('icon-arrowdown');
+        $('#calendar-icon').removeClass('icon-arrowup');
       expand = false;
     } else {
       $('#travel_calendar').show();
-      $('#calendar-icon').removeClass('icon-arrowup');
-      $('#calendar-icon').addClass('icon-arrowdown');
+        $('#calendar-icon').removeClass('icon-arrowdown');
+        $('#calendar-icon').addClass('icon-arrowup');
       expand = true;
     }
   })
+
+    $(".a_available").mouseover(function () {
+        $(".a_available").removeClass("hover");
+        $(this).addClass("hover");
+        $(this).parent().find(".t2_td_schedule_more").show();
+    })
+    $(".a_available").mouseleave(function () {
+        $(this).removeClass("hover");
+        $(this).parent().find(".t2_td_schedule_more").hide();
+
+    })
+
+    $(".t2_td_schedule_more").mouseover(function () {
+        $(this).show();
+    })
+    $(".t2_td_schedule_more").mouseleave(function () {
+        $(this).hide();
+
+    })
+
 
   $('#select-place').click(function(){
     if (showPlace) {
@@ -78,7 +98,7 @@ import "../../js/slick.min";
       $this.find(".date-list-item-more").hide();
     }
   })
-  $(".tags .hot-tag").click(function(){
+    $(".tags .hot-tag").mouseover(function () {
     var $this=$(this);
     $this.parents(".boat-card").find(".description").show();
 
@@ -131,5 +151,41 @@ import "../../js/slick.min";
     $(".filter-sm-opener").hide();
     $(".markop0").hide();
   });
-  
+
+    $(".city_item_txt").click(function () {
+        $(".city_item_txt").removeClass("current");
+        $(this).addClass("current");
+    });
+
+    $(".price-desc-txt").click(function () {
+        $(".fullmark").show();
+    });
+    $(".price-desc-opener-close").click(function () {
+        $(this).parent().parent().parent().hide();
+    });
+    $(".price-desc-panel-close").click(function () {
+        $(this).parent().hide();
+    });
+    $(".bottom-btn-search").click(function () {
+        $(".queryfitler").show();
+        $(".price-desc").hide();
+        $(".markop0").hide();
+        $(this).parent().parent().hide();
+    });
+    $(".item").click(function () {
+        //$(this).parent().find(".item").re
+        if ($(this).parent().hasClass("inner-list")) {
+            $(this).toggleClass("current");
+        }
+    });
+
+    $(".sortitem").click(function () {
+        $(".sortitem").removeClass("current");
+        $(this).addClass("current");
+    });
+
+    $(".conti-close").click(function () {
+        $(this).parent().hide();
+    });
+
 })();
