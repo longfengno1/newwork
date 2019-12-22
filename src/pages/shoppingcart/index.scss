@@ -340,4 +340,43 @@ input[type=checkbox]:checked + .cb-label,
     }
 }
 
+.fee {
+    overflow: hidden;
+    text-align: right;
+    font-size: 16px;
+
+    p {
+        margin-top: 10px;
+    }
+
+    .price {
+        font-size: 18px;
+        color: #FF5050;
+    }
+}
+.btns {
+    margin-top: 24px;
+    font-size: 14px;
+
+    .back, .next {
+        width: 200px;
+        display: inline-block;
+        border-radius: 2px;
+        text-align: center;
+        height: 44px;
+        line-height: 44px;
+        cursor: pointer;
+    }
+
+    .back {
+        color: #333333;
+        border: 1px solid #E5E5E5;
+    }
+
+    .next {
+        color: #ffffff;
+        background-color: #00969E;
+    }
+}
+
 @import './sm-index.scss';
