@@ -810,19 +810,63 @@
 
 		.item {
 			display: table-cell;
-
+			position: relative;
 			img {
 				width: 100%;
 				display: block;
 			}
 
 			p {
+				position: relative;
+				z-index: 2;
 				height: 48px;
 				line-height: 48px;
 				font-size: 14px;
 				background: #f8fcfd;
 				color: #373c50;
 				text-align: center;
+			}
+			&:hover{
+				.markdiv{
+					display: block;
+				}
+			}
+			.markdiv{
+				position: absolute;
+				display: none;
+				top:0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba($color: #00969E, $alpha: 0.5);
+				img{
+					width: 28px;
+					height: 28px;
+					display: inline-block;
+				}
+				.iconview,
+				.icondownload{
+					position: absolute;
+					background: #fff;
+					height: 40px;
+					width: 40px;
+					text-align: center;
+					line-height: 40px;
+					border-radius: 50%;
+					top:60px;
+				}
+				.iconview{
+					left: 50px;
+				}
+				.icondownload{
+					img{
+						width: 22px;
+						height: 22px;
+						margin-left: 1px;
+						margin-bottom: 2px;
+					}
+					right: 50px;
+				}
 			}
 		}
 	}
@@ -832,8 +876,8 @@
 	padding: 70px 45px 55px 45px;
 	overflow: hidden;
 
-	.slick-dot {
-		display: none;
+	.slick-dots {
+		display: none !important;
 	}
 
 	.pic {
@@ -919,7 +963,9 @@
 	padding: 20px;
 	position: relative;
 	margin: 0 auto;
-
+	.slick-dots{
+		display: none !important;
+	}
 	.inner {
 		position: relative;
 
@@ -933,6 +979,27 @@
 			position: absolute;
 			width: 100%;
 			bottom: 0;
+		}
+		.fillbtn{
+			position: absolute;
+			width: 42px;
+			height: 42px;
+			right: 10px;
+			top: 10px;
+			font-size:42px;
+			line-height: 1;
+			color: #fff;
+			a{
+				color: #fff;
+			}
+			a:hover{
+				text-decoration: none;
+				opacity: 0.8;
+			}
+			span:first-child{
+				position: absolute;
+				transform: rotate(90deg);
+			}
 		}
 	}
 
@@ -1163,7 +1230,7 @@
 		}
 
 		.slick-dots {
-			display: block;
+			display: block !important;
 			bottom: 30rem/$fit;
 
 			li {
@@ -1214,8 +1281,8 @@
 		padding: 18rem/$fit;
 		margin-bottom: 22rem/$fit;
 		font-size: .6rem;
-
-
+		position: relative;
+		
 		.itemtitle {
 			color: #333;
 			line-height: 28rem/$fit;
@@ -1233,6 +1300,8 @@
 		}
 
 		p {
+			position: relative;
+			z-index: 2;
 			background: none;
 			height: auto;
 			color: #666;
@@ -1271,6 +1340,9 @@
 		box-shadow: none;
 		padding: 0 32rem/$fit 70rem/$fit 32rem/$fit;
 		height: auto;
+		.fillbtn{
+			display: none;
+		}
 		.slick-list{
 			border-radius: 10rem/$fit;
 			box-shadow: 0 0 20rem/$fit #666;
