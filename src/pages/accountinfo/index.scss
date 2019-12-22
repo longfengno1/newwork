@@ -201,6 +201,7 @@ p {
 
 .itxtp {
 	text-align: center;
+
 	.ml80 {
 		margin-left: 80px
 	}
@@ -326,7 +327,7 @@ p {
 	width: 1020px;
 	padding: 20px;
 	float: left;
-
+	
 	.item {
 		background: #FFFFFF;
 		box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.15);
@@ -402,7 +403,11 @@ p {
 			.levelbox {
 				padding-left: 9px;
 			}
-
+			.fr{
+				span{
+					vertical-align: middle;
+				}
+			}
 			.level1,
 			.level2,
 			.level3,
@@ -516,9 +521,10 @@ p {
 
 	}
 
-	.w100px{
+	.w100px {
 		width: 100px;
 	}
+
 	.titlebox {
 		border: 1px solid #D0D7DF;
 		background: #fff;
@@ -829,7 +835,7 @@ p {
 }
 
 @media(max-width:767px) {
-
+	
 	.accountlevel {
 
 		width: 100%;
@@ -845,9 +851,11 @@ p {
 
 			.zgtable {
 				width: 100%;
-				&:last-child{
+
+				&:last-child {
 					margin: 0;
 				}
+
 				li {
 					display: block;
 					float: left;
@@ -874,7 +882,7 @@ p {
 				transform: translate(-25rem/$fit, -25rem/$fit);
 			}
 
-			.bottomtext{
+			.bottomtext {
 				padding: 32rem/$fit 0;
 				text-align: center;
 			}
@@ -891,6 +899,17 @@ p {
 			line-height: 1.5;
 		}
 	}
+
+	.i1,
+	.i2,
+	.i3,
+	.i4 {
+		width: 40rem/$fit;
+		height: 40rem/$fit;
+		line-height: 40rem/$fit;
+		font-size: 20rem/$fit !important;
+	}
+
 	.itxtp {
 		text-align: center;
 
@@ -899,18 +918,21 @@ p {
 		.i3,
 		.i4 {
 			width: 30rem/$fit;
-				height: 30rem/$fit;
-				line-height: 30rem/$fit;
-				font-size: 20rem/$fit !important;
+			height: 30rem/$fit;
+			line-height: 30rem/$fit;
+			font-size: 20rem/$fit !important;
 			transform: none !important;
 		}
-		.ml80{
-			margin-left:16rem/$fit;
+
+		.ml80 {
+			margin-left: 16rem/$fit;
 		}
-		span{
+
+		span {
 			font-size: 20rem/$fit;
 		}
 	}
+
 	.level {
 		background: none;
 		padding: 0;
@@ -1026,22 +1048,28 @@ p {
 			margin-top: -40rem/$fit;
 		}
 	}
-	.sltableA{
+
+	.sltableA {
 		margin: 0;
-		.sliderbaseC{
+
+		.sliderbaseC {
 			width: 100%;
-			.item{
+
+			.item {
 				width: 100%;
 				box-shadow: 0 3rem/$fit 7rem/$fit 0 rgba(0, 0, 0, 0.15);
 				margin: 20rem/$fit !important;
-				img{
+
+				img {
 					width: 100%;
 					height: auto;
 				}
+
 				margin: 0;
 			}
-			.slick-dots{
-				li{
+
+			.slick-dots {
+				li {
 					height: 16rem/$fit !important;
 					width: 16rem/$fit !important;
 					border-radius: 50%;
@@ -1049,108 +1077,133 @@ p {
 			}
 		}
 	}
-	.shipvip{
+
+	.shipvip {
 		background: #fff;
 		padding-bottom: 32rem/$fit !important;
-		.title{
+
+		.title {
 			height: auto;
 			line-height: 2;
 		}
-		.col_right{
+
+		.col_right {
 			width: 100%;
 		}
-		.w100px{
+
+		.w100px {
 			width: 104rem/$fit;
 		}
-		table{
-			th,td{
+
+		table {
+
+			th,
+			td {
 				font-size: 24rem/$fit;
 				height: auto;
-				padding-top:20rem/$fit;
+				padding-top: 20rem/$fit;
 				padding-bottom: 20rem/$fit;
 				position: relative;
 			}
-			.shipicon{
+
+			.shipicon {
 				float: left;
-				position:static;
+				position: static;
 				height: 100%;
 			}
-			.shipicontext{
-				
-			}
+
+			.shipicontext {}
 		}
+
 		table td:first-child,
-		table th:first-child{
+		table th:first-child {
 			padding-left: 12rem/$fit;
 		}
-		.titelbar{
+
+		.titelbar {
 			padding-left: 20rem/$fit;
 			height: 88rem/$fit;
 			line-height: 88rem/$fit;
 			font-size: 28rem/$fit;
-			img{
+
+			img {
 				position: static;
 				height: 48rem/$fit;
 				width: 48rem/$fit;
 			}
-			.btn-r{
-				margin:0;
-				margin-top:30rem/$fit;
+
+			.btn-r {
+				margin: 0;
+				margin-top: 30rem/$fit;
 				margin-right: 30rem/$fit;
 			}
 		}
-		.descinfo{
-			padding:20rem/$fit;
-			img{
+
+		.descinfo {
+			padding: 20rem/$fit;
+
+			img {
 				height: 32rem/$fit;
 				width: auto;
 			}
-			p{
+
+			p {
 				font-size: 24rem/$fit;
 			}
-			.pic{
-				img{
+
+			.pic {
+				img {
 					height: 135rem/$fit;
 					margin-left: 40rem/$fit;
 				}
 			}
 		}
-		
+
 	}
-	.kidlist{
+
+	.kidlist {
 		width: 100%;
 		padding: 30rem/$fit 88rem/$fit;
 	}
-	.kidlist li img{
+
+	.kidlist li img {
 		height: 94rem/$fit;
-		width:84rem/$fit;
+		width: 84rem/$fit;
 	}
-	.kidlist li p{
+
+	.kidlist li p {
 		margin-left: 30rem/$fit;
 		font-size: 26rem/$fit;
 		line-height: 26rem/$fit;
 		padding-top: 21rem/$fit;
 	}
-	.kidlist li p span{
+
+	.kidlist li p span {
 		font-size: 20rem/$fit;
 	}
-	.kidinfo .pic{
+
+	.kidinfo .pic {
 		margin: 0;
 		margin-bottom: 20rem/$fit;
 	}
-	.kidinfo .pic img{
+
+	.kidinfo .pic img {
 		width: 100%;
 		height: auto;
 	}
-	.shipvip .w980box{
+
+	.shipvip .w980box {
 		width: 100%;
 	}
-	.shipvip .gray9{
+
+	.shipvip .gray9 {
 		font-size: 24rem/$fit;
 	}
-	.bottom-btn{
+
+	.bottom-btn {
 		margin-top: 50rem/$fit;
-		a{
+
+		a {
 			display: block;
 			width: 100% !important;
 			margin-bottom: 20rem/$fit;
@@ -1160,29 +1213,35 @@ p {
 			border-radius: 44rem/$fit;
 		}
 	}
-	.shipvip .col_left{
-		width:100vw;
+
+	.shipvip .col_left {
+		width: 100vw;
 		height: 88rem/$fit;
 		position: relative;
 		margin: 0 -32rem/$fit;
-		box-shadow: 0 10rem/$fit 10rem/$fit rgba(0,0,0,0.1);
-		.inner{
-			width:100vw;
-			box-shadow: 0 10rem/$fit 10rem/$fit rgba(0,0,0,0.1);
+		box-shadow: 0 10rem/$fit 10rem/$fit rgba(0, 0, 0, 0.1);
+
+		.inner {
+			width: 100vw;
+			box-shadow: 0 10rem/$fit 10rem/$fit rgba(0, 0, 0, 0.1);
 		}
-		ul{
-			white-space:nowrap;
+
+		ul {
+			white-space: nowrap;
 			overflow-x: scroll;
 			overflow-y: hidden;
 		}
-		li{
+
+		li {
 			display: inline-block;
 			height: 88rem/$fit !important;
 			line-height: 88rem/$fit !important;
 			font-size: 32rem/$fit !important;
-			&.current{
+
+			&.current {
 				position: relative;
-				&::after{
+
+				&::after {
 					content: "";
 					position: absolute;
 					width: 50rem/$fit;
@@ -1193,14 +1252,17 @@ p {
 					margin-left: -25rem/$fit;
 				}
 			}
-			img{
+
+			img {
 				display: none;
 			}
 		}
 	}
-	.shipvip .col_right{
+
+	.shipvip .col_right {
 		margin-top: 20rem/$fit;
 	}
+
 	.boxfixed {
 		position: fixed !important;
 		display: block !important;
