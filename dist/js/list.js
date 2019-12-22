@@ -272,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
   });
   $(".tags .hot-tag").mouseover(function () {
     var $this = $(this);
-    $this.parents(".boat-card").find(".description").toggle();
+    $this.parents(".boat-card").find(".description").show();
   });
   $(".intro").click(function () {
     var $this = $(this);

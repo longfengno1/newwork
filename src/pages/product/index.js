@@ -26,6 +26,29 @@ import "./index.scss";
 
             }
 
+            var leftlistbox_tag2 = $(".leftlist .leftlist_box_tag2");
+            var leftlistboxWrap_tag2 = leftlistbox_tag2.parent();
+            if (!leftlistboxWrap_tag2.offset()) return;
+            if (st > leftlistboxWrap_tag2.offset().top - 60 &&
+                st < leftlistboxWrap_tag2.offset().top + $("#tag2").next().height() - leftlistbox_tag2.height()) {
+                leftlistbox_tag2.addClass("boxfixed_w100");
+            } else {
+                leftlistbox_tag2.removeClass("boxfixed_w100");
+
+            }
+
+
+            var leftlistbox_tag3 = $(".leftlist .leftlist_box_tag3");
+            var leftlistboxWrap_tag3 = leftlistbox_tag3.parent();
+            if (!leftlistboxWrap_tag3.offset()) return;
+            if (st > leftlistboxWrap_tag3.offset().top - 60 &&
+                st < leftlistboxWrap_tag3.offset().top + $("#tag3").next().height() - leftlistbox_tag3.height()) {
+                leftlistbox_tag3.addClass("boxfixed_w100");
+            } else {
+                leftlistbox_tag3.removeClass("boxfixed_w100");
+
+            }
+
             var leftlistbox_tag4 = $(".leftlist .leftlist_box_tag4");
             var leftlistboxWrap_tag4 = leftlistbox_tag4.parent();
             if (!leftlistboxWrap_tag4.offset()) return;
@@ -47,32 +70,60 @@ import "./index.scss";
                 leftlistbox_tag5.removeClass("boxfixed_w100");
 
             }
-            
-            if(st > $("#tag1").offset().top){
+
+            if (st > $("#tag1").offset().top) {
                 $(".bartags a").removeClass("current");
                 $(".bartags a").eq(0).addClass("current");
             }
-            if(st > $("#tag2").offset().top){
+            if (st > $("#tag2").offset().top) {
                 $(".bartags a").removeClass("current");
                 $(".bartags a").eq(1).addClass("current");
             }
-            if(st > $("#tag3").offset().top){
+            if (st > $("#tag3").offset().top) {
                 $(".bartags a").removeClass("current");
                 $(".bartags a").eq(2).addClass("current");
             }
-            if(st > $("#tag4").offset().top){
+            if (st > $("#tag4").offset().top) {
                 $(".bartags a").removeClass("current");
                 $(".bartags a").eq(3).addClass("current");
             }
-            if(st > $("#tag5").offset().top){
+            if (st > $("#tag5").offset().top) {
                 $(".bartags a").removeClass("current");
                 $(".bartags a").eq(4).addClass("current");
             }
-            if(st > $("#tag6").offset().top){
+            if (st > $("#tag6").offset().top) {
                 $(".bartags a").removeClass("current");
                 $(".bartags a").eq(5).addClass("current");
             }
 
+            if (st+60 > $("#day0").offset().top) {
+                $(".day-index li").removeClass("current");
+                $(".day-index li").eq(0).addClass("current");
+            }
+            if (st + 60 > $("#day1").offset().top) {
+                $(".day-index li").removeClass("current");
+                $(".day-index li").eq(1).addClass("current");
+            }
+            if (st + 60 > $("#day2").offset().top) {
+                $(".day-index li").removeClass("current");
+                $(".day-index li").eq(2).addClass("current");
+            }
+            if (st + 60 > $("#day3").offset().top) {
+                $(".day-index li").removeClass("current");
+                $(".day-index li").eq(3).addClass("current");
+            }
+            if (st + 60 > $("#day4").offset().top) {
+                $(".day-index li").removeClass("current");
+                $(".day-index li").eq(4).addClass("current");
+            }
+            if (st + 60 > $("#day5").offset().top) {
+                $(".day-index li").removeClass("current");
+                $(".day-index li").eq(5).addClass("current");
+            }
+            if (st + 60 > $("#day6").offset().top) {
+                $(".day-index li").removeClass("current");
+                $(".day-index li").eq(6).addClass("current");
+            }
         });
 
         $(".priceinfo_link").click(function () {
@@ -114,16 +165,27 @@ import "./index.scss";
         })
         $(".bartags a").click(function () {
             var $this = $(this);
-            setTimeout(function(){
+            setTimeout(function () {
                 $(".bartags a").removeClass("current");
                 $this.addClass("current");
-            },300)
-            
+            }, 300)
+
         })
-        $(".days_box_title").click(function(){
+        $(".days_box_title").click(function () {
             var $this = $(this);
             $this.find(".icon-arrowdown").toggleClass("icon-arrowup");
             $this.parent().find(".days_box_content").toggle();
         })
-    })
+    });
+
+    $(".search_price").click(function () {
+        $(".mark.layerprice").show();
+    });
+    //$(".mark").click(function () {
+    //    $(".mark").hide();
+    //});
+    $(".layer-price .close").click(function () {
+        $(".mark").hide();
+    });
+
 })();
