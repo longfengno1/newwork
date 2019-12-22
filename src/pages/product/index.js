@@ -188,4 +188,15 @@ import "./index.scss";
         $(".mark").hide();
     });
 
+    $(".start-date-item").click(function () {
+        $(".start-date-item").removeClass("current");
+        $(this).addClass("current");
+    });
+
+    $(".box_title").click(function () {
+        var $this = $(this);
+        $this.find(".icon-arrowdown").toggleClass("icon-arrowup");
+        $this.parent().find(".box_content").toggle();
+    })
+
 })();
