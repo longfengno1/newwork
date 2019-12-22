@@ -904,6 +904,10 @@
 		float: left;
 		width: 50%;
 		padding: 60px;
+
+		p{
+			font-size:14px;
+		}
 	}
 }
 
@@ -1141,7 +1145,9 @@
 		width: 100%;
 		overflow: hidden;
 		padding-top: 44rem/$fit;
+			background: none;
 	}
+
 	.bg-our-destinations{
 		background-size:100vw;
 		height: 200rem/$fit;
@@ -1183,6 +1189,7 @@
 			padding: 32rem/$fit 0;
 			color: #999;
 			width: 100%;
+			p{font-size:.6rem;}
 		}
 	}
 
@@ -1206,12 +1213,15 @@
 		box-shadow: 0 0 10rem/$fit #ccc;
 		padding: 18rem/$fit;
 		margin-bottom: 22rem/$fit;
+		font-size: .6rem;
+
 
 		.itemtitle {
 			color: #333;
 			line-height: 28rem/$fit;
 			margin-bottom: 18rem/$fit;
 			text-align: left;
+			font-size: .7rem;
 		}
 
 		.downp {
@@ -1225,7 +1235,6 @@
 		p {
 			background: none;
 			height: auto;
-		
 			color: #666;
 			line-height: 40rem/$fit;
 			word-break: break-all; //强制换行
@@ -1307,7 +1316,7 @@
 				padding:0;
 				.title{
 					color: #363e53;
-					font-size: 30rem/$fit;
+					font-size: 28rem/$fit;
 					height: 50rem/$fit;
 					line-height: 50rem/$fit;
 					margin-bottom: 10rem/$fit;
@@ -1321,34 +1330,40 @@
 					-webkit-box-orient: vertical; //设置或检索伸缩盒对象的子元素的排列方式
 					-webkit-line-clamp: 3; //显示行数## 标题文字 ##
 					overflow: hidden;
+					font-size:.6rem;
 				}
 			}
 		}
 	}
-	.picandtextB{
+	.picandtextB {
 		position: relative;
 		padding-bottom: 160rem/$fit;
-		.titletext{
-			font-size: 30rem/$fit !important;
+
+		.titletext {
+			font-size: 28rem/$fit !important;
 			color: #333;
 			font-weight: bold;
 		}
-		.pic{
+
+		.pic {
 			padding: 0;
 			float: none;
 			box-shadow: none;
 			height: auto;
 			width: 100%;
-			img{
+
+			img {
 				box-shadow: none;
 				width: 100%;
 				height: auto;
 			}
 		}
-		.pic:after{
+
+		.pic:after {
 			display: none;
 		}
-		.bottom-btn{
+
+		.bottom-btn {
 			position: absolute;
 			bottom: 60rem/$fit;
 			left: 0;
@@ -1356,36 +1371,41 @@
 			text-align: center;
 			margin: 0;
 			width: 100%;
-			.btn-styleE{
-				font-size: 24rem/$fit;
-				padding: 20rem/$fit 26rem/$fit;
+
+			.btn-styleE {
+				font-size: 0.6rem;
+				padding: 0.25rem 1rem;
 				text-align: center;
+				border-radius: 5px;
 			}
 		}
 	}
-	.input-box{
+	.input-box {
 		width: 100%;
 		padding: 0 32rem/$fit;
 		padding-bottom: 40rem/$fit;
-		.input-row{
+
+		.input-row {
 			overflow: hidden;
 			padding: 0;
+
 			.input-txt,
-			.input-select{
+			.input-select {
 				height: 60rem/$fit;
 				line-height: 60rem/$fit;
-				font-size:24rem/$fit;
+				font-size: 24rem/$fit;
 				border-radius: 6rem/$fit;
 			}
 		}
-		.btn-styleE{
-			font-size: 24rem/$fit;
-				padding: 20rem/$fit 26rem/$fit;
-				text-align: center;
-				width: 80px;
-				margin-top: 40rem/$fit;
-		}
 
+		.btn-styleE {
+			font-size: 0.6rem;
+			padding: 0.25rem 1rem;
+			text-align: center;
+			width: 80px;
+			margin-top: 1rem;
+			border-radius: 5px;
+		}
 	}
 	.inputbox-sm{
 		margin-top: -50rem/$fit;
