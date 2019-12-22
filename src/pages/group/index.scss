@@ -876,8 +876,8 @@
 	padding: 70px 45px 55px 45px;
 	overflow: hidden;
 
-	.slick-dot {
-		display: none;
+	.slick-dots {
+		display: none !important;
 	}
 
 	.pic {
@@ -1230,7 +1230,7 @@
 		}
 
 		.slick-dots {
-			display: block;
+			display: block !important;
 			bottom: 30rem/$fit;
 
 			li {
