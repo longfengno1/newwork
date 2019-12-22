@@ -825,6 +825,7 @@
 				background: #f8fcfd;
 				color: #373c50;
 				text-align: center;
+				font-size:.6rem;
 			}
 			&:hover{
 				.markdiv{
@@ -1285,8 +1286,8 @@
 		
 		.itemtitle {
 			color: #333;
-			line-height: 28rem/$fit;
-			margin-bottom: 18rem/$fit;
+			line-height: 40rem/$fit;
+			margin-bottom: 10rem/$fit;
 			text-align: left;
 			font-size: .7rem;
 		}
