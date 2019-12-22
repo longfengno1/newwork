@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\common",
+    "\\src\\css",
     "\\src\\pages",
-    "\\src\\pages\\booking4",
-    "\\src\\pages\\orderdetail",
-    "\\src\\pages\\orderdetail-back1221",
-    "\\src\\pages\\orderdetailmodify",
-    "\\src\\pages\\ordersubdetail",
-    "\\src\\pages\\ordersubdetail-back1221",
-    "\\src\\pages\\ordersubdetailmodify"
+    "\\src\\pages\\booking2",
+    "\\src\\pages\\booking3",
+    "\\src\\pages\\product",
+    "\\src\\pages\\yuleshengyan",
+    "\\src\\pages\\yuleshengyanDetail"
   ],
-  "SelectedNode": "\\src\\pages\\ordersubdetailmodify\\index.scss",
+  "SelectedNode": "\\src\\pages\\yuleshengyanDetail\\index.html",
   "PreviewInSolutionExplorer": false
 }

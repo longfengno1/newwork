@@ -357,6 +357,15 @@ __webpack_require__.r(__webpack_exports__);
   $(".layer-price .close").click(function () {
     $(".mark").hide();
   });
+  $(".start-date-item").click(function () {
+    $(".start-date-item").removeClass("current");
+    $(this).addClass("current");
+  });
+  $(".box_title").click(function () {
+    var $this = $(this);
+    $this.find(".icon-arrowdown").toggleClass("icon-arrowup");
+    $this.parent().find(".box_content").toggle();
+  });
 })();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(3)))
 
