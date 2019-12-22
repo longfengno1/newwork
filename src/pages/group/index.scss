@@ -1134,12 +1134,21 @@
 
 
 @media(max-width:767px) {
+	body{
+		background: #f8fcfd;
+	}
 	.fleetintro {
 		width: 100%;
 		overflow: hidden;
 		padding-top: 44rem/$fit;
 	}
-
+	.bg-our-destinations{
+		background-size:100vw;
+		height: 200rem/$fit;
+		margin-top:-120rem/$fit;
+		margin-bottom: 0;
+		pointer-events:none;
+	}
 	.picandtext {
 		padding: 0 32rem/$fit;
 
@@ -1164,7 +1173,7 @@
 		}
 
 		.texttitle {
-			font-size: 28rem/$fit;
+			font-size: 30rem/$fit;
 			line-height: 74rem/$fit;
 			font-weight: bold;
 			text-align: center;
@@ -1202,13 +1211,23 @@
 			color: #333;
 			line-height: 28rem/$fit;
 			margin-bottom: 18rem/$fit;
+			text-align: left;
+		}
+
+		.downp {
+			float: right;
+			width: 136rem/$fit;
+			text-align: right;
+			position: relative;
+			height: 80rem/$fit;
 		}
 
 		p {
 			background: none;
 			height: auto;
+		
 			color: #666;
-			line-height: 28rem/$fit;
+			line-height: 40rem/$fit;
 			word-break: break-all; //强制换行
 			text-overflow: ellipsis; //显示为省略号
 			display: -webkit-box; //对象作为伸缩盒子模型显示
@@ -1221,18 +1240,156 @@
 			float: left;
 			width: 245rem/$fit;
 			height: 135rem/$fit;
+			margin-right: 16rem/$fit;
 		}
 
 		.btn-styledown {
 			border: 1px solid #00969E;
 			height: 38rem/$fit;
 			line-height: 38rem/$fit;
-			padding: 0 28rem/$fit;
-			border-radius: 8rem/$fit;
+			padding: 0 19rem/$fit;
+			border-radius: 19rem/$fit;
 			color: #00969E;
+			font-size: 24rem/$fit;
+			position: absolute;
+			top: 0;
+			right: 0;
 		}
 	}
+	.onepic{
+		background: none;
+		width: 100%;
+		box-shadow: none;
+		padding: 0 32rem/$fit 70rem/$fit 32rem/$fit;
+		height: auto;
+		.slick-list{
+			border-radius: 10rem/$fit;
+			box-shadow: 0 0 20rem/$fit #666;
+		}
+		.slick-dots{
+			bottom:10rem/$fit;
+		}
+		.slick-dots li{
+			height: 16rem/$fit !important;;
+			width: 16rem/$fit !important;;
+			border-radius: 50%;
+		}
+	}
+	.sliderbaseB{
+		background: #fff;
+		.slick-dots{
+			bottom:10rem/$fit;
+		}
+		.slick-dots li{
+			height: 16rem/$fit !important;;
+			width: 16rem/$fit !important;;
+			border-radius: 50%;
+		}
+	}
+	.tableA{
+		display: block;
+		padding: 0 32rem/$fit;
+		background: #fff;
+		.item{
+			display: block;
+			padding: 32rem/$fit 0;
+			border-bottom:1px solid #ccc;
+			img{
+				width: 295rem/$fit;
+				height: 165rem/$fit;
+				float: left;
+				margin-right: 20rem/$fit;
+			}
+			.box{
+				
+				background: #fff;
+				color: #666;
+				padding:0;
+				.title{
+					color: #363e53;
+					font-size: 30rem/$fit;
+					height: 50rem/$fit;
+					line-height: 50rem/$fit;
+					margin-bottom: 10rem/$fit;
+				}
+				.desc{
+					color: #717171;
+					line-height: 1.2;
+					word-break: break-all; //强制换行
+					text-overflow: ellipsis; //显示为省略号
+					display: -webkit-box; //对象作为伸缩盒子模型显示
+					-webkit-box-orient: vertical; //设置或检索伸缩盒对象的子元素的排列方式
+					-webkit-line-clamp: 3; //显示行数## 标题文字 ##
+					overflow: hidden;
+				}
+			}
+		}
+	}
+	.picandtextB{
+		position: relative;
+		padding-bottom: 160rem/$fit;
+		.titletext{
+			font-size: 30rem/$fit !important;
+			color: #333;
+			font-weight: bold;
+		}
+		.pic{
+			padding: 0;
+			float: none;
+			box-shadow: none;
+			height: auto;
+			width: 100%;
+			img{
+				box-shadow: none;
+				width: 100%;
+				height: auto;
+			}
+		}
+		.pic:after{
+			display: none;
+		}
+		.bottom-btn{
+			position: absolute;
+			bottom: 60rem/$fit;
+			left: 0;
+			padding: 0;
+			text-align: center;
+			margin: 0;
+			width: 100%;
+			.btn-styleE{
+				font-size: 24rem/$fit;
+				padding: 20rem/$fit 26rem/$fit;
+				text-align: center;
+			}
+		}
+	}
+	.input-box{
+		width: 100%;
+		padding: 0 32rem/$fit;
+		padding-bottom: 40rem/$fit;
+		.input-row{
+			overflow: hidden;
+			padding: 0;
+			.input-txt,
+			.input-select{
+				height: 60rem/$fit;
+				line-height: 60rem/$fit;
+				font-size:24rem/$fit;
+				border-radius: 6rem/$fit;
+			}
+		}
+		.btn-styleE{
+			font-size: 24rem/$fit;
+				padding: 20rem/$fit 26rem/$fit;
+				text-align: center;
+				width: 80px;
+				margin-top: 40rem/$fit;
+		}
 
+	}
+	.inputbox-sm{
+		margin-top: -50rem/$fit;
+	}
 	.sm-rooms {
 		/*min-height: 100vh;*/
 		width: auto;
