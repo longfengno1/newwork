@@ -417,17 +417,17 @@
 
         .date-list-item {
             display: inline-block;
-            /*line-height: 20px;*/
+            line-height: 20px;
             font-size: 14px;
             color: #00969E;
             text-align: center;
             background: #fff;
             padding: 0 8px;
-            /*height: 20px;*/
+            height: 20px;
             border-radius: 5px;
             margin-right: 10px;
             margin-bottom: 10px;
-            width: 90px;
+            width: auto;
         }
 
         .down-item {

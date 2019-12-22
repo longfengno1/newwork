@@ -1210,7 +1210,8 @@
     line-height: 1;
     color: #F8485E;
     text-shadow: 0 0 5px rgba(255,255,255,0.3);
-    text-align:right;
+	text-align:right;
+	position: static;
 }
 
 .hotthreadB .item .thread .inner {
@@ -3309,7 +3310,8 @@
     }
     .hotthread .item .one-pro .base_price {
         text-shadow: 0 0 5px rgba(0, 0, 0, 1);
-        font-size:.6rem;
+		font-size:.6rem;
+		
     }
     .hotthread .item .thread .inner {
         position: absolute;
