@@ -86,10 +86,10 @@ import './index.scss';
     $(".detail").click(function () {
         $(".layerout1").show();
     });
-    $("#modfiy-date").click(function () {
+    $("#modifiy-date").click(function () {
         $(".layerout2").show();
     });
-    $("#modfiy-date-sm").click(function () {
+    $("#modifiy-date-sm").click(function () {
         $(".layerout2").show();
     });
     $(".mark").click(function () {
