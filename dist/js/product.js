@@ -350,10 +350,10 @@ __webpack_require__.r(__webpack_exports__);
   });
   $(".search_price").click(function () {
     $(".mark.layerprice").show();
-  }); //$(".mark").click(function () {
-  //    $(".mark").hide();
-  //});
-
+  });
+  $(".mark").click(function () {
+    $(".mark").hide();
+  });
   $(".layer-price .close").click(function () {
     $(".mark").hide();
   });
@@ -365,6 +365,12 @@ __webpack_require__.r(__webpack_exports__);
     var $this = $(this);
     $this.find(".icon-arrowdown").toggleClass("icon-arrowup");
     $this.parent().find(".box_content").toggle();
+  });
+  $("#modifiy-date").click(function () {
+    $(".layerout2").show();
+  });
+  $("#modifiy-date-sm").click(function () {
+    $(".layerout2").show();
   });
 })();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(3)))

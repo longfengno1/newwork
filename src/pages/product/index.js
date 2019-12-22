@@ -181,9 +181,9 @@ import "./index.scss";
     $(".search_price").click(function () {
         $(".mark.layerprice").show();
     });
-    //$(".mark").click(function () {
-    //    $(".mark").hide();
-    //});
+    $(".mark").click(function () {
+        $(".mark").hide();
+    });
     $(".layer-price .close").click(function () {
         $(".mark").hide();
     });
@@ -197,6 +197,20 @@ import "./index.scss";
         var $this = $(this);
         $this.find(".icon-arrowdown").toggleClass("icon-arrowup");
         $this.parent().find(".box_content").toggle();
-    })
+    });
+
+
+    $("#modifiy-date").click(function () {
+        $(".layerout2").show();
+    });
+    $("#modifiy-date-sm").click(function () {
+        $(".layerout2").show();
+    });
+
+    $(".search_price-sm").click(function () {
+
+        $(".setcart").show();
+    });
+
 
 })();
