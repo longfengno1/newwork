@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		64: 0
+/******/ 		65: 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,28 +148,28 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([206,0]);
+/******/ 	deferredModules.push([209,0]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 206:
+/***/ 209:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(207);
+module.exports = __webpack_require__(210);
 
 
 /***/ }),
 
-/***/ 207:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _js_common2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(208);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(211);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -372,12 +372,26 @@ __webpack_require__.r(__webpack_exports__);
   $("#modifiy-date-sm").click(function () {
     $(".layerout2").show();
   });
+  $(".search_price-sm").click(function () {
+    $(".setcart").show();
+  });
+  $(".btn-fav").click(function () {
+    if ($(this).hasClass("selected")) {
+      $(".btn-fav").removeClass("selected");
+      $(".btn-fav").removeClass("icon-fav");
+      $(".btn-fav").addClass("icon-fav2");
+    } else {
+      $(".btn-fav").addClass("selected");
+      $(".btn-fav").addClass("icon-fav");
+      $(".btn-fav").removeClass("icon-fav2");
+    }
+  });
 })();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(3)))
 
 /***/ }),
 
-/***/ 208:
+/***/ 211:
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin

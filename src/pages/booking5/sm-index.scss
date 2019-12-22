@@ -294,6 +294,7 @@
     height: 120rem/$fit;
     display: flex;
     background-color: #fff;
+    border-top: 1px solid #f0f0f0;
 
     .left,
     .right {
@@ -326,7 +327,7 @@
     }
 
     .right {
-        width: 354rem/$fit;
+        width: 240rem/$fit;
         flex-shrink: 0;
         background-color: #00969E;
         align-items: center;

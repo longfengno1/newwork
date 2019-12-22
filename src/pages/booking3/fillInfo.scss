@@ -536,6 +536,28 @@
             /*margin-bottom: 4px;*/
             border-bottom: 2px solid #fbfbfb;
 
+
+            .inner-list {
+                line-height: 30px;
+                font-size: 14px;
+
+                .item {
+                    display: inline-block;
+                    height: 30px;
+                    line-height: 30px;
+                    background: #F0F0F0;
+                    padding: 0 12px;
+                    color: #666;
+                    border-radius: 5px;
+                    margin-right: 16px;
+                }
+
+                .current {
+                    background: #00969E;
+                    color: #fff;
+                }
+            }
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -625,7 +647,7 @@
 
         .right-bottom {
             line-height: 30px;
-            margin-top:5px;
+            margin-top: 5px;
 
             a {
                 font-size: 14px;

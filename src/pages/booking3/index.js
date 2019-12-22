@@ -157,6 +157,13 @@ import './index.scss';
     $(".orderdetail-btn").click(function () {
         $(".orderdetail").hide();
     });
-    
+
+    $(".item").click(function () {
+        //$(this).parent().find(".item").re
+        if ($(this).parent().hasClass("inner-list")) {
+            $(this).toggleClass("current");
+        }
+    });
+
 
 })();

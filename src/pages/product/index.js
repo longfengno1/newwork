@@ -212,5 +212,18 @@ import "./index.scss";
         $(".setcart").show();
     });
 
+    $(".btn-fav").click(function () {
+        if ($(this).hasClass("selected")) {
+            $(".btn-fav").removeClass("selected");
+            $(".btn-fav").removeClass("icon-fav");
+            $(".btn-fav").addClass("icon-fav2");
+        }
+        else {
+            $(".btn-fav").addClass("selected");
+            $(".btn-fav").addClass("icon-fav");
+            $(".btn-fav").removeClass("icon-fav2");
+        }
+    });
+
 
 })();

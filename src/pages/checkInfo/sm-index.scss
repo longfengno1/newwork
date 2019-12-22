@@ -12,8 +12,8 @@
 
   .product{
     display: flex;
-    padding: 40rem/$fit 0;
-    margin: 0 40rem/$fit;
+    padding: 10rem/$fit 0;
+    margin: 0 32rem/$fit;
     border-bottom: 1px solid #E5E5E5;
 
     img{
@@ -26,17 +26,19 @@
       padding-left: 40rem/$fit;
     }
     .pro-title{
-      font-size: 36rem/$fit;
+      font-size: 28rem/$fit;
     }
     .pro-people{
       color: #666;
       margin-top: 10rem/$fit;
-      line-height: 36rem/$fit;
+      line-height: 40rem/$fit;
+      font-size:24rem/$fit;
     }
     .pro-room{
-      color: #ababab;
-      padding-left: 10rem/$fit;
-      margin-top: 15rem/$fit;
+      /*color: #ababab;
+      padding-left: 10rem/$fit;*/
+      margin-top: 20rem/$fit;
+      font-size:24rem/$fit;
     }
 
     .price{
@@ -231,62 +233,66 @@
 }
 
 .price-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  height: 120rem/$fit;
-  display: flex;
-  background-color: #fff;
-
-  .left,
-  .right {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 120rem/$fit;
     display: flex;
-    flex-direction: column;
-  }
+    background-color: #fff;
+    border-top: 1px solid #f0f0f0;
 
-  .left {
-    flex: 1;
-    justify-content: space-around;
-    // align-items: ;
-    padding: 17rem/$fit 0 0 24rem/$fit;
-
-    .total {
-      font-size: 32rem/$fit;
-      color: #383838;
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
     }
 
-    .price {
-      font-size: 30rem/$fit;
-      color: #F8485E;
+    .left {
+        flex: 1;
+        justify-content: space-around;
+        // align-items: ;
+        padding: 0rem/$fit 0 0 24rem/$fit;
+
+        .total {
+            font-size: 32rem/$fit;
+            color: #383838;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 40rem/$fit;
+            color: #F8485E;
+        }
+
+        .count {
+            font-size: 28rem/$fit;
+            color: #666;
+            // margin-top: 10rem/$fit;
+        }
     }
 
-    .count {
-      font-size: 26rem/$fit;
-      color: #666;
-      // margin-top: 10rem/$fit;
-    }
-  }
+    .right {
+        width: 240rem/$fit;
+        flex-shrink: 0;
+        background-color: #00969E;
+        align-items: center;
+        justify-content: center;
 
-  .right {
-    width: 254rem/$fit;
-    flex-shrink: 0;
-    background-color: #00969E;
-    align-items: center;
-    justify-content: center;
+        .main {
+            font-size: 32rem/$fit;
+            color: #FFFFFF;
+            letter-spacing: 0.52rem/$fit;
+            font-weight: 500;
+            padding-bottom: 0px;
+            width: auto;
+        }
 
-    .ensure-pay {
-      font-size: 32rem/$fit;
-      color: #FFFFFF;
-      letter-spacing: 0.52rem/$fit;
-      font-weight: 500;
+        .sub {
+            font-size: 28rem/$fit;
+            color: #FFFFFF;
+            letter-spacing: 0.52rem/$fit;
+            font-weight: 300;
+        }
     }
-
-    .sub {
-      font-size: 28rem/$fit;
-      color: #FFFFFF;
-      letter-spacing: 0.52rem/$fit;
-      font-weight: 300;
-    }
-  }
 }

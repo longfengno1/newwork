@@ -10,7 +10,19 @@ import './index.scss';
        
         return false;
     })
-  $(".arrow").click(function(){
-      $(".mark").show();
-  })
+    $(".arrow").click(function () {
+
+        var tar = $(this).attr("target");
+        $(".mark." + tar).show();
+    });
+
+    $(".selectUser").click(function () {
+        $("#select-user").toggle(); 
+    });
+    $(".selectRoom").click(function () {
+        $("#select-room").toggle();
+    });
+
+
+    
 })();
