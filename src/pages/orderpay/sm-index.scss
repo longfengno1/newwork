@@ -1,0 +1,350 @@
+@import '../../css/variables.scss';
+
+.sm-main {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: Helvetica;
+    padding-bottom: 120rem/$fit;
+    background-color: #f8f8f8;
+
+    input {
+        border: 1px solid #E5E5E5;
+        border-radius: 8rem/$fit;
+        height: 60rem/$fit;
+        padding-left: 16rem/$fit;
+        font-size: 28rem/$fit;
+        color: #666666;
+    }
+
+    label {
+        font-size: 28rem/$fit;
+        color: #666666;
+        margin-bottom: 0;
+    }
+
+    .select {
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        border-radius: 8rem/$fit;
+        height: 60rem/$fit;
+        padding-left: 16rem/$fit;
+        padding-right: 20rem/$fit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 28rem/$fit;
+        color: #666;
+        margin-right: 20rem/$fit;
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 32rem/$fit;
+        color: #383838;
+        font-weight: 600;
+    }
+
+    .price-count {
+        width: 60rem/$fit;
+        margin-right: 20rem/$fit;
+    }
+
+    button {
+        width: 148rem/$fit;
+        height: 54rem/$fit;
+        font-size: 24rem/$fit;
+    }
+
+    .split {
+        height: 24rem/$fit;
+        /*background-color: #FBFBFB;*/
+    }
+
+    .arrow-down {
+        width: 0.25rem;
+        height: 0.25rem;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border: 0.025rem solid #666;
+        border-width: 0 0.025rem 0.025rem 0;
+        display: block;
+    }
+
+    .arrow-up {
+        width: 0.25rem;
+        height: 0.25rem;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border: 0.025rem solid #666;
+        border-width: 0.025rem 0 0 0.025rem;
+        display: block;
+    }
+
+    .order-info {
+        padding: 24rem/$fit;
+        /*border-bottom: 1px dotted #e5e5e5;
+        padding-left: 8rem/$fit;*/
+        background-color: #fff;
+
+        h3 {
+            font-size: 40rem/$fit;
+            color: #383838;
+            line-height: 55rem/$fit;
+            /*margin-top: 24rem/$fit;*/
+        }
+
+        p {
+            font-size: 28rem/$fit;
+            color: #666666;
+            line-height: 1;
+            margin-top: 24rem/$fit;
+        }
+
+        .ml32 {
+            margin-left: 32rem/$fit;
+        }
+    }
+
+    .product-tags {
+        border-bottom: 1px solid #E5E5E5;
+        padding: 0 36rem/$fit 20rem/$fit;
+        margin-top: 16rem/$fit;
+
+        .tag {
+            line-height: 40rem/$fit;
+            border-radius: 4rem/$fit;
+            border: 1px solid;
+            padding: 0 16rem/$fit;
+            margin-right: 20rem/$fit;
+            font-size: .6rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .green {
+            color: #00969E;
+            border-color: #00969E;
+        }
+
+        .blue {
+            color: #4A90E2;
+            border-color: #4A90E2;
+        }
+
+        .purple {
+            color: #A05EB5;
+            border-color: #A05EB5;
+        }
+
+        .yellow {
+            color: #F5A623;
+            border-color: #F5A623;
+        }
+
+        .red {
+            color: #F8485E;
+            border-color: #F8485E;
+        }
+
+        .light-blue {
+            color: #64BDDA;
+            border-color: #64BDDA;
+        }
+    }
+
+    .step {
+        padding: 0 0.8rem 0.5rem 0.8rem;
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        background-color: #fff;
+
+        .step-item {
+            width: 228rem/$fit;
+            height: 60rem/$fit;
+            margin-left: 5rem/$fit;
+            text-align: center;
+            vertical-align: middle;
+
+            span {
+                line-height: 60rem/$fit;
+                font-size: 28rem/$fit;
+                height: 60rem/$fit;
+            }
+
+            .step-item-before {
+                border-top-width: 30rem/$fit;
+                border-bottom-width: 30rem/$fit;
+                border-left-width: 12rem/$fit;
+            }
+
+            .step-item-after {
+                right: -12rem/$fit;
+                border-top-width: 30rem/$fit;
+                border-bottom-width: 30rem/$fit;
+                border-left-width: 12rem/$fit;
+            }
+        }
+    }
+
+    .ensure-price,
+    .pay-type {
+        padding: 0.6rem 0.8rem;
+        margin: 0 .8rem;
+        border-radius: 5px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.3);
+
+        h3 {
+            margin-top: 32rem/$fit;
+            margin-bottom: 32rem/$fit;
+        }
+    }
+
+    .ensure-price {
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 80rem/$fit;
+            }
+
+            p {
+                margin-top: 60rem/$fit;
+                margin-bottom: 60rem/$fit;
+                font-size: 28rem/$fit;
+                color: #666;
+                letter-spacing: 0;
+                line-height: 34rem/$fit;
+
+                .price {
+                    margin-left: 20rem/$fit;
+                    color: #FF5050;
+                    font-size: 60rem/$fit;
+
+                    span {
+                        font-size: 40rem/$fit;
+                    }
+                }
+            }
+        }
+    }
+
+    .pay-type {
+        .type-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32rem/$fit;
+            font-size: .7rem;
+
+            img {
+                width: 30%;
+                cursor: pointer;
+                margin-right: .5rem;
+            }
+
+            .pay {
+                width: 50%;
+                border: 1px solid #ccc;
+                padding: .25rem 1.25rem .25rem .25rem;
+                margin-right: .25rem;
+            }
+
+            .active {
+                border: 1px solid #00969E;
+            }
+
+            .hasnum:after {
+                content: "\2714";
+                position: relative;
+                width: 0;
+                height: 0;
+                border-right: 20rem/$fit solid #00969E;
+                border-left: 20rem/$fit solid transparent;
+                border-bottom: 14rem/$fit solid #00969E;
+                border-top: 14rem/$fit solid transparent;
+                color:#fff;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+
+            }
+        }
+    }
+}
+
+.price-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 120rem/$fit;
+    display: flex;
+    background-color: #fff;
+    border-top: 1px solid #f0f0f0;
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        flex: 1;
+        justify-content: space-around;
+        // align-items: ;
+        padding: 0rem/$fit 0 0 24rem/$fit;
+
+        .total {
+            font-size: 32rem/$fit;
+            color: #383838;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 40rem/$fit;
+            color: #F8485E;
+        }
+
+        .count {
+            font-size: 28rem/$fit;
+            color: #666;
+            // margin-top: 10rem/$fit;
+        }
+    }
+
+    .right {
+        width: 240rem/$fit;
+        flex-shrink: 0;
+        background-color: #00969E;
+        align-items: center;
+        justify-content: center;
+
+        .main {
+            font-size: 32rem/$fit;
+            color: #FFFFFF;
+            letter-spacing: 0.52rem/$fit;
+            font-weight: 500;
+        }
+
+        .sub {
+            font-size: 28rem/$fit;
+            color: #FFFFFF;
+            letter-spacing: 0.52rem/$fit;
+            font-weight: 300;
+        }
+    }
+}

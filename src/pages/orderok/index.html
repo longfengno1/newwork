@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>购物流程-支付成功</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+  <script type="text/javascript">
+    (function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+
+          var fontSize = 20 * (clientWidth / 375);
+          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+          docEl.style.fontSize = fontSize + 'px';
+          var dpi = window.devicePixelRatio;
+          docEl.setAttribute('data-dpi', dpi);
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);
+  </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+
+    <div id="main" class="main order-main hidden-sm">
+        <div class="order">
+            <div class="top-order-info">
+                <h3 class="product-name fb">您购买的商品</h3>
+                <div class="product-info clearfloat">
+                    <span class="ml20">龙虾牛腩饭</span><span>房间1 2份 房间2 1份</span>
+                </div>
+                <div class="product-info clearfloat">
+                    <span class="ml20">龙虾牛腩饭</span><span>房间1 2份 房间2 1份</span>
+                </div>
+
+            </div>
+            
+            <!-- 预订成功 -->
+            <div class="content" id="orderSuccess">
+                <div class="order-success">
+                    <div class="success">
+                        <img src="../../images/order-success.png" alt="">
+                    </div>
+                    <p> <span>预订成功</span></p>
+                    <p>感谢您的预订，您和您的家人朋友可同时加入星梦荟，获取更多船上服务优惠。</p>
+                    <div class="btns">
+                        <button type="button" class="back">查看订单</button><button type="button" class="join-in">加入星梦荟</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="show-sm sm-main">
+        <script>document.getElementById('title_name').textContent = '购物流程-支付成功';</script>
+        <div class="order-info">
+            <h3>您购买的商品</h3>
+            <p><span>龙虾牛腩饭</span><span class="ml32">房间1 2份 房间2 1份</span></p>
+            <p><span>龙虾牛腩饭</span><span class="ml32">房间1 2份 房间2 1份</span></p>
+        </div>
+
+
+        <div class="split"></div>
+
+        <div class="order-success">
+            <div class="success">
+                <img src="../../images/order-success.png" alt="">
+            </div>
+            <p>
+                感谢您的预订！您和您的家人朋友可注册成为星梦荟会员，
+                享受更多专属礼遇及船上服务！
+            </p>
+            <div class="btns">
+                <button type="button" class="back">查看订单</button><button type="button" class="join-in">加入星梦荟</button>
+            </div>
+        </div>
+        <div class="split"></div>
+
+    </div>
+    <div class="hidden-sm">
+        #include('../../common/footer.html')
+    </div>
+    #include('../../common/sm_footer_button.html')
+
+    <script>
+        var currnetStep = 6;
+    </script>
+</body>
+
+</html>
