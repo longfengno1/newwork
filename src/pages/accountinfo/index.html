@@ -1,0 +1,1189 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>精致客房</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+    <div id="main" class="accountlevel">
+
+        <div class="topbannerC hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+        </div>
+        <div class="section mt20 mb30">
+            <div class="wraper">
+                <h2 class="title">会籍级别</h2>
+                <p class="mt20 infodesc">
+                    为感谢您的支持，我们为每个会籍级别精心设计其专属礼遇。您每次选乘星梦邮轮，都让我们对您的了解加深，为您度身定造的礼遇更贴心，让您的海上旅程更添缤纷。只要您年满18岁，成功注册后立刻成为普通会员，每次搭乘「云顶梦号」、「世界梦号」、「探索梦号」都可累积梦积分。
+                </p>
+            </div>
+        </div>
+        <div class="section mt20 mb30 level">
+            <div class="wraper">
+                <div class="levelitem">
+                    <p class="levelimg tc"><img src="../../images/level1.png"></p>
+
+                    <div class="inner">
+                        <p class="tc fz20">普通</p>
+                        <p class="tc mt5 fz14">
+                            0-499点
+                            <br>
+                            梦积分
+                        </p>
+                        <p class="tc mt30 fz16">
+                            开始累积梦积分，<br>
+                            晋升至更高会籍级别
+                        </p>
+                    </div>
+                </div>
+                <div class="levelitem ml40">
+                    <p class="levelimg tc"><img src="../../images/level2.png"></p>
+
+                    <div class="inner">
+                        <p class="tc fz20">翡翠级</p>
+                        <p class="tc mt5 fz14">
+                            500-4,999点
+                            <br>
+                            梦积分
+                        </p>
+                        <p class="tc mt30 fz16">
+                            累积满500点梦积分，<br>
+                            即可开展会员专属礼遇之旅。
+                        </p>
+                    </div>
+                </div>
+                <div class="levelitem ml40">
+                    <p class="levelimg tc"><img src="../../images/level3.png"></p>
+
+                    <div class="inner">
+                        <p class="tc fz20">蓝宝级</p>
+                        <p class="tc mt5 fz14">
+                            5000-29,999点
+                            <br>
+                            梦积分
+                        </p>
+                        <p class="tc mt30 fz16">
+                            更尊贵的会籍，<br>
+                            为您带来更优越礼遇。
+                        </p>
+                    </div>
+                </div>
+                <div class="levelitem ml40">
+                    <p class="levelimg tc"><img src="../../images/level4.png"></p>
+
+                    <div class="inner">
+                        <p class="tc fz20">钻石级</p>
+                        <p class="tc mt5 fz14">
+                            30,000点或以上
+                            <br>
+                            梦积分
+                        </p>
+                        <p class="tc mt30 fz16">
+                            享受最尊贵难忘的海上假期。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section mt20 mb30">
+            <div class="wraper">
+                <h2 class="title">累积梦积分</h2>
+                <p class="mt20 infodesc">
+                    成为会员后，您于「云顶梦号」、「世界梦号」或「探索梦号」上符合资格的住宿和消费都可轻松累积梦积分，让您尊享会员优越礼遇，享受更精彩惬意的海上旅程。无论在特色餐厅品尝佳肴美馔，还是於海上悠闲购物，或是享受尊贵海上水疗，均可累积梦积分。您只需于每次消费时出示您的房卡以作记录，梦积分将于航程完毕后四周内计入您的会员账户。受条款及细则约束。
+                </p>
+                <p class="green tc g_codetext">
+                    <img src="../../images/linecurrent@3x.png" width="35" height="34"><span class="codenum">200</span>
+                    <span>每一晚符合资格的 客房 住宿</span>
+                    <span class="ortxt">或</span>
+                    <img src="../../images/linecurrent@3x.png" width="35" height="34"><span class="codenum">400</span>
+                    <span>每一晚符合资格的 套房 住宿</span>
+                </p>
+                <p class="green tc g_codetext">
+                    <span class="icon-plus fz20"></span>
+                    <img src="../../images/linecurrent@3x.png" width="35" height="34"><span class="codenum">1</span>
+                    <span>每1美元 船上符合资格的消费</span>
+                </p>
+            </div>
+        </div>
+        <div class="section mt20 mb30">
+            <div class="wraper">
+                <h3 class="gtitle">
+                    船上符合资格的消费
+                </h3>
+                <table class="zgtable">
+                    <tr>
+                        <td>
+                            <img src="../../images/t1.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t2.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t3.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t4.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t5.png">
+
+                        <td>
+                            <span class="i1">G</span>
+                            <img src="../../images/t6.png">
+
+                        </td>
+                    </tr>
+                    <tr class="txt">
+                        <td>
+                            <p>特色餐厅</p>
+                        </td>
+                        <td>
+                            <p>星梦精品廊</p>
+                        </td>
+                        <td>
+                            <p>星梦礼品店</p>
+                        </td>
+                        <td>
+                            <p>星梦无线上网套餐</p>
+                        </td>
+                        <td>
+                            <p>岸上游览团</p>
+                        </td>
+                        <td>
+                            <p>Zouk派对俱乐部</p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../../images/t7.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t8.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t9.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t10.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t11.png">
+
+                        <td>
+                            <img src="../../images/t12.png">
+
+                        </td>
+                    </tr>
+                    <tr class="txt">
+                        <td>
+                            <p>水晶生活·水疗</p>
+                        </td>
+                        <td>
+                            <p>水晶生活·东方理疗</p>
+                        </td>
+                        <td>
+                            <p>水晶生活·健身中心</p>
+                        </td>
+                        <td>
+                            <p>淑女沙龙</p>
+                        </td>
+                        <td>
+                            <p>绅士沙龙</p>
+                        </td>
+                        <td>
+                            <p>酒吧酒廊</p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="../../images/t13.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t14.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t15.png">
+
+                        </td>
+                        <td>
+                            <span class="i1">G</span>
+                            <img src="../../images/t16.png">
+
+                        <td>
+                            <img src="../../images/t17.png">
+
+                        </td>
+                        <td>
+                            <img src="../../images/t18.png">
+
+                        </td>
+                    </tr>
+                    <tr class="txt">
+                        <td>
+                            <p>电子游乐中心</p>
+                        </td>
+                        <td>
+                            <p>麻将棋牌</p>
+                        </td>
+                        <td>
+                            <p>卡拉OK</p>
+                        </td>
+                        <td>
+                            <p>夜光保龄球</p>
+                        </td>
+                        <td>
+                            <p>臻品廊</p>
+                        </td>
+                        <td>
+                            <p>写真廊</p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <span class="i2">W</span>
+                            <img src="../../images/t19.png">
+                        </td>
+                    </tr>
+                    <tr class="txt">
+                        <td colspan="6">
+                            <p>VR探索馆</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <p class="itxtp">
+                                <span class="i1">G</span>
+                                <span>适用于「云顶梦号」</span>
+                                <span class="i2 ml80">W</span>
+                                <span>适用于「世界梦号」</span>
+                                <span class="i3 ml80">E</span>
+                                <span>适用于「探索梦号」</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="txt">
+                        <td colspan="6" class="bottomtext">
+                            *每笔符合资格的消费最多可积累10,000点梦积分。
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section mt20 mb30">
+            <div class="wraper">
+                <h2 class="title">会员礼遇</h2>
+                <p class="mt20 infodesc">
+                    「星梦荟」的尊贵会籍，为您呈献一系列贴心礼遇和尊享优惠。您的子女成为儿童及青少年会员后，亦可在邮轮上体验他们专属的礼遇。
+                </p>
+                <p class="itxtp tc mt20">
+                    <span class="i1">G</span>
+                    <span>适用于「云顶梦号」</span>
+                    <span class="i2 ml80">W</span>
+                    <span>适用于「世界梦号」</span>
+                    <span class="i3 ml80">E</span>
+                    <span>适用于「探索梦号」</span>
+                </p>
+            </div>
+        </div>
+        <div class="section mt20 mb30">
+            <div class="wraper">
+                <div class="sliderbaseA sltableA">
+                    <div class="tableA">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="../../images/r10.jpg">
+                                <p class="pictitle">优先服务</p>
+                            </div>
+                            <div class="box">
+                                <p class="title">优先预订特色餐厅</p>
+                                <div class="info">
+                                    <div class="fr">会籍级别 :<span class="levelbox">
+                                            <span class="level1"></span>
+                                            <span class="level2"></span>
+                                            <span class="level3"></span>
+                                            <span class="level4"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="../../images/r11.jpg">
+                                <p class="pictitle">升级享受</p>
+                            </div>
+                            <div class="box">
+                                <p class="title">VR探索馆虚拟现实游戏体验买一送一</p>
+                                <div class="info">
+                                    <div class="fr">会籍级别 :<span class="levelbox">
+
+                                            <span class="level3"></span>
+                                            <span class="level4"></span>
+                                        </span>
+                                    </div>
+                                    <div class="fl">
+                                        <span class="i1">W</span>
+                                        <span class="i3">E</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="../../images/r12.jpg">
+                                <p class="pictitle">升级享受</p>
+                            </div>
+                            <div class="box">
+                                <p class="title">免费升级至高一级别客房</p>
+                                <div class="info">
+                                    <div class="fr">会籍级别 :<span class="levelbox">
+                                            <span class="level4"></span>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tableA">
+                        <div class="item">
+                            <div class="pic">
+                                <img src="../../images/r10.jpg">
+                                <p class="pictitle">优先服务</p>
+                            </div>
+                            <div class="box">
+                                <p class="title">优先预订特色餐厅</p>
+                                <div class="info">
+                                    <div class="fr">会籍级别 :<span class="levelbox">
+                                            <span class="level1"></span>
+                                            <span class="level2"></span>
+                                            <span class="level3"></span>
+                                            <span class="level4"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="../../images/r11.jpg">
+                                <p class="pictitle">升级享受</p>
+                            </div>
+                            <div class="box">
+                                <p class="title">VR探索馆虚拟现实游戏体验买一送一</p>
+                                <div class="info">
+                                    <div class="fr">会籍级别 :<span class="levelbox">
+
+                                            <span class="level3"></span>
+                                            <span class="level4"></span>
+                                        </span>
+                                    </div>
+                                    <div class="fl">
+                                        <span class="i1">W</span>
+                                        <span class="i3">E</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pic">
+                                <img src="../../images/r12.jpg">
+                                <p class="pictitle">升级享受</p>
+                            </div>
+                            <div class="box">
+                                <p class="title">免费升级至高一级别客房</p>
+                                <div class="info">
+                                    <div class="fr">会籍级别 :<span class="levelbox">
+                                            <span class="level4"></span>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section mt20 bgA shipvip clearfloat">
+            <div class="wraper">
+                <h2 class="title">船上礼遇</h2>
+                <div class="col_left">
+                    <div class="inner">
+                        <ul class="leftlist">
+                            <li class="current">
+                                <img src="../../images/linecurrent@2x.png" class="mr5" width="19" height="17">
+                                <a href="#">标准礼遇</a>
+                            </li>
+                            <li>
+                                <a href="#">餐饮</a>
+                            </li>
+                            <li>
+                                <a href="#">娱乐活动</a>
+                            </li>
+                            <li>
+                                <a href="#">客房及服务</a>
+                            </li>
+                            <li>
+                                <a href="#">水疗及养生</a>
+                            </li>
+                            <li>
+                                <a href="#">相片留念</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_right">
+                    <div class="titlebox">
+                        <div class="titelbar">
+                            <img src="../../images/t20.png">
+                            <span>标准礼遇</span>
+                            <span class="btn-r icon-arrowdown"></span>
+                        </div>
+                        <table class="titletable">
+                            <tr>
+                                <th>会员礼遇</th>
+                                <th class="tc" style="width: 100px;">普通会员</th>
+                                <th class="tc" style="width: 100px;">翡翠级</th>
+                                <th class="tc" style="width: 100px;">蓝宝级</th>
+                                <th class="tc" style="width: 100px;">钻石级</th>
+                            </tr>
+                            <tr>
+                                <td>邮轮码头候船大厅会员专柜办理登船手续</td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>船上会员结账专柜</td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>船上会员咨询柜台</td>
+                                <td class="tc"><span class="level1"></span></td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>船上生日礼遇</td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>会员专属网站</td>
+                                <td class="tc"><span class="level1"></span></td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>会员岸上专属预订及查询热线</td>
+                                <td class="tc"><span class="level1"></span></td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>会员岸上专属查询电邮</td>
+                                <td class="tc"><span class="level1"></span></td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>星梦邮轮最新推广资讯</td>
+                                <td class="tc"><span class="level1"></span></td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>获邀参与会员专属活动及其他特别推广</td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="titlebox mt20">
+                        <div class="titelbar">
+                            <img src="../../images/t1.png">
+                            <span>餐饮</span>
+                            <span class="btn-r icon-arrowdown"></span>
+                        </div>
+                        <table class="titletable">
+                            <tr>
+                                <th>会员礼遇</th>
+                                <th class="tc" style="width: 100px;">普通会员</th>
+                                <th class="tc" style="width: 100px;">翡翠级</th>
+                                <th class="tc" style="width: 100px;">蓝宝级</th>
+                                <th class="tc" style="width: 100px;">钻石级</th>
+                            </tr>
+                            <tr>
+                                <td>免费欢迎饮品</td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>于指定免费餐厅(星梦餐厅)尊享贵宾通道</td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="shipicon"><span class="i1">G</span>
+                                        <span class="i2">W</span></div>
+                                    于尊邸购买瓶装威士忌尊享折扣优惠
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc">8%</td>
+                                <td class="tc">12%</td>
+                                <td class="tc">16%</td>
+                            </tr>
+                            <tr>
+                                <td>预订酒水套餐尊享九折优惠</td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    优先预订特色餐厅
+                                </td>
+                                <td class="tc"><span class="level1"></span></td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="shipicon"><span class="i1">G</span>
+                                    </div>
+                                    Zouk派对俱乐部招牌鸡尾酒买一送一（晚上11时至凌晨1时）
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr class="textrow">
+                                <td colspan="5">
+                                    <p>1 只限指定非酒精类饮品</p>
+                                    <p>2 可于登船前2-14个工作天预订</p>
+                                    <p>3 每晚最多可享两次</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="titlebox mt20">
+                        <div class="titelbar">
+                            <img src="../../images/t16.png">
+                            <span>娱乐活动</span>
+                            <span class="btn-r icon-arrowdown"></span>
+                        </div>
+                        <table class="titletable">
+                            <tr>
+                                <th>会员礼遇</th>
+                                <th class="tc" style="width: 100px;">普通会员</th>
+                                <th class="tc" style="width: 100px;">翡翠级</th>
+                                <th class="tc" style="width: 100px;">蓝宝级</th>
+                                <th class="tc" style="width: 100px;">钻石级</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="shipicon"><span class="i1">G</span>
+                                        <span class="i2">W</span></div>
+                                    尊享船上户外活动特快通道(水上滑梯乐园和攀岩墙)
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="shipicon">
+                                        <span class="i2">W</span>
+                                        <span class="i3">E</span>
+                                    </div>
+                                    VR探索馆虚拟现实游戏体验买一送一
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="shipicon">
+                                        <span class="i2">W</span>
+                                        <span class="i3">E</span>
+                                    </div>
+                                    VR探索馆虚拟现实游戏免费体验一次
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="shipicon"><span class="i1">G</span>
+                                    </div>
+                                    夜光保龄球局买一送一
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="shipicon"><span class="i1">G</span>
+                                    </div>
+                                    免费玩一局夜光保龄球
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>优先预订船上体验之旅</td>
+                                <td class="tc"><span class="level1"></span></td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    优先预订岸上游览团
+                                </td>
+                                <td class="tc"><span class="level1"></span></td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    预订岸上游览团可享九折优惠
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr class="textrow">
+                                <td colspan="5">
+                                    <p>1 于「世界梦号」上只适用于XD Dark Ride互动影院游戏</p>
+                                    <p>2 须于登船前最少2个工作天预订</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="titlebox mt20">
+                        <div class="titelbar">
+                            <img src="../../images/t21.png">
+                            <span>客房服务</span>
+                            <span class="btn-r icon-arrowdown"></span>
+                        </div>
+                        <table class="titletable">
+                            <tr>
+                                <th>会员礼遇</th>
+                                <th class="tc" style="width: 100px;">普通会员</th>
+                                <th class="tc" style="width: 100px;">翡翠级</th>
+                                <th class="tc" style="width: 100px;">蓝宝级</th>
+                                <th class="tc" style="width: 100px;">钻石级</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    免费升级至高一级别客房
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    可选择您心仪的客房位置
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    优先处理托运行李
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr class="textrow">
+                                <td colspan="5">
+                                    <p>1 升级高至豪华露台客房及只适用于经星梦邮轮官方网站或「星梦荟」会员服务热线之预订，须视乎登船时的客房供应情况而定</p>
+                                    <p>2 须于登船前最少2个工作天提出要求及只适用于经星梦邮轮官方网站或「星梦荟」会员服务热线之预订，须视乎客房供应情况而定</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="titlebox mt20">
+                        <div class="titelbar">
+                            <img src="../../images/t7.png" style="width: 16px;">
+                            <span>水疗及养生</span>
+                            <span class="btn-r icon-arrowdown"></span>
+                        </div>
+                        <table class="titletable">
+                            <tr>
+                                <th>会员礼遇</th>
+                                <th class="tc" style="width: 100px;">普通会员</th>
+                                <th class="tc" style="width: 100px;">翡翠级</th>
+                                <th class="tc" style="width: 100px;">蓝宝级</th>
+                                <th class="tc" style="width: 100px;">钻石级</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    免费享受30分钟肩颈背按摩
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    获赠水疗中心单次通行证(免费享用桑拿、蒸汽浴及活力按摩池)
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    优先预约水疗及养生服务
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr class="textrow">
+                                <td colspan="5">
+                                    <p>1 适用于「云顶梦号」及「世界梦号」上的水晶生活 • 水疗；或「探索梦号」上的水疗中心。须于登船前2-14个工作天预约</p>
+                                    <p>2 适用于「云顶梦号」及「世界梦号」上的水晶生活 • 东方理疗；或「探索梦号」上的水疗中心</p>
+                                    <p>3 可于登船前2-14个工作天预约</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="titlebox mt20">
+                        <div class="titelbar">
+                            <img src="../../images/t18.png">
+                            <span>相片留念</span>
+                            <span class="btn-r icon-arrowdown"></span>
+                        </div>
+                        <table class="titletable">
+                            <tr>
+                                <th>会员礼遇</th>
+                                <th class="tc" style="width: 100px;">普通会员</th>
+                                <th class="tc" style="width: 100px;">翡翠级</th>
+                                <th class="tc" style="width: 100px;">蓝宝级</th>
+                                <th class="tc" style="width: 100px;">钻石级</th>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    免费获赠由专业摄影师于船上拍摄的数码相片一张
+                                </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level2"></span></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr class="textrow">
+                                <td colspan="5">
+                                    <p>1 云顶梦号」及「世界梦号」上将提供数码相片 ；「 探索梦号」上将提供打印相片</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bgA shipvip clearfloat">
+            <div class="wraper">
+                <div class="col_left">
+                    <div class="inner">
+                        <ul class="leftlist">
+                            <li class="current">
+                                <img src="../../images/linecurrent@2x.png" class="mr5" width="19" height="17">
+                                <a href="#">新加坡</a>
+                            </li>
+                            <li>
+                                <a href="#">泰国</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_right">
+                    <div class="titlebox">
+                        <div class="titelbar">
+                            <span>ZOUK</span>
+                            <span class="btn-r icon-arrowdown"></span>
+                        </div>
+                        <div class="descinfo">
+                            <div class="pic fr">
+                                <img src="../../images/pic_ainfo_1.jpg" width="240" height="138">
+                            </div>
+                            <p><img src="../../images/zockbk.png" width="150" height="30"></p>
+                            <p>
+                                出示电子会员卡于 ZOUK 可享会员礼遇<br>
+                                (有效期至2019年12月31日)
+                            </p>
+                            <p>
+                                地点<br>
+                                <span class="gray9">3C River Valley Road, The Cannery, Singapore 179022</span>
+                            </p>
+                            <p>
+                                网址<br>
+                                <a class="green"
+                                    href="https://zoukclub.com/outlets/zouk/">https://zoukclub.com/outlets/zouk/</a>
+                            </p>
+                        </div>
+                        <table class="titletable">
+                            <tr>
+                                <th>会员礼遇</th>
+                                <th class="tc" style="width: 100px;">普通会员</th>
+                                <th class="tc" style="width: 100px;">翡翠级</th>
+                                <th class="tc" style="width: 100px;">蓝宝级</th>
+                                <th class="tc" style="width: 100px;">钻石级</th>
+                            </tr>
+                            <tr>
+                                <td>尊享ZOUK免费入场</td>
+                                <td class="tc"> </td>
+                                <td class="tc"></td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr class="textrow">
+                                <td colspan="5">
+                                    <p>1 适用于周三、五及六晚上11时30分或之前。不适用于公众假期、公众假期前夕以及嘉宾DJ特别活动</p>
+                                    <p>2 适用于所有营业晚上及指定饮品包括: 伏特加(Absolut Blue), 金酒(Beefeater), 龙舌兰酒(Olmeca),
+                                        威士忌(Ballantine's) 以及兰姆酒 (Havana 3年)</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="titlebox mt20">
+                        <div class="titelbar">
+                            <span>PHUTURE</span>
+                            <span class="btn-r icon-arrowdown"></span>
+                        </div>
+                        <div class="descinfo">
+                            <div class="pic fr">
+                                <img src="../../images/pic_ainfo_2.jpg" width="240" height="138">
+                            </div>
+                            <p><img src="../../images/phuturebk.png" width="150" height="30"></p>
+                            <p>
+                                出示电子会员卡于 ZOUK 可享会员礼遇<br>
+                                (有效期至2019年12月31日)
+                            </p>
+                            <p>
+                                地点<br>
+                                <span class="gray9">3C River Valley Road, The Cannery, Singapore 179022</span>
+                            </p>
+                            <p>
+                                网址<br>
+                                <a class="green"
+                                    href="https://zoukclub.com/outlets/phuture/">https://zoukclub.com/outlets/phuture/</a>
+                            </p>
+                        </div>
+                        <table class="titletable">
+                            <tr>
+                                <th>会员礼遇</th>
+                                <th class="tc" style="width: 100px;">普通会员</th>
+                                <th class="tc" style="width: 100px;">翡翠级</th>
+                                <th class="tc" style="width: 100px;">蓝宝级</th>
+                                <th class="tc" style="width: 100px;">钻石级</th>
+                            </tr>
+                            <tr>
+                                <td>尊享PHUTURE免费入场</td>
+                                <td class="tc"> </td>
+                                <td class="tc"> </td>
+                                <td class="tc"><span class="level3"></span></td>
+                                <td class="tc"><span class="level4"></span></td>
+                            </tr>
+                            <tr class="textrow">
+                                <td colspan="5">
+                                    <p>1 适用于周三、四、五、及六晚上11时30分或之前。不适用于公众假期、公众假期前夕以及嘉宾DJ特别活动</p>
+                                    <p>2 适用于所有营业晚上及指定饮品包括: 伏特加(Absolut Blue), 金酒(Beefeater), 龙舌兰酒(Olmeca),
+                                        威士忌(Ballantine's) 以及兰姆酒 (Havana 3年)</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section mt20 mb30">
+            <div class="wraper">
+                <h2 class="title">儿童及青少年会员</h2>
+                <p class="mt20 infodesc">
+                    贵为「星梦荟」会员，您的同行孩子于邮轮上同样尊享会员礼遇。您只需为年龄2-17岁的子女免费注册成为「儿童及青少年会员」，并建立「家庭帐户」，让他们与您一同体验非凡的海上旅程。
+                </p>
+                <div class="bgA mt20">
+                    <ul class="kidlist clearfloat">
+                        <li class="fl">
+                            <img src="../../images/children.png">
+                            <p class="tr">
+                                儿童<br>
+                                <span>2-12岁</span>
+                            </p>
+                        </li>
+                        <li class="fr">
+                            <img src="../../images/young.png">
+                            <p class="tr">
+                                青少年<br>
+                                <span>13-17岁</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" clearfloat mt30 kidinfo">
+                    <div class="pic fl"><img src="../../images/pic_ainfo_3.jpg" width="480" height="270"></div>
+                    <div class="txt">
+                        <p>
+                            <span class="green">「儿童及青少年会员」</span>-
+                            贴心地为各年龄层的孩子们提供个性化的礼遇，无论他们与您或已添加至您的家庭账户之成年会员同行，都可享有礼遇，让他们的邮轮旅程加倍欢乐。
+                        </p>
+                        <ul class="mt20 mb20">
+                            <li>
+                                ·儿童 - 适用于2-12岁
+                            </li>
+                            <li>
+                                ·青少年 - 适用于13-17岁
+                            </li>
+                        </ul>
+                        <p>
+                            <span class="green">「家庭账户」</span> -
+                            您更可添加其他年满18岁的家庭成员（须为「星梦荟」会员）到您的家庭账户中，下一次旅程时，您的子女与您或他们其中一位同行，都可享专属礼遇。您更可以获取适合家庭旅游的优惠资讯以及有机会获邀参与船上或岸上的特别家庭活动。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section bgA shipvip">
+            <div class="wraper">
+                <h2 class="title">儿童及青少年会员礼遇</h2>
+            </div>
+            <div class="w980box">
+                <div class="titlebox">
+                    <div class="titelbar">
+                        <span>注册后首次登船</span>
+                        <span class="btn-r icon-arrowdown"></span>
+                    </div>
+                    <table class="titletable titletableB">
+                        <tr>
+                            <th>会员礼遇</th>
+                            <th class="tc" style="width: 100px;">儿童<br><span class="fz12">2-12岁</span></th>
+                            <th class="tc" style="width: 100px;">青少年<br><span class="fz12">13-17岁</span></th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                单球意式手作雪糕
+                            </td>
+                            <td class="tc"><span class="level level1"></span></td>
+                            <td class="tc"><span class="level level1"></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shipicon"><span class="i1">G</span>
+                                    <span class="i2">W</span></div>
+                                船上户外活动特快通道 (水上滑梯乐园和攀岩墙)
+                            </td>
+                            <td class="tc"><span class="level level1"></span></td>
+                            <td class="tc"><span class="level level1"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="titlebox mt20">
+                    <div class="titelbar">
+                        <span>第二次及后续航程</span>
+                        <span class="btn-r icon-arrowdown"></span>
+                    </div>
+                    <table class="titletable titletableB">
+                        <tr>
+                            <th>会员礼遇</th>
+                            <th class="tc" style="width: 100px;">儿童<br><span class="fz12">2-12岁</span></th>
+                            <th class="tc" style="width: 100px;">青少年<br><span class="fz12">13-17岁</span></th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                免费欢迎饮品
+                            </td>
+                            <td class="tc"><span class="level level1"></span></td>
+                            <td class="tc"> </span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                自动加入「小小梦想家」计划*
+                            </td>
+                            <td class="tc"><span class="level level1"></span></td>
+                            <td class="tc"> </span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shipicon"><span class="i1">G</span>
+                                    <span class="i2">W</span></div>
+                                夜光保龄球局买一送一
+                            </td>
+                            <td class="tc"> </td>
+                            <td class="tc"><span class="level level1"></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shipicon">
+                                    <span class="i2">W</span>
+                                    <span class="i3">E</span>
+                                </div>
+                                VR探索馆虚拟现实游戏体验买一送一
+                            </td>
+                            <td class="tc"> </td>
+                            <td class="tc"><span class="level level1"></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="shipicon">
+                                    <span class="i1">G</span>
+                                    <span class="i2">W</span>
+                                </div>
+                                船上户外活动特快通道 (水上滑梯乐园和攀岩墙)
+                            </td>
+                            <td class="tc"><span class="level level1"></span></td>
+                            <td class="tc"><span class="level level1"></span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                船上生日礼遇及其他个性化礼遇
+                            </td>
+                            <td class="tc"><span class="level level1"></span></td>
+                            <td class="tc"><span class="level level1"></span></td>
+                        </tr>
+                        <tr class="textrow">
+                            <td colspan="3">
+                                *只适用于出发前至少7个工作天在「星梦荟」网站线上注册之儿童及青少年会员
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <p class="gray9 tc mt20">如您的子女已成功注册成为「儿童及青少年会员」并已获得会员号码，您可以
+                <a href="###" class="green">登录</a>
+                他们的网上帐户查阅专属电子优惠礼券。</p>
+        </div>
+        <div class="section bottom-btn">
+            <div class="wraper">
+                    <a href="###" class="btn-styleI fl">建立家庭帐号</a>
+                    <a href="###" class="btn-styleJ fr">查看家庭帐号</a>
+            </div>
+        </div>
+        <div style="height:190px;" class="hidden-sm"></div>
+        <div class="show-sm sm-rooms">
+            <script>
+                document.getElementById('title_name').textContent = '精致客房';
+            </script>
+            <div class="header">
+                <span class="icon-arrowleft"></span>精致客房
+            </div>
+            <div class="scroll-bar">
+                <div class="items">
+                    <div class="scroll-item active">云顶梦号</div>
+                    <div class="scroll-item">世界梦号</div>
+                    <div class="scroll-item">探索梦号</div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        #include('../../common/footer.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+
+</html>
