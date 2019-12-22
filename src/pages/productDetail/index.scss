@@ -396,25 +396,25 @@ body {
         padding: 20px;
     }
 
-    .select-container{
+    .select-container {
         position: relative;
     }
 
-    #select-layer{
+    #select-layer {
         position: absolute;
         bottom: 20rem/$fit;
         right: 0;
         width: 520rem/$fit;
         background-color: #ffffff;
-        padding:0 20rem/$fit 20rem/$fit;
+        padding: 0 20rem/$fit 20rem/$fit;
         box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
 
-        .layer-title{
+        .layer-title {
             margin-top: 26rem/$fit;
             font-size: 18rem/$fit;
         }
 
-        .custom-btn{
+        .custom-btn {
             display: inline-block;
             line-height: 36rem/$fit;
             height: 36rem/$fit;
@@ -424,53 +424,56 @@ body {
             cursor: pointer;
         }
 
-        .guests{
+        .guests {
             margin-top: 20rem/$fit;
         }
-        .guest{
+
+        .guest {
             width: 90rem/$fit;
             margin-right: 12rem/$fit;
             background-color: #f7fcfc;
             border-color: #00969E;
             color: #00969E;
-            &:last-child{
+
+            &:last-child {
                 margin-right: 0;
             }
         }
 
-        .disable{
+        .disable {
             border-color: #E5E5E5;
             color: #666;
             background-color: rgb(245, 245, 245);
         }
 
-        .default{
+        .default {
             border-color: #E5E5E5;
             color: #333333;
             background-color: #ffffff;
         }
 
-        .btns{
+        .btns {
             margin-top: 30rem/$fit;
             text-align: right;
         }
 
-        .ensure,.cancel{
+        .ensure, .cancel {
             width: 90rem/$fit;
         }
 
-        .cancel{
+        .cancel {
             color: #666;
             border-color: #E5E5E5;
             margin-right: 12rem/$fit;
         }
 
-        .ensure{
+        .ensure {
             border-color: #00969E;
             background-color: #00969E;
             color: #ffffff;
         }
     }
+
     .name {
         font-size: 20px;
         color: #666;
@@ -527,21 +530,23 @@ body {
         font-size: 16rem/$fit;
         color: #FFFFFF;
         width: 128rem/$fit;
-        height: 50rem/$fit;
-        line-height: 48rem/$fit;
+        height: 40rem/$fit;
+        line-height: 40rem/$fit;
+        border: 0;
+        border-radius: 5px;
         //padding: 15rem/$fit 48rem/$fit;
     }
 
     .btnfav {
         background: #FFFFFF;
         border: 1px solid #E3E2E5;
-        border-radius: 2rem/$fit;
-        font-size: 13/$fit;
-        color: #CDCDCD;
-        width: 50rem/$fit;
-        height: 50rem/$fit;
-        line-height: 48rem/$fit;
+        font-size: 16rem/$fit;
+        color: #666;
+        width: 128rem/$fit;
+        height: 40rem/$fit;
+        line-height: 40rem/$fit;
         text-align: center;
+        border-radius: 5px;
     }
 }
 
@@ -550,12 +555,34 @@ body {
     .product-detail {
         padding-top: 20rem/$fit;
         width: 100%;
-    }
-    .product-detail {
+
         .product-image {
             float: left;
             width: 100%;
             height: auto;
+        }
+
+        .name {
+            font-size: 32rem/$fit;
+            color: #666;
+            padding-top: .5rem;
+        }
+
+        .desc {
+            font-family: Helvetica;
+            font-size: 24rem/$fit;
+            color: #6D6D6D;
+            line-height: 1.2rem;
+            margin-top: 20rem/$fit;
+        }
+
+        .price-row {
+            margin-top: .5rem;
+        }
+
+        .price-item {
+            display: inline-block;
+            margin-right: 240rem/$fit;
         }
 
         .product {
@@ -568,17 +595,78 @@ body {
             margin-left: 0;
             width: auto;
             padding: 20rem/$fit;
+            clear: both;
         }
 
         .btnadd {
             background: #00969E;
-            border-radius: 0.05rem;
-            font-size: 0.4rem;
+            border-radius: 5px;
+            font-size: 0.7rem;
             color: #FFFFFF;
-            width: 3.2rem;
-            height: 1.25rem;
+            width: 5rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            border: 0px;
+        }
+
+        .btnfav {
+            background: #FFFFFF;
+            border: 1px solid #E3E2E5;
+            border-radius: 5px;
+            font-size: .7rem;
+            color: #666;
+            width: 5rem;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            text-align: center;
+        }
+
+        .tablist li a:hover, .tablist .current a {
+            text-decoration: none;
+            color: #00969E;
+            border-bottom: 0.1rem solid #00969E;
+        }
+
+        .tablist li a {
+            display: inline-block;
+            height: 1.5rem;
+            font-size: 32rem/$fit;
+        }
+    }
+
+
+    .desc_content {
+        background-color: #ffffff;
+        padding: 1.5rem 0.75rem;
+
+        .desc_txt {
+            font-family: Helvetica;
+            font-size: 0.6rem;
+            color: #666;
             line-height: 1.2rem;
         }
+
+        .dec_icon .item {
+            float: left;
+            width: 25%;
+            margin-right: 0rem;
+            text-align: center;
+
+            .item-icon {
+                width: 1.6rem;
+                height: 1.6rem;
+                border: 1px solid #00969E;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 1.5rem;
+                display: inline-block;
+            }
+        }
+    }
+
+    .tablist_ptb_40 {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
     }
 
 }
