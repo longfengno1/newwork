@@ -38,7 +38,6 @@ body {
 
 .hotthread .item ul .one-pro {
     height: 364rem/$fit;
-
 }
 
 .hotthread .item ul li:last-child {
@@ -136,7 +135,6 @@ body {
     padding-top: 30rem/$fit;
     font-size: 30rem/$fit;
     line-height: 30rem/$fit;
-
 }
 
 .hotthread .item .sale .timer .time_tit {
@@ -166,7 +164,6 @@ body {
     color: #F8485E;
     font-size: 30rem/$fit;
     text-align: center;
-
 }
 
 .hotthread .one-pro .base_price dfn {
@@ -318,14 +315,15 @@ body {
             width: 70rem/$fit;
             margin-right: 100rem/$fit;
 
-            .item-icon{
+            .item-icon {
                 width: 64rem/$fit;
                 height: 64rem/$fit;
                 border: 1px solid #00969E;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 60rem/$fit;
-                img{
+
+                img {
                     width: 40rem/$fit;
                 }
             }
@@ -550,8 +548,7 @@ body {
     }
 }
 
-@media(max-width:767px)
-{
+@media(max-width:767px) {
     .product-detail {
         padding-top: 20rem/$fit;
         width: 100%;
@@ -632,6 +629,58 @@ body {
             height: 1.5rem;
             font-size: 32rem/$fit;
         }
+
+        #select-layer {
+            position: absolute;
+            bottom: 0.5rem;
+            right: 0;
+            width: 95%;
+            background-color: #ffffff;
+            padding: 0 0.5rem 0.5rem;
+            -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+
+            .guest {
+                width: auto;
+                margin-right: .5rem;
+                background-color: #f7fcfc;
+                border-color: #00969E;
+                color: #00969E;
+                font-size: .6rem;
+                padding: 0 1rem;
+                height: 1rem;
+                line-height: 1rem;
+                margin-top: .5rem;
+            }
+
+            .guests {
+                margin-top: 0rem;
+                margin-left:.5rem;
+            }
+
+            .layer-title {
+                margin-top: 0.5rem;
+                font-size: 0.6rem;
+            }
+
+            .ensure {
+                border-color: #00969E;
+                background-color: #00969E;
+                color: #ffffff;
+            }
+
+            .custom-btn {
+                display: inline-block;
+                line-height: 1.5rem;
+                height: 1.5rem;
+                border-radius: 5px;
+                text-align: center;
+                border: 1px solid;
+                cursor: pointer;
+                font-size: .6rem;
+                width: 4.5rem;
+            }
+        }
     }
 
 
@@ -668,5 +717,4 @@ body {
         padding-top: 0.25rem;
         padding-bottom: 0.25rem;
     }
-
 }
