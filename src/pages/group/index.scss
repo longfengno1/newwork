@@ -810,19 +810,63 @@
 
 		.item {
 			display: table-cell;
-
+			position: relative;
 			img {
 				width: 100%;
 				display: block;
 			}
 
 			p {
+				position: relative;
+				z-index: 2;
 				height: 48px;
 				line-height: 48px;
 				font-size: 14px;
 				background: #f8fcfd;
 				color: #373c50;
 				text-align: center;
+			}
+			&:hover{
+				.markdiv{
+					display: block;
+				}
+			}
+			.markdiv{
+				position: absolute;
+				display: none;
+				top:0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba($color: #00969E, $alpha: 0.5);
+				img{
+					width: 28px;
+					height: 28px;
+					display: inline-block;
+				}
+				.iconview,
+				.icondownload{
+					position: absolute;
+					background: #fff;
+					height: 40px;
+					width: 40px;
+					text-align: center;
+					line-height: 40px;
+					border-radius: 50%;
+					top:60px;
+				}
+				.iconview{
+					left: 50px;
+				}
+				.icondownload{
+					img{
+						width: 22px;
+						height: 22px;
+						margin-left: 1px;
+						margin-bottom: 2px;
+					}
+					right: 50px;
+				}
 			}
 		}
 	}
@@ -904,6 +948,10 @@
 		float: left;
 		width: 50%;
 		padding: 60px;
+
+		p{
+			font-size:14px;
+		}
 	}
 }
 
@@ -915,7 +963,9 @@
 	padding: 20px;
 	position: relative;
 	margin: 0 auto;
-
+	.slick-dots{
+		display: none !important;
+	}
 	.inner {
 		position: relative;
 
@@ -929,6 +979,27 @@
 			position: absolute;
 			width: 100%;
 			bottom: 0;
+		}
+		.fillbtn{
+			position: absolute;
+			width: 42px;
+			height: 42px;
+			right: 10px;
+			top: 10px;
+			font-size:42px;
+			line-height: 1;
+			color: #fff;
+			a{
+				color: #fff;
+			}
+			a:hover{
+				text-decoration: none;
+				opacity: 0.8;
+			}
+			span:first-child{
+				position: absolute;
+				transform: rotate(90deg);
+			}
 		}
 	}
 
@@ -1141,7 +1212,9 @@
 		width: 100%;
 		overflow: hidden;
 		padding-top: 44rem/$fit;
+			background: none;
 	}
+
 	.bg-our-destinations{
 		background-size:100vw;
 		height: 200rem/$fit;
@@ -1183,6 +1256,7 @@
 			padding: 32rem/$fit 0;
 			color: #999;
 			width: 100%;
+			p{font-size:.6rem;}
 		}
 	}
 
@@ -1206,12 +1280,15 @@
 		box-shadow: 0 0 10rem/$fit #ccc;
 		padding: 18rem/$fit;
 		margin-bottom: 22rem/$fit;
-
+		font-size: .6rem;
+		position: relative;
+		
 		.itemtitle {
 			color: #333;
 			line-height: 28rem/$fit;
 			margin-bottom: 18rem/$fit;
 			text-align: left;
+			font-size: .7rem;
 		}
 
 		.downp {
@@ -1223,9 +1300,10 @@
 		}
 
 		p {
+			position: relative;
+			z-index: 2;
 			background: none;
 			height: auto;
-		
 			color: #666;
 			line-height: 40rem/$fit;
 			word-break: break-all; //强制换行
@@ -1262,6 +1340,9 @@
 		box-shadow: none;
 		padding: 0 32rem/$fit 70rem/$fit 32rem/$fit;
 		height: auto;
+		.fillbtn{
+			display: none;
+		}
 		.slick-list{
 			border-radius: 10rem/$fit;
 			box-shadow: 0 0 20rem/$fit #666;
@@ -1307,7 +1388,7 @@
 				padding:0;
 				.title{
 					color: #363e53;
-					font-size: 30rem/$fit;
+					font-size: 28rem/$fit;
 					height: 50rem/$fit;
 					line-height: 50rem/$fit;
 					margin-bottom: 10rem/$fit;
@@ -1321,34 +1402,40 @@
 					-webkit-box-orient: vertical; //设置或检索伸缩盒对象的子元素的排列方式
 					-webkit-line-clamp: 3; //显示行数## 标题文字 ##
 					overflow: hidden;
+					font-size:.6rem;
 				}
 			}
 		}
 	}
-	.picandtextB{
+	.picandtextB {
 		position: relative;
 		padding-bottom: 160rem/$fit;
-		.titletext{
-			font-size: 30rem/$fit !important;
+
+		.titletext {
+			font-size: 28rem/$fit !important;
 			color: #333;
 			font-weight: bold;
 		}
-		.pic{
+
+		.pic {
 			padding: 0;
 			float: none;
 			box-shadow: none;
 			height: auto;
 			width: 100%;
-			img{
+
+			img {
 				box-shadow: none;
 				width: 100%;
 				height: auto;
 			}
 		}
-		.pic:after{
+
+		.pic:after {
 			display: none;
 		}
-		.bottom-btn{
+
+		.bottom-btn {
 			position: absolute;
 			bottom: 60rem/$fit;
 			left: 0;
@@ -1356,36 +1443,41 @@
 			text-align: center;
 			margin: 0;
 			width: 100%;
-			.btn-styleE{
-				font-size: 24rem/$fit;
-				padding: 20rem/$fit 26rem/$fit;
+
+			.btn-styleE {
+				font-size: 0.6rem;
+				padding: 0.25rem 1rem;
 				text-align: center;
+				border-radius: 5px;
 			}
 		}
 	}
-	.input-box{
+	.input-box {
 		width: 100%;
 		padding: 0 32rem/$fit;
 		padding-bottom: 40rem/$fit;
-		.input-row{
+
+		.input-row {
 			overflow: hidden;
 			padding: 0;
+
 			.input-txt,
-			.input-select{
+			.input-select {
 				height: 60rem/$fit;
 				line-height: 60rem/$fit;
-				font-size:24rem/$fit;
+				font-size: 24rem/$fit;
 				border-radius: 6rem/$fit;
 			}
 		}
-		.btn-styleE{
-			font-size: 24rem/$fit;
-				padding: 20rem/$fit 26rem/$fit;
-				text-align: center;
-				width: 80px;
-				margin-top: 40rem/$fit;
-		}
 
+		.btn-styleE {
+			font-size: 0.6rem;
+			padding: 0.25rem 1rem;
+			text-align: center;
+			width: 80px;
+			margin-top: 1rem;
+			border-radius: 5px;
+		}
 	}
 	.inputbox-sm{
 		margin-top: -50rem/$fit;
