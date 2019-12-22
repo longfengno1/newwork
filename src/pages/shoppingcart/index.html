@@ -2,479 +2,484 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>购物车</title>
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
-  <script type="text/javascript">
-    (function (doc, win) {
-      var docEl = doc.documentElement,
-        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        recalc = function () {
-          var clientWidth = docEl.clientWidth;
-          if (!clientWidth) return;
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
 
-          var fontSize = 20 * (clientWidth / 375);
-          fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
-          docEl.style.fontSize = fontSize + 'px';
-          var dpi = window.devicePixelRatio;
-          docEl.setAttribute('data-dpi', dpi);
-        };
-      recalc();
-      if (!doc.addEventListener) return;
-      win.addEventListener(resizeEvt, recalc, false);
-    })(document, window);
-  </script>
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
 </head>
 
 <body>
-  #include('../../common/header.html')
+    #include('../../common/header.html')
 
-  <div id="main" class="main shoppingcart-main">
-    <div class="wraper">
-      <h2 class="title hidden-sm">购物车<a class="op" href="###">删除商品</a></h2>
-      <ul class="shoppingcartlist">
-        <li>
-          <div class="sel">
-            <label>
-              <input type="checkbox" id="checkbox" class="cb-checkbox">
-              <div class="cb-label"></div>
-            </label>
-          </div>
-          <div class="pic"><img src="../../images/pic4.jpg"></div>
-          <div class="info">
-            <p class="protitle">龙虾牛腩饭</p>
-            <div class="itmes1">
-              <p>成人: <span class="price">&yen;1999</span></p>
-              <p>儿童: <span class="price">&yen;1999</span></p>
-              <p>老成人: <span class="price">&yen;1999</span></p>
-            </div>
-            <div class="itmes2">
-              <p class="hidden-sm">乘客: <a href="###">修改</a></p>
-              <p>房间1: <span>2份</span></p>
-              <p class="show-sm">;</p>
-              <p>房间2: <span>2份</span></p>
-              <p class="show-sm arrow"><span class="icon-arrowdown"></span></p>
-            </div>
-            <div class="itmes3">
-              <p class="base_price"><dfn>&yen;</dfn><span class="price">1999</span></p>
-              <p class="gray hidden-sm">价格小计</p>
-            </div>
-            <div class="itmes4">
-              <a href="###" class="btn-styleE">查看详情</a>
-            </div>
-          </div>
+    <div id="main" class="main shoppingcart-main">
+        <div class="wraper">
+            <h2 class="title hidden-sm">购物车<a class="op" href="###">删除商品</a></h2>
+            <ul class="shoppingcartlist">
+                <li>
+                    <div class="sel">
+                        <label>
+                            <input type="checkbox" id="checkbox" class="cb-checkbox">
+                            <div class="cb-label"></div>
+                        </label>
+                    </div>
+                    <div class="pic"><img src="../../images/pic4.jpg"></div>
+                    <div class="info">
+                        <p class="protitle">龙虾牛腩饭</p>
+                        <div class="itmes1" style="display:none;">
+                            <p>成人: <span class="price">&yen;1999</span></p>
+                            <p>儿童: <span class="price">&yen;1999</span></p>
+                            <p>老成人: <span class="price">&yen;1999</span></p>
+                        </div>
+                        <div class="itmes2">
+                            <p class="">房间1: <span>2份</span>;房间2: <span>2份</span><a href="###" class="hidden-sm ml10">修改</a></p>
+                            <p class="show-sm arrow" target="room"><span class="icon-arrowdown"></span></p>
+                        </div>
+                        <div class="itmes3">
+                            <p class="base_price"><dfn>&yen;</dfn><span class="price">1999</span></p>
+                        </div>
+                        <div class="itmes4">
+                            <a href="###" class="btn-styleE">查看详情</a>
+                        </div>
+                    </div>
 
-        </li>
-        <li>
-          <div class="sel">
-            <label>
-              <input type="checkbox" id="checkbox2" class="cb-checkbox">
-              <div class="cb-label"></div>
-            </label>
-          </div>
-          <div class="pic"><img src="../../images/pic4.jpg"></div>
-          <div class="info">
-            <p class="protitle">龙虾牛腩饭</p>
-            <div class="itmes1">
-              <p>成人: <span class="price">&yen;1999</span></p>
-              <p>儿童: <span class="price">&yen;1999</span></p>
-              <p>老成人: <span class="price">&yen;1999</span></p>
-            </div>
-            <div class="itmes2">
-              <p class="hidden-sm">乘客: <a href="###">修改</a></p>
-              <p>房间1: <span>2份</span></p>
-              <p class="show-sm">;</p>
-              <p>房间2: <span>2份</span></p>
-              <p class="show-sm arrow"><span class="icon-arrowdown"></span></p>
-            </div>
-            <div class="itmes3">
-              <p class="base_price"><dfn>&yen;</dfn><span class="price">1999</span></p>
-              <p class="gray hidden-sm">价格小计</p>
-            </div>
-            <div class="itmes4">
-              <a href="###" class="btn-styleE">查看详情</a>
-            </div>
-          </div>
-          <div class="opbox hidden-sm">
-            <div class="room">
-              <div class="roomtitle">房间1</div>
-              <div class="user">
-                <p class="username">
-                  张三
-                </p>
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">1</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
+                </li>
+                <li>
+                    <div class="sel">
+                        <label>
+                            <input type="checkbox" id="checkbox2" class="cb-checkbox">
+                            <div class="cb-label"></div>
+                        </label>
+                    </div>
+                    <div class="pic"><img src="../../images/pic4.jpg"></div>
+                    <div class="info">
+                        <p class="protitle">龙虾牛腩饭</p>
+                        <div class="itmes1" style="display:none;">
+                            <p>成人: <span class="price">&yen;1999</span></p>
+                            <p>儿童: <span class="price">&yen;1999</span></p>
+                            <p>老成人: <span class="price">&yen;1999</span></p>
+                        </div>
+                        <div class="itmes2">
+                            <p class="">房间1: <span>2份</span> ; 房间2: <span>2份</span><a href="###" class="hidden-sm ml10 selectUser">修改</a></p>
+                            <p class="show-sm arrow"><span class="icon-arrowdown"></span></p>
+                        </div>
+                        <div class="itmes3">
+                            <p class="base_price"><dfn>&yen;</dfn><span class="price">1999</span></p>
+                        </div>
+                        <div class="itmes4">
+                            <a href="###" class="btn-styleE">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="select-user" id="select-user" style="display:none;">
+                        <div class="opbox hidden-sm">
+                            <div class="room">
+                                <div class="roomtitle">房间1</div>
+                                <div class="user">
+                                    <p class="username">
+                                        张三
+                                    </p>
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">1</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <p class="username">
+                                        张三
+                                    </p>
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">1</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <p class="username">
+                                        张三
+                                    </p>
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">1</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <p class="username">
+                                        张三
+                                    </p>
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">1</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room">
+                                <div class="roomtitle">房间2</div>
+                                <div class="user disable-user">
+                                    <p class="username">
+                                        张三
+                                    </p>
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">0</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="user disable-user">
+                                    <p class="username">
+                                        张三
+                                    </p>
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">0</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <p class="username">
+                                        张三
+                                    </p>
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">1</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <p class="username">
+                                        张三
+                                    </p>
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">1</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opbox mt10  hidden-sm">
+                            <a href="###" class="btn-styleI fr mr30">确定</a>
+                            <a href="###" class="btn-styleJ fr mr30">取消</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sel">
+                        <label>
+                            <input type="checkbox" id="checkbox2" class="cb-checkbox">
+                            <div class="cb-label"></div>
+                        </label>
+                    </div>
+                    <div class="pic"><img src="../../images/pic4.jpg"></div>
+                    <div class="info">
+                        <p class="protitle">龙虾牛腩饭</p>
+                        <div class="itmes1" style="display:none;">
+                            <p>成人: <span class="price">&yen;1999</span></p>
+                            <p>儿童: <span class="price">&yen;1999</span></p>
+                            <p>老成人: <span class="price">&yen;1999</span></p>
+                        </div>
+                        <div class="itmes2">
+                            <p class="">房间1: <span>2份</span> ;房间2: <span>2份</span><a href="###" class="hidden-sm ml10 selectRoom">修改</a></p>
+                            <p class="show-sm arrow" target="user"><span class="icon-arrowdown"></span></p>
+                        </div>
+                        <div class="itmes3">
+                            <p class="base_price"><dfn>&yen;</dfn><span class="price">1999</span></p>
+                        </div>
+                        <div class="itmes4">
+                            <a href="###" class="btn-styleE">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="select-room" id="select-room" style="display:none;">
+                        <div class="opbox hidden-sm fl">
+                            <div class="room mt20 fl">
+                                <div class="roomtitle fl" style="margin: 0;">房间1</div>
+                                <div class="user ml40">
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">1</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="room mt20 fl ml40">
+                                <div class="roomtitle fl" style="margin: 0;">房间2</div>
+                                <div class="user ml40 disable-user">
+                                    <div class="num-select">
+                                        <span class="minus">
+                                            <span class="icon-subs"></span>
+                                        </span>
+                                        <span class="num">1</span>
+                                        <span class="plus">
+                                            <span class="icon-plus"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opbox mt10  hidden-sm fr" style="clear:none;">
+                            <a href="###" class="btn-styleI fr mr30">确定</a>
+                            <a href="###" class="btn-styleJ fr mr30">取消</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="show-sm">
+            <div class="price-bar">
+                <div class="left">
+                    <p class="total">总计：<span class="price">¥8930</span> <span class="ml10 green showorderdetail">明细</span></p>
                 </div>
-              </div>
-              <div class="user">
-                <p class="username">
-                  张三
-                </p>
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">1</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
+                <div class="right">
+                    <p class="main">核对资料</p>
                 </div>
-              </div>
-              <div class="user">
-                <p class="username">
-                  张三
-                </p>
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">1</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
-                </div>
-              </div>
-              <div class="user">
-                <p class="username">
-                  张三
-                </p>
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">1</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
-                </div>
-              </div>
             </div>
-            <div class="room">
-              <div class="roomtitle">房间2</div>
-              <div class="user disable-user">
-                <p class="username">
-                  张三
-                </p>
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">0</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
+        </div>
+    </div>
+
+    <div class="show-sm sm-main">
+        <script>
+            document.getElementById('title_name').textContent = '购物车';
+            document.getElementById('header-bar-rightbtn').innerHTML = "<a href='###'>删除</a>"
+        </script>
+    </div>
+
+    <div style="height:150px" class="hidden-sm"></div>
+    <div class="mark user" style="display: none;">
+        <div class="box">
+            <div class="title">选择份数</div>
+
+            <div class="title">房间1</div>
+            <div class="boxinner userinner">
+                <div class="room">
+                    <div class="user disable-user">
+                        <p class="username">
+                            张三
+                        </p>
+                        <div class="num-select">
+                            <span class="minus">
+                                <span class="icon-subs"></span>
+                            </span>
+                            <span class="num">0</span>
+                            <span class="plus">
+                                <span class="icon-plus"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user disable-user">
+                        <p class="username">
+                            张三
+                        </p>
+                        <div class="num-select">
+                            <span class="minus">
+                                <span class="icon-subs"></span>
+                            </span>
+                            <span class="num">0</span>
+                            <span class="plus">
+                                <span class="icon-plus"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p class="username">
+                            张三
+                        </p>
+                        <div class="num-select">
+                            <span class="minus">
+                                <span class="icon-subs"></span>
+                            </span>
+                            <span class="num">1</span>
+                            <span class="plus">
+                                <span class="icon-plus"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p class="username">
+                            张三
+                        </p>
+                        <div class="num-select">
+                            <span class="minus">
+                                <span class="icon-subs"></span>
+                            </span>
+                            <span class="num">1</span>
+                            <span class="plus">
+                                <span class="icon-plus"></span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="user disable-user">
-                <p class="username">
-                  张三
-                </p>
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">0</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
+
+            </div>
+            <div class="title">房间2</div>
+            <div class="boxinner userinner">
+                <div class="room">
+                    <div class="user disable-user">
+                        <p class="username">
+                            张三
+                        </p>
+                        <div class="num-select">
+                            <span class="minus">
+                                <span class="icon-subs"></span>
+                            </span>
+                            <span class="num">0</span>
+                            <span class="plus">
+                                <span class="icon-plus"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user disable-user">
+                        <p class="username">
+                            张三
+                        </p>
+                        <div class="num-select">
+                            <span class="minus">
+                                <span class="icon-subs"></span>
+                            </span>
+                            <span class="num">0</span>
+                            <span class="plus">
+                                <span class="icon-plus"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p class="username">
+                            张三
+                        </p>
+                        <div class="num-select">
+                            <span class="minus">
+                                <span class="icon-subs"></span>
+                            </span>
+                            <span class="num">1</span>
+                            <span class="plus">
+                                <span class="icon-plus"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p class="username">
+                            张三
+                        </p>
+                        <div class="num-select">
+                            <span class="minus">
+                                <span class="icon-subs"></span>
+                            </span>
+                            <span class="num">1</span>
+                            <span class="plus">
+                                <span class="icon-plus"></span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="user">
-                <p class="username">
-                  张三
-                </p>
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">1</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
-                </div>
-              </div>
-              <div class="user">
-                <p class="username">
-                  张三
-                </p>
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">1</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
-                </div>
-              </div>
+
             </div>
-          </div>
-          <div class="opbox mt20  hidden-sm">
-            <a href="###" class="btn-styleI fr">确定</a>
-            <a href="###" class="btn-styleJ fr mr30">取消</a>
-          </div>
-        </li>
-        <li>
-          <div class="sel">
-            <label><input type="checkbox" id="checkbox2" class="cb-checkbox">
-              <div class="cb-label"></div>
-            </label>
-          </div>
-          <div class="pic"><img src="../../images/pic4.jpg"></div>
-          <div class="info">
-            <p class="protitle">龙虾牛腩饭</p>
-            <div class="itmes1">
-              <p>成人: <span class="price">&yen;1999</span></p>
-              <p>儿童: <span class="price">&yen;1999</span></p>
-              <p>老成人: <span class="price">&yen;1999</span></p>
+            <div class="boxbottom">
+                <a href="###" class="btn-styleJ">取消</a>
+                <a href="###" class="btn-styleI">确定</a>
             </div>
-            <div class="itmes2">
-              <p class="hidden-sm">乘客: <a href="###">修改</a></p>
-              <p>房间1: <span>2份</span></p>
-              <p class="show-sm">;</p>
-              <p>房间2: <span>2份</span></p>
-              <p class="show-sm arrow"><span class="icon-arrowdown"></span></p>
-            </div>
-            <div class="itmes3">
-              <p class="base_price"><dfn>&yen;</dfn><span class="price">1999</span></p>
-              <p class="gray hidden-sm">价格小计</p>
-            </div>
-            <div class="itmes4">
-              <a href="###" class="btn-styleE">查看详情</a>
-            </div>
-          </div>
-          <div class="opbox hidden-sm fl">
-            <div class="room mt20 fl">
-              <div class="roomtitle fl" style="margin: 0;">房间1</div>
-              <div class="user ml40">
-                <div class="num-select">
-                  <span class="minus">
-                    <span class="icon-subs"></span>
-                  </span>
-                  <span class="num">1</span>
-                  <span class="plus">
-                    <span class="icon-plus"></span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="room mt20 fl ml40">
-                <div class="roomtitle fl" style="margin: 0;">房间2</div>
-                <div class="user ml40 disable-user">
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">1</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="opbox mt20  hidden-sm fr" style="clear:none;">
-            <a href="###" class="btn-styleI fr">确定</a>
-            <a href="###" class="btn-styleJ fr mr30">取消</a>
-          </div>
-        </li>
-      </ul>
+        </div>
 
     </div>
-    <div class="wraper mt40 totlebox">
-      <p class="fl hidden-sm">商品总数：2</p>
-      <div class="fr totle">
-        <p class="show-sm">商品总数：2</p>
-        <p class="totletext">
-          <span class="hidden-sm">商品总计</span>
-          <span class="base_price"><dfn>&yen;</dfn>19999</span></p>
-        <p class="totletbtn">
-          <a href="###" class="btn-styleI">提交订单</a>
-        </p>
-      </div>
-    </div>
-  </div>
 
-  <div class="show-sm sm-main">
-    <script>
-      document.getElementById('title_name').textContent = '购物车';
-      document.getElementById('header-bar-rightbtn').innerHTML="<a href='###'>删除</a>"
-    </script>
-  </div>
 
-  <div style="height:150px" class="hidden-sm"></div>
-  <div class="mark" style="display: none;">
-    <div class="box">
-      <div class="title">选择份数</div>
-      <div class="boxinner">
-        <div class="room">
-          <p class="roomname">
-            房间1
-          </p>
-          <div class="num-select">
-            <span class="minus">
-              <span class="icon-subs"></span>
-            </span>
-            <span class="num">0</span>
-            <span class="plus">
-              <span class="icon-plus"></span>
-            </span>
-          </div>
+    <div class="mark room" style="display: none;">
+        <div class="box">
+            <div class="title">选择份数</div>
+            <div class="boxinner">
+                <div class="room">
+                    <p class="roomname">
+                        房间1
+                    </p>
+                    <div class="num-select">
+                        <span class="minus">
+                            <span class="icon-subs"></span>
+                        </span>
+                        <span class="num">0</span>
+                        <span class="plus">
+                            <span class="icon-plus"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="room disable-room">
+                    <p class="roomname">
+                        房间2
+                    </p>
+                    <div class="num-select">
+                        <span class="minus">
+                            <span class="icon-subs"></span>
+                        </span>
+                        <span class="num">0</span>
+                        <span class="plus">
+                            <span class="icon-plus"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxbottom">
+                <a href="###" class="btn-styleJ">取消</a>
+                <a href="###" class="btn-styleI">确定</a>
+            </div>
         </div>
-        <div class="room disable-room">
-          <p class="roomname">
-            房间2
-          </p>
-          <div class="num-select">
-            <span class="minus">
-              <span class="icon-subs"></span>
-            </span>
-            <span class="num">0</span>
-            <span class="plus">
-              <span class="icon-plus"></span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="title">房间1</div>
-        <div class="boxinner userinner">
-            <div class="room">
-                <div class="user disable-user">
-                  <p class="username">
-                    张三
-                  </p>
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">0</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="user disable-user">
-                  <p class="username">
-                    张三
-                  </p>
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">0</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="user">
-                  <p class="username">
-                    张三
-                  </p>
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">1</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="user">
-                  <p class="username">
-                    张三
-                  </p>
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">1</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-          
-        </div>
-        <div class="title">房间2</div>
-        <div class="boxinner userinner">
-            <div class="room">
-                <div class="user disable-user">
-                  <p class="username">
-                    张三
-                  </p>
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">0</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="user disable-user">
-                  <p class="username">
-                    张三
-                  </p>
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">0</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="user">
-                  <p class="username">
-                    张三
-                  </p>
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">1</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="user">
-                  <p class="username">
-                    张三
-                  </p>
-                  <div class="num-select">
-                    <span class="minus">
-                      <span class="icon-subs"></span>
-                    </span>
-                    <span class="num">1</span>
-                    <span class="plus">
-                      <span class="icon-plus"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-          
-        </div>
-      <div class="boxbottom">
-        <a href="###" class="btn-styleJ">取消</a>
-        <a href="###" class="btn-styleI">确定</a>
-      </div>
+
     </div>
-    
-  </div>
-  #include('../../common/footer.html')
+    #include('../../common/footer.html')
 
 </body>
 

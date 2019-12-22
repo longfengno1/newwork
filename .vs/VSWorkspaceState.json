@@ -2,15 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\common",
-    "\\src\\css",
     "\\src\\pages",
-    "\\src\\pages\\booking2",
-    "\\src\\pages\\booking3",
-    "\\src\\pages\\product",
-    "\\src\\pages\\yuleshengyan",
-    "\\src\\pages\\yuleshengyanDetail"
+    "\\src\\pages\\ziliaoxiazai"
   ],
-  "SelectedNode": "\\src\\pages\\yuleshengyanDetail\\index.html",
+  "SelectedNode": "\\src\\pages\\ziliaoxiazai\\index.html",
   "PreviewInSolutionExplorer": false
 }

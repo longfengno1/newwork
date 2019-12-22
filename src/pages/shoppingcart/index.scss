@@ -106,7 +106,7 @@ input[type=checkbox]:checked + .cb-label,
 
 .shoppingcart-main {
   .title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: normal;
     height: 30px;
     line-height: 30px;
@@ -124,202 +124,220 @@ input[type=checkbox]:checked + .cb-label,
 }
 
 .shoppingcartlist {
-  li {
-    margin-top: 30px;
-    background: #fff;
-    padding: 20px;
-    overflow: hidden;
-  }
-
-  .sel {
-    height: 222px;
-    line-height: 222px;
-    width: 40px;
-    float: left;
-    position: relative;
-   
-    input[type=checkbox] {
-      border-radius: 0;
-      width: 14px;
-      height: 14px;
-
-      &:checked {
-        background: #00969E;
-      }
+    li {
+        margin-top: 10px;
+        background: #fff;
+        padding: 20px;
+        overflow: hidden;
     }
-  }
 
-  .pic {
-    height: 222px;
-    width: 332px;
-    overflow: hidden;
-    float: left;
-    margin-right: 30px;
+    .sel {
+        /*height: 222px;
+        line-height: 222px;*/
+        width: 40px;
+        float: left;
+        position: relative;
 
-    img {
-      min-width: 100%;
-      max-height: 100%;
+        input[type=checkbox] {
+            border-radius: 0;
+            width: 14px;
+            height: 14px;
+
+            &:checked {
+                background: #00969E;
+            }
+        }
     }
-  }
 
-  .info {
-    float: left;
-    width: 755px;
-    height: 222px;
-    position: relative;
-  }
+    .pic {
+        height: 112px;
+        width: 200px;
+        overflow: hidden;
+        float: left;
+        margin-right: 30px;
 
-  .protitle {
-    font-size: 24px;
-  }
-
-  .itmes1,
-  .itmes2 {
-    margin-top: 20px;
-    float: left;
-    font-size: 14px;
-    width: 320px;
-    height: 110px;
-    p{
-      height: 36px;
-      line-height: 36px;
+        img {
+            min-width: 100%;
+            max-height: 100%;
+        }
     }
-    a {
-      color: #00969E;
-    }
-  }
 
-  .itmes3 {
-    float: right;
+    .info {
+        float: left;
+        width: 755px;
+        height: auto;
+        position: relative;
+    }
+
+    .protitle {
+        font-size: 16px;
+    }
+
+    .itmes1,
+    .itmes2 {
+        margin-top: 20px;
+        float: left;
+        font-size: 14px;
+        width: 320px;
+        height: 70px;
+
+        p {
+            /*height: 36px;
+            line-height: 36px;*/
+        }
+
+        a {
+            color: #00969E;
+        }
+    }
+
+    .itmes3 {
+        float: right;
+        text-align: right;
+
+        .base_price {
+            color: #F8485E;
+            font-size: 24px;
+
+            dfn {
+                font-family: Arial;
+                font-size: 12px;
+                font-style: normal;
+                margin-right: 2px;
+            }
+        }
+    }
+
+    .itmes4 {
+        clear: both;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .opbox {
+        clear: both;
+        overflow: hidden;
+        padding-left: 40px;
+    }
+
+    .room {
+        overflow: hidden;
+
+        .roomtitle {
+            font-size: 14px;
+            height: 28px;
+            line-height: 28px;
+            margin-top: 8px;
+        }
+
+        .user {
+            float: left;
+            width: 25%;
+        }
+
+        .username {
+            display: inline-block;
+            height: 30px;
+            line-height: 28px;
+            border: 1px solid #00969E;
+            border-radius: 2px;
+            color: #00969E;
+            font-size: 12px;
+            text-align: center;
+            width: 70px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .num-select {
+            display: inline-block;
+            border: 1px solid #64CCC9;
+            border-radius: 2px;
+            padding: 1px;
+            text-align: center;
+            height: 30px;
+            line-height: 26px;
+            overflow: hidden;
+            vertical-align: middle;
+            width: 88px;
+        }
+
+        .num {
+            display: block;
+            float: left;
+            font-size: 14px;
+            color: #666;
+            width: 32px;
+            height: 26px;
+            line-height: 26px;
+        }
+
+        .minus,
+        .plus {
+            display: block;
+            float: left;
+            width: 26px;
+            height: 26px;
+            border-radius: 2px;
+            background-color: #00969E;
+            color: #fff;
+            font-size: 12px;
+            line-height: 26px;
+            cursor: pointer;
+        }
+
+        .disable-user {
+            .username {
+                background: #f8f8f8;
+                border-color: #e3e3e3;
+                color: #9c9c9c;
+            }
+
+            .num-select {
+                border-color: #f2f2f2;
+            }
+
+            .minus,
+            .plus {
+                color: #ccc;
+                background: #f8f8f8;
+            }
+        }
+    }
+}
+.totle {
     text-align: right;
 
+    .totletext {
+        font-size: 16px;
+    }
+
     .base_price {
-      color: #F8485E;
-      font-size: 24px;
+        margin-left: 20px;
+        color: #F8485E;
+        font-size: 24px;
 
-      dfn {
-        font-family: Arial;
-        font-size: 12px;
-        font-style: normal;
-        margin-right: 2px;
-      }
+        dfn {
+            font-style: normal;
+            font-family: Arial;
+        }
     }
-  }
 
-  .itmes4 {
-    clear: both;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  .opbox{
-    clear: both;
-    overflow: hidden;
-    padding-left: 40px;
-  }
-  .room{
-    overflow: hidden;
-    .roomtitle{
-      font-size:14px;
-      height: 28px;
-      line-height: 28px;
-      margin-top: 8px;
+    .btn-styleI {
+        width: 160px;
+        height: 40px;
+        padding: 0;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 20px;
     }
-    .user{
-      float: left;
-      width: 25%;
-    }
-    .username{
-      display: inline-block;
-      height: 30px;
-      line-height: 28px;
-      border:1px solid #00969E;
-      border-radius: 2px;
-      color: #00969E;
-      font-size: 12px;
-      text-align: center;
-      width: 70px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-    .num-select {
-      display: inline-block;
-      border: 1px solid #64CCC9;
-      border-radius: 2px;
-      padding: 1px;
-      text-align: center;
-      height: 30px;
-      line-height: 26px;
-      overflow: hidden;
-      vertical-align:middle;
-      width: 88px;
-    }
-    
-    .num {
-      display: block;
-      float: left;
-      font-size: 14px;
-      color: #666;
-      width: 32px;
-      height: 26px;
-      line-height: 26px;
-    }
-    
-    .minus,
-    .plus {
-      display: block;
-      float: left;
-      width: 26px;
-      height: 26px;
-      border-radius: 2px;
-      background-color: #00969E;
-      color: #fff;
-      font-size: 12px;
-      line-height: 26px;
-      cursor: pointer;
-    }
-    .disable-user{
-      .username{
-        background: #f8f8f8;
-        border-color:#e3e3e3;
-        color: #9c9c9c;
-      }
-      .num-select{
-        border-color: #f2f2f2;
-      }
-      .minus,
-      .plus{
-        color:#ccc;
-        background: #f8f8f8;
-      }
-    }
-  }
-  
 }
-.totle{
-  text-align: right;
-
-  .totletext{
-    font-size:18px;
-  }
-  .base_price{
-    margin-left: 20px;
-    color: #F8485E;
-    font-size: 24px;
-    dfn{
-      font-style: normal;
-      font-family: Arial;
+.totlebox {
+    .product-count{
+        font-size:16px;
     }
-  }
-  .btn-styleI{
-    width: 230px;
-    height: 56px;
-    padding: 0;
-    line-height: 56px;
-    text-align: center;
-    font-size: 14px;
-    margin-top:40px;
-  }
 }
 
 @import './sm-index.scss';

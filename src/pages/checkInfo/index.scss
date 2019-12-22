@@ -1,8 +1,9 @@
 @import './sm-index.scss';
 
-body{
+body {
     background-color: #f7fcfc;
 }
+
 .main {
     width: 1200px;
     margin: 0 auto;
@@ -16,7 +17,7 @@ body{
     margin-bottom: 12px;
 }
 
-.order-container{
+.order-container {
     padding: 18px;
     overflow: hidden;
     background-color: #ffffff;
@@ -34,8 +35,9 @@ body{
 
     tr {
         border: 1px solid #E5E5E5;
-        th,td{
-padding: 20px;
+
+        th, td {
+            padding: 10px;
         }
     }
 
@@ -52,54 +54,60 @@ padding: 20px;
         text-align: right;
     }
 
-    .product{
-        img{
+    .product {
+        img {
             // display:;
-                width: 160px;
-                height: 120px;
+            width: 200px;
+            height: 112px;
         }
-        span{
+
+        span {
             font-size: 16px;
             vertical-align: top;
             padding-left: 20px;
         }
     }
 
-    .info{
+    .info {
         font-size: 14px;
-        p{
+
+        p {
             margin-bottom: 16px;
         }
-        a{
+
+        a {
             cursor: pointer;
             color: #00969E;
         }
     }
 
-    .price{
+    .price {
         font-size: 16px;
         color: #FF5050;
     }
 }
 
-.fee{
+.fee {
     overflow: hidden;
     text-align: right;
     font-size: 16px;
-    p{
-        margin-top: 18px;
+
+    p {
+        margin-top: 10px;
     }
-    .price{
+
+    .price {
         font-size: 18px;
         color: #FF5050;
     }
 }
 
-.btns{
+.btns {
     margin-top: 24px;
     font-size: 14px;
-    .back,.next{
-            width: 200px;
+
+    .back, .next {
+        width: 200px;
         display: inline-block;
         border-radius: 2px;
         text-align: center;
@@ -107,11 +115,13 @@ padding: 20px;
         line-height: 44px;
         cursor: pointer;
     }
-    .back{
+
+    .back {
         color: #333333;
         border: 1px solid #E5E5E5;
     }
-    .next{
+
+    .next {
         color: #ffffff;
         background-color: #00969E;
     }

@@ -1,0 +1,450 @@
+@import '../../css/variables.scss';
+@import './orderSuccess.scss';
+.topbanner {
+    background: url(../../images/intro.jpg) center -110px no-repeat;
+    height: 676px;
+    position: relative;
+    color: #666;
+}
+
+.topbanner .content {
+    padding: 0 77px;
+}
+
+.topbanner .btn-prev,
+.topbanner .btn-next {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    border: 0;
+    top: 35px;
+    font-size: 20px;
+    color: #00969E;
+}
+
+.topbanner .btn-prev:focus,
+.topbanner .btn-next:focus {
+    outline: 0;
+}
+
+.topbanner .btn-prev:hover,
+.topbanner .btn-next:hover {
+    opacity: 0.8;
+}
+
+.topbanner .btn-prev {
+    left: 0;
+}
+
+.topbanner .btn-next {
+    right: 0;
+}
+.topbanner {
+    position: relative;
+}
+
+.topbanner_plane {
+    position: relative;
+}
+
+.topbanner_plane .info {
+    width: 470px;
+    float: right;
+}
+
+.topbanner_plane .info li {
+    border-right: 1px solid #618AA1;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 22px 0;
+}
+
+.topbanner_plane .info li:last-child {
+    border: none;
+}
+
+.topbanner_plane .content h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 5px;
+}
+
+.topbanner_plane .content p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.topbanner_plane .text_box {
+    width: 398px;
+}
+
+.topbanner_plane .ship {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.intro-ribbonship {
+    background: url(../../images/intro-ribbonship.png) center top no-repeat;
+    height: 155px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.topbanner_plane .ship .btn-icon {
+    background: rgba(255,255,255,0.5);
+    display: block;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    padding: 3px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.topbanner_plane .ship .btn-icon .inner {
+    display: block;
+    content: "";
+    background: #80CDCA;
+    background-image: linear-gradient(212deg, #15989D 0%, #301F42 100%, #301F42 200%);
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    line-height: 42px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.topbanner_plane .ship .btn-icon:hover {
+    text-decoration: none;
+}
+
+.topbanner_plane .ship .btn-icon:hover .inner {
+    background: #80CDCA;
+    overflow: hidden;
+    background-image: linear-gradient(212deg, #15989D 0%, #301F42 100%, #301F42 200%);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-image: linear-gradient(-35deg, #00969E 27%, #64CCC9 70%);
+}
+
+.topbanner_plane .ship .artive .inner {
+    background: #80CDCA;
+    background-image: linear-gradient(212deg, #15989D 0%, #301F42 100%, #301F42 200%);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-image: linear-gradient(-35deg, #00969E 27%, #64CCC9 70%);
+}
+
+.topbanner_plane .ship .ship-icon {
+    background: none;
+}
+
+.topbanner_plane .ship .ship-icon .inner {
+    background: #666;
+    background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
+}
+
+.topbanner_plane .ship .ship-icon:hover .inner {
+    background: #666;
+    background-image: linear-gradient(215deg, #9B509D 0%, #301F42 100%, #301F42 200%);
+}
+
+.topbanner_plane .ship-intro {
+    position: absolute;
+    top: -124px;
+    right: 627px;
+    height: 206px;
+}
+
+.topbanner_plane .ship-intro:after {
+    content: "";
+    position: absolute;
+    height: 152px;
+    width: 2px;
+    background: #666;
+    top: 45px;
+    left: 23px;
+}
+
+.topbanner_plane .ship-intro:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #666;
+}
+
+.topbanner_plane .ship .btn-icon .open {
+    background: url(../../images/icon_open@2x.png) center center no-repeat;
+    position: absolute;
+    width: 183px;
+    height: 179px;
+    background-size: 100% 100%;
+    padding: 6px 6px 12px 6px;
+    display: none;
+    bottom: 20px;
+    left: -190px;
+    z-index: 9;
+}
+
+.topbanner_plane .ship .artive .open {
+    display: block;
+}
+
+.topbanner_plane .ship .btn-icon .open .pic {
+    border-radius: 4px;
+    width: 166px;
+    height: 102px;
+    overflow: hidden;
+}
+
+.topbanner_plane .ship .btn-icon .open .title {
+    font-size: 12px;
+    color: #fff;
+    line-height: 16px;
+    height: 16px;
+    margin-top: 8px;
+}
+
+.topbanner_plane .ship .btn-icon .open .btn-box {
+    line-height: 28px;
+    padding-right: 6px;
+}
+.topbannerB {
+    position: relative;
+    text-align: center;
+    height: 454px;
+    margin-bottom: -110px;
+}
+
+.topbannerB .intro-ribbonship {
+    background: url(../../images/banner-cover.png) center top no-repeat;
+    height: 216px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.section {
+    position: relative;
+    border-bottom: 0;
+}
+.order-main {
+    min-height: 100vh;
+    /*background-color: #f7fcfc;*/
+    /*background-color: #f8f8f8;*/
+}
+
+.order {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 200px;
+}
+.top-order-info {
+    background-color: #fff;
+    padding: 20px;
+}
+.product-name {
+  font-size: 20px;
+  color: #666;
+}
+
+.product-info {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 8px;
+
+  span {
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.product-tags {
+  margin-top: 8px;
+  font-size:14px;
+
+  .tag {
+    line-height: 20px;
+    border-radius: 2px;
+    border: 1px solid;
+    padding: 0 8px;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .green {
+    color: #00969E;
+    border-color: #00969E;
+  }
+
+  .blue {
+    color: #4A90E2;
+    border-color: #4A90E2;
+  }
+
+  .purple {
+    color: #A05EB5;
+    border-color: #A05EB5;
+  }
+
+  .yellow {
+    color: #F5A623;
+    border-color: #F5A623;
+  }
+
+  .red {
+    color: #F8485E;
+    border-color: #F8485E;
+  }
+
+  .light-blue {
+    color: #64BDDA;
+    border-color: #64BDDA;
+  }
+}
+
+
+
+.step-item {
+  display: inline-block;
+  position: relative;
+  width: 195px;
+  height: 50px;
+  background-color: #efefef;
+  margin-left: 6px;
+  text-align: center;
+  cursor: pointer;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  span {
+    line-height: 50px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .step-item-before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid #fff;
+  }
+
+  .step-item-after {
+    right: -20px;
+    top: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid #efefef;
+    z-index: 2;
+  }
+
+}
+
+.step {
+  margin-top: 10px;
+
+  .active {
+    background-color: #00969E;
+
+    .step-item-after {
+      border-left-color: #00969E;
+    }
+
+  }
+
+  .active,
+  .selected {
+    span {
+      color: #fff;
+    }
+  }
+}
+
+.selected {
+  background-color: #64CCC9;
+
+  .step-item-after {
+    border-left-color: #64CCC9;
+  }
+}
+
+#modfiy-date {
+  color: $theme-blue;
+  cursor: pointer;
+}
+
+#footer {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: content-box;
+  }
+}
+
+.filter_planeB li {
+    padding-left: 192px;
+    height: 50px;
+    background: rgba(100,204,201,0.10);
+    border-bottom: 1px solid #fff;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.filter_planeB li label {
+    float: left;
+    margin-left: -152px;
+    font-size: 16px;
+    color: #666;
+    /*letter-spacing: 2.77px;*/
+    text-align: center;
+}
+
+.filter_planeB li a {
+    color: #666;
+    margin-right: 28px;
+    display: inline-block;
+    line-height: 20px;
+    padding: 3px 12px;
+}
+
+.filter_planeB li a.active {
+    background: #FFFFFF;
+    border: 1px solid #00969E;
+    color: #00969E;
+}
+
+.filter_planeB li a.active:hover {
+    text-decoration: none;
+    color: #00969E;
+}
+@import './sm-index.scss';
