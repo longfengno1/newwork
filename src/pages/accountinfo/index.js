@@ -6,15 +6,14 @@ import "../../js/slick.min";
   var sliderbase = $('.sliderbase');
 
   sliderbase.slick({
-    infinite: false,
-    dots: true
+    infinite: false
   });
 
-  var sliderbaseB = $('.sliderbaseB');
+  var sliderbaseA = $('.sliderbaseA');
 
-  sliderbaseB.slick({
-    arrows: false,
-    infinite: true,
+  sliderbaseA.slick({
+    arrows: true,
+    infinite: false,
     dots: true
   });
 
