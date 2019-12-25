@@ -614,7 +614,7 @@
             color: #666666;
             cursor: pointer;
             /*font-weight: 300;*/
-            width: 33.33%;
+            width: 30%;
             text-align: center;
             position: relative;
 
@@ -646,6 +646,36 @@
 
         .active {
             color: #00969E;
+        }
+    }
+
+    .cart-top-r-sm {
+        border-left: 3px solid #f0f0f0;
+        width: 10%;
+        padding-top: .5rem;
+        padding-left: .25rem;
+
+        .btn {
+            display: block;
+            height: 50rem/$fit;
+            width: 50rem/$fit;
+            background: url(../../images/cart-blue.png) center no-repeat;
+            background-size: 100%;
+            padding: 0;
+        }
+
+        .up-total-cur {
+            background: none;
+            height: 0.375rem;
+            line-height: 0.375rem;
+            font-size: 0.3rem;
+            border-radius: 0.175rem;
+            color: #F8485E;
+            padding: 0 0.1rem;
+            position: absolute;
+            top: 0.25rem;
+            right: 0.25rem;
+            font-weight: 600;
         }
     }
 }

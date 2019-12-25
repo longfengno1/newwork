@@ -305,7 +305,7 @@ body {
 
 .desc_content {
     background-color: #ffffff;
-    padding: 60rem/$fit 30rem/$fit;
+    padding: 30rem/$fit 30rem/$fit;
 
     .dec_icon {
         margin-bottom: 40rem/$fit;
@@ -385,7 +385,8 @@ body {
     .product-image {
         float: left;
         width: 600rem/$fit;
-        height: 417px;
+        height: auto;
+        padding:20px;
     }
 
     .product-content {
@@ -557,6 +558,7 @@ body {
             float: left;
             width: 100%;
             height: auto;
+            padding:.5rem;
         }
 
         .name {
@@ -686,7 +688,7 @@ body {
 
     .desc_content {
         background-color: #ffffff;
-        padding: 1.5rem 0.75rem;
+        padding: 0.75rem 0.75rem;
 
         .desc_txt {
             font-family: Helvetica;

@@ -1,5 +1,7 @@
 @import '../../css/variables.scss';
-
+.section{
+	padding:0;
+}
 .boxfixed {
 	position: fixed !important;
 	display: block !important;
@@ -71,6 +73,7 @@
 		color: #343E57;
 		letter-spacing: 0;
 		text-align: center;
+		height:auto;
 	}
 }
 
@@ -378,6 +381,7 @@ p {
 			font-size: 16px;
 			color: #00969E;
 			text-align: center;
+			height:auto;
 		}
 
 		img {
@@ -965,9 +969,10 @@ p {
 			.inner {
 				width: 100%;
 				padding: 20rem/$fit;
-				height: 200rem/$fit;
+				height: 220rem/$fit;
 				background-size: 80rem/$fit;
 				background-position: right 80rem/$fit;
+				overflow:hidden;
 
 				p {
 					font-size: 24rem/$fit !important;

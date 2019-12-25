@@ -84,7 +84,7 @@
         .itmes2 {
             display: flex;
             flex-direction: row;
-            height: 60rem/$fit;
+            height:auto;// 60rem/$fit;
             width: 346rem/$fit;
             padding: 0 16rem/$fit;
             line-height: 60rem/$fit;
@@ -94,7 +94,7 @@
             margin-top: 20rem/$fit;
 
             p {
-                height: 60rem/$fit;
+                height:auto;// 60rem/$fit;
                 line-height: 60rem/$fit;
                 color: #666;
                 font-size: 24rem/$fit;

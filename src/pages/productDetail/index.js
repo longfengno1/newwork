@@ -37,4 +37,18 @@ import './index.scss';
     })
 
     init();
+
+    $(".tab_item").click(function () {
+
+        $(".tab_item").removeClass("current");
+        $(this).addClass("current");
+
+        var id = $(this).attr("target");
+        $(this).parent().parent().find(".content").hide();
+        var id = $(this).attr("target");
+        $("#" + id).show();
+
+    });
+
+
 })();

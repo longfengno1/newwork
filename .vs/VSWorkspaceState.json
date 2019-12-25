@@ -3,8 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\ziliaoxiazai"
+    "\\src\\pages\\group",
+    "\\src\\pages\\list",
+    "\\src\\pages\\product",
+    "\\src\\pages\\productDetail",
+    "\\src\\pages\\productList",
+    "\\src\\pages\\productPre1",
+    "\\src\\pages\\shoppingcart"
   ],
-  "SelectedNode": "\\src\\pages\\ziliaoxiazai\\index.html",
+  "SelectedNode": "\\src\\pages\\productList\\index.html",
   "PreviewInSolutionExplorer": false
 }

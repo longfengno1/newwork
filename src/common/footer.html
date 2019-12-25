@@ -159,6 +159,26 @@
                                 <div class="pop">客服</div>
                             </a>
                         </li>
+                        <li class="cart" style="display:none;">
+                            <a href="###">
+                                <div class="btn inblock">购物车</div>
+                                <div class="pop">购物车</div>
+                                <div class="up-total-cur">9</div>
+                            </a>
+                            <script>
+                                function pageName() {
+                                    var strUrl = location.href;
+                                    var arrUrl = strUrl.split("/");
+                                    var strPage = arrUrl[arrUrl.length - 1];
+                                    return strPage;
+                                }
+                                var pname = pageName();
+                                if (pname.toLowerCase().indexOf("productlist") >= 0 || pname.toLowerCase().indexOf("productpre1") >= 0) {
+                                    document.getElementsByClassName("cart")[0].style.display = '';
+
+                                }
+                            </script>
+                        </li>
                         <li class="tel">
                             <a href="###">
                                 <div class="btn inblock">电话</div>
@@ -170,7 +190,8 @@
                                 <div class="btn inblock">微信</div>
                                 <div class="pop">
                                     <div class="xapp"><img src="../images/pic3.png" width="80" height="80"></div>
-                                    <div class="qcode"><img src="../images/pic2.png" width="80" height="80">
+                                    <div class="qcode">
+                                        <img src="../images/pic2.png" width="80" height="80">
                                     </div>
                                 </div>
                             </a>
