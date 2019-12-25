@@ -289,7 +289,10 @@
         margin-bottom: 20px;
         box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.10);
         padding: 10px;
-
+        overflow: hidden;
+        .detail{
+          overflow: hidden;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -299,7 +302,7 @@
             /*height: 153px;*/
             position: relative;
             overflow: hidden;
-
+            float: left;
             img {
                 /*position: absolute;
         left: 0;
@@ -312,7 +315,7 @@
             padding: 10px 10px 0 10px;
             color: #383838;
             position: relative;
-
+            float: right;
             .route-name {
                 font-size: 18px;
                 color: #383838;
