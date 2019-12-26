@@ -13,10 +13,12 @@ body {
     .left-container {
         width: 210rem/$fit;
         margin-right: 20rem/$fit;
+        float: left;
     }
 
     .right-container {
         width: 940rem/$fit;
+        float: right;
     }
 
     .bread-crumb {

@@ -4,6 +4,7 @@
   margin: 0;
 }
 
+
 .filter {
   height: 60px;
   background: #f7fcfc;
@@ -222,7 +223,7 @@
 
 
         .sort {
-            display: flex;
+            display: block;
             justify-content: space-between;
             margin-bottom: 31px;
 
@@ -241,6 +242,7 @@
     .boat-card {
         background-color: #f7fcfc;
         margin-bottom: 10px;
+        overflow: hidden;
 
         &:last-child {
             margin-bottom: 0;
@@ -265,6 +267,7 @@
             font-family: MEllePRC-Medium;
             color: #383838;
             position: relative;
+            float: left;
 
             .route-name {
                 font-size: 18px;
@@ -463,7 +466,7 @@
     }
 
     .page {
-        display: flex;
+        display: block;
         justify-content: space-between;
         align-items: center;
         /*margin-top: 70px;*/

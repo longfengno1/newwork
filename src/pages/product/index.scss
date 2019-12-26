@@ -2,8 +2,15 @@
 
 .product-main {
     background-color: #f8f8f8;
-}
 
+.propic{
+    width: 350px;
+    float: left;
+}
+.proinfop{
+    width: 830px;
+    float: right;
+}
 .bgwhite {
     background-color: #fff;
 }
@@ -510,11 +517,15 @@
     font-size: 16rem/$fit;
     color: #fff;
     background-color: #00969E;
+    display: table !important;
+    table-layout: fixed;
+    width: 100%;
 }
 
 .date_plane_box .date_title li {
     text-align: center;
-
+    display: table-cell;
+    width: auto;
     .current {
         color: #00969E;
         background: #fff;
@@ -728,6 +739,19 @@
 .leftlist {
     width: 160rem/$fit;
     padding-right: 20rem/$fit !important;
+    float: left;
+}
+.prointo {
+    .row{
+        overflow: hidden;
+    }
+    .bgwhite{
+        overflow: hidden;
+    }
+    .content{
+        float: right;
+        width: 1000px;
+    }
 }
 
 .leftlist_box.boxfixed_w100 {
@@ -1147,10 +1171,9 @@
 .hotthread .item ul li {
     float: left;
     margin-top: 20rem/$fit;
-    /*margin-right: 30rem/$fit;*/
-    /*width: 380rem/$fit;*/
+    width: 380rem/$fit;
     height: 354rem/$fit;
-    /*background: #fff;*/
+    background: #fff;
     border-radius: 5rem/$fit;
     overflow: hidden;
 }
@@ -1654,7 +1677,7 @@
 .travel_calendar_bd{
   margin-bottom: 0;
 }
-
+}
 
 /* 大屏幕 */
 @media (min-width: 1200px) {
@@ -2025,6 +2048,7 @@
     }
 
     .proinfop {
+       
         border-radius: 10rem/$fit 10rem/$fit 0 0;
         padding: 20rem/$fit 32rem/$fit 0 32rem/$fit;
         margin-top: 0rem/$fit;
