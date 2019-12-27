@@ -87,7 +87,7 @@
         background-color: #fff;
 
         h3 {
-            font-size: 40rem/$fit;
+            font-size: 32rem/$fit;
             color: #383838;
             line-height: 55rem/$fit;
             /*margin-top: 24rem/$fit;*/
@@ -276,13 +276,19 @@
                 border-left: 20rem/$fit solid transparent;
                 border-bottom: 14rem/$fit solid #00969E;
                 border-top: 14rem/$fit solid transparent;
-                color:#fff;
+                color: #fff;
                 right: 0;
                 bottom: 0;
                 z-index: 2;
-
             }
         }
+    }
+
+    .tripinfo {
+        font-size: 28rem/$fit;
+        background-color: #fff;
+        margin-bottom: .25rem;
+        padding: .8rem 0 0.25rem .8rem;
     }
 }
 
