@@ -471,7 +471,12 @@
         align-items: center;
         /*margin-top: 70px;*/
     }
+    .pagination{
+      display: block;
+      font-size: 0;
+      text-align: right;
 
+    }
     .page-count {
         font-size: 12px;
         color: #595961;
@@ -490,15 +495,17 @@
         margin-right: 10px;
         text-align: center;
         cursor: pointer;
-
+        vertical-align: middle;
+        font-size: 12px;
         &:last-child {
             margin-right: 0;
             border-top-right-radius: 2px;
             border-bottom-right-radius: 2px;
         }
     }
-
+    
     .pagination-input {
+      font-size: 12px;
         display: inline-block;
         background: #FFFFFF;
         border: 1px solid #E5E5E5;
@@ -509,6 +516,7 @@
         height: 30px;
         line-height: 30px;
         text-align: center;
+        vertical-align: middle;
     }
 
     .active-item {
