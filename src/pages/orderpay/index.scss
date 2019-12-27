@@ -9,10 +9,16 @@
 }
 
 .order {
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 300px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 300px;
+    .tripinfo{
+        font-size:16px;
+        background-color:#fff;
+        margin-bottom:10px;
+        padding:20px;
+    }
 }
 .top-order-info {
     background-color: #fff;

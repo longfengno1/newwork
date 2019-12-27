@@ -377,16 +377,22 @@ body {
     width: 1200rem/$fit;
 
     .product {
-        height: 417px;
+        /*height: 417px;*/
         background-color: #FFFFFF;
         overflow: hidden;
+        .tripinfo{
+            font-size:20px;
+            padding-left:20px;
+            padding-top:10px;
+            padding-bottom:10px;
+        }
     }
 
     .product-image {
         float: left;
         width: 600rem/$fit;
         height: auto;
-        padding:20px;
+        padding: 20px;
     }
 
     .product-content {
@@ -558,7 +564,7 @@ body {
             float: left;
             width: 100%;
             height: auto;
-            padding:.5rem;
+            padding: .5rem;
         }
 
         .name {
@@ -588,6 +594,13 @@ body {
             height: auto;
             background-color: #FFFFFF;
             overflow: hidden;
+
+            .tripinfo {
+                font-size: 28rem/$fit;
+                padding-left: 20rem/$fit;
+                padding-top: 10rem/$fit;
+                padding-bottom: 10rem/$fit;
+            }
         }
 
         .product-content {
@@ -657,7 +670,7 @@ body {
 
             .guests {
                 margin-top: 0rem;
-                margin-left:.5rem;
+                margin-left: .5rem;
             }
 
             .layer-title {
