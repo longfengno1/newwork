@@ -714,6 +714,7 @@
 	width: 890px;
 	margin: 0 20px;
 	float: right;
+
 	.header-bar {
 		background: url(../../images/header-bg.png) center center no-repeat;
 		background-size: 100% 100%;
@@ -733,7 +734,7 @@
 		-webkit-box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
 		box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
 		border-radius: 0.2rem 0.2rem 0 0;
-		overflow-x: scroll;
+		overflow-x: hidden;
 		overflow-y: hidden;
 		white-space: nowrap;
 		background: rgba(100, 204, 201, 0.1);
