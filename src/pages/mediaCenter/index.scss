@@ -3,7 +3,9 @@
 
 .row {
   margin: 0;
+  
 }
+
 
 .list-main {
     .topbannerB {
@@ -230,7 +232,7 @@
 
 
         .sort {
-            display: flex;
+            display: block;
             justify-content: space-between;
             margin-bottom: 31px;
 
@@ -463,6 +465,8 @@
             position: absolute;
             /*bottom: 0;*/
             top:100px;
+            outline: none !important;
+            box-shadow: none;
         }
 
         .intro {
@@ -1053,7 +1057,7 @@
   .mediacenter_right {
     background: #F7FCFC;
     padding: 20px 15px;
-    width: 656px;
+    width: 870px;
     float: right;
     .boat-card {
       background: #fff;

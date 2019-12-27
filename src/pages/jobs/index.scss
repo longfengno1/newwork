@@ -247,10 +247,11 @@
         }
 
         .picture {
-            width: 240px;
-            height: 160px;
+            width: 384px;
+            height: 215px;
             background: url(../../images/pic1.jpg);
             position: relative;
+            float: left;
 
             img {
                 /*position: absolute;
@@ -261,11 +262,12 @@
         }
 
         .detail-content {
-            width: calc(100% - 240px);
-            padding: 19px 10px 0 10px;
+            width: calc(100% - 384px);
+            padding: 19px 10px 0 30px;
             font-family: MEllePRC-Medium;
             color: #383838;
             position: relative;
+            float: right;
 
             .route-name {
                 font-size: 18px;
@@ -994,6 +996,7 @@
         /*border: 2px solid #EFFAF9;*/
         position: relative;
         padding: 10px 20px 10px 20px;
+        overflow: hidden;
 
         .desc {
             /*padding-right: 198px;*/
@@ -1008,7 +1011,7 @@
         }
 
         .detail-content {
-            padding: 0 0 0 180px;
+            padding: 0 0 0 30px;
         }
     }
 }

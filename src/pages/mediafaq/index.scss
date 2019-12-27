@@ -233,7 +233,7 @@
 
 
     .sort {
-      display: flex;
+      display: block;
       justify-content: space-between;
       margin-bottom: 31px;
 
@@ -477,7 +477,7 @@
   }
 
   .page {
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
     margin-top: 70px;
@@ -996,7 +996,14 @@
 
 .mediacenter_wraper {
   width: 902px;
-
+  .row{
+    display: table !important;
+    table-layout: fixed;
+  }
+  .col{
+    display: table-cell;
+    width: 50%;
+  }
   .list-mtab {
     width: 100%;
     margin-bottom: 20px;

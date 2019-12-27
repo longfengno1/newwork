@@ -13,11 +13,13 @@ body {
     .left-container {
         width: 210rem/$fit;
         margin-right: 20rem/$fit;
+        float: left;
     }
 
     .right-container {
         width: 940rem/$fit;
         font-family: Helvetica;
+        float: right;
 
         h3 {
             font-size: 20px;

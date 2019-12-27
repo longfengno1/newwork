@@ -13,10 +13,12 @@ body {
     .left-container {
         width: 210rem/$fit;
         margin-right: 20rem/$fit;
+        float: left;
     }
 
     .right-container {
         width: 940rem/$fit;
+        float: right;
         /*font-family: Helvetica;*/
         section {
             width: 100%;
@@ -121,10 +123,13 @@ body {
             align-items: center;
             flex-wrap: nowrap;
             margin-top: 10rem/$fit;
+            overflow: hidden;
         }
 
         .btn-item {
             flex: 1;
+            float: left;
+            width: 33.333%;
             font-size: 14rem/$fit;
             color: #00969E;
             cursor: pointer;

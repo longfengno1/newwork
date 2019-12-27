@@ -2,6 +2,7 @@
 
 
 .row {
+  
   margin: 0;
 }
 
@@ -292,6 +293,7 @@
         overflow: hidden;
         .detail{
           overflow: hidden;
+          position: relative;
         }
         &:last-child {
             margin-bottom: 0;
@@ -314,7 +316,8 @@
         .detail-content {
             padding: 10px 10px 0 10px;
             color: #383838;
-            position: relative;
+            min-height: 230px;
+            width: 700px;
             float: right;
             .route-name {
                 font-size: 18px;
@@ -386,7 +389,7 @@
         .cruises-from-date {
             padding-left: 60px;
             padding-right: 185px;
-
+            padding-bottom: 30px;
             .label {
                 float: left;
                 margin-left: -60px;
