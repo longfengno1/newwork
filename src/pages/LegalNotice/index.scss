@@ -181,7 +181,7 @@
 
 .list-container {
     width: 1120px;
-    overflow-y: overlay;
+    overflow-y: hidden;
     overflow-x: hidden;
     clear: both;
     min-height: 500px;
@@ -232,7 +232,7 @@
                 color: #383838;
 
                 &:last-child {
-                    font-family: Helvetica;
+                    /*font-family: Helvetica;*/
                     cursor: pointer;
                 }
             }
@@ -264,7 +264,7 @@
         .detail-content {
             width: calc(100% - 100px);
             padding: 19px 10px 0 10px;
-            font-family: MEllePRC-Medium;
+            /*font-family: MEllePRC-Medium;*/
             color: #383838;
             position: relative;
             float: left;
@@ -299,7 +299,7 @@
                 width: 20px;
                 height: 20px;
                 border-radius: 10px;
-                font-family: Helvetica;
+                /*font-family: Helvetica;*/
                 font-size: 12px;
                 color: #00969E;
                 background: #FFFFFF;
@@ -324,7 +324,7 @@
         .date-list-item {
             display: inline-block;
             line-height: 18px;
-            font-family: Helvetica;
+            /*font-family: Helvetica;*/
             font-size: 12px;
             color: #383838;
             text-align: center;
@@ -384,7 +384,7 @@
 
     .description {
         padding: 16px 22px 12px 8px;
-        font-family: MEllePRC-Medium;
+        /*font-family: MEllePRC-Medium;*/
 
         .tags {
             .hot-tag {
@@ -1028,7 +1028,7 @@
     .list {
         min-height: 100vh;
         width: 100vw;
-        font-family: Helvetica;
+        /*font-family: Helvetica;*/
         position: relative;
     }
     .activiylist {
@@ -1047,7 +1047,7 @@
     .list-container .boat-card .detail-content {
         width: 100%;
         padding: .6rem .6rem 0 .6rem;
-        font-family: MEllePRC-Medium;
+        /*font-family: MEllePRC-Medium;*/
         color: #383838;
         position: relative;
     }

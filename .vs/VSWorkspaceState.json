@@ -2,15 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\common",
-    "\\src\\css",
     "\\src\\pages",
-    "\\src\\pages\\product",
-    "\\src\\pages\\productDetail",
+    "\\src\\pages\\checkInfo",
+    "\\src\\pages\\orderok",
+    "\\src\\pages\\orderpay",
     "\\src\\pages\\productList",
     "\\src\\pages\\productPre1",
     "\\src\\pages\\shoppingcart"
   ],
-  "SelectedNode": "\\src\\pages\\productPre1\\sm-index.scss",
+  "SelectedNode": "\\src\\pages\\productPre1\\index.html",
   "PreviewInSolutionExplorer": false
 }
