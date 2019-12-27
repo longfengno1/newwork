@@ -3,13 +3,13 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\checkInfo",
-    "\\src\\pages\\orderok",
-    "\\src\\pages\\orderpay",
-    "\\src\\pages\\productList",
-    "\\src\\pages\\productPre1",
-    "\\src\\pages\\shoppingcart"
+    "\\src\\pages\\LegalNotice",
+    "\\src\\pages\\login",
+    "\\src\\pages\\product",
+    "\\src\\pages\\signup",
+    "\\src\\pages\\signupBindPhone-2",
+    "\\src\\pages\\xinshoudaolan"
   ],
-  "SelectedNode": "\\src\\pages\\productPre1\\index.html",
+  "SelectedNode": "\\src\\pages\\product\\index.html",
   "PreviewInSolutionExplorer": false
 }

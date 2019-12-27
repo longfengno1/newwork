@@ -1711,49 +1711,54 @@
 
     .calendar-container {
         .travel_calendar {
-            width: 18rem;
+            width: 100%;
         }
 
         .travel_calendar_switch {
             height: auto;
+            background: none;
+        }
+
+        .travel_calendar_switch .sm_cont {
+            padding: 0 2rem;
         }
 
         .travel_calendar_switch .travel_cs_col .switch_month {
             text-align: center;
-            color: #fff;
+            color: #999;
             font-size: 18px;
             padding-top: 0;
         }
 
         .travel_calendar_switch .sm_prev {
             border: 1px solid #fff;
-            width: .8rem;
-            height: .8rem;
+            width: auto;
+            height: auto;
             display: inline-block;
-            vertical-align: middle;
+            vertical-align: unset;
             border-radius: 50%;
             opacity: 0.7;
         }
 
         .travel_calendar_switch .sm_next {
             border: 1px solid #fff;
-            width: .8rem;
-            height: .8rem;
+            width: auto;
+            height: auto;
             display: inline-block;
-            vertical-align: middle;
+            vertical-align: unset;
             border-radius: 50%;
             opacity: 0.7;
         }
 
         .travel_calendar_switch .travel_cs_col .txt {
-            color: #fff;
+            color: #999;
             font-size: .6rem;
             /*line-height: 42px;*/
         }
 
         .travel_calendar_switch .sm_prev .i_caret,
         .travel_calendar_switch .sm_next .i_caret {
-            border: 1px solid #fff;
+            border: 1px solid #999;
             width: .35rem;
             height: .35rem;
             display: inline-block;
@@ -1762,8 +1767,8 @@
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
             position: relative;
-            top: -.55rem;
-            right: 0.05rem;
+            top: 0;
+            right: 0;
         }
 
         .travel_calendar_switch .sm_prev .i_caret {
@@ -1774,18 +1779,18 @@
         .t2_thead {
             position: relative;
             z-index: 5;
-            height: auto;
-            line-height: normal;
-            color: #fff;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            color: #009096;
             font-size: .6rem;
-            background: #009096;
+            background: none;
             overflow: hidden;
             text-align: center;
             *zoom: 1;
         }
 
         .t2_th {
-            width: 2.56rem;
+            width: 14.2%;
             font-size: .6rem;
         }
 
@@ -1808,12 +1813,12 @@
 
         .a_unavailable .t2_td_day,
         .a_unavailable .t2_td_today {
-            color: #F17571;
+            color: #999;
             font-size: .6rem;
         }
 
         .t2_td_day {
-            color: #F17571;
+            color: #999;
             font-size: .6rem;
         }
 
@@ -1831,7 +1836,7 @@
             z-index: 1;
             height: 1rem;
             line-height: 1rem;
-            background: #D1F0F1;
+            background: none;
             overflow: hidden;
             padding: 0 10px;
             zoom: 1;
@@ -1868,12 +1873,15 @@
 
         .layer {
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            top: 0;
+            left: 0;
+            transform: none;//translate(-50%, -50%);
             padding: .5rem;
             background: #FFFFFF;
             box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
+            width:100%;
+            height:100%;
+            padding:0;
 
             .close {
                 width: 1rem;
