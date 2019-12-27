@@ -123,6 +123,8 @@
 	font-size: 32rem/$fit;
 	line-height: 32rem/$fit;
 	padding: 22rem/$fit 0;
+	float: left;
+	width: 50%;
 }
 
 .topbanner_plane .info li:last-child {
@@ -560,6 +562,8 @@
 		border: 0;
 		padding: 10rem/$fit 0 20rem/$fit 0;
 		margin:0;
+		float: none;
+		width: auto;
 	}
 
 	.topbanner_plane .info .row .col br {
