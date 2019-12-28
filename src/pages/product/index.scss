@@ -1728,6 +1728,9 @@
             color: #999;
             font-size: 18px;
             padding-top: 0;
+            background-color: #f8fcfd;
+            padding: .5rem;
+            border-radius:.25rem;
         }
 
         .travel_calendar_switch .sm_prev {
@@ -1751,9 +1754,10 @@
         }
 
         .travel_calendar_switch .travel_cs_col .txt {
-            color: #999;
-            font-size: .6rem;
+            color: #333;
+            font-size: .8rem;
             /*line-height: 42px;*/
+            font-weight: 600;
         }
 
         .travel_calendar_switch .sm_prev .i_caret,
@@ -1781,12 +1785,13 @@
             z-index: 5;
             height: 1.5rem;
             line-height: 1.5rem;
-            color: #009096;
+            color: #fff;
             font-size: .6rem;
             background: none;
             overflow: hidden;
             text-align: center;
             *zoom: 1;
+            background-color: #009096;
         }
 
         .t2_th {
@@ -1798,7 +1803,11 @@
         .t2_td_colspan {
             width: 14.5%;
             height: 3.5rem;
-            border: 1px solid #f8f8f8;
+            border: 1px solid #f0f0f0;
+        }
+
+        .active_td {
+            background-color: #f8fcfd;
         }
 
         .t2_td .a_available,
@@ -1844,14 +1853,16 @@
         }
 
         .t2_td .base_price {
-            /*position: initial;*/
+            position: initial;
             z-index: 1;
-            left: .25rem;
+            left: 0;
             bottom: 0;
             font-size: .6rem;
             color: #666;
             padding: .05rem;
-            top: .8rem;
+            top: 0;
+            margin-top: 1rem;
+            font-size: .35rem;
         }
 
         .t2_td .base_price dfn {
@@ -1873,15 +1884,17 @@
 
         .layer {
             position: fixed;
-            top: 0;
+            bottom: 0;
             left: 0;
-            transform: none;//translate(-50%, -50%);
+            transform: none; //translate(-50%, -50%);
             padding: .5rem;
             background: #FFFFFF;
-            box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.15);
-            width:100%;
-            height:100%;
-            padding:0;
+            box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: auto;
+            padding: 0;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
 
             .close {
                 width: 1rem;
