@@ -779,48 +779,58 @@
 @media(max-width:767px) {
     .calendar-container {
         .travel_calendar {
-            width: 18rem;
+            width: 100%;
         }
 
         .travel_calendar_switch {
             height: auto;
+            background: none;
+        }
+
+        .travel_calendar_switch .sm_cont {
+            padding: 0 2rem;
         }
 
         .travel_calendar_switch .travel_cs_col .switch_month {
             text-align: center;
-            color: #fff;
+            color: #999;
             font-size: 18px;
             padding-top: 0;
+            background-color: #f8fcfd;
+            padding: .5rem;
+            border-radius: .25rem;
         }
 
         .travel_calendar_switch .sm_prev {
             border: 1px solid #fff;
-            width: .8rem;
-            height: .8rem;
+            width: auto;
+            height: auto;
             display: inline-block;
-            vertical-align: middle;
+            vertical-align: unset;
             border-radius: 50%;
             opacity: 0.7;
         }
 
         .travel_calendar_switch .sm_next {
             border: 1px solid #fff;
-            width: .8rem;
-            height: .8rem;
+            width: auto;
+            height: auto;
             display: inline-block;
-            vertical-align: middle;
+            vertical-align: unset;
             border-radius: 50%;
             opacity: 0.7;
         }
 
         .travel_calendar_switch .travel_cs_col .txt {
-            color: #fff;
-            font-size: .6rem;
+            color: #333;
+            font-size: .8rem;
             /*line-height: 42px;*/
+            font-weight: 600;
         }
 
-        .travel_calendar_switch .sm_prev .i_caret, .travel_calendar_switch .sm_next .i_caret {
-            border: 1px solid #fff;
+        .travel_calendar_switch .sm_prev .i_caret,
+        .travel_calendar_switch .sm_next .i_caret {
+            border: 1px solid #999;
             width: .35rem;
             height: .35rem;
             display: inline-block;
@@ -829,8 +839,8 @@
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
             position: relative;
-            top: -.55rem;
-            right: 0.05rem;
+            top: 0;
+            right: 0;
         }
 
         .travel_calendar_switch .sm_prev .i_caret {
@@ -841,28 +851,35 @@
         .t2_thead {
             position: relative;
             z-index: 5;
-            height: auto;
-            line-height: normal;
+            height: 1.5rem;
+            line-height: 1.5rem;
             color: #fff;
             font-size: .6rem;
-            background: #009096;
+            background: none;
             overflow: hidden;
             text-align: center;
             *zoom: 1;
+            background-color: #009096;
         }
 
         .t2_th {
-            width: 2.56rem;
+            width: 14.2%;
             font-size: .6rem;
         }
 
-        .t2_td, .t2_td_colspan {
-            width: 2.62rem;
+        .t2_td,
+        .t2_td_colspan {
+            width: 14.5%;
             height: 3.5rem;
-            border: 1px solid #f8f8f8;
+            border: 1px solid #f0f0f0;
         }
 
-        .t2_td .a_available, .t2_td .a_unavailable {
+        .active_td {
+            background-color: #f8fcfd;
+        }
+
+        .t2_td .a_available,
+        .t2_td .a_unavailable {
             height: auto;
             position: inherit;
         }
@@ -871,13 +888,14 @@
             display: none;
         }
 
-        .a_unavailable .t2_td_day, .a_unavailable .t2_td_today {
-            color: #F17571;
+        .a_unavailable .t2_td_day,
+        .a_unavailable .t2_td_today {
+            color: #999;
             font-size: .6rem;
         }
 
         .t2_td_day {
-            color: #F17571;
+            color: #999;
             font-size: .6rem;
         }
 
@@ -895,7 +913,7 @@
             z-index: 1;
             height: 1rem;
             line-height: 1rem;
-            background: #D1F0F1;
+            background: none;
             overflow: hidden;
             padding: 0 10px;
             zoom: 1;
@@ -903,14 +921,16 @@
         }
 
         .t2_td .base_price {
-            /*position: initial;*/
+            position: initial;
             z-index: 1;
-            left: .25rem;
+            left: 0;
             bottom: 0;
             font-size: .6rem;
             color: #666;
             padding: .05rem;
-            top: .8rem;
+            top: 0;
+            margin-top: 1rem;
+            font-size: .35rem;
         }
 
         .t2_td .base_price dfn {
@@ -1014,6 +1034,26 @@
                 }
             }
         }
+
+        .layer-date {
+            position: fixed;
+            top:auto;
+            bottom: 0;
+            left: 0;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;
+            padding: .5rem;
+            background: #FFFFFF;
+            -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: auto;
+            padding: 0;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+        }
+
 
         .layer-sm {
             width: 16rem;
