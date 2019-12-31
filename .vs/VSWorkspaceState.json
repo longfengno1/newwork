@@ -3,13 +3,14 @@
     "",
     "\\src",
     "\\src\\pages",
-    "\\src\\pages\\LegalNotice",
+    "\\src\\pages\\fleetIntroduction03",
     "\\src\\pages\\login",
+    "\\src\\pages\\mypassenger",
     "\\src\\pages\\product",
     "\\src\\pages\\signup",
     "\\src\\pages\\signupBindPhone-2",
     "\\src\\pages\\xinshoudaolan"
   ],
-  "SelectedNode": "\\src\\pages\\product\\index.html",
+  "SelectedNode": "\\src\\pages\\fleetIntroduction03\\index.html",
   "PreviewInSolutionExplorer": false
 }
