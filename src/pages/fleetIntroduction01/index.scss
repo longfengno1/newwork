@@ -88,6 +88,18 @@
 .col-4 {
 	float: left;
 }
+
+.roomlist-col-4 {
+	float: left;
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
 .maintab .tabs .current {
 	opacity: 1;
 }
@@ -318,7 +330,7 @@
 
 .prolist .inner {
 	background: #FBFAF9;
-	padding-bottom: 16rem/$fit;
+	/*padding-bottom: 16rem/$fit;*/
 	/*margin-bottom: 30rem/$fit;*/
 	font-size: 14rem/$fit;
 	overflow: hidden;
@@ -344,9 +356,13 @@
 .prolist .desc {
 	margin: 10rem/$fit 16rem/$fit;
 	padding: 10rem/$fit 0;
-	border: 1rem/$fit solid #B8C4CB;
+	border-top: 1rem/$fit solid #B8C4CB;
 	border-width: 1rem/$fit 0;
 	/*font-size: 20rem/$fit;*/
+	/*min-height:2.6rem;*/
+}
+.prolist .desc-room {
+	min-height: 2.6rem;
 }
 
 .prolist .infos {
@@ -358,6 +374,7 @@
 	width: 50%;
 	float: left;
 	/*line-height:28rem/$fit;*/
+	margin-bottom:.25rem;
 }
 
 .probanner {
@@ -624,6 +641,7 @@
 		padding: 0rem/$fit 0;
 		border: 0;
 		border-width: 1rem/$fit 0;
+		margin-left:0;
 	}
 
 	.section .title {
@@ -676,6 +694,7 @@
 		margin-left: -40rem/$fit;
 		top: 15rem/$fit;
 	}
+
 
 	.col-4 {
 		width: 100%;
@@ -824,6 +843,50 @@
 		top: 30rem/$fit;
 		left: 30rem/$fit;
 		font-size: 30rem/$fit;
+	}
+
+	.roomlist-panel {
+		position: relative;
+		height: 14.5rem;
+		overflow: scroll;
+		overflow-y: hidden;
+	}
+	.roomlist-ul {
+		width: 48rem;
+		margin-left: 0.1rem;
+	}
+	.roomlist-li {
+		float: left;
+		/*flex:unset;*/
+	}
+	.roomlist-col-4 {
+		/*width: 100%;*/
+		display: block;
+		max-width: none;
+		/*margin-left: 1rem;*/
+		flex: 0;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.roomlist-li .inner {
+		width: 15rem;
+		border-top: 0px solid #ccc;
+
+		.pic {
+			float: left;
+			margin-right: 0.75rem;
+			height: auto;
+			width: 100%;
+			margin-bottom: 0.25rem;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.infos {
+			margin: 0.25rem 0rem;
+		}
 	}
 }
 

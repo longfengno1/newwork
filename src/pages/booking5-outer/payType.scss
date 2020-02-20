@@ -1,0 +1,111 @@
+#selectPay {
+    width: 1200px;
+
+    h3 {
+        font-size: 20px;
+        color: #666;
+        padding: 20px 0 20px 10px;
+    }
+
+    .main {
+        display: table;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 138px;
+        background-color: #ffffff;
+
+        .center {
+            display: table-cell;
+            text-align: center;
+            vertical-align:middle;
+        }
+
+        .price-count {
+            width: 82px;
+            margin-right: 60px;
+        }
+
+        .price-num {
+            font-size: 16px;
+            color: #383838;
+        }
+
+        .price {
+            font-size: 40px;
+            color: #F8485E;
+            margin-left: 14px;
+            font-weight: 600;
+
+            span {
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .pay-types {
+        height: 150px;
+        background-color: #ffffff;
+        padding: 0 30px;
+        line-height: 150px;
+        text-align:center;
+
+        .pay-item {
+            width: 262px;
+            height: 90px;
+            cursor: pointer;
+        }
+    }
+
+    .btns {
+        
+        /*margin-top: 40px;*/
+        background-color: #fff;
+        padding: 0px 20px 20px 20px;
+
+        button {
+            width: 230px;
+            height: 50px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .back {
+            border: 1px solid #D0D7DF;
+            border-radius: 5px;
+            color: #666;
+            background-color:#fff;
+            }
+
+        .pay {
+            float: right;
+            color: #ffffff;
+            background-color: #00969E;
+            border-radius: 5px;
+            border:0px;
+        }
+    }
+
+    .sub-title {
+        padding: 10px 20px 0px 20px;
+        background-color: #fff;
+        margin-top: 10px;
+
+        h3 {
+            font-size: 16px;
+            color: #666;
+            font-weight: 400;
+            height: 48px;
+            line-height: 48px;
+            padding: 0;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+
+        img {
+            margin: 0px 10px 0px 20px;
+            width: 28px;
+        }
+    }
+}

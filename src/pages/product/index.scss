@@ -445,7 +445,7 @@
             right: 5%;
             top: -100px;
             background: #fff;
-            width: 90%;
+            width: 430px;
             height: 309px;
             z-index: 1;
             padding: 20px;
@@ -3187,6 +3187,41 @@
         opacity: .5;
     }
 
+    .priceinfop {
+        .opener {
+            position: absolute;
+            right: 5%;
+            top: -100px;
+            background: #fff;
+            width: 90% !important;
+            height: 309px;
+            z-index: 1;
+            padding: 20px;
+            box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.10);
+            border-radius: 2px;
+            display: none;
+
+            .title {
+                margin-bottom: 20rem/$fit;
+                font-size: 28rem/$fit;
+                color: #00969E;
+            }
+
+            .opener-close {
+                cursor: pointer;
+            }
+
+            .inner {
+                height: 240px;
+                text-align: left;
+                overflow-y: scroll;
+
+                p {
+                    text-align: left;
+                }
+            }
+        }
+    }
 }
 
 /* 横向放置的手机及分辨率更小的设备 */

@@ -595,6 +595,17 @@
 	text-decoration:none;
 	color:#00969E;
 }
+
+.list-btn {
+	text-align: center;
+	margin-top: .25rem;
+}
+
+.btn-styleE {
+	border-radius: 0.125rem;
+}
+
+
 @media(max-width:767px) {
 	.fleetintro {
 		width: 100%;
@@ -668,5 +679,10 @@
 		padding-right: .25rem;
 	}
 
+	.list-btn {
+		text-align: center;
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+	}
 
 }

@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\common",
+    "\\src\\js",
     "\\src\\pages",
-    "\\src\\pages\\fleetIntroduction03",
-    "\\src\\pages\\login",
-    "\\src\\pages\\mypassenger",
-    "\\src\\pages\\product",
-    "\\src\\pages\\signup",
-    "\\src\\pages\\signupBindPhone-2",
-    "\\src\\pages\\xinshoudaolan"
+    "\\src\\pages\\productDetail",
+    "\\src\\pages\\roomsDetail",
+    "\\src\\pages\\yuleshengyanDetail",
+    "\\src\\pages\\yuleshengyanDetailNew",
+    "\\src\\pages\\yundongxiuxian"
   ],
-  "SelectedNode": "\\src\\pages\\fleetIntroduction03\\index.html",
+  "SelectedNode": "\\src\\pages\\rooms-sub\\index.scss",
   "PreviewInSolutionExplorer": false
 }

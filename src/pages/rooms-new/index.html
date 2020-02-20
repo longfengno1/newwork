@@ -1,0 +1,292 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>精致客房</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+    <div id="main" class="fleetintro">
+
+        <div class="topbannerB hidden-sm">
+            <img src="../../images/tobannerB_pic.jpg" />
+            <div class="intro-ribbonship"></div>
+        </div>
+        <div class="section mt20">
+            <div class="wraper">
+                <h2 class="title hidden-sm">精致客房</h2>
+                <div class="filter_plane mt30 hidden-sm">
+                    <ul>
+                        <a href="rooms.html"><li class="tab-title current">简介</li></a>
+                        <a href="rooms-sub.html"> <li class="tab-title ">皇宫套房</li></a>
+                        <li class="tab-title">露台客房</li>
+                        <li class="tab-title">海景客房</li>
+                        <li class="tab-title">内侧客房</li>
+                    </ul>
+                </div>
+                <div class="show-sm" style="height:1.5rem"></div>
+                <ul class="prolist prolistD mt10">
+                    <li>
+                        <div class="inner">
+                            <div class="pic">
+                                <img src="../../images/r1.png">
+                                <div class="op"><span class="icon-pase"></span></div>
+                                <div class="fill"><span class="icon-fillsreen"></span></div>
+                                <div class="btn-prev"><span class="icon-arrowleft"></span></div>
+                                <div class="btn-next"><span class="icon-arrowright"></span></div>
+                            </div>
+                            <p class="protitle mt10"><a href="roomsDetail.html">露天四人房</a></p>
+                            <div class="desc">这是您远洋之旅的专属乐园。感受生活的美意，沉醉于悠闲舒适之中。置身充满优越感的宁谧空间，独字难得的上宾通道。细味精巧的美妙盛宴。</div>
+                            <div class="infos hidden-sm" style="display:none;">
+                                <div class="item">面积：56 - 80m&sup2;</div>
+                                <div class="item hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item">容纳人数：1- 4 人</div>
+                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                            </div>
+                            <div class="arction mt10 hidden-sm">
+                                <a href="###" class="text_linker green vb mr30" style="display:none;">观看虚拟实镜</a>
+                                <a href="roomsDetail.html" class="btn-styleE detail">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/r2.png"></div>
+                            <p class="protitle mt10">露天四人房</p>
+                            <div class="desc">无论您渴望日光浴或月光浴的洗礼，还是喜爱跳望无垠的大海，感受海洋的神奇魅力，豪华露台青房都是您的绝佳之所。回到充敞典雅的奇房内，放眼尽是精心挑选的设施和用品,如节之间，尿显非凡格调。</div>
+                            <div class="infos hidden-sm" style="display:none;">
+                                <div class="item">面积：56 - 80m&sup2;</div>
+                                <div class="item hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item">容纳人数：1- 4 人</div>
+                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                            </div>
+                            <div class="arction mt10 hidden-sm">
+                                <a href="###" class="text_linker green vb mr30" style="display:none;">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE detail">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/r3.png"></div>
+                            <p class="protitle mt10">露天四人房</p>
+                            <div class="desc">海景客房内自然光线充足。灵动而时尚的空间内处处洋溢着温委，由此放眼远跳，壮阔的海景尽收眼底。让人叹为观止。</div>
+                            <div class="infos hidden-sm" style="display:none;">
+                                <div class="item">面积：56 - 80m&sup2;</div>
+                                <div class="item hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item">容纳人数：1- 4 人</div>
+                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                            </div>
+                            <div class="arction mt10 hidden-sm">
+                                <a href="###" class="text_linker green vb mr30" style="display:none;">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE detail">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/r4.png"></div>
+                            <p class="protitle mt10">露天四人房</p>
+                            <div class="desc">这是您远洋之旅的专属乐园。感受生活的美意，沉醉于悠闲舒适之中。置身充满优越感的宁谧空间，独字难得的上宾通道。细味精巧的美妙盛宴。</div>
+                            <div class="infos hidden-sm" style="display:none;">
+                                <div class="item">面积：56 - 80m&sup2;</div>
+                                <div class="item hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item">容纳人数：1- 4 人</div>
+                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                            </div>
+                            <div class="arction mt10 hidden-sm">
+                                <a href="###" class="text_linker green vb mr30" style="display:none;">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE detail">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/r5.png"></div>
+                            <p class="protitle mt10">露天四人房</p>
+                            <div class="desc">无论您渴望日光浴或月光浴的洗礼，还是喜爱跳望无垠的大海，感受海洋的神奇魅力，豪华露台青房都是您的绝佳之所。回到充敞典雅的奇房内，放眼尽是精心挑选的设施和用品,如节之间，尿显非凡格调。</div>
+                            <div class="infos hidden-sm" style="display:none;">
+                                <div class="item">面积：56 - 80m&sup2;</div>
+                                <div class="item hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item">容纳人数：1- 4 人</div>
+                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                            </div>
+                            <div class="arction mt10 hidden-sm">
+                                <a href="###" class="text_linker green vb mr30" style="display:none;">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE detail">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/r4.png"></div>
+                            <p class="protitle mt10">露天四人房</p>
+                            <div class="desc">海景客房内自然光线充足。灵动而时尚的空间内处处洋溢着温委，由此放眼远跳，壮阔的海景尽收眼底。让人叹为观止。</div>
+                            <div class="infos hidden-sm" style="display:none;">
+                                <div class="item">面积：56 - 80m&sup2;</div>
+                                <div class="item hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item">容纳人数：1- 4 人</div>
+                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                            </div>
+                            <div class="arction mt10 hidden-sm">
+                                <a href="###" class="text_linker green vb mr30" style="display:none;">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE detail">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="pic"><img src="../../images/r5.png"></div>
+                            <p class="protitle mt10">露天四人房</p>
+                            <div class="desc">这是您远洋之旅的专属乐园。感受生活的美意，沉醉于悠闲舒适之中。置身充满优越感的宁谧空间，独字难得的上宾通道。细味精巧的美妙盛宴。</div>
+                            <div class="infos hidden-sm" style="display:none;">
+                                <div class="item">面积：56 - 80m&sup2;</div>
+                                <div class="item hidden-sm">房型分布：甲板11楼层</div>
+                                <div class="item">容纳人数：1- 4 人</div>
+                                <div class="item">浴室：浴缸/淋浴及化妆间</div>
+                            </div>
+                            <div class="arction mt10 hidden-sm">
+                                <a href="###" class="text_linker green vb mr30" style="display:none;">观看虚拟实镜</a>
+                                <a href="###" class="btn-styleE detail">查看详情</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="page_plane hidden-sm">
+                    <div class="fl">共10页 当前为第1页</div>
+                    <div class="fr pagenum">
+                        <input class="intxt">
+                        <a href="###">Go</a>
+                    </div>
+                    <div class="fr">
+                        <ul class="pages">
+                            <li><a href="###"><span class="icon-arrowleft2"></span></a></li>
+                            <li><a href="###" class="now">1</a></li>
+                            <li><a href="###">2</a></li>
+                            <li><a href="###">3</a></li>
+                            <li><a href="###">...</a></li>
+                            <li><a href="###">10</a></li>
+                            <li><a href="###"><span class="icon-arrowright21"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section mt50 hidden-sm">
+        <div class="wraper">
+            <p class="tc fz16">立即预订您的星梦假期</p>
+            <p class="tc mt20"><a href="###" class="btn-styleD">预订旅程</a></p>
+        </div>
+    </div>
+    <div class="mark layerout1 hidden-sm" style="display: none;">
+        <div class="layer">
+            <div class="close"><span class="icon-x"></span></div>
+            <div class="row no-gutters">
+                <div class="col-auto layer-left">
+                    <div class="pic">
+                        <img src="../../images/shiproom_pic.jpg" />
+                        <p class="room-title">海景双人房</p>
+                        <p class="tr">
+                            <span class="price"><dfn>¥</dfn><span>3,999</span>起/人</span><span class="old">参考价：<span><dfn>¥</dfn>8999/人</span></span>
+                            <span class="green price-desc"><span class="icon-question"></span>价格说明</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col layer-right">
+                    <p>舱房设施：</p>
+                    <p class="gray6">
+                        两张单人床/两张单人床+一张壁柜床/一张单人床+一张壁柜床+一张双人沙发床 *照片及实景导览图像仅为此房型个别示例。同一房型的每间客房/套房的实际内部陈设及装潢可能有所不同，
+                        须以现场为准。星梦邮轮不保证客人可入住与图示完全相同的客房。
+                    </p>
+                    <ul class="list mt10">
+                        <li><label>面积：</label>13m&sup2;</li>
+                        <li>
+                            <label>面积：</label>甲板 5楼,甲板 8楼,甲板 9楼,甲板 10楼,甲板 11楼,甲板 12楼,甲板 13楼,
+                            甲板 15楼
+                        </li>
+                    </ul>
+                    <ul class="list2 mt10">
+                        <li><label>第一位成人价：</label><span class="price"><dfn>¥</dfn><span>3,999</span>起/人</span></li>
+                        <li><label>第二位成人价：</label><span class="price"><dfn>¥</dfn><span>0</span></span></li>
+                        <li><label>儿童价：</label><span class="price"><dfn>¥</dfn><span>0</span></span></li>
+                        <li><label>婴儿价：</label><span class="price"><dfn>¥</dfn><span>0</span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height:100px;" class="hidden-sm"></div>
+    <div class="show-sm sm-rooms">
+        <script>document.getElementById('title_name').textContent = '精致客房';</script>
+        <div class="header">
+            <span class="icon-arrowleft"></span>精致客房
+        </div>
+        <div class="scroll-bar">
+            <div class="items">
+                <div class="scroll-item active">云顶梦号</div>
+                <div class="scroll-item">世界梦号</div>
+                <div class="scroll-item">探索梦号</div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+    
+    <div class="hidden-sm">
+        <div class="left-select-ship">
+            <ul>
+                <li class="ship01">
+                    <a href="###">
+                        <span>世界梦号</span>
+                    </a>
+                </li>
+                <li class="ship02">
+                    <a href="###">
+                        <span>云顶梦号</span>
+                    </a>
+                </li>
+                <li class="ship03">
+                    <a href="###">
+                        <span>探索梦号</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        #include('../../common/footer.html')
+    </div>
+    #include('../../common/sm_footer_button.html')
+
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.js"></script>
+<script>
+
+</script>
+</html>

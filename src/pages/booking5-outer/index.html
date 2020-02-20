@@ -1,0 +1,159 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>航线预订- 他人代付</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+
+                    var fontSize = 20 * (clientWidth / 375);
+                    fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
+                    docEl.style.fontSize = fontSize + 'px';
+                    var dpi = window.devicePixelRatio;
+                    docEl.setAttribute('data-dpi', dpi);
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+
+    </script>
+</head>
+
+<body>
+    #include('../../common/header.html')
+
+    <div id="main" class="main order-main hidden-sm">
+        <div class="order">
+            <div class="top-order-info">
+                <h3 class="product-name fb">世界梦号 【限时优惠】广州-那霸-宫古岛-广州</h3>
+                <div class="product-info clearfloat">
+                    <span>出发港口： 广州</span><span>行程天数： 6天5晚</span><span>出发日期： 2019-09-29</span><span id='modfiy-date' style="display:none;">修改日期</span>
+                </div>
+                <div class="product-tags">
+                    房间：1间 乘客：2人<br />微信可扫二维码支付。
+                </div>
+                <div class="product-tags" style="text-align: right;margin-bottom: -100px;">
+                    <img src="../../images/pic2.png" style="position: relative;top: -100px;" />
+                </div>
+
+            </div>
+            <div class="step" style="display:none;">
+                <div class="step-item selected" id="step1">
+                    <!-- <div class="step-item-before"></div> -->
+                    <span>1、选择航线、日期</span>
+                    <div class="step-item-after"></div>
+                </div>
+                <div class="step-item active" id="step2">
+                    <span>2、选择房间</span>
+                    <div class="step-item-before"></div>
+                    <div class="step-item-after"></div>
+                </div>
+                <div class="step-item" id="step3">
+                    <span>3、填写乘客信息</span>
+                    <div class="step-item-before"></div>
+                    <div class="step-item-after"></div>
+                </div>
+                <div class="step-item" id="step4">
+                    <span>4、核对乘客信息</span>
+                    <div class="step-item-before"></div>
+                    <div class="step-item-after"></div>
+                </div>
+                <div class="step-item" id="step5">
+                    <span>5、选择支付方式</span>
+                    <div class="step-item-before"></div>
+                    <div class="step-item-after"></div>
+                </div>
+                <div class="step-item" id="step6">
+                    <span>6、预订成功</span>
+                    <div class="step-item-before"></div>
+                    <!-- <div class="step-item-after"></div> -->
+                </div>
+            </div>
+            <!-- 选择支付方式 -->
+            <div class="content" id='selectPay'>
+                <div class="sub-title">
+                    <h3>
+                        <img class="price-count" src="../../images/price-count.png" alt="" />
+                        亲，您的好友 张三 向您发出代付请求，助他完成交易流程，开启精彩海上邮轮假期！
+                    </h3>
+                </div>
+                <div class="main">
+                    <div class="center">
+                        <span class="price-num"><span class="mr30 red">请在2020-01-07 18:00 前支付</span>应付总额：<span class="price"><span>&yen;</span>9,154</span><span class="ml30">发起人：张三</span></span>
+                    </div>
+                </div>
+                
+                
+                <div class="btns">
+                    <button type="button" class="back">上一步</button><button type="button" class="pay">复制链接，找人代付</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="show-sm sm-main">
+        <script>document.getElementById('title_name').textContent = '预订航线 - 支付';</script>
+
+        <div class="order-info mb20">
+            <h3>世界梦号【星梦飨宴 】广州-海上巡游-新加坡-广州</h3>
+            <p><span>出发港口：广州</span><span class="ml32">行程天数：6天5晚</span></p>
+            <p><span>出发日期：2019-09-29</span></p>
+            <p><span>房间：1间 乘客：2人</span></p>
+        </div>
+
+        <div class="step" style="display:none;">
+
+            <div class="step-item selected" id="step1">
+                <span>填写乘客信息</span>
+                <div class="step-item-before"></div>
+                <div class="step-item-after"></div>
+            </div>
+            <div class="step-item selected" id="step3">
+                <span>核对乘客信息</span>
+                <div class="step-item-before"></div>
+                <div class="step-item-after"></div>
+            </div>
+            <div class="step-item active" id="step4">
+                <span>选择支付方式</span>
+                <div class="step-item-before"></div>
+            </div>
+        </div>
+
+        <div class="ensure-price">
+            <h3>亲，您的好友 张三 向您发出代付请求，助他完成交易流程，开启精彩海上邮轮假期！</h3>
+            <div class="content"><p class="mr30 green">请在2020-01-07 18:00 前支付</p></div>
+            <div class="content">
+                <p>应付总额：<span class="price"><span>&yen;</span>9154</span></p>
+            </div>
+            <div class="content" style="text-align: right;display: block;"><p class="mr30">发起人：张三</p></div>
+        </div>
+        <div class="split"></div>
+
+    </div>
+    <div class="price-bar show-sm">
+        <div class="left" style="display:none;">
+            <p class="total">总计：<span class="price">¥8930</span></p>
+        </div>
+        <div class="right">
+            <p class="main">复制链接，找人代付</p>
+        </div>
+    </div>
+    #include('../../common/footer.html')
+
+    <script>
+        var currnetStep = 5;
+    </script>
+
+
+</body>
+
+</html>

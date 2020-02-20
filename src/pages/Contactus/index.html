@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>联系我们</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript">
+<script type="text/javascript">
         (function (doc, win) {
             var docEl = doc.documentElement,
                 resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
@@ -13,7 +13,7 @@
                     var clientWidth = docEl.clientWidth;
                     if (!clientWidth) return;
 
-                    var fontSize = 20 * (clientWidth / 320);
+                    var fontSize = 20 * (clientWidth / 375);
                     fontSize = Math.round((fontSize > 40) ? 40 : fontSize);
                     docEl.style.fontSize = fontSize + 'px';
                     var dpi = window.devicePixelRatio;
@@ -24,7 +24,6 @@
             win.addEventListener(resizeEvt, recalc, false);
         })(document, window);
     </script>
-    <link rel="stylesheet" href="index.scss">
 </head>
 
 <body>
@@ -41,7 +40,6 @@
                 <h2 class="title hidden-sm">联系我们</h2>
 
                 <div class="q1">
-
                     <div class="c1">
                         <img class="s_img" src="../../images/dianhua.png" alt="">
                         <b class="b1">预订热线</b>
@@ -115,7 +113,5 @@
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/popper.min.js"></script>
 <script src="../../bootstrap/js/bootstrap.js"></script>
-<script>
 
-</script>
 </html>
